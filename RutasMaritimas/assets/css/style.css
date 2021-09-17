@@ -1,0 +1,603 @@
+body {
+    background-color: #ffffff !important;
+    width: 100% !important;
+}
+
+.bg-gray-100 {
+    background-color: #ffffff !important;
+    height: 1px !important;
+}
+
+.navbar-main {
+    background-color: #ffffff !important;
+}
+
+.navbar-brand {
+    width: 53% !important;
+}
+
+.icon-menu {
+    float: left;
+    padding: 8px;
+}
+
+.card {
+    box-shadow: 0 20px 18px 0 rgb(0 0 0 / 25%) !important;
+}
+
+.titulo {
+    font-size: 30px !important;
+    color: #282828 !important;
+    font-weight: bold !important;
+    text-align: center !important;
+}
+
+.sub-titulo {
+    font-size: 30px !important;
+    color: #282828 !important;
+    font-weight: bold !important;
+    text-align: center !important;
+}
+
+.cont-titulo {
+    font-size: 20px !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    text-align: center !important;
+}
+
+.icon-select {
+    float: right;
+    margin-top: -26px;
+    margin-right: 5px;
+    color: #C4122f;
+}
+
+.select-rutas {
+    border-bottom: 1px solid #C4122f !important;
+}
+
+.btn-second {
+    background-color: #a5acb0;
+    color: #282828;
+}
+
+.btn-second:hover {
+    background-color: #C4122f;
+    color: #ffffff;
+}
+
+.btn-danger {
+    background-color: #C4122f;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #07354F;
+    color: #ffffff;
+}
+
+.btn-centrado {
+    text-align: end;
+}
+
+.nav-img {
+    width: 20% !important;
+}
+
+.img {
+    width: 60%;
+    text-align: center !important;
+}
+
+.background-img {
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 13px;
+    width: 220px;
+    height: 600px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background: url(../img/Ruta_Marina/cameron-venti-1cqIcrWFQBI-unsplash.jpg);
+    background-size: cover;
+}
+
+.background-img {
+    width: 100%;
+}
+
+@media all and (min-width: 500px) and (max-width: 1000px) {
+    .background-img {
+        margin: 20px auto;
+        border-radius: 5px !important;
+        border: 1px solid #999;
+        padding: 13px;
+        width: auto;
+        height: 400px;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background: url(../img/Ruta_Marina/cameron-venti-1cqIcrWFQBI-unsplash.jpg);
+        background-size: cover;
+    }
+}
+
+.background-img {
+    width: 100%;
+}
+
+.div-centrado {
+    margin: 3rem !important;
+    padding: 0rem !important;
+}
+
+.top {
+    margin-top: -5.5rem !important;
+}
+
+.card-select {
+    width: 50% !important;
+    height: 135% !important;
+    margin-left: 34% !important;
+    top: 74% !important;
+    position: absolute !important;
+    font-size: 10px;
+    font-weight: bold;
+    color: #282828;
+}
+
+.card-select-buscar {
+    width: 50% !important;
+    position: absolute !important;
+    font-size: 10px;
+    font-weight: bold;
+    color: #282828;
+    height: 220px !important;
+}
+
+.card-contenido-select {
+    font-size: 11px !important;
+    font-weight: normal !important;
+}
+
+.option-select:hover {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    background-color: #C4122f;
+    opacity: 73%;
+    width: 115% !important;
+    cursor: pointer;
+}
+
+.separador {
+    border-right: 1px solid #a5acb0;
+}
+
+.select-select-titulo {
+    background-color: #a5acb0;
+    opacity: 73%;
+    height: 12%;
+    text-align: center;
+}
+
+.texto-centrado {
+    text-align: center !important;
+}
+
+.form-control {
+    border-top: 0px !important;
+    border-right: 0px !important;
+    border-left: 0px !important;
+    border-bottom: 1px solid #282828;
+    border-radius: 2px;
+}
+
+.form-control:focus {
+    color: #282828 !important;
+    background-color: #ffffff !important;
+    border-color: #C4122f !important;
+    /* border-bottom: #C4122f !important; */
+    box-shadow: 0 0 0 2px #ffffff !important;
+}
+
+.bg-secondary {
+    background-color: #666666;
+    color: #000;
+    background: transparent;
+}
+
+.centro {
+    text-align: center;
+}
+
+.icon {
+    margin-top: -32px !important;
+    width: 50px !important;
+    font-size: 30px !important;
+    color: #C4122f;
+}
+
+.min-titulo {
+    color: #282828 !important;
+}
+
+.span {
+    color: #07354F !important;
+    font-size: 15px;
+}
+
+.hr {
+    height: 2px;
+}
+
+.refresh {
+    color: #C4122f;
+}
+
+.refresh:hover {
+    font-weight: bold;
+    color: #C4122f;
+    cursor: pointer;
+}
+
+.icon-refresh {
+    background-color: #C4122f;
+    color: #ffffff;
+    border-radius: 50%;
+    border: 1x solid grey;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.icon-refresh :hover {
+    background-color: #C4122f;
+    color: #ffffff;
+    border-radius: 50%;
+    border: 1x solid grey;
+    padding: 5px;
+    transform: scaleX(-1);
+    cursor: pointer;
+}
+
+.end {
+    text-align: end;
+}
+
+.m-left {
+    margin-left: 48%;
+}
+
+.card-header-titulo {
+    background-color: #a5acb0 !important;
+    color: #07354F !important;
+    font-size: 15px !important;
+}
+
+.card-header-movil {
+    text-align: left !important;
+    height: 3rem !important;
+    font-size: 10px !important;
+    background-color: #a5acb0 !important;
+    color: #07354F !important;
+}
+
+.card-header-titulo-movil {
+    background-color: #a5acb0 !important;
+    color: #07354F !important;
+    font-size: 10px !important;
+}
+
+.car-body-title {
+    font-size: 10px;
+    font-weight: bold;
+    color: #282828;
+    text-align: left;
+}
+
+.car-body-descripcion {
+    font-size: 15px;
+    color: #282828;
+    text-align: left;
+}
+
+.card-movil {
+    height: 720px !important;
+}
+
+.descripcion {
+    font-size: 12;
+    color: #666666;
+    text-align: center;
+}
+
+.centrado {
+    text-align: -webkit-center
+}
+
+.div-left {
+    float: left;
+}
+
+.div-right {
+    float: right;
+}
+
+.width-movil {
+    width: 100%;
+}
+
+.btn-movil-buscar {
+    text-align: left;
+}
+
+.icon-redes {
+    background-color: #a5acb0;
+    color: #07354F;
+    border-radius: 50%;
+    border: 1x solid grey;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.select-movil {
+    font-size: 15px;
+    color: #282828;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #efefef !important;
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    color: #282828;
+    font-size: 12px;
+}
+
+.img-footter {
+    width: 50%;
+}
+
+.copyright {
+    color: #a5acb0 !important;
+    text-align: center !important;
+}
+
+.background-img-detalle {
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 13px;
+    width: 220px;
+    height: 600px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background: url(../img/Ruta_Marina/image-from-rawpixel-id-431944-jpeg.jpg);
+    background-size: cover;
+}
+
+.background-img-detalle {
+    width: 100%;
+}
+
+@media all and (min-width: 500px) and (max-width: 1000px) {
+    .background-img-detalle {
+        margin: 20px auto;
+        border-radius: 5px !important;
+        border: 1px solid #999;
+        padding: 13px;
+        width: auto;
+        height: 400px;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background: url(../img/Ruta_Marina/image-from-rawpixel-id-431944-jpeg.jpg);
+        background-size: cover;
+    }
+}
+
+.background-img-detalle {
+    width: 100%;
+}
+
+.font-color-black {
+    color: #282828;
+}
+
+.font-color-gris {
+    color: #a5acb0;
+}
+
+.font-color-red {
+    color: #C4122f;
+}
+
+.background-black {
+    background-color: #282828;
+}
+
+.background-gris {
+    background-color: #a5acb0;
+}
+
+.container-detalle {
+    background-color: #00000029;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 3%;
+}
+
+.container-detalle-titulo {
+    color: #282828;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container-detalle-subtitulo {
+    color: #282828;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.span-container-detalle {
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.costo {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.img-icon {
+    border-radius: 50%;
+    width: 5%;
+    color: #C4122f;
+    margin: 1rem;
+    padding: 1rem;
+    background: url(../img/Ruta_Marina/container.jpg);
+}
+
+.img-icon-text {
+    color: #C4122f;
+    margin: 1rem;
+    padding: 1rem;
+    margin-left: 47px;
+    margin-top: -62px;
+    font-weight: bold;
+}
+
+.img-icon-text:hover {
+    margin-top: -62px !important;
+    width: 100%;
+}
+
+.effect:hover {
+    border-radius: 2%;
+    width: 54%;
+    background: #ffffff;
+    box-shadow: 2px 2px 5px #999;
+    cursor: pointer;
+    margin-left: 3%;
+    font-size: 15px;
+    margin-bottom: 5%;
+    height: 66px;
+}
+
+.div-effect {
+    margin: 0rem;
+    padding: 0.5rem;
+}
+
+.opacidad {
+    opacity: 90% !important;
+}
+
+.div-line-time {
+    width: 10%;
+}
+
+.img-line-time {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.position-line-right {
+    margin-top: -61%;
+    margin-right: -12%;
+}
+
+.position-line-left {
+    margin-top: -66%;
+    margin-left: -78%;
+}
+
+.text-line-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.text-pais {
+    font-size: 11px;
+}
+
+.icon-ordenar {
+    margin-top: -26px;
+    margin-right: 5px;
+    color: #C4122f;
+}
+
+.container-line-naviera {
+    background-color: #00000024 !important;
+}
+
+.container-line-naviera:hover {
+    background-color: #dedfbf !important;
+    cursor: pointer;
+}
+
+.ordenar:hover {
+    cursor: pointer;
+}
+
+.div-botton {
+    width: 54%;
+    margin-left: 20%;
+    font-size: 15px;
+    margin-bottom: 5%;
+    height: 66px;
+}
+
+.div-botton:hover {
+    border-radius: 2%;
+    width: 38%;
+    background: #ffffff;
+    box-shadow: 2px 2px 5px #999;
+    cursor: pointer;
+    margin-left: 3%;
+    font-size: 15px;
+    margin-bottom: 5%;
+    height: 66px;
+}
+
+.icon-btn {
+    font-size: 25px;
+}
+
+.posicion {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.modal-title {
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
+.span-textarea {
+    font-size: 9px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.card-select-origen {
+    width: 32% !important;
+    height: 52% !important;
+    margin-left: 1% !important;
+    top: 74% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+}
+
+
+/* ====================================================================================== 
+ Fin de estilos de rutas marítimas
+====================================================================================== */
