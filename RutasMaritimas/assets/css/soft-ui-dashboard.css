@@ -4652,15 +4652,16 @@ fieldset:disabled .btn {
 }
 
 .navbar {
-    position: relative;
+    position: fixed;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
+    padding-top: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+	z-index:12!important;
 }
 
 .navbar>.container,
@@ -4677,8 +4678,8 @@ fieldset:disabled .btn {
 }
 
 .navbar-brand {
-    padding-top: 0.40625rem;
-    padding-bottom: 0.40625rem;
+    padding-top: 0rem;	
+    padding-bottom: 0rem;
     margin-right: 1rem;
     font-size: 1.125rem;
     white-space: nowrap;
@@ -5021,6 +5022,7 @@ fieldset:disabled .btn {
     background-clip: border-box;
     border: 0 solid rgba(0, 0, 0, 0.125);
     border-radius: 1rem;
+	z-index:11;
 }
 
 .card>hr {
@@ -19065,7 +19067,9 @@ hr.horizontal.gray-light {
 .sidenav {
     transition: all 0.2s ease-in-out;
 }
-
+.main-content{	
+	margin-top:0px!important;	
+}
 .sidenav {
     z-index: 990;
 }
@@ -22349,6 +22353,8 @@ pre[class*="language-"] {
 .token.entity {
     cursor: help;
 }
-
+.container-principal{	
+padding-top:4rem!important;	
+}
 
 /*# sourceMappingURL=dashboard-free.css.map */

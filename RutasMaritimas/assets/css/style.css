@@ -81,10 +81,34 @@ body {
     text-align: end;
 }
 
-.nav-img {
-    width: 20% !important;
+.nav-img {	
+	width: 15% !important;	
+}	
+@media (min-width: 400px) {	
+	.nav-img {	
+		width: 45% !important;	
+	}
+}	
+@media (min-width: 576px) {	
+	.nav-img {	
+		width: 35% !important;	
+	}	
+}	
+@media (min-width: 768px) {	
+	.nav-img {	
+		width: 22% !important;	
+	}	
+}	
+@media (min-width: 992px) {	
+	.nav-img {	
+		width: 20% !important;	
+	}	
+}	
+@media (min-width: 1200px) {	
+	.nav-img {	
+		width: 15% !important;	
+	}	
 }
-
 .img {
     width: 60%;
     text-align: center !important;
@@ -664,7 +688,9 @@ body {
     background-size: cover;
 }
 
-
+.container-menu-derecho{	
+	padding-right:0.5rem !important;
+}
 /* ====================================================================================== 
  Fin de estilos de rutas marítimas
 ====================================================================================== */
