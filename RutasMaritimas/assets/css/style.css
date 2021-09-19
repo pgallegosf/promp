@@ -410,7 +410,7 @@ body {
 }
 
 .font-color-red {
-    color: #C4122f;
+    color: #C4122f !important;
 }
 
 .background-black {
@@ -595,6 +595,73 @@ body {
     font-size: 12px;
     font-weight: bold;
     color: #282828;
+}
+
+.text-title-select-movil {
+    font-size: 12px;
+    text-align: center;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.select-cmb-paisContinente-movil {
+    background-color: #a5acb0;
+    opacity: 73%;
+}
+
+.bg-select-pais:hover {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    background-color: #c4122f66;
+    opacity: 73%;
+    cursor: pointer;
+}
+
+.sub-titulo-movil {
+    margin-left: -5%;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.img-embarcacion-movil {
+    margin: 10px auto;
+    padding: 13px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background: url(../img/Ruta_Marina/cameron-venti-1cqIcrWFQBI-unsplash.jpg);
+    background-size: cover;
+}
+
+.container-detalle-movil {
+    background-color: #0000000f;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 3%;
+    width: 90%;
+    margin-top: 22px;
+}
+
+.icon-movil {
+    margin-top: -8px !important;
+    width: 30px !important;
+    font-size: 32px !important;
+    color: #C4122f;
+}
+
+.icon-center {
+    text-align: left;
+    margin-left: 12%;
+}
+
+.icon-text {
+    text-align: left;
+    margin-left: -6%;
+}
+
+.background-img-detalle-movil {
+    height: 200px;
+    background: url(../img/Ruta_Marina/image-from-rawpixel-id-431944-jpeg.jpg);
+    background-size: cover;
 }
 
 
