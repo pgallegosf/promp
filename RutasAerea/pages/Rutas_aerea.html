@@ -296,6 +296,30 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="d-display" id="container-movil">
+                                    <div class="col-8 div-float-right width-movil">
+                                        <div class="card h-100">
+                                            <div class="card-header pb-0 p-3 card-header-movil">
+                                                <h6 class="mb-3">Ruta: Sudamerica - Asia</h6>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="col-12 div-left car-body-title">Tiempo de Viaje</div>
+                                                        <div class="col-4 div-left car-body-descripcion">3 días</div>
+                                                        <div class="col-4 div-left car-body-descripcion">1 hrs</div>
+                                                        <div class="col-4 div-left car-body-descripcion">24 min</div>
+                                                        <div class="col-12 div-left car-body-title">Nro. de escalas</div>
+                                                        <div class="col-12 div-left car-body-descripcion">2 escalas</div>
+                                                        <div class=" col-8 refresh div-left btn-movil-buscar mt-3" onclick="verDetalle()">
+                                                            <i class="fas fa-plus icon-refresh" aria-hidden="true"></i>Ver detalle
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -653,12 +677,34 @@
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-xs-12" onclick="mostrarSelectPuertoOrigen()">
                                         <label>Tipo de container</label>
-                                        <input type="text" class="form-control" id="tipContainer" value="Dry Van' 20"><i class="fas fa-angle-down icon-select" aria-hidden="true"></i>
+                                        <input type="text" class="form-control" id="tipContainer" value="120Kg"><i class="fas fa-angle-down icon-select" aria-hidden="true"></i>
                                     </div>
-                                    <div class="ordenar">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="effect" data-bs-toggle="modal" data-bs-target="#m-desgloseCostos">
+                                                <div class="avatar-group mt-2 div-effect">
+                                                    <div class="avatar avatar-xs rounded-circle">
+                                                        <img src="../assets/img/Ruta_Aerea/calculadora.png" alt="calculadora">
+                                                    </div>
+                                                    <div class="img-icon-text">Ver desglose de costos</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="effect" data-bs-toggle="modal" data-bs-target="#m-rangoTarifas">
+                                                <div class="avatar-group mt-2 div-effect">
+                                                    <div class="avatar avatar-xs rounded-circle">
+                                                        <img src="../assets/img/Ruta_Aerea/dollars.png" alt="dolares">
+                                                    </div>
+                                                    <div class="img-icon-text">Ver rangos de tarifas</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="ordenar">
                                         <div class="img-icon div-left"></div>
                                         <div class="div-left mt-3 font-color-red font-weight-bold col-7">Conoce los tipos de containers</div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -684,7 +730,7 @@
                                                                 <div>
                                                                     <img src="../assets/img/Ruta_Aerea/barco_ilustracion.png" class="avatar avatar-sm me-3" alt="xd">
                                                                     <div>
-                                                                        <div class="text-line-title font-color-black">Paita</div>
+                                                                        <div class="text-line-title font-color-black">Lima</div>
                                                                         <div class="text-pais font-color-black">Perú</div>
                                                                     </div>
                                                                 </div>
@@ -692,7 +738,7 @@
                                                         </td>
                                                         <td>
                                                             <div class="d-flex px-2 py-1">
-                                                                <div>7 días</div>
+                                                                <div>8 días</div>
                                                                 <div>--------</div>
                                                             </div>
                                                         </td>
@@ -700,29 +746,14 @@
                                                             <div class="d-flex px-2 py-1">
                                                                 <div class="div-left">
                                                                     <i class="fas fa-dot-circle" aria-hidden="true"></i>
-                                                                    <div class="text-line-title font-color-black">Manzanillo</div>
-                                                                    <div class="text-pais font-color-black">México</div>
+                                                                    <div class="text-line-title font-color-black">México DF</div>
+                                                                    <div class="text-pais font-color-black">MEX</div>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                         <td>
                                                             <div class="d-flex px-2 py-1">
-                                                                <div>4 días</div>
-                                                                <div>--------</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div class="div-left">
-                                                                    <i class="fas fa-dot-circle" aria-hidden="true"></i>
-                                                                    <div class="text-line-title font-color-black">Long Beach</div>
-                                                                    <div class="text-pais font-color-black">EE.UU.</div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div>3 días</div>
+                                                                <div>8 días</div>
                                                                 <div>--------</div>
                                                             </div>
                                                         </td>
@@ -731,13 +762,13 @@
                                                                 <div class="div-left">
                                                                     <i class="fas fa-dot-circle" aria-hidden="true"></i>
                                                                     <div class="text-line-title font-color-black">Los Ángeles</div>
-                                                                    <div class="text-pais font-color-black">EE.UU.</div>
+                                                                    <div class="text-pais font-color-black">LAX.</div>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                         <td>
                                                             <div class="d-flex px-2 py-1">
-                                                                <div>3 días</div>
+                                                                <div>8 días</div>
                                                                 <div>--------</div>
                                                             </div>
                                                         </td>
@@ -745,29 +776,14 @@
                                                             <div class="d-flex px-2 py-1">
                                                                 <div class="div-left">
                                                                     <i class="fas fa-dot-circle" aria-hidden="true"></i>
-                                                                    <div class="text-line-title font-color-black">Oakland</div>
-                                                                    <div class="text-pais font-color-black">EE.UU.</div>
+                                                                    <div class="text-line-title font-color-black">Tokio</div>
+                                                                    <div class="text-pais font-color-black">HND</div>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                         <td>
                                                             <div class="d-flex px-2 py-1">
-                                                                <div>5 días</div>
-                                                                <div>--------</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div class="div-left">
-                                                                    <i class="fas fa-dot-circle" aria-hidden="true"></i>
-                                                                    <div class="text-line-title font-color-black">Vancouver</div>
-                                                                    <div class="text-pais font-color-black">Canada</div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div>5 días</div>
+                                                                <div>8 días</div>
                                                                 <div>--------</div>
                                                             </div>
                                                         </td>
@@ -775,8 +791,8 @@
                                                             <div>
                                                                 <img src="../assets/img/Ruta_Aerea/contenedores_ilustracion.png" class="avatar avatar-sm me-3" alt="xd">
                                                                 <div>
-                                                                    <div class="text-line-title font-color-black">Seattle</div>
-                                                                    <div class="text-pais font-color-black">EE.UU</div>
+                                                                    <div class="text-line-title font-color-black">Pekín</div>
+                                                                    <div class="text-pais font-color-black">PEK</div>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -918,7 +934,7 @@
                             <div class="row">
                                 <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="true" aria-controls="mostrarDetalle-Evergreen">
                                     <div class="col-10 text-line-title font-color-black div-left">
-                                        Evergreen
+                                        Latam Cargo
                                     </div>
                                     <div class="col-2 text-line-title font-color-red div-left">
                                         <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
@@ -926,20 +942,14 @@
                                 </div>
                                 <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
                                     <div class="row">
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Días de tránsito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">26 días</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Agente</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">GREENANDES</div>
-                                        <div class="hr background-gris"></div>
                                         <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Depósito</div>
                                         <div class="col-12 div-left mt-2 font-color-black">TPP</div>
                                         <div class="hr background-gris"></div>
                                         <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Frecuencia de salida</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">Semanal</div>
+                                        <div class="col-12 div-left mt-2 font-color-black">Diaria</div>
                                         <div class="hr background-gris"></div>
                                         <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Sitio web</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">www.evergreen-line.com</div>
+                                        <div class="col-12 div-left mt-2 font-color-black">www.latamcargo.com</div>
                                     </div>
                                 </div>
                             </div>
@@ -958,20 +968,14 @@
                                 </div>
                                 <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Msc">
                                     <div class="row">
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Días de tránsito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">26 días</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Agente</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">MSC PERÚ</div>
-                                        <div class="hr background-gris"></div>
                                         <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Depósito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">Licsa</div>
+                                        <div class="col-12 div-left mt-2 font-color-black">Talma</div>
                                         <div class="hr background-gris"></div>
                                         <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Frecuencia de salida</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">Semanal</div>
+                                        <div class="col-12 div-left mt-2 font-color-black">Diaria</div>
                                         <div class="hr background-gris"></div>
                                         <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Sitio web</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">www.msc.com</div>
+                                        <div class="col-12 div-left mt-2 font-color-black">www.afkl.com</div>
                                     </div>
                                 </div>
                             </div>
@@ -990,52 +994,14 @@
                                 </div>
                                 <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Maersk">
                                     <div class="row">
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Días de tránsito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">26 días</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Agente</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">MAERSK PERÚ</div>
-                                        <div class="hr background-gris"></div>
                                         <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Depósito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">ALCONSA</div>
+                                        <div class="col-12 div-left mt-2 font-color-black">Talma</div>
                                         <div class="hr background-gris"></div>
                                         <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Frecuencia de salida</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">Semanal</div>
+                                        <div class="col-12 div-left mt-2 font-color-black">Diaria</div>
                                         <div class="hr background-gris"></div>
                                         <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Sitio web</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">www.maersk.com</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card div-centrado container-line-naviera">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Hamburgs" aria-expanded="true" aria-controls="mostrarDetalle-Hamburgs">
-                                    <div class="col-10 text-line-title font-color-black div-left">
-                                        Hamburg
-                                    </div>
-                                    <div class="col-2 text-line-title font-color-red div-left">
-                                        <i class="fas fa-chevron-right div-right"></i>
-                                    </div>
-                                </div>
-                                <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Hamburgs">
-                                    <div class="row">
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Días de tránsito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">26 días</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Agente</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">Cosmos</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Depósito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">LICSA</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Frecuencia de salida</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">Semanal</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Sitio web</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">www.hamburg-sud-line.com</div>
+                                        <div class="col-12 div-left mt-2 font-color-black">www.deltacargo.com/Cargo</div>
                                     </div>
                                 </div>
                             </div>
