@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Directorio Logístico
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS-Material Bootstrap para panel Tabs -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100" onload="cargarAjustes()">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                <a class="navbar-brand" href="javascript:window.location.reload(true)">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img">
+                </a>
+                <div class="icon-menu">
+                    <div class="d-none icon-menu">
+                        <i class="fas fa-user-plus"><label class="ocultar-movil">Unete al Directorio Logístico</label></i>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="far fa-bell"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div class="d-display" id="view-global">
+                <div class="text-center mt-3">
+                    <h5 class="titulo">Rutas terrestres</h5>
+                    <p class="descripcion mb-5">Conoce las principales rutas terrestres para tus exportaciones</p>
+                </div>
+                <div class="row mt-4 div-centrado">
+                    <div class="col-lg-12 mb-lg-0">
+                        <div class="card">
+                            <div class="busquedaNormal row px-2 p-5 overflow-hidden">
+                                <div class="col-lg-4 col-md-8 col-xs-12 col-sm-12">
+                                    <label for="selectServicio1">Punto origen</label>
+                                    <select class="controlSelect2 form-control" name="selectServicio1" id="selectServicio1">
+                                          <option value="1">Agente de aduanas</option>
+                                          <option value="2">Agente de carga</option>
+                                          <option value="3">Asesoría logística</option>
+                                        </select>
+                                </div>
+                                <div class="col-lg-4 col-md-8 col-xs-12 col-sm-12">
+                                    <label for="selectServicio1">Punto de llegada</label>
+                                    <select class="controlSelect2 form-control" name="selectServicio1" id="selectServicio1">
+                                          <option value="1">Agente de aduanas</option>
+                                          <option value="2">Agente de carga</option>
+                                          <option value="3">Asesoría logística</option>
+                                        </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                    <button class="btn btn-second" onclick="window.location.href='ListaDirectorioLogistico.html'">Mostrar rutas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row top ">
+                    <div class="card-header pb-0 background-img " id="bg-embarcacion ">
+                        <div class="row mt-5" id="rutasBuscadas">
+                            <div>
+                                <h6 class="cont-titulo">Rutas más buscadas</h6>
+                            </div>
+                            <div class="mt-2 col-lg-12 col-md-10 col-xs-6 col-sm-6 mt-2 texto-centrado">
+                                <span class="badge rounded-pill bg-secondary">Amazona - Paita</span>
+                                <span class="badge rounded-pill bg-secondary">Puno - Matarani</span>
+                                <span class="badge rounded-pill bg-secondary">Junin - Callao</span>
+                                <span class="badge rounded-pill bg-secondary">Loreto - Paita</span>
+                                <span class="badge rounded-pill bg-secondary">Puno - Matarani</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado ">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo ">Categoria de Servicios</div>
+
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 centrado ">
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 titulo-left ">Listado de operadores logístico</div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left ">
+                                Conoce los distintos operadores logísticos autorizados para transportar tu carga a nivel nacional e internaconal
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left " id="btn-rutas ">
+                                <button class="btn btn-second" onclick="mostrarListado()">Ver listado</button>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-4 centro ">
+                            <img src="../assets/img/Ruta_Marina/mapa de las rutas_ilustracion.png " alt="mapa_ruta " class="img ">
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4 ">
+                    <div class="col-lg-12 col-md-6 mb-md-0 mb-4 ">
+                        <div class="card ">
+                            <div class="card-body px-0 pb-2 ">
+                                <div class="row px-4 ">
+                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6 ">
+                                        <div>
+                                            <img src="../assets/img/Ruta_Marina/tiene alguna pregunta_ilustracion.png " alt="pregunta " class="width-movil ">
+                                        </div>
+                                        <h6 class="sub-titulo mt-6 ">¿Tienes alguna pregunta?</h6>
+                                        <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12 ">
+                                            <span class="font-weight-bold ">
+                                                    Si tienes una consulta particular sobre la herramienta escríbenos y resolveremos tu duda
+                                                </span>
+                                        </p>
+                                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro ">
+                                            <div class="btn btn-danger " data-bs-toggle="modal " data-bs-target="#m-informativo ">Escríbenos</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6 ">
+                                        <div>
+                                            <img src="../assets/img/Ruta_Marina/queremos saber tu opinion_ilustracion.png " alt="opinion " class="width-movil ">
+                                        </div>
+                                        <h6 class="sub-titulo mt-6 ">Queremos saber su opinión</h6>
+                                        <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12 ">
+                                            <span class="font-weight-bold ">
+                                                    PROMPERÚ se esfuerza constantemente por mejorar sus servicios. Si tienes sugerencias o comentarios completa el siguiente formulario.
+                                                </span>
+                                        </p>
+                                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro ">
+                                            <button class="btn btn-danger " data-bs-toggle="modal " data-bs-target="#m-opinion ">Dejar mi opinión</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left d-none" id="Listado">
+                <div class="col-12 titulo font-color-black">Lista de operadores logísticos autorizados</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab0" data-mdb-toggle="tab" data-mdb-target="#home0" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                Nacionales
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab0" data-mdb-toggle="tab" data-mdb-target="#profile0" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                Internacionales
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="myTabContent0">
+                    <div class="tab-pane fade show active" id="home0" role="tabpanel" aria-labelledby="home-tab0">
+                        <div class="col-12">
+                            <div class="col-6 div-left">
+                                Operadores para transporte nacional
+                                <div>10 operadores</div>
+                            </div>
+                            <div class="col-4 div-left text-right">
+                                <div class="col-4 div-left">
+                                    ordenar por:
+                                </div>
+                                <div class="col-2 div-left">
+                                    A - Z <i class="fas fa-angle-down icon-select" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 div-left">
+                            <div class="card div-centrado container-line-naviera">
+                                <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                Evergreen
+                                            </div>
+                                        </div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="col-6"></div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 div-left">
+                            <div class="card div-centrado container-line-naviera">
+                                <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                Evergreen
+                                            </div>
+                                        </div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="col-6"></div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 div-left">
+                            <div class="card div-centrado container-line-naviera">
+                                <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                Evergreen
+                                            </div>
+                                        </div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="col-6"></div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 div-left">
+                            <div class="card div-centrado container-line-naviera">
+                                <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                Evergreen
+                                            </div>
+                                        </div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="col-6"></div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 div-left">
+                            <div class="card div-centrado container-line-naviera">
+                                <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                Evergreen
+                                            </div>
+                                        </div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="col-6"></div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 div-left">
+                            <div class="card div-centrado container-line-naviera">
+                                <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                Evergreen
+                                            </div>
+                                        </div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="col-6"></div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 div-left">
+                            <div class="card div-centrado container-line-naviera">
+                                <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                Evergreen
+                                            </div>
+                                        </div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                        <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                            <div class="col-6"></div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 div-left">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled font-color-red">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-angle-left"></i></a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item font-color-red">
+                                        <a class="page-link" href="#"><i class="fas fa-angle-right"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile0" role="tabpanel" aria-labelledby="profile-tab0">
+                        <div class="tab-pane fade show active" id="home0" role="tabpanel" aria-labelledby="home-tab0">
+                            <div class="col-12">
+                                <div class="col-6 div-left">
+                                    Operadores para transporte internacional
+                                    <div>10 operadores</div>
+                                </div>
+                                <div class="col-4 div-left text-right">
+                                    <div class="col-4 div-left">
+                                        ordenar por:
+                                    </div>
+                                    <div class="col-2 div-left">
+                                        A - Z <i class="fas fa-angle-down icon-select" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled font-color-red">
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-angle-left"></i></a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item font-color-red">
+                                            <a class="page-link" href="#"><i class="fas fa-angle-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de vista principal -->
+            <footer class="footer pt-3 " id="footer ">
+                <div class="container-fluid ">
+                    <div id="footer-Desktop ">
+                        <div class="row align-items-center justify-content-center ">
+                            <div class="col-lg-12 mb-lg-0 mb-4 ">
+                                <div class="text-center ">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold ">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-3 ">
+                                <i class="fab fa-linkedin-in icon-redes "></i>
+                                <i class="fab fa-facebook icon-redes "></i>
+                                <i class="fab fa-twitter icon-redes "></i>
+                                <i class="fab fa-youtube icon-redes "></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-4 background-black "></div>
+                            <div class="row mt-3 ">
+                                <div class="col-3 mt-2 ">
+                                    <img src="../assets/img/logos/mincetur.png " alt="mincetur " class="img-footter ">
+                                </div>
+                                <div class="copyright col-6 ">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                                <div class="col-3 mt-n3 ">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png " alt="logo " class="img-footter div-right ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none " id="footer-Movil ">
+                        <div class="row align-items-center justify-content-center ">
+                            <div class="col-lg-12 mb-lg-0 mb-2 ">
+                                <div class="text-center ">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold ">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-2 ">
+                                <i class="fab fa-linkedin-in icon-redes "></i>
+                                <i class="fab fa-facebook icon-redes "></i>
+                                <i class="fab fa-twitter icon-redes "></i>
+                                <i class="fab fa-youtube icon-redes "></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-2 background-gris "></div>
+                            <div class="row mt-2 ">
+                                <div class="col-6 div-left ">
+                                    <img src="../assets/img/logos/mincetur.png " alt="mincetur " class="img-footter ">
+                                </div>
+                                <div class="col-6 div-left ">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png " alt="logo " class="img-footter div-right ">
+                                </div>
+                                <div class="copyright col-12 ">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <!-- Inicio de buscador de puerto de origen Vista Movil -->
+    <div id="busquedaPuertos " class="d-none ">
+        <div class="card shadow-lg card-movil ">
+            <div class="card-header pb-0 pt-3 ">
+                <div class="float-end refresh mt-3 " id="cerrar ">
+                    <i class="fas fa-times icon-refresh " aria-hidden="true " onclick="cerrarContainer() "></i>
+                </div>
+                <!-- End Toggle Button -->
+            </div>
+            <div class="card-body pt-sm-3 pt-0 ">
+                <div id="puertoOrigen-Movil ">
+                    <div>
+                        <label class="card-body-title "> Puerto de origen</label>
+                        <div>
+                            <input type="text " class="form-control " /><i class="fas fa-angle-down icon-select "></i>
+                        </div>
+                    </div>
+                    <div class="mt-5 ">
+                        <div class="select-movil mt-3 " value="1 " onclick="mostrarPaises(1) ">Callao, Lima</div>
+                        <div class="select-movil mt-3 " value="2 " onclick="mostrarPaises(2) ">Matarani, Arequipa</div>
+                        <div class="select-movil mt-3 " value="3 " onclick="mostrarPaises(3) ">Paita, Piura</div>
+                    </div>
+                </div>
+                <div id="PuertoDestino-movil " class="d-none ">
+                    <div class="col-lg-4 col-md-6 col-xs-12 position-relative ordenar " onclick="mostrarSelectPuertoDestino() ">
+                        <label>Puerto de destino</label>
+                        <input type="text " class="form-control " id="puertoDestino " value=" " /><i class="fas fa-angle-down icon-select "></i>
+                        <!-- <i class="fas fa-angle-down icon-select "></i> -->
+                    </div>
+                    <div id="select-destino-pais ">
+                        <div class="row card-contenido-select mt-4 ">
+                            <div class="col-12 text-line-title font-color-black ">Paises frecuentes:</div>
+                            <div class="col-7 div-left mt-3 ">
+                                <div class="font-weight-bold font-color-black bg-select-pais mt-2 " value="1 " onclick="mostrarPuertos(1) ">Estados Unidos</div>
+                                <div class="font-weight-bold font-color-black bg-select-pais mt-2 " value="2 " onclick="mostrarPuertos(2) ">Chile</div>
+                                <div class="font-weight-bold font-color-black bg-select-pais mt-2 " value="3 " onclick="mostrarPuertos(3) ">China</div>
+                                <div class="font-weight-bold font-color-black bg-select-pais mt-2 " value="4 " onclick="mostrarPuertos(4) ">Italia</div>
+                            </div>
+                            <div class="col-5 div-left mt-3 ">
+                                <div class="font-weight-bold font-color-black bg-select-pais mt-2 " value="5 " onclick="mostrarPuertos(5) ">España</div>
+                                <div class="font-weight-bold font-color-black bg-select-pais mt-2 " value="6 " onclick="mostrarPuertos(6) ">Francia</div>
+                                <div class="font-weight-bold font-color-black bg-select-pais mt-2 " value="7 " onclick="mostrarPuertos(7) ">Holanda</div>
+                                <div class="font-weight-bold font-color-black bg-select-pais mt-2 " value="8 " onclick="mostrarPuertos(8) ">México</div>
+                            </div>
+                            <div class="hr background-gris mt-5 "></div>
+                            <div class="col-12 text-line-title mt-4 ">Paises por continentes</div>
+                            <div class="row text-title-select-movil font-color-black ordenar mt-4 ">
+                                <div class="col-12 ">
+                                    <div class="col-2 div-left continente select-cmb-paisContinente-movil " id="America " value="01 " onclick="cambiarContinente(01) ">Ámerica</div>
+                                    <div class="col-2 div-left continente " id="Europa " value="02 " onclick="cambiarContinente(02) ">Europa</div>
+                                    <div class="col-2 div-left continente " id="Asia " value="03 " onclick="cambiarContinente(03) ">Asia</div>
+                                    <div class="col-2 div-left continente " id="Africa " value="04 " onclick="cambiarContinente(04) ">Africa</div>
+                                    <div class="col-2 div-left continente " id="Oceania " value="05 " onclick="cambiarContinente(05) ">Oceania</div>
+                                </div>
+                            </div>
+                            <div class="col-12 ">
+                                <div id="conAmerica ">
+                                    <div class="col-6 div-left mt-4 ">
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="01 " onclick="mostrarPuertos(01) ">Argentina</div>
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="02 " onclick="mostrarPuertos(02) ">Brasil</div>
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="03 " onclick="mostrarPuertos(03) ">Cánada</div>
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="04 " onclick="mostrarPuertos(04) ">Chile</div>
+                                    </div>
+                                    <div class="col-6 div-left mt-4 ">
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="05 " onclick="mostrarPuertos(05) ">Guatemala</div>
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="06 " onclick="mostrarPuertos(06) ">Homduras</div>
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="07 " onclick="mostrarPuertos(07) ">México</div>
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="08 " onclick="mostrarPuertos(08) ">Nicaragua</div>
+                                    </div>
+                                </div>
+                                <div class="d-none " id="conEuropa ">
+                                    <div class="col-6 div-left mt-4 ">
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="01 " onclick="mostrarPuertos(01) ">Alemania</div>
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="02 " onclick="mostrarPuertos(02) ">España</div>
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="03 " onclick="mostrarPuertos(03) ">Italia</div>
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="04 " onclick="mostrarPuertos(04) ">Irak</div>
+                                    </div>
+                                    <div class="col-6 div-left mt-4 ">
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="05 " onclick="mostrarPuertos(05) ">Noruega</div>
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="06 " onclick="mostrarPuertos(06) ">Polonia</div>
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="07 " onclick="mostrarPuertos(07) ">Reino Unido</div>
+                                        <div class="col-6 text-line-title font-color-black bg-select-pais " value="08 " onclick="mostrarPuertos(08) ">Suecia</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none " id="select-destino-ciudad ">
+                        <div class="row mt-4 ">
+                            <div class="col-2 div-left ordenar " id="retornarContinente " onclick="retornarContinente() ">
+                                <i class="fas fa-angle-left font-color-red "></i>
+                            </div>
+                            <div class="col-10 div-left sub-titulo-movil font-color-black font-weight-bold ">Puertos en Estados unidos</div>
+                        </div>
+                        <div class="col-6 div-left mt-3 ">
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="01 " onclick="obtenerDatosSeleccionados(01) ">Baltimore</div>
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="02 " onclick="obtenerDatosSeleccionados(02) ">Charleston</div>
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="03 " onclick="obtenerDatosSeleccionados(03) ">Honullu</div>
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="04 " onclick="obtenerDatosSeleccionados(04) ">Houston</div>
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="05 " onclick="obtenerDatosSeleccionados(05) ">Long Beach</div>
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="06 " onclick="obtenerDatosSeleccionados(06) ">Los Ángeles</div>
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="07 " onclick="obtenerDatosSeleccionados(07) ">Miami</div>
+                        </div>
+                        <div class="col-6 div-left mt-3 ">
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="08 " onclick="obtenerDatosSeleccionados(08) ">New Orleans</div>
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="09 " onclick="obtenerDatosSeleccionados(09) ">New York</div>
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="10 " onclick="obtenerDatosSeleccionados(10) ">Norflok</div>
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="11 " onclick="obtenerDatosSeleccionados(11) ">Oakland</div>
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="12 " onclick="obtenerDatosSeleccionados(12) ">Port Everglades</div>
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="13 " onclick="obtenerDatosSeleccionados(13) ">San Diego</div>
+                            <div class="font-weight-bold font-color-black text-pais bg-select-pais mt-2 " value="14 " onclick="obtenerDatosSeleccionados(14) ">Seattle</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de buscador de puerto de origen V-Movil -->
+    <!-- Inicio de modales -->
+    <!-- Inicio modal mapa -->
+    <div class="modal fade " id="m-mapa " tabindex="-1 " aria-labelledby="m-mapa " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-body ">
+                    <img src="../assets/img/Ruta_Marina/mapa_Paita a Seattle.png " alt="mapa " class="img ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal calificativo -->
+    <!-- Inicio modal Login -->
+    <div class="modal fade " id="m-login " tabindex="-1 " aria-labelledby="m-login " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLabel ">Para guardar debes iniciar sesión</h5>
+                    <a href="javascript:void(0) " class="btn-close " data-bs-dismiss="modal " aria-label="Close ">
+                        <i class="fas fa-times-circle "></i>
+                    </a>
+                </div>
+                <div class="modal-body ">
+                    <div>
+                        <label>Correo Electronico</label>
+                        <input type="text " class="form-control " placeholder="ejemplo@correo.com ">
+                    </div>
+                    <div>
+                        <label>Contraseña</label>
+                        <input type="password " class="form-control " placeholder="****** ">
+                    </div>
+                </div>
+                <div class="centrado ">
+                    <button class="btn btn-primary btn-second " type="button ">Ingresar</button>
+                </div>
+                <div class="centrado text-line-title font-color-red ordenar ">¿Olvidaste tu contraseña?</div>
+                <div class="modal-footer background-gris ">
+                    <div class="centrado text-line-title font-color-black col-12 ">¿Aún no tienes una cuenta?</div>
+                    <div class="centrado col-12 ">
+                        <button type="button " class="btn btn-outline-danger ">Regístrate Aquí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal login -->
+    <!-- Inicio modal correo -->
+    <div class="modal fade bd-example-modal-sm " id="m-correo " tabindex="-1 " role="dialog " aria-labelledby="m-correo " aria-hidden="true ">
+        <div class="modal-dialog modal-sm ">
+            <div class="modal-content ">
+                <div class="div-centrado ">
+                    <div class="centrado modal-title font-color-black ">Envíalo a tu correo</div>
+                    <div class="centrado ">
+                        <label class="font-color-black text-line-title ">Ingresa tu correo electrónico</label>
+                        <input type="text " class="form-control " placeholder="ejemplo@correo.com ">
+                    </div>
+                    <div class="centrado mt-3 ">
+                        <button class="btn btn-primary btn-second " type="button ">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal correo -->
+    <!-- Inicio modal compartir -->
+    <div class="modal fade bd-example-modal-sm " id="m-compartir " tabindex="-1 " role="dialog " aria-labelledby="m-compartir " aria-hidden="true ">
+        <div class="modal-dialog modal-sm ">
+            <div class="modal-content ">
+                <div class="div-centrado ">
+                    <div class="centrado modal-title font-color-black ">Comparte el resultado de tu simulación</div>
+                    <div class="mt-3 ">
+                        <div class=" col-6 centrado div-left font-color-red ordenar ">
+                            <i class="fab fa-whatsapp icon-btn "></i>
+                            <div class="text-line-title ">WhatsApp</div>
+                        </div>
+                        <div class=" col-6 centrado div-left font-color-red ordenar ">
+                            <i class="far fa-copy icon-btn "></i>
+                            <div class="text-line-title ">Copiar enlace</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal compartir -->
+    <!-- Inicio modal informativo -->
+    <div class="modal fade " id="m-informativo " tabindex="-1 " aria-labelledby="m-informativo " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLabel ">Indicanos tu consulta</h5>
+                    <a href="javascript:void(0) " class="btn-close " data-bs-dismiss="modal " aria-label="Close ">
+                        <i class="fas fa-times-circle "></i>
+                    </a>
+                </div>
+                <div class="modal-body ">
+                    <div class="col-6 div-left ">
+                        <label>Nombres</label>
+                        <input type="text " class="form-control ">
+                    </div>
+                    <div class="col-6 div-left ">
+                        <label>Apellidos</label>
+                        <input type="text " class="form-control ">
+                    </div>
+                    <div class="col-6 div-left ">
+                        <label>Correo electrónico</label>
+                        <input type="text " class="form-control " placeholder="ejemplo@correo.com ">
+                    </div>
+                    <div class="col-12 div-left ">
+                        <label>Escribe tu consulta</label>
+                        <textarea type="text " class="form-control "></textarea>
+                        <span class="span-textarea ">Máximo 189 cáracteres</span>
+                    </div>
+                    <div class="col-6 div-left mt-4 ">
+                        <button class="btn btn-primary btn-danger " type="button ">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal informativo -->
+    <!-- Inicio modal calificativo -->
+    <div class="modal fade " id="m-opinion " tabindex="-1 " aria-labelledby="m-opinion " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLabel ">Brindanos tu opinión</h5>
+                    <a href="javascript:void(0) " class="btn-close " data-bs-dismiss="modal " aria-label="Close ">
+                        <i class="fas fa-times-circle "></i>
+                    </a>
+                </div>
+                <div class="modal-body ">
+                    <div class="col-6 div-left ">
+                        <label>Nombres</label>
+                        <input type="text " class="form-control ">
+                    </div>
+                    <div class="col-6 div-left ">
+                        <label>Apellidos</label>
+                        <input type="text " class="form-control ">
+                    </div>
+                    <div class="col-6 div-left ">
+                        <label>Correo electrónico</label>
+                        <input type="text " class="form-control " placeholder="ejemplo@correo.com ">
+                    </div>
+                    <div class="col-12 div-left ">
+                        <label>Escribe tu mensaje</label>
+                        <textarea type="text " class="form-control "></textarea>
+                        <span class="span-textarea ">Máximo 189 cáracteres</span>
+                    </div>
+                    <div class="col-12 div-left mt-4 ">
+                        <div class="col-5 div-left ">Califica la herramienta</div>
+                        <div class="col-3 div-left ">
+                            <div class="div-left ordenar "><a href="javascript:void(0) "><i class="far fa-star "></i></a></div>
+                            <div class="div-left ordenar "><a href="javascript:void(0) "><i class="far fa-star "></i></a></div>
+                            <div class="div-left ordenar "><a href="javascript:void(0) "><i class="far fa-star "></i></a></div>
+                            <div class="div-left ordenar "><a href="javascript:void(0) "><i class="far fa-star "></i></a></div>
+                            <div class="div-left ordenar "><a href="javascript:void(0) "><i class="far fa-star "></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-8 div-left mt-4 ">
+                        <button class="btn btn-primary btn-danger " type="button ">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal calificativo -->
+    <!-- Fin de modales -->
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js "></script>
+    <script src="../assets/js/core/bootstrap.min.js "></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js "></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js "></script>
+    <script src="../assets/js/plugins/chartjs.min.js "></script>
+    <script src="../assets/js/jquery-3.6.0.min.js "></script>
+    <script src="../assets/js/select2/select2.min.js "></script>
+    <script src="../assets/js/general.js "></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3 "></script> -->
+    <!-- JS rutas maritimas -->
+    <script src="./js/directorio_logistico.js "></script>
+</body>
+
+</html>
