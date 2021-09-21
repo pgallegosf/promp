@@ -19,7 +19,7 @@
     <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
-	<link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
@@ -37,14 +37,14 @@
                         <i class="fas fa-user-plus"><label class="ocultar-movil">Unete al Directorio Logístico</label></i>
                     </div>
                     <div class="icon-menu">
-                        <a class="" href="#">	
-							<i class="far fa-bell"></i>	
-						</a>
+                        <a class="" href="#">
+                            <i class="far fa-bell"></i>
+                        </a>
                     </div>
                     <div class="icon-menu">
-                        <a class="" href="#">	
-							<i class="fas fa-bars" onclick="mostrarContainer()"></i>	
-						</a>
+                        <a class="" href="#">
+                            <i class="fas fa-bars" onclick="mostrarContainer()"></i>
+                        </a>
                     </div>
                 </div>
                 </button>
@@ -63,205 +63,205 @@
                         <div class="card paddingCardBusqueda">
                             <div class="busquedaNormal row px-2 p-5 overflow-hidden">
                                 <div class="col-lg-6 col-md-6 col-xs-12">
-									<label for="selectServicio1">¿Qué servicio estas buscando?</label>
-									<select class="controlSelect2 form-control" name="selectServicio1" id="selectServicio1">
+                                    <label for="selectServicio1">¿Qué servicio estas buscando?</label>
+                                    <select class="controlSelect2 form-control" name="selectServicio1" id="selectServicio1">
 									  <option value="1">Agente de aduanas</option>
 									  <option value="2">Agente de carga</option>
 									  <option value="3">Asesoría logística</option>
 									</select>
-								</div>
-								<div class="col-lg-3 col-md-3 col-xs-12 col-sm-6 mt-2">
-									<button class="btn btn-second btnwidth100" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
-								</div>
-								<div class="col-lg-3 col-md-3 col-xs-12">
-									<a href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral lineHeight50">
-										<i class="fas fa-caret-down"><label>&nbsp;Búsqueda avanzada</label></i>
-									</a>
-								</div>
-							</div>
-							<div  class="busquedaAvanzada row px-2 p-5 overflow-hidden sinPaddingBottom">
-								<div class="col-lg-12 col-md-12 col-xs-12">
-									<label for="selectServicio">¿Qué servicio estas buscando?</label>
-									<select class="controlSelect2 form-control" name="selectRegion" id="selectServicio">
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6 mt-2">
+                                    <button class="btn btn-second btnwidth100" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-xs-12">
+                                    <a href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral lineHeight50">
+                                        <i class="fas fa-caret-down"><label>&nbsp;Búsqueda avanzada</label></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="busquedaAvanzada row px-2 p-5 overflow-hidden sinPaddingBottom">
+                                <div class="col-lg-12 col-md-12 col-xs-12">
+                                    <label for="selectServicio">¿Qué servicio estas buscando?</label>
+                                    <select class="controlSelect2 form-control" name="selectRegion" id="selectServicio">
 									  <option value="1">Agente de aduanas</option>
 									  <option value="2">Agente de carga</option>
 									  <option value="3">Asesoría logística</option>
 									</select>
-								</div>
-								<div class="col-lg-6 col-md-6 col-xs-12 paddingControl">
-									<label for="selRubro">Rubro</label>
-									<select class="controlSelect2 form-control" name="selRubro" id="selRubro>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 paddingControl">
+                                    <label for="selRubro">Rubro</label>
+                                    <select class="controlSelect2 form-control" name="selRubro" id="selRubro">
 									  <option value="1">Rubro 1</option>
 									  <option value="2">Rubro 2</option>
 									  <option value="3">Rubro 3</option>
 									</select>
-								</div>
-								<div class="col-lg-6 col-md-6 col-xs-12 paddingControl">
-									<label for="selAnioExp">Años de experiencia</label>
-									<select class="controlSelect2 form-control" name="selAnioExp" id="selAnioExp">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 paddingControl">
+                                    <label for="selAnioExp">Años de experiencia</label>
+                                    <select class="controlSelect2 form-control" name="selAnioExp" id="selAnioExp">
 									  <option value="1">5</option>
 									  <option value="2">10</option>
 									  <option value="3">20</option>
 									</select>
-								</div>
-								<div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
-									<label for="selectRegion">Región</label>
-									<select class="controlSelect2 form-control" name="selectRegion" id="selectRegion">
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
+                                    <label for="selectRegion">Región</label>
+                                    <select class="controlSelect2 form-control" name="selectRegion" id="selectRegion">
 									  <option value="1">Ancash</option>
 									  <option value="2">Lima</option>
 									  <option value="3">Callao</option>
 									</select>
-								</div>
-								<div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
-									<label for="selectProvincia">Provincia</label>
-									<select class="controlSelect2 form-control" name="selectProvincia" id="selectProvincia">
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
+                                    <label for="selectProvincia">Provincia</label>
+                                    <select class="controlSelect2 form-control" name="selectProvincia" id="selectProvincia">
 									  <option value="1">Santa</option>
 									  <option value="2">Casta</option>
 									  <option value="3">Huarmey</option>
 									</select>
-								</div>
-								<div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
-									<label for="selectDistrito">Distrito</label>
-									<select class="controlSelect2 form-control" name="selectDistrito" id="selectDistrito">
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
+                                    <label for="selectDistrito">Distrito</label>
+                                    <select class="controlSelect2 form-control" name="selectDistrito" id="selectDistrito">
 									  <option value="1">Chimbote</option>
 									  <option value="2">Nuevo Chimbote</option>
 									  <option value="3">Casma</option>
 									</select>
-								</div>
-								<div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
-									<input class="input-checkbox" type="checkbox" name="genero" id="chkSucursal" checked>
-									<label for="chkSucursal" class="input-checkbox-lab">Con sucursales</label>
-								</div>
-								<div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
-									<input class="input-checkbox" type="checkbox" name="genero" id="chkCertificado" checked>
-									<label for="chkCertificado" class="input-checkbox-lab">Con certificaciones</label>
-								</div>	
-							</div>
-							<div class="busquedaAvanzada row px-2  overflow-hidden">
-								<div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
-									<button class="btn btn-second btnwidth100" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
-								</div>
-								<div class="col-lg-4 col-md-6 col-xs-12">
-									<a href="javascript:ocultarBusquedaAvanzada()" class="colorGeneral subrayado lineHeight50">
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
+                                    <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked>
+                                    <label for="chkSucursal" class="input-checkbox-lab">Con sucursales</label>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
+                                    <input class="input-checkbox" type="checkbox" name="chkCertificado" id="chkCertificado" checked>
+                                    <label for="chkCertificado" class="input-checkbox-lab">Con certificaciones</label>
+                                </div>
+                            </div>
+                            <div class="busquedaAvanzada row px-2  overflow-hidden">
+                                <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                    <button class="btn btn-second btnwidth100" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xs-12">
+                                    <a href="javascript:ocultarBusquedaAvanzada()" class="colorGeneral subrayado lineHeight50">
 										Cerrar búsqueda avanzada
 									</a>
-								</div>
-							</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-				<div class="row">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
-							<div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 titulo-left">
-								6 Empresas <label>encontradas para Agente de Aduanas</label>	
-							</div>
-							
-						</div>
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
-							<div class="row col-lg-10 col-md-12 col-sm-12 col-xs-12 mt-4 ">
-								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-									<label>Rubro</label>
-									<select class="select-inline form-control" name="selAnioExp" id="selectServicio1">
+
+                <div class="row">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
+                            <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 titulo-left">
+                                6 Empresas <label>encontradas para Agente de Aduanas</label>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
+                            <div class="row col-lg-10 col-md-12 col-sm-12 col-xs-12 mt-4 ">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                    <label>Rubro</label>
+                                    <select class="select-inline form-control" name="selAnioExp" id="selectServicio1">
 									  <option value="0">Todos</option>
 									  <option value="1">Rubro 1</option>
 									  <option value="2">Rubro 2</option>
 									  <option value="3">Rubro 3</option>
-									</select>	
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-									<label>Ubicación</label>
-									<select class="select-inline form-control" name="selAnioExp" id="selectServicio1">
+									</select>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                    <label>Ubicación</label>
+                                    <select class="select-inline form-control" name="selAnioExp" id="selectServicio1">
 									  <option value="0">Todos</option>
 									  <option value="1">Chimbote</option>
 									  <option value="2">Santa</option>
-									</select>	
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-									<label>Ordernar por</label>
-									<select class="select-inline form-control" name="selAnioExp" id="selectServicio1">
+									</select>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                    <label>Ordernar por</label>
+                                    <select class="select-inline form-control" name="selAnioExp" id="selectServicio1">
 									  <option value="1">A-Z</option>
 									  <option value="2">Z-A</option>
-									</select>	
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr size="5" />
-				<div class="row">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
-							<div class="row col-lg-10 col-md-12 col-sm-12 col-xs-12 mt-4 ">
-								<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 titulo-left">
-									Anteres Aduanas SAC <i class="fas fa-arrow-circle-right colorGeneral"></i>
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
-								
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-left">
-									<i class="fas fa-map-marker-alt"></i>Lima-Breña 
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-left">
-									<i class="fas fa-briefcase"></i>10 años de experiencia 
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
-								
-								</div>
-								<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left">
-									<p>Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
-								
-								</div>
-								<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 titulo-left">
-									Anteres Aduanas SAC <i class="fas fa-arrow-circle-right colorGeneral"></i>
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
-								
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-left">
-									<i class="fas fa-map-marker-alt"></i>Lima-Breña 
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-left">
-									<i class="fas fa-briefcase"></i>10 años de experiencia 
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
-								
-								</div>
-								<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left">
-									<p>Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
-								
-								</div>
-								<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 titulo-left">
-									Anteres Aduanas SAC <i class="fas fa-arrow-circle-right colorGeneral"></i>
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
-								
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-left">
-									<i class="fas fa-map-marker-alt"></i>Lima-Breña 
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-left">
-									<i class="fas fa-briefcase"></i>10 años de experiencia 
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
-								
-								</div>
-								<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left">
-									<p>Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
-								
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr size="5" />
+									</select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr size="5" />
+                <div class="row">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
+                            <div class="row col-lg-10 col-md-12 col-sm-12 col-xs-12 mt-4 ">
+                                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 titulo-left">
+                                    Anteres Aduanas SAC <i class="fas fa-arrow-circle-right colorGeneral"></i>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
+
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-left">
+                                    <i class="fas fa-map-marker-alt"></i>Lima-Breña
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-left">
+                                    <i class="fas fa-briefcase"></i>10 años de experiencia
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
+
+                                </div>
+                                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left">
+                                    <p>Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
+
+                                </div>
+                                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 titulo-left">
+                                    Anteres Aduanas SAC <i class="fas fa-arrow-circle-right colorGeneral"></i>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
+
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-left">
+                                    <i class="fas fa-map-marker-alt"></i>Lima-Breña
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-left">
+                                    <i class="fas fa-briefcase"></i>10 años de experiencia
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
+
+                                </div>
+                                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left">
+                                    <p>Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
+
+                                </div>
+                                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 titulo-left">
+                                    Anteres Aduanas SAC <i class="fas fa-arrow-circle-right colorGeneral"></i>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
+
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-left">
+                                    <i class="fas fa-map-marker-alt"></i>Lima-Breña
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-left">
+                                    <i class="fas fa-briefcase"></i>10 años de experiencia
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
+
+                                </div>
+                                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left">
+                                    <p>Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr size="5" />
                 <div class="row">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 centrado">
@@ -2381,8 +2381,8 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Para guardar debes iniciar sesión</h5>
                     <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-							<i class="fas fa-times-circle"></i>
-					</a>
+                        <i class="fas fa-times-circle"></i>
+                    </a>
                 </div>
                 <div class="modal-body">
                     <div>
@@ -2454,8 +2454,8 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Indicanos tu consulta</h5>
                     <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-							<i class="fas fa-times-circle"></i>
-					</a>
+                        <i class="fas fa-times-circle"></i>
+                    </a>
                 </div>
                 <div class="modal-body">
                     <div class="col-6 div-left">
@@ -2490,8 +2490,8 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Brindanos tu opinión</h5>
                     <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-							<i class="fas fa-times-circle"></i>
-					</a>
+                        <i class="fas fa-times-circle"></i>
+                    </a>
                 </div>
                 <div class="modal-body">
                     <div class="col-6 div-left">
@@ -2536,9 +2536,9 @@
     <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
     <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
     <script src="../assets/js/plugins/chartjs.min.js"></script>
-	<script src="../assets/js/jquery-3.6.0.min.js"></script>
-	<script src="../assets/js/select2/select2.min.js"></script>
-	<script src="../assets/js/general.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select2/select2.min.js"></script>
+    <script src="../assets/js/general.js"></script>
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
     <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
     <!-- JS rutas maritimas -->
