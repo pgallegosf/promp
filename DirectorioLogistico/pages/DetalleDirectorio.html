@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Directorio Logístico
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100" >
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                <div>
+                    <a href="ListaDirectorioLogistico.html" class="color-second font-size-20"><i class="fas fa-chevron-left"></i></a>
+                    
+                </div>
+                <a class="navbar-brand" href="DirectorioLogistico.html">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img">
+                </a>
+                <div class="icon-menu">
+                    <div class="icon-menu">
+                        <i class="fas fa-user-plus"><label class="ocultar-movil">Unete al Directorio Logístico</label></i>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="far fa-bell"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-bars" onclick="mostrarContainer()"></i>
+                        </a>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div class="d-display" id="view-global">
+                
+                <div class="row mt-4 margin-0">
+                    <div class="row col-xl-5 col-lg-5 col-md-12 col-sm-12 mb-lg-0  background-2-color fit-content">
+                        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 card padding-card  background-write fit-content">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo font-size-22">
+                                ANTARES ADUANAS
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 centro font-size-18">
+                                <label class="font-size-18">RUC: 20523301811</label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 centro font-size-15">
+                                <i class="fas fa-check-circle font-size-15 color-second"></i><label class="font-size-25">Verificado por PROMPERU</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-1 col-md-1 col-sm-6 col-xs-6 text-left">
+                                </div>
+                                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
+                                    <i class="fas fa-pager font-size-20 color-primary "></i>
+                                </div>
+                                <div class="col-xl-9 col-lg-10 col-md-9 col-sm-6 col-xs-6 text-left">
+                                    <label>www.antaresaduanas.com.pe</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                </div>
+                                <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                    <i class="far fa-envelope color-primary"></i>
+                                </div>
+                                <div class="col-xl-9 col-lg-10 col-md-6 col-sm-6 col-xs-6 text-left">
+                                    <label>comercial@antaresaduanas.com.pe</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                </div>
+                                <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                    <i class="fas fa-phone-alt color-primary"></i>
+                                </div>
+                                <div class="col-xl-8 col-lg-10 col-md-6 col-sm-6 col-xs-6 text-left">
+                                    <label>(01)6163900 / 94140939)</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                </div>
+                                <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                    <i class="fas fa-map-marker-alt color-primary"></i>
+                                </div>
+                                <div class="col-xl-8 col-lg-10 col-md-6 col-sm-6 col-xs-6 text-left">
+                                    <label>Av. Canaval y Moreyra N° 340 Piso 7 San Isidro - Lima</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo font-size-18">
+                                Guarda los datos de esta empresa
+                            </div>
+                            <div class="col-lg-12 font-color-red centrado mt-6">
+                                <div class="col-4 div-left ordenar" id="guardarFicha" data-bs-toggle="modal" data-bs-target="#m-login">
+                                    <i class="far fa-bookmark icon-btn"></i>
+                                    <div class="text-line-title">Guardar ficha</div>
+                                </div>
+                                <div class="col-4 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-correo">
+                                    <i class="far fa-envelope icon-btn"></i>
+                                    <div class="text-line-title">Enviar por correo</div>
+                                </div>
+                                <div class="col-4 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-compartir">
+                                    <i class="fas fa-share-alt icon-btn"></i>
+                                    <div class="text-line-title">Compartir</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 padding-card">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                            Acerca de la empresa
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                            Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                            Nacimos para brindar servicios de agenciamiento aduanero y ser los facilitadores entre la aduanas
+                            y los importadores / exportadores. Estamos orientados a la sistematización de procesos y manejo de
+                            la información, por lo que promovemos el enlace de nuestros sistemas con el cliente y éste pueda contar
+                            con la información en línea.
+                        </div>
+                        <div class="row"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                            Experiencia
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                            10 años
+                        </div>
+                        <div class="row"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                            Servicios que Brinda
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                            <p class="label-con-borde background-color-second inline">Agente de aduanas</p>
+                            <p class="label-con-borde background-color-second inline">Transporte terrestre carga nacional</p>
+                            <p class="label-con-borde background-color-second inline">Líneas navieras</p>
+                            <p class="label-con-borde background-color-second inline">Deposito Aduanero</p>
+                            <p class="label-con-borde background-color-second inline">Deposito Simple</p>
+                        </div>
+                        <div class="row"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                            Certificaciones
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                            <p class="label-con-borde background-color-second inline">OEA</p>
+                            <p class="label-con-borde background-color-second inline">BASC</p>
+                            
+                        </div>
+                        <div class="row"><br></div>
+                        <hr size="3" />
+                        <div class="row"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                            Productos transportados
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                            <p class="">• Alimenos - Café y cacao</p>
+                            <p class="">• Manufacturas - Acabados para la construcción</p>
+                        </div>
+                        <div class="row"><br></div>
+                        <hr size="3" />
+                        <div class="row"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                            Principales mercados
+                        </div>
+                        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                <p class="">• Sudamerica</p>
+                                <p class="">• Norteamérica</p>
+                                <p class="">• Unión Europea</p>
+                                <p class="">• Asia</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                <p class="">• Resto de Europa</p>
+                                <p class="">• Asia Oriental</p>
+                            </div>  
+                        </div>
+                        <div class="row"><br></div>
+                        <hr size="3" />
+                        <div class="row"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                            Sucursales nacionales
+                        </div>
+                        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                <p class="">Oficina Comercial:</p>
+                                <p class="helvetica-light">Av. Saenz Peña 284 OF. 401</p>
+                                <p class="helvetica-light">Callao</p>
+                                <p class="helvetica-light">Lima</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                <p class="">Contacto:</p>
+                                <p class="helvetica-light">Jorge Canales</p>
+                                <p class="helvetica-light">Supervisor</p>
+                                <p class="subrayado helvetica-light">jnales@antaresaduanas.de</p>
+                            </div>
+                        </div>
+                        <div class="row"><br></div>
+                        <hr size="3" />
+                        <div class="row"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                            Sucursales Internacionales
+                        </div>
+                        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                <p class="">Oficina Comercial:</p>
+                                <p class="helvetica-light">Willi-Brandt-Str. 59-65, 20457</p>
+                                <p class="helvetica-light">Hamburgo</p>
+                                <p class="helvetica-light">Alemania</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                <p class="">Contacto:</p>
+                                <p class="helvetica-light">Jorge Canales</p>
+                                <p class="helvetica-light">Supervisor</p>
+                                <p class="subrayado helvetica-light">jnales@antaresaduanas.de</p>
+                            </div>
+                        </div>
+                        <div class="row"><br></div>
+                        <hr size="3" />
+                        <div class="row"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                            Clientes principales
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                            <p class="">• Corpeco</p>
+                            <p class="">• Latam</p>
+                            <p class="">• Farmacias Sucre</p>
+                            <p class="">• Fondo Editorial PUCP</p>
+                        </div>
+                        <div class="row"><br></div>
+                        <hr size="3" />
+                        <div class="row"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                            Personas de contacto
+                        </div>
+                        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                <p class="">Jorge Canales</p>
+                                <p class="helvetica-light">Gerente</p>
+                                <p class="subrayado helvetica-light">jnales@antaresaduanas.de</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                <p class="">Pedro Alvarez</p>
+                                <p class="helvetica-light">Supervisor</p>
+                                <p class="subrayado helvetica-light">jnales@antaresaduanas.de</p>
+                            </div>
+                        </div>
+                        <div class="row"><br></div>
+                        <hr size="3" />
+                        <div class="row"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                            Redes sociales
+                        </div>
+                        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+                            <div class="col-lg-1 col-md-3 col-sm-4 col-xs-12 text-left color-second">
+                                <a class="btn btn-facebook btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
+                                    <i class="fab fa-facebook fa-lg font-size-30" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="col-lg-1 col-md-3 col-sm-4 col-xs-12 text-left color-second">
+                                <a class="btn btn-linkedin btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
+                                    <i class="fab fa-linkedin-in font-size-30 i-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row"><br></div>
+                        <hr size="3" />
+                        <div class="row"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                            Calificación del servicio por los usuarios
+                        </div>
+                        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+                            <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 text-left color-second">
+                                <p class="font-size-50 margin-bottom-0">4,4</p>
+                                <div class="col-lg-6 div-left">
+                                    <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star font-size-20"></i></a></div>
+                                    <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star font-size-20"></i></a></div>
+                                    <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star font-size-20"></i></a></div>
+                                    <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star font-size-20"></i></a></div>
+                                    <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star font-size-20"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                <div><p class="helvetica-light inline">5</p><p class="label-con-borde background-color-second label-con-borde-valoracion inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+                                <div><p class="helvetica-light inline">4</p><p class="label-con-borde background-color-second label-con-borde-valoracion inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+                                <div><p class="helvetica-light inline">3</p><p class="label-con-borde background-color-second label-con-borde-valoracion inline">&nbsp;&nbsp;</p></div>
+                                <div><p class="helvetica-light inline">2</p><p class="label-con-borde background-color-second label-con-borde-valoracion inline">&nbsp;</p></div>
+                                <div><p class="helvetica-light inline">1</p><p class="label-con-borde background-color-second label-con-borde-valoracion inline">&nbsp;</p></div>
+                                
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                <p class="helvetica-light inline">¿Deseas calificar el servicio de la empresa?</p><a href='javascript:void(0)' id="btnValorar" data-bs-toggle="modal" data-bs-target="#m-login"><p class="subrayado helvetica-light inline">Inicie Sesión</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <hr size="5" />
+                
+                
+            </div>
+            <!-- Fin de vista principal -->
+            <!-- Inicio de vista resultado de busqueda de rutas desktop -->
+            
+            <!-- Fin de vista resultado de busqueda de rutas desktop -->
+            <!-- Inicio vista ver detalle de busqueda de ruta desktop -->
+            
+            <!-- Fin vista ver detalle de busqueda de ruta desktop-->
+            <!-- Inicio vista ver detalle de busqueda de ruta movil -->
+            
+            <!-- Fin vista ver detalle de busqueda de ruta movil-->
+            <footer class="footer pt-3" id="footer">
+                <div class="container-fluid">
+                    <div id="footer-Desktop">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-12 mb-lg-0 mb-4">
+                                <div class="text-center">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-3">
+                                <i class="fab fa-linkedin-in icon-redes"></i>
+                                <i class="fab fa-facebook icon-redes"></i>
+                                <i class="fab fa-twitter icon-redes"></i>
+                                <i class="fab fa-youtube icon-redes"></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-4 background-black"></div>
+                            <div class="row mt-3">
+                                <div class="col-3 mt-2">
+                                    <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
+                                </div>
+                                <div class="copyright col-6">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                                <div class="col-3 mt-n3">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none" id="footer-Movil">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-12 mb-lg-0 mb-2">
+                                <div class="text-center">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-2">
+                                <i class="fab fa-linkedin-in icon-redes"></i>
+                                <i class="fab fa-facebook icon-redes"></i>
+                                <i class="fab fa-twitter icon-redes"></i>
+                                <i class="fab fa-youtube icon-redes"></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-2 background-gris"></div>
+                            <div class="row mt-2">
+                                <div class="col-6 div-left">
+                                    <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
+                                </div>
+                                <div class="col-6 div-left">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                                </div>
+                                <div class="copyright col-12">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <!-- Inicio de buscador de puerto de origen Vista Movil -->
+    
+    <!-- Fin de buscador de puerto de origen V-Movil -->
+    <!-- Inicio de modales -->
+    <!-- Inicio modal mapa -->
+    
+    <!-- Fin modal calificativo -->
+    <!-- Inicio modal Login -->
+    <div class="modal fade" id="m-login" tabindex="-1" aria-labelledby="m-login" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header display-block">
+                    <h5 class="modal-title centro" id="tituloModalLogin">Para guardar debes iniciar sesión</h5>
+                    <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times-circle"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label>Correo Electronico</label>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div>
+                        <label>Contraseña</label>
+                        <input type="password" class="form-control" placeholder="******">
+                    </div>
+                </div>
+                <div class="centrado">
+                    <button class="btn btn-primary btn-second" type="button">Ingresar</button>
+                </div>
+                <div class="centrado text-line-title font-color-red ordenar">¿Olvidaste tu contraseña?</div>
+                <div class="modal-footer background-second-light">
+                    <div class="centrado text-line-title font-color-black col-12">¿Aún no tienes una cuenta?</div>
+                    <div class="centrado col-12">
+                        <button type="button" class="btn btn-outline-danger">Regístrate Aquí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal login -->
+    <!-- Inicio modal correo -->
+    <div class="modal fade bd-example-modal-sm" id="m-correo" tabindex="-1" role="dialog" aria-labelledby="m-correo" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="div-centrado">
+                    <div class="centrado modal-title font-color-black">Envíalo a tu correo</div>
+                    <div class="centrado">
+                        <label class="font-color-black text-line-title">Ingresa tu correo electrónico</label>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="centrado mt-3">
+                        <button class="btn btn-primary btn-second" type="button">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal correo -->
+    <!-- Inicio modal compartir -->
+    <div class="modal fade bd-example-modal-sm" id="m-compartir" tabindex="-1" role="dialog" aria-labelledby="m-compartir" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="div-centrado">
+                    <div class="centrado modal-title font-color-black">Comparte el resultado de tu simulación</div>
+                    <div class="mt-3">
+                        <div class=" col-6 centrado div-left font-color-red ordenar">
+                            <i class="fab fa-whatsapp icon-btn"></i>
+                            <div class="text-line-title">WhatsApp</div>
+                        </div>
+                        <div class=" col-6 centrado div-left font-color-red ordenar">
+                            <i class="far fa-copy icon-btn"></i>
+                            <div class="text-line-title">Copiar enlace</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal compartir -->
+    <!-- Inicio modal informativo -->
+    <div class="modal fade" id="m-informativo" tabindex="-1" aria-labelledby="m-informativo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Indicanos tu consulta</h5>
+                    <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times-circle"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="col-6 div-left">
+                        <label>Nombres</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label>Apellidos</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label>Correo electrónico</label>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="col-12 div-left">
+                        <label>Escribe tu consulta</label>
+                        <textarea type="text" class="form-control"></textarea>
+                        <span class="span-textarea">Máximo 189 cáracteres</span>
+                    </div>
+                    <div class="col-6 div-left mt-4">
+                        <button class="btn btn-primary btn-danger" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal informativo -->
+    <!-- Inicio modal calificativo -->
+    <div class="modal fade" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Brindanos tu opinión</h5>
+                    <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times-circle"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="col-6 div-left">
+                        <label>Nombres</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label>Apellidos</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label>Correo electrónico</label>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="col-12 div-left">
+                        <label>Escribe tu mensaje</label>
+                        <textarea type="text" class="form-control"></textarea>
+                        <span class="span-textarea">Máximo 189 cáracteres</span>
+                    </div>
+                    <div class="col-12 div-left mt-4">
+                        <div class="col-5 div-left">Califica la herramienta</div>
+                        <div class="col-3 div-left">
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-8 div-left mt-4">
+                        <button class="btn btn-primary btn-danger" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal calificativo -->
+    <!-- Fin de modales -->
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select2/select2.min.js"></script>
+    <script src="../assets/js/general.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
+    <!-- JS rutas maritimas -->
+</body>
+
+</html>

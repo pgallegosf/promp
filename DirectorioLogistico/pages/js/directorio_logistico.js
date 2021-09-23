@@ -231,6 +231,26 @@ $(document).ready(function() {
 
         $('#txtNombre').focus();
     })*/
+
+    $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1
+      });
+    
+      $(".regular-4").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      });
+      $(".regular-3").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      });
 });
 
 function mostrarBusquedaAvanzada(){
