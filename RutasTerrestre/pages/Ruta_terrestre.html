@@ -1,0 +1,2274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Directorio Logístico
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS-Material Bootstrap para panel Tabs -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100" onload="cargarAjustes()">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                <!-- <i class="fas fa-angle-left" aria-hidden="true"></i> -->
+                <a class="navbar-brand" href="javascript:window.location.reload(true)">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img">
+                </a>
+                <div class="icon-menu">
+                    <div class="d-none icon-menu">
+                        <i class="fas fa-user-plus"><label class="ocultar-movil">Unete al Directorio Logístico</label></i>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="far fa-bell"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div class="d-display" id="view-global">
+                <div class="text-center mt-3">
+                    <h5 class="titulo">Rutas terrestres</h5>
+                    <p class="descripcion mb-5">Conoce las principales rutas terrestres para tus exportaciones</p>
+                </div>
+                <div class="row mt-4 div-centrado">
+                    <div class="col-lg-12 mb-lg-0">
+                        <div class="card">
+                            <div class="row px-2 p-5 overflow-hidden">
+                                <div class="col-lg-4 col-md-6 col-xs-12">
+                                    <label>Punto de origen</label>
+                                    <input type="text" class="form-control" id="RTptoOrigen" value="" placeholder="Selecciona" onclick="ViewSelectPtoOrigen()">
+                                    <div class="d-none" id="view-pto-origen">
+                                        <div class="card p-3 col-lg-4 col-md-4 col-xs-12 col-sm-12 card-select d-display mt-1 d-display">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Abancay</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Amazonas</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Arequipa</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Ayacucho</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Cajamarca</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Casma
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Chiclayo</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Cusco</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Huánuco</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Huancayo</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Huancavelica</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Ica</div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Junín</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Lambayeque</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Pasco</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Piura</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Pucallpa</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Pto Maldonado</div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Puno</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Tacna</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Tarapoto</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Trujillo</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectCiudad()">Tumbes</div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xs-12">
+                                    <label>Punto de llegada</label>
+                                    <input type="text" class="form-control" id="RTptoDestino" value="" placeholder="Selecciona" onclick="ViewSelectPtoDestino()">
+                                    <div class="d-none" id="view-pto-destino">
+                                        <div class="card p-3 col-lg-4 col-md-4 col-xs-12 col-sm-12 card-select mt-1">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 mt-2">Puertos del Perú</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectPuertos()">Callo</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectPuertos()">Matarani</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectPuertos()">Paita</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectPuertos()">Pisco</div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-xs-12 col-sm-12">
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 mt-2">Puertos en el extranjero</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectPuertos()">Arica - Chile</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectPuertos()">Huaquillas - Ecuador</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectPuertos()">Río Branco - Basil</div>
+                                                    <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="selectPuertos()">Desaguadero - Bolivia</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                    <button class="btn btn-second" onclick="mostrarRutas()">Mostrar rutas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row top">
+                    <div class="card-header pb-0 background-img" id="bg-embarcacion">
+                        <div class="row mt-5" id="rutasBuscadas">
+                            <div>
+                                <h6 class="cont-titulo">Rutas más buscadas</h6>
+                            </div>
+                            <div class="mt-2 col-lg-12 col-md-8 col-xs-12 col-sm-12 mt-2 texto-centrado">
+                                <span class="badge rounded-pill bg-secondary">Piura - Callao</span>
+                                <span class="badge rounded-pill bg-secondary">Puno - Matarani</span>
+                                <span class="badge rounded-pill bg-secondary">Junin - Callao</span>
+                                <span class="badge rounded-pill bg-secondary">Loreto - Paita</span>
+                                <span class="badge rounded-pill bg-secondary">Puno - Matarani</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado ">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo ">Categoria de Servicios</div>
+
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 centrado ">
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 titulo-left ">Listado de operadores logístico</div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left ">
+                                Conoce los distintos operadores logísticos autorizados para transportar tu carga a nivel nacional e internaconal
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left " id="btn-rutas ">
+                                <button class="btn btn-second" onclick="mostrarListado()">Ver listado</button>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-4 centro ">
+                            <img src="../assets/img/Ruta_Terrestre/2b.jpg" alt="mapa_ruta " class="img ">
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 centrado ">
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 titulo-left ">Mapa de rutas</div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left font-color-black">
+                                Descubre las principales rutas del Perú a los principales puertos nacionales e internacionales
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
+                                <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
+                                    <div class="col-lg-8 col-md-6 col-xs-12">
+                                        <label>Punto de origen</label>
+                                        <input type="text" class="form-control" id="RTptoOrigen-mapa" value="" placeholder="Selecciona" onclick="ViewSelectPtoOrigen()">
+                                        <div class="d-none" id="view-pto-origen-mapa">
+                                            <div class="card p-3 col-lg-4 col-md-4 col-xs-12 col-sm-12 card-select mt-1">
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Abancay</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Amazonas</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Arequipa</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Ayacucho</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Cajamarca</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Casma
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Chiclayo</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Cusco</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Huánuco</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Huancayo</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Huancavelica</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Ica</div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Junín</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Lambayeque</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Pasco</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Piura</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Pucallpa</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Pto Maldonado</div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Puno</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Tacna</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Tarapoto</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Trujillo</div>
+                                                        <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="ciudadOrigen()">Tumbes</div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
+                                        <div class="col-lg-12 col-md-6 col-xs-12">
+                                            <label>Punto de llegada</label>
+                                            <input type="text" class="form-control" id="RTptoDestino-mapa" value="" onkeypress="CerrarVentana()" placeholder="Selecciona" onclick="ViewSelectPtoDestinoMapa()">
+                                            <div class="d-none" id="view-pto-destino-mapa">
+                                                <div class="card p-3 col-lg-4 col-md-4 col-xs-12 col-sm-12 card-select mt-1">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
+                                                            <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 mt-2">Puertos del Perú</div>
+                                                            <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="mostrarPuertos(1)">Callo</div>
+                                                            <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="mostrarPuertos(2)">Matarani</div>
+                                                            <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="mostrarPuertos(3)">Paita</div>
+                                                            <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="mostrarPuertos(4)">Pisco</div>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-xs-12 col-sm-12">
+                                                            <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 mt-2">Puertos en el extranjero</div>
+                                                            <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="mostrarPuertos(5)">Arica - Chile</div>
+                                                            <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="mostrarPuertos(6)">Huaquillas - Ecuador</div>
+                                                            <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="mostrarPuertos(7)">Río Branco - Basil</div>
+                                                            <div class="col-lg-12 col-md-8 col-xs-12 col-sm-12 div-left mt-2 px-2 ordenar option-select" onclick="mostrarPuertos(8)">Desaguadero - Bolivia</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-4 centro ">
+                            <img src="../assets/img/Ruta_Terrestre/3a.jpg" alt="mapa_ruta " class="img" id="img-a">
+                            <img src="../assets/img/Ruta_Terrestre/mapa_b.jpg" alt="mapa_ruta " class="img d-none" id="img-b">
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4 ">
+                    <div class="col-lg-12 col-md-6 mb-md-0 mb-4 ">
+                        <div class="card ">
+                            <div class="card-body px-0 pb-2 ">
+                                <div class="row px-4 ">
+                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6 ">
+                                        <div>
+                                            <img src="../assets/img/Ruta_Terrestre/tiene alguna pregunta_ilustracion.png " alt="pregunta " class="width-movil ">
+                                        </div>
+                                        <h6 class="sub-titulo mt-6 ">¿Tienes alguna pregunta?</h6>
+                                        <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12 ">
+                                            <span class="font-weight-bold ">
+                                                    Si tienes una consulta particular sobre la herramienta escríbenos y resolveremos tu duda
+                                                </span>
+                                        </p>
+                                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro ">
+                                            <div class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-informativo">Escríbenos</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6 ">
+                                        <div id="opinion-herramienta">
+                                            <div>
+                                                <img src="../assets/img/Ruta_Terrestre/queremos saber tu opinion_ilustracion.png" alt="opinion " class="width-movil ">
+                                            </div>
+                                            <h6 class="sub-titulo mt-6 ">Queremos saber su opinión</h6>
+                                            <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12 ">
+                                                <span class="font-weight-bold ">
+                                                        PROMPERÚ se esfuerza por mejorar sus servicios. Si tienes sugerencias o comentarios completa el siguiente formulario.
+                                                    </span>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro ">
+                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-opinion">Dejar mi opinión</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tabs -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left d-none" id="Listado">
+                <div class="col-12 titulo font-color-black">Lista de operadores logísticos autorizados</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-6">
+                    <ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist">
+                        <li class="nav-item cambio-Tab" role="presentation">
+                            <a class="nav-link active font-color-white" id="ex3-tab-1" data-mdb-toggle="tab" href="#ex3-tabs-1" role="tab" aria-controls="ex3-tabs-1" aria-selected="true">NACIONALES</a>
+                        </li>
+                        <li class="nav-item cambio-Tab" role="presentation">
+                            <a class="nav-link font-color-white" id="ex3-tab-2" data-mdb-toggle="tab" href="#ex3-tabs-2" role="tab" aria-controls="ex3-tabs-2" aria-selected="false">INTERNACIONALES</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="ex2-content">
+                    <div class="tab-pane fade show active" id="ex3-tabs-1" role="tabpanel" aria-labelledby="ex3-tab-1">
+                        <div class="tab-pane fade margin-left show active" id="home0" role="tabpanel" aria-labelledby="home-tab0">
+                            <div class="col-12">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left sub-titulo text-left">
+                                    Operadores para transporte nacional
+                                    <!-- <div class="hr background-gris col-8"></div> -->
+                                    <div class="sub-titulo-desktop">10 operadores</div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left text-right">
+                                    <div class="col-lg-10 col-md-8 col-sm-12 col-xs-12 div-left">
+                                        ordenar por:
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                        <div class="div-left"> A - Z </div>
+                                        <div class="div-left">
+                                            <i class="fas fa-angle-down icon-ordenar" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Evergreen
+                                                </div>
+                                            </div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Días de tránsito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Agente</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Depósito</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Frecuencia de salida</div>
+                                            <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="col-6"></div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">26 días</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">GREENANDES</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">TPP</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Semanal</div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled font-color-red">
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-angle-left" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item font-color-red">
+                                            <a class="page-link" href="#"><i class="fas fa-angle-right" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade active show" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
+                        <div class="col-12">
+                            <div class="col-lg-12 col-md-10 col-sm-12 col-xs-12 div-left sub-titulo text-left">
+                                Operadores para transporte internacional
+                                <div class="sub-titulo-desktop">10 operadores</div>
+                            </div>
+                            <div class="hr background-gris col-12 div-left mt-4"></div>
+                            <div class="mt-3">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left text-left text-line-title">Paises de destino:</div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left text-right">
+                                    <div class="col-lg-10 col-md-8 col-sm-12 col-xs-12 div-left">
+                                        ordenar por:
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                        <div class="div-left"> A - Z </div>
+                                        <div class="div-left">
+                                            <i class="fas fa-angle-down icon-ordenar" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-lg-2 col-md-6 col-xs-12 div-left">
+                                <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked="">
+                                <label for="chkSucursal" class="input-checkbox-lab">Argentina</label>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-xs-12 div-left">
+                                <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked="">
+                                <label for="chkSucursal" class="input-checkbox-lab">Bolivia</label>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-xs-12 div-left">
+                                <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked="">
+                                <label for="chkSucursal" class="input-checkbox-lab">Brasil</label>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-xs-12 div-left">
+                                <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked="">
+                                <label for="chkSucursal" class="input-checkbox-lab">Chile</label>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-xs-12 div-left">
+                                <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked="">
+                                <label for="chkSucursal" class="input-checkbox-lab">Colombia</label>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-xs-12 div-left">
+                                <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked="">
+                                <label for="chkSucursal" class="input-checkbox-lab">Ecuador</label>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-xs-12 div-left">
+                                <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked="">
+                                <label for="chkSucursal" class="input-checkbox-lab">Paraguay</label>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-xs-12 div-left">
+                                <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked="">
+                                <label for="chkSucursal" class="input-checkbox-lab">Venezuela</label>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-xs-12 div-left">
+                                <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked="">
+                                <label for="chkSucursal" class="input-checkbox-lab">Uruguay</label>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-10 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Empresa de Transporte Brenda SAC
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Países/países donde se realiza el servicio
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Dirección
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Mz K, lto 21 B, Parque Industrial Tacna
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Correo electrónico
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        comercial@cltsac.com
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Persona de contacto
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Sadith Karin Salcedo Jimenez
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-10 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Empresa de Transportes Alipio Montenegro EIRL
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Países/países donde se realiza el servicio
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Dirección
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Mz K, lto 21 B, Parque Industrial Tacna
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Correo electrónico
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        comercial@cltsac.com
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Persona de contacto
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Sadith Karin Salcedo Jimenez
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-10 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Empresa de Transporte Brenda SAC
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Países/países donde se realiza el servicio
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Dirección
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Mz K, lto 21 B, Parque Industrial Tacna
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Correo electrónico
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        comercial@cltsac.com
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Persona de contacto
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Sadith Karin Salcedo Jimenez
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-10 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Empresa de Transportes y Servicios Zeus SCRL
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Países/países donde se realiza el servicio
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Dirección
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Mz K, lto 21 B, Parque Industrial Tacna
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Correo electrónico
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        comercial@cltsac.com
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Persona de contacto
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Sadith Karin Salcedo Jimenez
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-10 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Servicios Múltiples San Gerónimo SCRL
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Países/países donde se realiza el servicio
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Dirección
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Mz K, lto 21 B, Parque Industrial Tacna
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Correo electrónico
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        comercial@cltsac.com
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Persona de contacto
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Sadith Karin Salcedo Jimenez
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-10 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Empresa de Transportes Brenda SAC
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Países/países donde se realiza el servicio
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Dirección
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Mz K, lto 21 B, Parque Industrial Tacna
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Correo electrónico
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        comercial@cltsac.com
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Persona de contacto
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Sadith Karin Salcedo Jimenez
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-left">
+                                <div class="card div-centrado container-line-naviera">
+                                    <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-10 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    Empresa de Transportes Brenda SAC
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Países/países donde se realiza el servicio
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                        <div class="col-4 div-left font-color-gris">Ecuador</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Dirección
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Mz K, lto 21 B, Parque Industrial Tacna
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Correo electrónico
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        comercial@cltsac.com
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 div-left">
+                                                <div class="text-line-title font-color-black col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                    <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 div-left">
+                                                        Persona de contacto
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left font-color-gris">
+                                                        Sadith Karin Salcedo Jimenez
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 div-left">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled font-color-red">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-angle-left" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item font-color-red">
+                                        <a class="page-link" href="#"><i class="fas fa-angle-right" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin tabs -->
+
+
+            <!-- Fin de vista principal -->
+
+            <!-- Inicio de vista resultado de busqueda de rutas desktop -->
+            <div class="d-none" id="view-busqueda">
+                <div class="card mb-4">
+                    <div class="card-body p-3">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6 mb-xl-0 mb-4 mt-2">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h4 class="font-weight-bold min-titulo">Piura</h4>
+                                    </div>
+                                    <div class="icon"> <i class="fas fa-arrow-right"></i> </div>
+                                    <div>
+                                        <h4 class="font-weight-bold min-titulo">Callao</h4>
+                                    </div>
+                                </div>
+                                <div class="hr mt-4"></div>
+                                <div class="mt-5 car-body-descripcion">
+                                    <div class="row">
+                                        <div class="col-12 div-left">
+                                            <div class="col-8 div-left text-line-title">Tiempo de tránsito promedio</div>
+                                            <div class="col-4 div-left text-line-title">Distancia</div>
+                                            <div class="col-8 div-left">15 hrs 15 min</div>
+                                            <div class="col-4 div-left">990.40 km</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="col-12 car-body-title mt-4">Frecuencia de salida</div>
+                                        <div class="col-12 font-color-black">Interdiario y semanal</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="col-12 fs-4 font-color-black font-weight-bold mt-8">Flete promedio por contenedor</div>
+                                        <div class="col-12 car-body-title">Actualizados al: 4 de marzo 2021</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="col-12">
+                                            <div class="col-6 div-left">
+                                                <div class="text-left">
+                                                    <label class="car-body-title">Tipo de contenedores</label>
+                                                    <input type="text" class="form-control" id="mostrarpuertoDestino" value="CNT 20'"><i class="fas fa-angle-down icon-select" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 div-left mt-2">
+                                                <div class="fs-4 font-weight-bold font-color-black text-right mt-4">S/. 5,200</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 centrado">
+                                <img src="../assets/img/Ruta_Terrestre/mapa_b.jpg" alt="mapa" class="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card div-centrado container-line-naviera">
+                        <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                        CLT TRANSPORTE
+                                    </div>
+                                </div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Correo electrónico</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Teléfono</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Dirección</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Persona de contacto</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="col-6"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.cltsac.com</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">comercial@cltsac.com</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">652-3034</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Jr. Francisco Masías 2369 Urb. Elio - Lima</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sadith Karin Salcedo Jimenez</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card div-centrado container-line-naviera">
+                        <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                        TERRA CARGO
+                                    </div>
+                                </div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Correo electrónico</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Teléfono</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Dirección</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Persona de contacto</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="col-6"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.terracargo.net</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">comercial@cltsac.com</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">652-3034</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Jr. Francisco Masías 2369 Urb. Elio - Lima</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sadith Karin Salcedo Jimenez</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card div-centrado container-line-naviera">
+                        <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                        AFE TRANSPORTATION
+                                    </div>
+                                </div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Correo electrónico</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Teléfono</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Dirección</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Persona de contacto</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="col-6"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.afe.pe</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">comercial@cltsac.com</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">652-3034</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Jr. Francisco Masías 2369 Urb. Elio - Lima</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sadith Karin Salcedo Jimenez</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card div-centrado container-line-naviera">
+                        <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                        Cargueros Sudamericanos
+                                    </div>
+                                </div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Correo electrónico</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Teléfono</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Dirección</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Persona de contacto</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="col-6"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">comercial@cltsac.com</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">652-3034</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Jr. Francisco Masías 2369 Urb. Elio - Lima</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sadith Karin Salcedo Jimenez</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card div-centrado container-line-naviera">
+                        <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                        COORDIFRONTERAS
+                                    </div>
+                                </div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Correo electrónico</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Teléfono</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Dirección</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Persona de contacto</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="col-6"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">comercial@cltsac.com</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">652-3034</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Jr. Francisco Masías 2369 Urb. Elio - Lima</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sadith Karin Salcedo Jimenez</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card div-centrado container-line-naviera">
+                        <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                        TRANSPORTES AMBROGIO
+                                    </div>
+                                </div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Correo electrónico</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Teléfono</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Dirección</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Persona de contacto</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="col-6"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">comercial@cltsac.com</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">652-3034</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Jr. Francisco Masías 2369 Urb. Elio - Lima</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sadith Karin Salcedo Jimenez</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card div-centrado container-line-naviera">
+                        <div class="card-body p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="text-line-title font-color-black col-lg-6 col-md-6 col-sm-12 col-xs-12 div-left">
+                                        TRANSPORTES AMBROGIO
+                                    </div>
+                                </div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sitio web</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Correo electrónico</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Teléfono</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Dirección</div>
+                                <div class="text-line-title font-color-black col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Persona de contacto</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">
+                                    <div class="col-6"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">www.evergreen-line.com</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">comercial@cltsac.com</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">652-3034</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Jr. Francisco Masías 2369 Urb. Elio - Lima</div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 div-left">Sadith Karin Salcedo Jimenez</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled font-color-red">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-angle-left" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item font-color-red">
+                                <a class="page-link" href="#"><i class="fas fa-angle-right" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="effect" onclick="mostrarOperadorLogistico()">
+                            <div class="avatar-group mt-2 div-effect">
+                                <div class="avatar avatar-xs rounded-circle">
+                                    <img src="../assets/img/Ruta_Terrestre/calculadora.png" alt="calculadora">
+                                </div>
+                                <div class="img-icon-text">Ver todos los operadores logísticos</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="effect" onclick="window.location.href='../../DirectorioLogistico/Pages/ListaDirectorioLogistico.html'">
+                            <div class="avatar-group mt-2 div-effect">
+                                <div class="avatar avatar-xs rounded-circle">
+                                    <img src="../assets/img/Ruta_Terrestre/calculadora.png" alt="dolares">
+                                </div>
+                                <div class="img-icon-text">Encuentra más información en Direcctorio Logístico</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row posicion">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-6">
+                        <div class="font-color-black titulo">
+                            Guarda o descarga el resultado de tu búsqueda
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red centrado mt-6">
+                        <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-login">
+                            <i class="far fa-bookmark icon-btn" aria-hidden="true"></i>
+                            <div class="text-line-title">Guardar resultado</div>
+                        </div>
+                        <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fas fa-cloud-download-alt icon-btn" aria-hidden="true"></i>
+                            <div class="text-line-title">Descargar en PDF</div>
+                        </div>
+                        <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-correo">
+                            <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                            <div class="text-line-title">Enviar por correo</div>
+                        </div>
+                        <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-compartir">
+                            <i class="fas fa-share-alt icon-btn" aria-hidden="true"></i>
+                            <div class="text-line-title">Compartir</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4 ">
+                    <div class="col-lg-12 col-md-6 mb-md-0 mb-4 ">
+                        <div class="card ">
+                            <div class="card-body px-0 pb-2 ">
+                                <div class="row px-4 ">
+                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6 ">
+                                        <div>
+                                            <img src="../assets/img/Ruta_Terrestre/tiene alguna pregunta_ilustracion.png " alt="pregunta " class="width-movil ">
+                                        </div>
+                                        <h6 class="sub-titulo mt-6 ">¿Tienes alguna pregunta?</h6>
+                                        <p class="col-xs-12 col-sm- 12 col-md-8 col-lg-12">
+                                            <span class="font-weight-bold ">
+                                                    Si tienes una consulta particular sobre la herramienta escríbenos y resolveremos tu duda
+                                                </span>
+                                        </p>
+                                        <div class="col-xs-12 col-sm- 12 col-md-8 col-lg-12 centro">
+                                            <div class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-informativo">Escríbenos</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6 ">
+                                        <div>
+                                            <img src="../assets/img/Ruta_Terrestre/que te parecio la herramienta_ilustracion.png" alt="opinion " class="width-movil ">
+                                        </div>
+                                        <h6 class="sub-titulo mt-6 ">¿Qué te parecio la herramienta?</h6>
+                                        <p class="col-xs-12 col-sm- 12 col-md-8 col-lg-12">
+                                            <span class="font-weight-bold ">
+                                                        PROMPERÚ se esfuerza por mejorar sus servicios. Si tienes sugerencias o comentarios completa el siguiente formulario.
+                                                    </span>
+                                        </p>
+                                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro ">
+                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-opinion">Dejar mi opinión</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none" id="view-busqueda-movil">
+                <div class="row mt-4 div">
+                    <div class="col-lg-12 mb-lg-0">
+                        <div class="card">
+                            <div class="row">
+                                <div class="container-detalle-movil">
+                                    <div class="col-12">
+                                        <div class="col-4 div-left">
+                                            <h4 class="font-weight-bold fs-4 font-color-black">Piura</h4>
+                                        </div>
+                                        <div class="col-4 div-left icon-movil"> <i class="fas fa-arrow-right" aria-hidden="true"></i> </div>
+                                        <div class="col-4 div-right">
+                                            <h4 class="font-weight-bold fs-4 font-color-black">Callao</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 div-left">
+                                        <div class="text-line-title font-color-black">Tiempo de transito promedio</div>
+                                        <div class="text-libe-movil font-color-black">15 Hrs 15min</div>
+                                    </div>
+                                    <div class="col-12 div-left">
+                                        <div class="text-line-title font-color-black">Distancia 990.40 km</div>
+                                        <div class="text-libe-movil font-color-black">27 días</div>
+                                    </div>
+                                    <div class="col-12 div-left">
+                                        <div class="text-line-title font-color-black">Frecuencias de salidas</div>
+                                        <div class="text-libe-movil font-color-black">Interdiario y Semanal</div>
+                                    </div>
+                                    <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
+                                        <div class="img-icon div-left"></div>
+                                        <div class="div-left mt-3 font-color-red font-weight-bold">Ver mapa de la ruta</div>
+                                    </div>
+                                    <div class="col-12 div-left">
+                                        <div class="text-line-title font-color-black">Flete promedio por contenedor</div>
+                                        <div class="text-title-select-movil font-color-black font-weight-bold div-left">Actualizado al: 4 marzo 2021</div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-xs-12" onclick="mostrarSelectPuertoOrigen()">
+                                        <label>Tipo de container</label>
+                                        <input type="text" class="form-control" id="tipContainer" value="120Kg"><i class="fas fa-angle-down icon-select" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="col-12">
+                                                <div class="col-12 div-left">
+                                                    <div class="text-left">
+                                                        <label class="car-body-title">Tipo de contenedores</label>
+                                                        <input type="text" class="form-control" id="mostrarpuertoDestino" value="CNT 20'"><i class="fas fa-angle-down icon-select" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 div-left mt-2">
+                                                    <div class="fs-4 font-weight-bold font-color-black text-right mt-4">S/. 5,200</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 titulo">
+                        Operadores logísticos
+                    </div>
+                    <div class="col-12 centrado">
+                        Ordenar por:
+                        <div class="ordenar">A-Z <i class="fas fa-angle-down icon-ordenar" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <!-- Inicio linea naviera movil -->
+                <div id="linea-naviera-movil">
+                    <div class="card container-line-naviera mt-3">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-12 collapsed" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CLT" aria-expanded="false" aria-controls="mostrarDetalle-CLT">
+                                    <div class="col-10 text-line-title font-color-black div-left">
+                                        CLT Transporte
+                                    </div>
+                                    <div class="col-2 text-line-title font-color-red div-left">
+                                        <i class="fas fa-chevron-right div-right" id="iconfecha" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse show collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CLT">
+                                    <div class="row font-color-red text-center">
+                                        <div class="col-4">
+                                            <i class="fas fa-globe icon-btn"></i>
+                                            <div class="col-12">Sitio web</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                                            <div class="col-12">Correo</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="fas fa-phone-alt icon-btn"></i>
+                                            <div class="col-12">Teléfono</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Dirección
+                                            <div class="fs-4">Jr. Francisco Masias 2369 Urb. Elio Lima</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Persona de contacto
+                                            <div class="fs-4">Luis Tenorio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container-line-naviera mt-3">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-12 collapsed" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-terraCargo" aria-expanded="false" aria-controls="mostrarDetalle-terraCargo">
+                                    <div class="col-10 text-line-title font-color-black div-left">
+                                        Terra Cargo
+                                    </div>
+                                    <div class="col-2 text-line-title font-color-red div-left">
+                                        <i class="fas fa-chevron-right div-right" id="iconfecha" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse hiden collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-terraCargo">
+                                    <div class="row font-color-red text-center">
+                                        <div class="col-4">
+                                            <i class="fas fa-globe icon-btn"></i>
+                                            <div class="col-12">Sitio web</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                                            <div class="col-12">Correo</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="fas fa-phone-alt icon-btn"></i>
+                                            <div class="col-12">Teléfono</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Dirección
+                                            <div class="fs-4">Jr. Francisco Masias 2369 Urb. Elio Lima</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Persona de contacto
+                                            <div class="fs-4">Luis Tenorio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container-line-naviera mt-3">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-12 collapsed" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="false" aria-controls="mostrarDetalle-Evergreen">
+                                    <div class="col-10 text-line-title font-color-black div-left">
+                                        AFE TRASNPORTATION
+                                    </div>
+                                    <div class="col-2 text-line-title font-color-red div-left">
+                                        <i class="fas fa-chevron-right div-right" id="iconfecha" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse hiden collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
+                                    <div class="row font-color-red text-center">
+                                        <div class="col-4">
+                                            <i class="fas fa-globe icon-btn"></i>
+                                            <div class="col-12">Sitio web</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                                            <div class="col-12">Correo</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="fas fa-phone-alt icon-btn"></i>
+                                            <div class="col-12">Teléfono</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Dirección
+                                            <div class="fs-4">Jr. Francisco Masias 2369 Urb. Elio Lima</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Persona de contacto
+                                            <div class="fs-4">Luis Tenorio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container-line-naviera mt-3">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-12 collapsed" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="false" aria-controls="mostrarDetalle-Evergreen">
+                                    <div class="col-10 text-line-title font-color-black div-left">
+                                        Cargueros Sudamericanos
+                                    </div>
+                                    <div class="col-2 text-line-title font-color-red div-left">
+                                        <i class="fas fa-chevron-right div-right" id="iconfecha" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse hiden collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
+                                    <div class="row font-color-red text-center">
+                                        <div class="col-4">
+                                            <i class="fas fa-globe icon-btn"></i>
+                                            <div class="col-12">Sitio web</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                                            <div class="col-12">Correo</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="fas fa-phone-alt icon-btn"></i>
+                                            <div class="col-12">Teléfono</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Dirección
+                                            <div class="fs-4">Jr. Francisco Masias 2369 Urb. Elio Lima</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Persona de contacto
+                                            <div class="fs-4">Luis Tenorio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container-line-naviera mt-3">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-12 collapsed" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="false" aria-controls="mostrarDetalle-Evergreen">
+                                    <div class="col-10 text-line-title font-color-black div-left">
+                                        Cordifronteras
+                                    </div>
+                                    <div class="col-2 text-line-title font-color-red div-left">
+                                        <i class="fas fa-chevron-right div-right" id="iconfecha" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse hiden collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
+                                    <div class="row font-color-red text-center">
+                                        <div class="col-4">
+                                            <i class="fas fa-globe icon-btn"></i>
+                                            <div class="col-12">Sitio web</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                                            <div class="col-12">Correo</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="fas fa-phone-alt icon-btn"></i>
+                                            <div class="col-12">Teléfono</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Dirección
+                                            <div class="fs-4">Jr. Francisco Masias 2369 Urb. Elio Lima</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Persona de contacto
+                                            <div class="fs-4">Luis Tenorio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container-line-naviera mt-3">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-12 collapsed" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="false" aria-controls="mostrarDetalle-Evergreen">
+                                    <div class="col-10 text-line-title font-color-black div-left">
+                                        Transporte Ambrogio
+                                    </div>
+                                    <div class="col-2 text-line-title font-color-red div-left">
+                                        <i class="fas fa-chevron-right div-right" id="iconfecha" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse hiden collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
+                                    <div class="row font-color-red text-center">
+                                        <div class="col-4">
+                                            <i class="fas fa-globe icon-btn"></i>
+                                            <div class="col-12">Sitio web</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                                            <div class="col-12">Correo</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="fas fa-phone-alt icon-btn"></i>
+                                            <div class="col-12">Teléfono</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Dirección
+                                            <div class="fs-4">Jr. Francisco Masias 2369 Urb. Elio Lima</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Persona de contacto
+                                            <div class="fs-4">Luis Tenorio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container-line-naviera mt-3">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-12 collapsed" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="false" aria-controls="mostrarDetalle-Evergreen">
+                                    <div class="col-10 text-line-title font-color-black div-left">
+                                        Transporte Girasoles
+                                    </div>
+                                    <div class="col-2 text-line-title font-color-red div-left">
+                                        <i class="fas fa-chevron-right div-right" id="iconfecha" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse hiden collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
+                                    <div class="row font-color-red text-center">
+                                        <div class="col-4">
+                                            <i class="fas fa-globe icon-btn"></i>
+                                            <div class="col-12">Sitio web</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                                            <div class="col-12">Correo</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="fas fa-phone-alt icon-btn"></i>
+                                            <div class="col-12">Teléfono</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Dirección
+                                            <div class="fs-4">Jr. Francisco Masias 2369 Urb. Elio Lima</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Persona de contacto
+                                            <div class="fs-4">Luis Tenorio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container-line-naviera mt-3">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-12 collapsed" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="false" aria-controls="mostrarDetalle-Evergreen">
+                                    <div class="col-10 text-line-title font-color-black div-left">
+                                        Transporte Fortaleza
+                                    </div>
+                                    <div class="col-2 text-line-title font-color-red div-left">
+                                        <i class="fas fa-chevron-right div-right" id="iconfecha" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse hiden collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
+                                    <div class="row font-color-red text-center">
+                                        <div class="col-4">
+                                            <i class="fas fa-globe icon-btn"></i>
+                                            <div class="col-12">Sitio web</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                                            <div class="col-12">Correo</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="fas fa-phone-alt icon-btn"></i>
+                                            <div class="col-12">Teléfono</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Dirección
+                                            <div class="fs-4">Jr. Francisco Masias 2369 Urb. Elio Lima</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Persona de contacto
+                                            <div class="fs-4">Luis Tenorio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container-line-naviera mt-3">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-12 collapsed" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="false" aria-controls="mostrarDetalle-Evergreen">
+                                    <div class="col-10 text-line-title font-color-black div-left">
+                                        Terah Transporte
+                                    </div>
+                                    <div class="col-2 text-line-title font-color-red div-left">
+                                        <i class="fas fa-chevron-right div-right" id="iconfecha" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse hiden collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
+                                    <div class="row font-color-red text-center">
+                                        <div class="col-4">
+                                            <i class="fas fa-globe icon-btn"></i>
+                                            <div class="col-12">Sitio web</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                                            <div class="col-12">Correo</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="fas fa-phone-alt icon-btn"></i>
+                                            <div class="col-12">Teléfono</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Dirección
+                                            <div class="fs-4">Jr. Francisco Masias 2369 Urb. Elio Lima</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Persona de contacto
+                                            <div class="fs-4">Luis Tenorio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card container-line-naviera mt-3">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-12 collapsed" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="false" aria-controls="mostrarDetalle-Evergreen">
+                                    <div class="col-10 text-line-title font-color-black div-left">
+                                        APM Terminals
+                                    </div>
+                                    <div class="col-2 text-line-title font-color-red div-left">
+                                        <i class="fas fa-chevron-right div-right" id="iconfecha" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse hiden collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
+                                    <div class="row font-color-red text-center">
+                                        <div class="col-4">
+                                            <i class="fas fa-globe icon-btn"></i>
+                                            <div class="col-12">Sitio web</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                                            <div class="col-12">Correo</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="fas fa-phone-alt icon-btn"></i>
+                                            <div class="col-12">Teléfono</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Dirección
+                                            <div class="fs-4">Jr. Francisco Masias 2369 Urb. Elio Lima</div>
+                                        </div>
+                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black text-left font-weight-bold">
+                                            Persona de contacto
+                                            <div class="fs-4">Luis Tenorio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="effect" data-bs-toggle="modal" data-bs-target="#m-desgloseCostos">
+                            <div class="avatar-group mt-2 div-effect">
+                                <div class="avatar avatar-xs rounded-circle">
+                                    <img src="../assets/img/Ruta_Terrestre/calculadora.png" alt="calculadora">
+                                </div>
+                                <div class="img-icon-text">Ver todos los operadores logisticos</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="effect" data-bs-toggle="modal" data-bs-target="#m-rangoTarifas">
+                            <div class="avatar-group mt-2 div-effect">
+                                <div class="avatar avatar-xs rounded-circle">
+                                    <img src="../assets/img/Ruta_Terrestre/calculadora.png" alt="dolares">
+                                </div>
+                                <div class="img-icon-text">Visite el Directorio Logístico</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin linea naviera movil -->
+                <!-- Inicio de opciones de resultado de busqueda movil -->
+                <div class="d-display" id="OpcionesResulBusqueda-Movil">
+                    <div class="row div-left titulo fs-6">
+                        <div class="col-12">Guarda o descarga el resultado de tu búsqueda</div>
+                    </div>
+                    <div class="row div-left titulo fs-6 font-color-red">
+                        <div class="col-4 div-left" data-bs-toggle="modal" data-bs-target="#m-login">
+                            <i class="far fa-bookmark icon-btn" aria-hidden="true"></i>
+                            <div class="text-line-title">Guardar resultado</div>
+                        </div>
+                        <div class="col-4 div-left" data-bs-toggle="modal" data-bs-target="#m-login">
+                            <i class="fas fa-cloud-download-alt icon-btn" aria-hidden="true"></i>
+                            <div class="text-line-title">Descargar en PDF</div>
+                        </div>
+                        <div class="col-4 div-left" data-bs-toggle="modal" data-bs-target="#m-correo">
+                            <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                            <div class="text-line-title">Enviar por correo</div>
+                        </div>
+                        <div class="col-4 div-left" data-bs-toggle="modal" data-bs-target="#m-compartir">
+                            <i class="fas fa-share-alt icon-btn" aria-hidden="true"></i>
+                            <div class="text-line-title">Compartir</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin de opciones de resultado de busqueda movil -->
+                <!-- Inicio de opciones de resultado de busqueda desktop -->
+                <div id="OpcionesResulBusqueda-Desktop" class="d-none">
+                    <div class="row posicion">
+                        <div class="col-4 mt-6">
+                            <div class="font-color-black titulo">
+                                Guarda o descarga el resultado de tu búsqueda
+                            </div>
+                        </div>
+                        <div class="col-6 font-color-red centrado mt-6">
+                            <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-login">
+                                <i class="far fa-bookmark icon-btn" aria-hidden="true"></i>
+                                <div class="text-line-title">Guardar resultado</div>
+                            </div>
+                            <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fas fa-cloud-download-alt icon-btn" aria-hidden="true"></i>
+                                <div class="text-line-title">Descargar en PDF</div>
+                            </div>
+                            <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-correo">
+                                <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
+                                <div class="text-line-title">Enviar por correo</div>
+                            </div>
+                            <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-compartir">
+                                <i class="fas fa-share-alt icon-btn" aria-hidden="true"></i>
+                                <div class="text-line-title">Compartir</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin de opciones de resultado de busqueda destop -->
+                <div class="row my-4">
+                    <div class="col-lg-12 col-md-6 mb-md-0 mb-4">
+                        <div class="card">
+                            <div class="card-body px-0 pb-2">
+                                <div class="row px-4">
+                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6">
+                                        <div>
+                                            <img src="../assets/img/Ruta_Terrestre/tiene alguna pregunta_ilustracion.png" alt="pregunta" class="width-movil">
+                                        </div>
+                                        <h6 class="sub-titulo mt-6">¿No obtuviste la información que buscabas?</h6>
+                                        <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12">
+                                            <span class="font-weight-bold">
+                                                Si tienes una consulta particular sobre la herramienta escríbenos y resolveremos tu duda
+                                            </span>
+                                        </p>
+                                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro">
+                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-informativo">Escríbenos</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6">
+                                        <div>
+                                            <img src="../assets/img/Ruta_Terrestre/que te parecio la herramienta_ilustracion.png" alt="herramienta" class="width-movil">
+                                        </div>
+                                        <h6 class="sub-titulo mt-6">¿Qué te parecio la herramienta?</h6>
+                                        <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12">
+                                            <span class="font-weight-bold">
+                                                PROMPERÚ se esfuerza constantemente por mejorar sus servicios. Si tienes sugerencias o comentarios completa el siguiente formulario.
+                                            </span>
+                                        </p>
+                                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro">
+                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-opinion">Enviar mi opinión</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de vista resultado de busqueda de rutas desktop -->
+            <footer class="footer pt-3 " id="footer ">
+                <div class="container-fluid ">
+                    <div id="footer-Desktop ">
+                        <div class="row align-items-center justify-content-center ">
+                            <div class="col-lg-12 mb-lg-0 mb-4 ">
+                                <div class="text-center ">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold ">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-3 ">
+                                <i class="fab fa-linkedin-in icon-redes "></i>
+                                <i class="fab fa-facebook icon-redes "></i>
+                                <i class="fab fa-twitter icon-redes "></i>
+                                <i class="fab fa-youtube icon-redes "></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-4 background-black "></div>
+                            <div class="row mt-3 ">
+                                <div class="col-3 mt-2 ">
+                                    <img src="../assets/img/logos/mincetur.png " alt="mincetur " class="img-footter ">
+                                </div>
+                                <div class="copyright col-6 ">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                                <div class="col-3 mt-n3 ">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png " alt="logo " class="img-footter div-right ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none " id="footer-Movil ">
+                        <div class="row align-items-center justify-content-center ">
+                            <div class="col-lg-12 mb-lg-0 mb-2 ">
+                                <div class="text-center ">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold ">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-2 ">
+                                <i class="fab fa-linkedin-in icon-redes "></i>
+                                <i class="fab fa-facebook icon-redes "></i>
+                                <i class="fab fa-twitter icon-redes "></i>
+                                <i class="fab fa-youtube icon-redes "></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-2 background-gris "></div>
+                            <div class="row mt-2 ">
+                                <div class="col-6 div-left ">
+                                    <img src="../assets/img/logos/mincetur.png " alt="mincetur " class="img-footter ">
+                                </div>
+                                <div class="col-6 div-left ">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png " alt="logo " class="img-footter div-right ">
+                                </div>
+                                <div class="copyright col-12 ">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <!-- Inicio de buscador de puerto de origen Vista Movil -->
+    <div id="Puertos-Global" class="d-none">
+        <div class="card shadow-lg card-movil">
+            <div class="card-header pb-0 pt-3 ">
+                <div class="float-end refresh mt-3" id="cerrar">
+                    <i class="fas fa-times icon-refresh" aria-hidden="true" onclick="cerrarContainer()"></i>
+                </div>
+                <!-- End Toggle Button -->
+            </div>
+            <div class="card-body pt-sm-3 pt-0">
+                <div id="puertoOrigen-Ciudad">
+                    <div>
+                        <label class="card-body-title"> Puerto de origen</label>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Selecciona" id="PO-Ciudad" value=""><i class="fas fa-angle-down icon-select" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-6">
+                            <div class="select-movil mt-3" value="1" onclick="mostrarPaises(1)">Abancay</div>
+                            <div class="select-movil mt-3" value="2" onclick="mostrarPaises(2)">Amazonas</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Arequipa</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Ayacucho</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Cajamarca</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Casma</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Chiclayo</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Cusco</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Huánuco</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Huancayo</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Huancavelica</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Ica</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="select-movil mt-3" value="1" onclick="mostrarPaises(1)">Junín</div>
+                            <div class="select-movil mt-3" value="2" onclick="mostrarPaises(2)">Lambayeque</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Pasco</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Piura</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Pucallpa</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Pto Maldonado</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Puno</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Tacna</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Tarapoto</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Trujillo</div>
+                            <div class="select-movil mt-3" value="3" onclick="mostrarPaises(3)">Tumbes</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="PuertoDestino-Internacional" class="d-none">
+                    <div class="col-lg-4 col-md-6 col-xs-12 position-relative ordenar" onclick="mostrarSelectPuertoDestino()">
+                        <label>Puerto de destino</label>
+                        <input type="text" class="form-control" id="PD-Ciudad" value="" placeholder="Selecciona"><i class="fas fa-angle-down icon-select" aria-hidden="true"></i>
+                        <!-- <i class="fas fa-angle-down icon-select"></i> -->
+                    </div>
+                    <div class="row card-contenido-select mt-4">
+                        <div class="col-12 text-line-title font-color-black">Puertos del Perú</div>
+                        <div class="col-7 div-left mt-3">
+                            <div class="font-weight-bold font-color-black bg-select-pais mt-2" value="1" onclick="mostrarPuertos(1)">Callao</div>
+                            <div class="font-weight-bold font-color-black bg-select-pais mt-2" value="2" onclick="mostrarPuertos(2)">Matarani</div>
+                            <div class="font-weight-bold font-color-black bg-select-pais mt-2" value="3" onclick="mostrarPuertos(3)">Paita</div>
+                            <div class="font-weight-bold font-color-black bg-select-pais mt-2" value="4" onclick="mostrarPuertos(4)">Pisco</div>
+                        </div>
+                        <div class="col-12 text-line-title font-color-black mt-4">Puertos en el extranjero</div>
+                        <div class="col-12">
+                            <div id="conAmerica">
+                                <div class="col-6 div-left text-line-title font-color-black mt-4">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-weight-bold font-color-black bg-select-pais" value="01" onclick="mostrarPuertos(01)">Arica - Chile</div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-weight-bold font-color-black bg-select-pais" value="02" onclick="mostrarPuertos(02)">Huaquillas - Ecuador</div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-weight-bold font-color-black bg-select-pais" value="03" onclick="mostrarPuertos(03)">Río Branco - Brasil</div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-weight-bold font-color-black bg-select-pais" value="04" onclick="mostrarPuertos(04)">Desaguadero - Bolivia</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de buscador de puerto de origen V-Movil -->
+    <!-- Inicio de modales -->
+    <!-- Inicio modal Login -->
+    <div class="modal fade" id="m-login" tabindex="-1" aria-labelledby="m-login" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLabel ">Para guardar debes iniciar sesión</h5>
+                    <a href="javascript:void(0) " class="btn-close " data-bs-dismiss="modal " aria-label="Close ">
+                        <i class="fas fa-times-circle "></i>
+                    </a>
+                </div>
+                <div class="modal-body ">
+                    <div>
+                        <label>Correo Electronico</label>
+                        <input type="text " class="form-control " placeholder="ejemplo@correo.com ">
+                    </div>
+                    <div>
+                        <label>Contraseña</label>
+                        <input type="password " class="form-control " placeholder="****** ">
+                    </div>
+                </div>
+                <div class="centrado ">
+                    <button class="btn btn-primary btn-second " type="button ">Ingresar</button>
+                </div>
+                <div class="centrado text-line-title font-color-red ordenar ">¿Olvidaste tu contraseña?</div>
+                <div class="modal-footer background-gris ">
+                    <div class="centrado text-line-title font-color-black col-12 ">¿Aún no tienes una cuenta?</div>
+                    <div class="centrado col-12 ">
+                        <button type="button " class="btn btn-outline-danger ">Regístrate Aquí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal login -->
+    <!-- Inicio modal correo -->
+    <div class="modal fade bd-example-modal-sm" id="m-correo" tabindex="-1" role="dialog" aria-labelledby="m-correo" aria-hidden="true">
+        <div class="modal-dialog modal-sm ">
+            <div class="modal-content ">
+                <div class="div-centrado ">
+                    <div class="centrado modal-title font-color-black ">Envíalo a tu correo</div>
+                    <div class="centrado ">
+                        <label class="font-color-black text-line-title ">Ingresa tu correo electrónico</label>
+                        <input type="text " class="form-control " placeholder="ejemplo@correo.com ">
+                    </div>
+                    <div class="centrado mt-3 ">
+                        <button class="btn btn-primary btn-second " type="button ">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal correo -->
+    <!-- Inicio modal compartir -->
+    <div class="modal fade bd-example-modal-sm" id="m-compartir" tabindex="-1" role="dialog" aria-labelledby="m-compartir" aria-hidden="true">
+        <div class="modal-dialog modal-sm ">
+            <div class="modal-content ">
+                <div class="div-centrado ">
+                    <div class="centrado modal-title font-color-black ">Comparte el resultado de tu simulación</div>
+                    <div class="mt-3 ">
+                        <div class=" col-6 centrado div-left font-color-red ordenar ">
+                            <i class="fab fa-whatsapp icon-btn "></i>
+                            <div class="text-line-title ">WhatsApp</div>
+                        </div>
+                        <div class=" col-6 centrado div-left font-color-red ordenar ">
+                            <i class="far fa-copy icon-btn "></i>
+                            <div class="text-line-title ">Copiar enlace</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal compartir -->
+    <!-- Inicio modal informativo -->
+    <div class="modal fade" id="m-informativo" tabindex="-1" aria-labelledby="m-informativo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Indicanos tu consulta</h5>
+                    <a href="javascript:void(0) " class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times-circle "></i>
+                    </a>
+                </div>
+                <div class="modal-body ">
+                    <div class="col-6 div-left ">
+                        <label>Nombres</label>
+                        <input type="text " class="form-control ">
+                    </div>
+                    <div class="col-6 div-left ">
+                        <label>Apellidos</label>
+                        <input type="text " class="form-control ">
+                    </div>
+                    <div class="col-6 div-left ">
+                        <label>Correo electrónico</label>
+                        <input type="text " class="form-control " placeholder="ejemplo@correo.com ">
+                    </div>
+                    <div class="col-12 div-left ">
+                        <label>Escribe tu consulta</label>
+                        <textarea type="text " class="form-control "></textarea>
+                        <span class="span-textarea ">Máximo 189 cáracteres</span>
+                    </div>
+                    <div class="col-6 div-left mt-4 ">
+                        <button class="btn btn-primary btn-danger " type="button ">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal informativo -->
+    <!-- Inicio modal calificativo -->
+    <div class="modal fade" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Brindanos tu opinión</h5>
+                    <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times-circle"></i>
+                    </a>
+                </div>
+                <div class="modal-body ">
+                    <div class="col-6 div-left ">
+                        <label>Nombres</label>
+                        <input type="text " class="form-control ">
+                    </div>
+                    <div class="col-6 div-left ">
+                        <label>Apellidos</label>
+                        <input type="text " class="form-control ">
+                    </div>
+                    <div class="col-6 div-left ">
+                        <label>Correo electrónico</label>
+                        <input type="text " class="form-control " placeholder="ejemplo@correo.com ">
+                    </div>
+                    <div class="col-12 div-left ">
+                        <label>Escribe tu mensaje</label>
+                        <textarea type="text " class="form-control "></textarea>
+                        <span class="span-textarea ">Máximo 189 cáracteres</span>
+                    </div>
+                    <div class="col-12 div-left mt-4 ">
+                        <div class="col-5 div-left ">Califica la herramienta</div>
+                        <div class="col-3 div-left ">
+                            <div class="div-left ordenar "><a href="javascript:void(0) "><i class="far fa-star "></i></a></div>
+                            <div class="div-left ordenar "><a href="javascript:void(0) "><i class="far fa-star "></i></a></div>
+                            <div class="div-left ordenar "><a href="javascript:void(0) "><i class="far fa-star "></i></a></div>
+                            <div class="div-left ordenar "><a href="javascript:void(0) "><i class="far fa-star "></i></a></div>
+                            <div class="div-left ordenar "><a href="javascript:void(0) "><i class="far fa-star "></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-8 div-left mt-4 ">
+                        <button class="btn btn-primary btn-danger " type="button ">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal calificativo -->
+    <!-- Fin de modales -->
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js "></script>
+    <script src="../assets/js/core/bootstrap.min.js "></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js "></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js "></script>
+    <script src="../assets/js/plugins/chartjs.min.js "></script>
+    <script src="../assets/js/jquery-3.6.0.min.js "></script>
+    <script src="../assets/js/select2/select2.min.js "></script>
+    <script src="../assets/js/general.js "></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3 "></script> -->
+    <!-- JS rutas maritimas -->
+    <script src="./js/ruta_terrestre.js"></script>
+</body>
+
+</html>

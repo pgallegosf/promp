@@ -129,7 +129,7 @@ body {
     height: 600px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background: url(../img/Ruta_Marina/cameron-venti-1cqIcrWFQBI-unsplash.jpg);
+    background: url(../img/Ruta_Terrestre/1a.jpg);
     background-size: cover;
 }
 
@@ -147,7 +147,7 @@ body {
         height: 400px;
         background-size: 50% 50%;
         background-repeat: no-repeat;
-        background: url(../img/Ruta_Marina/cameron-venti-1cqIcrWFQBI-unsplash.jpg);
+        background: url(../img/Ruta_Terrestre/1a.jpg);
         background-size: cover;
     }
 }
@@ -166,10 +166,10 @@ body {
 }
 
 .card-select {
-    width: 50% !important;
+    /* width: 50% !important;
     height: 135% !important;
     margin-left: 34% !important;
-    top: 74% !important;
+    top: 74% !important; */
     position: absolute !important;
     font-size: 10px;
     font-weight: bold;
@@ -195,7 +195,7 @@ body {
     font-weight: bold !important;
     background-color: #C4122f;
     opacity: 73%;
-    width: 115% !important;
+    width: 100% !important;
     cursor: pointer;
 }
 
@@ -404,7 +404,7 @@ body {
     height: 600px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background: url(../img/Ruta_Marina/image-from-rawpixel-id-431944-jpeg.jpg);
+    background: url(../img/Ruta_Terrestre/1a.jpg);
     background-size: cover;
 }
 
@@ -422,7 +422,7 @@ body {
         height: 400px;
         background-size: 50% 50%;
         background-repeat: no-repeat;
-        background: url(../img/Ruta_Marina/image-from-rawpixel-id-431944-jpeg.jpg);
+        background: url(../img/Ruta_Terrestre/1a.jpg);
         background-size: cover;
     }
 }
@@ -507,7 +507,7 @@ body {
 
 .effect:hover {
     border-radius: 2%;
-    width: 54%;
+    width: 100%;
     background: #ffffff;
     box-shadow: 2px 2px 5px #999;
     cursor: pointer;
@@ -613,7 +613,7 @@ body {
 }
 
 .text-left {
-    text-align: left;
+    text-align: left !important;
 }
 
 .card-select-origen {
@@ -1017,10 +1017,10 @@ a>i>label {
 }
 
 .nav-tabs .nav-link:hover {
-    border-color: #C4122f #C4122f #C4122f;
-    background-color: #C4122f;
-    isolation: isolate;
-    color: #ffffff;
+    border-color: #C4122f #C4122f #C4122f !important;
+    background-color: #C4122f !important;
+    isolation: isolate !important;
+    color: #ffffff !important;
 }
 
 .nav-tabs .nav-link.active {
@@ -1035,4 +1035,50 @@ a>i>label {
 
 .tab-content {
     overflow: hidden !important;
+}
+
+.margin-left {
+    margin-left: 1rem;
+}
+
+.icon-ordenar {
+    float: right;
+    margin-top: 4px;
+    margin-left: 1rem;
+    color: #C4122f;
+}
+
+.cambio-Tab {
+    background-color: #C4122f !important;
+    color: #ffffff !important;
+}
+
+.font-color-white {
+    color: #ffffff !important;
+}
+
+.avatar img {
+    height: 100%;
+}
+
+.avatar-xs {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.hr-centrado {
+    margin: 1rem;
+}
+
+.sub-titulo-desktop {
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.text-center {
+    text-align: center;
 }
