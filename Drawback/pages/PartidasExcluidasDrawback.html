@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Simulador Drawback
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100" onload="cargarAjustes()">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                <a class="navbar-brand" href="./Drawback.html">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img">
+                </a>
+                <div class="icon-menu">
+                    <div class="icon-menu d-none">
+                        <i class="fas fa-user-plus"><label class="ocultar-movil">Unete al Directorio Logístico</label></i>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="far fa-bell"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-bars" onclick="mostrarContainer()"></i>
+                        </a>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div class="d-display" id="view-global">
+                <div class="row mt-4">
+                    <div class="col-xl-3 col-lg-3 col-md-2 col-sm-3 font-color-black">
+                        <i class="fas fa-clipboard-list font-size-50 div-right"></i>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                        <div class="font-size-22 font-color-black font-weight-bold text-left">
+                            Lista de Subpartidas Nacionales Excluidas
+                        </div>
+                        <div class="font-size-13 font-color-black font-weight-bold">(D.S 127-2002-EF)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="table-responsive p-0">
+                    <table class="table align-items-center justify-content-center mb-0">
+                        <thead>
+                            <tr>
+                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                    <h3><span class="badge bg-secondary w-100">N° de Subpartida</span></h3>
+                                </th>
+                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                    <h3><span class="badge bg-secondary w-100">Descripción</span></h3>
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="text-center px-2">
+                                        <span class="text-xs font-weight-bold text-center">0206 10 00 00</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="text-xs font-weight-bold">Despojos comestibles de la especie bovina, frescos o refrigerados</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text-center px-2">
+                                        <span class="text-xs font-weight-bold">0206 21 00 00</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="text-xs font-weight-bold">Lenguas de la especie bovina, congelados</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text-center px-2">
+                                        <span class="text-xs font-weight-bold">0206 22 00 00</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="text-xs font-weight-bold">Hígados de la especie bovina, congelada<span>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text-center px-2">
+                                        <span class="text-xs font-weight-bold">0206 21 00 00</span>
+                </div>
+                </td>
+                <td>
+                    <span class="text-xs font-weight-bold">Los demás despojos comestibles de la especie bovina, congelada</span>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="text-center px-2">
+                            <span class="text-xs font-weight-bold">0206 10 00 00</span>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="text-xs font-weight-bold">Despojos comestibles de la especie bovina, frescos o refrigerados</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="text-center px-2">
+                            <span class="text-xs font-weight-bold">0206 21 00 00</span>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="text-xs font-weight-bold">Lenguas de la especie bovina, congelados</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="text-center px-2">
+                            <span class="text-xs font-weight-bold">0206 22 00 00</span>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="text-xs font-weight-bold">Hígados de la especie bovina, congelada<span>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="text-center px-2">
+                            <span class="text-xs font-weight-bold">0206 21 00 00</span>
+            </div>
+            </td>
+            <td>
+                <span class="text-xs font-weight-bold">Los demás despojos comestibles de la especie bovina, congelada</span>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="text-center px-2">
+                        <span class="text-xs font-weight-bold">0206 10 00 00</span>
+                    </div>
+                </td>
+                <td>
+                    <span class="text-xs font-weight-bold">Despojos comestibles de la especie bovina, frescos o refrigerados</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="text-center px-2">
+                        <span class="text-xs font-weight-bold">0206 21 00 00</span>
+                    </div>
+                </td>
+                <td>
+                    <span class="text-xs font-weight-bold">Lenguas de la especie bovina, congelados</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="text-center px-2">
+                        <span class="text-xs font-weight-bold">0206 22 00 00</span>
+                    </div>
+                </td>
+                <td>
+                    <span class="text-xs font-weight-bold">Hígados de la especie bovina, congelada<span>
+    </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="text-center px-2">
+                <span class="text-xs font-weight-bold">0206 21 00 00</span>
+        </div>
+        </td>
+        <td>
+            <span class="text-xs font-weight-bold">Los demás despojos comestibles de la especie bovina, congelada</span>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="text-center px-2">
+                    <span class="text-xs font-weight-bold">0206 10 00 00</span>
+                </div>
+            </td>
+            <td>
+                <span class="text-xs font-weight-bold">Despojos comestibles de la especie bovina, frescos o refrigerados</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="text-center px-2">
+                    <span class="text-xs font-weight-bold">0206 21 00 00</span>
+                </div>
+            </td>
+            <td>
+                <span class="text-xs font-weight-bold">Lenguas de la especie bovina, congelados</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="text-center px-2">
+                    <span class="text-xs font-weight-bold">0206 22 00 00</span>
+                </div>
+            </td>
+            <td>
+                <span class="text-xs font-weight-bold">Hígados de la especie bovina, congelada<span>
+</td>
+</tr>
+<tr>
+    <td>
+        <div class="text-center px-2">
+            <span class="text-xs font-weight-bold">0206 21 00 00</span>
+                </div>
+            </td>
+            <td>
+                <span class="text-xs font-weight-bold">Los demás despojos comestibles de la especie bovina, congelada</span>
+            </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-2">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled font-color-red">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-angle-left" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item font-color-red">
+                        <a class="page-link" href="#"><i class="fas fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Fin de vista principal -->
+        <footer class="footer pt-3 " id="footer ">
+            <div class="container-fluid ">
+                <div id="footer-Desktop ">
+                    <div class="row align-items-center justify-content-center ">
+                        <div class="col-lg-12 mb-lg-0 mb-4 ">
+                            <div class="text-center ">
+                                Para mas información escribanos a :
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center font-weight-bold ">
+                            correo@promperu.gob.pe
+                        </div>
+                        <div class="justify-content-between text-center mt-3 ">
+                            <i class="fab fa-linkedin-in icon-redes "></i>
+                            <i class="fab fa-facebook icon-redes "></i>
+                            <i class="fab fa-twitter icon-redes "></i>
+                            <i class="fab fa-youtube icon-redes "></i>
+                        </div>
+                        <div class="hr col-lg-6 mt-4 background-black "></div>
+                        <div class="row mt-3 ">
+                            <div class="col-3 mt-2 ">
+                                <img src="../assets/img/logos/mincetur.png " alt="mincetur " class="img-footter ">
+                            </div>
+                            <div class="copyright col-6 ">
+                                Copyright © 2021 PROMPERU. Todos los derechos reservados
+                            </div>
+                            <div class="col-3 mt-n3 ">
+                                <img src="../assets/img/logos/LOGO PROMPERU.png " alt="logo " class="img-footter div-right ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none " id="footer-Movil ">
+                    <div class="row align-items-center justify-content-center ">
+                        <div class="col-lg-12 mb-lg-0 mb-2 ">
+                            <div class="text-center ">
+                                Para mas información escribanos a :
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center font-weight-bold ">
+                            correo@promperu.gob.pe
+                        </div>
+                        <div class="justify-content-between text-center mt-2 ">
+                            <i class="fab fa-linkedin-in icon-redes "></i>
+                            <i class="fab fa-facebook icon-redes "></i>
+                            <i class="fab fa-twitter icon-redes "></i>
+                            <i class="fab fa-youtube icon-redes "></i>
+                        </div>
+                        <div class="hr col-lg-6 mt-2 background-gris "></div>
+                        <div class="row mt-2 ">
+                            <div class="col-6 div-left ">
+                                <img src="../assets/img/logos/mincetur.png " alt="mincetur " class="img-footter ">
+                            </div>
+                            <div class="col-6 div-left ">
+                                <img src="../assets/img/logos/LOGO PROMPERU.png " alt="logo " class="img-footter div-right ">
+                            </div>
+                            <div class="copyright col-12 ">
+                                Copyright © 2021 PROMPERU. Todos los derechos reservados
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+    </main>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js "></script>
+    <script src="../assets/js/core/bootstrap.min.js "></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js "></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js "></script>
+    <script src="../assets/js/plugins/chartjs.min.js "></script>
+    <script src="../assets/js/jquery-3.6.0.min.js "></script>
+    <script src="../assets/js/select2/select2.min.js "></script>
+    <script src="../assets/css/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../assets/js/general.js "></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3 "></script> -->
+    <!-- JS rutas maritimas -->
+    <script src="./js/drawback.js "></script>
+</body>
+
+</html>
