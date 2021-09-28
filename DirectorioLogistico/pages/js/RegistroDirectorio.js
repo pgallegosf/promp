@@ -17,6 +17,8 @@ $(document).ready(function() {
     });
 
     $(".siSucursales").hide();
+    //$(".tab-movil").hide();
+    
     contador("#txtDescripcion","#numerocaracteres");
 
     var $fileInput = $('.file-input');
