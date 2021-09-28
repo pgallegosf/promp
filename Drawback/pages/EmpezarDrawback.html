@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Empezar Drawback
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link href="../assets/css/tab/styleTab.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <div class="refresh mt-4 m-left-rem" id="btn-volver-buscar" onclick="">
+            <i class="fas fa-undo-alt icon-refresh" aria-hidden="true"></i> atrás
+        </div>
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div class="d-display" id="view-empezar-principal">
+                <div class="row m-left-rem">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-color-black fs-4 font-weight-bold">
+                            Bienvenido al Simulador de Drawback
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
+                            <div>
+                                <p class="font-color-black">Para la simulación es necesario tener a la mano la siguinte información y documentos:</p>
+                            </div>
+                            <div>
+                                <p class="text-line-title font-color-black"><i class="fas fa-circle"></i> Número de partida aranceladia</p>
+                                <p class="text-line-title font-color-black"><i class="fas fa-circle"></i> Fecha de la DAM Importación</p>
+                                <p class="text-line-title font-color-black"><i class="fas fa-circle"></i> Fecha del embarque de la DAM Exportación</p>
+                                <p class="text-line-title font-color-black"><i class="fas fa-circle"></i> Valor CIF importado</p>
+                                <p class="text-line-title font-color-black"><i class="fas fa-circle"></i> Valor FOB exportado</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-md-12 col-xs-12 col-sm-12 mt-4">
+                            <button class="btn btn-danger w-70" onclick="empezarSimulacion()" id="btn-ingresar">Comenzar</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-4 centro ocultar-movil">
+                        <img src="../assets/img/Directorio/seParteDe.png" alt="mapa_ruta" class="img">
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de vista principal -->
+            <!-- Inicio de vista simulador -->
+            <div class="d-none" id="view-simulador-principal">
+                <div class="row m-left-rem">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-color-black fs-4">
+                            Crea tu nueva simulación Drawback
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
+                            <div>
+                                <label>Nombre del producto</label>
+                                <input type="text" class="form-control" placeholder="Descripcion" id="correo" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 centrado">
+                            <button class="btn btn-second" onclick="window.location.href='Simulador.html'" id="btn-ingresar">Comenzar</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centro ocultar-movil">
+                        <img src="../assets/img/Directorio/seParteDe.png" alt="mapa_ruta" class="img">
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de vista simulador -->
+        </div>
+    </main>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select2/select2.min.js"></script>
+    <script src="../assets/js/tab/app.js"></script>
+    <script src="../assets/js/general.js"></script>
+    <script src="js/empezarSimulacion.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
+    <!-- JS rutas maritimas -->
+</body>
+
+</html>
