@@ -196,7 +196,7 @@ footer .credits {
 }
 
 .tabs .divTab .div-left-tab > ul li a.active {
-	background-color: #fff;
+	background: linear-gradient(to right, #efefef 0%, #efefef 97%, #FFF 3%, #FFF 100%);
 	color: #282828;
 }
 
@@ -356,4 +356,74 @@ footer .credits {
 }*/
 .tab-head{
 	margin-top: 50px !important;;
+}
+
+/************************  PARA MOVIL********************/
+.tabs .divTab .tab-movil > ul li {
+	display: block;
+	float:left;
+}
+.tabs .divTab .tab-movil > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	/*width: 15%;*/
+	display: flex;
+    justify-content: center;
+	margin-top: 0 !important;
+}
+
+.tabs .divTab .tab-movil > ul li a.active {
+    background:  #efefef!important;
+    color: #282828;
+}
+
+
+
+
+.tab-movil{
+	display:none;
+}
+.tab-desktop{
+	display:block;
+}
+@media (min-width: 200px) {	
+	.tab-desktop{
+		display:none;
+	}
+    .tab-movil{
+		display:block;
+	}	
+}	
+@media (min-width: 576px) {	
+	.tab-desktop{
+		display:none;
+	}
+    .tab-movil{
+		display:block;
+	}	
+}
+@media (min-width: 768px) {	
+	.tab-desktop{
+		display:none;
+	}
+    .tab-movil{
+		display:block;
+	}	
+}	
+@media (min-width: 992px) {	
+	.tab-movil{
+		display:none;
+	}
+    .tab-desktop{
+		display:block;
+	}		
+}	
+@media (min-width: 1200px) {	
+	.tab-movil{
+		display:none;
+	}
+    .tab-desktop{
+		display:block;
+	}			
 }

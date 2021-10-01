@@ -121,15 +121,15 @@ body {
 }
 
 .background-img {
-    margin: 10px auto;
+    /* margin: 10px auto; */
     border-radius: 5px;
-    border: 1px solid #999;
-    padding: 13px;
+    /* border: 1px solid #999; */
+    padding: 0px;
     width: 100%;
     height: 500px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background: url(../img/Directorio/inicio.jpg);
+    /* background: url(../img/Drawback/shutterstock_712434244.jpg); */
     background-size: cover;
 }
 
@@ -139,30 +139,30 @@ body {
 
 @media all and (min-width: 500px) and (max-width: 1000px) {
     .background-img {
-        margin: 20px auto;
+        /* margin: 20px auto; */
         border-radius: 5px !important;
         border: 1px solid #999;
-        padding: 13px;
+        padding: 0px;
         width: 100%;
         height: 400px;
         background-size: 50% 50%;
         background-repeat: no-repeat;
-        background: url(../img/Directorio/inicio_mobile.jpg);
+        /* background: url(../img/Directorio/inicio_mobile.jpg); */
         background-size: cover;
     }
 }
 
 @media all and (min-width: 200px) and (max-width: 499px) {
     .background-img {
-        margin: 20px auto;
+        /* margin: 20px auto; */
         border-radius: 5px !important;
         border: 1px solid #999;
-        padding: 13px;
+        padding: 0px;
         width: 100%;
         height: 300px;
         background-size: 10% 10%;
         background-repeat: no-repeat;
-        background: url(../img/Directorio/inicio_mobile.jpg);
+        /* background: url(../img/Directorio/inicio_mobile.jpg); */
         background-size: cover;
     }
 }
@@ -514,6 +514,10 @@ body {
 
 .background-gris {
     background-color: #a5acb0;
+}
+
+.background-red {
+    background-color: #C4122f;
 }
 
 .container-detalle {
@@ -1466,7 +1470,7 @@ a>i>label {
     border: none;
 }
 
-.background-write {
+.background-white {
     background-color: #FFF;
 }
 
@@ -1563,6 +1567,10 @@ a>i>label {
     margin-left: 2rem !important;
 }
 
+.m-right-rem {
+    margin-right: 2rem !important;
+}
+
 .border-radius {
     border-radius: 20px !important;
 }
@@ -1583,6 +1591,12 @@ a>i>label {
     color: #ffffff;
 }
 
+.btn-insumo {
+    background-color: #ffffff26;
+    border: 1px solid !important;
+    color: #ffffff !important;
+}
+
 .btn-insumo:hover {
     background-color: #ffffff !important;
     opacity: 100% !important;
@@ -1598,16 +1612,8 @@ a>i>label {
     transform: scaleX(-1);
 }
 
-@media (min-width: 200px) {
-    .img-slider {
-        display: none;
-    }
-}
-
-@media (min-width: 992px) {
-    .img-slider {
-        display: block;
-    }
+.rota-vertical {
+    transform: scaleY(-1);
 }
 
 .titulo-center {
@@ -1631,4 +1637,227 @@ a>i>label {
 .table-responsive::-webkit-scrollbar-thumb-hover {
     opacity: 100%;
     cursor: pointer !important;
+}
+
+.form-check-input:checked[type="radio"] {
+    background-image: linear-gradient( 310deg, #C4122f 0%, #C4122f 100%) !important;
+}
+
+.form-check:not(.form-switch) .form-check-input[type="checkbox"],
+.form-check:not(.form-switch) .form-check-input[type="radio"] {
+    border: 1px solid #C4122f !important;
+}
+
+.swtich {
+    background-color: #a5acb0;
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    height: 60px;
+    top: 0px !important;
+    position: relative;
+    margin: 0rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.active-product {
+    background-color: #C4122f !important;
+    color: #ffffff !important;
+    transition: width .1s;
+    z-index: 1;
+}
+
+.p-right {
+    right: 30px;
+}
+
+.img-grafico {
+    width: 60%;
+}
+
+@media (min-width: 200px) {
+    .line-vertical {
+        border-bottom: 1px solid #a5acb0;
+    }
+}
+
+@media (min-width: 992px) {
+    .line-vertical {
+        border-left: 1px solid #a5acb0;
+        border-bottom: 1px;
+    }
+}
+
+.background-gris-pdf {
+    background-color: #a5acb040;
+}
+
+.row-centrado {
+    justify-content: center;
+}
+
+.total-devolucion {
+    background: #3b4042a6;
+    border-radius: 20px;
+    margin: 0rem;
+    padding: 0.5rem;
+}
+
+
+/*estilos del dashborad*/
+
+.icon-dashboard {
+    width: 50%;
+}
+
+.hover:hover {
+    background-color: green !important;
+    border-radius: 20px;
+}
+
+.input-group-text {
+    border: 1px !important;
+    border-bottom: 1px solid #344767 !important;
+    border-radius: 0% !important;
+}
+
+.input-group .form-control+.input-group-text {
+    border-right: 1px !important;
+}
+
+.input-group .form-control:focus {
+    border-left: 1px solid #ffffff !important;
+    border-right: 1px solid #ffffff !important;
+}
+
+.btn-slider-center {
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.btn-slider {
+    color: #a5acb0;
+}
+
+.btn-slider:hover {
+    color: #C4122f;
+}
+
+.active-slider {
+    color: #C4122f;
+}
+
+.img-movil {
+    width: 100% !important;
+}
+
+@media (min-width: 200px) {
+    .show-movil {
+        display: block;
+    }
+}
+
+@media (min-width: 576px) {
+    .show-movil {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .show-movil {
+        display: none;
+    }
+}
+
+@media (min-width: 200px) {
+    .show-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .show-desktop {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .show-desktop {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .show-desktop {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .show-desktop {
+        display: block;
+    }
+}
+
+
+/* ====== */
+
+@media (min-width: 200px) {
+    .mostrar-movil {
+        display: block;
+    }
+    .font-size-8 {
+        font-size: 8px !important;
+    }
+    .btn-movil {
+        width: 80% !important;
+    }
+    .btn-back {
+        width: 80% !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .mostrar-movil {
+        display: none;
+    }
+    .btn-movil {
+        width: 30% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .mostrar-movil {
+        display: none;
+    }
+    .btn-movil {
+        width: 30% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .mostrar-movil {
+        display: none;
+    }
+    .btn-movil {
+        width: 30% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mostrar-movil {
+        display: none;
+    }
+    .btn-movil {
+        width: 30% !important;
+    }
+}
+
+
+/* Card personalizado movil */
+
+.card-personalizado {
+    border: 1px solid #a5acb0;
+    border-radius: 20px;
 }

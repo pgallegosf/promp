@@ -23,9 +23,10 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/slick/slick-theme.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- <link rel="stylesheet" href="../assets/css/sliders/slider.css"> -->
 </head>
 
-<body class="g-sidenav-show  bg-gray-100" onload="cargarAjustes()">
+<body class="g-sidenav-show  bg-gray-100">
 
     <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
         <!-- Navbar -->
@@ -45,7 +46,7 @@
                     </div>
                     <div class="icon-menu">
                         <a class="" href="#">
-                            <i class="fas fa-bars" onclick="mostrarContainer()"></i>
+                            <i class="fas fa-bars"></i>
                         </a>
                     </div>
                 </div>
@@ -64,18 +65,18 @@
                     <div class="col-lg-12 mb-lg-0">
                         <div class="card card-height paddingCardBusqueda">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                     <div class="effect" onclick="window.location.href='LoginDrawback.html'">
-                                        <div class="avatar-group mt-2 div-effect">
-                                            <div class="avatar avatar-xs rounded-circle div-left mt-2">
+                                        <div class="avatar-group div-effect">
+                                            <div class="avatar avatar-xs rounded-circle div-left">
                                                 <img src="../assets/img/Drawback/calculadora.png" alt="calculadora">
                                             </div>
-                                            <div class="font-color-red font-weight-bold div-left mt-2">Simulador de devolución de Drawback</div>
+                                            <div class="font-color-red font-weight-bold">Simulador de devolución de Drawback</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
-                                    <div class="effect" onclick="window.location.href='../../DirectorioLogistico/Pages/ListaDirectorioLogistico.html'">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="effect" onclick="window.location.href='EmpezarDocumentacionDrawback.html'">
                                         <div class="avatar-group mt-2 div-effect">
                                             <div class="avatar avatar-xs rounded-circle div-left mt-2">
                                                 <img src="../assets/img/Drawback/calculadora.png" alt="dolares">
@@ -90,9 +91,7 @@
                 </div>
                 <div class="row top">
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 card-header pb-0 background-img" id="bg-embarcacion">
-                        <div class="row mt-5" id="rutasBuscadas">
-
-                        </div>
+                        <img src="../assets/img/Drawback/shutterstock_712434244.jpg" alt="img" class="background-img">
                     </div>
                 </div>
                 <div class="row">
@@ -104,12 +103,12 @@
                         <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left">
                             Verifica si aplicas al Drawback
                         </div>
-                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left " id="btn-rutas ">
-                            <button class="btn btn-second " onclick="location.href='RegistroDirectorio.html'">Registrate aquí</button>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left text-center" id="btn-rutas ">
+                            <button class="btn btn-danger w-70 " onclick="window.location.href='LoginDrawback.html'">Escribenos</button>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-4">
+                <div class="row mt-4 ocultar-movil">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 centrado">
                         <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 titulo-left fs-6">¿Cómo verificar si aplicas al beneficio?</div>
                         <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-left">
@@ -125,16 +124,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-4 centro ocultar-movil">
-                        <img src="../assets/img/Directorio/seParteDe.png" alt="mapa_ruta" class="img">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-4 centro">
+                        <img src="../assets/img/Drawback/imagen principal.png" alt="mapa_ruta" class="img">
                     </div>
                 </div>
-                <div class="row mt-8">
+                <div class="row mt-8 show-desktop">
                     <div class="card">
                         <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
                             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="5000">
+                                    <div class="carousel-item active" data-bs-interval="100000">
                                         <img src="../assets/img/Drawback/fondo_blanco.jpg" class="d-block w-100 img-slider" alt="...">
                                         <!-- <img src="../assets/img/Drawback/fondo_blanco_movil.jpg" class="d-none w-100 img-slider" alt="..."> -->
                                         <div class="carousel-caption d-none d-md-block">
@@ -198,13 +197,38 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Ver ayuda herramienta version movil -->
+                <div class="card paddingCardBusqueda show-movil">
+                    <div class="row div-centrado">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-weight-bold font-size-18 text-center">¿Como te puede ayudar esta herramienta?</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-weight-bold font-size-13">Evita problemas de trámite con la SUNAT</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-10">Al simular podrás comprobar antes de enviar tu solicitud a la SUNAT, si tus insumos y montos aplican al Drawback</div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="btn-slider-center mt-3">
+                                    <div class="mx-2"><i class="fas fa-circle btn-slider active-slider"></i></div>
+                                    <div class="mx-2"><i class="fas fa-circle btn-slider"></i></div>
+                                    <div class="mx-2"><i class="fas fa-circle btn-slider"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
+                            <div class="text-center">
+                                <img src="../assets/img/Drawback/imagen principal.png" alt="mapa_ruta" class="img">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4"><br></div>
+                    </div>
+                </div>
+                <!-- Fin ayuda herramienta version movil -->
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-4 centro ocultar-movil">
                         <img src="../assets/img/Directorio/seParteDe.png" alt="mapa_ruta" class="img">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 centrado text-center">
-                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 titulo-center fs-6">Conoce las partidas excluidad de Drawback</div>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 font-size-20 font-color-black font-weight-bold">Conoce las partidas excluidas de Drawback</div>
                         <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-color-gris font-size-10">
                             Evita los chascos y demoras, Mira la lista de los insumos que no aplican al Drawback
                         </div>

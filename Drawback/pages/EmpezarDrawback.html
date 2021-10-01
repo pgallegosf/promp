@@ -27,15 +27,18 @@
 <body class="g-sidenav-show  bg-gray-100">
 
     <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
-        <div class="refresh mt-4 m-left-rem" id="btn-volver-buscar" onclick="">
-            <i class="fas fa-undo-alt icon-refresh" aria-hidden="true"></i> atrás
-        </div>
         <div class="container-fluid py-4 container-principal">
             <!-- Inicio de vista principal -->
-            <div class="d-display" id="view-empezar-principal">
+            <div id="view-empezar-principal">
+                <div class="refresh mt-4 m-left-rem ocultar-movil" id="btn-volver-buscar" onclick="window.location.href='LoginDrawback.html'">
+                    <i class="fas fa-undo-alt icon-refresh" aria-hidden="true"></i> atrás
+                </div>
                 <div class="row m-left-rem">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 centro mostrar-movil">
+                        <img src="../assets/img/Drawback/shutterstock_1180951456.jpg" alt="mapa_ruta" class="img">
+                    </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
-                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-color-black fs-4 font-weight-bold">
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-color-black fs-4 font-weight-bold ocultar-movil">
                             Bienvenido al Simulador de Drawback
                         </div>
                         <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
@@ -43,26 +46,29 @@
                                 <p class="font-color-black">Para la simulación es necesario tener a la mano la siguinte información y documentos:</p>
                             </div>
                             <div>
-                                <p class="text-line-title font-color-black"><i class="fas fa-circle"></i> Número de partida aranceladia</p>
-                                <p class="text-line-title font-color-black"><i class="fas fa-circle"></i> Fecha de la DAM Importación</p>
-                                <p class="text-line-title font-color-black"><i class="fas fa-circle"></i> Fecha del embarque de la DAM Exportación</p>
-                                <p class="text-line-title font-color-black"><i class="fas fa-circle"></i> Valor CIF importado</p>
-                                <p class="text-line-title font-color-black"><i class="fas fa-circle"></i> Valor FOB exportado</p>
+                                <p class="font-size-13 font-color-black"><i class="fas fa-circle"></i> Número de partida aranceladia</p>
+                                <p class="font-size-13 font-color-black"><i class="fas fa-circle"></i> Fecha de la DAM Importación</p>
+                                <p class="font-size-13 font-color-black"><i class="fas fa-circle"></i> Fecha del embarque de la DAM Exportación</p>
+                                <p class="font-size-13 font-color-black"><i class="fas fa-circle"></i> Valor CIF importado</p>
+                                <p class="font-size-13 font-color-black"><i class="fas fa-circle"></i> Valor FOB exportado</p>
                             </div>
                         </div>
                         <div class="col-lg-10 col-md-12 col-xs-12 col-sm-12 mt-4">
-                            <button class="btn btn-danger w-70" onclick="empezarSimulacion()" id="btn-ingresar">Comenzar</button>
+                            <button class="btn btn-danger w-70" id="btn-comenzar">Comenzar</button>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-4 centro ocultar-movil">
-                        <img src="../assets/img/Directorio/seParteDe.png" alt="mapa_ruta" class="img">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 centro ocultar-movil">
+                        <img src="../assets/img/Drawback/shutterstock_1180951456.jpg" alt="mapa_ruta" class="img">
                     </div>
                 </div>
             </div>
             <!-- Fin de vista principal -->
             <!-- Inicio de vista simulador -->
-            <div class="d-none" id="view-simulador-principal">
-                <div class="row m-left-rem">
+            <div id="view-simulador-principal">
+                <div class="refresh mt-4 m-left-rem  ocultar-movil" id="btn-volver">
+                    <i class="fas fa-undo-alt icon-refresh" aria-hidden="true"></i> atrás
+                </div>
+                <div class="row m-left-rem  ocultar-movil">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
                         <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-color-black fs-4">
                             Crea tu nueva simulación Drawback
@@ -74,13 +80,34 @@
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 centrado">
-                            <button class="btn btn-second" onclick="window.location.href='Simulador.html'" id="btn-ingresar">Comenzar</button>
+                            <button class="btn btn-second" onclick="window.location.href='Simulador.html'">Comenzar</button>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centro ocultar-movil">
-                        <img src="../assets/img/Directorio/seParteDe.png" alt="mapa_ruta" class="img">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centro">
+                        <img src="../assets/img/Drawback/shutterstock_1180951456.jpg" alt="mapa_ruta" class="img">
                     </div>
                 </div>
+                <!-- Inicio vista simulador movil -->
+                <div class="row m-left-rem mostrar-movil">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centro">
+                        <img src="../assets/img/Drawback/shutterstock_1180951456.jpg" alt="mapa_ruta" class="img">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-color-black fs-4">
+                            Comencemos
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
+                            <div>
+                                <label>Dale un nombre a tu primera simulación</label>
+                                <input type="text" class="form-control" placeholder="Descripcion" id="correo" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 centrado">
+                            <button class="btn btn-second w-80" onclick="window.location.href='Simulador.html'">Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inicio vista simulador movil -->
             </div>
             <!-- Fin de vista simulador -->
         </div>

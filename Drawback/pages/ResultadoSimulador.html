@@ -57,44 +57,51 @@
             <!-- Inicio de vista principal -->
             <div class="d-display" id="view-global">
                 <div class="row mt-4">
-                    <div class="col-xl-3 col-lg-3 col-md-2 col-sm-3">
-                        <a href="http://" class="div-right mt-2"><i class="fas fa-share rota-horizontal" aria-hidden="true"></i>Volver a simular</a>
+                    <div class="col-xl-3 col-lg-3 col-md-2 col-sm-3 ocultar-movil">
+                        <a onclick="window.location.href='Drawback.html'" class="div-right mt-2 ordenar"><i class="fas fa-share rota-horizontal" aria-hidden="true"></i>Volver a simular</a>
                     </div>
                     <div class="titulo col-xl-6 col-lg-12 col-md-6 col-sm-12">Resultados de Simulación</div>
+                    <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 mostrar-movil"><button class="btn btn-outline-danger w-100" onclick="window.location.href='Drawback.html'">Volver a simular</button> </div>
                 </div>
                 <div class="row mt-4 div-centrado">
                     <div class="col-lg-12 mb-lg-0">
                         <div class="card card-resultado-simulador">
                             <div class="row div-centrado">
-                                <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 m-left-rem">
-                                    <div class="col-xl-1 col-lg-6 col-md-6 col-sm-3 centrado div-left">
-                                        <div class="avatar-group mt-3">
-                                            <div class="avatar avatar-xs rounded-circle icon-check">
-                                                <i class="fas fa-check"></i>
-                                            </div>
+                                <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12">
+                                    <div class="col-xl-1 col-lg-6 col-md-6 col-sm-8 centrado div-left">
+                                        <img src="../assets/img/Drawback/check.png" alt="check" class="mx-n4">
+                                    </div>
+                                    <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 div-left font-color-white font-size-22">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 font-color-white font-size-10 ocultar-movil">Acogimiento</div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            Tu insumo aplica al Drawback
                                         </div>
                                     </div>
-                                    <div class="col-xl-7 col-lg-6 col-md-6 col-sm-6 div-left m-left-rem font-color-white font-size-22 mt-4">
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 font-color-white font-size-10">Acogimiento</div>
-                                        Tu insumo aplica al Drawback
-                                    </div>
                                 </div>
+                                <div class="mostrar-movil">
+                                    <div class="col-sm-12"><br></div>
+                                    <div class="line-vertical col-sm-12"></div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mostrar-movil"><br></div>
                                 <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 m-left-rem">
-                                    <div class="col-xl-7 col-lg-6 col-md-6 col-sm-6 div-left m-left-rem font-color-white font-size-22 mt-4">
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 font-color-white font-size-10">Total de devolución</div>
-                                        USD$ 540.00
+                                    <div class="col-xl-7 col-lg-6 col-md-6 col-sm-6 div-left m-left-rem font-color-white font-size-22">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 font-color-white font-size-10">Total de devolución</div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 font-color-white font-size-10">
+                                            USD$ 540.00
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mostrar-movil"><br></div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12"><br></div> -->
                         </div>
                     </div>
                 </div>
                 <div class="row top">
                     <div class="card-header pb-0 background-img" id="bg-embarcacion">
+                        <img src="../assets/img/Drawback/shutterstock_712434244.jpg" alt="img" class="background-img">
                     </div>
                 </div>
-                <div class="card mb-4">
+                <div class="card mb-4 ocultar-movil">
                     <div class="card-header pb-0 text-center font-color-black">
                         <h6>Detalle de la simulación</h6>
                     </div>
@@ -137,7 +144,8 @@
                                             <p class="text-xs text-secondary mb-0">$ 3,000.00</p>
                                         </td>
                                         <td class="align-middle text-center">
-                                            <span class="badge badge-sm bg-color-success"><i class="fas fa-check-circle mx-1"></i>Aplica</span>
+                                            <!-- <span class="badge badge-sm bg-color-success"><i class="fas fa-check-circle mx-1"></i>Aplica</span> -->
+                                            <span><img src="../assets/img/Drawback/aplica.png" alt=""> </span>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -145,7 +153,36 @@
                         </div>
                     </div>
                 </div>
-                <div class="hr background-gris mt-3"></div>
+                <div class="row mt-4 row-centrado mostrar-movil">
+                    <div class="card background-gris-pdf w-100">
+                        <div class="row div-centrado">
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-size-13 mt-3">Insumo 1</div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-weight-bold font-size-15 mt-3">Cremallera</div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-size-13 mt-3">N° de Subpartida arancelaria</div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-weight-bold font-size-15 mt-3">0303420000</div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-size-13 mt-3">Valor FOB</div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-weight-bold font-size-15 mt-3">$ 18,000.00</div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-size-13 mt-3">Tasa de restitución</div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-weight-bold font-size-15 mt-3">3%</div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-size-13 mt-3">Devolución</div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-weight-bold font-size-15 mt-3">$ 4,500.00</div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3">
+                                <div class="row total-devolucion">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-white font-size-13 mt-1">
+                                        Total de devolución
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-white font-weight-bold font-size-18">
+                                        $ 540.00
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center mt-3">
+                                <span><img src="../assets/img/Drawback/aplica.png" alt=""> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr background-gris mt-3 ocultar-movil"></div>
                 <div class="row posicion mt-4">
                     <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
                         <div class="font-color-black titulo">
@@ -153,21 +190,21 @@
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-6 col-md-12 col-sm-12 font-color-red centrado mt-6">
-                        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-login">
+                        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-login">
                             <i class="far fa-bookmark icon-btn" aria-hidden="true"></i>
-                            <div class="text-line-title">Guardar resultado</div>
+                            <div class="text-line-title font-size-8">Guardar resultado</div>
                         </div>
-                        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 div-left ordenar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#exampleModal" id="pdf">
                             <i class="fas fa-cloud-download-alt icon-btn" aria-hidden="true"></i>
-                            <div class="text-line-title">Descargar en PDF</div>
+                            <div class="text-line-title font-size-8">Descargar en PDF</div>
                         </div>
-                        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-correo">
+                        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-correo">
                             <i class="far fa-envelope icon-btn" aria-hidden="true"></i>
-                            <div class="text-line-title">Enviar por correo</div>
+                            <div class="text-line-title font-size-8">Enviar por correo</div>
                         </div>
-                        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-compartir">
+                        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-compartir">
                             <i class="fas fa-share-alt icon-btn" aria-hidden="true"></i>
-                            <div class="text-line-title">Compartir</div>
+                            <div class="text-line-title font-size-8">Compartir</div>
                         </div>
                     </div>
                 </div>
@@ -211,6 +248,64 @@
                 </div>
             </div>
             <!-- Fin de vista principal -->
+            <!-- Inicio descargar PDF -->
+            <div class="d-none">
+                <div id="pdfResultadoSimulador">
+                    <div class="row mt-4 background-white">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <img src="../assets/img/logos/LOGO PROMPERU.png" alt="promperu" class="nav-img">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 font-color-black font-weight-bold">
+                            <div class="div-right">
+                                Simulador de Drawback
+                            </div>
+                        </div>
+                        <div class="hr background-gris"></div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 font-color-black font-weight-bold mt-4">
+                            <h4>Resultados de la Simulacion</h4>
+                        </div>
+                        <div class="row mt-4 row-centrado">
+                            <div class="card background-gris-pdf w-60">
+                                <div class="row div-centrado">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-size-13 mt-3">Insumo 1</div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-weight-bold font-size-15 mt-3">Cremallera</div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-size-13 mt-3">N° de Subpartida arancelaria</div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-weight-bold font-size-15 mt-3">0303420000</div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-size-13 mt-3">Valor FOB</div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-weight-bold font-size-15 mt-3">$ 18,000.00</div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-size-13 mt-3">Valor CIF</div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-weight-bold font-size-15 mt-3">$ 4,500.00</div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-size-13 mt-3">Tasa de restitución</div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-black font-weight-bold font-size-15 mt-3">3%</div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3">
+                                        <div class="row total-devolucion">
+                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-white font-size-13 mt-1">
+                                                Total de devolución
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 font-color-white font-weight-bold font-size-18">
+                                                $ 540.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center mt-3">
+                                        <!-- <span class="badge badge-sm bg-color-success">
+                                            <i class="fas fa-check-circle mx-1" aria-hidden="true"></i>Aplica
+                                        </span> -->
+                                        <span><img src="../assets/img/Drawback/aplica.png" alt=""> </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12"><br></div>
+                        <div class="hr background-gris"></div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 font-size-10 mt-4">
+                            <div>Información obtenida por la herramienta Simulador Drawback - PROMPERÚ</div>
+                            <div>Web: https://drawback.promperu.gob.pe</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin descargar PDF -->
             <footer class="footer pt-3" id="footer">
                 <div class="container-fluid">
                     <div id="footer-Desktop">
@@ -444,7 +539,8 @@
     <script src="../assets/js/select2/select2.min.js"></script>
     <script src="../assets/js/tab/app.js"></script>
     <script src="../assets/js/general.js"></script>
-    <script src="js/empezarSimulacion.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+    <script src="js/GenerarPdfResultado.js"></script>
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
     <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
     <!-- JS rutas maritimas -->

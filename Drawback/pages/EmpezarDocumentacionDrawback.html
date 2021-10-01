@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Empezar Drawback
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS-Material Bootstrap para panel Tabs -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link href="../assets/css/tab/styleTab.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg" id="main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                <a class="navbar-brand" href="./Drawback.html">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img">
+                </a>
+                <div class="icon-menu">
+                    <div class="icon-menu">
+                        <a class="ocultar-movil" href="#">
+                            <i class="fas fa-user-plus"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="far fa-bell"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div id="view-empezar">
+                <div class="refresh mt-4 m-left-rem ocultar-movil" id="btn-volver-buscar" onclick="window.location.href='LoginDrawback.html'">
+                    <i class="fas fa-undo-alt icon-refresh" aria-hidden="true"></i> atrás
+                </div>
+                <div class="row m-left-rem">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 centro mostrar-movil">
+                        <img src="../assets/img/Drawback/shutterstock_1180951456.jpg" alt="mapa_ruta" class="img">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-color-black fs-4 font-weight-bold ocultar-movil">
+                            Documentación para aplicar al Drawback
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
+                                <div>
+                                    <p class="font-color-black">Selecciona tus trámites para comprobar si cumples con los requisitos de la SUNAT</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ocultar-movil">
+                                <img src="../assets/img/Drawback/shutterstock_1180951456.jpg" alt="mapa_ruta" class="img">
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-md-12 col-xs-12 col-sm-12 mt-4">
+                            <button class="btn btn-danger btn-movil" id="btn-comenzar">Comenzar</button>
+                        </div>
+                        <div class="col-lg-10 col-md-12 col-xs-12 col-sm-12 mt-4 mostrar-movil">
+                            <div class="refresh mt-4 m-left-rem" id="btn-volver-buscar" onclick="window.location.href='LoginDrawback.html'">
+                                <i class="fas fa-undo-alt icon-refresh" aria-hidden="true"></i> Volver al inicio
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de vista principal -->
+            <!-- Inicio de vista principal -->
+            <div id="view-tabs">
+                <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-lg-0 fit-content ocultar-movil">
+                    <section class="tabs-wrapper">
+                        <div class="tabs-container">
+                            <div class="tabs-block">
+                                <div id="tabs-section" class="tabs">
+                                    <div class="row divTab">
+                                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 mb-lg-0  background-second-light fit-content div-left-tab sin-border-lados tab-desktop">
+                                            <ul class="tab-head">
+                                                <li>
+                                                    <a href="#tab-1" class="tab-link active" id="tab1"> <span class="tab-label">RUC y Clave SOL</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-2" class="tab-link" id="tab2"><span class="tab-label">Tipo de producción</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-3" class="tab-link" id="tab3"> <span class="tab-label">Consignación del código</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 mb-lg-0  background-second-light fit-content div-left-tab sin-border-lados tab-movil">
+                                            <ul class="tab-head">
+                                                <li>
+                                                    <a href="#tab-1" class="tab-link active" id="tab1"> <span class="tab-label"> <i class="fas fa-circle" aria-hidden="true"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-2" class="tab-link" id="tab2"><span class="tab-label"> <i class="fas fa-circle" aria-hidden="true"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-3" class="tab-link" id="tab3"> <span class="tab-label"> <i class="fas fa-circle" aria-hidden="true"></i></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 padding-card sinPaddingTop">
+                                            <section id="tab-1" class="tab-body entry-content active active-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-22">
+                                                        RUC y Clave SOL
+                                                    </div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer1">
+                                                            <label for="chkSer1" class="input-checkbox-lab font-size-15">Mi RUC está activo y habido.</label>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer2">
+                                                            <label for="chkSer2" class="input-checkbox-lab font-size-15">Cuento con clave SOL</label>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkSer3">
+                                                            <label for="chkSer3" class="input-checkbox-lab font-size-15">Cuento con cuenta corriente o de ahorro regisrado en SUNAT</label>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer4" id="chkSer4">
+                                                            <label for="chkSer4" class="input-checkbox-lab font-size-15">Soy producctor y exportador</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                                            <bottom class="btn btn-second btnwidth100" onclick="clickTab(2)">Siguiente</bottom>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </section>
+                                            <section id="tab-2" class="tab-body entry-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Tipo de producción
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-centrado">
+                                                        <div class="swtich div-left active-product" id="directa">
+                                                            <i class="fas fa-chart-area"></i>Producción directa
+                                                        </div>
+                                                        <div class="swtich div-left p-right" id="encargo">
+                                                            <i class="fas fa-handshake"></i>Producción por encargo
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Selecciona los trámites a presentar
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        <br>
+                                                    </div>
+                                                    <div id="proDirecta">
+                                                        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                                <div class="font-size-13 font-weight-bold">Informción del local</div>
+                                                                <div class="font-size-13">(Marca mínimo 2 documentos)</div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer5">
+                                                                    <label for="chkSer5" class="input-checkbox-lab font-size-15">Ficha registral</label>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer6">
+                                                                    <label for="chkSer6" class="input-checkbox-lab font-size-15">Contrato de alquiler</label>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkSer7">
+                                                                    <label for="chkSer7" class="input-checkbox-lab font-size-15">Local registrado en la SUNAT</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                <div class="font-size-13 font-weight-bold mt-n2">Mano de obra</div>
+                                                                <div class="font-size-13">(Marca mínimo 1 documentos)</div>
+                                                                <div class="containerRadio">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault">
+                                                                        <label class="form-check-label mt-n4" for="flexRadioDefault">
+                                                                          Número de personal en planilla
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="containerRadio">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                                        <label class="form-check-label mt-n4" for="flexRadioDefault2">
+                                                                          Nro. de personal por recibos por honorarios
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row"><br></div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                            <div class="font-size-13 font-weight-bold mt-n2">Activos de la empresa</div>
+                                                            <div class="font-size-13">(Marca mínimo 1 documentos)</div>
+                                                            <div class="containerRadio">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                                                    <label class="form-check-label mt-n4" for="flexRadioDefault3">
+                                                                     Factura de compras de activos
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="containerRadio">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                                                    <label class="form-check-label mt-n4" for="flexRadioDefault4">
+                                                                      Contrato de alquiler de activo
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                            <div class="font-size-13 font-weight-bold">Insumos para el proceso productivos</div>
+                                                            <div class="font-size-13">(Marca mínimo 2 documentos)</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer8">
+                                                                <label for="chkSer8" class="input-checkbox-lab font-size-15">Facturas</label>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer9">
+                                                                <label for="chkSer9" class="input-checkbox-lab font-size-15">Líquidaciones de compras</label>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkSer10">
+                                                                <label for="chkSer10" class="input-checkbox-lab font-size-15">Guías de remisión</label>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkSer11">
+                                                                <label for="chkSer11" class="input-checkbox-lab font-size-15">Registros contables del comprobante de pago</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="proEncargo">
+                                                        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                                <div class="font-size-13 font-weight-bold">Contrato o factura de producción</div>
+                                                                <div class="font-size-13">(Marca mínimo 2 documentos)</div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer12">
+                                                                    <label for="chkSer12" class="input-checkbox-lab font-size-15">Contrato de producción</label>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer13">
+                                                                    <label for="chkSer13" class="input-checkbox-lab font-size-15">Factura de servicio de producción</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                <div class="font-size-13 font-weight-bold mt-n2">Información del local tercero</div>
+                                                                <div class="font-size-13">(Marca mínimo 2 documentos)</div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer14">
+                                                                    <label for="chkSer14" class="input-checkbox-lab font-size-15">Ficha registral</label>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer15">
+                                                                    <label for="chkSer15" class="input-checkbox-lab font-size-15">Contrato de alquiler</label>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer16">
+                                                                    <label for="chkSer16" class="input-checkbox-lab font-size-15">Local registrado en la SUNAT</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row"><br></div>
+                                                        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                <div class="font-size-13 font-weight-bold mt-n2">Insumos del tercero y/o proporcionados por el exportador para el proceso productivo</div>
+                                                                <div class="font-size-13">(Marca mínimo 3 de los 4 documentos)</div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer16">
+                                                                    <label for="chkSer16" class="input-checkbox-lab font-size-15">Facturas</label>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer17">
+                                                                    <label for="chkSer17" class="input-checkbox-lab font-size-15">Liquidaciones de compras</label>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer18">
+                                                                    <label for="chkSer18" class="input-checkbox-lab font-size-15">Guías de remisión de insumos</label>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer19">
+                                                                    <label for="chkSer19" class="input-checkbox-lab font-size-15">Registros contables de comprobante de pago</label>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer20">
+                                                                    <label for="chkSer20" class="input-checkbox-lab font-size-15">Guías de remisión de productos elaborados por terceros</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                                <div class="font-size-13 font-weight-bold mt-4">Activos de la empresa del tercero</div>
+                                                                <div class="font-size-13">(Marca mínimo 1 de 2 documentos)</div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer21">
+                                                                    <label for="chkSer21" class="input-checkbox-lab font-size-15">Facturas de compra de activo</label>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer22">
+                                                                    <label for="chkSer22" class="input-checkbox-lab font-size-15">Contrato de alquiler de activo</label>
+                                                                </div>
+                                                                <div class="mt-4">
+                                                                    <div class="font-size-13 font-weight-bold">Mano de obra del tercero</div>
+                                                                    <div class="font-size-13">(Marca mínimo 1 documentos)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                        <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer23">
+                                                                        <label for="chkSer23" class="input-checkbox-lab font-size-15">Número de personal en planilla</label>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer24">
+                                                                        <label for="chkSer24" class="input-checkbox-lab font-size-15">Nro. de personal el planilla por recibo por honorario</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                                            <bottom class="btn btn-second btnwidth100" onclick="clickTab(3)">Siguiente</bottom>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section id="tab-3" class="tab-body entry-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Consignación del código 13
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13">
+                                                        Selecciona las declaraciones que consignes el código 13
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer25">
+                                                            <label for="chkSer25" class="input-checkbox-lab font-size-15 font-color-black">Declaración aduanera de mercancía</label>
+                                                            <div class="font-size-13">(Código 13 en el acápie 7.28)</div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer26">
+                                                            <label for="chkSer26" class="input-checkbox-lab font-size-15 font-color-black">Declaración simplificada de exportación</label>
+                                                            <div class="font-size-13">(Código 13 en el acápie 6.13)</div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkSer27">
+                                                            <label for="chkSer27" class="input-checkbox-lab font-size-15 font-color-black">Declaración Exporta Fácil</label>
+                                                            <div class="font-size-13">(Código 13 en el acápie: Régimen precedente y/o aplicación)</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                                            <bottom class="btn btn-second btnwidth100" onclick="window.location.href='ResultadoRequisitoSimulador.html'">Continuar</bottom>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="hr background-gris col-xl-12 col-lg-12 col-md-12 col-sm-12 mostrar-movil mt-3"></div>
+                <!-- Inicio vista movil -->
+                <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-lg-0 mostrar-movil">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              RUC y Clave SOL
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                            <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer1">
+                                            <label for="chkSer1" class="input-checkbox-lab font-size-15">Mi RUC está activo y habido.</label>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                            <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer2">
+                                            <label for="chkSer2" class="input-checkbox-lab font-size-15">Cuento con clave SOL</label>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                            <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkSer3">
+                                            <label for="chkSer3" class="input-checkbox-lab font-size-15">Cuento con cuenta corriente o de ahorro regisrado en SUNAT</label>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                            <input class="input-checkbox" type="checkbox" name="chkSer4" id="chkSer4">
+                                            <label for="chkSer4" class="input-checkbox-lab font-size-15">Soy producctor y exportador</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr background-gris col-xl-12 col-lg-12 col-md-12 col-sm-12 mostrar-movil mt-3"></div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Tipo de producción
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="card-personalizado mx-n3" onclick="MostrarProduccionDirecta()">
+                                            <div class="mx-2">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row font-color-red font-weight-bold w-100">
+                                                            <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25">
+                                                                <i class="fas fa-chart-area" aria-hidden="true"></i>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 mt-2" id="pDirecta">
+                                                                Producción Directa
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="card-personalizado mx-n3" onclick="MostrarProduccionEncargo()">
+                                            <div class="mx-2">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row font-color-red font-weight-bold w-100">
+                                                            <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25">
+                                                                <i class="fas fa-handshake" aria-hidden="true"></i>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 mt-2" id="pEncargo">
+                                                                Producción por Encargo
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr background-gris col-xl-12 col-lg-12 col-md-12 col-sm-12 mostrar-movil mt-3"></div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Consignación del código 13
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 font-color-black">Solo selecciona los documentos que tengan y consignen el código 13 en los acápites correspondientes</div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkDeclaracion">
+                                    <label for="chkDeclaracion" class="input-checkbox-lab font-size-13 font-color-black">Declaración aduanera de mercancía</label>
+                                    <div class="font-size-13">(Código 13 en el acápie 7.28)</div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <input class="input-checkbox" type="checkbox" name="chkSer2" id="chksimplificada">
+                                    <label for="chksimplificada" class="input-checkbox-lab font-size-13 font-color-black">Declaración simplificada de exportación</label>
+                                    <div class="font-size-13">(Código 13 en el acápie 6.13)</div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkExporta">
+                                    <label for="chkExporta" class="input-checkbox-lab font-size-13 font-color-black">Declaración Exporta Fácil</label>
+                                    <div class="font-size-13">(Código 13 en el acápie: Régimen precedente y/o aplicación)</div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingControl"><br></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingControl">
+                                    <button class="btn btn-second btnwidth100" onclick="window.location.href='ResultadoRequisitoSimulador.html'">Comprar mi documentación</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIn vista movil -->
+
+            </div>
+            <!-- Fin de vista principal -->
+        </div>
+    </main>
+    <!-- Inicio Opciones de producción -->
+    <div id="opciones">
+        <div id="opcion-01">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row background-gris">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center font-size-15 font-color-black font-weight-bold"><i class="fas fa-angle-left back"></i></div>
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 text-center font-size-15 font-color-black font-weight-bold">Producción Directa</div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-18 font-color-black font-weight-bold mx-2">Necesitas tener los siguientes tipos de documentos</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Información del local</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">(Marca mínimo 2 documentos)</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkficha">
+                        <label for="chkficha" class="input-checkbox-lab font-size-15">Ficha registral</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkcontrato">
+                        <label for="chkcontrato" class="input-checkbox-lab font-size-15">Contrato de alquiler</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chklocal">
+                        <label for="chklocal" class="input-checkbox-lab font-size-15">Local registrado en la SUNAT</label>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Mano de obra</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">(Marca mínimo 1 documento)</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-planilla" id="r-planilla">
+                            <label class="form-check-label mt-n4" for="r-planilla">
+                              Número de personal en planilla
+                            </label>
+                        </div>
+                    </div>
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-RH" id="r-RH">
+                            <label class="form-check-label" for="r-RH">
+                              Nro. de personal por recibos por honorarios
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Activos de la empresa</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">(Marca mínimo 1 documento)</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-factura" id="r-factura">
+                            <label class="form-check-label mt-n4" for="r-factura">
+                              Número de personal en planilla
+                            </label>
+                        </div>
+                    </div>
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-contrato" id="r-contrato">
+                            <label class="form-check-label" for="r-contrato">
+                              Nro. de personal por recibos por honorarios
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Insumos para el proceso productivo</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">(Marca mínimo 3 de 4 documents)</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chk-facturas">
+                        <label for="chk-facturas" class="input-checkbox-lab font-size-15">Facturas</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkliquidaciones">
+                        <label for="chkliquidaciones" class="input-checkbox-lab font-size-15">Liquidaciones de compras</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkguiaremision">
+                        <label for="chkguiaremision" class="input-checkbox-lab font-size-15">Guías de remisión de insumos</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkRegistroCC">
+                        <label for="chkRegistroCC" class="input-checkbox-lab font-size-15">Registros contables de comprobante de pago</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <div class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Siguiente</div>
+            </div>
+        </div>
+        <div id="opcion-02">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row background-gris">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center font-size-15 font-color-black font-weight-bold"><i class="fas fa-angle-left back"></i></div>
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 text-center font-size-15 font-color-black font-weight-bold">Producción por Encargo</div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-18 font-color-black font-weight-bold mx-2">Necesitas tener los siguientes tipos de documentos</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Contrato o factura de producción</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">Ambos documentos son obligatorios</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkContratoProd">
+                        <label for="chkContratoProd" class="input-checkbox-lab font-size-15">Contrato de producción</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkFacService">
+                        <label for="chkFacService" class="input-checkbox-lab font-size-15">Factura de servicio de producción</label>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Información del local del tercero</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">Debes tener mínimo 2 documentos</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkFichaReg">
+                        <label for="chkFichaReg" class="input-checkbox-lab font-size-15">Ficha registral</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkContAlquiler">
+                        <label for="chkContAlquiler" class="input-checkbox-lab font-size-15">Contrato de alquiler</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkLocalRegSunat">
+                        <label for="chkLocalRegSunat" class="input-checkbox-lab font-size-15">Local registrado en la SUNAT</label>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Mano de obra del tercero</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">Debes tener mínimo 1 de 2 documentos</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-PersPlan" id="r-PersPlan">
+                            <label class="form-check-label mt-n4" for="r-PersPlan">
+                              Número de personal en planilla
+                            </label>
+                        </div>
+                    </div>
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-PersRH" id="r-PersRH">
+                            <label class="form-check-label" for="r-PersRH">
+                              Nro. de personal por recibos por honorarios
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Activos de la empresa del tercero</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">Debes tener mínimo 1 de 2 documentos</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-FacActivo" id="r-FacActivo">
+                            <label class="form-check-label mt-n4" for="r-FacActivo">
+                              Factura de compra de activo
+                            </label>
+                        </div>
+                    </div>
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-ContaActivo" id="r-ContaActivo">
+                            <label class="form-check-label" for="r-ContaActivo">
+                              Contrato de alquiler activo
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Insumos del tercero y/o proporcionados por el exportador para el proceso productivo</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">Deber tener mínimo 3 de los 4 documents</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chk-FacTercero">
+                        <label for="chk-FacTercero" class="input-checkbox-lab font-size-15">Facturas</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chk-LiqTercero">
+                        <label for="chk-LiqTercero" class="input-checkbox-lab font-size-15">Liquidaciones de compras</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chk-GRTercero">
+                        <label for="chk-GRTercero" class="input-checkbox-lab font-size-15">Guías de remisión de insumos</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chk-RegCCTercero">
+                        <label for="chk-RegCCTercero" class="input-checkbox-lab font-size-15">Registros contables de comprobante de pago</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chk-GRPETercero">
+                        <label for="chk-GRPETercero" class="input-checkbox-lab font-size-15">Guías de remisión de los productos elaborados por el tercero</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <div class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Siguiente</div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Opciones de producción -->
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select2/select2.min.js"></script>
+    <script src="../assets/js/tab/app.js"></script>
+    <script src="../assets/js/general.js"></script>
+    <script src="js/EmpezarDocumentacionDrawback.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
+    <!-- JS rutas maritimas -->
+</body>
+
+</html>

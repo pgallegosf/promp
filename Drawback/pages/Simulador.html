@@ -58,26 +58,39 @@
             <div class="d-display" id="view-global">
                 <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-lg-0  fit-content">
                     <section class="tabs-wrapper">
-                        <div class="tabs-container" data-select2-id="select2-data-29-x7or">
-                            <div class="tabs-block" data-select2-id="select2-data-28-xbh3">
-                                <div id="tabs-section" class="tabs" data-select2-id="select2-data-tabs-section">
+                        <div class="tabs-container">
+                            <div class="tabs-block">
+                                <div id="tabs-section" class="tabs">
                                     <div class="row divTab">
-                                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 mb-lg-0  background-second-light fit-content div-left-tab sin-border-lados">
+                                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 mb-lg-0  background-second-light fit-content div-left-tab sin-border-lados tab-desktop">
                                             <ul class="tab-head">
                                                 <li>
-                                                    <a href="#tab-1" class="tab-link" id="tab1"> <span class="tab-label">Producto y Partida Nacional</span></a>
+                                                    <a href="#tab-1" class="tab-link active" id="tab1"> <span class="tab-label">Producto y Partida Nacional</span></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#tab-2" class="tab-link active" id="tab2"><span class="tab-label">Modalidad de Insumos</span></a>
+                                                    <a href="#tab-2" class="tab-link" id="tab2"><span class="tab-label">Modalidad de Insumos</span></a>
                                                 </li>
                                                 <li>
                                                     <a href="#tab-3" class="tab-link" id="tab3"> <span class="tab-label">Insumos no liberados de Arancel</span></a>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 padding-card sinPaddingTop" data-select2-id="select2-data-27-7pjn">
-                                            <section id="tab-1" class="tab-body entry-content" data-select2-id="select2-data-tab-1">
-                                                <div class="row" data-select2-id="select2-data-26-qmq9">
+                                        <div class="col-md-12 col-sm-12 mb-lg-0  background-second-light fit-content div-left-tab sin-border-lados tab-movil">
+                                            <ul class="tab-head">
+                                                <li>
+                                                    <a href="#tab-1" class="tab-link active" id="tab1"> <span class="tab-label"> <i class="fas fa-circle"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-2" class="tab-link" id="tab2"><span class="tab-label"> <i class="fas fa-circle"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-3" class="tab-link" id="tab3"> <span class="tab-label"> <i class="fas fa-circle"></i></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 padding-card sinPaddingTop">
+                                            <section id="tab-1" class="tab-body entry-content active active-content">
+                                                <div class="row ocultar-movil" data-select2-id="select2-data-26-qmq9">
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-22">
                                                         Ingresa tu insumo no liberado de Arancel
                                                     </div>
@@ -116,11 +129,48 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="row mostrar-movil" data-select2-id="select2-data-26-qmq9">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-18">
+                                                        Ingresa tu insumo no liberado de Arancel
+                                                    </div>
+                                                    <div class="card paddingCardBusqueda">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                <label for="NombreComercial">¿Qué tipo de producto exportas?</label>
+                                                                <input type="text" class="form-control sinPaddingTop" id="NombreComercial" value="Cremalleras" placeholder="">
+                                                            </div>
+                                                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <label for="razonSocial">Número de Subpartida Nacional</label>
+                                                                    <input type="text" class="form-control sinPaddingTop" id="razonSocial" value="003" placeholder="">
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2"><i class="fas fa-exclamation-triangle font-size-20" aria-hidden="true"></i></div>
+                                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">Revisa la lista de productos excluidos de Drawback D.S 127-2002-EF</div>
+                                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 m-left-rem">
+                                                                            <a onclick="location.href='PartidasExcluidasDrawback.html'" class="font-color-red ordenar">Ver lista aquí</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-6 col-xs-12 paddingControl d-display" id="check-sesion-activa">
+                                                                <input class="input-checkbox" type="checkbox" name="chkSesionActiva" id="chkSesionActiva" checked="">
+                                                                <label for="chkSesionActiva" class="input-checkbox-lab">Mi producto a exportar es de producción directa o por encargo</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 mt-4">
+                                                            <bottom class="btn btn-second btnwidth100" onclick="clickTab(2)">Continuar</bottom>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </section>
-                                            <section id="tab-2" class="tab-body entry-content active active-content">
-                                                <div class="row">
+                                            <section id="tab-2" class="tab-body entry-content">
+                                                <div class="row ocultar-movil">
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
-                                                        Seleccione un modo de incorporacion del insumo
+                                                        Seleccione un modo de incorporacion del insumos
                                                     </div>
                                                     <div class="accordion accordion-flush" id="beneficiario">
                                                         <div class="accordion-item card div-centrado w-50 border-radius">
@@ -169,6 +219,88 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="row mostrar-movil">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center font-size-18 font-color-black font-weight-bold">
+                                                        Seleccione un modo de incorporacion del insumo
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="card-personalizado mx-n3" onclick="clickTab(3)">
+                                                            <div class="mx-2">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <div class="row font-color-red font-weight-bold w-100">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25">
+                                                                                <i class="far fa-user" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10">
+                                                                                Importado directamente por el beneficiario
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-10 font-color-black">
+                                                                        La empresa exportadora adquiere de un proveedor local un producto nacional elaborado en base a un insumo importado con el correspondiente pago de derechos de arancelarios.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <button class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#m-ejemplo">Ver un ejemplo</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="card-personalizado mx-n3" onclick="clickTab(3)">
+                                                            <div class="mx-2">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <div class="row font-color-red font-weight-bold w-100">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25">
+                                                                                <i class="fas fa-users"></i>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10">
+                                                                                Importado por terceros
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-10 font-color-black">
+                                                                        Importacion indirecta, en el cual el exportador, compra localmente a un tercero insumos importados por este.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <button class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#m-ejemplo2">Ver un ejemplo</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="card-personalizado mx-n3" onclick="clickTab(3)">
+                                                            <div class="mx-2">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <div class="row font-color-red font-weight-bold w-100">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25">
+                                                                                <i class="fas fa-store"></i>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10">
+                                                                                Importados e incorporados a productos locales
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-10 font-color-black">
+                                                                        La empresa exportadora adquiere de un proveedor local un producto nacional elaborado en base a un insumo importado con el correspondiente pago de derechos de arancelarios.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <button class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#m-ejemplo3">Ver un ejemplo</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </section>
                                             <section id="tab-3" class="tab-body entry-content">
                                                 <div class="row">
@@ -179,19 +311,19 @@
                                                         <div class="col-lg-12 mb-lg-0">
                                                             <div class="card">
                                                                 <div class="row px-2 p-5 overflow-hidden">
-                                                                    <div class="col-lg-6 col-md-6 col-xs-12" onclick="mostrarSelectPuertoOrigen()">
+                                                                    <div class="col-lg-6 col-md-6 col-xs-12">
                                                                         <label>Fecha de la DAM importación insumo importado</label>
                                                                         <input type="date" class="form-control sinPaddingTop" id="fechaInicio" value="" placeholder="">
                                                                     </div>
-                                                                    <div class="col-lg-6 col-md-6 col-xs-12 position-relative ordenar" onclick="mostrarSelectPuertoDestino()">
+                                                                    <div class="col-lg-6 col-md-6 col-xs-12 position-relative ordenar">
                                                                         <label>Valor CIF importado</label>
                                                                         <input type="text" class="form-control mt-2" id="puertoDestino" value="" placeholder="$">
                                                                     </div>
-                                                                    <div class="col-lg-6 col-md-6 col-xs-12" onclick="mostrarSelectPuertoOrigen()">
+                                                                    <div class="col-lg-6 col-md-6 col-xs-12">
                                                                         <label>Fecha de embarque indicado en la DAM Exportación</label>
                                                                         <input type="date" class="form-control sinPaddingTop" id="fechaInicio" value="" placeholder="">
                                                                     </div>
-                                                                    <div class="col-lg-6 col-md-6 col-xs-12 position-relative ordenar" onclick="mostrarSelectPuertoDestino()">
+                                                                    <div class="col-lg-6 col-md-6 col-xs-12 position-relative ordenar">
                                                                         <label>Valor FOB exportado</label>
                                                                         <input type="text" class="form-control mt-2" id="puertoDestino" value="" placeholder="$">
                                                                     </div>
@@ -200,13 +332,14 @@
                                                         </div>
                                                     </div>
                                                     <div class="div-centrado">
-                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2 div-left m-left-rem">
-                                                            <button class="btn btn-second" onclick="window.location.href='ResultadoSimulador.html'">Continuar</button>
+                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 mt-2 div-left">
+                                                            <button class="btn btn-second w-100" onclick="window.location.href='ResultadoSimulador.html'">Continuar</button>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2 div-right m-left-rem">
-                                                            <div class="ordenar font-color-red">
+                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12 mt-2 div-right m-left-rem">
+                                                            <div class="ordenar font-color-red ocultar-movil" id="add-Insumo">
                                                                 <i class="fas fa-plus-circle"></i>Agregar Insumo
                                                             </div>
+                                                            <button class="btn btn-outline-danger w-100 mostrar-movil" id="add-Insumo" onclick="clickTab(1)">Agregar otro insumo</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -222,6 +355,78 @@
             <!-- Fin de vista principal -->
         </div>
     </main>
+    <!-- Inicio de modales de ejemplo -->
+    <!-- Inicio de modal de ejemplo1 -->
+    <div class="modal fade bd-example-modal-sm show" id="m-ejemplo" tabindex="-1" role="dialog" aria-labelledby="m-ejemplo" aria-modal="true" style="display: none;">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row ms-2">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13 font-color-black font-weight-bold">Situación:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-10 font-color-black">
+                            Tu como exportador, envías libros a Australia. Para embalarlos usas unas cajas especiales las cuales importas desde Alemania
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13 font-color-black font-weight-bold">Explicación:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-10 font-color-black">
+                            El insumo importado directamente por el beneficiario son las cajas importadas
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inicio de modal de ejemplo1 -->
+    <!-- Inicio de modal de ejemplo2 -->
+    <div class="modal fade bd-example-modal-sm show" id="m-ejemplo2" tabindex="-1" role="dialog" aria-labelledby="m-ejemplo2" aria-modal="true" style="display: none;">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row ms-2">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13 font-color-black font-weight-bold">Situación:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-10 font-color-black">
+                            Tu como exportador, envías agua embotellada a España. Las botellas las compras a otra empresa que las importa de Chile
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13 font-color-black font-weight-bold">Explicación:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-10 font-color-black">
+                            El insumo importado por terceros son las botellas importadas por la otra empresa
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inicio de modal de ejemplo2 -->
+    <!-- Inicio de modal de ejemplo3 -->
+    <div class="modal fade bd-example-modal-sm show" id="m-ejemplo3" tabindex="-1" role="dialog" aria-labelledby="m-ejemplo3" aria-modal="true" style="display: none;">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row ms-2">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13 font-color-black font-weight-bold">Situación:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-10 font-color-black">
+                            Tu como exportador, envías chompas de lanas a China. Las chompas han sido producidas por otra empresa nacional que usa lana importada de Inglaterra para cobfeccionarlas.
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13 font-color-black font-weight-bold">Explicación:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-10 font-color-black">
+                            El insumo importado e incorporados a productos locales son las chompas hechas de lana importada
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inicio de modal de ejemplo3 -->
+    <!-- Inicio de modales de ejemplo -->
+
     <!--   Core JS Files   -->
     <script src="../assets/js/core/popper.min.js"></script>
     <script src="../assets/js/core/bootstrap.min.js"></script>
