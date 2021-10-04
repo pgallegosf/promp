@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Empezar Drawback
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link href="../assets/css/tab/styleTab.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg " data-select2-id="select2-data-30-q45v">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                <a class="navbar-brand" href="./Cubicaje.html">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img">
+                </a>
+                <div class="icon-menu">
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-user" aria-hidden="true"><i class="fas fa-angle-down font-color-red"></i></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="far fa-bell" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-bars" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div class="d-display" id="view-global">
+                <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-lg-0  fit-content">
+                    <section class="tabs-wrapper">
+                        <div class="tabs-container">
+                            <div class="tabs-block">
+                                <div id="tabs-section" class="tabs">
+                                    <div class="row divTab">
+                                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 mb-lg-0  background-second-light fit-content div-left-tab sin-border-lados tab-desktop">
+                                            <ul class="tab-head">
+                                                <li>
+                                                    <a href="#tab-1" class="tab-link active" id="tab1"><span class="tab-label">Tipo de bulto</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-2" class="tab-link" id="tab2"> <span class="tab-label">Llenado de carga</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-3" class="tab-link" id="tab3"> <span class="tab-label">Tipo de contenedor</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 mb-lg-0  background-second-light fit-content div-left-tab sin-border-lados tab-movil">
+                                            <ul class="tab-head">
+                                                <li>
+                                                    <a href="#tab-1" class="tab-link active" id="tab1"><span class="tab-label"> <i class="fas fa-circle"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-2" class="tab-link" id="tab2"> <span class="tab-label"> <i class="fas fa-circle"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-3" class="tab-link" id="tab3"> <span class="tab-label"> <i class="fas fa-circle"></i></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 padding-card sinPaddingTop">
+                                            <section id="tab-1" class="tab-body entry-content active active-content">
+                                                <div class="row mx-4 ocultar-movil">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Describe el tipo de bulto a embarcar
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ocultar"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-weight-bold font-size-15">Bulto 1</div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ocultar"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-weight-bold font-size-7">tipo de bulto</div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <input type="text" class="form-control bulto" placeholder="Selecciona" value="" id="bulto">
+                                                        <i class="fas fa-chevron-down font-color-red div-right mt-n4 bulto ordenar"></i>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="card w-100 p-3 card-bulto" id="tipoBulto">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 ordenar option-select producto">Caja personalizada</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 hr background-gris"></div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select producto">Caja de cartón simple (20 x 30 x 40 cm)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select producto">Caja de cartón doble (40 x 50 x 60 cm)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select producto">Caja de carton archivo (45 x 35 x 60 cm)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select producto">Caja de zapatos (15 x 20 x 45 cm)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 hr background-gris"></div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select producto">Cilindro de plástico (100 x 100 cm)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select producto">Cilindro de metal (100 x 150 cm)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 hr background-gris"></div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 ordenar option-select producto">Empaque de bolsa 20 kg (100 x 100 x 100)</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div id="medida">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Largo (cm)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="largo">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Ancho (cm)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="ancho">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Alto (cm)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="alto">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Peso (kg)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="peso">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Cantidad</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="cantidad">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <div class="div-left font-color-black font-size-7">
+                                                                        Volumen unitario <i class="fas fa-info-circle font-color-red"></i>
+                                                                        <div>0.12 m³</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <div class="div-right font-color-black font-size-7">
+                                                                        Volumen total de la carga <i class="fas fa-info-circle font-color-red"></i>
+                                                                        <div>36 m³</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <div class="ordenar font-color-red font-size-10">
+                                                                        <i class="fas fa-plus-circle font-size-15"></i> Agregar otro tipo de bulto
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <button class="btn btn-danger w-50" onclick="clickTab(3)">Continuar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mostrar-movil">
+                                                    <div class="col-lg-12 mb-lg-0">
+                                                        <div class="card">
+                                                            <div class="row div-centrado">
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-18">
+                                                                    Describe el tipo de bulto a embarcar
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-weight-bold font-size-15">Bulto 1</div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-weight-bold font-size-7">tipo de bulto</div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                    <input type="text" class="form-control bultoM" placeholder="Selecciona" value="" id="bultoM">
+                                                                    <i class="fas fa-chevron-down font-color-red div-right mt-n4 bultoM ordenar"></i>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <div class="card w-100 p-3 card-bulto" id="tipoBultoM">
+                                                                            <div class="row helvetica-light-46">
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 ordenar option-select productoM">Caja personalizada</div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 hr background-gris"></div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select productoM">Caja de cartón simple (20 x 30 x 40 cm)</div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select productoM">Caja de cartón doble (40 x 50 x 60 cm)</div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select productoM">Caja de carton archivo (45 x 35 x 60 cm)</div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select productoM">Caja de zapatos (15 x 20 x 45 cm)</div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 hr background-gris"></div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select productoM">Cilindro de plástico (100 x 100 cm)</div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select productoM">Cilindro de metal (100 x 150 cm)</div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 hr background-gris"></div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 ordenar option-select productoM">Empaque de bolsa 20 kg (100 x 100 x 100)</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Largo (cm)</div>
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <input type="text" class="form-control" id="largo">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Ancho (cm)</div>
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <input type="text" class="form-control" id="ancho">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Alto (cm)</div>
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <input type="text" class="form-control" id="alto">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Peso (kg)</div>
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <input type="text" class="form-control" id="peso">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Cantidad</div>
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <input type="text" class="form-control" id="cantidad">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="div-left font-color-black font-size-7">
+                                                                                    Volumen unitario <i class="fas fa-info-circle font-color-red"></i>
+                                                                                    <div>0.12 m³</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="div-right font-color-black font-size-7">
+                                                                                    Volumen total de la carga <i class="fas fa-info-circle font-color-red"></i>
+                                                                                    <div>36 m³</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                                                        <div class="ordenar font-color-red font-size-10">
+                                                                            <i class="fas fa-plus-circle font-size-15"></i> Agregar otro tipo de bulto
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                                                        <button class="btn btn-danger w-100" onclick="clickTab(3)">Continuar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section id="tab-2" class="tab-body entry-content">
+                                                <div id="Directo">
+                                                    <div class="row" data-select2-id="select2-data-26-qmq9">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-22">
+                                                            Seleccione el modo de llenado de tu carga
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 mx-2">
+                                                            <div class="card-personalizado mx-n3 card-height ordenar" onclick="clickTab(4)">
+                                                                <div class="mx-2 div-icon-text-centrado">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <div class="row font-color-red font-weight-bold w-100">
+                                                                                <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25 text-center">
+                                                                                    <i class="fas fa-apple-alt" aria-hidden="true"></i>
+                                                                                </div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 text-center">
+                                                                                    Directo en el contenedor
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-10 font-color-black text-center">
+                                                                            La carga será cargada y colocada directo en el contenedor
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                                                        <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 mx-2">
+                                                            <div class="card-personalizado mx-n3 card-height ordenar paleitizado">
+                                                                <div class="mx-2 div-icon-text-centrado">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <div class="row font-color-red font-weight-bold w-100">
+                                                                                <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25 text-center">
+                                                                                    <i class="fas fa-temperature-low" aria-hidden="true"></i>
+                                                                                </div>
+                                                                                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 text-center">
+                                                                                    Carga paleitizada
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-10 font-color-black text-center">
+                                                                            Se utilizará una plataforma para agrupar y aplicar su carga
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="Paleitizada">
+                                                    <div class="row" data-select2-id="select2-data-26-qmq9">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-22">
+                                                            Seleccione el tipo de pallete que utiliza
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <input type="text" class="form-control pallete" placeholder="Selecciona" value="" id="pallete">
+                                                            <i class="fas fa-chevron-down font-color-red div-right mt-n4 pallete ordenar" aria-hidden="true"></i>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                <div class="card w-100 p-3 card-palietizado" id="tipoPallete">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 ordenar option-select tipPallete">Pallete Europeo (120 x 80 x 200 cm)</div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select tipPallete">1/2 Pallete Europeo (60 x 80 x 200 cm)</div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 mt-2 ordenar option-select tipPallete">Pallete Americano (120 x 100 x 200 cm)</div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-7 ordenar option-select tipPallete">Personalizado</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Largo (cm)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="largo">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Ancho (cm)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="ancho">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-7 font-weight-bold font-color-black">Alto (cm)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="alto">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <div class="div-left font-color-black font-size-7">
+                                                                        Volumen unitario <i class="fas fa-info-circle font-color-red" aria-hidden="true"></i>
+                                                                        <div>0.12 m³</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <div class="div-right font-color-black font-size-7">
+                                                                        Volumen total de la carga <i class="fas fa-info-circle font-color-red" aria-hidden="true"></i>
+                                                                        <div>36 m³</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <button class="btn btn-danger w-50" onclick="clickTab(4)">Continuar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section id="tab-3" class="tab-body entry-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Seleccione un tipo de contenedor
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="card-personalizado mx-3 ordenar" onclick="window.location.href='ResultadoCubicaje.html'">
+                                                            <div class="mx-2">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-4 col-xs-12 font-size-50 font-color-red">
+                                                                            <i class="fas fa-box-open mx-n3" aria-hidden="true"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-10 col-md-12 col-sm-9 col-xs-12">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-20 font-color-red">
+                                                                                    Dry Van 20'
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-12 col-md-12 col-sm-8 col-xs-12 font-size-10 font-weight-bold font-color-red">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            capacidad m³
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-md-6 col-sm-4 col-xs-12 font-color-red">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            <div class="font-size-6 font-size-7">33.2 m³</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-12 col-md-12 col-sm-7 col-xs-12 font-size-10 font-weight-bold font-color-red">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            capacidad máx:
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-md-6 col-sm-5 col-xs-12 font-color-red">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            <div class="font-size-6 font-size-7">25,000 kg</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="card-personalizado mx-3 ordenar" onclick="window.location.href='ResultadoCubicaje.html'">
+                                                            <div class="mx-2">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-4 col-xs-12 font-size-50 font-color-red">
+                                                                            <i class="fas fa-box-open mx-n3" aria-hidden="true"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-10 col-md-12 col-sm-9 col-xs-12">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-20 font-color-red">
+                                                                                    Dry Van 40'
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-12 col-md-12 col-sm-8 col-xs-12 font-size-10 font-weight-bold font-color-red">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            capacidad m³
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-md-6 col-sm-4 col-xs-12 font-color-red">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            <div class="font-size-6 font-size-7">67.7 m³</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-12 col-md-12 col-sm-7 col-xs-12 font-size-10 font-weight-bold font-color-red">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            capacidad máx:
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-md-6 col-sm-5 col-xs-12 font-color-red">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            <div class="font-size-6 font-size-7">27,600 kg</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="card-personalizado mx-3 ordenar" onclick="window.location.href='ResultadoCubicaje.html'">
+                                                            <div class="mx-2">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-4 col-xs-12 font-size-50 font-color-red">
+                                                                            <i class="fas fa-box-open mx-n3" aria-hidden="true"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-10 col-md-12 col-sm-9 col-xs-12">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-20 font-color-red">
+                                                                                    High cube 40'
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-12 col-md-12 col-sm-8 col-xs-12 font-size-10 font-weight-bold font-color-red">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            capacidad m³
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-md-6 col-sm-4 col-xs-12 font-color-red">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            <div class="font-size-6 font-size-7">76.5 m³</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-12 col-md-12 col-sm-7 col-xs-12 font-size-10 font-weight-bold font-color-red">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            capacidad máx:
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-md-6 col-sm-5 col-xs-12 font-color-red">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            <div class="font-size-6 font-size-7">27,600 kg</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- Fin de vista principal -->
+        </div>
+    </main>
+    <!-- Inicio de modales de ejemplo -->
+    <!-- Inicio de modal de ejemplo1 -->
+    <div class="modal fade bd-example-modal-sm show" id="m-ejemplo" tabindex="-1" role="dialog" aria-labelledby="m-ejemplo" aria-modal="true" style="display: none;">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row ms-2">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13 font-color-black font-weight-bold">Situación:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-10 font-color-black">
+                            Tu como exportador, envías libros a Australia. Para embalarlos usas unas cajas especiales las cuales importas desde Alemania
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13 font-color-black font-weight-bold">Explicación:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-10 font-color-black">
+                            El insumo importado directamente por el beneficiario son las cajas importadas
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inicio de modal de ejemplo1 -->
+    <!-- Inicio de modal de ejemplo2 -->
+    <div class="modal fade bd-example-modal-sm show" id="m-ejemplo2" tabindex="-1" role="dialog" aria-labelledby="m-ejemplo2" aria-modal="true" style="display: none;">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row ms-2">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13 font-color-black font-weight-bold">Situación:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-10 font-color-black">
+                            Tu como exportador, envías agua embotellada a España. Las botellas las compras a otra empresa que las importa de Chile
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13 font-color-black font-weight-bold">Explicación:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-10 font-color-black">
+                            El insumo importado por terceros son las botellas importadas por la otra empresa
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inicio de modal de ejemplo2 -->
+    <!-- Inicio de modal de ejemplo3 -->
+    <div class="modal fade bd-example-modal-sm show" id="m-ejemplo3" tabindex="-1" role="dialog" aria-labelledby="m-ejemplo3" aria-modal="true" style="display: none;">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row ms-2">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13 font-color-black font-weight-bold">Situación:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-10 font-color-black">
+                            Tu como exportador, envías chompas de lanas a China. Las chompas han sido producidas por otra empresa nacional que usa lana importada de Inglaterra para cobfeccionarlas.
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13 font-color-black font-weight-bold">Explicación:</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-10 font-color-black">
+                            El insumo importado e incorporados a productos locales son las chompas hechas de lana importada
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inicio de modal de ejemplo3 -->
+    <!-- Inicio de modales de ejemplo -->
+
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select2/select2.min.js"></script>
+    <script src="../assets/js/tab/app.js"></script>
+    <script src="../assets/js/general.js"></script>
+    <script src="js/ViaAerea.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
+    <!-- JS rutas maritimas -->
+</body>
+
+</html>

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Empezar Drawback
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS-Material Bootstrap para panel Tabs -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link href="../assets/css/tab/styleTab.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg" id="main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                <a class="navbar-brand" href="./Costos.html">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img">
+                </a>
+                <div class="icon-menu">
+                    <div class="icon-menu">
+                        <a class="ocultar-movil" href="#">
+                            <i class="fas fa-user-plus"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="far fa-bell"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div id="view-tabs">
+                <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-lg-0 fit-content">
+                    <section class="tabs-wrapper">
+                        <div class="tabs-container">
+                            <div class="tabs-block">
+                                <div id="tabs-section" class="tabs">
+                                    <div class="row divTab">
+                                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 mb-lg-0  background-second-light fit-content div-left-tab sin-border-lados tab-desktop">
+                                            <ul class="tab-head">
+                                                <li>
+                                                    <a href="#tab-1" class="tab-link active" id="tab1"> <span class="tab-label">Datos del producto a exportar</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-2" class="tab-link" id="tab2"><span class="tab-label">Información de la carga</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-3" class="tab-link" id="tab3"> <span class="tab-label">Datos del producto a exportar</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-4" class="tab-link" id="tab4"> <span class="tab-label">Envases, empaques y embalaje</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-5" class="tab-link" id="tab5"> <span class="tab-label">Calculo en términos INCOTERMS</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 mb-lg-0  background-second-light fit-content div-left-tab sin-border-lados tab-movil">
+                                            <ul class="tab-head">
+                                                <li>
+                                                    <a href="#tab-1" class="tab-link active" id="tab1"> <span class="tab-label"> <i class="fas fa-circle" aria-hidden="true"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-2" class="tab-link" id="tab2"><span class="tab-label"> <i class="fas fa-circle" aria-hidden="true"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-3" class="tab-link" id="tab3"> <span class="tab-label"> <i class="fas fa-circle" aria-hidden="true"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-4" class="tab-link" id="tab4"> <span class="tab-label"> <i class="fas fa-circle" aria-hidden="true"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-5" class="tab-link" id="tab5"> <span class="tab-label"> <i class="fas fa-circle" aria-hidden="true"></i></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 padding-card sinPaddingTop">
+                                            <section id="tab-1" class="tab-body entry-content active active-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-22">
+                                                        Describe los productos que exportas
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-15">
+                                                        Tipo de empresa
+                                                    </div>
+
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-centrado">
+                                                        <div class="swtich div-left active-product" id="Productora">
+                                                            <img src="../assets/img/Costos/config.png" alt="configuracion"> Productora
+                                                        </div>
+                                                        <div class="swtich div-left p-right" id="Comercializadora">
+                                                            <img src="../assets/img/Costos/grafico.png" alt="grafico" class="font-color-white"> Comercializadora
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" id="view-productora">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15">Datos del producto</div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                            <label>Nombre comercial de tu producto</label>
+                                                            <input type="text" class="form-control" id="prodComercial" value="" placeholder="Descripción">
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                            <label>Número de partida nacional</label>
+                                                            <input type="text" class="form-control" id="numPartida" value="" placeholder="Descripción"><i class="fas fa-check-circle font-color-blue div-right mt-n4 check"></i>
+                                                        </div>
+                                                        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div id="insumoLiberado">
+                                                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">
+                                                                    Nombre del insumo no liberado de arancel
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 mt-3">Prendas y complementos (accesorios), de vestir, para bebés</div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                                    <label>Cantidad</label>
+                                                                    <input type="text" class="form-control" id="cantidad" value="" placeholder="">
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                                    <label>Unidad de medida</label>
+                                                                    <input type="text" class="form-control" id="um" value="" placeholder="Seleccione">
+                                                                </div>
+                                                                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 text-right mt-2">
+                                                                <bottom class="btn btn-second w-50" onclick="clickTab(2)">Siguiente</bottom>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" id="view-comercializadora">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15">Datos del producto</div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                            <label>Nombre comercial de tu producto</label>
+                                                            <input type="text" class="form-control" id="prodComercial2" value="" placeholder="Descripción">
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                            <label>Número de partida nacional</label>
+                                                            <input type="text" class="form-control" id="numPartida2" value="" placeholder="Descripción"><i class="fas fa-check-circle font-color-blue div-right mt-n4 check"></i>
+                                                        </div>
+                                                        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div id="insumoLiberado2">
+                                                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">
+                                                                    Nombre del insumo no liberado de arancel
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 mt-3">Prendas y complementos (accesorios), de vestir, para bebés</div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                                    <label>Costo unitario (USD)</label>
+                                                                    <input type="text" class="form-control" id="unitario" value="" placeholder="">
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                                    <label>Cantidad</label>
+                                                                    <input type="text" class="form-control" id="cantidad" value="" placeholder="">
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                                    <label>Unidad de medida</label>
+                                                                    <input type="text" class="form-control" id="um" value="" placeholder="Seleccione">
+                                                                </div>
+                                                                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 text-right mt-2">
+                                                                <bottom class="btn btn-second w-50" onclick="clickTab(2)">Siguiente</bottom>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section id="tab-2" class="tab-body entry-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Describe las caracteristicas de tu carga
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Tipo de transporte
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-centrado">
+                                                        <div class="swtich div-left active-product" id="directa">
+                                                            <img src="../assets/img/Costos/aviacion.png" alt="avion"> Vía Aérea
+                                                        </div>
+                                                        <div class="swtich div-left p-right" id="encargo">
+                                                            <img src="../assets/img/Costos/embarcacion.png" alt="barco"> Vía marítima
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Selecciona los trámites a presentar
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-10 font-weight-bold">Destino de tu carga</div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <input type="text" class="form-control" value="" placeholder="Escribe el país o el aeropuerto" id="destinoCarga">
+                                                            <div class="card h-100 p-3 card-punto-destino d-display" id="view-select-Continente">
+                                                                <div class="row" id="cmbPais">
+                                                                    <div class="col-3 separador">Paises Frecuentes:</div>
+                                                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ordenar select-select-titulo" id="america">America</div>
+                                                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ordenar" id="europa">Europa</div>
+                                                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ordenar" id="asia">Asia</div>
+                                                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ordenar" id="africa">Africa</div>
+                                                                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 ordenar" id="oceania">Óceania</div>
+                                                                    <div class="col-3 card-contenido-select separador">
+                                                                        <div class="mb-1 option-select pais">Estados Unidos</div>
+                                                                        <div class="mb-1 option-select pais">Chile</div>
+                                                                        <div class="mb-1 option-select pais">China</div>
+                                                                        <div class="mb-1 option-select pais">Italia</div>
+                                                                        <div class="mb-1 option-select pais">España</div>
+                                                                        <div class="mb-1 option-select pais">Francia</div>
+                                                                        <div class="mb-1 option-select pais">Holanda</div>
+                                                                        <div class="mb-1 option-select pais">México</div>
+                                                                    </div>
+                                                                    <div class="col-8 card-contenido-select">
+                                                                        <div class="row" id="detallePais">
+                                                                            <div class="col-4">
+                                                                                <div value="1" class="mb-1 option-select pais">Argentina</div>
+                                                                                <div value="2" class="mb-1 option-select pais">Brasil</div>
+                                                                                <div value="3" class="mb-1 option-select pais">Canada</div>
+                                                                                <div value="4" class="mb-1 option-select pais">Chile</div>
+                                                                                <div value="5" class="mb-1 option-select pais">Colombia</div>
+                                                                                <div value="6" class="mb-1 option-select pais">Costa Rica</div>
+                                                                                <div value="7" class="mb-1 option-select pais">Estados Unidos</div>
+                                                                            </div>
+                                                                            <div class="col-4">
+                                                                                <div value="8" class="mb-1 option-select pais">Guatemala</div>
+                                                                                <div value="9" class="mb-1 option-select pais">Honduras</div>
+                                                                                <div value="10" class="mb-1 option-select pais">México</div>
+                                                                                <div value="11" class="mb-1 option-select pais">Nicaragua</div>
+                                                                                <div value="12" class="mb-1 option-select pais">Panamá</div>
+                                                                                <div value="13" class="mb-1 option-select pais">Venezuela</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row" id="detalleCiudad">
+                                                                    <div class="col-1 refresh">
+                                                                        <i class="fas fa-angle-left icon-refresh" id="RetornaPais" aria-hidden="true"></i>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Puertos en China:</div>
+                                                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mt-2">
+                                                                        <!-- <div class="row"> -->
+                                                                        <!-- <div class="col-4"> -->
+                                                                        <option value="1" class="mb-1 option-select ciudad">Da Chan Bay</option>
+                                                                        <option value="2" class="mb-1 option-select ciudad">Dalían</option>
+                                                                        <option value="3" class="mb-1 option-select ciudad">Hong Kong</option>
+                                                                        <option value="4" class="mb-1 option-select ciudad">Ningbo</option>
+                                                                        <option value="5" class="mb-1 option-select ciudad">Quingdao</option>
+                                                                        <!-- </div> -->
+                                                                        <!-- </div> -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div id="destinomasBuscados">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13">Destinos más buscados</div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20"><br></div>
+                                                        <div class="row">
+                                                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2"><span class="badge rounded-pill bg-primary">EE.UU</span></div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2"><span class="badge rounded-pill bg-primary">China</span></div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2"><span class="badge rounded-pill bg-primary">Chile</span></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2"><span class="badge rounded-pill bg-primary">Francia</span></div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2"><span class="badge rounded-pill bg-primary">España</span></div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2"><span class="badge rounded-pill bg-primary">Holanda</span></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2"><span class="badge rounded-pill bg-primary">Italia</span></div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2"><span class="badge rounded-pill bg-primary">México</span></div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2"><span class="badge rounded-pill bg-primary">Colombia</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tipoCargaMaritima">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">Tipo de carga marítima</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second  helvetica-light">
+                                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-second font-size-15  helvetica-light paddingControl">
+                                                                    <div class="containerRadio">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="consolidada" checked>
+                                                                            <label class="form-check-label" for="consolidada">
+                                                                             Consolidad
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                                    <div class="containerRadio">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="ConLleno">
+                                                                            <label class="form-check-label" for="ConLleno">
+                                                                              Contenedor lleno
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div id="dimensiones">
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Dimensiones del bulto</div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black font-weight-bold">
+                                                                            Largo (cm)
+                                                                        </div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <input type="text" class="form-control" id="mlargo">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black font-weight-bold">
+                                                                            Ancho (cm)
+                                                                        </div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black font-weight-bold">
+                                                                            Alto (cm)
+                                                                        </div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 div-right">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black font-weight-bold">
+                                                                            Peso (Kg)
+                                                                        </div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 div-right">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black font-weight-bold">
+                                                                            Cantidad
+                                                                        </div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="detalle">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                                <div class="font-color-black font-size-13 font-weight-bold">Peso bruto kg</div>
+                                                                                <div class="font-color-black font-size-10">1000</div>
+                                                                            </div>
+                                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                                <div class="font-color-black font-size-13">Volumen total (cm³)</div>
+                                                                                <div class="font-color-black font-size-10">0.03</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                                                            <bottom class="btn btn-second btnwidth100" onclick="clickTab(3)">Siguiente</bottom>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="container">
+                                                                <div class="row">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-2 div-container-global">
+                                                                        <div class="card-personalizado-container mx-n3 card-height ordenar" id="cardPersonalizado">
+                                                                            <div class="mx-2 div-icon-text-centrado">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                        <div class="row font-weight-bold w-100">
+                                                                                            <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25 text-center">
+                                                                                                <div class="img-div ms-3" id="div-img"></div>
+                                                                                            </div>
+                                                                                            <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 text-center">
+                                                                                                Dry Van 20'
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-2 div-container-global">
+                                                                        <div class="card-personalizado-container mx-n3 card-height ordenar" id="cardPersonalizado">
+                                                                            <div class="mx-2 div-icon-text-centrado">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                        <div class="row font-weight-bold w-100">
+                                                                                            <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25 text-center">
+                                                                                                <div class="img-div ms-3" id="div-img"></div>
+                                                                                            </div>
+                                                                                            <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 text-center">
+                                                                                                Dry Van 40'
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-2 div-container-global">
+                                                                        <div class="card-personalizado-container mx-n3 card-height ordenar" id="cardPersonalizado">
+                                                                            <div class="mx-2 div-icon-text-centrado">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                        <div class="row font-weight-bold w-100">
+                                                                                            <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25 text-center">
+                                                                                                <div class="img-div ms-3" id="div-img"></div>
+                                                                                            </div>
+                                                                                            <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 text-center">
+                                                                                                High Cube 40'
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </section>
+                                            <section id="tab-3" class="tab-body entry-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Consignación del código 13
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13">
+                                                        Selecciona las declaraciones que consignes el código 13
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer25">
+                                                            <label for="chkSer25" class="input-checkbox-lab font-size-15 font-color-black">Declaración aduanera de mercancía</label>
+                                                            <div class="font-size-13">(Código 13 en el acápie 7.28)</div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer26">
+                                                            <label for="chkSer26" class="input-checkbox-lab font-size-15 font-color-black">Declaración simplificada de exportación</label>
+                                                            <div class="font-size-13">(Código 13 en el acápie 6.13)</div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkSer27">
+                                                            <label for="chkSer27" class="input-checkbox-lab font-size-15 font-color-black">Declaración Exporta Fácil</label>
+                                                            <div class="font-size-13">(Código 13 en el acápie: Régimen precedente y/o aplicación)</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                                            <bottom class="btn btn-second btnwidth100" onclick="window.location.href='ResultadoRequisitoSimulador.html'">Continuar</bottom>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                    </div>
+                    <div class="hr background-gris col-xl-12 col-lg-12 col-md-12 col-sm-12 mostrar-movil mt-3"></div>
+                    <!-- Inicio vista movil -->
+                    <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-lg-0 mostrar-movil">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              RUC y Clave SOL
+                            </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer1">
+                                                <label for="chkSer1" class="input-checkbox-lab font-size-15">Mi RUC está activo y habido.</label>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer2">
+                                                <label for="chkSer2" class="input-checkbox-lab font-size-15">Cuento con clave SOL</label>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkSer3">
+                                                <label for="chkSer3" class="input-checkbox-lab font-size-15">Cuento con cuenta corriente o de ahorro regisrado en SUNAT</label>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                <input class="input-checkbox" type="checkbox" name="chkSer4" id="chkSer4">
+                                                <label for="chkSer4" class="input-checkbox-lab font-size-15">Soy producctor y exportador</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr background-gris col-xl-12 col-lg-12 col-md-12 col-sm-12 mostrar-movil mt-3"></div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Tipo de producción
+                            </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="card-personalizado mx-n3" onclick="MostrarProduccionDirecta()">
+                                                <div class="mx-2">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row font-color-red font-weight-bold w-100">
+                                                                <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25">
+                                                                    <i class="fas fa-chart-area" aria-hidden="true"></i>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 mt-2" id="pDirecta">
+                                                                    Producción Directa
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="card-personalizado mx-n3" onclick="MostrarProduccionEncargo()">
+                                                <div class="mx-2">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="row font-color-red font-weight-bold w-100">
+                                                                <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25">
+                                                                    <i class="fas fa-handshake" aria-hidden="true"></i>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 mt-2" id="pEncargo">
+                                                                    Producción por Encargo
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr background-gris col-xl-12 col-lg-12 col-md-12 col-sm-12 mostrar-movil mt-3"></div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Consignación del código 13
+                            </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 font-color-black">Solo selecciona los documentos que tengan y consignen el código 13 en los acápites correspondientes</div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                        <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkDeclaracion">
+                                        <label for="chkDeclaracion" class="input-checkbox-lab font-size-13 font-color-black">Declaración aduanera de mercancía</label>
+                                        <div class="font-size-13">(Código 13 en el acápie 7.28)</div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chksimplificada">
+                                        <label for="chksimplificada" class="input-checkbox-lab font-size-13 font-color-black">Declaración simplificada de exportación</label>
+                                        <div class="font-size-13">(Código 13 en el acápie 6.13)</div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                        <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkExporta">
+                                        <label for="chkExporta" class="input-checkbox-lab font-size-13 font-color-black">Declaración Exporta Fácil</label>
+                                        <div class="font-size-13">(Código 13 en el acápie: Régimen precedente y/o aplicación)</div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingControl"><br></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingControl">
+                                        <button class="btn btn-second btnwidth100" onclick="window.location.href='ResultadoRequisitoSimulador.html'">Comprar mi documentación</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIn vista movil -->
+
+                </div>
+                <!-- Fin de vista principal -->
+            </div>
+    </main>
+    <!-- Inicio Opciones de producción -->
+    <div id="opciones" class="d-none">
+        <div id="opcion-01">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row background-gris">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center font-size-15 font-color-black font-weight-bold"><i class="fas fa-angle-left back"></i></div>
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 text-center font-size-15 font-color-black font-weight-bold">Producción Directa</div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-18 font-color-black font-weight-bold mx-2">Necesitas tener los siguientes tipos de documentos</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Información del local</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">(Marca mínimo 2 documentos)</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkficha">
+                        <label for="chkficha" class="input-checkbox-lab font-size-15">Ficha registral</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkcontrato">
+                        <label for="chkcontrato" class="input-checkbox-lab font-size-15">Contrato de alquiler</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chklocal">
+                        <label for="chklocal" class="input-checkbox-lab font-size-15">Local registrado en la SUNAT</label>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Mano de obra</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">(Marca mínimo 1 documento)</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-planilla" id="r-planilla">
+                            <label class="form-check-label mt-n4" for="r-planilla">
+                              Número de personal en planilla
+                            </label>
+                        </div>
+                    </div>
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-RH" id="r-RH">
+                            <label class="form-check-label" for="r-RH">
+                              Nro. de personal por recibos por honorarios
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Activos de la empresa</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">(Marca mínimo 1 documento)</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-factura" id="r-factura">
+                            <label class="form-check-label mt-n4" for="r-factura">
+                              Número de personal en planilla
+                            </label>
+                        </div>
+                    </div>
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-contrato" id="r-contrato">
+                            <label class="form-check-label" for="r-contrato">
+                              Nro. de personal por recibos por honorarios
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Insumos para el proceso productivo</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">(Marca mínimo 3 de 4 documents)</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chk-facturas">
+                        <label for="chk-facturas" class="input-checkbox-lab font-size-15">Facturas</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkliquidaciones">
+                        <label for="chkliquidaciones" class="input-checkbox-lab font-size-15">Liquidaciones de compras</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkguiaremision">
+                        <label for="chkguiaremision" class="input-checkbox-lab font-size-15">Guías de remisión de insumos</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkRegistroCC">
+                        <label for="chkRegistroCC" class="input-checkbox-lab font-size-15">Registros contables de comprobante de pago</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <div class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Siguiente</div>
+            </div>
+        </div>
+        <div id="opcion-02">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row background-gris">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center font-size-15 font-color-black font-weight-bold"><i class="fas fa-angle-left back"></i></div>
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 text-center font-size-15 font-color-black font-weight-bold">Producción por Encargo</div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-18 font-color-black font-weight-bold mx-2">Necesitas tener los siguientes tipos de documentos</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Contrato o factura de producción</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">Ambos documentos son obligatorios</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkContratoProd">
+                        <label for="chkContratoProd" class="input-checkbox-lab font-size-15">Contrato de producción</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkFacService">
+                        <label for="chkFacService" class="input-checkbox-lab font-size-15">Factura de servicio de producción</label>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Información del local del tercero</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">Debes tener mínimo 2 documentos</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkFichaReg">
+                        <label for="chkFichaReg" class="input-checkbox-lab font-size-15">Ficha registral</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkContAlquiler">
+                        <label for="chkContAlquiler" class="input-checkbox-lab font-size-15">Contrato de alquiler</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkLocalRegSunat">
+                        <label for="chkLocalRegSunat" class="input-checkbox-lab font-size-15">Local registrado en la SUNAT</label>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Mano de obra del tercero</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">Debes tener mínimo 1 de 2 documentos</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-PersPlan" id="r-PersPlan">
+                            <label class="form-check-label mt-n4" for="r-PersPlan">
+                              Número de personal en planilla
+                            </label>
+                        </div>
+                    </div>
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-PersRH" id="r-PersRH">
+                            <label class="form-check-label" for="r-PersRH">
+                              Nro. de personal por recibos por honorarios
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Activos de la empresa del tercero</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">Debes tener mínimo 1 de 2 documentos</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-FacActivo" id="r-FacActivo">
+                            <label class="form-check-label mt-n4" for="r-FacActivo">
+                              Factura de compra de activo
+                            </label>
+                        </div>
+                    </div>
+                    <div class="containerRadio">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="r-ContaActivo" id="r-ContaActivo">
+                            <label class="form-check-label" for="r-ContaActivo">
+                              Contrato de alquiler activo
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-12 mx-2 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black mx-2">Insumos del tercero y/o proporcionados por el exportador para el proceso productivo</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-13 font-color-black mx-2">Deber tener mínimo 3 de los 4 documents</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chk-FacTercero">
+                        <label for="chk-FacTercero" class="input-checkbox-lab font-size-15">Facturas</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chk-LiqTercero">
+                        <label for="chk-LiqTercero" class="input-checkbox-lab font-size-15">Liquidaciones de compras</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chk-GRTercero">
+                        <label for="chk-GRTercero" class="input-checkbox-lab font-size-15">Guías de remisión de insumos</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chk-RegCCTercero">
+                        <label for="chk-RegCCTercero" class="input-checkbox-lab font-size-15">Registros contables de comprobante de pago</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chk-GRPETercero">
+                        <label for="chk-GRPETercero" class="input-checkbox-lab font-size-15">Guías de remisión de los productos elaborados por el tercero</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <div class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Siguiente</div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Opciones de producción -->
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select2/select2.min.js"></script>
+    <script src="../assets/js/tab/app.js"></script>
+    <script src="../assets/js/general.js"></script>
+    <script src="js/DescripcionDeProductos.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
+    <!-- JS rutas maritimas -->
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Empezar Drawback
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link href="../assets/css/tab/styleTab.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div id="view-empezar-principal">
+                <div class="refresh mt-4 m-left-rem ocultar-movil" onclick="window.location.href='Costos.html'">
+                    <i class="fas fa-undo-alt icon-refresh" aria-hidden="true"></i> atrás
+                </div>
+                <div class="row m-left-rem">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4 centro mostrar-movil">
+                        <img src="../assets/img/Costos/lapiz.png" alt="mapa_ruta" class="img">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black fs-4 font-weight-bold ocultar-movil">
+                            ¿Qué deseas hacer?
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
+                            <div class="row">
+                                <div class="div-boton ordenar" id="div-boton">
+                                    <div class="avatar-group mt-1">
+                                        <div class="avatar-editado avatar-xs-editado rounded-circle div-left px-2">
+                                            <img src="../assets/img/Costos/calculadora.png" alt="calculadora">
+                                        </div>
+                                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12"><br></div>
+                                        <div class="font-color-white font-weight-bold">Hacer una nueva simulación</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12"><br></div>
+                                <div class="div-boton ordenar" onclick="window.location.href='LoginDrawback.html'">
+                                    <div class="avatar-group mt-1">
+                                        <div class="avatar-editado avatar-xs-editado rounded-circle div-left px-2">
+                                            <img src="../assets/img/Costos/file.png" alt="calculadora">
+                                        </div>
+                                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12"><br></div>
+                                        <div class="font-color-white font-weight-bold">Ver mi archivo de simulación</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4 centro ocultar-movil">
+                        <img src="../assets/img//Costos/lapiz.png" alt="mapa_ruta" class="img">
+                    </div>
+                </div>
+            </div>
+            <div id="view-empezar-second">
+                <div class="refresh mt-4 m-left-rem ocultar-movil" id="btn-volver">
+                    <i class="fas fa-undo-alt icon-refresh" aria-hidden="true"></i> atrás
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centro">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-color-black titulo">
+                        Bienvenido al Simulador de Costos de Exportación
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-color-black font-size-15">
+                        Al momento de hacer la simulación recuerda tener a la mano las siguiente documentación
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-color-black text-left">
+                                        <div><i class="fas fa-circle mx-2"></i>Costos de materiales</div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-color-black text-left">
+                                        <div><i class="fas fa-circle mx-2"></i>Costos y tiempos de mano de obra (Tiempo total y costo por hora)</div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-color-black text-left">
+                                        <div><i class="fas fa-circle mx-2"></i>Costos fijos y variables de fabricación</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-color-black text-left">
+                                        <div><i class="fas fa-circle mx-2"></i>Gasto administrativos</div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-color-black text-left">
+                                        <div><i class="fas fa-circle mx-2"></i>Costos de envase, empaques y embalaje</div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-color-black text-left">
+                                        <div><i class="fas fa-circle mx-2"></i>Costos de certificados, si es que su producto los requiere</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img src="../assets/img/Costos/transporte.png" alt="transporte" class="img">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+                        <div class="btn btn-danger w-30" id="next">Siguiente</div>
+                    </div>
+                </div>
+            </div>
+            <div id="view-empezar-tercero">
+                <div class="refresh mt-4 m-left-rem  ocultar-movil" id="btn-volver2">
+                    <i class="fas fa-undo-alt icon-refresh" aria-hidden="true"></i> atrás
+                </div>
+                <div class="row m-left-rem  ocultar-movil">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-color-black fs-4">
+                            Comencemos
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
+                            <div>
+                                <label>Dale un nombre a tu primara simulación</label>
+                                <input type="text" class="form-control" placeholder="Descripcion" id="comenzar" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 centrado">
+                            <button class="btn btn-second" onclick="window.location.href='DescripcionDeProductos.html'">Comenzar</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centro">
+                        <img src="../assets/img/Drawback/shutterstock_1180951456.jpg" alt="mapa_ruta" class="img">
+                    </div>
+                </div>
+                <!-- Inicio vista simulador movil -->
+                <div class="row m-left-rem mostrar-movil">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centro">
+                        <img src="../assets/img/Drawback/shutterstock_1180951456.jpg" alt="mapa_ruta" class="img">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-color-black fs-4">
+                            Comencemos
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
+                            <div>
+                                <label>Dale un nombre a tu primera simulación</label>
+                                <input type="text" class="form-control" placeholder="Descripcion" id="correo" value="">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 centrado">
+                            <button class="btn btn-second w-80" onclick="window.location.href='DescripcionDeProductos.html'">Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inicio vista simulador movil -->
+            </div>
+            <!-- Fin de vista principal -->
+        </div>
+    </main>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select2/select2.min.js"></script>
+    <script src="../assets/js/tab/app.js"></script>
+    <script src="../assets/js/general.js"></script>
+    <script src="js/EmpezarSimulacionCosto.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
+    <!-- JS rutas maritimas -->
+</body>
+
+</html>
