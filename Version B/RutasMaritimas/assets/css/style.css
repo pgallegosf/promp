@@ -115,33 +115,42 @@ body {
 }
 
 .background-img {
-    margin: 10px auto;
-    border-radius: 5px;
-    border: 1px solid #999;
+    border-radius:0!important;
     padding: 13px;
-    width: 220px;
+    width: 800px;
     height: 600px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background: url(../img/Ruta_Marina/cameron-venti-1cqIcrWFQBI-unsplash.jpg);
+    background: url(../img/img-inicio.png);
     background-size: cover;
+    object-fit: cover;
+    object-position: center center;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
 }
 
 .background-img {
     width: 100%;
 }
+@supports(object-fit: cover){
+    .background-img{
+      height: 451px;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
 
 @media all and (min-width: 500px) and (max-width: 1000px) {
     .background-img {
+        border-radius:0!important;
         margin: 20px auto;
-        border-radius: 5px !important;
-        border: 1px solid #999;
         padding: 13px;
         width: auto;
         height: 400px;
         background-size: 50% 50%;
         background-repeat: no-repeat;
-        background: url(../img/Ruta_Marina/cameron-venti-1cqIcrWFQBI-unsplash.jpg);
+        background: url(../img/img-inicio.png);
         background-size: cover;
     }
 }

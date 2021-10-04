@@ -20,6 +20,7 @@
     <!-- CSS Files -->
     <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../common.css">
 </head>
 
 <body class="g-sidenav-show  bg-gray-100" onload="cargarAjustes()">
@@ -29,20 +30,21 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid container-menu-derecho">
                 <a class="navbar-brand" href="javascript:window.location.reload(true)">
-                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img .img-responsive">
                 </a>
                 <div class="icon-menu">
                     <div class="icon-menu" hidden>
                         <i class="far fa-user"></i>
                     </div>
                     <div class="icon-menu">
-                        <a class="" href="#">	
-							<i class="far fa-bell"></i>	
+                        <a class="" href="#" id="idPopoverNotificacion" data-bs-toggle="popover">	
+							<i class="far fa-bell negro-promperu font-size-21 active-icon-nav"></i>
+                            <span class=" rounded-pill badge-notification bg-danger">&nbsp;</span>	
 						</a>
                     </div>
                     <div class="icon-menu">
-                        <a class="" href="#">	
-							<i class="fas fa-bars" onclick="mostrarContainer()"></i>	
+                        <a class="" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">	
+							<i class="fas fa-bars negro-promperu font-size-21 active-icon-nav"></i>	
 						</a>
                     </div>
                 </div>
@@ -160,11 +162,11 @@
                                 <h6 class="cont-titulo">Rutas más buscadas</h6>
                             </div>
                             <div class="mt-2 col-lg-12 col-md-10 col-xs-6 col-sm-6 mt-2 texto-centrado">
-                                <span class="badge rounded-pill bg-secondary">Callao - Baltimore</span>
-                                <span class="badge rounded-pill bg-secondary">Paita - Miami</span>
-                                <span class="badge rounded-pill bg-secondary">Paita - Seattle</span>
-                                <span class="badge rounded-pill bg-secondary">Callao - New York</span>
-                                <span class="badge rounded-pill bg-secondary">Callao - Amsterdan</span>
+                                <a href="javascript:void(0)"><span class="badge rounded-pill bg-secondary">Callao - Baltimore</span></a>
+                                <a href="javascript:void(0)"><span class="badge rounded-pill bg-secondary">Paita - Miami</span></a>
+                                <a href="javascript:void(0)"><span class="badge rounded-pill bg-secondary">Paita - Seattle</span></a>
+                                <a href="javascript:void(0)"><span class="badge rounded-pill bg-secondary">Callao - New York</span></a>
+                                <a href="javascript:void(0)"><span class="badge rounded-pill bg-secondary">Callao - Amsterdan</span></a>
                             </div>
                         </div>
                     </div>
@@ -2514,6 +2516,78 @@
         </div>
     </div>
     <!-- Fin modal calificativo -->
+    <!-- Inicio menu general destok -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel" class=" font-size-20 font-color-black">Herramientas Logísticas</h5>
+            <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fas fa-times-circle rojo-promperu font-size-21" ></i>
+            </a>
+            
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content;" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Rutas Aéreas</p>
+                        <img src="../assets/img/dashboard/avion.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Rutas marítimas</p>
+                        <img src="../assets/img/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasTerrestre/Pages/Ruta_terrestre.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Rutas terrestres</p>
+                        <img src="../assets/img/dashboard/rutat.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Costos de exportación</p>
+                        <img src="../assets/img/dashboard/costos.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='Cubicaje.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Cubicaje</p>
+                        <img src="../assets/img/dashboard/Group.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Directorio logístico</p>
+                        <img src="../assets/img/dashboard/seParteDe.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Simulador de Drawback</p>
+                        <img src="../assets/img/dashboard/imagen principal.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold ordenar"><i class="far fa-user mx-2 font-size-25"></i>Iniciar sesión</div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold"><i class="fas fa-external-link-alt mx-2 font-size-25"></i>Visita también</div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
+                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Fin menu general desktop -->
+    
     <!-- Fin de modales -->
     <!--   Core JS Files   -->
     <script src="../assets/js/core/popper.min.js"></script>
@@ -2521,11 +2595,13 @@
     <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
     <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
     <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
 	<script src="../assets/js/general.js"></script>
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
     <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
     <!-- JS rutas maritimas -->
     <script src="./js/ruta_maritima.js"></script>
+    <script src="../../common.js"></script>
 </body>
 
 </html>
