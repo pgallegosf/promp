@@ -224,7 +224,7 @@
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-10 font-weight-bold">Destino de tu carga</div>
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                             <input type="text" class="form-control" value="" placeholder="Escribe el país o el aeropuerto" id="destinoCarga">
-                                                            <div class="card h-100 p-3 card-punto-destino d-display" id="view-select-Continente">
+                                                            <div class="card p-3 card-punto-destino d-display" id="view-select-Continente">
                                                                 <div class="row" id="cmbPais">
                                                                     <div class="col-3 separador">Paises Frecuentes:</div>
                                                                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ordenar select-select-titulo" id="america">America</div>
@@ -311,7 +311,7 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-second font-size-15  helvetica-light paddingControl">
                                                                     <div class="containerRadio">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="consolidada" checked>
+                                                                            <input class="form-check-input" type="radio" name="rbutton" id="consolidada" checked="true">
                                                                             <label class="form-check-label" for="consolidada">
                                                                              Consolidad
                                                                             </label>
@@ -321,7 +321,7 @@
                                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
                                                                     <div class="containerRadio">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="ConLleno">
+                                                                            <input class="form-check-input" type="radio" name="rbutton" id="ConLleno">
                                                                             <label class="form-check-label" for="ConLleno">
                                                                               Contenedor lleno
                                                                             </label>
@@ -387,17 +387,13 @@
                                                                                 <div class="font-color-black font-size-10">0.03</div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
-                                                                            <bottom class="btn btn-second btnwidth100" onclick="clickTab(3)">Siguiente</bottom>
-                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div id="container">
                                                                 <div class="row">
                                                                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-2 div-container-global">
-                                                                        <div class="card-personalizado-container mx-n3 card-height ordenar" id="cardPersonalizado">
+                                                                        <div class="card-personalizado-container mx-n3 card-height ordenar" id="cardPersonalizado"><i class="fas fa-check-circle font-color-blue mt-n2 font-size-25 check-container"></i>
                                                                             <div class="mx-2 div-icon-text-centrado">
                                                                                 <div class="row">
                                                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -452,40 +448,870 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2 btn-next">
+                                                                <bottom class="btn btn-second div-right w-60" onclick="clickTab(3)">Siguiente</bottom>
+                                                            </div>
                                                         </div>
                                                     </div>
                                             </section>
                                             <section id="tab-3" class="tab-body entry-content">
                                                 <div class="row">
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
-                                                        Consignación del código 13
+                                                        Selecciona tus costos y gastos
                                                     </div>
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13">
-                                                        Selecciona las declaraciones que consignes el código 13
+                                                        Detalla tus costos de gastos que te sean convenientes o adecuados en cada uno de estas secciones
                                                     </div>
-                                                    <div class="row"><br></div>
-                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15">
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
-                                                            <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer25">
-                                                            <label for="chkSer25" class="input-checkbox-lab font-size-15 font-color-black">Declaración aduanera de mercancía</label>
-                                                            <div class="font-size-13">(Código 13 en el acápie 7.28)</div>
-                                                        </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
-                                                            <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer26">
-                                                            <label for="chkSer26" class="input-checkbox-lab font-size-15 font-color-black">Declaración simplificada de exportación</label>
-                                                            <div class="font-size-13">(Código 13 en el acápie 6.13)</div>
-                                                        </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
-                                                            <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkSer27">
-                                                            <label for="chkSer27" class="input-checkbox-lab font-size-15 font-color-black">Declaración Exporta Fácil</label>
-                                                            <div class="font-size-13">(Código 13 en el acápie: Régimen precedente y/o aplicación)</div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div id="CostoDirecto">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Costos directos
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Son todos los materiales que pueden identificarse en la fabricación de un producto terminado, fácilmente se asocian con éste
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar op-agregar"><i class="fas fa-plus-circle mx-2"></i> Agregar</span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row"><br></div>
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
-                                                            <bottom class="btn btn-second btnwidth100" onclick="window.location.href='ResultadoRequisitoSimulador.html'">Continuar</bottom>
+                                                    <div id="CostoDirectoDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costos directos</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-C-Directo"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Datos de tu materia prima</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13">Selecciona o agrega el o los tipos de materia prima que usas en la fabricación de tu producto y luego sus costos</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Materia prima o Insumo</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                <input type="text" class="form-control" placeholder="Selecciona" id="MPrima" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13">¿No lo encuentras? <span class="font-color-red ordenar" data-bs-toggle="modal" data-bs-target="#m-materiaPrima">Haga click aquí</span> </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 font-size-13 font-color-black font-weight-bold">
+                                                                Costo unitario (USD)
+                                                                <div>
+                                                                    <input type="text" class="form-control" id="C-Unitario" value="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 font-size-13 font-color-black font-weight-bold">
+                                                                Cantidad utilizada
+                                                                <div>
+                                                                    <input type="text" class="form-control" id="C-Unitario" value="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 font-size-13 font-color-black font-weight-bold">
+                                                                Unidad de medida
+                                                                <div>
+                                                                    <input type="text" class="form-control" id="C-Unitario" value="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold costoTotal">
+                                                                Costo Total
+                                                                <div class="font-color-black font-size-15 font-weight-bold mt-3">
+                                                                    US$ 1,500
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar">
+                                                                    <i class="fas fa-plus-circle mx-2"></i> Agregar otra materia prima
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Tiempos y costos de mano de obra directa</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13">Selecciona o agrega el o los tipos proceso de mano de obra directa que empleas en la fabricación de tu producto y luego el costo de su tiempo de producción</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Tipo de proceso de mano de obra directa</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                <input type="text" class="form-control" placeholder="Selecciona" id="tProceso" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13">¿No lo encuentras? <span class="font-color-red ordenar" data-bs-toggle="modal" data-bs-target="#m-materiaPrima">Haga click aquí</span> </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 font-size-13 font-color-black font-weight-bold">
+                                                                Costo por tiempo (USD)
+                                                                <div>
+                                                                    <input type="text" class="form-control" id="C-Tiempo" value="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 font-size-13 font-color-black font-weight-bold">
+                                                                Tiempo total
+                                                                <div>
+                                                                    <input type="text" class="form-control" id="C-Unitario" value="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 font-size-13 font-color-black font-weight-bold">
+                                                                Unidad de tiempo
+                                                                <div>
+                                                                    <input type="text" class="form-control" id="C-Unitario" value="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold costoTotal">
+                                                                Costo Total
+                                                                <div class="font-color-black font-size-15 font-weight-bold mt-3">
+                                                                    US$ 1,200
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar">
+                                                                    <i class="fas fa-plus-circle mx-2"></i> Agregar otro proceso por mano directa
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                            <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12"><button type="button" class="btn btn-outline-secondary div-right btn-Directo">Guardar</button></div>
                                                         </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div id="CostoIndirecto">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Costos indirectos
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Son todos los trabajadores que directamente realizan la transformación de insumos y materias primas, para convertirlas en bienes
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar op-agregar2">
+                                                                <i class="fas fa-plus-circle mx-2"></i> Agregar
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="CostoIndirectoDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costos indirectos</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-C-Indirecto"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de material indirecto</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Tipo de costo</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="tipMonto" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Monto (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="monto" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de mano de obra indirecta</div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Tipo de costo</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="tipMonto" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Monto (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="monto" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Total de costos indirecto</div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Tipo de costo</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="tipMonto" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Monto (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="monto" value="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
+                                                                <bottom class="btn btn-outline-secondary div-right btn-Indirecto">Guardar</bottom>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div id="GastoAdministrativo">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Gastos administrativos
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Son los gastos en los que incurre para mantener las operaciones diarias de una empresa, como servicios generales, como la contabilidad y los salarios
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar op-agregar3"><i class="fas fa-plus-circle mx-2"></i> Agregar</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="GastoAdministrativoDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Gastos administrativos</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-G-Admin"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de material indirecto</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
+
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Gasto administrativo</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="gastoAdmin" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Importe total (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="monto" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
+                                                                    <bottom class=" btn btn-outline-secondary div-right btn-Admin">Guardar</bottom>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div id="GastoFinanciero">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Gastos financieros
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Son los gastos generales de fabricaión incluyen todos los costos directamente relacionados con el proceso de fabricación de un producto
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar op-agregar4">
+                                                                    <i class="fas fa-plus-circle mx-2"></i> Agregar
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="GastoFinancieroDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Gastos financieros</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-G-Finan"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de material indirecto</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
+
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Gasto financiero</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="gastoFinan" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Importe total (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="monto" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
+                                                                    <bottom class=" btn btn-outline-secondary div-right btn-Finan">Guardar</bottom>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <!-- </div> -->
+                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
+                                                        <bottom class="btn btn-second div-right" onclick="clickTab(4)">Siguiente paso</bottom>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section id="tab-4" class="tab-body entry-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Selecciona tus envases, empaques y embalaje
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13">
+                                                        En caso que tu producto vaya o esté envasado, empaquetado o embalado, indica los costos de cada uno de ellos
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div id="Envase">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Envase
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                El envase es cualquier recipiente, lata caja o envoltura propia para contener alguna materia o articulo
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar op-Agregar">
+                                                                    <i class="fas fa-plus-circle mx-2"></i> Agregar
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="EnvaseDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Envase</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-Envase"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de material indirecto</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
+
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Costo total de sus empaques</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="costoEnvase" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+                                                                    <bottom class=" btn btn-outline-secondary w-80 btn-Envase">Guardar</bottom>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+
+                                                    <div id="Empaque">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Empaque
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Es cualquier material que encierra o protege un articulo con o sin envase con el fin de preservarlo y facilitar su entrega al consumidor
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar op-Agregar2">
+                                                                    <i class="fas fa-plus-circle mx-2"></i> Agregar
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="EmpaqueDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Empaque</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-Empaque"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de material indirecto</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Costo total de sus empaques (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="costoEmpaque" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+                                                                    <bottom class=" btn btn-outline-secondary w-80 btn-Empaque">Guardar</bottom>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div id="Embalaje">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Embalaje
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Es la caja o envoltura con que se protegen las mercancías para su conservación, transporte y almacenamiento
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar op-Agregar3">
+                                                                    <i class="fas fa-plus-circle mx-2"></i> Agregar
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="EmbalajeDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Embalaje</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-Embalaje"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de material indirecto</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Costo total del Embalaje (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="costoEmbalaje" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+                                                                    <bottom class=" btn btn-outline-secondary w-80 btn-Embalaje">Guardar</bottom>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <!-- </div> -->
+                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
+                                                        <bottom class="btn btn-danger div-right" onclick="clickTab(5)">Siguiente paso</bottom>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section id="tab-5" class="tab-body entry-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Agrega tus Incoterms
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-13">
+                                                        Completa cada Incoterm que tengas o te sea solicitado para calcular los montos
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div id="ExWorks">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                ExWorks <i class="fas fa-check-circle font-color-blue"></i>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nulla quia architecto alias qui quae amet sint? Labore similique veritatis aspernatur magnam quod fuga perspiciatis enim a unde, dolorum suscipit.
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar OP-agregar"><i class="fas fa-plus-circle mx-2"></i> Agregar</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="ExWorksDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">ExWork</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-Exwork"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold text-center">La sumatoria de tus costos</div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">$ 23,450</div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Ingresa tu porcentaje de utilidad bruta (%)</div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <input type="text" class="form-control" id="porcentaje">
+                                                                </div>
+                                                                <div class="row montos">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold text-center">Monto total</div>
+                                                                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">$ 1,172.5</div>
+                                                                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                        <button class="btn btn-outline-danger w-100 btn-Exwork">Agregar porcentaje</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div id="Fas">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Precios FAS <i class="fas fa-check-circle font-color-blue"></i>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, vero velit! Suscipit, quae aut ut, eveniet deleniti eos tempore, laudantium magni quam ipsa odit aliquam pariatur. Magnam similique voluptas natus.
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar OP-agregar2">
+                                                                <i class="fas fa-plus-circle mx-2"></i> Agregar
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="FasDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Precio FAS</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-Fas"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Estiba de la carga (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="estiba" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Transporte interno al puerto</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="transporte" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Almacenamiento (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="almacenamiento" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Comisión de Agente de Aduana (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="comision" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Emisión de Bill of Landing (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="emision" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Handling (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="handling" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Inspecciones (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="inspecciones" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Otros gastos de embarque (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="otros" value="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
+                                                                <bottom class="btn btn-outline-secondary div-right btn-Fas">Guardar</bottom>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div id="Fob">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Precio FOB
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda at vitae voluptate adipisci quam repellat voluptatibus molestiae aut optio a autem iusto tempore, aliquid cupiditate quaerat? Maxime aperiam corrupti numquam.
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar OP-agregar3"><i class="fas fa-plus-circle mx-2"></i> Agregar</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="FobDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Precio FOB</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-Fob"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Estiba de la carga al buque (USD)</div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" placeholder="Selecciona" id="estiba2" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                                                    <bottom class=" btn btn-outline-secondary text-center w-60 btn-Fob">Guardar</bottom>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div id="CFR">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Precio CFR
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima veniam dolorem, velit quaerat molestiae iusto nemo dignissimos quibusdam, distinctio, officia blanditiis aspernatur quis vero quos at eius pariatur dolorum? Praesentium.
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar OP-agregar4">
+                                                                    <i class="fas fa-plus-circle mx-2"></i> Agregar
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="CFRDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Precio CFR</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-G-Finan"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de material indirecto</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Ingrese valor de flete</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="flete" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
+                                                                        <bottom class=" btn btn-outline-secondary text-center w-60 btn-CFR">Guardar</bottom>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-xs-12 paddingControl">
+                                                                    <input class="input-checkbox" type="checkbox" name="chkflete" id="chkflete">
+                                                                    <label for="chkflete" class="input-checkbox-lab font-size-15">Utilizar el flete promedio de la herramienta</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div id="CIF">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Precio CIF
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima veniam dolorem, velit quaerat molestiae iusto nemo dignissimos quibusdam, distinctio, officia blanditiis aspernatur quis vero quos at eius pariatur dolorum? Praesentium.
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar OP-agregar5">
+                                                                    <i class="fas fa-plus-circle mx-2"></i> Agregar
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="CIFDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Precio CIF</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-CIF"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de material indirecto</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Total de prima de seguros (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="prima" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
+                                                                        <bottom class=" btn btn-outline-secondary text-center w-60 btn-CIF">Guardar</bottom>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div id="DAP">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Precio DAP
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima veniam dolorem, velit quaerat molestiae iusto nemo dignissimos quibusdam, distinctio, officia blanditiis aspernatur quis vero quos at eius pariatur dolorum? Praesentium.
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar OP-agregar6">
+                                                                    <i class="fas fa-plus-circle mx-2"></i> Agregar
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="DAPDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Precio DAP</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-DAP"></i></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Gastos en destino</div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Descarga en el puerto (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="puerto" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Uso de terminal (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="terminal" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">THC (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="thc" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Entrega de la carga (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="carga" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Otros gastos (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="otrosGastos" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
+                                                                        <bottom class=" btn btn-outline-secondary div-right w-50 btn-DAP">Guardar</bottom>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div id="DPU">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Precio DPU
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima veniam dolorem, velit quaerat molestiae iusto nemo dignissimos quibusdam, distinctio, officia blanditiis aspernatur quis vero quos at eius pariatur dolorum? Praesentium.
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar OP-agregar7">
+                                                                    <i class="fas fa-plus-circle mx-2"></i> Agregar
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="DPUDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Precio DPU</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-DPU"></i></div>
+                                                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Descarga en el local del cliente (USD)</div> -->
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Descarga en el local del cliente (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="cliente" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Otros gastos en destino (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="destino" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
+                                                                        <bottom class=" btn btn-outline-secondary div-right w-50 btn-DPU">Guardar</bottom>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div id="DDP">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">
+                                                                Precio DDP
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 font-color-black font-size-15">
+                                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima veniam dolorem, velit quaerat molestiae iusto nemo dignissimos quibusdam, distinctio, officia blanditiis aspernatur quis vero quos at eius pariatur dolorum? Praesentium.
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 font-color-red font-size-13 font-weight-bold">
+                                                                <span class="ordenar OP-agregar8">
+                                                                    <i class="fas fa-plus-circle mx-2"></i> Agregar
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="DDPDetalle">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Precio DDP</div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-DDP"></i></div>
+                                                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Gastos en destino</div> -->
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Impuestos a pagar (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="impuesto" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Agente de aduana (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="aduana" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Otros gastos (USD)</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <input type="text" class="form-control" id="other-gastos" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13">
+                                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
+                                                                        <bottom class=" btn btn-outline-secondary div-right w-50 btn-DDP">Guardar</bottom>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                    <!-- </div> -->
+                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
+                                                        <bottom class="btn btn-danger div-right" onclick="clickTab(4)">Siguiente paso</bottom>
                                                     </div>
                                                 </div>
                                             </section>
@@ -496,122 +1322,6 @@
                             </div>
                     </section>
                     </div>
-                    <div class="hr background-gris col-xl-12 col-lg-12 col-md-12 col-sm-12 mostrar-movil mt-3"></div>
-                    <!-- Inicio vista movil -->
-                    <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-lg-0 mostrar-movil">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              RUC y Clave SOL
-                            </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="row">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
-                                                <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer1">
-                                                <label for="chkSer1" class="input-checkbox-lab font-size-15">Mi RUC está activo y habido.</label>
-                                            </div>
-                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
-                                                <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer2">
-                                                <label for="chkSer2" class="input-checkbox-lab font-size-15">Cuento con clave SOL</label>
-                                            </div>
-                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
-                                                <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkSer3">
-                                                <label for="chkSer3" class="input-checkbox-lab font-size-15">Cuento con cuenta corriente o de ahorro regisrado en SUNAT</label>
-                                            </div>
-                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
-                                                <input class="input-checkbox" type="checkbox" name="chkSer4" id="chkSer4">
-                                                <label for="chkSer4" class="input-checkbox-lab font-size-15">Soy producctor y exportador</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hr background-gris col-xl-12 col-lg-12 col-md-12 col-sm-12 mostrar-movil mt-3"></div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Tipo de producción
-                            </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="card-personalizado mx-n3" onclick="MostrarProduccionDirecta()">
-                                                <div class="mx-2">
-                                                    <div class="row">
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="row font-color-red font-weight-bold w-100">
-                                                                <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25">
-                                                                    <i class="fas fa-chart-area" aria-hidden="true"></i>
-                                                                </div>
-                                                                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 mt-2" id="pDirecta">
-                                                                    Producción Directa
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="card-personalizado mx-n3" onclick="MostrarProduccionEncargo()">
-                                                <div class="mx-2">
-                                                    <div class="row">
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="row font-color-red font-weight-bold w-100">
-                                                                <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25">
-                                                                    <i class="fas fa-handshake" aria-hidden="true"></i>
-                                                                </div>
-                                                                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 mt-2" id="pEncargo">
-                                                                    Producción por Encargo
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hr background-gris col-xl-12 col-lg-12 col-md-12 col-sm-12 mostrar-movil mt-3"></div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Consignación del código 13
-                            </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 font-color-black">Solo selecciona los documentos que tengan y consignen el código 13 en los acápites correspondientes</div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
-                                        <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkDeclaracion">
-                                        <label for="chkDeclaracion" class="input-checkbox-lab font-size-13 font-color-black">Declaración aduanera de mercancía</label>
-                                        <div class="font-size-13">(Código 13 en el acápie 7.28)</div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
-                                        <input class="input-checkbox" type="checkbox" name="chkSer2" id="chksimplificada">
-                                        <label for="chksimplificada" class="input-checkbox-lab font-size-13 font-color-black">Declaración simplificada de exportación</label>
-                                        <div class="font-size-13">(Código 13 en el acápie 6.13)</div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
-                                        <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkExporta">
-                                        <label for="chkExporta" class="input-checkbox-lab font-size-13 font-color-black">Declaración Exporta Fácil</label>
-                                        <div class="font-size-13">(Código 13 en el acápie: Régimen precedente y/o aplicación)</div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingControl"><br></div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingControl">
-                                        <button class="btn btn-second btnwidth100" onclick="window.location.href='ResultadoRequisitoSimulador.html'">Comprar mi documentación</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- FIn vista movil -->
-
                 </div>
                 <!-- Fin de vista principal -->
             </div>
@@ -841,6 +1551,30 @@
         </div>
     </div>
     <!-- Fin Opciones de producción -->
+    <!-- Inicio de modales -->
+    <!-- Inicio modal de materia prima -->
+    <div class="modal fade show" id="m-materiaPrima" tabindex="-1" aria-labelledby="m-materiaPrima" aria-modal="true" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header display-block">
+                    <h5 class="modal-title centro" id="tituloModalLogin">Ingresa tu nuevo tipo de producto</h5>
+                    <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times-circle" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="centrado">
+                    <button class="btn btn-primary btn-second" type="button">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal de materia prima -->
+    <!-- Fin de modales -->
     <!--   Core JS Files   -->
     <script src="../assets/js/core/popper.min.js"></script>
     <script src="../assets/js/core/bootstrap.min.js"></script>

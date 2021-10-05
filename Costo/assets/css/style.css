@@ -2012,7 +2012,7 @@ img {
 .card-punto-destino {
     width: 100% !important;
     height: 55% !important;
-    top: 80% !important;
+    top: 45% !important;
     position: absolute !important;
     font-size: 10px;
     font-weight: bold;
@@ -2027,12 +2027,14 @@ img {
     color: #C4122f;
     border-radius: 20px;
     background-color: #ffffff;
+    border: 1px solid #C4122f;
 }
 
 .card-personalizado-container2 {
     color: #ffffff;
     border-radius: 20px;
     background-color: #C4122f;
+    border: 1px solid #C4122f;
 }
 
 .img-div {
@@ -2049,10 +2051,27 @@ img {
     background-repeat: no-repeat !important;
 }
 
+.form-check-input:checked:focus {
+    border-color: #ffffff !important;
+}
 
-/* .img-div {
-    background: url(../img/Costos/container-white.png) !important;
-    background-size: 100% 100% !important;
-    height: 100px;
-    background-repeat: no-repeat !important;
-} */
+.check-container {
+    position: absolute;
+    left: 24%;
+}
+
+.row-pdf {
+    margin: 2rem !important;
+    padding: 1rem !important;
+}
+
+
+/* Style de la tabla */
+
+th {
+    background: #B5C2CA !important;
+}
+
+td .total {
+    background: red;
+}
