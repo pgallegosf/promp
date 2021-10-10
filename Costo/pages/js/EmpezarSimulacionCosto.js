@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("#next").click(function() {
         mostrarEmpezarTercero();
     });
-    $("#btn-volver").click(function() {
+    $(".btn-volver").click(function() {
         volver();
     });
     $("#btn-volver2").click(function() {

@@ -26,6 +26,15 @@ $(document).ready(function() {
     $("#RetornaPais").click(function() {
         retornarPais();
     });
+    $(".vista-movil").click(function() {
+        mostrarContinentesPais_Movil();
+    });
+    $(".pais_movil").click(function() {
+        mostrarCiudadMovil();
+    });
+    $(".ciudad-movil").click(function() {
+        CloseSelectMovil();
+    });
     $("#mlargo").click(function() {
         abrirDetalle();
     });
@@ -146,6 +155,9 @@ $(document).ready(function() {
     $("#porcentaje").click(function() {
         llenarCampoExwork();
     });
+    $(".porcentaje").click(function() {
+        llenarCampoExwork();
+    });
     $(".btn-Exwork").click(function() {
         closeExwork_openFas();
     });
@@ -239,7 +251,51 @@ $(document).ready(function() {
     $(".btn-DDP").click(function() {
         closeDDP();
     });
-
+    $(".card-costo").click(function() {
+        showCardCosto();
+    });
+    $(".card-costo2").click(function() {
+        showCardCosto2();
+    });
+    $(".card-costo3").click(function() {
+        showCardCosto3();
+    });
+    $(".card-costo4").click(function() {
+        showCardCosto4();
+    });
+    $(".card-envase").click(function() {
+        showCardEnvase();
+    });
+    $(".card-empaque").click(function() {
+        showCardEmpaque();
+    });
+    $(".card-embalaje").click(function() {
+        showCardEmbalaje();
+    });
+    $(".card-exworks").click(function() {
+        showCardExworks();
+    });
+    $(".card-fas").click(function() {
+        showCardFas();
+    });
+    $(".card-fob").click(function() {
+        showCardFob();
+    });
+    $(".card-cfr").click(function() {
+        showCardCFR();
+    });
+    $(".card-cif").click(function() {
+        showCardCIF();
+    });
+    $(".card-dap").click(function() {
+        showCardDAP();
+    });
+    $(".card-dpu").click(function() {
+        showCardDPU();
+    });
+    $(".card-ddp").click(function() {
+        showCardDDP();
+    });
 
 
 
@@ -247,7 +303,9 @@ $(document).ready(function() {
     $(".check").hide();
     $("#insumoLiberado").hide();
     $("#view-comercializadora").hide();
-    $("#view-select-Continente").hide();
+    $(".view-movil").hide();
+    $("#Detalle_Puerto_Movil").hide();
+    $("#view-select-Continente").hide()
     $("#detalleCiudad").hide();
     $("#tipoCargaMaritima").hide();
     $("#detalle").hide();
@@ -271,6 +329,15 @@ $(document).ready(function() {
     $("#DAPDetalle").hide();
     $("#DPUDetalle").hide();
     $("#DDPDetalle").hide();
+    $(".cardCosto").hide();
+    $(".cardCosto2").hide();
+    $(".cardCosto3").hide();
+    $(".cardCosto4").hide();
+    $(".cardEnvase").hide();
+    $(".cardEmpaque").hide();
+    $(".cardEmbalaje").hide();
+    $(".incoterms").hide();
+    $(".checkmovil").hide();
 });
 
 function clickTab(numberTab) {
@@ -289,6 +356,32 @@ function clickTab(numberTab) {
             break;
         case 5:
             $("#tab5").trigger("click");
+            break;
+    }
+}
+
+function clickTabMovil(numberTab) {
+    switch (numberTab) {
+        case 3:
+            $("#tab3").trigger("click");
+            $(".cardCosto").hide();
+            $(".cardCosto2").hide();
+            $(".cardCosto3").hide();
+            $(".cardCosto4").hide();
+            $("#main").show();
+            break;
+        case 4:
+            $("#tab4").trigger("click");
+            $(".cardEnvase").hide();
+            $(".cardEmpaque").hide();
+            $(".cardEmbalaje").hide();
+            $("#main").show();
+            break;
+        case 5:
+            $("#tab5").trigger("click");
+            $(".incoterms").hide();
+            $("#main").show();
+            $(".checkmovil").show();
             break;
     }
 }
@@ -344,6 +437,21 @@ function mostrarCiudad() {
     $("#detalleCiudad").show();
 }
 
+function mostrarCiudadMovil() {
+    $("#puertoOrigen-Ciudad").hide();
+    $("#Detalle_Puerto_Movil").show();
+}
+
+function CloseSelectMovil() {
+    $(".view-movil").hide();
+    $("#puertoOrigen-Ciudad").show();
+    $("#main").show();
+    $(".vista-movil").val("Da Chan Bay - China");
+    $("#destinomasBuscados").hide()
+    $("#tipoCargaMaritima").show();
+    $(".btn-next").show();
+}
+
 function CloseSelect() {
     $("#detalleCiudad").hide();
     $("#cmbPais").show();
@@ -352,6 +460,11 @@ function CloseSelect() {
     $("#destinomasBuscados").hide()
     $("#tipoCargaMaritima").show();
     $(".btn-next").show();
+}
+
+function mostrarContinentesPais_Movil() {
+    $("#main").hide();
+    $(".view-movil").show();
 }
 
 function retornarPais() {
@@ -560,6 +673,7 @@ function closeExwork() {
 
 function llenarCampoExwork() {
     $("#porcentaje").val("10%");
+    $(".porcentaje").val("10%");
     $(".montos").show();
 }
 
@@ -713,4 +827,91 @@ function llenarCampoDDP() {
 function closeDDP() {
     $("#DDPDetalle").hide();
     $("#DDP").show();
+}
+
+function showCardCosto() {
+    $("#main").hide();
+    $(".cardCosto").show();
+}
+
+function showCardCosto2() {
+    $("#main").hide();
+    $(".cardCosto").hide();
+    $(".cardCosto2").show();
+}
+
+function showCardCosto3() {
+    $("#main").hide();
+    $(".cardCosto2").hide();
+    $(".cardCosto3").show();
+}
+
+function showCardCosto4() {
+    $("#main").hide();
+    $(".cardCosto3").hide();
+    $(".cardCosto4").show();
+}
+
+function showCardEnvase() {
+    $("#main").hide();
+    $(".cardEnvase").show();
+}
+
+function showCardEmpaque() {
+    $("#main").hide();
+    $(".cardEnvase").hide();
+    $(".cardEmpaque").show();
+}
+
+function showCardEmbalaje() {
+    $("#main").hide();
+    $(".cardEmpaque").hide();
+    $(".cardEmbalaje").show();
+}
+
+function showCardExworks() {
+    $("#main").hide();
+    $(".cardExworks").show();
+}
+
+function showCardFas() {
+    $("#main").hide();
+    $(".cardExworks").hide();
+    $(".cardFas").show();
+}
+
+function showCardFob() {
+    $("#main").hide();
+    $(".cardFas").hide();
+    $(".cardFob").show();
+}
+
+function showCardCFR() {
+    $("#main").hide();
+    $(".cardFob").hide();
+    $(".cardCfr").show();
+}
+
+function showCardCIF() {
+    $("#main").hide();
+    $(".cardCFR").hide();
+    $(".cardCif").show();
+}
+
+function showCardDAP() {
+    $("#main").hide();
+    $(".cardCif").hide();
+    $(".cardDap").show();
+}
+
+function showCardDPU() {
+    $("#main").hide();
+    $(".cardDap").hide();
+    $(".cardDpu").show();
+}
+
+function showCardDDP() {
+    $("#main").hide();
+    $(".cardDpu").hide();
+    $(".cardDdp").show();
 }

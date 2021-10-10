@@ -1238,8 +1238,6 @@ a>i>label {
     font-weight: lighter!important;
 }
 
-
-
 .select-inline {
     display: inline-table!important;
     width: 50%;
@@ -1724,16 +1722,16 @@ a>i>label {
     .show-desktop {
         display: none;
     }
-	.show-movil {
+    .show-movil {
         display: block;
-    }	
+    }
 }
 
 @media (min-width: 576px) {
     .show-desktop {
         display: none;
     }
-	.show-movil {
+    .show-movil {
         display: block;
     }
 }
@@ -1742,7 +1740,7 @@ a>i>label {
     .show-movil {
         display: none;
     }
-	.show-desktop {
+    .show-desktop {
         display: block;
     }
 }
@@ -1751,7 +1749,7 @@ a>i>label {
     .show-movil {
         display: none;
     }
-	.show-desktop {
+    .show-desktop {
         display: block;
     }
 }
@@ -1760,13 +1758,14 @@ a>i>label {
     .show-movil {
         display: none;
     }
-	.show-desktop {
+    .show-desktop {
         display: block;
     }
 }
 
 
 /* ====== */
+
 .ocultar-movil {
     display: -webkit-inline-box;
 }
@@ -1775,7 +1774,7 @@ a>i>label {
     .ocultar-movil {
         display: none;
     }
-	.mostrar-movil {
+    .mostrar-movil {
         display: block;
     }
     .font-size-8 {
@@ -1793,20 +1792,19 @@ a>i>label {
     .ocultar-movil {
         display: none;
     }
-	.mostrar-movil {
+    .mostrar-movil {
         display: block;
     }
     .btn-movil {
         width: 30% !important;
     }
-	
 }
 
 @media (min-width: 768px) {
     .mostrar-movil {
         display: none;
     }
-	.ocultar-movil {
+    .ocultar-movil {
         display: block;
     }
     .btn-movil {
@@ -1818,7 +1816,7 @@ a>i>label {
     .mostrar-movil {
         display: none;
     }
-	.ocultar-movil {
+    .ocultar-movil {
         display: -webkit-inline-box;
     }
     .btn-movil {
@@ -1830,7 +1828,7 @@ a>i>label {
     .mostrar-movil {
         display: none;
     }
-	.ocultar-movil {
+    .ocultar-movil {
         display: -webkit-inline-box;
     }
     .btn-movil {
@@ -1845,6 +1843,7 @@ a>i>label {
     border: 1px solid #a5acb0;
     border-radius: 20px;
 }
-.padding-top-30{
-	padding-top:30px!important;
+
+.padding-top-30 {
+    padding-top: 30px!important;
 }
