@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Rutas marítimas
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../common.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                <a onclick="window.location.href='mostrar_rutas.html'" class="ordenar"><i class="fas fa-chevron-left"></i></a>
+                <a class="navbar-brand">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img .img-responsive">
+                    <div class="nombre-ruta font-color-black font-size-21 font-weight-bold ocultar-movil">
+                        <div class="separador-nombre-ruta font-color-white ms-n2">.</div> Rutas Marítimas
+                    </div>
+                </a>
+                <div class="icon-menu">
+                    <div class="icon-menu" hidden>
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#" id="idPopoverNotificacion" data-bs-toggle="popover">
+                            <i class="far fa-bell negro-promperu font-size-21 active-icon-nav"></i>
+                            <span class=" rounded-pill badge-notification bg-danger">&nbsp;</span>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fas fa-bars negro-promperu font-size-21 active-icon-nav"></i>
+                        </a>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div id="view-global">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <!-- Inicio vista ver detalle de busqueda de ruta desktop -->
+                <div id="view-line-time-desktop">
+                    <div class="contenedor-centrado">
+                        <div class="row container-detalle">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-6">
+                                <div class="row">
+                                    <div class="d-flex align-items-center justify-content-space-evenly">
+                                        <div>
+                                            <h4 class="font-weight-bold min-titulo">Paita</h4> <span class="span font-weight-bold">Perú</span>
+                                        </div>
+                                        <div class="icon"> <i class="fas fa-arrow-right" aria-hidden="true"></i> </div>
+                                        <div>
+                                            <h4 class="font-weight-bold min-titulo">Seattle</h4> <span class="span font-weight-bold">EE.UU.</span> </div>
+                                    </div>
+                                </div>
+                                <div class="m-left">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 container-detalle-subtitulo">Nro de paradas</div>
+                                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 font-color-black">7 paradas</div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 container-detalle-subtitulo">Días de tránsito</div>
+                                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 font-color-black">7 paradas</div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 container-detalle-subtitulo">Frecuencias de salidas</div>
+                                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 font-color-black">7 paradas</div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil d-flex justify-content-space-evenly">
+                                    <button type="button" class="btn btn-outline-light w-100 mostrar-movil" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
+                                    <div class="content-centrado">
+                                        <div class="avatar-group ordenar">
+                                            <div class="avatar avatar-xs rounded-circle mx-2">
+                                                <img src="../assets/img/Ruta_Marina/Mask Group.png" alt="contenedor">
+                                            </div>
+                                            <span class="font-size-15 font-weight-bold span-ver-mapa">Ver mapa de la ruta</span>
+                                        </div>
+                                    </div>
+                                </button>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-detalle-titulo">Flete promedio por container</div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <span class="span-container-detalle font-color-black">Actualizados al: 4 de marzo del 2021</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                        <label class="container-detalle-subtitulo"> Tipo de container</label>
+                                        <input type="text" class="form-control" id="tipContainer" value="Dry Van 20'" /><i class="fas fa-angle-down icon-select"></i>
+                                    </div>
+                                    <div class="col-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                        <div class="costo font-color-black">
+                                            <span class="span-costo"> $ 1,800</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <button type="button" class="btn btn-outline-light">
+                                        <div class="content-centrado">
+                                            <div class="avatar-group ordenar">
+                                                <div class="avatar avatar-xs rounded-circle">
+                                                    <img src="../assets/img/Ruta_Marina/container.jpg" alt="contenedor">
+                                                </div>
+                                                <span class="font-size-15 font-weight-bold span-contenedor">Conoce los tipos de contenedores</span>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-6 text-center mostrar-desktop">
+                                <img src="../assets/img/Ruta_Marina/pop up_mapa.png" alt="mapa" class="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <div class="row div-centrado">
+                        <div class="col-lg-12 mb-lg-0">
+                            <!-- <div class="card opacidad"> -->
+                            <div class="row">
+                                <div class="col-12 titulo">Paradas de las rutas</div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                <div class="scroll-card">
+                                    <div class="div-line-time col-line-time">
+                                        <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
+                                        <div class="div-right position-line-right">
+                                            <div class="text-line-title font-color-black">Paita</div>
+                                            <div class="text-pais font-color-black">Perú</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-line-time ">
+                                        <div class="font-color-black">
+                                            <div class="cant-dias">7 días</div>
+                                            <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-line-time text-center icon-line">
+                                        <i class="fas fa-dot-circle font-color-black"></i>
+                                        <div class="text-line-title font-color-black">Manzanillo</div>
+                                        <div class="text-pais font-color-black">México</div>
+                                    </div>
+                                    <div class="col-line-time text-center">
+                                        <div class="font-color-black">
+                                            <div class="cant-dias">4 días</div>
+                                            <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-line-time text-center icon-line">
+                                        <i class="fas fa-dot-circle font-color-black"></i>
+                                        <div class="text-line-title font-color-black">Long Beach</div>
+                                        <div class="text-pais font-color-black">EE.UU.</div>
+                                    </div>
+                                    <div class="col-line-time text-center">
+                                        <div class="font-color-black">
+                                            <div class="cant-dias">3 días</div>
+                                            <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-line-time text-center icon-line">
+                                        <i class="fas fa-dot-circle font-color-black"></i>
+                                        <div class="text-line-title font-color-black">Los Ángeles</div>
+                                        <div class="text-pais font-color-black">EE.UU.</div>
+                                    </div>
+                                    <div class="col-line-time text-center">
+                                        <div class="font-color-black">
+                                            <div class="cant-dias">3 días</div>
+                                            <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-line-time text-center icon-line">
+                                        <i class="fas fa-dot-circle font-color-black"></i>
+                                        <div class="text-line-title font-color-black">Oakland</div>
+                                        <div class="text-pais font-color-black">EE.UU.</div>
+                                    </div>
+                                    <div class="col-line-time text-center">
+                                        <div class="font-color-black">
+                                            <div class="cant-dias">5 días</div>
+                                            <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-line-time text-center icon-line">
+                                        <i class="fas fa-dot-circle font-color-black"></i>
+                                        <div class="text-line-title font-color-black">Vancouver</div>
+                                        <div class="text-pais font-color-black">Canada</div>
+                                    </div>
+                                    <div class="col-line-time text-center">
+                                        <div class="font-color-black">
+                                            <div class="cant-dias">5 días</div>
+                                            <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="div-line-time col-line-time">
+                                        <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
+                                        <div class="centro position-line-left">
+                                            <div class="text-line-title font-color-black">Seattle</div>
+                                            <div class="text-pais font-color-black font-color-black">EE.UU.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <div class="ocultar-movil">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo">
+                                Líneas navieras
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 centrado">
+                                Ordenar por:
+                                <div class="ordenar">A-Z <i class="fas fa-angle-down icon-ordenar" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-2 div-left">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-line-title font-color-black">
+                                        Evergreen
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Días de tránsito</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Agente</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Depósito</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Frecuencia de salida</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Sitio web</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">26 días</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">GREENANDES</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">TPP</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Semanal</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">www.evergreen-line.com</div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-line-title font-color-black">
+                                        MSC
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Días de tránsito</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Agente</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Depósito</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Frecuencia de salida</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Sitio web</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">26 días</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">MSC PERÚ</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">LICSA</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Semanal</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">www.msc.com</div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-line-title font-color-black">
+                                        MAERSK LINE
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Días de tránsito</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Agente</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Depósito</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Frecuencia de salida</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Sitio web</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">26 días</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">MAERSK PERÚ</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">ALCONSA</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Semanal</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">www.maersk.com</div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-line-title font-color-black">
+                                        HAMBURG SUD
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Días de tránsito</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Agente</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Depósito</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Frecuencia de salida</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-line-title font-color-black">Sitio web</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"></div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">26 días</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Cosmos</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">LICSA</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Semanal</div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">www.hamburg-sud-line.com</div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center">
+                                    <button type="button" class="btn btn-outline-light">
+                                            <div class="avatar-group div-effect ordenar">
+                                                <div class="avatar avatar-xs rounded-circle">
+                                                    <img src="../assets/img/Ruta_Marina/Group 84.png" alt="contenedor">
+                                                </div>
+                                                <span class="font-size-15 font-weight-bold span-direccion-logistico">Encuentra más información en Directorio Logístico</span>
+                                            </div>
+                                        </button>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mostrar-movil">
+                        <div class="row">
+                            <div class="col-12 titulo">
+                                Líneas navieras
+                            </div>
+                            <div class="col-12 centrado">
+                                Ordenar por:
+                                <div class="ordenar">A-Z <i class="fas fa-angle-down icon-ordenar" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <div class="rem-1">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="true" aria-controls="mostrarDetalle-Evergreen">
+                                        <div class="col-10 text-line-title font-color-black font-size-25 font-weight-bold acordion-hover div-left">
+                                            Evergreen
+                                        </div>
+                                        <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                            <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Días de tránsito</div>
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Frecuencia</div>
+
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">26 días</div>
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">Semanal</div>
+
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Agente</div>
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Depósito</div>
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">GREENANDES</div>
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">TPP</div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold font-color-black">Sitio web</div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-color-black font-size-10">www.evergreen-line.com</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-MSC" aria-expanded="true" aria-controls="mostrarDetalle-MSC">
+                                        <div class="col-10 text-line-title font-color-black font-size-25 font-weight-bold acordion-hover div-left">
+                                            MSC
+                                        </div>
+                                        <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                            <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-MSC">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Días de tránsito</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Frecuencia</div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">26 días</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">Semanal</div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Agente</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Depósito</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">MSC PERÚ</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">LICSA</div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold font-color-black">Sitio web</div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-color-black font-size-10">www.msc.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-MAERSK" aria-expanded="true" aria-controls="mostrarDetalle-MAERSK">
+                                        <div class="col-10 text-line-title font-color-black font-size-25 font-weight-bold acordion-hover div-left">
+                                            MAERSK LINE
+                                        </div>
+                                        <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                            <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-MAERSK">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Días de tránsito</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Frecuencia</div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">26 días</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">Semanal</div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Agente</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Depósito</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">MAERSK PERÚ</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">ALCONSA</div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold font-color-black">Sitio web</div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-color-black font-size-10">www.maersk.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-HAMBURG" aria-expanded="true" aria-controls="mostrarDetalle-HAMBURG">
+                                        <div class="col-10 text-line-title font-color-black font-size-25 font-weight-bold acordion-hover div-left">
+                                            HAMBURG SUD
+                                        </div>
+                                        <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                            <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-HAMBURG">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Días de tránsito</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Frecuencia</div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">26 días</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">Semanal</div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Agente</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-size-13 font-weight-bold font-color-black acordion-ancho">Depósito</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">COSMOS</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-color-black font-size-10 acordion-ancho">LICSA</div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold font-color-black">Sitio web</div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-color-black font-size-10">www.hamburg-line.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil d-flex justify-content-space-evenly">
+                                        <button type="button" class="btn btn-outline-light w-100 mostrar-movil" onclick="">
+                                        <div class="content-centrado">
+                                            <div class="avatar-group ordenar">
+                                                <div class="avatar avatar-xs rounded-circle mx-2">
+                                                    <img src="../assets/img/Ruta_Marina/Group 84.png" alt="contenedor">
+                                                </div>
+                                                <span class="font-size-15 font-weight-bold span-ver-mapa">Visite el Directorio Logístico</span>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+
+                    <div class="row posicion">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="font-color-black titulo">
+                                Guarda o descarga el resultado de tu búsqueda
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-red centrado">
+                            <div class="scroll-card">
+                                <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-login">
+                                    <div class="cicle-avatar">
+                                        <img src="../assets/img/icon-opcion/save.png" alt="guardar">
+                                    </div>
+                                    <div class="font-weight-bold px-2">Guardar resultado</div>
+                                </div>
+                                <div class="ordenar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="cicle-avatar">
+                                        <img src="../assets/img/icon-opcion/dowload.png" alt="descargar">
+                                    </div>
+                                    <div class="font-weight-bold px-2">Descargar en PDF</div>
+                                </div>
+                                <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-correo">
+                                    <div class="cicle-avatar">
+                                        <img src="../assets/img/icon-opcion/email.png" alt="correo" class="img-email">
+                                    </div>
+                                    <div class="font-weight-bold px-2">Enviar por correo</div>
+                                </div>
+                                <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-compartir">
+                                    <div class="cicle-avatar">
+                                        <img src="../assets/img/icon-opcion/shared.png" alt="compartir">
+                                    </div>
+                                    <div class="font-weight-bold px-2">Compartir</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-md-0 mb-4">
+                            <div class="card">
+                                <div class="card-body px-0 pb-2">
+                                    <div class="row px-4">
+                                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                            <div>
+                                                <img src="../assets/img/Ruta_Marina/tiene alguna pregunta_ilustracion.png" alt="pregunta" class="width-movil">
+                                            </div>
+                                            <h6 class="sub-titulo">¿No obtuviste la información que buscabas?</h6>
+                                            <p class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                                <span class="font-weight-bold">
+                                                    Si tienes una consulta particular sobre la herramienta escríbenos y resolveremos tu duda
+                                                </span>
+                                            </p>
+                                            <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro">
+                                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-informativo">Escríbenos</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                            <div>
+                                                <img src="../assets/img/Ruta_Marina/que te parecio la herramienta_ilustracion.png" alt="herramienta" class="width-movil">
+                                            </div>
+                                            <h6 class="sub-titulo">¿Qué te parecio la herramienta?</h6>
+                                            <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12">
+                                                <span class="font-weight-bold">
+                                                    PROMPERÚ se esfuerza constantemente por mejorar sus servicios. Si tienes sugerencias o comentarios completa el siguiente formulario.
+                                                </span>
+                                            </p>
+                                            <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro">
+                                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-opinion">Enviar mi opinión</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin vista ver detalle de busqueda de ruta desktop-->
+
+            </div>
+            <!-- Fin de vista principal -->
+            <footer class="footer pt-3" id="footer">
+                <div class="container-fluid">
+                    <div id="footer-Desktop" class="ocultar-movil">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-12 mb-lg-0 mb-4">
+                                <div class="text-center">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-3">
+                                <i class="fab fa-linkedin-in icon-redes"></i>
+                                <i class="fab fa-facebook icon-redes"></i>
+                                <i class="fab fa-twitter icon-redes"></i>
+                                <i class="fab fa-youtube icon-redes"></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-4 background-black"></div>
+                            <div class="row mt-3">
+                                <div class="col-3 mt-2">
+                                    <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
+                                </div>
+                                <div class="copyright col-6">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                                <div class="col-3 mt-n3">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer-Movil" class="mostrar-movil">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-12 mb-lg-0 mb-2">
+                                <div class="text-center">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-2">
+                                <i class="fab fa-linkedin-in icon-redes"></i>
+                                <i class="fab fa-facebook icon-redes"></i>
+                                <i class="fab fa-twitter icon-redes"></i>
+                                <i class="fab fa-youtube icon-redes"></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-2 background-gris"></div>
+                            <div class="row mt-2">
+                                <div class="col-6 div-left">
+                                    <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
+                                </div>
+                                <div class="col-6 div-left">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                                </div>
+                                <div class="copyright col-12">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <!-- </div> -->
+    <!-- Fin de buscador de puerto de origen V-Movil -->
+    <!-- Inicio de modales -->
+    <!-- Inicio modal mapa -->
+    <div class="modal fade" id="m-mapa" tabindex="-1" aria-labelledby="m-mapa" aria-hidden="true">
+        <button class="btn-close-modal-mediano" data-bs-dismiss="modal" aria-label="Close">
+            <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+        </button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../assets/img/Ruta_Marina/pop up_mapa.png" alt="mapa" class="img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal calificativo -->
+    <!-- Inicio modal Login -->
+    <div class="modal fade" id="m-login" tabindex="-1" aria-labelledby="m-login" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Para guardar debes iniciar sesión</h5>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label>Correo Electronico</label>
+                        <input type="text" class="form-control txt-login" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div>
+                        <label>Contraseña</label>
+                        <input type="password" class="form-control" placeholder="******">
+                    </div>
+                </div>
+                <div class="centrado">
+                    <button class="btn btn-danger" type="button">Ingresar</button>
+                </div>
+                <div class="centrado text-line-title font-color-red ordenar" data-bs-toggle="modal" data-bs-target="#m-password">¿Olvidaste tu contraseña?</div>
+                <div class="modal-footer background-footer-modal">
+                    <div class="centrado text-line-title font-color-black col-12">¿Aún no tienes una cuenta?</div>
+                    <div class="centrado col-12">
+                        <button type="button" class="btn btn-outline-danger" onclick="window.location.href='../../pages/Login/Login.html'">Regístrate Aquí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal login -->
+    <!-- Inicio modal recuperar contraseña -->
+    <div class="modal fade-second bd-example-modal-sm" id="m-password" tabindex="-1" role="dialog" aria-labelledby="m-password" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="font-color-black font-weight-100 font-size-20 text-center">Recuperar tu contraseña</h3>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
+                </div>
+                <div class="rem-1">
+                    <div class="font-color-black font-size-13">Si olvidaste tu contraseña, ingresa tu correo y te ayudaremos a recuperarla</div>
+                    <div class="col-lg-12"><br></div>
+                    <label class="font-color-black font-size-13 font-weight-100">correo electrónico</label>
+                    <input type="text" class="form-control text-correo" placeholder="ejemplo@correo.com" value="">
+                    <div class="centrado mt-3">
+                        <button class="btn btn-disabled btn-enviar-pass" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal recuperar contraseña -->
+    <!-- Inicio modal correo -->
+    <div class="modal fade bd-example-modal-sm" id="m-correo" tabindex="-1" role="dialog" aria-labelledby="m-correo" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
+                </div>
+                <div class="div-centrado">
+                    <div class="centrado modal-title font-color-black">Envíalo a tu correo</div>
+                    <div class="centrado">
+                        <label class="font-color-black text-line-title">Ingresa tu correo electrónico</label>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="centrado mt-3">
+                        <button class="btn btn-disabled" type="button">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal correo -->
+    <!-- Inicio modal compartir -->
+    <div class="modal fade bd-example-modal-sm" id="m-compartir" tabindex="-1" role="dialog" aria-labelledby="m-compartir" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
+                </div>
+                <div class="div-centrado">
+                    <div class="centrado modal-title font-color-black">Comparte el resultado de tu simulación</div>
+                    <div class="mt-3">
+                        <div class=" col-6 centrado div-left font-color-red ordenar">
+                            <i class="fab fa-whatsapp icon-btn"></i>
+                            <div class="text-line-title">WhatsApp</div>
+                        </div>
+                        <div class=" col-6 centrado div-left font-color-red ordenar">
+                            <i class="far fa-copy icon-btn"></i>
+                            <div class="text-line-title">Copiar enlace</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal compartir -->
+    <!-- Inicio modal informativo -->
+    <div class="modal fade" id="m-informativo" tabindex="-1" aria-labelledby="m-informativo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Indicanos tu consulta</h5>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-6 div-left">
+                        <label>Nombres</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label>Apellidos</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label>Correo electrónico</label>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="col-12 div-left">
+                        <label>Escribe tu consulta</label>
+                        <textarea type="text" class="form-control"></textarea>
+                        <span class="span-textarea">Máximo 189 cáracteres</span>
+                    </div>
+                    <div class="col-6 div-left mt-4">
+                        <button class="btn btn-primary btn-danger" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal informativo -->
+    <!-- Inicio modal calificativo -->
+    <div class="modal fade" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Brindanos tu opinión</h5>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-6 div-left">
+                        <label>Nombres</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label>Apellidos</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label>Correo electrónico</label>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="col-12 div-left">
+                        <label>Escribe tu mensaje</label>
+                        <textarea type="text" class="form-control"></textarea>
+                        <span class="span-textarea">Máximo 189 cáracteres</span>
+                    </div>
+                    <div class="col-12 div-left mt-4">
+                        <div class="col-5 div-left">Califica la herramienta</div>
+                        <div class="col-7 div-left">
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-8 div-left mt-4">
+                        <button class="btn btn-primary btn-danger" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal calificativo -->
+    <!-- Inicio menu general destok -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel" class=" font-size-20 font-color-black">Herramientas Logísticas</h5>
+            <!-- <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fas fa-times-circle rojo-promperu font-size-21"></i>
+            </a> -->
+            <button class="btn btn-close btn-close-canvas" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+            </button>
+        </div>
+        <div class="offcanvas-body offcanvas-body-menu">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content;" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Rutas Aéreas</p>
+                        <img src="../assets/img/dashboard/avion.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Rutas marítimas</p>
+                        <img src="../assets/img/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasTerrestre/Pages/Ruta_terrestre.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Rutas terrestres</p>
+                        <img src="../assets/img/dashboard/rutat.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Costos de exportación</p>
+                        <img src="../assets/img/dashboard/costos.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='Cubicaje.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Cubicaje</p>
+                        <img src="../assets/img/dashboard/Group.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Directorio logístico</p>
+                        <img src="../assets/img/dashboard/seParteDe.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Simulador de Drawback</p>
+                        <img src="../assets/img/dashboard/imagen principal.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold ordenar"><i class="far fa-user mx-2 font-size-25"></i>Iniciar sesión</div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold"><i class="fas fa-external-link-alt mx-2 font-size-25"></i>Visita también</div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
+                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Fin menu general desktop -->
+    <!-- Inicio vista de mapa movil-->
+    <div class="offcanvas offcanvas-center" tabindex="-1" id="mapa-movil" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header offcanvas-header-personalizado">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil w-100">
+                <div class="pt-2">
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" data-bs-dismiss="offcanvas" aria-label="Close"></i>Mapa
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="c">
+                <img src="../assets/img/Ruta_Marina/pop up_mapa.png" alt="mapa-movil" class="mapa-movil ">
+            </div>
+        </div>
+    </div>
+    <!-- Fin vista de mapa movil -->
+    <!-- Fin de modales -->
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/general.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
+    <!-- JS rutas maritimas -->
+    <script src="./js/detalle-rutas.js"></script>
+    <script src="../../common.js"></script>
+</body>
+
+</html>

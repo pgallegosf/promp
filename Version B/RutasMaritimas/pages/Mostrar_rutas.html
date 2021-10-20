@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Rutas marítimas
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../common.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                <a onclick="window.location.href='Rutas_maritimas.html'" class="ordenar"><i class="fas fa-chevron-left"></i></a>
+                <a class="navbar-brand">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img .img-responsive">
+                    <div class="nombre-ruta font-color-black font-size-21 font-weight-bold ocultar-movil">
+                        <div class="separador-nombre-ruta font-color-white ms-n2">.</div> Rutas Marítimas
+                    </div>
+                </a>
+                <div class="icon-menu">
+                    <div class="icon-menu" hidden>
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#" id="idPopoverNotificacion" data-bs-toggle="popover">
+                            <i class="far fa-bell negro-promperu font-size-21 active-icon-nav"></i>
+                            <span class=" rounded-pill badge-notification bg-danger">&nbsp;</span>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fas fa-bars negro-promperu font-size-21 active-icon-nav"></i>
+                        </a>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div id="view-global">
+                <!-- Inicio de vista resultado de busqueda de rutas desktop -->
+                <div id="view-busqueda">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <div class="div-centrado d-flex align-items-center justify-content-between">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-3 text-center">
+                            <h4 class="font-weight-bold min-titulo">Paita</h4> <span class="span font-weight-bold">Peru</span></div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2 text-center"><span class="font-color-red font-size-30 font-weight-bold"><i class="fas fa-arrow-right"></i></span></div>
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-3 text-center">
+                            <h4 class="font-weight-bold min-titulo">Seattle</h4> <span class="span font-weight-bold">EE.UU.</span>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 ocultar-movil"><span class="refresh font-color-red"><i class="fas fa-undo-alt icon-refresh mx-2"></i>Volver a buscar</span></div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between div-centrado">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 texto-centrado font-color-black">1 ruta</div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 font-color-black font-weight-bold">Ordenar por:</div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 font-color-red">Tiempo de viaje <i class="fas fa-chevron-down mx-2 ordenar"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <div class="scroll-card">
+                        <div class="primera-tarjeta">
+                            <div class="card card-centrado">
+                                <div class="card-header pb-0 p-3 card-header-titulo">
+                                    <h5 class="mb-3 font-color-blue Helvetica Neue LT Std">Ruta: Costa Oeste EE.UU</h5>
+                                </div>
+                                <div class="card-body p-3">
+                                    <div class="ocultar-movil">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title">Número de paradas</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title">Días de tránsito</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                                <button class="btn btn-danger mt-n2" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion">7 paradas</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion">27 días</div>
+                                        </div>
+                                    </div>
+                                    <div class="mostrar-movil">
+                                        <div class="row">
+                                            <div class="col-12 div-left car-body-title">Tiempo de Viaje</div>
+                                            <div class="col-4 div-left car-body-descripcion">3 días</div>
+                                            <div class="col-4 div-left car-body-descripcion">1 hrs</div>
+                                            <div class="col-4 div-left car-body-descripcion">24 min</div>
+                                            <div class="col-12 div-left car-body-title">Nro. de escalas</div>
+                                            <div class="col-12 div-left car-body-descripcion">2 escalas</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
+                                        <button class="btn btn-danger mt-n2 mostrar-movil" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mostrar-movil">
+                            <div class="card card-centrado">
+                                <div class="card-header pb-0 p-3 card-header-titulo">
+                                    <h5 class="mb-3 font-color-blue Helvetica Neue LT Std">Ruta: Costa Oeste EE.UU</h5>
+                                </div>
+                                <div class="card-body p-3">
+                                    <div class="ocultar-movil">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title">Número de paradas</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title">Días de tránsito</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                                <button class="btn btn-danger mt-n2" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion">7 paradas</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion">27 días</div>
+                                        </div>
+                                    </div>
+                                    <div class="mostrar-movil">
+                                        <div class="row">
+                                            <div class="col-12 div-left car-body-title">Tiempo de Viaje</div>
+                                            <div class="col-4 div-left car-body-descripcion">3 días</div>
+                                            <div class="col-4 div-left car-body-descripcion">1 hrs</div>
+                                            <div class="col-4 div-left car-body-descripcion">24 min</div>
+                                            <div class="col-12 div-left car-body-title">Nro. de escalas</div>
+                                            <div class="col-12 div-left car-body-descripcion">2 escalas</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
+                                        <button class="btn btn-danger mt-n2 mostrar-movil" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mostrar-movil">
+                            <div class="card card-centrado">
+                                <div class="card-header pb-0 p-3 card-header-titulo">
+                                    <h5 class="mb-3 font-color-blue Helvetica Neue LT Std">Ruta: Costa Oeste EE.UU</h5>
+                                </div>
+                                <div class="card-body p-3">
+                                    <div class="ocultar-movil">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title">Número de paradas</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title">Días de tránsito</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                                <button class="btn btn-danger mt-n2" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion">7 paradas</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion">27 días</div>
+                                        </div>
+                                    </div>
+                                    <div class="mostrar-movil">
+                                        <div class="row">
+                                            <div class="col-12 div-left car-body-title">Tiempo de Viaje</div>
+                                            <div class="col-4 div-left car-body-descripcion">3 días</div>
+                                            <div class="col-4 div-left car-body-descripcion">1 hrs</div>
+                                            <div class="col-4 div-left car-body-descripcion">24 min</div>
+                                            <div class="col-12 div-left car-body-title">Nro. de escalas</div>
+                                            <div class="col-12 div-left car-body-descripcion">2 escalas</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
+                                        <button class="btn btn-danger mt-n2 mostrar-movil" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mostrar-movil">
+                            <div class="card card-centrado">
+                                <div class="card-header pb-0 p-3 card-header-titulo">
+                                    <h5 class="mb-3 font-color-blue Helvetica Neue LT Std">Ruta: Costa Oeste EE.UU</h5>
+                                </div>
+                                <div class="card-body p-3">
+                                    <div class="ocultar-movil">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title">Número de paradas</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title">Días de tránsito</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                                <button class="btn btn-danger mt-n2" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion">7 paradas</div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion">27 días</div>
+                                        </div>
+                                    </div>
+                                    <div class="mostrar-movil">
+                                        <div class="row">
+                                            <div class="col-12 div-left car-body-title">Tiempo de Viaje</div>
+                                            <div class="col-4 div-left car-body-descripcion">3 días</div>
+                                            <div class="col-4 div-left car-body-descripcion">1 hrs</div>
+                                            <div class="col-4 div-left car-body-descripcion">24 min</div>
+                                            <div class="col-12 div-left car-body-title">Nro. de escalas</div>
+                                            <div class="col-12 div-left car-body-descripcion">2 escalas</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
+                                        <button class="btn btn-danger mt-n2 mostrar-movil" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    </div>
+                    <div class="card mb-4 d-none">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-xl-4 col-md-6 mb-xl-0 mb-4 mt-2">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <h4 class="font-weight-bold min-titulo">Paita</h4> <span class="span font-weight-bold">Peru</span>
+                                        </div>
+                                        <div class="icon"> <i class="fas fa-arrow-right"></i> </div>
+                                        <div>
+                                            <h4 class="font-weight-bold min-titulo">Seattle</h4> <span class="span font-weight-bold">EE.UU.</span> </div>
+                                    </div>
+                                    <div class="hr mt-4"></div>
+                                    <div class="mt-5 car-body-descripcion">
+                                        1 ruta
+                                    </div>
+                                    <div class="refresh mt-4" id="btn-volver-buscar" onclick="volverBuscar()">
+                                        <i class="fas fa-undo-alt icon-refresh"></i> Volver a buscar
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 centrado">
+                                    <div class="refresh m-left" id="btn-Ordenar">
+                                        <i class="fas fa-long-arrow-alt-down icon-refresh"><i class="fas fa-long-arrow-alt-up"></i></i>Cambiar el orden
+                                    </div>
+                                    <div id="container-desktop">
+                                        <div class="col-8 div-float-right mt-3">
+                                            <div class="card h-100">
+                                                <div class="card-header pb-0 p-3 card-header-titulo">
+                                                    <h6 class="mb-3">Ruta: Costa Oeste EE.UU</h6>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="col-4 div-left car-body-title">Número de paradas</div>
+                                                            <div class="col-4 div-left car-body-title">Días de tránsito</div>
+                                                            <div class=" col-4 refresh end div-left" onclick="verDetalle()">
+                                                                <i class="fas fa-plus icon-refresh"></i>Ver detalle
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 car-body-descripcion">7 paradas</div>
+                                                        <div class="col-4 car-body-descripcion">27 días</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 div-float-right mt-3">
+                                            <div class="card h-100">
+                                                <div class="card-header pb-0 p-3 card-header-titulo">
+                                                    <h6 class="mb-3">Ruta: Costa Oeste EE.UU</h6>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="col-4 div-left car-body-title">Número de paradas</div>
+                                                            <div class="col-4 div-left car-body-title">Días de tránsito</div>
+                                                            <div class=" col-4 refresh end div-left" onclick="verDetalle()">
+                                                                <i class="fas fa-plus icon-refresh"></i>Ver detalle
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 car-body-descripcion">7 paradas</div>
+                                                        <div class="col-4 car-body-descripcion">27 días</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 div-float-right mt-3">
+                                            <div class="card h-100">
+                                                <div class="card-header pb-0 p-3 card-header-titulo">
+                                                    <h6 class="mb-3">Ruta: Costa Oeste EE.UU</h6>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="col-4 div-left car-body-title">Número de paradas</div>
+                                                            <div class="col-4 div-left car-body-title">Días de tránsito</div>
+                                                            <div class=" col-4 refresh end div-left" onclick="verDetalle()">
+                                                                <i class="fas fa-plus icon-refresh"></i>Ver detalle
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 car-body-descripcion">7 paradas</div>
+                                                        <div class="col-4 car-body-descripcion">27 días</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="container-movil">
+                                        <div class="col-8 div-float-right width-movil">
+                                            <div class="card h-100">
+                                                <div class="card-header pb-0 p-3 card-header-movil">
+                                                    <h6 class="mb-3">Ruta: Sudamerica - Europea</h6>
+                                                </div>
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="col-12 div-left car-body-title">Tiempo de Viaje</div>
+                                                            <div class="col-4 div-left car-body-descripcion">3 días</div>
+                                                            <div class="col-4 div-left car-body-descripcion">1 hrs</div>
+                                                            <div class="col-4 div-left car-body-descripcion">24 min</div>
+                                                            <div class="col-12 div-left car-body-title">Nro. de escalas</div>
+                                                            <div class="col-12 div-left car-body-descripcion">2 escalas</div>
+                                                            <div class=" col-8 refresh div-left btn-movil-buscar mt-3" onclick="verDetalle()">
+                                                                <i class="fas fa-plus icon-refresh"></i>Ver detalle
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="btn-buscar-movil">
+                            <button class="btn btn-outline-danger" type="button" id="v-buscar" onclick="volverBuscar()">Volver a buscar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin de vista resultado de busqueda de rutas desktop -->
+            </div>
+            <!-- Fin de vista principal -->
+            <footer class="footer pt-3" id="footer">
+                <div class="container-fluid">
+                    <div id="footer-Desktop" class="ocultar-movil">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-12 mb-lg-0 mb-4">
+                                <div class="text-center">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-3">
+                                <i class="fab fa-linkedin-in icon-redes"></i>
+                                <i class="fab fa-facebook icon-redes"></i>
+                                <i class="fab fa-twitter icon-redes"></i>
+                                <i class="fab fa-youtube icon-redes"></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-4 background-black"></div>
+                            <div class="row mt-3">
+                                <div class="col-3 mt-2">
+                                    <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
+                                </div>
+                                <div class="copyright col-6">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                                <div class="col-3 mt-n3">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer-Movil" class="mostrar-movil">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-12 mb-lg-0 mb-2">
+                                <div class="text-center">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-2">
+                                <i class="fab fa-linkedin-in icon-redes"></i>
+                                <i class="fab fa-facebook icon-redes"></i>
+                                <i class="fab fa-twitter icon-redes"></i>
+                                <i class="fab fa-youtube icon-redes"></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-2 background-gris"></div>
+                            <div class="row mt-2">
+                                <div class="col-6 div-left">
+                                    <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
+                                </div>
+                                <div class="col-6 div-left">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                                </div>
+                                <div class="copyright col-12">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <!-- Inicio menu general destok -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel" class=" font-size-20 font-color-black">Herramientas Logísticas</h5>
+            <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fas fa-times-circle rojo-promperu font-size-21"></i>
+            </a>
+
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content;" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Rutas Aéreas</p>
+                        <img src="../assets/img/dashboard/avion.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Rutas marítimas</p>
+                        <img src="../assets/img/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasTerrestre/Pages/Ruta_terrestre.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Rutas terrestres</p>
+                        <img src="../assets/img/dashboard/rutat.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Costos de exportación</p>
+                        <img src="../assets/img/dashboard/costos.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='Cubicaje.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Cubicaje</p>
+                        <img src="../assets/img/dashboard/Group.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Directorio logístico</p>
+                        <img src="../assets/img/dashboard/seParteDe.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Simulador de Drawback</p>
+                        <img src="../assets/img/dashboard/imagen principal.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold ordenar"><i class="far fa-user mx-2 font-size-25"></i>Iniciar sesión</div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold"><i class="fas fa-external-link-alt mx-2 font-size-25"></i>Visita también</div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
+                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Fin menu general desktop -->
+
+    <!-- Fin de modales -->
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/general.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
+    <!-- JS rutas maritimas -->
+    <script src="./js/mostrar_rutas.js"></script>
+    <script src="../../common.js"></script>
+</body>
+
+</html>
