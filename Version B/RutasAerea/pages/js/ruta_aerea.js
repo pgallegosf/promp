@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    $(".ptOrigen").click(function(e) {
+    $(".destino").click(function(e) {
         e.stopPropagation();
         showCardOrigen();
     });
-    $(".ptDestino").click(function(e) {
+    $(".peso").click(function(e) {
         e.stopPropagation();
         showCardDestino();
     });
@@ -55,6 +55,12 @@ $(document).ready(function() {
     $(".btn-rutasMovil2").click(function() {
         showRutas();
     });
+    $(".opDestCiudadM").click(function() {
+        showDestinoChina();
+    });
+    $(".pesoMovil").click(function() {
+        llenarDatos();
+    });
     // Botones bloqueados
     $(".btn-rutas").attr('disabled', 'disabled');
     $(".btn-rutasMovil").attr('disabled', 'disabled');
@@ -66,16 +72,20 @@ $(document).ready(function() {
     $(".cmbSelectPuerto").hide();
     $(".cardPuerto").hide();
     $(".mostrarRutas").hide();
-    $(".PuertoDestino-movil").hide();
+    // $(".PuertoDestino-movil").hide();
     $(".select-destino-ciudad").hide();
+    $(".mapa-mundo").hide();
 });
 
 function showCardOrigen() {
-    $(".card-origen").show();
+    $(".card-destino").show();
 }
 
 function showCardDestino() {
-    $(".card-destino").show();
+    $(".peso").val("120kg");
+    $(".btn-rutas").removeAttr('disabled');
+    $(".btn-rutas").removeClass('btn-disabled');
+    $(".btn-rutas").addClass('btn-danger');
 }
 
 function closeCardPuertos() {
@@ -95,10 +105,7 @@ function showCardPuertosDestino() {
 
 function showCardPuertosEEUU() {
     $(".card-destino").hide();
-    $(".puertoDestino").val("Seattle, Estados Unidos");
-    $(".btn-rutas").removeAttr('disabled');
-    $(".btn-rutas").removeClass('btn-disabled');
-    $(".btn-rutas").addClass('btn-danger');
+    $(".destino").val("Pekin - Pek, China");
 }
 
 function retornarCardPuertosOrigen() {
@@ -133,24 +140,30 @@ function selectPtoDestino() {
 }
 
 function selectPtoDestCiudad() {
-    $("#ptOrigenCanvas").offcanvas('hide');
-    $(".ptOrigenMovil").val("Paita, Perú");
-    $(".puertoDestinoMovil").val("Seattle, Estados Unidos");
-    $(".btn-rutasMovil").removeAttr('disabled');
-    $(".btn-rutasMovil").removeClass('btn-disabled');
-    $(".btn-rutasMovil").addClass('btn-danger');
+    $("#PaisDestinoCanvas").offcanvas('hide');
+    $(".paisdestino").val("Berlín - BER, Alemania");
+    $(".mapa-mundo").show();
 }
 
 function retornarPais() {
     $(".select-destino-ciudad").hide();
-    $(".PuertoDestino-movil").show();
+    $(".select-destino-pais").show();
 }
 
 function SelectCardPaisDestino() {
-    $("#PaisDestinoCanvas").offcanvas('hide');
-    $(".mostrarpuertoMovil").val("Estado Unidos");
-    $(".btn-rutasMovil2").removeAttr('disabled');
-    $(".btn-rutasMovil2").removeClass('btn-disabled');
-    $(".btn-rutasMovil2").addClass('btn-danger');
+    $(".select-destino-pais").hide();
+    $(".select-destino-ciudad").show();
 
+}
+
+function showDestinoChina() {
+    $(".ptOrigenCanvas").offcanvas('hide');
+    $(".destinoMovil").val('Pekín - PEK, China');
+}
+
+function llenarDatos() {
+    $(".pesoMovil").val("120kg");
+    $(".btn-rutasMovil").removeAttr('disable');
+    $(".btn-rutasMovil").removeClass('btn-disabled');
+    $(".btn-rutasMovil").addClass('btn-danger');
 }

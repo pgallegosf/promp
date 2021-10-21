@@ -94,7 +94,7 @@ body {
 }
 
 .img {
-    width: 60%;
+    width: 100%;
     text-align: center !important;
 }
 
@@ -113,7 +113,7 @@ body {
     height: 600px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background: url(../img/img-inicio.png);
+    background: url(../img/avion.png);
     background-size: cover;
     object-fit: cover;
     object-position: center center;
@@ -143,7 +143,7 @@ body {
         height: 400px;
         background-size: 50% 50%;
         background-repeat: no-repeat;
-        background: url(../img/img-inicio.png);
+        background: url(../img/avion.png);
         background-size: cover;
     }
 }
@@ -164,8 +164,8 @@ body {
 .card-select {
     width: 50% !important;
     height: 160% !important;
-    margin-left: 34% !important;
-    top: 74% !important;
+    margin-left: 0% !important;
+    top: 72% !important;
     position: absolute !important;
     font-size: 10px;
     font-weight: bold;
@@ -746,6 +746,10 @@ body {
     overflow-y: hidden;
 }
 
+.scroll-menu {
+    overflow: auto;
+}
+
 .scroll-card::-webkit-scrollbar {
     width: 0;
 }
@@ -851,17 +855,8 @@ body {
         width: 300px !important;
         margin-right: 15px;
     }
-    .col-line-time-3 {
-        width: 33.33%;
-    }
-    .col-line-time-13 {
-        width: 53.6%;
-    }
-    .col-line-time-15 {
-        width: 6.6%;
-    }
-    .col-line-time-19 {
-        width: 5.26%;
+    .col-line-time {
+        width: 11.11%;
     }
     .span-ver-mapa {
         position: relative;
@@ -962,7 +957,7 @@ body {
         margin-right: 15px;
     }
     .col-line-time {
-        width: 30.6%;
+        width: 11.11%;
     }
     .span-ver-mapa {
         position: relative;
@@ -1063,7 +1058,7 @@ body {
         margin-right: 15px;
     }
     .col-line-time {
-        width: 20.6%;
+        width: 11.11%;
     }
     .span-ver-mapa {
         position: relative;
@@ -1164,7 +1159,7 @@ body {
         margin-right: 15px;
     }
     .col-line-time {
-        width: 13.6%;
+        width: 11.11%;
     }
     .span-ver-mapa {
         position: relative;
@@ -1273,7 +1268,7 @@ body {
         width: 960px !important;
     }
     .col-line-time {
-        width: 10.6%;
+        width: 11.11%;
     }
     .span-ver-mapa {
         position: relative;
@@ -1383,7 +1378,7 @@ body {
         width: 1000px !important;
     }
     .col-line-time {
-        width: 7.6%;
+        width: 11.11%;
     }
     .span-ver-mapa {
         position: relative;
