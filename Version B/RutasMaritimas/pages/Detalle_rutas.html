@@ -41,7 +41,7 @@
                         <i class="far fa-user"></i>
                     </div>
                     <div class="icon-menu">
-                        <a class="" href="#" id="idPopoverNotificacion" data-bs-toggle="popover">
+                        <a class="idPopoverNotificacionGuardar" href="#" id="idPopoverNotificacionGuardar" data-bs-toggle="popover">
                             <i class="far fa-bell negro-promperu font-size-21 active-icon-nav"></i>
                             <span class=" rounded-pill badge-notification bg-danger">&nbsp;</span>
                         </a>
@@ -573,7 +573,7 @@
             <!-- Fin de vista principal -->
             <footer class="footer pt-3" id="footer">
                 <div class="container-fluid">
-                    <div id="footer-Desktop" class="ocultar-movil">
+                    <div id="footer-Desktop" class="mostrar-desktop">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-lg-12 mb-lg-0 mb-4">
                                 <div class="text-center">
@@ -639,6 +639,24 @@
     </main>
     <!-- </div> -->
     <!-- Fin de buscador de puerto de origen V-Movil -->
+    <!-- Inicio Popovers -->
+    <div class="popover">
+        <div class="popover-header">
+            <div class="d-flex justify-content-between blanco">
+                <p class="font-size-10 font-weight-bold">Tu simulación ha sido guardada</p>
+                <i class="fas fa-times close-popover ordenar"></i>
+            </div>
+        </div>
+        <div class="popover-body">
+            <a class="blanco ordenar link" href="../pages/Simulaciones_Rutas_Maritimas.html">
+                <div class="d-flex justify-content-around">
+                    <i class="fas fa-file-alt icon-document-alert"></i>
+                    <span>Ver mis simulaciones guardadas</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Fin Popovers -->
     <!-- Inicio de modales -->
     <!-- Inicio modal mapa -->
     <div class="modal fade" id="m-mapa" tabindex="-1" aria-labelledby="m-mapa" aria-hidden="true">
@@ -675,13 +693,13 @@
                     </div>
                 </div>
                 <div class="centrado">
-                    <button class="btn btn-danger" type="button">Ingresar</button>
+                    <button class="btn btn-danger btn-ingresar" type="button">Ingresar</button>
                 </div>
                 <div class="centrado text-line-title font-color-red ordenar" data-bs-toggle="modal" data-bs-target="#m-password">¿Olvidaste tu contraseña?</div>
                 <div class="modal-footer background-footer-modal">
                     <div class="centrado text-line-title font-color-black col-12">¿Aún no tienes una cuenta?</div>
                     <div class="centrado col-12">
-                        <button type="button" class="btn btn-outline-danger" onclick="window.location.href='../../pages/Login/Login.html'">Regístrate Aquí</button>
+                        <button type="button" class="btn btn-outline-danger" onclick="window.location.href='../../Registro/pages/Registro.html'">Regístrate Aquí</button>
                     </div>
                 </div>
             </div>
@@ -858,43 +876,43 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content;" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Rutas Aéreas</p>
-                        <img src="../assets/img/dashboard/avion.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/avion.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Rutas marítimas</p>
-                        <img src="../assets/img/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasTerrestre/Pages/Ruta_terrestre.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Rutas terrestres</p>
-                        <img src="../assets/img/dashboard/rutat.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Costos de exportación</p>
-                        <img src="../assets/img/dashboard/costos.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='Cubicaje.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Cubicaje</p>
-                        <img src="../assets/img/dashboard/Group.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Directorio logístico</p>
-                        <img src="../assets/img/dashboard/seParteDe.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Simulador de Drawback</p>
-                        <img src="../assets/img/dashboard/imagen principal.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/imagen principal.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>

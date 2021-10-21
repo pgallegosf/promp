@@ -88,7 +88,7 @@
                                     <h5 class="mb-3 font-color-blue Helvetica Neue LT Std">Ruta: Costa Oeste EE.UU</h5>
                                 </div>
                                 <div class="card-body p-3">
-                                    <div class="ocultar-movil">
+                                    <div class="mostrar-desktop">
                                         <div class="row">
                                             <div class="col-lg-4 col-md-4 col-sm-12 car-body-title">Número de paradas</div>
                                             <div class="col-lg-4 col-md-4 col-sm-12 car-body-title">Días de tránsito</div>
@@ -348,7 +348,7 @@
             <!-- Fin de vista principal -->
             <footer class="footer pt-3" id="footer">
                 <div class="container-fluid">
-                    <div id="footer-Desktop" class="ocultar-movil">
+                    <div id="footer-Desktop" class="mostrar-desktop">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-lg-12 mb-lg-0 mb-4">
                                 <div class="text-center">
@@ -416,53 +416,55 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel" class=" font-size-20 font-color-black">Herramientas Logísticas</h5>
-            <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="offcanvas" aria-label="Close">
+            <!-- <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="offcanvas" aria-label="Close">
                 <i class="fas fa-times-circle rojo-promperu font-size-21"></i>
-            </a>
-
+            </a> -->
+            <button class="btn btn-close btn-close-canvas" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+            </button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body offcanvas-body-menu">
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content;" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Rutas Aéreas</p>
-                        <img src="../assets/img/dashboard/avion.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/avion.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Rutas marítimas</p>
-                        <img src="../assets/img/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasTerrestre/Pages/Ruta_terrestre.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Rutas terrestres</p>
-                        <img src="../assets/img/dashboard/rutat.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Costos de exportación</p>
-                        <img src="../assets/img/dashboard/costos.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='Cubicaje.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Cubicaje</p>
-                        <img src="../assets/img/dashboard/Group.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Directorio logístico</p>
-                        <img src="../assets/img/dashboard/seParteDe.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
                     <div class="font-size-15 inline">
                         <p class="text-menu-lateral">Simulador de Drawback</p>
-                        <img src="../assets/img/dashboard/imagen principal.png" alt="avion" class="icon-dashboard">
+                        <img src="../../img-menu-PromPeru/dashboard/imagen principal.png" alt="avion" class="icon-dashboard">
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>

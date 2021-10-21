@@ -2,8 +2,16 @@ $(document).ready(function() {
     $(".text-correo").click(function() {
         recuperarPass();
     });
+    //Elementos ocultos
+    $(".popover").hide();
     // Botones bloqueados
     $(".btn-enviar-pass").attr('disabled', 'disabled');
+    $(".idPopoverNotificacionGuardar").click(function() {
+        $(".popover").toggle();
+    });
+    $(".close-popover").click(function() {
+        $(".popover").toggle();
+    });
 });
 
 function recuperarPass() {

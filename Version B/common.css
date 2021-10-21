@@ -73,20 +73,6 @@ img {
     background-color: #07354F;
 }
 
-.background-azul-promperu .popover-body {
-    color: #FFFFFF;
-}
-
-.background-azul-promperu .popover-arrow {
-    color: #07354F;
-}
-
-.background-azul-promperu>.popover-arrow::after {
-    top: 0px;
-    border-width: 0 0.5rem 0.5rem 0.5rem;
-    border-bottom-color: #07354F;
-}
-
 .font-size-21 {
     font-size: 21px;
 }
@@ -102,7 +88,8 @@ img {
 
 .posicion-close-notificacion {
     position: absolute;
-    right: 12px;
+    /* right: 12px; */
+    right: 25px;
 }
 
 .sin-margen-top {
@@ -314,4 +301,45 @@ img {
     .offcanvas-end {
         width: 50%!important;
     }
+}
+
+
+/*Style del popover*/
+
+.popover {
+    background-color: #07354F;
+    color: #ffffff;
+    width: 50%;
+    height: 15%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 62px;
+    left: 78%;
+}
+
+.popover::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid #07354F;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: -30px;
+    left: 83%;
+    position: absolute;
+}
+
+.popover-header {
+    background-color: #e9ecef00 !important;
+}
+
+.popover-body {
+    padding: 0rem 1rem !important;
+}
+
+.link:hover {
+    color: #ffffff !important;
 }
