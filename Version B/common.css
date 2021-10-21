@@ -1,16 +1,19 @@
-@font-face{
-	font-family:'Helvetica Neue LT Std light';
-	src:url('font-Promperu/HELVETICANEUELTSTD LT.OTF');
+@font-face {
+    font-family: 'Helvetica Neue LT Std light';
+    src: url('font-Promperu/HELVETICANEUELTSTD LT.OTF');
 }
-@font-face{
-	font-family:'Helvetica Neue LT Std bold';
-	src:url('font-Promperu/HelveticaNeueLTStd-Bd.OTF');
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std bold';
+    src: url('font-Promperu/HelveticaNeueLTStd-Bd.OTF');
 }
-@font-face{
-	font-family:'Helvetica Neue LT Std medium';
-	src:url('font-Promperu/HelveticaNeueLTStd-Md.OTF');
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std medium';
+    src: url('font-Promperu/HelveticaNeueLTStd-Md.OTF');
 }
-.font-display{
+
+.font-display {
     font-family: 'Helvetica Neue LT Std bold' !important;
     font-style: normal !important;
     font-weight: bold !important;
@@ -20,26 +23,266 @@
     align-items: center;
     text-align: center;
 }
-.font-H2-light{
+
+.font-h1-bold {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 36px !important;
+    line-height: 43.2px !important;
+}
+
+.font-H2-light {
     font-family: 'Helvetica Neue LT Std light'!important;
     font-style: normal !important;
     font-weight: 300 !important;
     font-size: 30px !important;
     line-height: 36px !important;
 }
-.font-Display-2-Bold{
+
+.font-H2-light-400 {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 30px !important;
+    line-height: 36px !important;
+    text-align: center !important;
+}
+
+.font-H2-bold-700 {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    line-height: 36px !important;
+}
+
+.font-h3-light-300 {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 28.8px !important;
+}
+
+.font-h3-light-400 {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    line-height: 28.8px !important;
+}
+
+.font-h3-bold {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    line-height: 28.8px !important;
+}
+
+.font-h3-bold-700 {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 28.8px !important;
+}
+
+.font-h3-bold-700c {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 28.8px !important;
+    text-align: center;
+}
+
+.font-H4-light {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+}
+
+.font-H4-light-300 {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+}
+
+.font-H4-light-400 {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+    text-align: center !important;
+}
+
+.font-H4-light-400n {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+}
+
+.font-H4-bold-700 {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+    text-align: center !important;
+}
+
+.font-H4-bold-700n {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+}
+
+.font-H5-light {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center;
+}
+
+.font-H5-lightn {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+}
+
+.font-H5-light-400 {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center;
+}
+
+.font-H5-light-400n {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+}
+
+.font-H5-bold {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+}
+
+.font-H5-medium {
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center !important;
+}
+
+.font-Display-2-Bold {
     font-family: 'Helvetica Neue LT Std bold' !important;
     font-weight: bold;
     font-size: 51px;
     line-height: 61px;
     align-items: center;
 }
-.font-label{
+
+.font-label {
     font-family: 'Helvetica Neue LT Std bold' !important;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
+}
+
+.font-label-400 {
+    font-family: 'Helvetica Neue LT Std' !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.8px;
+}
+
+.font-label-400c {
+    font-family: 'Helvetica Neue LT Std' !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.8px;
+    text-align: center !important;
+}
+
+.font-H2-bold {
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    line-height: 36px !important;
+    text-align: center !important;
+}
+
+.font-smallprint-medium {
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    line-height: 14.4px !important;
+}
+
+.font-helvetica-icon {
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 16.8px !important;
+    text-align: center;
+}
+
+.font-helvetica-footer-light {
+    font-family: 'Helvetica Neue LT Std' !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 12px !important;
+    line-height: 14.4px !important;
+    text-align: center !important;
+}
+
+.font-helvetica-footer-bold {
+    font-family: 'Helvetica Neue LT Std' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    line-height: 14.4px !important;
+    text-align: center !important;
+}
+
+.font-helvetica-coryright {
+    font-family: 'Helvetica Neue LT Std' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 16.8px !important;
+    text-align: center !important;
 }
 
 img {
@@ -228,6 +471,7 @@ img {
     color: #C4122f !important;
     border-radius: 15px !important;
 }
+
 .btn-outline-danger:hover {
     border: 2px solid #C4122f !important;
     color: #C4122f !important;
@@ -235,6 +479,7 @@ img {
     opacity: 100 !important;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
 }
+
 .btn-outline-danger:active {
     border: 2px solid #282828 !important;
     color: #282828 !important;
@@ -251,21 +496,25 @@ img {
     color: #FFF !important;
     border-radius: 15px;
 }
+
 .btn-danger:disabled {
     background-color: #C0C0C0 !important;
     color: #8B8B8B !important;
 }
+
 .btn-danger:hover {
     background-color: #C4122F !important;
     color: #FFFFFF !important;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
-    border-radius: 15px !important;;
+    border-radius: 15px !important;
+    ;
 }
+
 .btn-danger:active {
     background-color: #282828 !important;
     color: #FFFFFF !important;
-
 }
+
 .footer {
     position: absolute;
 }

@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Rutas marítimas
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../common.css">
+</head>
+
+<body class="g-sidenav-show">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                <!-- <a href="http://"><i class="fas fa-chevron-left"></i></a> -->
+                <a class="navbar-brand ordenar" href="javascript:window.location.reload(true)">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img .img-responsive">
+                </a>
+                <div class="icon-menu">
+                    <div class="icon-menu" hidden>
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#" id="idPopoverNotificacion" data-bs-toggle="popover">
+                            <i class="far fa-bell negro-promperu font-size-21 active-icon-nav"></i>
+                            <span class=" rounded-pill badge-notification bg-danger">&nbsp;</span>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fas fa-bars negro-promperu font-size-21 active-icon-nav"></i>
+                        </a>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div class="d-display" id="view-global">
+                <div class="text-center mt-3">
+                    <h5 class="titulo font-display negro-promperu">Rutas Marítimas</h5>
+                    <p class="descripcion mb-5 font-H2-light negro-promperu">Conoce las principales rutas marítimas para tus exportaciones</p>
+                </div>
+                <div class="row mt-4 div-centrado">
+                    <div class="col-lg-12 mb-lg-0">
+                        <div class="card">
+                            <div class="row px-2 p-5 overflow-hidden">
+                                <div class="col-lg-4 col-md-6 col-xs-12">
+                                    <label class="font-label negro-promperu">Puerto de origen</label>
+                                    <input type="text" class="form-control ptOrigen mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                    <input type="text" class="form-control ptOrigenMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <i class="fas fa-angle-down icon-select ptOrigen ordenar"></i>
+                                </div>
+                                <div class="card h-100 p-3 card-select-origen card-origen" id="selectPuertoOrigen">
+                                    <div class="row" id="comboPais">
+                                        <option value="0" class="font-H4-light-300 option-select font-color-black opCiudad">Paita, Piura</option>
+                                        <option value="1" class="font-H4-light-300 option-select font-color-black opCiudad">Callao</option>
+                                        <option value="2" class="font-H4-light-300 option-select font-color-black opCiudad">Matarani</option>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xs-12 position-relative ordenar">
+                                    <label class="font-label negro-promperu">Puerto de destino</label>
+                                    <input type="text" class="form-control ptDestino ordenar puertoDestino mostrar-desktop font-H4-light" id="puertoDestino" value="Selecciona" /><i class="fas fa-angle-down icon-select ptDestino mostrar-desktop ordenar"></i>
+                                    <input type="text" class="form-control ptDestino ordenar puertoDestinoMovil mostrar-movil font-H4-light" id="puertoDestino" value="Selecciona" /><i class="fas fa-angle-down icon-select ptDestino ordenar"></i>
+                                    <!-- <i class="fas fa-angle-down icon-select"></i> -->
+                                </div>
+                                <div class="card h-100 p-3 card-select card-destino" id="view-select-Pais">
+                                    <div class="row cmbPais" id="cmbPais">
+                                        <div class="col-3 separador font-label-400">Paises Frecuentes:</div>
+                                        <div class="col-2 font-label-400 select-select-titulo" id="idContinente">America</div>
+                                        <div class="col-2 font-label-400" id="idEuropa">Europa</div>
+                                        <div class="col-2 font-label-400" id="idAsia">Asia</div>
+                                        <div class="col-2 font-label-400" id="idAfrica">Africa</div>
+                                        <div class="col-1 font-label-400" id="idOceania">Óceania</div>
+                                        <div class="col-3 card-contenido-select separador">
+                                            <option class="mb-1 font-H4-light-300 option-select opPais">Estados Unidos</option>
+                                            <option class="mb-1 font-H4-light-300 option-select opPais">Chile</option>
+                                            <option class="mb-1 font-H4-light-300 option-select opPais">China</option>
+                                            <option class="mb-1 font-H4-light-300 option-select opPais">Italia</option>
+                                            <option class="mb-1 font-H4-light-300 option-select opPais">España</option>
+                                            <option class="mb-1 font-H4-light-300 option-select opPais">Francia</option>
+                                            <option class="mb-1 font-H4-light-300 option-select opPais">Holanda</option>
+                                            <option class="mb-1 font-H4-light-300 option-select opPais">México</option>
+                                        </div>
+                                        <div class="col-8 card-contenido-select">
+                                            <div class="row" id="detallePais">
+                                                <div class="col-4">
+                                                    <option value="1" class="mb-1 font-H4-light-300 option-select opPais">Argentina</option>
+                                                    <option value="2" class="mb-1 font-H4-light-300 option-select opPais">Brasil</option>
+                                                    <option value="3" class="mb-1 font-H4-light-300 option-select opPais">Canada</option>
+                                                    <option value="4" class="mb-1 font-H4-light-300 option-select opPais">Chile</option>
+                                                    <option value="5" class="mb-1 font-H4-light-300 option-select opPais">Colombia</option>
+                                                    <option value="6" class="mb-1 font-H4-light-300 option-select opPais">Costa Rica</option>
+                                                    <option value="7" class="mb-1 font-H4-light-300 option-select opPais">Estados Unidos</option>
+                                                </div>
+                                                <div class="col-4">
+                                                    <option value="8" class="mb-1 font-H4-light-300 option-select opPais">Guatemala</option>
+                                                    <option value="9" class="mb-1 font-H4-light-300 option-select opPais">Honduras</option>
+                                                    <option value="10" class="mb-1 font-H4-light-300 option-select opPais">México</option>
+                                                    <option value="11" class="mb-1 font-H4-light-300 option-select opPais">Nicaragua</option>
+                                                    <option value="12" class="mb-1 font-H4-light-300 option-select opPais">Panamá</option>
+                                                    <option value="13" class="mb-1 font-H4-light-300 option-select opPais">Venezuela</option>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row cmbSelectPuerto" id="cmbSelectPuerto">
+                                        <div class="col-1">
+                                            <i class="fas fa-chevron-left font-color-red font-size-20 ordenar btnReturn"></i>
+                                        </div>
+                                        <div class="col-11">Puertos en Estados Unidos:</div>
+                                        <div class="col-6 mt-2">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <option value="1" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">Baltimore</option>
+                                                    <option value="2" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">Charleston</option>
+                                                    <option value="3" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">Honululu</option>
+                                                    <option value="4" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">Houston</option>
+                                                    <option value="5" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">Long Beach</option>
+                                                    <option value="6" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">Los Angeles</option>
+                                                    <option value="7" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">Miami</option>
+                                                </div>
+                                                <div class="col-4">
+                                                    <option value="8" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">New Orleans</option>
+                                                    <option value="9" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">New York</option>
+                                                    <option value="10" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">Norfolk</option>
+                                                    <option value="11" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">Oakland</option>
+                                                    <option value="12" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">Port Everglades</option>
+                                                    <option value="13" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">San Diego</option>
+                                                    <option value="14" class="mb-1 font-H4-light-300 option-select opPtoEE-UU">Seattle</option>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                    <button class="btn btn-disabled btn-rutas mostrar-desktop" onclick="window.location.href='Mostrar_rutas.html'">Mostrar rutas</button>
+                                    <button class="btn btn-disabled btn-rutasMovil mostrar-movil" onclick="window.location.href='Mostrar_rutas.html'">Mostrar rutas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row top">
+                    <div class="card-header pb-0 background-img" id="bg-embarcacion">
+                        <div class="row mt-5 mostrar-desktop" id="rutasBuscadas">
+                            <div>
+                                <h6 class="cont-titulo">Rutas más buscadas</h6>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>
+                            <div class="mt-2 col-lg-12 col-md-10 col-xs-6 col-sm-6 mt-2 texto-centrado">
+                                <a href="javascript:void(0)"><span class="badge rounded-pill bg-secondary font-H5-light">Callao - Baltimore</span></a>
+                                <a href="javascript:void(0)"><span class="badge rounded-pill bg-secondary font-H5-light">Paita - Miami</span></a>
+                                <a href="../pages/Mostrar_rutas.html"><span class="badge rounded-pill bg-secondary font-H5-light">Paita - Seattle</span></a>
+                                <a href="javascript:void(0)"><span class="badge rounded-pill bg-secondary font-H5-light">Callao - New York</span></a>
+                                <a href="javascript:void(0)"><span class="badge rounded-pill bg-secondary font-H5-light">Callao - Amsterdan</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 centrado">
+                            <div class="titulo font-Display-2-Bold negro-promperu">Mapa de rutas</div>
+                            <div class="col-lg-8 col-md-6 col-sm-8 col-xs-8 text-left rem-1 font-H4-light">
+                                Descubre las principales rutas marítimas del comercio exportador
+                            </div>
+                            <div class="col-lg-8 col-md-6 col-xs-12 position-relative">
+                                <div class="text-left">
+                                    <label class="font-label negro-promperu">País de destino</label>
+                                    <input type="text" class="form-control mostrarpuerto ordenar mostrar-desktop font-H4-light gris-promperu" id="mostrarpuerto" value="Selecciona" /><i class="fas fa-angle-down icon-select ordenar"></i>
+                                    <input type="text" class="form-control mostrarpuertoMovil ordenar mostrar-movil font-H4-light gris-promperu" id="mostrarpuerto" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#PaisDestinoCanvas" aria-controls="PaisDestinoCanvas" />
+                                    <i class="fas fa-angle-down icon-select ordenar"></i>
+                                </div>
+                            </div>
+                            <div class="card h-100 p-3 card-select-buscar rem-1 cardPuerto" id="view-selectPais">
+                                <div class="row">
+                                    <div class="col-3 separador font-label-400">Paises Frecuentes:</div>
+                                    <div class="col-2 select-select-titulo" id="idContinente">America</div>
+                                    <div class="col-2" id="idEuropa">Europa</div>
+                                    <div class="col-2" id="idAsia">Asia</div>
+                                    <div class="col-2" id="idAfrica">Africa</div>
+                                    <div class="col-1" id="idOceania">Óceania</div>
+                                    <div class="col-3 card-contenido-select separador">
+                                        <option class="mb-1 font-H4-light-300 option-select opPaises">Estados Unidos</option>
+                                        <option class="mb-1 font-H4-light-300 option-select opPaises">Chile</option>
+                                        <option class="mb-1 font-H4-light-300 option-select opPaises">China</option>
+                                        <option class="mb-1 font-H4-light-300 option-select opPaises">Italia</option>
+                                        <option class="mb-1 font-H4-light-300 option-select opPaises">España</option>
+                                        <option class="mb-1 font-H4-light-300 option-select opPaises">Francia</option>
+                                        <option class="mb-1 font-H4-light-300 option-select opPaises">Holanda</option>
+                                        <option class="mb-1 font-H4-light-300 option-select opPaises">México</option>
+                                    </div>
+                                    <div class="col-8 card-contenido-select">
+                                        <div class="row" id="detalPais">
+                                            <div class="col-4">
+                                                <option value="1" class="mb-1 font-H4-light-300 option-select opPaises">Argentina</option>
+                                                <option value="2" class="mb-1 font-H4-light-300 option-select opPaises">Brasil</option>
+                                                <option value="3" class="mb-1 font-H4-light-300 option-select opPaises">Canada</option>
+                                                <option value="4" class="mb-1 font-H4-light-300 option-select opPaises">Chile</option>
+                                                <option value="5" class="mb-1 font-H4-light-300 option-select opPaises">Colombia</option>
+                                                <option value="6" class="mb-1 font-H4-light-300 option-select opPaises">Costa Rica</option>
+                                                <option value="7" class="mb-1 font-H4-light-300 option-select opPaises">Estados Unidos</option>
+                                            </div>
+                                            <div class="col-4">
+                                                <option value="8" class="mb-1 font-H4-light-300 option-select opPaises">Guatemala</option>
+                                                <option value="9" class="mb-1 font-H4-light-300 option-select opPaises">Honduras</option>
+                                                <option value="10" class="mb-1 font-H4-light-300 option-select opPaises">México</option>
+                                                <option value="11" class="mb-1 font-H4-light-300 option-select opPaises">Nicaragua</option>
+                                                <option value="12" class="mb-1 font-H4-light-300 option-select opPaises">Panamá</option>
+                                                <option value="13" class="mb-1 font-H4-light-300 option-select opPaises">Venezuela</option>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-4 centrado" id="btn-rutas2">
+                                <button class="btn btn-disabled btn-rutas2 mostrar-desktop">Mostrar rutas</button>
+                                <button class="btn btn-disabled btn-rutasMovil2 mostrar-movil">Mostrar rutas</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6 mt-4 centro ocultar-movil">
+                            <img src="../assets/img/Ruta_Marina/mapa de las rutas_ilustracion.png" alt="mapa_ruta" class="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="mostrar-desktop">
+                    <div class="card mostrarRutas">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center font-color-blue font-size-25 font-H2-light-400">4 rutas encontradas</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                        <div class="row px-2">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-size-22 font-weight-bold font-h3-bold font-weight-bold font-h3-bold">Costa Este EE.UU.</div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-h3-light-400"> 7 escalas</div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
+                                    <div class="cicle-avatar div-left">
+                                        <i class="far fa-map font-color-white"></i>
+                                    </div>
+                                    <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll-card rem-1">
+                            <div class="div-line-time col-line-time-13">
+                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
+                                <div class="div-right position-line-right">
+                                    <div class="text-line-title font-H5-bold font-color-black">Callao</div>
+                                    <div class="text-pais font-H5-light-400 font-color-black">Perú</div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-13">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">7 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-13 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Manzanillo</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">México</div>
+                            </div>
+                            <div class="col-line-time-13 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">4 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-13 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Long Beach</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU.</div>
+                            </div>
+                            <div class="col-line-time-13 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">3 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-13 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Los Ángeles</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU.</div>
+                            </div>
+                            <div class="col-line-time-13 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">3 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-13 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Oakland</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU.</div>
+                            </div>
+                            <div class="col-line-time-13 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">5 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-13 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Vancouver</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">Canada</div>
+                            </div>
+                            <div class="col-line-time-13 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">3 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="div-line-time col-line-time-13">
+                                <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
+                                <div class="centro position-line-left">
+                                    <div class="text-line-title font-H5-bold font-color-black">Seattle</div>
+                                    <div class="text-pais font-H5-light-400 font-color-black font-color-black">EE.UU.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                        <div class="row px-2">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-size-22 font-weight-bold font-h3-bold font-weight-bold">Costa Oeste EE.UU.</div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-h3-light-400"> 10 escalas</div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
+                                    <div class="cicle-avatar div-left">
+                                        <i class="far fa-map font-color-white"></i>
+                                    </div>
+                                    <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll-card rem-1">
+                            <div class="div-line-time col-line-time-19">
+                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
+                                <div class="div-right position-line-right">
+                                    <div class="text-line-title font-H5-bold font-color-black">Callao</div>
+                                    <div class="text-pais font-H5-light-400 font-color-black">Perú</div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-19 ">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">2 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-19 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Balboa</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">Pánama</div>
+                            </div>
+                            <div class="col-line-time-19 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">3 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-19 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Miami</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU.</div>
+                            </div>
+                            <div class="col-line-time-19 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">3 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-19 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Port Everglades</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU.</div>
+                            </div>
+                            <div class="col-line-time-19 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">2 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-19 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Charleston</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU.</div>
+                            </div>
+                            <div class="col-line-time-19 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">3 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-19 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Norfolk</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU</div>
+                            </div>
+                            <div class="col-line-time-19 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">1 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-19 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Baltimore</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU</div>
+                            </div>
+                            <div class="col-line-time-19 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">2 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-19 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">New York</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU</div>
+                            </div>
+                            <div class="col-line-time-19 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">1 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-time-19 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Montreal</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">Canada</div>
+                            </div>
+                            <div class="col-line-time-19 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">1 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="div-line-time col-line-time-19">
+                                <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
+                                <div class="centro position-line-left">
+                                    <div class="text-line-title font-H5-bold font-color-black">Avonlea</div>
+                                    <div class="text-pais font-H5-light-400 font-color-black font-color-black">Canada</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                        <div class="row px-2">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-size-22 font-weight-bold font-h3-bold font-weight-bold">Costa Golfo EE.UU.</div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-h3-light-400"> 8 escalas</div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
+                                    <div class="cicle-avatar div-left">
+                                        <i class="far fa-map font-color-white"></i>
+                                    </div>
+                                    <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll-card rem-1">
+                            <div class="div-line-time col-line-15">
+                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
+                                <div class="div-right position-line-right">
+                                    <div class="text-line-title font-H5-bold font-color-black">Matarani</div>
+                                    <div class="text-pais font-H5-light-400 font-color-black">Perú</div>
+                                </div>
+                            </div>
+                            <div class="col-line-15 ">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">1 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-15 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Callao</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">Perú</div>
+                            </div>
+                            <div class="col-line-15 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">1 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-15 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Paita</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">Perú</div>
+                            </div>
+                            <div class="col-line-15 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">2 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-15 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Cartagena</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">Colombia</div>
+                            </div>
+                            <div class="col-line-15 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">5 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-15 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Puerto Cabello</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">Venezuela</div>
+                            </div>
+                            <div class="col-line-15 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">3 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-15 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Vera Cruz</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">México</div>
+                            </div>
+                            <div class="col-line-15 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">2 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="col-line-15 text-center icon-line">
+                                <i class="fas fa-dot-circle font-color-black"></i>
+                                <div class="text-line-title font-H5-bold font-color-black">Houston</div>
+                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU</div>
+                            </div>
+                            <div class="col-line-15 text-center">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">2 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="div-line-time col-line-15">
+                                <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
+                                <div class="centro position-line-left">
+                                    <div class="text-line-title font-H5-bold font-color-black">Avonlea</div>
+                                    <div class="text-pais font-H5-light-400 font-color-black font-color-black">Canada</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                        <div class="row px-2">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-size-22 font-weight-bold font-h3-bold font-weight-bold">EE.UU. Pacífico</div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-h3-light-400"> Sin escalas</div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
+                                    <div class="cicle-avatar div-left">
+                                        <i class="far fa-map font-color-white"></i>
+                                    </div>
+                                    <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll-card rem-1">
+                            <div class="div-line-time col-line-3">
+                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
+                                <div class="div-right position-line-right">
+                                    <div class="text-line-title font-H5-bold font-color-black">Callao</div>
+                                    <div class="text-pais font-H5-light-400 font-color-black">Perú</div>
+                                </div>
+                            </div>
+                            <div class="col-line-3">
+                                <div class="font-color-black">
+                                    <div class="cant-dias font-H5-light">1 días</div>
+                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
+                                </div>
+                            </div>
+                            <div class="div-line-time col-line-3">
+                                <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
+                                <div class="centro position-line-left">
+                                    <div class="text-line-title font-H5-bold font-color-black">Avonlea</div>
+                                    <div class="text-pais font-H5-light-400 font-color-black font-color-black">Canada</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    </div>
+                </div>
+                <div class="rem-1 mostrarRutas mostrar-movil">
+                    <div class="rutaEncontrada" id="rutaEncontrada">
+                        <div class="titulo">4 rutas encontradas</div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <div class="card-body p-3">
+                        <div class="row">
+                            <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CE" aria-expanded="true" aria-controls="mostrarDetalle-CE">
+                                <div class="col-10 text-line-title font-color-black font-size-25 font-weight-bold acordion-hover div-left">
+                                    Costa Este EE.UU
+                                </div>
+                                <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                    <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CE">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="ordenar" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
+                                        <div class="cicle-avatar div-left">
+                                            <i class="far fa-map font-color-white"></i>
+                                        </div>
+                                        <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                            <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CO" aria-expanded="true" aria-controls="mostrarDetalle-CO">
+                                <div class="col-10 text-line-title font-color-black font-size-25 font-weight-bold acordion-hover div-left">
+                                    Costa Oeste EE.UU
+                                </div>
+                                <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                    <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CO">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
+                                        <div class="cicle-avatar div-left">
+                                            <i class="far fa-map font-color-white"></i>
+                                        </div>
+                                        <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                            <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CE" aria-expanded="true" aria-controls="mostrarDetalle-CE">
+                                <div class="col-10 text-line-title font-color-black font-size-25 font-weight-bold acordion-hover div-left">
+                                    Costa Golfo EE.UU.
+                                </div>
+                                <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                    <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CE">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
+                                        <div class="cicle-avatar div-left">
+                                            <i class="far fa-map font-color-white"></i>
+                                        </div>
+                                        <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                            <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-pacifico" aria-expanded="true" aria-controls="mostrarDetalle-pacifico">
+                                <div class="col-10 text-line-title font-color-black font-size-25 font-weight-bold acordion-hover div-left">
+                                    EE.UU. Pacífico
+                                </div>
+                                <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                    <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-pacifico">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
+                                        <div class="cicle-avatar div-left">
+                                            <i class="far fa-map font-color-white"></i>
+                                        </div>
+                                        <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-lg-12 col-md-6 mb-md-0 mb-4">
+                    <div class="card">
+                        <div class="card-body px-0 pb-2">
+                            <div class="row px-4">
+                                <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6">
+                                    <div>
+                                        <img src="../assets/img/Ruta_Marina/tiene alguna pregunta_ilustracion.png" alt="pregunta" class="width-movil">
+                                    </div>
+                                    <h6 class="sub-titulo mt-6 font-H2-bold">¿Tienes alguna pregunta?</h6>
+                                    <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12">
+                                        <span class="font-weight-bold font-H4-light-400">
+                                                Si tienes una consulta particular sobre la herramienta escríbenos y resolveremos tu duda
+                                            </span>
+                                    </p>
+                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro">
+                                        <div class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-informativo">Escríbenos</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6">
+                                    <div>
+                                        <img src="../assets/img/Ruta_Marina/queremos saber tu opinion_ilustracion.png" alt="opinion" class="width-movil">
+                                    </div>
+                                    <h6 class="sub-titulo mt-6 font-H2-bold">Queremos saber su opinión</h6>
+                                    <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12">
+                                        <span class="font-weight-bold font-H4-light-400">
+                                                PROMPERÚ se esfuerza constantemente por mejorar sus servicios. Si tienes sugerencias o comentarios completa el siguiente formulario.
+                                            </span>
+                                    </p>
+                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro">
+                                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-opinion">Dejar mi opinión</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de vista principal -->
+        <footer class="footer pt-3" id="footer">
+            <div class="container-fluid">
+                <div id="footer-Desktop" class="mostrar-desktop">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-12 mb-lg-0 mb-4">
+                            <div class="text-center font-helvetica-footer">
+                                Para mas información escribanos a :
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center font-weight-bold font-helvetica-footer-bold">
+                            correo@promperu.gob.pe
+                        </div>
+                        <div class="justify-content-between text-center mt-3">
+                            <i class="fab fa-linkedin-in icon-redes"></i>
+                            <i class="fab fa-facebook icon-redes"></i>
+                            <i class="fab fa-twitter icon-redes"></i>
+                            <i class="fab fa-youtube icon-redes"></i>
+                        </div>
+                        <div class="hr col-lg-6 mt-4 background-black"></div>
+                        <div class="row mt-3">
+                            <div class="col-3 mt-2">
+                                <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
+                            </div>
+                            <div class="copyright col-6 font-helvetica-coryright">
+                                Copyright © 2021 PROMPERU. Todos los derechos reservados
+                            </div>
+                            <div class="col-3 mt-n3">
+                                <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mostrar-movil" id="footer-Movil">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-12 mb-lg-0 mb-2">
+                            <div class="text-center font-helvetica-footer">
+                                Para mas información escribanos a :
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center font-weight-bold font-helvetica-footer-bold">
+                            correo@promperu.gob.pe
+                        </div>
+                        <div class="justify-content-between text-center mt-2">
+                            <i class="fab fa-linkedin-in icon-redes"></i>
+                            <i class="fab fa-facebook icon-redes"></i>
+                            <i class="fab fa-twitter icon-redes"></i>
+                            <i class="fab fa-youtube icon-redes"></i>
+                        </div>
+                        <div class="hr col-lg-6 mt-2 background-gris"></div>
+                        <div class="row mt-2">
+                            <div class="col-6 div-left">
+                                <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
+                            </div>
+                            <div class="col-6 div-left">
+                                <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                            </div>
+                            <div class="copyright col-12 font-helvetica-coryright">
+                                Copyright © 2021 PROMPERU. Todos los derechos reservados
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+    </main>
+    <!-- Inicio de buscador de puerto de origen Vista Movil -->
+    <div class="offcanvas offcanvas-center mostrar-movil w-100 scroll-card" tabindex="-1" id="ptOrigenCanvas" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button class="btn btn-close btn-close-canvas" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="puertoOrigen-Movil" class="puertoOrigen-Movil">
+                <div class="mt-2">
+                    <label class="card-body-title"> Puerto de origen</label>
+                    <div>
+                        <input type="text" class="form-control" /><i class="fas fa-angle-down icon-select"></i>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <option class="select-movil font-H4-light-300 option-select mt-3 opOrigenMovil" value="1">Callao, Lima</option>
+                    <option class="select-movil font-H4-light-300 option-select mt-3 opOrigenMovil" value="2">Matarani, Arequipa</option>
+                    <option class="select-movil font-H4-light-300 option-select mt-3 opOrigenMovil" value="3">Paita, Piura</option>
+                </div>
+            </div>
+            <div id="PuertoDestino-movil" class="PuertoDestino-movil">
+                <div class="col-lg-4 col-md-6 col-xs-12 position-relative ordenar">
+                    <label>Puerto de destino</label>
+                    <input type="text" class="form-control" id="puertoDestino" value="" /><i class="fas fa-angle-down icon-select"></i>
+                </div>
+                <div id="select-destino-pais">
+                    <div class="row card-contenido-select mt-4">
+                        <div class="col-12 text-line-title font-color-black font-label-400">Paises frecuentes:</div>
+                        <div class="col-7 div-left mt-3">
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="1">Estados Unidos</option>
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="2">Chile</option>
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="3">China</option>
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="4">Italia</option>
+                        </div>
+                        <div class="col-5 div-left mt-3">
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="5">España</option>
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="6">Francia</option>
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="7">Holanda</option>
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="8">México</option>
+                        </div>
+                        <div class="hr background-gris mt-5"></div>
+                        <div class="col-12 text-line-title mt-4">Paises por continentes</div>
+                        <div class="row text-title-select-movil font-color-black ordenar mt-4">
+                            <div class="col-12">
+                                <div class="col-2 div-left continente font-label-400 select-cmb-paisContinente-movil" id="America" value="01">Ámerica</div>
+                                <div class="col-2 div-left continente font-label-400" id="Europa" value="02">Europa</div>
+                                <div class="col-2 div-left continente font-label-400" id="Asia" value="03">Asia</div>
+                                <div class="col-2 div-left continente font-label-400" id="Africa" value="04">Africa</div>
+                                <div class="col-2 div-left continente font-label-400" id="Oceania" value="05">Oceania</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div id="conAmerica">
+                                <div class="col-6 div-left mt-4">
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="01">Argentina</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="02">Brasil</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="03">Cánada</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="04">Chile</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="05">Colombia</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="06">Costa Rica</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="07">Estados Unidos</option>
+                                </div>
+                                <div class="col-6 div-left mt-4">
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="08">Guatemala</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="09">Homduras</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="10">México</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="11">Nicaragua</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="12">Pánama</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2 font-H4-light-300" value="13">Venezuela</option>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="select-destino-ciudad" id="select-destino-ciudad">
+                <div class="row mt-4">
+                    <div class="col-2 div-left ordenar" id="retornarContinente">
+                        <i class="fas fa-angle-left font-color-red return-pais"></i>
+                    </div>
+                    <div class="col-10 div-left sub-titulo-movil font-color-black font-weight-bold">Puertos en Estados unidos</div>
+                </div>
+                <div class="col-6 div-left mt-3">
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="01">Baltimore</option>
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="02">Charleston</option>
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="03">Honullu</option>
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="04">Houston</option>
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="05">Long Beach</option>
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="06">Los Ángeles</option>
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="07">Miami</option>
+                </div>
+                <div class="col-6 div-left mt-3">
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="08">New Orleans</option>
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="09">New York</option>
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="10">Norflok</option>
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="11">Oakland</option>
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="12">Port Everglades</option>
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="13">San Diego</option>
+                    <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="14">Seattle</option>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de buscador de puerto de origen V-Movil -->
+    <!-- Inicio de buscador de país de destino Vista Movil -->
+    <div class="offcanvas offcanvas-center mostrar-movil w-100 scroll-card" tabindex="-1" id="PaisDestinoCanvas" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button class="btn btn-close btn-close-canvas" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="PaisDestino-movil" class="PaisDestino-movil">
+                <div class="col-lg-4 col-md-6 col-xs-12 position-relative ordenar">
+                    <label>País de destino</label>
+                    <input type="text" class="form-control" id="PaisDestino" value="" /><i class="fas fa-angle-down icon-select"></i>
+                </div>
+                <div id="select-destino-pais">
+                    <div class="row card-contenido-select mt-4">
+                        <div class="col-12 text-line-title font-color-black font-label-400">Paises frecuentes:</div>
+                        <div class="col-7 div-left mt-3">
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="1">Estados Unidos</option>
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="2">Chile</option>
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="3">China</option>
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="4">Italia</option>
+                        </div>
+                        <div class="col-5 div-left mt-3">
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="5">España</option>
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="6">Francia</option>
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="7">Holanda</option>
+                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="8">México</option>
+                        </div>
+                        <div class="hr background-gris mt-5"></div>
+                        <div class="col-12 text-line-title mt-4">Paises por continentes</div>
+                        <div class="row text-title-select-movil font-color-black ordenar mt-4">
+                            <div class="col-12">
+                                <div class="col-2 div-left continente font-label-400 select-cmb-paisContinente-movil" id="America" value="01">Ámerica</div>
+                                <div class="col-2 div-left continente font-label-400" id="Europa" value="02">Europa</div>
+                                <div class="col-2 div-left continente font-label-400" id="Asia" value="03">Asia</div>
+                                <div class="col-2 div-left continente font-label-400" id="Africa" value="04">Africa</div>
+                                <div class="col-2 div-left continente font-label-400" id="Oceania" value="05">Oceania</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div id="conAmerica">
+                                <div class="col-6 div-left mt-4">
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="01">Argentina</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="02">Brasil</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="03">Cánada</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="04">Chile</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="05">Colombia</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="06">Costa Rica</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2" value="07">Estados Unidos</option>
+                                </div>
+                                <div class="col-6 div-left mt-4">
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2" value="08">Guatemala</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2" value="09">Homduras</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2" value="10">México</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2" value="11">Nicaragua</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2" value="12">Pánama</option>
+                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil mt-2" value="13">Venezuela</option>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de buscador de país de destino Vista-Movil -->
+    <!-- Inicio de modales -->
+    <!-- Inicio modal mapa -->
+    <div class="modal fade" id="m-mapa" tabindex="-1" aria-labelledby="m-mapa" aria-hidden="true">
+        <button class="btn-close-modal-mediano" data-bs-dismiss="modal" aria-label="Close">
+            <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+        </button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../assets/img/Ruta_Marina/pop up_mapa.png" alt="mapa" class="img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal mapa -->
+    <!-- Inicio modal informativo -->
+    <div class="modal fade" id="m-informativo" tabindex="-1" aria-labelledby="m-informativo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-h3-bold-700 negro-promperu" id="exampleModalLabel">Indicanos tu consulta</h5>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-6 div-left">
+                        <label class="font-label-400 negro-promperu">Nombres</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label class="font-label-400 negro-promperu">Apellidos</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label class="font-label-400 negro-promperu">Correo electrónico</label>
+                        <input type="text" class="form-control font-H4-light-300" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="col-12 div-left">
+                        <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
+                        <textarea type="text" class="form-control"></textarea>
+                        <span class="span-textarea font-smallprint-medium">Máximo 189 cáracteres</span>
+                    </div>
+                    <div class="col-6 div-left mt-4">
+                        <button class="btn btn-primary btn-danger" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal informativo -->
+    <!-- Inicio modal calificativo -->
+    <div class="modal fade" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-h3-bold-700 negro-promperu" id="exampleModalLabel">Brindanos tu opinión</h5>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-6 div-left">
+                        <label class="font-label-400 negro-promperu">Nombres</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label class="font-label-400 negro-promperu">Apellidos</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label class="font-label-400 negro-promperu">Correo electrónico</label>
+                        <input type="text" class="form-control font-H4-light-300" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="col-12 div-left">
+                        <label class="font-label-400 negro-promperu">Escribe tu mensaje</label>
+                        <textarea type="text" class="form-control"></textarea>
+                        <span class="span-textarea font-smallprint-medium">Máximo 189 cáracteres</span>
+                    </div>
+                    <div class="col-12 div-left mt-4">
+                        <div class="col-5 div-left font-label-400 negro-promperu">Califica la herramienta</div>
+                        <div class="col-3 div-left">
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-8 div-left mt-4">
+                        <button class="btn btn-primary btn-danger" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal calificativo -->
+    <!-- Inicio menu general destok -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel" class=" font-size-20 font-color-black">Herramientas Logísticas</h5>
+            <!-- <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fas fa-times-circle rojo-promperu font-size-21"></i>
+            </a> -->
+            <button class="btn btn-close btn-close-canvas" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+            </button>
+        </div>
+        <div class="offcanvas-body offcanvas-body-menu">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content;" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Rutas Aéreas</p>
+                        <img src="../../img-menu-PromPeru/dashboard/avion.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Rutas marítimas</p>
+                        <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasTerrestre/Pages/Ruta_terrestre.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Rutas terrestres</p>
+                        <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Costos de exportación</p>
+                        <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='Cubicaje.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Cubicaje</p>
+                        <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Directorio logístico</p>
+                        <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
+                    <div class="font-size-15 inline">
+                        <p class="text-menu-lateral">Simulador de Drawback</p>
+                        <img src="../../img-menu-PromPeru/dashboard/imagen principal.png" alt="avion" class="icon-dashboard">
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold ordenar"><i class="far fa-user mx-2 font-size-25"></i>Iniciar sesión</div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold"><i class="fas fa-external-link-alt mx-2 font-size-25"></i>Visita también</div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
+                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Fin menu general desktop -->
+    <!-- Fin de modales -->
+    <!-- Inicio canvas mapa movil -->
+    <div class="offcanvas offcanvas-center" tabindex="-1" id="mapa-movil" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header offcanvas-header-personalizado">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil w-100">
+                <div class="pt-2">
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" data-bs-dismiss="offcanvas" aria-label="Close"></i>Mapa
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="c">
+                <img src="../assets/img/Ruta_Marina/pop up_mapa.png" alt="mapa-movil" class="mapa-movil ">
+            </div>
+        </div>
+    </div>
+    <!-- Fin canvas mapa movil -->
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/general.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
+    <!-- JS rutas maritimas -->
+    <script src="./js/ruta_maritima.js"></script>
+    <script src="../../common.js"></script>
+</body>
+
+</html>
