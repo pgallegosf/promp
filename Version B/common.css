@@ -106,14 +106,6 @@
     line-height: 21.6px !important;
 }
 
-.font-H4-light-300 {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 18px !important;
-    line-height: 21.6px !important;
-}
-
 .font-H4-light-400 {
     font-family: 'Helvetica Neue LT Std light'!important;
     font-style: normal !important;
@@ -205,6 +197,13 @@
     font-size: 51px;
     line-height: 61px;
     align-items: center;
+}
+
+.font-Display-2-Bold-700 {
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-weight: bold;
+    font-size: 51px;
+    line-height: 61, 2px;
 }
 
 .font-label {
@@ -663,4 +662,26 @@ img {
 
 .link:hover {
     color: #ffffff !important;
+}
+
+.card-ptoOrigen {
+    width: 50% !important;
+    height: 30% !important;
+    margin-left: 7% !important;
+    top: 280% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+}
+
+.card-ptoDestino {
+    width: 50% !important;
+    height: 35% !important;
+    margin-left: 7% !important;
+    top: 295% !important;
+    position: absolute !important;
+    font-size: 10px;
+    font-weight: bold;
+    color: #282828;
 }
