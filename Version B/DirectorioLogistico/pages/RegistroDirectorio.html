@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Directorio Logístico
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link href="../assets/css/tab/styleTab.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100" >
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                
+                <a class="navbar-brand" href="DirectorioLogistico.html">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img">
+                </a>
+                <div class="icon-menu">
+                    <div class="icon-menu">
+                        <i class="fas fa-user-plus"><label class="ocultar-movil">Unete al Directorio Logístico</label></i>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="far fa-bell"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-bars" onclick="mostrarContainer()"></i>
+                        </a>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div class="d-display" id="view-global">
+                <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-lg-0  fit-content">
+                    <section class="tabs-wrapper">
+                        <div class="tabs-container">
+                            <div class="tabs-block">
+                                <div id="tabs-section" class="tabs">
+                                    <div class="row divTab">
+                                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 mb-lg-0  background-second-light fit-content div-left-tab sin-border-lados tab-desktop">
+                                            <ul class="tab-head">
+                                                <li>
+                                                    <a href="#tab-1" class="tab-link active" id="tab1">  <span class="tab-label">Información básica</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-2" class="tab-link" id="tab2"><span class="tab-label">Descripción de la empresa</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-3" class="tab-link" id="tab3">  <span class="tab-label">Servicios, certificaciones y productos</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-4" class="tab-link" id="tab4">  <span class="tab-label">Sucursales y medios de contacto</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 mb-lg-0  background-second-light fit-content div-left-tab sin-border-lados tab-movil">
+                                            <ul class="tab-head">
+                                                <li>
+                                                    <a href="#tab-1" class="tab-link active" id="tab1"> <span class="tab-label"> <i class="fas fa-circle"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-2" class="tab-link" id="tab2"><span class="tab-label"> <i class="fas fa-circle"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-3" class="tab-link" id="tab3">  <span class="tab-label"> <i class="fas fa-circle"></i></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-4" class="tab-link" id="tab4">  <span class="tab-label"> <i class="fas fa-circle"></i></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 padding-card sinPaddingTop">
+                                            <section id="tab-1" class="tab-body entry-content active active-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-22">
+                                                        Si eres una empresa presadora de servicios logísticos regístrate a nuestro directorio
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15">
+                                                        <p>La información ingresada se tomará como verdadera y será verificada por PROMPERÚ</p>
+                                                        <p class="font-size-13">Todos los campos son obligatorios, excepto los que indiquen ser opcionales</p>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Indica los datos de tu empresa
+                                                    </div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="NombreComercial">Nombre comercial de la empresa</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="NombreComercial" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="NroRuc">Número de RUC</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="NroRuc" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="razonSocial">Razón social</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="razonSocial" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="fechaInicio">Fecha inicio de actividad (Opcional)</label>
+                                                            <input type="date" class="form-control sinPaddingTop" id="fechaInicio" value="" placeholder="" />
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Dirección de la empresa
+                                                    </div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="selectRegion">Región</label>
+                                                            <select class="controlSelect2 form-control" name="selectRegion" id="selectRegion">
+                                                                <option value="1">Ancash</option>
+                                                                <option value="2">Lima</option>
+                                                                <option value="3">Callao</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="selectProvincia">Provincia</label>
+                                                                <select class="controlSelect2 form-control" name="selectProvincia" id="selectProvincia">
+                                                                <option value="1">Santa</option>
+                                                                <option value="2">Casta</option>
+                                                                <option value="3">Huarmey</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="selectDistrito">Distrito</label>
+                                                            <select class="controlSelect2 form-control" name="selectDistrito" id="selectDistrito">
+                                                                <option value="1">Chimbote</option>
+                                                                <option value="2">Nuevo Chimbote</option>
+                                                                <option value="3">Casma</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="selTipoDireccion">Tipo de dirección</label>
+                                                            <select class="controlSelect2 form-control" name="selTipoDireccion" id="selTipoDireccion">
+                                                                <option value="1">Fiscal</option>
+                                                                <option value="2">Social</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="direccion">Dirección</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="direccion" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="telefono">Teléfono de oficina</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="telefono" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="pagWeb">Página web (Opcional)</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="pagWeb" value="" placeholder="" />
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                                            <bottom class="btn btn-second btnwidth100" onclick="clickTab(2)">Siguiente</bottom>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </section>
+                
+                                            <section id="tab-2" class="tab-body entry-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Describe a tu empresa
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                        <textarea rows="3" class="form-control sinPaddingTop" id="txtDescripcion" value="" maxlength="500">Nuestra empresa se encarga de distintos servicios logisticos a nivel nacional e internacional</textarea>
+                                                        <p class="font-size-13">Máximo <span class="font-size-13" id="numerocaracteres">93</span>/500 caractéres</p>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Datos de la persona de contacto de la empresa
+                                                    </div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtNombre">Nombres</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtNombre" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtApellido">Apellido</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtApellido" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtEmail">Correo electrónico</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtEmail" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtCargo">Cargo</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtCargo" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <a href="#" class="color-primary font-size-25">
+                                                                <i class="fas fa-plus-circle"><label class="font-size-18 helvetica-light">&nbsp;Agregar a otra persona</label></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Datos del representante legal de la empresa (Opcional)
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-xs-12 paddingControl">
+                                                        <input class="input-checkbox" type="checkbox" name="chkMismoContacto" id="chkMismoContacto" checked>
+                                                        <label for="chkMismoContacto" class="input-checkbox-lab font-size-15">Es la misma persona de contacto</label>
+                                                    </div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtNombreRL">Nombres</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtNombreRL" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtApellidoRL">Apellido</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtApellidoRL" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtEmailRL">Correo electrónico</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtEmailRL" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtCargoRL">Cargo</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtCargoRL" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <a href="#" class="color-primary font-size-25">
+                                                                <i class="fas fa-plus-circle"><label class="font-size-18 helvetica-light">&nbsp;Agregar a otra persona</label></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 titulo-left font-size-20">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12">   Logotipo de la empresa (Opcional)</div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 helvetica-light paddingControl">
+                                                                <div class="col-lg-12 file-drop-area">
+                                                                    <span class="file-msg">Arrastra y suelta archivos aquí</span>
+                                                                    <input class="form-control file-input" type="file">
+                                                                </div>
+                                                                <div class="col-lg-12">
+                                                                    <p class="font-size-10">Peso máximo 1 MB<br>Dimensiones máximas 500px x 500px</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 titulo-left font-size-20">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12">Ficha RUC<p class="sinPaddingTop" style="margin-bottom: 5px;"><br></p></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 helvetica-light paddingControl">
+                                                                <div class="col-lg-12 file-drop-area">
+                                                                    <span class="file-msg">Arrastra y suelta archivos aquí</span>
+                                                                    <input class="form-control file-input" type="file">
+                                                                </div>
+                                                                <div class="col-lg-12 font-size-10">
+                                                                    <p class="font-size-10">Peso máximo 2 MB</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                                            <bottom class="btn btn-second btnwidth100" onclick="clickTab(3)">Siguiente</bottom>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div> 
+                                            </section>
+                
+                                            <section id="tab-3" class="tab-body entry-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Elige los servicios que tu empresa brinda
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer1" id="chkSer1">
+                                                            <label for="chkSer1" class="input-checkbox-lab font-size-15">Agente de Aduana</label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer2" id="chkSer2">
+                                                            <label for="chkSer2" class="input-checkbox-lab font-size-15">Empaques y Envases</label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer3" id="chkSer3">
+                                                            <label for="chkSer3" class="input-checkbox-lab font-size-15">Agente de Carga</label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer4" id="chkSer4">
+                                                            <label for="chkSer4" class="input-checkbox-lab font-size-15">Operadores Portuarios</label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer5" id="chkSer5">
+                                                            <label for="chkSer5" class="input-checkbox-lab font-size-15">Líneas Navieras</label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer6" id="chkSer6">
+                                                            <label for="chkSer6" class="input-checkbox-lab font-size-15">Terminales Portuarios</label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer7" id="chkSer7">
+                                                            <label for="chkSer7" class="input-checkbox-lab font-size-15">Líneas Aéreas</label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer8" id="chkSer8">
+                                                            <label for="chkSer8" class="input-checkbox-lab font-size-15">Empresas Mensajería</label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer9" id="chkSer9">
+                                                            <label for="chkSer9" class="input-checkbox-lab font-size-15">Transporte Terrestre</label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkSer10" id="chkSer10">
+                                                            <label for="chkSer10" class="input-checkbox-lab font-size-15">Depósito Temporal</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Selecciona las certificaciones que tiene tu empresa
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkCert1" id="chkCert1">
+                                                            <label for="chkCert1" class="input-checkbox-lab font-size-15">OEA</label>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkCert2" id="chkCert2">
+                                                            <label for="chkCert2" class="input-checkbox-lab font-size-15">ISO 9001</label>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkCert3" id="chkCert3">
+                                                            <label for="chkCert3" class="input-checkbox-lab font-size-15">BASC</label>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkCert4" id="chkCert4">
+                                                            <label for="chkCert4" class="input-checkbox-lab font-size-15">ISO 28000</label>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <input class="input-checkbox" type="checkbox" name="chkCert5" id="chkCert5">
+                                                            <label for="chkCert5" class="input-checkbox-lab font-size-15">Otro</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Productos Transportados y/o Gestionados
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="selectRegion">ELige una línea de producto</label>
+                                                            <select class="controlSelect2 form-control" name="selectRegion" id="selectRegion">
+                                                                <option value="1">Linea 1</option>
+                                                                <option value="2">Linea 2</option>
+                                                                <option value="3">Linea 3</option>
+                                                            </select>
+                                                            <div class="col-lg-12">
+                                                                <p class="font-size-10">Máximo 8 productos</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <a href="#" class="color-primary font-size-25">
+                                                                <i class="fas fa-plus-circle"><label class="font-size-18 helvetica-light">&nbsp;Agregar otro producto</label></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Principales mercados a los cuales ha enviado carga
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="selectRegion">ELige una mercado de exportación</label>
+                                                            <select class="controlSelect2 form-control" name="selectRegion" id="selectRegion">
+                                                                <option value="1">Linea 1</option>
+                                                                <option value="2">Linea 2</option>
+                                                                <option value="3">Linea 3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <a href="#" class="color-primary font-size-25">
+                                                                <i class="fas fa-plus-circle"><label class="font-size-18 helvetica-light">&nbsp;Agregar otro mercado</label></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        CLientes principales (opcional)
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtCliente">Nombre del cliente</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtCliente" value="" placeholder="" />
+                                                            <div class="col-lg-12">
+                                                                <p class="font-size-10">Máximo 8 clientes</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <a href="#" class="color-primary font-size-25">
+                                                                <i class="fas fa-plus-circle"><label class="font-size-18 helvetica-light">&nbsp;Agregar otro cliente</label></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                      
+                                                    <div class="row"><br></div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                                            <bottom class="btn btn-second btnwidth100" onclick="clickTab(4)">Siguiente</bottom>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </section>
+                
+                                            <section id="tab-4" class="tab-body entry-content">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        ¿Tiene Sucursales?
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second  helvetica-light">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15  helvetica-light paddingControl">
+                                                            <div class="containerRadio">
+                                                                <ul>
+                                                                    <li>
+                                                                        <input type="radio" id="t-option" name="selector" value="1">
+                                                                        <label for="t-option">Si, tengo sucursales</label>
+                                                                        
+                                                                        <div class="check"><div class="inside"></div></div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <div class="containerRadio">
+                                                                <ul>
+                                                                    <li>
+                                                                        <input type="radio" id="t-option2" name="selector" value="0">
+                                                                        <label for="t-option2">No tengo</label>
+                                                                        
+                                                                        <div class="check"><div class="inside"></div></div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light siSucursales">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="selPaisSu">País</label>
+                                                                <select class="controlSelect2 form-control" name="selPaisSu" id="selPaisSu">
+                                                                <option value="1">Chile</option>
+                                                                <option value="2">Argentina</option>
+                                                                <option value="3">Brasil</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="selRegionSu">Estado o región</label>
+                                                            <select class="controlSelect2 form-control" name="selRegionSu" id="selRegionSu">
+                                                                <option value="1">Santiago</option>
+                                                                <option value="2">Arica</option>
+                                                                <option value="3">Atofagasta</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtDireccionSu">Dirección</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtDireccionSu" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtelefonoSu">Telefono</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtelefonoSu" value="" placeholder="" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row siSucursales"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20 siSucursales">
+                                                        Datos de la persona de contacto de la sucursal
+                                                    </div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light siSucursales">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtNombre">Nombres</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtNombre" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtApellido">Apellido</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtApellido" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtEmail">Correo electrónico</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtEmail" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtCargo">Cargo</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtCargo" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <a href="#" class="color-primary font-size-25">
+                                                                <i class="fas fa-plus-circle"><label class="font-size-18 helvetica-light">&nbsp;Agregar otra sucursal</label></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20">
+                                                        Presencia en redes sociales (Opcional)
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="selRedSocial">Red social</label>
+                                                            <select class="controlSelect2 form-control" name="selRedSocial" id="selRedSocial">
+                                                                <option value="1">Facebook</option>
+                                                                <option value="2">Linkedin</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <label for="txtEnlace">Enlace de la red</label>
+                                                            <input type="text" class="form-control sinPaddingTop" id="txtEnlace" value="" placeholder="" />
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                            <a href="#" class="color-primary font-size-25">
+                                                                <i class="fas fa-plus-circle"><label class="font-size-18 helvetica-light">&nbsp;Agregar otra red</label></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"><br></div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                                            <bottom class="btn btn-second btnwidth100" onclick="window.location.href='DirectorioRecibido.html'">Finalizar</bottom>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                
+
+                
+                <hr size="5" />
+                
+                
+            </div>
+            <!-- Fin de vista principal -->
+            <!-- Inicio de vista resultado de busqueda de rutas desktop -->
+            
+            <!-- Fin de vista resultado de busqueda de rutas desktop -->
+            <!-- Inicio vista ver detalle de busqueda de ruta desktop -->
+            
+            <!-- Fin vista ver detalle de busqueda de ruta desktop-->
+            <!-- Inicio vista ver detalle de busqueda de ruta movil -->
+            
+            <!-- Fin vista ver detalle de busqueda de ruta movil-->
+            <footer class="footer pt-3" id="footer">
+                <div class="container-fluid">
+                    <div id="footer-Desktop">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-12 mb-lg-0 mb-4">
+                                <div class="text-center">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-3">
+                                <i class="fab fa-linkedin-in icon-redes"></i>
+                                <i class="fab fa-facebook icon-redes"></i>
+                                <i class="fab fa-twitter icon-redes"></i>
+                                <i class="fab fa-youtube icon-redes"></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-4 background-black"></div>
+                            <div class="row mt-3">
+                                <div class="col-3 mt-2">
+                                    <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
+                                </div>
+                                <div class="copyright col-6">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                                <div class="col-3 mt-n3">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none" id="footer-Movil">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-12 mb-lg-0 mb-2">
+                                <div class="text-center">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-2">
+                                <i class="fab fa-linkedin-in icon-redes"></i>
+                                <i class="fab fa-facebook icon-redes"></i>
+                                <i class="fab fa-twitter icon-redes"></i>
+                                <i class="fab fa-youtube icon-redes"></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-2 background-gris"></div>
+                            <div class="row mt-2">
+                                <div class="col-6 div-left">
+                                    <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
+                                </div>
+                                <div class="col-6 div-left">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                                </div>
+                                <div class="copyright col-12">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <!-- Inicio de buscador de puerto de origen Vista Movil -->
+    
+    <!-- Fin de buscador de puerto de origen V-Movil -->
+    <!-- Inicio de modales -->
+    <!-- Inicio modal mapa -->
+    
+    <!-- Fin modal calificativo -->
+    <!-- Inicio modal Login -->
+    <div class="modal fade" id="m-login" tabindex="-1" aria-labelledby="m-login" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header display-block">
+                    <h5 class="modal-title centro" id="tituloModalLogin">Para guardar debes iniciar sesión</h5>
+                    <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times-circle"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label>Correo Electronico</label>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div>
+                        <label>Contraseña</label>
+                        <input type="password" class="form-control" placeholder="******">
+                    </div>
+                </div>
+                <div class="centrado">
+                    <button class="btn btn-primary btn-second" type="button">Ingresar</button>
+                </div>
+                <div class="centrado text-line-title font-color-red ordenar">¿Olvidaste tu contraseña?</div>
+                <div class="modal-footer background-second-light">
+                    <div class="centrado text-line-title font-color-black col-12">¿Aún no tienes una cuenta?</div>
+                    <div class="centrado col-12">
+                        <button type="button" class="btn btn-outline-danger">Regístrate Aquí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal login -->
+    <!-- Inicio modal correo -->
+    <div class="modal fade bd-example-modal-sm" id="m-correo" tabindex="-1" role="dialog" aria-labelledby="m-correo" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="div-centrado">
+                    <div class="centrado modal-title font-color-black">Envíalo a tu correo</div>
+                    <div class="centrado">
+                        <label class="font-color-black text-line-title">Ingresa tu correo electrónico</label>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="centrado mt-3">
+                        <button class="btn btn-primary btn-second" type="button">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal correo -->
+    <!-- Inicio modal compartir -->
+    <div class="modal fade bd-example-modal-sm" id="m-compartir" tabindex="-1" role="dialog" aria-labelledby="m-compartir" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="div-centrado">
+                    <div class="centrado modal-title font-color-black">Comparte el resultado de tu simulación</div>
+                    <div class="mt-3">
+                        <div class=" col-6 centrado div-left font-color-red ordenar">
+                            <i class="fab fa-whatsapp icon-btn"></i>
+                            <div class="text-line-title">WhatsApp</div>
+                        </div>
+                        <div class=" col-6 centrado div-left font-color-red ordenar">
+                            <i class="far fa-copy icon-btn"></i>
+                            <div class="text-line-title">Copiar enlace</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal compartir -->
+    <!-- Inicio modal informativo -->
+    <div class="modal fade" id="m-informativo" tabindex="-1" aria-labelledby="m-informativo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Indicanos tu consulta</h5>
+                    <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times-circle"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="col-6 div-left">
+                        <label>Nombres</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label>Apellidos</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label>Correo electrónico</label>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="col-12 div-left">
+                        <label>Escribe tu consulta</label>
+                        <textarea type="text" class="form-control"></textarea>
+                        <span class="span-textarea">Máximo 189 cáracteres</span>
+                    </div>
+                    <div class="col-6 div-left mt-4">
+                        <button class="btn btn-primary btn-danger" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal informativo -->
+    <!-- Inicio modal calificativo -->
+    <div class="modal fade" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Brindanos tu opinión</h5>
+                    <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times-circle"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="col-6 div-left">
+                        <label>Nombres</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label>Apellidos</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 div-left">
+                        <label>Correo electrónico</label>
+                        <input type="text" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="col-12 div-left">
+                        <label>Escribe tu mensaje</label>
+                        <textarea type="text" class="form-control"></textarea>
+                        <span class="span-textarea">Máximo 189 cáracteres</span>
+                    </div>
+                    <div class="col-12 div-left mt-4">
+                        <div class="col-5 div-left">Califica la herramienta</div>
+                        <div class="col-3 div-left">
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-8 div-left mt-4">
+                        <button class="btn btn-primary btn-danger" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal calificativo -->
+    <!-- Fin de modales -->
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select2/select2.min.js"></script>
+    <script src="../assets/js/tab/app.js"></script>
+    <script src="../assets/js/general.js"></script>
+    <script src="js/RegistroDirectorio.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
+    <!-- JS rutas maritimas -->
+</body>
+
+</html>

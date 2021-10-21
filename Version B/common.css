@@ -798,7 +798,11 @@ img {
     border-left: none !important;
     border-right: none !important;
 }
-.text-buscador:focus{
+.input-group  .text-buscador:focus{
     border-left: none !important;
     border-right: none !important;
+    border-radius: 0 !important;
+}
+.height-100{
+    height: 120px !important;
 }
