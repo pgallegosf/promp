@@ -1,16 +1,19 @@
-@font-face{
-	font-family:'Helvetica Neue LT Std light';
-	src:url('font-Promperu/HELVETICANEUELTSTD LT.OTF');
+@font-face {
+    font-family: 'Helvetica Neue LT Std light';
+    src: url('font-Promperu/HELVETICANEUELTSTD LT.OTF');
 }
-@font-face{
-	font-family:'Helvetica Neue LT Std bold';
-	src:url('font-Promperu/HelveticaNeueLTStd-Bd.OTF');
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std bold';
+    src: url('font-Promperu/HelveticaNeueLTStd-Bd.OTF');
 }
-@font-face{
-	font-family:'Helvetica Neue LT Std medium';
-	src:url('font-Promperu/HelveticaNeueLTStd-Md.OTF');
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std medium';
+    src: url('font-Promperu/HelveticaNeueLTStd-Md.OTF');
 }
-.font-display{
+
+.font-display {
     font-family: 'Helvetica Neue LT Std bold' !important;
     font-style: normal !important;
     font-weight: bold !important;
@@ -20,27 +23,205 @@
     align-items: center;
     text-align: center;
 }
-.font-H2-light{
+
+.font-h1-bold {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 36px !important;
+    line-height: 43.2px !important;
+}
+
+.font-H2-light {
     font-family: 'Helvetica Neue LT Std light'!important;
     font-style: normal !important;
     font-weight: 300 !important;
     font-size: 30px !important;
     line-height: 36px !important;
 }
-.font-Display-2-Bold{
+
+.font-H2-light-400 {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 30px !important;
+    line-height: 36px !important;
+    text-align: center !important;
+}
+
+.font-H2-bold-700 {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    line-height: 36px !important;
+}
+
+.font-h3-light-300 {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 28.8px !important;
+}
+
+.font-h3-light-400 {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    line-height: 28.8px !important;
+}
+
+.font-h3-bold {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    line-height: 28.8px !important;
+}
+
+.font-h3-bold-700 {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 28.8px !important;
+}
+
+.font-h3-bold-700c {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 28.8px !important;
+    text-align: center;
+}
+
+.font-H4-light {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+}
+
+.font-H4-light-300 {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+}
+
+.font-H4-light-400 {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+    text-align: center !important;
+}
+
+.font-H4-light-400n {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+}
+
+.font-H4-bold-700 {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+    text-align: center !important;
+}
+
+.font-H4-bold-700n {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+}
+
+.font-H5-light {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center;
+}
+
+.font-H5-lightn {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+}
+
+.font-H5-light-400 {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center;
+}
+
+.font-H5-light-400n {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+}
+
+.font-H5-bold {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+}
+
+.font-H5-medium {
     font-family: 'Helvetica Neue LT Std bold' !important;
-    font-weight: bold;
-    font-size: 51px;
-    line-height: 61px;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center;
+}
+
+.font-Display-2-Bold {
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-weight: bold!important;
+    font-size: 51px !important;
+    line-height: 61px !important;
     align-items: center;
 }
-.font-label{
+.font-H4-medium{
+    font-family: 'Helvetica Neue LT Std medium' !important;
+    font-style: normal!important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+}
+
+.font-label {
     font-family: 'Helvetica Neue LT Std bold' !important;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
 }
+
 .font-H2-bold{
     font-family: 'Helvetica Neue LT Std bold' !important;
     font-style: normal !important;
@@ -70,6 +251,69 @@
     line-height: 18px !important;
     align-items: center !important;
 }
+
+.font-label-400 {
+    font-family: 'Helvetica Neue LT Std medium' !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.8px;
+}
+
+.font-label-400c {
+    font-family: 'Helvetica Neue LT Std medium' !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.8px;
+    text-align: center !important;
+}
+
+
+.font-smallprint-medium {
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    line-height: 14.4px !important;
+}
+
+.font-helvetica-icon {
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 16.8px !important;
+    text-align: center;
+}
+
+.font-helvetica-footer-light {
+    font-family: 'Helvetica Neue LT Std medium' !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 12px !important;
+    line-height: 14.4px !important;
+    text-align: center !important;
+}
+
+.font-helvetica-footer-bold {
+    font-family: 'Helvetica Neue LT Std medium' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    line-height: 14.4px !important;
+    text-align: center !important;
+}
+
+.font-helvetica-coryright {
+    font-family: 'Helvetica Neue LT Std medium' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 16.8px !important;
+    text-align: center !important;
+}
+
 img {
     image-rendering: -webkit-optimize-contrast;
 }
@@ -145,20 +389,6 @@ img {
     background-color: #07354F;
 }
 
-.background-azul-promperu .popover-body {
-    color: #FFFFFF;
-}
-
-.background-azul-promperu .popover-arrow {
-    color: #07354F;
-}
-
-.background-azul-promperu>.popover-arrow::after {
-    top: 0px;
-    border-width: 0 0.5rem 0.5rem 0.5rem;
-    border-bottom-color: #07354F;
-}
-
 .font-size-21 {
     font-size: 21px;
 }
@@ -174,7 +404,8 @@ img {
 
 .posicion-close-notificacion {
     position: absolute;
-    right: 12px;
+    /* right: 12px; */
+    right: 25px;
 }
 
 .sin-margen-top {
@@ -275,6 +506,7 @@ img {
     color: #C4122f !important;
     border-radius: 15px !important;
 }
+
 .btn-outline-danger:hover {
     border: 2px solid #C4122f !important;
     color: #C4122f !important;
@@ -282,6 +514,7 @@ img {
     opacity: 100 !important;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
 }
+
 .btn-outline-danger:active {
     border: 2px solid #282828 !important;
     color: #282828 !important;
@@ -298,28 +531,44 @@ img {
     color: #FFF !important;
     border-radius: 15px;
 }
+
 .btn-danger:disabled {
     background-color: #C0C0C0 !important;
     color: #8B8B8B !important;
 }
+
 .btn-danger:hover {
     background-color: #C4122F !important;
     color: #FFFFFF !important;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
-    border-radius: 15px !important;;
+    border-radius: 15px !important;
+    ;
 }
+
 .btn-danger:active {
     background-color: #282828 !important;
     color: #FFFFFF !important;
-
 }
+
 .footer {
     position: absolute;
 }
 .inline-for-movil{
     display: inline-flex;
 }
+.inline-for-movil2{
+    display: flex;
+}
+.justify-content-right{
+    justify-content:right; 
+}
+.icon-dashboard-width {
+    width: 15% !important;
+}
 @media (min-width: 200px) {
+    .icon-dashboard-width {
+        width: 50% !important;
+    }
     .navbar {
         height: 50px!important;
     }
@@ -345,9 +594,17 @@ img {
     .inline-for-movil{
         display: initial;
     }
+    .inline-for-movil2{
+        display: initial;
+    }
+    .justify-content-right{
+        justify-content:center; 
+    }
 }
-
 @media (min-width: 576px) {
+    .icon-dashboard-width {
+        width: 50% !important;
+    }
     .navbar {
         height: 50px!important;
     }
@@ -368,9 +625,18 @@ img {
     .inline-for-movil{
         display: initial;
     }
+    .inline-for-movil2{
+        display: initial;
+    }
+    .justify-content-right{
+        justify-content:center; 
+    }
 }
 
 @media (min-width: 768px) {
+    .icon-dashboard-width {
+        width: 30% !important;
+    }
     .navbar {
         height: 70px!important;
     }
@@ -390,10 +656,19 @@ img {
     }
     .inline-for-movil{
         display: inline-flex;
+    }
+    .inline-for-movil2{
+        display: flex;
+    }
+    .justify-content-right{
+        justify-content:right; 
     }
 }
 
 @media (min-width: 992px) {
+    .icon-dashboard-width {
+        width: 14% !important;
+    }
     .navbar {
         height: 70px!important;
     }
@@ -414,9 +689,18 @@ img {
     .inline-for-movil{
         display: inline-flex;
     }
+    .inline-for-movil2{
+        display: flex;
+    }
+    .justify-content-right{
+        justify-content:right; 
+    }
 }
 
 @media (min-width: 1200px) {
+    .icon-dashboard-width {
+        width: 14% !important;
+    }
     .navbar {
         height: 70px!important;
     }
@@ -433,6 +717,12 @@ img {
     }
     .offcanvas-end {
         width: 50%!important;
+    }
+    .inline-for-movil2{
+        display: flex;
+    }
+    .justify-content-right{
+        justify-content:right; 
     }
     
 }
@@ -449,4 +739,66 @@ img {
     width: 25px !important;
     background-color: #C4122f !important;
     height: 25px !important;
+
+}
+
+
+/*Style del popover*/
+
+.popover {
+    background-color: #07354F;
+    color: #ffffff;
+    width: 50%;
+    height: 15%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 62px;
+    left: 78%;
+}
+
+.popover::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid #07354F;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: -30px;
+    left: 83%;
+    position: absolute;
+}
+
+.popover-header {
+    background-color: #e9ecef00 !important;
+}
+
+.popover-body {
+    padding: 0rem 1rem !important;
+}
+
+.link:hover {
+    color: #ffffff !important;
+}
+.subrayado{
+    text-decoration: underline;
+}
+.vertical-center{
+    display: flex;
+    align-items: center;
+}
+.icon-buscador{
+    border: none !important;;
+    border-bottom: 1px solid #282828 !important;
+    border-radius: initial !important;
+}
+.text-buscador{
+    border-left: none !important;
+    border-right: none !important;
+}
+.text-buscador:focus{
+    border-left: none !important;
+    border-right: none !important;
 }

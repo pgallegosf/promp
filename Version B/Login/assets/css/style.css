@@ -12,51 +12,11 @@ body {
     padding: 8px;
 }
 
-.card {
-    /* box-shadow: 0 20px 18px 0 rgb(0 0 0 / 25%) !important; */
-    box-shadow: 0 12px 16px 0 rgb(0 0 0 / 18%) !important;
-}
-
-.card-centrado {
-    margin: 0px auto;
-    /* width: 86% !important; */
-    left: 60%;
-}
-
-.titulo {
-    font-size: 30px !important;
-    color: #282828 !important;
-    font-weight: bold !important;
-    text-align: center !important;
-}
-
-.sub-titulo {
-    font-size: 30px !important;
-    color: #282828 !important;
-    font-weight: bold !important;
-    text-align: center !important;
-}
-
-.cont-titulo {
-    font-size: 20px !important;
-    color: #fff !important;
-    font-weight: bold !important;
-    text-align: center !important;
-}
-
 .icon-select {
     float: right;
     margin-top: -26px;
     margin-right: 5px;
     color: #C4122f;
-}
-
-.select-rutas {
-    border-bottom: 1px solid #C4122f !important;
-}
-
-.btn-centrado {
-    text-align: end;
 }
 
 .nav-img {
@@ -87,128 +47,20 @@ body {
     }
 }
 
-@media (min-width: 1200px) {
+
+/* @media (min-width: 1200px) {
     .nav-img {
         width: 15% !important;
     }
-}
+} */
 
 .img {
-    width: 60%;
+    width: 100%;
     text-align: center !important;
 }
 
 .offcanvas {
     height: 100%;
-}
-
-.mapa-movil {
-    width: 100%;
-}
-
-.background-img {
-    border-radius: 0!important;
-    padding: 13px;
-    width: 800px;
-    height: 600px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background: url(../img/img-inicio.png);
-    background-size: cover;
-    object-fit: cover;
-    object-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-.background-img {
-    width: 100%;
-}
-
-@supports(object-fit: cover) {
-    .background-img {
-        height: 451px;
-        object-fit: cover;
-        object-position: center center;
-    }
-}
-
-@media all and (min-width: 500px) and (max-width: 1000px) {
-    .background-img {
-        border-radius: 0!important;
-        margin: 20px auto;
-        padding: 13px;
-        width: auto;
-        height: 400px;
-        background-size: 50% 50%;
-        background-repeat: no-repeat;
-        background: url(../img/img-inicio.png);
-        background-size: cover;
-    }
-}
-
-.background-img {
-    width: 100%;
-}
-
-.div-centrado {
-    margin: 3rem !important;
-    padding: 0rem !important;
-}
-
-.top {
-    margin-top: -5.5rem !important;
-}
-
-.card-select {
-    width: 50% !important;
-    height: 135% !important;
-    margin-left: 34% !important;
-    top: 74% !important;
-    position: absolute !important;
-    font-size: 10px;
-    font-weight: bold;
-    color: #282828;
-}
-
-.card-select-buscar {
-    width: 50% !important;
-    position: absolute !important;
-    font-size: 10px;
-    font-weight: bold;
-    color: #282828;
-    height: 230px !important;
-    z-index: 12;
-}
-
-.card-contenido-select {
-    font-size: 11px !important;
-    font-weight: normal !important;
-}
-
-.option-select:hover {
-    font-size: 12px !important;
-    font-weight: bold !important;
-    background-color: #FFEBEE;
-    opacity: 73%;
-    width: 115% !important;
-    cursor: pointer;
-}
-
-.separador {
-    border-right: 1px solid #a5acb0;
-}
-
-.select-select-titulo {
-    background-color: #a5acb0;
-    opacity: 73%;
-    height: 12%;
-    text-align: center;
-}
-
-.texto-centrado {
-    text-align: center !important;
 }
 
 .form-control {
@@ -217,6 +69,7 @@ body {
     border-left: 0px !important;
     border-bottom: 1px solid #282828;
     border-radius: 2px;
+    background-color: #e9ecef00 !important;
 }
 
 .form-control:focus {
@@ -227,135 +80,8 @@ body {
     box-shadow: 0 0 0 2px #ffffff !important;
 }
 
-.bg-secondary {
-    background-color: #666666;
-    color: #000;
-    background: transparent;
-}
-
-.centro {
-    text-align: center;
-}
-
-.icon {
-    margin-top: -32px !important;
-    width: 50px !important;
-    font-size: 30px !important;
-    color: #C4122f;
-}
-
-.min-titulo {
-    color: #282828 !important;
-}
-
-.span {
-    color: #07354F !important;
-    font-size: 15px;
-}
-
 .hr {
     height: 2px;
-}
-
-.refresh {
-    color: #C4122f;
-}
-
-.refresh:hover {
-    font-weight: bold;
-    color: #C4122f;
-    cursor: pointer;
-}
-
-.icon-refresh {
-    background-color: #C4122f;
-    color: #ffffff;
-    border-radius: 50%;
-    border: 1x solid grey;
-    padding: 5px;
-    cursor: pointer;
-    margin-right: 4px;
-}
-
-.icon-refresh :hover {
-    background-color: #C4122f;
-    color: #ffffff;
-    border-radius: 50%;
-    border: 1x solid grey;
-    padding: 5px;
-    transform: scaleX(-1);
-    cursor: pointer;
-}
-
-.end {
-    text-align: end;
-}
-
-.m-left {
-    margin-left: 1%;
-}
-
-.card-header-titulo {
-    background: linear-gradient(rgba(165, 172, 176, 0.2), rgba(165, 172, 176, 0.2)) !important;
-    color: #07354F !important;
-    font-size: 15px !important;
-}
-
-.card-header-movil {
-    text-align: left !important;
-    height: 3rem !important;
-    font-size: 10px !important;
-    background-color: #a5acb0 !important;
-    color: #07354F !important;
-}
-
-.card-header-titulo-movil {
-    background-color: #a5acb0 !important;
-    color: #07354F !important;
-    font-size: 10px !important;
-}
-
-.car-body-title {
-    font-size: 10px;
-    font-weight: bold;
-    color: #282828;
-    text-align: left;
-}
-
-.car-body-descripcion {
-    font-size: 15px;
-    color: #282828;
-    text-align: left;
-}
-
-.card-movil {
-    height: 720px !important;
-}
-
-.descripcion {
-    font-size: 12;
-    color: #666666;
-    text-align: center;
-}
-
-.centrado {
-    text-align: -webkit-center
-}
-
-.div-left {
-    float: left;
-}
-
-.div-right {
-    float: right;
-}
-
-.width-movil {
-    width: 100%;
-}
-
-.btn-movil-buscar {
-    text-align: left;
 }
 
 .icon-redes {
@@ -366,12 +92,6 @@ body {
     padding: 5px;
     cursor: pointer;
     margin-right: 4px;
-}
-
-.select-movil {
-    font-size: 15px;
-    color: #282828;
-    font-weight: bold;
 }
 
 .footer {
@@ -390,42 +110,6 @@ body {
 .copyright {
     color: #a5acb0 !important;
     text-align: center !important;
-}
-
-.background-img-detalle {
-    margin: 10px auto;
-    border-radius: 5px;
-    border: 1px solid #999;
-    padding: 13px;
-    width: 220px;
-    height: 600px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background: url(../img/Ruta_Marina/image-from-rawpixel-id-431944-jpeg.jpg);
-    background-size: cover;
-}
-
-.background-img-detalle {
-    width: 100%;
-}
-
-@media all and (min-width: 500px) and (max-width: 1000px) {
-    .background-img-detalle {
-        margin: 20px auto;
-        border-radius: 5px !important;
-        border: 1px solid #999;
-        padding: 13px;
-        width: auto;
-        height: 400px;
-        background-size: 50% 50%;
-        background-repeat: no-repeat;
-        background: url(../img/Ruta_Marina/image-from-rawpixel-id-431944-jpeg.jpg);
-        background-size: cover;
-    }
-}
-
-.background-img-detalle {
-    width: 100%;
 }
 
 .font-color-black {
@@ -460,316 +144,12 @@ body {
     background-color: #C4122f;
 }
 
-.container-detalle {
-    background: linear-gradient(rgba(165, 172, 176, 0.2), rgba(165, 172, 176, 0.2)) !important;
-    width: 100% !important;
-    /* padding: 1rem; */
-    margin: 0 auto;
-}
-
-.container-detalle-titulo {
-    color: #282828;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.container-detalle-subtitulo {
-    color: #282828;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-.span-container-detalle {
-    font-size: 8px;
-    font-weight: bold;
-}
-
-.costo {
-    margin: 0 auto;
-    font-size: 25px;
-    font-weight: bold;
-    width: 100%;
-    overflow: hidden;
-    margin-top: 1.5rem !important;
-}
-
-.img-icon {
-    border-radius: 50%;
-    width: 5%;
-    color: #C4122f;
-    margin: 1rem;
-    padding: 1rem;
-    background: url(../img/Ruta_Marina/container.jpg);
-}
-
-.img-icon-text {
-    color: #C4122f;
-    margin: 1rem;
-    padding: 1rem;
-    margin-left: 47px;
-    margin-top: -62px;
-    font-weight: bold;
-}
-
-.img-icon-text:hover {
-    margin-top: -62px !important;
-    width: 100%;
-}
-
-.effect:hover {
-    border-radius: 10px;
-    width: 355px;
-    background: #ffffff;
-    box-shadow: 2px 2px 5px #999;
-    margin-left: 3%;
-    font-size: 15px;
-    height: 66px;
-}
-
-.content-centrado {
-    position: relative;
-    top: 25%;
-}
-
-.div-effect {
-    width: 355px;
-    height: 50px;
-    overflow: hidden;
-}
-
-.div-line-time {
-    width: 100px;
-}
-
-.img-line-time {
-    /* width: 90%;
-    padding: 1rem;
-    margin: 1rem; */
-    width: 80px;
-    height: 60px;
-}
-
-.position-line-right {
-    /* margin-top: -61%;
-    margin-right: -12%; */
-    margin-top: -12%;
-    margin-right: 28%;
-}
-
-.position-line-left {
-    /* margin-top: -66%;
-    margin-left: -78%; */
-    margin-top: -12%;
-    margin-left: -80%;
-}
-
-.icon-line {
-    position: relative;
-    top: 25px;
-}
-
-.text-line-title {
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.cant-dias {
-    position: relative;
-    top: 10px;
-    text-align: center;
-}
-
-.icon-ordenar {
-    margin-top: -26px;
-    margin-right: 5px;
-    color: #C4122f;
-}
-
-
-/* .container-line-naviera {
-    background-color: #00000024 !important;
-}
-
-.container-line-naviera:hover {
-    background-color: #dedfbf !important;
-    cursor: pointer;
-} */
-
-.acordion-hover:hover {
-    color: #C4122f;
-}
-
-.acordion-ancho {
-    width: 50%;
-}
-
 .rem-1 {
     margin: 1rem;
 }
 
 .ordenar:hover {
     cursor: pointer;
-}
-
-.div-botton {
-    width: 54%;
-    margin-left: 20%;
-    font-size: 15px;
-    margin-bottom: 5%;
-    height: 66px;
-}
-
-.div-botton:hover {
-    border-radius: 2%;
-    width: 38%;
-    background: #ffffff;
-    box-shadow: 2px 2px 5px #999;
-    cursor: pointer;
-    margin-left: 3%;
-    font-size: 15px;
-    margin-bottom: 5%;
-    height: 66px;
-}
-
-.icon-btn {
-    font-size: 25px;
-}
-
-.posicion {
-    margin: 1rem;
-    padding: 1rem;
-}
-
-.modal-title {
-    font-size: 16px !important;
-    font-weight: bold;
-}
-
-.span-textarea {
-    font-size: 9px;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.card-select-origen {
-    width: 32% !important;
-    height: 52% !important;
-    margin-left: 1% !important;
-    top: 74% !important;
-    position: absolute !important;
-    font-size: 12px;
-    font-weight: bold;
-    color: #282828;
-}
-
-.text-title-select-movil {
-    font-size: 12px;
-    text-align: center;
-    margin: 0rem;
-    padding: 0rem;
-}
-
-.select-cmb-paisContinente-movil {
-    background-color: #a5acb0;
-    opacity: 73%;
-}
-
-.bg-select-pais:hover {
-    font-size: 12px !important;
-    font-weight: bold !important;
-    background-color: #c4122f66;
-    opacity: 73%;
-    cursor: pointer;
-}
-
-.sub-titulo-movil {
-    margin-left: -5%;
-    font-size: 11px;
-    margin-top: 2px;
-}
-
-.img-embarcacion-movil {
-    margin: 10px auto;
-    padding: 13px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background: url(../img/Ruta_Marina/cameron-venti-1cqIcrWFQBI-unsplash.jpg);
-    background-size: cover;
-}
-
-.container-detalle-movil {
-    background-color: #0000000f;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 3%;
-    width: 90%;
-    margin-top: 22px;
-}
-
-.icon-movil {
-    margin-top: -8px !important;
-    width: 30px !important;
-    font-size: 32px !important;
-    color: #C4122f;
-}
-
-.icon-center {
-    text-align: left;
-    margin-left: 12%;
-}
-
-.icon-text {
-    text-align: left;
-    margin-left: -6%;
-}
-
-.background-img-detalle-movil {
-    height: 200px;
-    background: url(../img/Ruta_Marina/image-from-rawpixel-id-431944-jpeg.jpg);
-    background-size: cover;
-}
-
-.container-menu-derecho {
-    padding-right: 0.5rem !important;
-}
-
-.img-close {
-    height: 15px !important;
-}
-
-.scroll-card {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-.scroll-card::-webkit-scrollbar {
-    width: 0;
-}
-
-.avatar-xs {
-    width: 40px !important;
-    height: 40px !important;
-    font-size: 0.75rem;
-}
-
-.span-costo {
-    position: relative;
-}
-
-.span-direccion-logistico {
-    position: relative;
-    top: -15px;
-}
-
-.avatar-group .avatar {
-    background-color: #07354F;
-}
-
-.ocultar-movil {
-    display: none !important;
 }
 
 .btn-close-canvas {
@@ -1180,6 +560,9 @@ body {
 }
 
 @media (min-width: 1200px) {
+    .nav-img {
+        width: 10% !important;
+    }
     .mostrar-desktop {
         display: block !important;
     }

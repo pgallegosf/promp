@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/Logo/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Simulador Drawback
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../common.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                <a class="navbar-brand" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
+                    <img src="../assets/img/Logo/LOGO PROMPERU.png" alt="PromPeru" class="nav-img">
+                </a>
+                <div class="icon-menu">
+                    <div class="icon-menu d-none">
+                        <i class="fas fa-user-plus"><label class="ocultar-movil">Unete al Directorio Logístico</label></i>
+                    </div>
+                    <div class="icon-menu d-none">
+                        <a class="" href="#">
+                            <i class="far fa-bell"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 col-background-blue">
+                    <div class=" mt-3">
+                        <h5 class="titulo font-h1-bold negro-promperu">Crea tu cuenta y obten beneficios de PROMPERÚ</h5>
+                    </div>
+                    <div class="row rem-1">
+                        <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 text-center negro-promperu mt-4"><img src="../assets/img/imagenes/laptop.png" alt="laptop"></div>
+                        <div class="col-md-10 col-lg-10 col-xs-10 col-sm-10 negro-promperu font-H4-light vertical-center">Guarda las simulaciones de todas las herramientas logísticas</div>
+                        <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 text-center negro-promperu mt-4"><img src="../assets/img/imagenes/grafico.png" alt="grafico"></div>
+                        <div class="col-md-10 col-lg-10 col-xs-10 col-sm-10 negro-promperu font-H4-light vertical-center">Entérate de nuestras actividades de fortalecimiento de capacidades</div>
+                        <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 text-center negro-promperu mt-4"><img src="../assets/img/imagenes/pantalla.png" alt="pantalla"></div>
+                        <div class="col-md-10 col-lg-10 col-xs-10 col-sm-10 negro-promperu font-H4-light vertical-center">Participa en nuestros talleres logísticos y potencia tus conocimientos de exportación</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                    <div class="row rem-1">
+                        <div class="row"><br></div>
+                        <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                <div class="containerRadio">
+                                    <div class="form-check">
+                                        <input class="form-check-input chkEmpresa" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="0">
+                                        <label class="form-check-label negro-promperu font-H4-medium" for="flexRadioDefault1">
+                                         Soy una empresa
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                <div class="containerRadio">
+                                    <div class="form-check">
+                                        <input class="form-check-input chkEmpresa" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="1">
+                                        <label class="form-check-label negro-promperu font-H4-medium" for="flexRadioDefault2">
+                                          Soy una persona natural
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"><br></div>
+                        <div id="empresa" class="empresa">
+                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second font-size-15 empresa">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="empresa" class="font-label negro-promperu" >Nombre comercial de la empresa</label>
+                                    <input type="text" class="form-control sinPaddingTop" id="txtempresa" value="" placeholder="">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="ruc" class="font-label negro-promperu">Nro de RUC</label>
+                                    <input type="text" class="form-control sinPaddingTop" id="txtruc" value="" placeholder="">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="selPaisSu" class="font-label negro-promperu">Sector de la empresa</label>
+                                    <input type="text" class="form-control txtsector ordenar" id="txtsector" value="" placeholder=""><i class="fas fa-chevron-down rojo-promperu div-right mt-n4 ordenar"></i>
+                                    <div class="card card-empresa card-distribuidor" id="card-distribuidor">
+                                        <div class="row" id="comboPais">
+                                            <option value="0" class="option-select font-color-black opCiudad">Distribuidor</option>
+                                            <option value="1" class="option-select font-color-black opCiudad">Distribuidor2</option>
+                                            <option value="2" class="option-select font-color-black opCiudad">Distribuidor3</option>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="selRegionSu" class="font-label negro-promperu">Tipo de empresa</label>
+                                    <input type="text" class="form-control txttipo ordenar" id="txttipo" value="" placeholder=""><i class="fas fa-chevron-down rojo-promperu div-right mt-n4 ordenar"></i>
+                                    <div class="card card-empresa card-tipo" id="card-tipo">
+                                        <div class="row" id="comboPais">
+                                            <option value="0" class="option-select font-color-black opCiudad">S.A</option>
+                                            <option value="1" class="option-select font-color-black opCiudad">S.A.C.</option>
+                                            <option value="2" class="option-select font-color-black opCiudad">S.C.R.L</option>
+                                            <option value="3" class="option-select font-color-black opCiudad">E.I.R.L</option>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="telefono" class="font-label negro-promperu">Teléfono de la empresa</label>
+                                    <input type="text" class="form-control sinPaddingTop" id="txttelefono" value="" placeholder="">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="correo" class="font-label negro-promperu">Correo corporativo</label>
+                                    <input type="text" class="form-control sinPaddingTop" id="txtcorreo" value="" placeholder="">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="pass" class="font-label negro-promperu">Cree una contraseña</label>
+                                    <input type="password" class="form-control sinPaddingTop" id="txtpass" value="" placeholder="">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="pass2" class="font-label negro-promperu">Confirmar contraseña</label>
+                                    <input type="password" class="form-control sinPaddingTop" id="txtpass2" value="" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="natural" class="natural">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="txtNombre" class="font-label negro-promperu">Nombre y apellidos</label>
+                                    <input type="text" class="form-control sinPaddingTop" id="txtNombre" value="" placeholder="">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="dni" class="font-label negro-promperu">Nro de DNI</label>
+                                    <input type="text" class="form-control sinPaddingTop" id="txtdni" value="" placeholder="">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <div class="containerRadio">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault3">
+                                            <label class="form-check-label negro-promperu font-H4-medium" for="flexRadioDefault3">
+                                              Soy un estudiante
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <div class="containerRadio">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault4">
+                                            <label class="form-check-label negro-promperu font-H4-medium" for="flexRadioDefault4">
+                                              Soy un emprendedor
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="tel" class="font-label negro-promperu">Teléfono de la empresa</label>
+                                    <input type="text" class="form-control sinPaddingTop" id="txttel" value="" placeholder="">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="correo2" class="font-label negro-promperu">Correo corporativo</label>
+                                    <input type="text" class="form-control sinPaddingTop" id="correo2" value="" placeholder="">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="password" class="font-label negro-promperu">Cree una contraseña</label>
+                                    <input type="password" class="form-control sinPaddingTop" id="txtpassword" value="" placeholder="">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left color-second font-size-15 paddingControl">
+                                    <label for="password2" class="font-label negro-promperu">Confirmar contraseña</label>
+                                    <input type="password" class="form-control sinPaddingTop" id="txtpassword2" value="" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"><br></div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-2">
+                                <bottom class="btn btn-danger font-H4-bold" onclick="window.location.href='ConfirmarRegistro.html'">Registrarme</bottom>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de vista principal -->
+            <footer class="footer pt-3 " id="footer ">
+                <div class="container-fluid ">
+                    <div id="footer-Desktop" class="mostrar-desktop">
+                        <div class="row align-items-center justify-content-center ">
+                            <div class="col-lg-12 mb-lg-0 mb-4 ">
+                                <div class="text-center ">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold ">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-3 ">
+                                <i class="fab fa-linkedin-in icon-redes "></i>
+                                <i class="fab fa-facebook icon-redes "></i>
+                                <i class="fab fa-twitter icon-redes "></i>
+                                <i class="fab fa-youtube icon-redes "></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-4 background-black "></div>
+                            <div class="row mt-3 ">
+                                <div class="col-3 mt-2 ">
+                                    <img src="../assets/img/Logo/mincetur.png" alt="mincetur " class="img-footter ">
+                                </div>
+                                <div class="copyright col-6 ">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                                <div class="col-3 mt-n3 ">
+                                    <img src="../assets/img/Logo/LOGO PROMPERU.png" alt="logo " class="img-footter div-right ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mostrar-movil" id="footer-Movil ">
+                        <div class="row align-items-center justify-content-center ">
+                            <div class="col-lg-12 mb-lg-0 mb-2 ">
+                                <div class="text-center ">
+                                    Para mas información escribanos a :
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center font-weight-bold ">
+                                correo@promperu.gob.pe
+                            </div>
+                            <div class="justify-content-between text-center mt-2 ">
+                                <i class="fab fa-linkedin-in icon-redes "></i>
+                                <i class="fab fa-facebook icon-redes "></i>
+                                <i class="fab fa-twitter icon-redes "></i>
+                                <i class="fab fa-youtube icon-redes "></i>
+                            </div>
+                            <div class="hr col-lg-6 mt-2 background-gris "></div>
+                            <div class="row mt-2 ">
+                                <div class="col-6 div-left ">
+                                    <img src="../assets/img/Logo/mincetur.png" alt="mincetur " class="img-footter ">
+                                </div>
+                                <div class="col-6 div-left ">
+                                    <img src="../assets/img/Logo/LOGO PROMPERU.png" alt="logo " class="img-footter div-right ">
+                                </div>
+                                <div class="copyright col-12 ">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js "></script>
+    <script src="../assets/js/core/bootstrap.min.js "></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js "></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js "></script>
+    <script src="../assets/js/plugins/chartjs.min.js "></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select2/select2.min.js"></script>
+    <script src="../assets/css/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../assets/js/general.js"></script>
+    <script src="./js/registro.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3 "></script> -->
+    <!-- JS rutas maritimas -->
+</body>
+
+</html>
