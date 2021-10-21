@@ -41,7 +41,35 @@
     font-size: 14px;
     line-height: 17px;
 }
-
+.font-H2-bold{
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 30px !important;
+    line-height: 36px !important;
+}
+.font-H3-bold{
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 24px !important;
+    line-height: 29px !important;
+}
+.font-H4-bold{
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+}
+.font-H5-bold{
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    align-items: center !important;
+}
 img {
     image-rendering: -webkit-optimize-contrast;
 }
@@ -150,12 +178,18 @@ img {
 }
 
 .sin-margen-top {
-    margin-top: 0!important;
+    margin-top: 0!important; 
 }
 
 .icon-dashboard {
-    width: 144px;
-    height: 116px;
+    width: 100px;
+    height: 106px;
+    margin-top:7px;
+    margin-bottom:5px;
+}
+.background-costos{
+    background-image: url('RutasMaritimas/assets/img/dashboard/costos.png');
+    
 }
 
 #offcanvasRightLabel {
@@ -282,7 +316,9 @@ img {
 .footer {
     position: absolute;
 }
-
+.inline-for-movil{
+    display: inline-flex;
+}
 @media (min-width: 200px) {
     .navbar {
         height: 50px!important;
@@ -306,6 +342,9 @@ img {
     .offcanvas-end {
         width: 100%!important;
     }
+    .inline-for-movil{
+        display: initial;
+    }
 }
 
 @media (min-width: 576px) {
@@ -325,6 +364,9 @@ img {
     }
     .offcanvas-end {
         width: 100%!important;
+    }
+    .inline-for-movil{
+        display: initial;
     }
 }
 
@@ -346,6 +388,9 @@ img {
     .offcanvas-end {
         width: 50%!important;
     }
+    .inline-for-movil{
+        display: inline-flex;
+    }
 }
 
 @media (min-width: 992px) {
@@ -365,6 +410,9 @@ img {
     }
     .offcanvas-end {
         width: 50%!important;
+    }
+    .inline-for-movil{
+        display: inline-flex;
     }
 }
 
@@ -386,4 +434,19 @@ img {
     .offcanvas-end {
         width: 50%!important;
     }
+    
+}
+.btn-close-menu{
+    box-sizing: content-box !important;
+    padding: 0.25em 0.25em!important;
+    border: 0!important;
+    position: absolute!important;
+    z-index: 0!important;
+    top: 20px!important;
+    right: 20px !important;
+    color: #ffff !important;
+    border-radius: 50% !important;
+    width: 25px !important;
+    background-color: #C4122f !important;
+    height: 25px !important;
 }

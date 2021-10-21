@@ -1164,7 +1164,13 @@ progress {
 .gy-12 {
     --bs-gutter-y: 16rem;
 }
-
+@media (min-width: 200px) {
+    
+    .col-xs-6{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
 @media (min-width: 576px) {
     .col-sm-auto {
         flex: 0 0 auto;
