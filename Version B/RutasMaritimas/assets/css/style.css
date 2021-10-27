@@ -109,7 +109,6 @@ body {
 .background-img {
     border-radius: 0!important;
     padding: 13px;
-    
     background-size: 100% 100% !important;
     background-repeat: no-repeat;
     background: url(../img/img-inicio.png);
@@ -160,10 +159,14 @@ body {
     margin-top: -5.5rem !important;
 }
 
+.col-card-select-buscar {
+    width: 15% !important;
+}
+
 .card-select {
     width: 50% !important;
     height: 160% !important;
-    margin-left: 34% !important;
+    margin-left: 28% !important;
     top: 74% !important;
     position: absolute !important;
     font-size: 10px;
@@ -654,7 +657,7 @@ body {
 }
 
 .card-select-origen {
-    width: 32% !important;
+    width: 26% !important;
     height: 52% !important;
     margin-left: 1% !important;
     top: 74% !important;
