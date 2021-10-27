@@ -433,7 +433,7 @@ img {
 
 .hover:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10%;
+    border-radius: 20px;
 }
 
 .active-icon-nav:active {
@@ -611,7 +611,10 @@ img {
 .left-center {
     text-align: left !important;
 }
-
+.padding-card-busqueda{
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
 @media (min-width: 200px) {
     .left-center {
         text-align: center !important;
@@ -650,6 +653,10 @@ img {
     .justify-content-right {
         justify-content: center;
     }
+    .padding-card-busqueda{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
 }
 
 @media (min-width: 576px) {
@@ -684,6 +691,10 @@ img {
     }
     .justify-content-right {
         justify-content: center;
+    }
+    .padding-card-busqueda{
+        padding-left: 8% !important;
+        padding-right: 8% !important;
     }
 }
 
@@ -720,6 +731,10 @@ img {
     .justify-content-right {
         justify-content: right;
     }
+    .padding-card-busqueda{
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
 }
 
 @media (min-width: 992px) {
@@ -755,6 +770,10 @@ img {
     .justify-content-right {
         justify-content: right;
     }
+    .padding-card-busqueda{
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -786,6 +805,10 @@ img {
     }
     .justify-content-right {
         justify-content: right;
+    }
+    .padding-card-busqueda{
+        padding-left: 10% !important;
+        padding-right: 10% !important;
     }
 }
 
@@ -896,4 +919,47 @@ img {
     font-size: 10px;
     font-weight: bold;
     color: #282828;
+}
+.padding-left-right-0{
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+.margin-left-right-0{
+    margin-left:0 !important;
+    margin-right:0 !important;
+}
+.padding-left-0{
+    padding-left:0 !important;
+}
+.width-100{
+    width:100% !important;
+}
+.separar-elementos-5{
+    text-indent:5pt;
+}
+.container-principal{
+    padding-top: 110px !important;
+}
+.margin-left-right-3{
+    margin-left: 1.5% !important;
+    margin-right: 1.5% !important;
+}
+.btn-nivel-inline{
+    margin-bottom: 0 !important;
+    bottom: 0 !important;
+    position: absolute !important;
+}
+.position-relative{
+    position: relative !important;
+}
+.modal-backdrop
+{
+    opacity:0.5 !important;
+}
+
+.fade.show {
+    background-color: #0000008c !important;
+}
+.body{
+    background-color: #0000008c !important;
 }

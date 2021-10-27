@@ -355,13 +355,23 @@ footer .credits {
 	}
 }*/
 .tab-head{
-	margin-top: 50px !important;;
+	margin-top: 10px !important;
 }
-
+/****nuevo para version b**/
+.tabs .divTab .tab-desktop > ul li {
+	display: block;
+	float:left;
+	display: inline-flex;
+}
+.tabs .divTab .div-left-tab > ul li a.active {
+	background: linear-gradient(to bottom, #efefef 0%, #efefef 90%, #FFF 10%, #FFF 100%);
+	color: #282828;
+}
 /************************  PARA MOVIL********************/
 .tabs .divTab .tab-movil > ul li {
 	display: block;
 	float:left;
+	display: inline-flex;
 }
 .tabs .divTab .tab-movil > ul {
 	list-style-type: none;
@@ -371,6 +381,9 @@ footer .credits {
 	display: flex;
     justify-content: center;
 	margin-top: 0 !important;
+	justify-content: center;
+	left: 40px;
+    position: relative;
 }
 
 .tabs .divTab .tab-movil > ul li a.active {
@@ -426,4 +439,24 @@ footer .credits {
     .tab-desktop{
 		display:block;
 	}			
+}
+
+.fa-circle:before {
+    content: "\f058";
+	width: 20px;
+	height: 20px;
+}
+.line-intelineado{
+	top: calc(50% - 0px/2);
+	border: 1px dashed #282828;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 5px;
+	width:100%;
+}
+
+.modal-backdrop.show {
+    opacity: 0.5 !important;
+	background-color: #0000008c !important;
 }
