@@ -53,7 +53,7 @@
                                 <path d="M22.6667 12.1965H1.33333C0.6 12.1965 0 11.6119 0 10.8974C0 10.1829 0.6 9.59827 1.33333 9.59827H22.6667C23.4 9.59827 24 10.1829 24 10.8974C24 11.6119 23.4 12.1965 22.6667 12.1965Z" fill="#282828"/>
                                 <path d="M22.6667 20.7947H1.33333C0.6 20.7947 0 20.2101 0 19.4956C0 18.7811 0.6 18.1965 1.33333 18.1965H22.6667C23.4 18.1965 24 18.7811 24 19.4956C24 20.2101 23.4 20.7947 22.6667 20.7947Z" fill="#282828"/>
                             </svg>
-                                
+
                         </a>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                                     <label class="font-label negro-promperu">Puerto de origen</label>
                                     <input type="text" class="form-control ptOrigen mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control ptOrigenMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
-                                    <i class="fas fa-angle-down icon-select ptOrigen ordenar"></i>
+                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                 </div>
                                 <div class="card h-100 p-3 card-select-origen card-origen" id="selectPuertoOrigen">
                                     <div class="row" id="comboPais">
@@ -88,7 +88,7 @@
                                 <div class="col-lg-4 col-md-6 col-xs-12 position-relative ordenar">
                                     <label class="font-label negro-promperu">Puerto de destino</label>
                                     <input type="text" class="form-control ptDestino ordenar puertoDestino mostrar-desktop font-H4-light" id="puertoDestino" value="Selecciona" /><i class="fas fa-angle-down icon-select ptDestino mostrar-desktop ordenar"></i>
-                                    <input type="text" class="form-control ptDestino ordenar puertoDestinoMovil mostrar-movil font-H4-light" id="puertoDestino" value="Selecciona" /><i class="fas fa-angle-down icon-select ptDestino ordenar"></i>
+                                    <input type="text" class="form-control ptDestino ordenar puertoDestinoMovil mostrar-movil font-H4-light" id="puertoDestino" value="Selecciona" /><i class="fas fa-angle-down icon-select ordenar"></i>
                                     <!-- <i class="fas fa-angle-down icon-select"></i> -->
                                 </div>
                                 <div class="card h-100 p-3 card-select card-destino" id="view-select-Pais">
@@ -195,19 +195,19 @@
                             <div class="col-lg-8 col-md-6 col-xs-12 position-relative">
                                 <div class="text-left">
                                     <label class="font-label negro-promperu">País de destino</label>
-                                    <input type="text" class="form-control mostrarpuerto ordenar mostrar-desktop font-H4-light gris-promperu" id="mostrarpuerto" value="Selecciona" /><i class="fas fa-angle-down icon-select ordenar"></i>
+                                    <input type="text" class="form-control mostrarpuerto ordenar mostrar-desktop font-H4-light gris-promperu" id="mostrarpuerto" value="Selecciona" /><i class="fas fa-angle-down icon-select mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control mostrarpuertoMovil ordenar mostrar-movil font-H4-light gris-promperu" id="mostrarpuerto" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#PaisDestinoCanvas" aria-controls="PaisDestinoCanvas" />
-                                    <i class="fas fa-angle-down icon-select ordenar"></i>
+                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#PaisDestinoCanvas" aria-controls="PaisDestinoCanvas"></i>
                                 </div>
                             </div>
                             <div class="card h-100 p-3 card-select-buscar rem-1 cardPuerto" id="view-selectPais">
                                 <div class="row">
                                     <div class="col-3 separador font-label-400">Paises Frecuentes:</div>
-                                    <div class="col-2 select-select-titulo" id="idContinente">America</div>
-                                    <div class="col-2" id="idEuropa">Europa</div>
-                                    <div class="col-2" id="idAsia">Asia</div>
-                                    <div class="col-2" id="idAfrica">Africa</div>
-                                    <div class="col-1" id="idOceania">Óceania</div>
+                                    <div class="col-2 col-card-select-buscar select-select-titulo" id="idContinente">America</div>
+                                    <div class="col-2 col-card-select-buscar" id="idEuropa">Europa</div>
+                                    <div class="col-2 col-card-select-buscar" id="idAsia">Asia</div>
+                                    <div class="col-2 col-card-select-buscar" id="idAfrica">Africa</div>
+                                    <div class="col-1 col-card-select-buscar" id="idOceania">Óceania</div>
                                     <div class="col-3 card-contenido-select separador">
                                         <option class="mb-1 font-H4-light-300 option-select opPaises">Estados Unidos</option>
                                         <option class="mb-1 font-H4-light-300 option-select opPaises">Chile</option>
@@ -1084,7 +1084,7 @@
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel" class=" font-size-20 font-color-black">Herramientas Logísticas</h5>
 
-            
+
             <button class="btn-close-menu" data-bs-dismiss="offcanvas" aria-label="Close">
                 <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
             </button>
@@ -1108,7 +1108,7 @@
                         <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-desktop">
                         <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-movil">
                         <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas marítimas</p>
-                        
+
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasTerrestre/Pages/Rutas_terrestre.html'">
@@ -1159,8 +1159,7 @@
                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.7726 9.0654H6.22737C2.79516 9.0654 0 11.6013 0 14.7195V16.1847C0 16.6356 0.347158 17 0.776632 17C1.20611 17 1.55326 16.6356 1.55326 16.1847V14.7195C1.55326 12.4992 3.65053 10.6959 6.22737 10.6959H10.7726C13.3495 10.6959 15.4467 12.4992 15.4467 14.7195V16.1847C15.4467 16.6356 15.7939 17 16.2234 17C16.6528 17 17 16.6356 17 16.1847V14.7195C17 11.6013 14.2048 9.0654 10.7726 9.0654Z" fill="#C4122F"/>
                         <path d="M8.83993 8.55072C11.0875 8.55072 12.9128 6.63094 12.9128 4.27536C12.9128 1.91978 11.0875 0 8.83993 0C6.59235 0 4.76709 1.91978 4.76709 4.27536C4.76709 6.63094 6.59593 8.55072 8.83993 8.55072ZM8.83993 1.6305C10.2286 1.6305 11.3631 2.81768 11.3631 4.27536C11.3631 5.73304 10.2321 6.92398 8.83993 6.92398C7.44772 6.92398 6.31677 5.7368 6.31677 4.27536C6.31677 2.81392 7.4513 1.6305 8.83993 1.6305Z" fill="#C4122F"/>
-                    </svg>
-                    Iniciar sesión
+                    </svg> Iniciar sesión
                 </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
@@ -1169,8 +1168,7 @@
                     <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.9938 6.74999C12.6751 6.74999 12.4313 6.99374 12.4313 7.31249V13.8375L1.1626 13.8187L1.18135 2.54999H7.70635C8.0251 2.54999 8.26885 2.30624 8.26885 1.98749C8.26885 1.66874 8.0251 1.42499 7.70635 1.42499H0.618848C0.300098 1.42499 0.0563477 1.66874 0.0563477 1.98749L0.0375977 14.3812C0.0375977 14.7 0.281348 14.9437 0.600098 14.9437L12.9938 14.9625C13.1438 14.9625 13.2938 14.9062 13.3876 14.7937C13.5001 14.6812 13.5563 14.55 13.5563 14.4V7.31249C13.5563 6.99374 13.3126 6.74999 12.9938 6.74999Z" fill="#C4122F"/>
                         <path d="M13.8374 0.487488C13.8374 0.468738 13.8187 0.449988 13.8187 0.431238C13.8187 0.412488 13.7999 0.393738 13.7999 0.374988C13.7999 0.356238 13.7812 0.337488 13.7624 0.318738C13.7624 0.299988 13.7437 0.299988 13.7437 0.281238C13.7062 0.224988 13.6499 0.168738 13.5937 0.131238C13.5749 0.131238 13.5749 0.112488 13.5562 0.112488C13.5374 0.0937378 13.5187 0.0937377 13.4999 0.0749877C13.4812 0.0749877 13.4624 0.0562378 13.4437 0.0562378C13.4249 0.0562378 13.4062 0.0374877 13.3874 0.0374877C13.3499 0.0374877 13.3124 0.0187378 13.2749 0.0187378H9.24365C8.9249 0.0187378 8.68115 0.262488 8.68115 0.581238C8.68115 0.899988 8.9249 1.14374 9.24365 1.14374H11.9437L5.6624 7.44374C5.4374 7.66874 5.4374 8.02499 5.6624 8.23124C5.7749 8.34374 5.9249 8.39999 6.05615 8.39999C6.1874 8.39999 6.3374 8.34374 6.4499 8.23124L12.7312 1.94999V4.66874C12.7312 4.98749 12.9749 5.23124 13.2937 5.23124C13.6124 5.23124 13.8562 4.98749 13.8562 4.66874V0.599988C13.8562 0.562488 13.8562 0.524988 13.8374 0.487488Z" fill="#C4122F"/>
-                    </svg>
-                    Visita también</div>
+                    </svg> Visita también</div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="row">
                     <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
