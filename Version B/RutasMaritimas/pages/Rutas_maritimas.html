@@ -47,7 +47,7 @@
                         </a>
                     </div>
                     <div class="icon-menu">
-                        <a class="" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <a class="a-menu" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.6667 3.59821H1.33333C0.6 3.59821 0 3.01361 0 2.2991C0 1.5846 0.6 1 1.33333 1H22.6667C23.4 1 24 1.5846 24 2.2991C24 3.01361 23.4 3.59821 22.6667 3.59821Z" fill="#282828"/>
                                 <path d="M22.6667 12.1965H1.33333C0.6 12.1965 0 11.6119 0 10.8974C0 10.1829 0.6 9.59827 1.33333 9.59827H22.6667C23.4 9.59827 24 10.1829 24 10.8974C24 11.6119 23.4 12.1965 22.6667 12.1965Z" fill="#282828"/>
@@ -64,7 +64,7 @@
         <div class="container-fluid py-4 container-principal">
             <!-- Inicio de vista principal -->
             <div class="d-display" id="view-global">
-                <div class="text-center mt-3">
+                <div class="text-center mt-3 contenedor-titulo">
                     <h5 class="titulo font-display negro-promperu">Rutas Marítimas</h5>
                     <p class="descripcion mb-5 font-H2-light negro-promperu">Conoce las principales rutas marítimas para tus exportaciones</p>
                 </div>
@@ -72,7 +72,7 @@
                     <div class="col-lg-12 mb-lg-0">
                         <div class="card">
                             <div class="row px-2 p-5 overflow-hidden padding-card-busqueda">
-                                <div class="col-lg-4 col-md-6 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
                                     <label class="font-label negro-promperu">Puerto de origen</label>
                                     <input type="text" class="form-control ptOrigen mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control ptOrigenMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
@@ -85,7 +85,7 @@
                                         <option value="2" class="font-H4-light-300 option-select font-color-black opCiudad">Matarani</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 position-relative ordenar">
+                                <div class="col-lg-4 col-md-4 col-sm-12 position-relative ordenar">
                                     <label class="font-label negro-promperu">Puerto de destino</label>
                                     <input type="text" class="form-control ptDestino ordenar puertoDestino mostrar-desktop font-H4-light" id="puertoDestino" value="Selecciona" /><i class="fas fa-angle-down icon-select ptDestino mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control ptDestino ordenar puertoDestinoMovil mostrar-movil font-H4-light" id="puertoDestino" value="Selecciona" /><i class="fas fa-angle-down icon-select ordenar"></i>
@@ -160,9 +160,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2 position-relative">
+                                <div class="col-lg-4 col-md-4 col-sm-12 mt-2 position-relative">
                                     <button class="btn btn-disabled btn-rutas mostrar-desktop width-100 btn-nivel-inline font-H4-bold" onclick="window.location.href='Mostrar_rutas.html'">Mostrar rutas</button>
-                                    <button class="btn btn-disabled btn-rutasMovil mostrar-movil font-H4-bold" onclick="window.location.href='Mostrar_rutas.html'">Mostrar rutas</button>
+                                    <button class="btn btn-disabled btn-rutasMovil mostrar-movil width-100 font-H4-bold" onclick="window.location.href='Mostrar_rutas.html'">Mostrar rutas</button>
                                 </div>
                             </div>
                         </div>
@@ -187,12 +187,12 @@
                 </div>
                 <div class="row">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 centrado">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 centrado contenedor-mapa-rutas">
                             <div class="titulo font-Display-2-Bold negro-promperu">Mapa de rutas</div>
-                            <div class="col-lg-8 col-md-6 col-sm-8 col-xs-8 text-left rem-1 font-H4-light">
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-left rem-1 font-H4-light negro-promperu">
                                 Descubre las principales rutas marítimas del comercio exportador
                             </div>
-                            <div class="col-lg-8 col-md-6 col-xs-12 position-relative">
+                            <div class="col-lg-8 col-md-8 col-sm-12 position-relative margin-16">
                                 <div class="text-left">
                                     <label class="font-label negro-promperu">País de destino</label>
                                     <input type="text" class="form-control mostrarpuerto ordenar mostrar-desktop font-H4-light gris-promperu" id="mostrarpuerto" value="Selecciona" /><i class="fas fa-angle-down icon-select mostrar-desktop ordenar"></i>
@@ -242,22 +242,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-4 centrado" id="btn-rutas2">
-                                <button class="btn btn-disabled btn-rutas2 mostrar-desktop">Mostrar rutas</button>
-                                <button class="btn btn-disabled btn-rutasMovil2 mostrar-movil">Mostrar rutas</button>
+                            <div class="col-lg-8 col-md-8 col-sm-12 mt-4 centrado" id="btn-rutas2">
+                                <button class="btn btn-disabled btn-rutas2 mostrar-desktop width-100 font-H4-bold">Mostrar rutas</button>
+                                <button class="btn btn-disabled btn-rutasMovil2 mostrar-movil width-100 font-H4-bold">Mostrar rutas</button>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6 mt-4 centro ocultar-movil">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mt-4 centro mostrar-desktop">
                             <img src="../assets/img/Ruta_Marina/mapa de las rutas_ilustracion.png" alt="mapa_ruta" class="img">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="mostrar-desktop">
-                    <div class="card mostrarRutas">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center font-color-blue font-size-25 font-H2-light-400">4 rutas encontradas</div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="mostrar-desktop margin-16">
+                    <div class="card mostrarRutas mostrarRutasDesktop">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center font-color-blue font-size-25 font-H2-light-400">3 rutas encontradas</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br><br></div>
                         <div class="row px-2">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-size-22 font-weight-bold font-h3-bold font-weight-bold font-h3-bold">Costa Este EE.UU.</div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-h3-light-400"> 7 escalas</div>
@@ -270,7 +270,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="scroll-card rem-1">
+                        <div class="scroll-card rem-1" style="height:145px;">
                             <div class="div-line-time col-line-time-13">
                                 <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
                                 <div class="div-right position-line-right">
@@ -344,129 +344,6 @@
                                 <div class="centro position-line-left">
                                     <div class="text-line-title font-H5-bold font-color-black">Seattle</div>
                                     <div class="text-pais font-H5-light-400 font-color-black font-color-black">EE.UU.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                        <div class="row px-2">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-size-22 font-weight-bold font-h3-bold font-weight-bold">Costa Oeste EE.UU.</div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-h3-light-400"> 10 escalas</div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                    <div class="cicle-avatar div-left">
-                                        <i class="far fa-map font-color-white"></i>
-                                    </div>
-                                    <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="scroll-card rem-1">
-                            <div class="div-line-time col-line-time-19">
-                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
-                                <div class="div-right position-line-right">
-                                    <div class="text-line-title font-H5-bold font-color-black">Callao</div>
-                                    <div class="text-pais font-H5-light-400 font-color-black">Perú</div>
-                                </div>
-                            </div>
-                            <div class="col-line-time-19 ">
-                                <div class="font-color-black">
-                                    <div class="cant-dias font-H5-light">2 días</div>
-                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
-                                </div>
-                            </div>
-                            <div class="col-line-time-19 text-center icon-line">
-                                <i class="fas fa-dot-circle font-color-black"></i>
-                                <div class="text-line-title font-H5-bold font-color-black">Balboa</div>
-                                <div class="text-pais font-H5-light-400 font-color-black">Pánama</div>
-                            </div>
-                            <div class="col-line-time-19 text-center">
-                                <div class="font-color-black">
-                                    <div class="cant-dias font-H5-light">3 días</div>
-                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
-                                </div>
-                            </div>
-                            <div class="col-line-time-19 text-center icon-line">
-                                <i class="fas fa-dot-circle font-color-black"></i>
-                                <div class="text-line-title font-H5-bold font-color-black">Miami</div>
-                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU.</div>
-                            </div>
-                            <div class="col-line-time-19 text-center">
-                                <div class="font-color-black">
-                                    <div class="cant-dias font-H5-light">3 días</div>
-                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
-                                </div>
-                            </div>
-                            <div class="col-line-time-19 text-center icon-line">
-                                <i class="fas fa-dot-circle font-color-black"></i>
-                                <div class="text-line-title font-H5-bold font-color-black">Port Everglades</div>
-                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU.</div>
-                            </div>
-                            <div class="col-line-time-19 text-center">
-                                <div class="font-color-black">
-                                    <div class="cant-dias font-H5-light">2 días</div>
-                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
-                                </div>
-                            </div>
-                            <div class="col-line-time-19 text-center icon-line">
-                                <i class="fas fa-dot-circle font-color-black"></i>
-                                <div class="text-line-title font-H5-bold font-color-black">Charleston</div>
-                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU.</div>
-                            </div>
-                            <div class="col-line-time-19 text-center">
-                                <div class="font-color-black">
-                                    <div class="cant-dias font-H5-light">3 días</div>
-                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
-                                </div>
-                            </div>
-                            <div class="col-line-time-19 text-center icon-line">
-                                <i class="fas fa-dot-circle font-color-black"></i>
-                                <div class="text-line-title font-H5-bold font-color-black">Norfolk</div>
-                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU</div>
-                            </div>
-                            <div class="col-line-time-19 text-center">
-                                <div class="font-color-black">
-                                    <div class="cant-dias font-H5-light">1 días</div>
-                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
-                                </div>
-                            </div>
-                            <div class="col-line-time-19 text-center icon-line">
-                                <i class="fas fa-dot-circle font-color-black"></i>
-                                <div class="text-line-title font-H5-bold font-color-black">Baltimore</div>
-                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU</div>
-                            </div>
-                            <div class="col-line-time-19 text-center">
-                                <div class="font-color-black">
-                                    <div class="cant-dias font-H5-light">2 días</div>
-                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
-                                </div>
-                            </div>
-                            <div class="col-line-time-19 text-center icon-line">
-                                <i class="fas fa-dot-circle font-color-black"></i>
-                                <div class="text-line-title font-H5-bold font-color-black">New York</div>
-                                <div class="text-pais font-H5-light-400 font-color-black">EE.UU</div>
-                            </div>
-                            <div class="col-line-time-19 text-center">
-                                <div class="font-color-black">
-                                    <div class="cant-dias font-H5-light">1 días</div>
-                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
-                                </div>
-                            </div>
-                            <div class="col-line-time-19 text-center icon-line">
-                                <i class="fas fa-dot-circle font-color-black"></i>
-                                <div class="text-line-title font-H5-bold font-color-black">Montreal</div>
-                                <div class="text-pais font-H5-light-400 font-color-black">Canada</div>
-                            </div>
-                            <div class="col-line-time-19 text-center">
-                                <div class="font-color-black">
-                                    <div class="cant-dias font-H5-light">1 días</div>
-                                    <div><img src="../assets/img/Ruta_Marina/Line 66.png" alt="lineas"> </div>
-                                </div>
-                            </div>
-                            <div class="div-line-time col-line-time-19">
-                                <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
-                                <div class="centro position-line-left">
-                                    <div class="text-line-title font-H5-bold font-color-black">Avonlea</div>
-                                    <div class="text-pais font-H5-light-400 font-color-black font-color-black">Canada</div>
                                 </div>
                             </div>
                         </div>
@@ -571,7 +448,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br><br></div>
                         <div class="row px-2">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-size-22 font-weight-bold font-h3-bold font-weight-bold">EE.UU. Pacífico</div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-h3-light-400"> Sin escalas</div>
@@ -606,7 +483,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br><br></div>
                     </div>
                 </div>
                 <div class="rem-1 mostrarRutas mostrar-movil">
@@ -617,84 +494,200 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                     <div class="card-body p-3">
                         <div class="row">
-                            <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CE" aria-expanded="true" aria-controls="mostrarDetalle-CE">
-                                <div class="col-10 text-line-title font-color-black font-size-25 font-weight-bold acordion-hover div-left">
+                            <div class="col-12 pointer" id="ruta1" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CEI" aria-expanded="true" aria-controls="mostrarDetalle-CEI">
+                                <div class="col-10 text-line-title font-color-black  font-H3-bold negro-promperu acordion-hover div-left">
                                     Costa Este EE.UU
                                 </div>
-                                <div class="col-2 text-line-title font-color-red div-left mt-3">
-                                    <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                <div class="col-2 text-line-title font-color-red div-left" id="flecha1">
+                                    <svg class="div-right icon-right" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5258 9.42517L2.62162 0.409868C2.30425 0.118284 1.87312 -0.0304829 1.44797 0.00522125C1.01683 0.0349747 0.615632 0.243249 0.346171 0.576488C-0.168799 1.21321 -0.102931 2.14152 0.501859 2.69494L8.77731 10.2999C8.84916 10.3713 8.86114 10.4546 8.86114 10.4963C8.86114 10.5379 8.84916 10.6213 8.77731 10.6927L0.501859 18.3036C-0.102931 18.857 -0.168799 19.7913 0.346171 20.4221C0.615632 20.7553 1.01683 20.9636 1.44797 20.9933C1.4839 20.9933 1.52581 20.9993 1.56174 20.9993C1.95096 20.9993 2.33419 20.8565 2.62162 20.5887L12.5258 11.5734C12.8252 11.2996 12.9989 10.9069 12.9989 10.5022C12.9989 10.0916 12.8252 9.6989 12.5258 9.42517Z" fill="#C4122F"/>
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CE">
+                            <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CEI">
+                                <br>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="ordenar" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
-                                        <div class="cicle-avatar div-left">
-                                            <i class="far fa-map font-color-white"></i>
+                                        
+                                        
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xs-12">
+                                                <div class="cicle-avatar div-left icon-map">
+                                                    <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.37565 0.399976L9.3315 0.377124L9.20181 0.262845L9.16594 0.285697L9.12456 0.262845L9.00039 0.38095L4.82578 2.82285L0 0V16.899L4.66575 19.6267L4.79819 19.7409L4.83681 19.7181L4.87544 19.7409L4.99133 19.6267L9.17422 17.1772L14 20V3.10096L9.37565 0.400018V0.399976ZM13.0398 3.97711V18.0038L9.65157 16.0228V1.99618L13.0398 3.97711ZM8.69414 1.99616V16.0228L5.30313 18.0038V3.97709L8.69414 1.99616ZM4.34846 3.97711V18.0038L0.960213 16.0228V1.99618L4.34846 3.97711Z" fill="white"/>
+                                                    </svg>
+                                                </div>
+                                                
+                                                <div class="font-H5-bold font-color-red div-left ver-mapa">&nbsp;&nbsp;Ver mapa</div>
+                                                <svg class="icon-right" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.5741 13.6332L20.5894 3.09393C20.881 2.75621 21.0298 2.29743 20.994 1.84501C20.9643 1.38623 20.756 0.959307 20.4228 0.672567C19.7861 0.124576 18.8577 0.194668 18.3043 0.838239L10.6993 9.64434C10.6279 9.7208 10.5446 9.73355 10.503 9.73355C10.4613 9.73355 10.378 9.7208 10.3066 9.64434L2.69567 0.838239C2.14225 0.194667 1.20799 0.124575 0.577219 0.672567C0.24398 0.959306 0.0357055 1.38623 0.00595277 1.84501C0.00595277 1.88325 -6.66953e-08 1.92785 -6.82658e-08 1.96608C-8.52792e-08 2.38026 0.142818 2.78807 0.410601 3.09393L9.4259 13.6332C9.69963 13.9518 10.0924 14.1366 10.497 14.1366C10.9076 14.1366 11.3004 13.9518 11.5741 13.6332Z" fill="#C4122F"/>
+                                                </svg>
+                                            </div>   
+                                            <br>
+                                            <br>
+                                            <div class="col-sm-6 col-xs-6 font-normal negro-promperu">
+                                                <div class="font-weight-bold">1 - Matarani</div>
+                                                <div class="font-weight-bold">2 - Callao</div>
+                                                <div class="font-weight-bold">3 - Paita</div>
+                                                <div class="font-weight-bold">4 - Cartagena</div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-6 font-normal negro-promperu">
+                                                <div class="font-weight-bold">5 - Puerto Cabello</div>
+                                                <div class="font-weight-bold">6 - Vera Cruz</div>
+                                                <div class="font-weight-bold">7 - Houston</div>
+                                                <div class="font-weight-bold">8 - New Orelans</div>
+                                            </div>
                                         </div>
-                                        <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                            <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CO" aria-expanded="true" aria-controls="mostrarDetalle-CO">
-                                <div class="col-10 text-line-title font-color-black font-size-25 font-weight-bold acordion-hover div-left">
+                            <div class="col-12 pointer" id="ruta2" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CO" aria-expanded="true" aria-controls="mostrarDetalle-CO">
+                                <div class="col-10 text-line-title font-color-black font-H3-bold negro-promperu acordion-hover div-left">
                                     Costa Oeste EE.UU
                                 </div>
-                                <div class="col-2 text-line-title font-color-red div-left mt-3">
-                                    <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                <div class="col-2 text-line-title font-color-red div-left" id="flecha2">
+                                    <svg class="div-right icon-right" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5258 9.42517L2.62162 0.409868C2.30425 0.118284 1.87312 -0.0304829 1.44797 0.00522125C1.01683 0.0349747 0.615632 0.243249 0.346171 0.576488C-0.168799 1.21321 -0.102931 2.14152 0.501859 2.69494L8.77731 10.2999C8.84916 10.3713 8.86114 10.4546 8.86114 10.4963C8.86114 10.5379 8.84916 10.6213 8.77731 10.6927L0.501859 18.3036C-0.102931 18.857 -0.168799 19.7913 0.346171 20.4221C0.615632 20.7553 1.01683 20.9636 1.44797 20.9933C1.4839 20.9933 1.52581 20.9993 1.56174 20.9993C1.95096 20.9993 2.33419 20.8565 2.62162 20.5887L12.5258 11.5734C12.8252 11.2996 12.9989 10.9069 12.9989 10.5022C12.9989 10.0916 12.8252 9.6989 12.5258 9.42517Z" fill="#C4122F"/>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CO">
+                                <br>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                        <div class="cicle-avatar div-left">
-                                            <i class="far fa-map font-color-white"></i>
+                                    <div class="ordenar" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
+                                        
+                                        
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xs-12">
+                                                <div class="cicle-avatar div-left icon-map">
+                                                    <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.37565 0.399976L9.3315 0.377124L9.20181 0.262845L9.16594 0.285697L9.12456 0.262845L9.00039 0.38095L4.82578 2.82285L0 0V16.899L4.66575 19.6267L4.79819 19.7409L4.83681 19.7181L4.87544 19.7409L4.99133 19.6267L9.17422 17.1772L14 20V3.10096L9.37565 0.400018V0.399976ZM13.0398 3.97711V18.0038L9.65157 16.0228V1.99618L13.0398 3.97711ZM8.69414 1.99616V16.0228L5.30313 18.0038V3.97709L8.69414 1.99616ZM4.34846 3.97711V18.0038L0.960213 16.0228V1.99618L4.34846 3.97711Z" fill="white"/>
+                                                    </svg>
+                                                </div>
+                                                
+                                                <div class="font-H5-bold font-color-red div-left ver-mapa">&nbsp;&nbsp;Ver mapa</div>
+                                                <svg class="icon-right" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.5741 13.6332L20.5894 3.09393C20.881 2.75621 21.0298 2.29743 20.994 1.84501C20.9643 1.38623 20.756 0.959307 20.4228 0.672567C19.7861 0.124576 18.8577 0.194668 18.3043 0.838239L10.6993 9.64434C10.6279 9.7208 10.5446 9.73355 10.503 9.73355C10.4613 9.73355 10.378 9.7208 10.3066 9.64434L2.69567 0.838239C2.14225 0.194667 1.20799 0.124575 0.577219 0.672567C0.24398 0.959306 0.0357055 1.38623 0.00595277 1.84501C0.00595277 1.88325 -6.66953e-08 1.92785 -6.82658e-08 1.96608C-8.52792e-08 2.38026 0.142818 2.78807 0.410601 3.09393L9.4259 13.6332C9.69963 13.9518 10.0924 14.1366 10.497 14.1366C10.9076 14.1366 11.3004 13.9518 11.5741 13.6332Z" fill="#C4122F"/>
+                                                </svg>
+                                            </div>   
+                                            <br>
+                                            <br>
+                                            <div class="col-sm-6 col-xs-6 font-normal negro-promperu">
+                                                <div class="font-weight-bold">1 - Matarani</div>
+                                                <div class="font-weight-bold">2 - Callao</div>
+                                                <div class="font-weight-bold">3 - Paita</div>
+                                                <div class="font-weight-bold">4 - Cartagena</div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-6 font-normal negro-promperu">
+                                                <div class="font-weight-bold">5 - Puerto Cabello</div>
+                                                <div class="font-weight-bold">6 - Vera Cruz</div>
+                                                <div class="font-weight-bold">7 - Houston</div>
+                                                <div class="font-weight-bold">8 - New Orelans</div>
+                                            </div>
                                         </div>
-                                        <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                            <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CE" aria-expanded="true" aria-controls="mostrarDetalle-CE">
-                                <div class="col-10 text-line-title font-color-black font-size-25 font-weight-bold acordion-hover div-left">
+                            <div class="col-12 pointer" id="ruta3" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CE" aria-expanded="true" aria-controls="mostrarDetalle-CE">
+                                <div class="col-10 text-line-title font-color-black font-H3-bold negro-promperu acordion-hover div-left">
                                     Costa Golfo EE.UU.
                                 </div>
-                                <div class="col-2 text-line-title font-color-red div-left mt-3">
-                                    <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                <div class="col-2 text-line-title font-color-red div-left" id="flecha3">
+                                    <svg class="div-right icon-right" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5258 9.42517L2.62162 0.409868C2.30425 0.118284 1.87312 -0.0304829 1.44797 0.00522125C1.01683 0.0349747 0.615632 0.243249 0.346171 0.576488C-0.168799 1.21321 -0.102931 2.14152 0.501859 2.69494L8.77731 10.2999C8.84916 10.3713 8.86114 10.4546 8.86114 10.4963C8.86114 10.5379 8.84916 10.6213 8.77731 10.6927L0.501859 18.3036C-0.102931 18.857 -0.168799 19.7913 0.346171 20.4221C0.615632 20.7553 1.01683 20.9636 1.44797 20.9933C1.4839 20.9933 1.52581 20.9993 1.56174 20.9993C1.95096 20.9993 2.33419 20.8565 2.62162 20.5887L12.5258 11.5734C12.8252 11.2996 12.9989 10.9069 12.9989 10.5022C12.9989 10.0916 12.8252 9.6989 12.5258 9.42517Z" fill="#C4122F"/>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CE">
+                                <br>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                        <div class="cicle-avatar div-left">
-                                            <i class="far fa-map font-color-white"></i>
+                                    <div class="ordenar" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
+                                        
+                                        
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xs-12">
+                                                <div class="cicle-avatar div-left icon-map">
+                                                    <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.37565 0.399976L9.3315 0.377124L9.20181 0.262845L9.16594 0.285697L9.12456 0.262845L9.00039 0.38095L4.82578 2.82285L0 0V16.899L4.66575 19.6267L4.79819 19.7409L4.83681 19.7181L4.87544 19.7409L4.99133 19.6267L9.17422 17.1772L14 20V3.10096L9.37565 0.400018V0.399976ZM13.0398 3.97711V18.0038L9.65157 16.0228V1.99618L13.0398 3.97711ZM8.69414 1.99616V16.0228L5.30313 18.0038V3.97709L8.69414 1.99616ZM4.34846 3.97711V18.0038L0.960213 16.0228V1.99618L4.34846 3.97711Z" fill="white"/>
+                                                    </svg>
+                                                </div>
+                                                
+                                                <div class="font-H5-bold font-color-red div-left ver-mapa">&nbsp;&nbsp;Ver mapa</div>
+                                                <svg class="icon-right" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.5741 13.6332L20.5894 3.09393C20.881 2.75621 21.0298 2.29743 20.994 1.84501C20.9643 1.38623 20.756 0.959307 20.4228 0.672567C19.7861 0.124576 18.8577 0.194668 18.3043 0.838239L10.6993 9.64434C10.6279 9.7208 10.5446 9.73355 10.503 9.73355C10.4613 9.73355 10.378 9.7208 10.3066 9.64434L2.69567 0.838239C2.14225 0.194667 1.20799 0.124575 0.577219 0.672567C0.24398 0.959306 0.0357055 1.38623 0.00595277 1.84501C0.00595277 1.88325 -6.66953e-08 1.92785 -6.82658e-08 1.96608C-8.52792e-08 2.38026 0.142818 2.78807 0.410601 3.09393L9.4259 13.6332C9.69963 13.9518 10.0924 14.1366 10.497 14.1366C10.9076 14.1366 11.3004 13.9518 11.5741 13.6332Z" fill="#C4122F"/>
+                                                </svg>
+                                            </div>   
+                                            <br>
+                                            <br>
+                                            <div class="col-sm-6 col-xs-6 font-normal negro-promperu">
+                                                <div class="font-weight-bold">1 - Matarani</div>
+                                                <div class="font-weight-bold">2 - Callao</div>
+                                                <div class="font-weight-bold">3 - Paita</div>
+                                                <div class="font-weight-bold">4 - Cartagena</div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-6 font-normal negro-promperu">
+                                                <div class="font-weight-bold">5 - Puerto Cabello</div>
+                                                <div class="font-weight-bold">6 - Vera Cruz</div>
+                                                <div class="font-weight-bold">7 - Houston</div>
+                                                <div class="font-weight-bold">8 - New Orelans</div>
+                                            </div>
                                         </div>
-                                        <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                            <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-pacifico" aria-expanded="true" aria-controls="mostrarDetalle-pacifico">
-                                <div class="col-10 text-line-title font-color-black font-size-25 font-weight-bold acordion-hover div-left">
+                            <div class="col-12 pointer" id="ruta4" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-pacifico" aria-expanded="true" aria-controls="mostrarDetalle-pacifico">
+                                <div class="col-10 text-line-title font-color-black font-size-25 font-H3-bold negro-promperu acordion-hover div-left">
                                     EE.UU. Pacífico
                                 </div>
-                                <div class="col-2 text-line-title font-color-red div-left mt-3">
-                                    <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                <div class="col-2 text-line-title font-color-red div-left" id="flecha4">
+                                    <svg class="div-right icon-right" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5258 9.42517L2.62162 0.409868C2.30425 0.118284 1.87312 -0.0304829 1.44797 0.00522125C1.01683 0.0349747 0.615632 0.243249 0.346171 0.576488C-0.168799 1.21321 -0.102931 2.14152 0.501859 2.69494L8.77731 10.2999C8.84916 10.3713 8.86114 10.4546 8.86114 10.4963C8.86114 10.5379 8.84916 10.6213 8.77731 10.6927L0.501859 18.3036C-0.102931 18.857 -0.168799 19.7913 0.346171 20.4221C0.615632 20.7553 1.01683 20.9636 1.44797 20.9933C1.4839 20.9933 1.52581 20.9993 1.56174 20.9993C1.95096 20.9993 2.33419 20.8565 2.62162 20.5887L12.5258 11.5734C12.8252 11.2996 12.9989 10.9069 12.9989 10.5022C12.9989 10.0916 12.8252 9.6989 12.5258 9.42517Z" fill="#C4122F"/>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-pacifico">
+                                <br>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                        <div class="cicle-avatar div-left">
-                                            <i class="far fa-map font-color-white"></i>
+                                    <div class="ordenar" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
+                                        
+                                        
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xs-12">
+                                                <div class="cicle-avatar div-left icon-map">
+                                                    <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.37565 0.399976L9.3315 0.377124L9.20181 0.262845L9.16594 0.285697L9.12456 0.262845L9.00039 0.38095L4.82578 2.82285L0 0V16.899L4.66575 19.6267L4.79819 19.7409L4.83681 19.7181L4.87544 19.7409L4.99133 19.6267L9.17422 17.1772L14 20V3.10096L9.37565 0.400018V0.399976ZM13.0398 3.97711V18.0038L9.65157 16.0228V1.99618L13.0398 3.97711ZM8.69414 1.99616V16.0228L5.30313 18.0038V3.97709L8.69414 1.99616ZM4.34846 3.97711V18.0038L0.960213 16.0228V1.99618L4.34846 3.97711Z" fill="white"/>
+                                                    </svg>
+                                                </div>
+                                                
+                                                <div class="font-H5-bold font-color-red div-left ver-mapa">&nbsp;&nbsp;Ver mapa</div>
+                                                <svg class="icon-right" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.5741 13.6332L20.5894 3.09393C20.881 2.75621 21.0298 2.29743 20.994 1.84501C20.9643 1.38623 20.756 0.959307 20.4228 0.672567C19.7861 0.124576 18.8577 0.194668 18.3043 0.838239L10.6993 9.64434C10.6279 9.7208 10.5446 9.73355 10.503 9.73355C10.4613 9.73355 10.378 9.7208 10.3066 9.64434L2.69567 0.838239C2.14225 0.194667 1.20799 0.124575 0.577219 0.672567C0.24398 0.959306 0.0357055 1.38623 0.00595277 1.84501C0.00595277 1.88325 -6.66953e-08 1.92785 -6.82658e-08 1.96608C-8.52792e-08 2.38026 0.142818 2.78807 0.410601 3.09393L9.4259 13.6332C9.69963 13.9518 10.0924 14.1366 10.497 14.1366C10.9076 14.1366 11.3004 13.9518 11.5741 13.6332Z" fill="#C4122F"/>
+                                                </svg>
+                                            </div>   
+                                            <br>
+                                            <br>
+                                            <div class="col-sm-6 col-xs-6 font-normal negro-promperu">
+                                                <div class="font-weight-bold">1 - Matarani</div>
+                                                <div class="font-weight-bold">2 - Callao</div>
+                                                <div class="font-weight-bold">3 - Paita</div>
+                                                <div class="font-weight-bold">4 - Cartagena</div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-6 font-normal negro-promperu">
+                                                <div class="font-weight-bold">5 - Puerto Cabello</div>
+                                                <div class="font-weight-bold">6 - Vera Cruz</div>
+                                                <div class="font-weight-bold">7 - Houston</div>
+                                                <div class="font-weight-bold">8 - New Orelans</div>
+                                            </div>
                                         </div>
-                                        <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
                                     </div>
                                 </div>
                             </div>
@@ -707,35 +700,37 @@
             </div>
             <div class="row my-4">
                 <div class="col-lg-12 col-md-12 mb-md-0 mb-4">
-                    <div class="card">
+                    <div class="card card-consulta">
                         <div class="card-body px-0 pb-2">
                             <div class="row px-4">
-                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 centrado">
                                     <div class="text-center">
                                         <img src="../assets/img/Ruta_Marina/tiene alguna pregunta_ilustracion.png" alt="pregunta" class="width-movil img-consulta">
                                     </div>
-                                    <h6 class="sub-titulo mt-6 font-H2-bold">¿Tienes alguna pregunta?</h6>
-                                    <p class=" font-H4-light-400 text-center">
-                                        Si tienes una consulta particular sobre la herramienta escríbenos y resolveremos tu duda
-                                            
-                                    </p>
-                                    <div class=" centro">
-                                        <div class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-informativo">Escríbenos</div>
+                                    <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12 sub-titulo mt-6 font-H2-bold">¿Tienes alguna consulta?</div>
+                                    <br>
+                                    <div class="col-lg-7 col-md-9 col-sm-12 col-xs-12 font-H4-light-400 text-center negro-promperu">
+                                        Si tienes alguna consulta, escríbenos y la resolveremos a la brevedad posible
+                                    </div>
+                                    <br>
+                                    <div class="col-lg-5 col-md-7 col-sm-12 col-xs-12 centro">
+                                        <div class="btn btn-danger width-100 font-H4-bold" data-bs-toggle="modal" data-bs-target="#m-informativo">Escríbenos</div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 centrado">
                                     <div class="text-center">
                                         <img src="../assets/img/Ruta_Marina/queremos saber tu opinion_ilustracion.png" alt="opinion" class="width-movil img-consulta">
                                     </div>
-                                    <h6 class="sub-titulo mt-6 font-H2-bold">Queremos saber su opinión</h6>
-                                    <p class="col-lg-6 col-md-12 col-sm-12  col-xs-12">
-                                        <span class="font-weight-bold font-H4-light-400">
-                                                PROMPERÚ se esfuerza constantemente por mejorar sus servicios. Si tienes sugerencias o comentarios completa el siguiente formulario.
-                                            </span>
-                                    </p>
-                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 centro">
-                                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-opinion">Dejar mi opinión</button>
+                                    <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12 sub-titulo mt-6 font-H2-bold">Queremos saber tu opinión</div>
+                                    <br>
+                                    <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12 font-H4-light-400 text-center negro-promperu">
+                                        PROMPERÚ se esfuerza por mejorar sus servicios. Si tienes sugerencias o comentarios completa el siguiente formulario
+                                        
+                                    </div>
+                                    <br>
+                                    <div class="col-lg-5 col-md-7 col-sm-12 col-xs-12 centro">
+                                        <button class="btn btn-danger width-100 font-H4-bold" data-bs-toggle="modal" data-bs-target="#m-opinion">Deja tu opinión</button>
                                     </div>
                                 </div>
                             </div>
@@ -745,34 +740,45 @@
             </div>
         </div>
         <!-- Fin de vista principal -->
-        <footer class="footer pt-3" id="footer">
+        <footer class="footer " id="footer">
             <div class="container-fluid">
                 <div id="footer-Desktop" class="mostrar-desktop">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-lg-12 mb-lg-0 mb-4">
                             <div class="text-center font-helvetica-footer">
-                                Para mas información escribanos a :
+                                Para más información escríbenos a:
                             </div>
                         </div>
+                        <br>
                         <div class="col-lg-12 text-center font-weight-bold font-helvetica-footer-bold">
                             correo@promperu.gob.pe
                         </div>
                         <div class="justify-content-between text-center mt-3">
-                            <i class="fab fa-linkedin-in icon-redes"></i>
-                            <i class="fab fa-facebook icon-redes"></i>
-                            <i class="fab fa-twitter icon-redes"></i>
-                            <i class="fab fa-youtube icon-redes"></i>
+                            <svg class="icon-redes" width="18" height="15" viewBox="3 -2 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.07616 1.94897C4.07616 3.02897 3.29276 3.89793 2.00136 3.89793C0.783407 3.90414 0 3.02897 0 1.94897C0 0.850345 0.807888 0 2.05032 0C3.29276 0 4.05168 0.850345 4.07616 1.94897ZM0.104046 18V5.44345H3.95376V18H0.104046Z" fill="black"/>
+                                <path d="M6.25541 9.44705C6.25541 7.88291 6.20645 6.57325 6.15137 5.4436H9.49309L9.67058 7.18774H9.74402C10.252 6.36843 11.4883 5.15808 13.5693 5.15808C16.1031 5.15808 18.0004 6.87739 18.0004 10.5767V18.0001H14.1507V11.0422C14.1507 9.42222 13.5937 8.3236 12.1983 8.3236C11.1333 8.3236 10.5029 9.06843 10.2214 9.78842C10.1174 10.0429 10.0929 10.4029 10.0929 10.7629V18.0001H6.24317V9.44705H6.25541Z" fill="black"/>
+                            </svg>
+                            <svg class="icon-redes" width="10" height="18" viewBox="-1 -2 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.82621 9.78828L9.24207 6.58552H6.06414V4.54345C6.06414 3.61862 6.32483 2.98552 7.6531 2.98552H9.34759V0.124138C9.05586 0.0868966 8.05035 0 6.87724 0C4.43793 0 2.76207 1.48966 2.76207 4.2331V6.59172H0V9.79448H2.76207V18H6.06414V9.78828H8.82621Z" fill="black"/>
+                            </svg>
+                            <svg class="icon-redes" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5055 0.272498C16.7939 0.696383 16.0017 1.00421 15.159 1.17073C14.4828 0.449117 13.524 0 12.4643 0C10.4256 0 8.77039 1.65517 8.77039 3.69386C8.77039 3.98654 8.80572 4.26409 8.86627 4.53658C5.7931 4.3852 3.07317 2.91169 1.24643 0.676198C0.933558 1.22119 0.746846 1.85702 0.746846 2.53322C0.746846 3.81497 1.39781 4.94533 2.39193 5.60639C1.78637 5.58621 1.21615 5.41968 0.721615 5.14214V5.18755C0.721615 6.97897 1.99327 8.47266 3.68377 8.81076C3.37595 8.89655 3.04794 8.94197 2.70984 8.94197C2.47267 8.94197 2.24054 8.91674 2.01346 8.87637C2.48276 10.3448 3.84525 11.4146 5.4651 11.4449C4.20353 12.434 2.60891 13.0244 0.878049 13.0244C0.58032 13.0244 0.287637 13.0042 0 12.9739C1.62994 14.0235 3.57275 14.6341 5.65685 14.6341C12.4491 14.6341 16.1682 9.00757 16.1682 4.12279C16.1682 3.96131 16.1632 3.80488 16.1581 3.6434C16.8797 3.12363 17.5055 2.47267 18 1.73087C17.3389 2.02355 16.6274 2.2254 15.8806 2.31119C16.6426 1.85702 17.2279 1.13541 17.5055 0.272498Z" fill="black"/>
+                                </svg>
+                            <svg class="icon-redes" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.5676 2.31177C20.3236 1.40259 19.614 0.687434 18.7104 0.443506C17.0694 0 10.5 0 10.5 0C10.5 0 3.93611 0 2.29514 0.443506C1.3915 0.687434 0.68189 1.40259 0.437962 2.31177C0 3.95829 0 7.401 0 7.401C0 7.401 0 10.8382 0.437962 12.4902C0.68189 13.3994 1.3915 14.1146 2.29514 14.3585C3.93057 14.802 10.5 14.802 10.5 14.802C10.5 14.802 17.0694 14.802 18.7049 14.3585C19.6085 14.1146 20.3181 13.3994 20.562 12.4902C21 10.8437 21 7.401 21 7.401C21 7.401 21.0055 3.95829 20.5676 2.31177ZM8.35454 10.5222V4.27429L13.8429 7.39546L8.35454 10.5222Z" fill="black"/>
+                            </svg>
+                                    
                         </div>
                         <div class="hr col-lg-6 mt-4 background-black"></div>
                         <div class="row mt-3">
-                            <div class="col-3 mt-2">
+                            <div class="col-lg-3 col-md-4 col-sm-3 mt-2">
                                 <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
                             </div>
-                            <div class="copyright col-6 font-helvetica-coryright">
+                            <div class="col-lg-6 col-md-4 col-sm-12 mt-2 copyright col-6 font-helvetica-coryright">
                                 Copyright © 2021 PROMPERU. Todos los derechos reservados
                             </div>
-                            <div class="col-3 mt-n3">
-                                <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                            <div class="col-lg-3 col-md-4 col-sm-3 mt-n3">
+                                <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter-promperu div-right">
                             </div>
                         </div>
                     </div>
@@ -794,16 +800,18 @@
                             <i class="fab fa-youtube icon-redes"></i>
                         </div>
                         <div class="hr col-lg-6 mt-2 background-gris"></div>
+                        <div class="row"><br><br></div>
                         <div class="row mt-2">
-                            <div class="col-6 div-left">
+                            <div class="col-6 div-left contenedor-img-movil">
                                 <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
                             </div>
-                            <div class="col-6 div-left">
-                                <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                            <div class="col-6 div-left contenedor-img-movil">
+                                <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter-promperu div-right">
                             </div>
                             <div class="copyright col-12 font-helvetica-coryright">
                                 Copyright © 2021 PROMPERU. Todos los derechos reservados
                             </div>
+                            <div class="row"><br><br></div>
                         </div>
                     </div>
                 </div>
@@ -827,9 +835,9 @@
                     </div>
                 </div>
                 <div class="mt-5">
-                    <option class="select-movil font-H4-light-300 option-select mt-3 opOrigenMovil" value="1">Callao, Lima</option>
-                    <option class="select-movil font-H4-light-300 option-select mt-3 opOrigenMovil" value="2">Matarani, Arequipa</option>
-                    <option class="select-movil font-H4-light-300 option-select mt-3 opOrigenMovil" value="3">Paita, Piura</option>
+                    <option class="select-movil font-H4-light-300 option-select mt-3 opOrigenMovil negro-promperu" value="1"><span>Callao, Lima</span></option>
+                    <option class="select-movil font-H4-light-300 option-select mt-3 opOrigenMovil negro-promperu" value="2">Matarani, Arequipa</option>
+                    <option class="select-movil font-H4-light-300 option-select mt-3 opOrigenMovil negro-promperu" value="3">Paita, Piura</option>
                 </div>
             </div>
             <div id="PuertoDestino-movil" class="PuertoDestino-movil">
@@ -1001,32 +1009,32 @@
     <div class="modal fade" id="m-informativo" tabindex="-1" aria-labelledby="m-informativo" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title font-h3-bold-700 negro-promperu" id="exampleModalLabel">Indicanos tu consulta</h5>
+                <div class="modal-header header-modal">
+                    <h5 class="modal-title font-h3-bold-700 negro text-center" id="exampleModalLabel">Indicanos tu consulta</h5>
                     <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
                         <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="col-6 div-left">
+                    <div class="col-6 div-left padding-left-right-1">
                         <label class="font-label-400 negro-promperu">Nombres</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-6 div-left">
+                    <div class="col-6 div-left padding-left-right-1">
                         <label class="font-label-400 negro-promperu">Apellidos</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-6 div-left">
+                    <div class="col-6 div-left padding-left-right-1">
                         <label class="font-label-400 negro-promperu">Correo electrónico</label>
                         <input type="text" class="form-control font-H4-light-300" placeholder="ejemplo@correo.com">
                     </div>
-                    <div class="col-12 div-left">
+                    <div class="col-12 div-left padding-left-right-1">
                         <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
                         <textarea type="text" class="form-control"></textarea>
-                        <span class="span-textarea font-smallprint-medium">Máximo 189 cáracteres</span>
+                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 189 cáracteres</span>
                     </div>
                     <div class="col-6 div-left mt-4">
-                        <button class="btn btn-primary btn-danger" type="button">Enviar</button>
+                        <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -1037,42 +1045,42 @@
     <div class="modal fade" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title font-h3-bold-700 negro-promperu" id="exampleModalLabel">Brindanos tu opinión</h5>
+                <div class="modal-header header-modal">
+                    <h5 class="modal-title font-h3-bold-700 negro-promperu" id="exampleModalLabel">Deja tu opinión</h5>
                     <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
                         <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="col-6 div-left">
+                    <div class="col-6 div-left padding-left-right-1">
                         <label class="font-label-400 negro-promperu">Nombres</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-6 div-left">
+                    <div class="col-6 div-left padding-left-right-1">
                         <label class="font-label-400 negro-promperu">Apellidos</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-6 div-left">
+                    <div class="col-6 div-left padding-left-right-1">
                         <label class="font-label-400 negro-promperu">Correo electrónico</label>
                         <input type="text" class="form-control font-H4-light-300" placeholder="ejemplo@correo.com">
                     </div>
-                    <div class="col-12 div-left">
+                    <div class="col-12 div-left padding-left-right-1">
                         <label class="font-label-400 negro-promperu">Escribe tu mensaje</label>
                         <textarea type="text" class="form-control"></textarea>
-                        <span class="span-textarea font-smallprint-medium">Máximo 189 cáracteres</span>
+                        <span class="span-textarea font-smallprint-medium gris-promperu">Máximo 189 cáracteres</span>
                     </div>
-                    <div class="col-12 div-left mt-4">
+                    <div class="col-12 div-left mt-4 padding-left-right-1">
                         <div class="col-5 div-left font-label-400 negro-promperu">Califica la herramienta</div>
                         <div class="col-3 div-left">
-                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
-                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
-                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
-                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
-                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="far fa-star"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
+                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
                         </div>
                     </div>
-                    <div class="col-8 div-left mt-4">
-                        <button class="btn btn-primary btn-danger" type="button">Enviar</button>
+                    <div class="col-6 div-left mt-4 ">
+                        <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -1085,7 +1093,7 @@
             <h5 id="offcanvasRightLabel" class=" font-size-20 font-color-black">Herramientas Logísticas</h5>
 
 
-            <button class="btn-close-menu" data-bs-dismiss="offcanvas" aria-label="Close">
+            <button class="btn-close-menu a-menu" data-bs-dismiss="offcanvas" aria-label="Close">
                 <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
             </button>
 
@@ -1104,7 +1112,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
                     <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas marítimas</p>
+                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Marítimas</p>
                         <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-desktop">
                         <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-movil">
                         <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas marítimas</p>
@@ -1113,21 +1121,21 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasTerrestre/Pages/Rutas_terrestre.html'">
                     <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas terrestres</p>
+                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Terrestres</p>
                         <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard mostrar-desktop">
                         <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas terrestres</p>
+                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas Terrestres</p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
                     <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Costos de exportación</p>
+                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Costos de Exportación</p>
                         <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard mostrar-desktop">
                         <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Costos de exportación</p>
+                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Costos de Exportación</p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='Cubicaje.html'">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../Cubicaje/Pages/Cubicaje.html'">
                     <div class="font-size-15 inline-for-movil">
                         <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador de Cubicaje</p>
                         <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard mostrar-desktop">
@@ -1137,10 +1145,10 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
                     <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Directorio logístico</p>
+                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Directorio Logístico</p>
                         <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-desktop">
                         <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Directorio logístico</p>
+                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Directorio Logístico</p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
@@ -1164,15 +1172,15 @@
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
-                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold pointer">
                     <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.9938 6.74999C12.6751 6.74999 12.4313 6.99374 12.4313 7.31249V13.8375L1.1626 13.8187L1.18135 2.54999H7.70635C8.0251 2.54999 8.26885 2.30624 8.26885 1.98749C8.26885 1.66874 8.0251 1.42499 7.70635 1.42499H0.618848C0.300098 1.42499 0.0563477 1.66874 0.0563477 1.98749L0.0375977 14.3812C0.0375977 14.7 0.281348 14.9437 0.600098 14.9437L12.9938 14.9625C13.1438 14.9625 13.2938 14.9062 13.3876 14.7937C13.5001 14.6812 13.5563 14.55 13.5563 14.4V7.31249C13.5563 6.99374 13.3126 6.74999 12.9938 6.74999Z" fill="#C4122F"/>
                         <path d="M13.8374 0.487488C13.8374 0.468738 13.8187 0.449988 13.8187 0.431238C13.8187 0.412488 13.7999 0.393738 13.7999 0.374988C13.7999 0.356238 13.7812 0.337488 13.7624 0.318738C13.7624 0.299988 13.7437 0.299988 13.7437 0.281238C13.7062 0.224988 13.6499 0.168738 13.5937 0.131238C13.5749 0.131238 13.5749 0.112488 13.5562 0.112488C13.5374 0.0937378 13.5187 0.0937377 13.4999 0.0749877C13.4812 0.0749877 13.4624 0.0562378 13.4437 0.0562378C13.4249 0.0562378 13.4062 0.0374877 13.3874 0.0374877C13.3499 0.0374877 13.3124 0.0187378 13.2749 0.0187378H9.24365C8.9249 0.0187378 8.68115 0.262488 8.68115 0.581238C8.68115 0.899988 8.9249 1.14374 9.24365 1.14374H11.9437L5.6624 7.44374C5.4374 7.66874 5.4374 8.02499 5.6624 8.23124C5.7749 8.34374 5.9249 8.39999 6.05615 8.39999C6.1874 8.39999 6.3374 8.34374 6.4499 8.23124L12.7312 1.94999V4.66874C12.7312 4.98749 12.9749 5.23124 13.2937 5.23124C13.6124 5.23124 13.8562 4.98749 13.8562 4.66874V0.599988C13.8562 0.562488 13.8562 0.524988 13.8374 0.487488Z" fill="#C4122F"/>
                     </svg> Visita también</div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="row">
-                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
-                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></div>
+                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-H5-light rojo-promperu pointer">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
+                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-H5-light rojo-promperu pointer">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></div>
                 </div>
 
             </div>
@@ -1196,6 +1204,9 @@
         </div>
     </div>
     <!-- Fin canvas mapa movil -->
+    <div class="modal fade modal-dashboard" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
+
+    </div>
     <!--   Core JS Files   -->
     <script src="../assets/js/core/popper.min.js"></script>
     <script src="../assets/js/core/bootstrap.min.js"></script>
