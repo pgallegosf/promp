@@ -21,6 +21,7 @@
     <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
     <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../common.css">
 </head>
 
 <body class="g-sidenav-show  bg-gray-100" onload="cargarAjustes()">
@@ -51,34 +52,70 @@
             </div>
         </nav>
         <!-- End Navbar -->
-        <div class="container-fluid py-4 container-principal">
+        <div class="container-fluid py-4 container-principal-list-directorio">
             <!-- Inicio de vista principal -->
             <div class="d-display" id="view-global">
                 
-                <div class="row mt-4 div-centrado">
+                <div class="row mt-4 pb-4 div-busqueda padding-card-busqueda">
                     <div class="col-lg-12 mb-lg-0">
-                        <div class="card paddingCardBusqueda">
                             <div class="busquedaNormal row px-2 p-5 overflow-hidden">
-                                <div class="col-lg-6 col-md-6 col-xs-12" style="padding-top: 18px;">
-                                    <select class="controlSelect2 form-control" name="selectServicio1" id="selectServicio1">
+                                <div class="col-lg-8 col-md-8 col-xs-12">
+                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selectServicio1" id="selectServicio1" onchange="window.location.href='ListaDirectorioLogistico.html'">
 									  <option value="1">Agente de aduanas</option>
 									  <option value="2">Agente de carga</option>
 									  <option value="3">Asesoría logística</option>
 									</select>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6 mt-2">
-                                    <button class="btn btn-second btnwidth100" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-xs-12">
-                                    <a href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral lineHeight50">
-                                        <i class="fas fa-caret-down"><label>&nbsp;Búsqueda avanzada</label></i>
+                               <!-- <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
+                                    <button class="btn btn-second" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
+                                </div>-->
+                                <div class="col-lg-4 col-md-8 col-xs-12">
+                                    <a href="javascript:mostrarBusquedaAvanzada()" class="busqueda-avanzada colorGeneral lineHeight50">
+                                        <i><img class="icon-busqueda" src="../assets/img/icon-busqueda-avanzada.svg" alt=""> <label>&nbsp;Búsqueda avanzada</label></i>
                                     </a>
+                                </div>
+                            </div>
+                            <div class="busquedaNormal overflow-hidden row">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
+                                        <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold negro-promperu">
+                                            6 Empresas <label class="font-H5-light">encontradas para Agente de Aduanas</label>
+                                        </div>
+            
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
+                                        <div class="row col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 ">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                                <label class="font-H4-bold">Rubro</label>
+                                                <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                                                  <option value="0">Todos     </option>
+                                                  <option value="1">Rubro 1   </option>
+                                                  <option value="2">Rubro 2   </option>
+                                                  <option value="3">Rubro 3   </option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                                <label class="font-H4-bold">Ubicación</label>
+                                                <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                                                  <option value="0">Todos</option>
+                                                  <option value="1">Chimbote</option>
+                                                  <option value="2">Santa</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                                <label class="font-H4-bold">Ordernar por</label>
+                                                <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                                                  <option value="1">A-Z</option>
+                                                  <option value="2">Z-A</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="busquedaAvanzada row px-2 p-5 overflow-hidden sinPaddingBottom">
                                 <div class="col-lg-12 col-md-12 col-xs-12">
-                                    <label for="selectServicio">¿Qué servicio estas buscando?</label>
-                                    <select class="controlSelect2 form-control" name="selectRegion" id="selectServicio">
+                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selectRegion" id="selectServicio">
 									  <option value="1">Agente de aduanas</option>
 									  <option value="2">Agente de carga</option>
 									  <option value="3">Asesoría logística</option>
@@ -86,7 +123,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-xs-12 paddingControl">
                                     <label for="selRubro">Rubro</label>
-                                    <select class="controlSelect2 form-control" name="selRubro" id="selRubro">
+                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selRubro" id="selRubro">
 									  <option value="1">Rubro 1</option>
 									  <option value="2">Rubro 2</option>
 									  <option value="3">Rubro 3</option>
@@ -94,7 +131,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-xs-12 paddingControl">
                                     <label for="selAnioExp">Años de experiencia</label>
-                                    <select class="controlSelect2 form-control" name="selAnioExp" id="selAnioExp">
+                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selAnioExp" id="selAnioExp">
 									  <option value="1">5</option>
 									  <option value="2">10</option>
 									  <option value="3">20</option>
@@ -102,7 +139,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
                                     <label for="selectRegion">Región</label>
-                                    <select class="controlSelect2 form-control" name="selectRegion" id="selectRegion">
+                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selectRegion" id="selectRegion">
 									  <option value="1">Ancash</option>
 									  <option value="2">Lima</option>
 									  <option value="3">Callao</option>
@@ -110,7 +147,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
                                     <label for="selectProvincia">Provincia</label>
-                                    <select class="controlSelect2 form-control" name="selectProvincia" id="selectProvincia">
+                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selectProvincia" id="selectProvincia">
 									  <option value="1">Santa</option>
 									  <option value="2">Casta</option>
 									  <option value="3">Huarmey</option>
@@ -118,7 +155,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
                                     <label for="selectDistrito">Distrito</label>
-                                    <select class="controlSelect2 form-control" name="selectDistrito" id="selectDistrito">
+                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selectDistrito" id="selectDistrito">
 									  <option value="1">Chimbote</option>
 									  <option value="2">Nuevo Chimbote</option>
 									  <option value="3">Casma</option>
@@ -126,11 +163,11 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
                                     <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked>
-                                    <label for="chkSucursal" class="input-checkbox-lab">Con sucursales</label>
+                                    <label for="chkSucursal" class="font-H4-medium negro-promperu input-checkbox-lab">Con sucursales</label>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
                                     <input class="input-checkbox" type="checkbox" name="chkCertificado" id="chkCertificado" checked>
-                                    <label for="chkCertificado" class="input-checkbox-lab">Con certificaciones</label>
+                                    <label for="chkCertificado" class="font-H4-medium negro-promperu input-checkbox-lab">Con certificaciones</label>
                                 </div>
                             </div>
                             <div class="busquedaAvanzada row px-2  overflow-hidden">
@@ -143,65 +180,62 @@
 									</a>
                                 </div>
                             </div>
-                        </div>
+                            <div class="busquedaAvanzada row overflow-hidden">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
+                                        <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold negro-promperu">
+                                            6 Empresas <label class="font-H5-light">encontradas para Agente de Aduanas</label>
+                                        </div>
+            
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
+                                        <div class="row col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 ">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                                <label class="font-H4-bold">Rubro</label>
+                                                <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                                                  <option value="0">Todos     </option>
+                                                  <option value="1">Rubro 1   </option>
+                                                  <option value="2">Rubro 2   </option>
+                                                  <option value="3">Rubro 3   </option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                                <label class="font-H4-bold">Ubicación</label>
+                                                <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                                                  <option value="0">Todos</option>
+                                                  <option value="1">Chimbote</option>
+                                                  <option value="2">Santa</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                                <label class="font-H4-bold">Ordernar por</label>
+                                                <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                                                  <option value="1">A-Z</option>
+                                                  <option value="2">Z-A</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
-
                 <div class="row">
-                    <div class="row">
+                    <div class="row padding-list-directorios">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
-                            <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-25">
-                                6 Empresas <label class="font-size-25">encontradas para Agente de Aduanas</label>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
-                            <div class="row col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 ">
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-                                    <label>Rubro</label>
-                                    <select class="select-inline form-control select-simple" name="selAnioExp" id="selectServicio1">
-									  <option value="0">Todos     </option>
-									  <option value="1">Rubro 1   </option>
-									  <option value="2">Rubro 2   </option>
-									  <option value="3">Rubro 3   </option>
-									</select>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-                                    <label>Ubicación</label>
-                                    <select class="select-inline form-control select-simple" name="selAnioExp" id="selectServicio1">
-									  <option value="0">Todos</option>
-									  <option value="1">Chimbote</option>
-									  <option value="2">Santa</option>
-									</select>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-                                    <label>Ordernar por</label>
-                                    <select class="select-inline form-control select-simple" name="selAnioExp" id="selectServicio1">
-									  <option value="1">A-Z</option>
-									  <option value="2">Z-A</option>
-									</select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr size="5" />
-                <div class="row">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
-                            <div class="row col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 ">
+                            <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 ">
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20 mayuscula">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-h3-bold negro-promperu mayuscula pb-3">
                                         Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second inline">
-                                        <i class="fas fa-map-marker-alt"></i>Lima-Breña
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                        <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second inline">
-                                        <i class="fas fa-briefcase"></i>10 años de experiencia
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                        <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años de experiencia
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
-                                        <p class="font-size-13">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                        <p class="font-H4-light negro-promperu descripcion-empresa">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
                                             Nacimos para brindar servicios de agenciamiento aduanero.
                                         </p>
                                     </div>
@@ -211,46 +245,46 @@
                                         <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
-                                            <i class="fas fa-pager font-size-20 color-primary "></i>
+                                            <i><img src="../assets/img/icon-web.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left">
-                                            <label>www.antaresaduanas.com.pe</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row pt-3">
                                         <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i class="far fa-envelope color-primary"></i>
+                                            <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <label>comercial@antaresaduanas.com.pe</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row pt-3">
                                         <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i class="fas fa-phone-alt color-primary"></i>
+                                            <i><img src="../assets/img/icon-phone.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <label>(01)6163900 / 94140939)</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">(01)6163900 / 94140939)</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row"><br></div>
+                                <div class="row pt-5"><br></div>
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20 mayuscula">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-h3-bold negro-promperu mayuscula pb-3">
                                         Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second inline">
-                                        <i class="fas fa-map-marker-alt"></i>Lima-Breña
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                        <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second inline">
-                                        <i class="fas fa-briefcase"></i>10 años de experiencia
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                        <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i>10 años de experiencia
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
-                                        <p class="font-size-13">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                        <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right correoDetalle">
@@ -258,46 +292,46 @@
                                         <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
-                                            <i class="fas fa-pager font-size-20 color-primary "></i>
+                                            <i><img src="../assets/img/icon-web.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left">
-                                            <label>www.antaresaduanas.com.pe</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row pt-3">
                                         <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i class="far fa-envelope color-primary"></i>
+                                            <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <label>comercial@antaresaduanas.com.pe</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row pt-3">
                                         <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i class="fas fa-phone-alt color-primary"></i>
+                                            <i><img src="../assets/img/icon-phone.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <label>(01)6163900 / 94140939)</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">(01)6163900 / 94140939)</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row"><br></div>
+                                <div class="row pt-5"><br></div>
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20 mayuscula">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-h3-bold negro-promperu mayuscula pb-3">
                                         Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second inline">
-                                        <i class="fas fa-map-marker-alt"></i>Lima-Breña
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                        <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second inline">
-                                        <i class="fas fa-briefcase"></i>10 años de experiencia
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                        <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i>10 años de experiencia
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
-                                        <p class="font-size-13">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                        <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right correoDetalle">
@@ -305,46 +339,46 @@
                                         <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
-                                            <i class="fas fa-pager font-size-20 color-primary "></i>
+                                            <i><img src="../assets/img/icon-web.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left">
-                                            <label>www.antaresaduanas.com.pe</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row pt-3">
                                         <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i class="far fa-envelope color-primary"></i>
+                                            <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <label>comercial@antaresaduanas.com.pe</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row pt-3">
                                         <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i class="fas fa-phone-alt color-primary"></i>
+                                            <i><img src="../assets/img/icon-phone.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <label>(01)6163900 / 94140939)</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">(01)6163900 / 94140939)</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row"><br></div>
+                                <div class="row pt-5"><br></div>
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20 mayuscula">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-h3-bold negro-promperu mayuscula pb-3">
                                         Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second inline">
-                                        <i class="fas fa-map-marker-alt"></i>Lima-Breña
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                        <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second inline">
-                                        <i class="fas fa-briefcase"></i>10 años de experiencia
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                        <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i>10 años de experiencia
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
-                                        <p class="font-size-13">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                        <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right correoDetalle">
@@ -352,46 +386,46 @@
                                         <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
-                                            <i class="fas fa-pager font-size-20 color-primary "></i>
+                                            <i><img src="../assets/img/icon-web.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left">
-                                            <label>www.antaresaduanas.com.pe</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row pt-3">
                                         <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i class="far fa-envelope color-primary"></i>
+                                            <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <label>comercial@antaresaduanas.com.pe</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row pt-3">
                                         <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i class="fas fa-phone-alt color-primary"></i>
+                                            <i><img src="../assets/img/icon-phone.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <label>(01)6163900 / 94140939)</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">(01)6163900 / 94140939)</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row"><br></div>
+                                <div class="row pt-5"><br></div>
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-size-20 mayuscula">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-h3-bold negro-promperu mayuscula pb-3">
                                         Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second inline">
-                                        <i class="fas fa-map-marker-alt"></i>Lima-Breña
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                        <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second inline">
-                                        <i class="fas fa-briefcase"></i>10 años de experiencia
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                        <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i>10 años de experiencia
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
-                                        <p class="font-size-13">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                        <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right correoDetalle">
@@ -399,30 +433,30 @@
                                         <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
-                                            <i class="fas fa-pager font-size-20 color-primary "></i>
+                                            <i><img src="../assets/img/icon-web.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left">
-                                            <label>www.antaresaduanas.com.pe</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row pt-3">
                                         <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i class="far fa-envelope color-primary"></i>
+                                            <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <label>comercial@antaresaduanas.com.pe</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row pt-3">
                                         <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
                                         </div>
                                         <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i class="fas fa-phone-alt color-primary"></i>
+                                            <i><img src="../assets/img/icon-phone.svg" alt=""></i>
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <label>(01)6163900 / 94140939)</label>
+                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                            <label class="font-H5-light negro-promperu">(01)6163900 / 94140939)</label>
                                         </div>
                                     </div>
                                 </div>

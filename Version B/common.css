@@ -1,965 +1,1007 @@
 @font-face {
-    font-family: 'Helvetica Neue LT Std light';
-    src: url('font-Promperu/HELVETICANEUELTSTD LT.OTF');
+  font-family: "Helvetica Neue LT Std light";
+  src: url("font-Promperu/HELVETICANEUELTSTD LT.OTF");
 }
 
 @font-face {
-    font-family: 'Helvetica Neue LT Std bold';
-    src: url('font-Promperu/HelveticaNeueLTStd-Bd.OTF');
+  font-family: "Helvetica Neue LT Std bold";
+  src: url("font-Promperu/HelveticaNeueLTStd-Bd.OTF");
 }
 
 @font-face {
-    font-family: 'Helvetica Neue LT Std medium';
-    src: url('font-Promperu/HelveticaNeueLTStd-Md.OTF');
+  font-family: "Helvetica Neue LT Std medium";
+  src: url("font-Promperu/HelveticaNeueLTStd-Md.OTF");
 }
 
 .font-display {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 60px !important;
-    line-height: 72px !important;
-    /* identical to box height */
-    align-items: center;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 60px !important;
+  line-height: 72px !important;
+  /* identical to box height */
+  align-items: center;
+  text-align: center;
 }
 
 .font-h1-bold {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 36px !important;
-    line-height: 43.2px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 36px !important;
+  line-height: 43.2px !important;
 }
 
 .font-H2-light {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 30px !important;
-    line-height: 36px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
 }
 
 .font-H2-light-400 {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 30px !important;
-    line-height: 36px !important;
-    text-align: center !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  text-align: center !important;
 }
 
 .font-H2-light-400n {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 30px !important;
-    line-height: 36px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
 }
 
 .font-H2-bold-700 {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 30px !important;
-    line-height: 36px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
 }
 
 .font-h3-light-300 {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 24px !important;
-    line-height: 28.8px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 24px !important;
+  line-height: 28.8px !important;
 }
 
 .font-h3-light-400 {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 24px !important;
-    line-height: 28.8px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  line-height: 28.8px !important;
 }
 
 .font-h3-bold {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 24px !important;
-    line-height: 28.8px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  line-height: 28.8px !important;
 }
 
 .font-h3-bold-700 {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 24px !important;
-    line-height: 28.8px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 28.8px !important;
 }
 
 .font-h3-bold-700c {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 24px !important;
-    line-height: 28.8px !important;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 28.8px !important;
+  text-align: center;
+}
+
+.font-H3-light {
+  font-family: "Helvetica Neue LT Std";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .font-H4-light {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 18px !important;
-    line-height: 21.6px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
 }
 
 .font-H4-light-400 {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 18px !important;
-    line-height: 21.6px !important;
-    text-align: center !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
+  text-align: center !important;
 }
 
 .font-H4-light-400n {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 18px !important;
-    line-height: 21.6px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
 }
 
 .font-H4-bold-700 {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 18px !important;
-    line-height: 21.6px !important;
-    text-align: center !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
+  text-align: center !important;
 }
 
 .font-H4-bold-700n {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 18px !important;
-    line-height: 21.6px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
 }
 
 .font-H5-light {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  text-align: center;
 }
 
 .font-H5-lightn {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
 }
 
 .font-H5-light-400 {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  text-align: center;
 }
 
 .font-H5-light-400n {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
 }
 
 .font-H5-bold {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
 }
 
 .font-H5-medium {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
 }
 
 .font-Display-2-Bold {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-weight: bold!important;
-    font-size: 51px !important;
-    line-height: 61px !important;
-    align-items: center;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-weight: bold !important;
+  font-size: 51px !important;
+  line-height: 61px !important;
+  align-items: center;
 }
 
 .font-H4-medium {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal!important;
-    font-weight: 500 !important;
-    font-size: 18px !important;
-    line-height: 22px !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
 }
 
 .font-H4-medium-400 {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal!important;
-    font-weight: 400 !important;
-    font-size: 18px !important;
-    line-height: 21.6px !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
 }
 
 .font-Display-2-Bold-700 {
-    font-family: 'Helvetica Neue LT Std' !important;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 72px;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std" !important;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.font-Display-72-normal {
+  font-family: "Helvetica Neue LT Std" !important;
+  font-weight: 300 !important;
+  font-size: 72px;
+  line-height: 86.4px;
 }
 
 .font-Display-2-700 {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 51px;
-    line-height: 61, 2px;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 51px !important;
+  line-height: 61, 2px !important;
 }
 
+
 .font-label {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
+  font-family: "Helvetica Neue LT Std" !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .font-H2-bold {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 30px !important;
-    line-height: 36px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
 }
 
 .font-H3-bold {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 24px !important;
-    line-height: 29px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 24px !important;
+  line-height: 29px !important;
 }
 
 .font-H4-bold {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 18px !important;
-    line-height: 22px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
 }
 
 .font-H5-bold {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
-    align-items: center !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  align-items: center !important;
 }
 
 .font-label-400 {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16.8px;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
 }
 
 .font-label-400c {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16.8px;
-    text-align: center !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+  text-align: center !important;
 }
 
 .font-link-700 {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal;
-    font-weight: 700 !important;
-    font-size: 14px !important;
-    line-height: 16.8px !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 16.8px !important;
 }
 
 .font-smallprint-medium {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    font-size: 12px !important;
-    line-height: 14.4px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 14.4px !important;
 }
 
 .font-helvetica-icon {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    font-size: 14px !important;
-    line-height: 16.8px !important;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 16.8px !important;
+  text-align: center;
 }
 
 .font-helvetica-footer-light {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 12px !important;
-    line-height: 14.4px !important;
-    text-align: center !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  line-height: 14.4px !important;
+  text-align: center !important;
 }
 
 .font-helvetica-footer-bold {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 12px !important;
-    line-height: 14.4px !important;
-    text-align: center !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  line-height: 14.4px !important;
+  text-align: center !important;
 }
 
 .font-helvetica-coryright {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 14px !important;
-    line-height: 16.8px !important;
-    text-align: center !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 16.8px !important;
+  text-align: center !important;
 }
-
 
 /* .font */
 
 img {
-    image-rendering: -webkit-optimize-contrast;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .background-img {
-    image-rendering: -webkit-optimize-contrast;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .navbar {
-    height: 70px!important;
-    width: 100%;
+  height: 70px !important;
+  width: 100%;
 }
 
 .nav-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  width: 97px !important;
+  height: 43.15px !important;
+  left: 45px;
+  top: 13px;
+}
+
+.badge-notification {
+  position: absolute;
+  font-size: 0.6rem;
+  margin-top: 0.2rem;
+  margin-left: -0.3rem;
+  padding: 0.2em 0.45em;
+}
+
+.bg-danger {
+  background-color: #c4122f !important;
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+.badge-notification {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.2em;
+  font-weight: 700;
+  width: 6px;
+  height: 6px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.negro-promperu {
+  color: #282828 !important;
+}
+
+.rojo-promperu {
+  color: #c4122f !important;
+}
+
+.azul-promperu {
+  color: #07354f !important;
+}
+
+.blanco {
+  color: #ffffff;
+}
+
+.background-azul-promperu {
+  background-color: #07354f;
+}
+
+.font-size-21 {
+  font-size: 21px;
+}
+
+.hover:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.active-icon-nav:active {
+  color: #c4122f;
+}
+
+.posicion-close-notificacion {
+  position: absolute;
+  /* right: 12px; */
+  right: 25px;
+}
+
+.sin-margen-top {
+  margin-top: 0 !important;
+}
+
+.icon-dashboard {
+  width: 100px;
+  height: 106px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.background-costos {
+  background-image: url("RutasMaritimas/assets/img/dashboard/costos.png");
+}
+
+#offcanvasRightLabel {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  display: flex;
+}
+
+/* mover a media para el ancho */
+
+.offcanvas-end {
+  width: 50% !important;
+}
+
+.offcanvas-body-menu {
+  flex-grow: 1;
+  padding: 1rem 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.offcanvas-body-menu::-webkit-scrollbar {
+  width: 10%;
+}
+
+.inline {
+  display: inline-flex;
+}
+
+.text-menu-lateral {
+  align-self: self-end;
+  margin-bottom: 0;
+  color: #07354f;
+}
+
+.min-content {
+  height: min-content;
+}
+
+.badge {
+  background-color: #ffffff !important;
+  color: #282828 !important;
+}
+
+.badge:hover {
+  background-color: #c4122f !important;
+  color: #ffffff !important;
+}
+
+.badge:active {
+  background-color: #282828 !important;
+  color: #ffffff !important;
+}
+
+.cont-titulo {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.container-principal {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  overflow-x: hidden;
+}
+
+.btn-danger {
+  background-color: #c4122f;
+  color: #ffffff;
+}
+
+.btn-danger:active {
+  background-color: #282828 !important;
+  color: #ffffff !important;
+}
+
+.btn-outline-danger {
+  border: 2px solid #c4122f !important;
+  color: #c4122f !important;
+  border-radius: 15px !important;
+}
+
+.btn-outline-danger:hover {
+  border: 2px solid #c4122f !important;
+  color: #c4122f !important;
+  background-color: #fff !important;
+  opacity: 100 !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn-outline-danger:active {
+  border: 2px solid #282828 !important;
+  color: #282828 !important;
+}
+
+.btn-disabled {
+  background-color: #c0c0c0 !important;
+  color: #8b8b8b !important;
+  border-radius: 15px;
+}
+
+.btn-danger {
+  background-color: #c4122f !important;
+  color: #fff !important;
+  border-radius: 15px;
+}
+
+.btn-danger:disabled {
+  background-color: #c0c0c0 !important;
+  color: #8b8b8b !important;
+}
+
+.btn-danger:hover {
+  background-color: #c4122f !important;
+  color: #ffffff !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 15px !important;
+}
+
+.btn-danger:active {
+  background-color: #282828 !important;
+  color: #ffffff !important;
+}
+
+.footer {
+  position: absolute;
+}
+
+.inline-for-movil {
+  display: inline-flex;
+}
+
+.inline-for-movil2 {
+  display: flex;
+}
+
+.justify-content-right {
+  justify-content: right;
+}
+
+.icon-dashboard-width {
+  width: 15% !important;
+}
+
+.left-center {
+  text-align: left !important;
+}
+.padding-card-busqueda {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+@media (min-width: 200px) {
+  .font-H2-bold {
+    font-size: 25px !important;
+  }
+
+  .font-Display-2-700 {
+    font-size: 25px !important;
+    text-align: center !important;
+  }
+
+  .font-H4-light {
+    font-size: 16px !important;
+  }
+
+  .font-h3-bold {
+    font-size: 20px !important;
+  }
+
+  .left-center {
+    text-align: center !important;
+  }
+  .icon-dashboard-width {
+    width: 50% !important;
+  }
+  .navbar {
+    height: 50px !important;
+  }
+  .nav-img {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     position: absolute;
-    width: 97px!important;
-    height: 43.15px!important;
+    width: 53px !important;
+    height: 25px !important;
+    /* left: 13px; */
     left: 45px;
-    top: 13px;
-}
-
-.badge-notification {
-    position: absolute;
-    font-size: .6rem;
-    margin-top: 0.2rem;
-    margin-left: -.3rem;
-    padding: .2em .45em;
-}
-
-.bg-danger {
-    background-color: #C4122F!important;
-}
-
-.rounded-pill {
-    border-radius: 50rem!important;
-}
-
-.badge-notification {
-    display: inline-block;
-    padding: .35em .65em;
-    font-size: .20em;
-    font-weight: 700;
-    Width: 6px;
-    Height: 6px;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-}
-
-.negro-promperu {
-    color: #282828 !important;
-}
-
-.rojo-promperu {
-    color: #C4122F !important;
-}
-
-.azul-promperu {
-    color: #07354F !important;
-}
-
-.blanco {
-    color: #FFFFFF;
-}
-
-.background-azul-promperu {
-    background-color: #07354F;
-}
-
-.font-size-21 {
-    font-size: 21px;
-}
-
-.hover:hover {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-}
-
-.active-icon-nav:active {
-    color: #C4122F;
-}
-
-.posicion-close-notificacion {
-    position: absolute;
-    /* right: 12px; */
-    right: 25px;
-}
-
-.sin-margen-top {
-    margin-top: 0!important;
-}
-
-.icon-dashboard {
-    width: 100px;
-    height: 106px;
-    margin-top: 7px;
-    margin-bottom: 5px;
-}
-
-.background-costos {
-    background-image: url('RutasMaritimas/assets/img/dashboard/costos.png');
-}
-
-#offcanvasRightLabel {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 36px;
-    display: flex;
-}
-
-
-/* mover a media para el ancho */
-
-.offcanvas-end {
-    width: 50%!important;
-}
-
-.offcanvas-body-menu {
-    flex-grow: 1;
-    padding: 1rem 1rem;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.offcanvas-body-menu::-webkit-scrollbar {
-    width: 10%;
-}
-
-.inline {
-    display: inline-flex;
-}
-
-.text-menu-lateral {
-    align-self: self-end;
-    margin-bottom: 0;
-    color: #07354F;
-}
-
-.min-content {
-    height: min-content;
-}
-
-.badge {
-    background-color: #FFFFFF!important;
-    color: #282828!important;
-}
-
-.badge:hover {
-    background-color: #C4122F!important;
-    color: #FFFFFF!important;
-}
-
-.badge:active {
-    background-color: #282828!important;
-    color: #FFFFFF!important;
-}
-
-.cont-titulo {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-}
-
-.container-principal {
-    padding-right: 0!important;
-    padding-left: 0!important;
-    overflow-x: hidden;
-}
-
-.btn-danger {
-    background-color: #C4122f;
-    color: #ffffff;
-}
-
-.btn-danger:active {
-    background-color: #282828 !important;
-    color: #ffffff !important;
-}
-
-.btn-outline-danger {
-    border: 2px solid #C4122f !important;
-    color: #C4122f !important;
-    border-radius: 15px !important;
-}
-
-.btn-outline-danger:hover {
-    border: 2px solid #C4122f !important;
-    color: #C4122f !important;
-    background-color: #FFF !important;
-    opacity: 100 !important;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
-}
-
-.btn-outline-danger:active {
-    border: 2px solid #282828 !important;
-    color: #282828 !important;
-}
-
-.btn-disabled {
-    background-color: #C0C0C0 !important;
-    color: #8B8B8B !important;
-    border-radius: 15px;
-}
-
-.btn-danger {
-    background-color: #C4122F !important;
-    color: #FFF !important;
-    border-radius: 15px;
-}
-
-.btn-danger:disabled {
-    background-color: #C0C0C0 !important;
-    color: #8B8B8B !important;
-}
-
-.btn-danger:hover {
-    background-color: #C4122F !important;
-    color: #FFFFFF !important;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
-    border-radius: 15px !important;
-    ;
-}
-
-.btn-danger:active {
-    background-color: #282828 !important;
-    color: #FFFFFF !important;
-}
-
-.footer {
-    position: absolute;
-}
-
-.inline-for-movil {
-    display: inline-flex;
-}
-
-.inline-for-movil2 {
-    display: flex;
-}
-
-.justify-content-right {
-    justify-content: right;
-}
-
-.icon-dashboard-width {
-    width: 15% !important;
-}
-
-.left-center {
-    text-align: left !important;
-}
-.padding-card-busqueda{
-    padding-left: 10% !important;
-    padding-right: 10% !important;
-}
-@media (min-width: 200px) {
-    .left-center {
-        text-align: center !important;
-    }
-    .icon-dashboard-width {
-        width: 50% !important;
-    }
-    .navbar {
-        height: 50px!important;
-    }
-    .nav-img {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        position: absolute;
-        width: 53px!important;
-        height: 25px!important;
-        /* left: 13px; */
-        left: 45px;
-        top: 12px;
-    }
-    .icon-menu {
-        float: left;
-        padding: 4px;
-    }
-    .offcanvas-end {
-        width: 100%!important;
-    }
-    .inline-for-movil {
-        display: initial;
-    }
-    .inline-for-movil2 {
-        display: initial;
-    }
-    .justify-content-right {
-        justify-content: center;
-    }
-    .padding-card-busqueda{
-        padding-left: 5% !important;
-        padding-right: 5% !important;
-    }
+    top: 12px;
+  }
+  .icon-menu {
+    float: left;
+    padding: 4px;
+  }
+  .offcanvas-end {
+    width: 100% !important;
+  }
+  .inline-for-movil {
+    display: initial;
+  }
+  .inline-for-movil2 {
+    display: initial;
+  }
+  .justify-content-right {
+    justify-content: center;
+  }
+  .padding-card-busqueda {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
 }
 
 @media (min-width: 576px) {
-    .left-center {
-        text-align: center !important;
-    }
-    .icon-dashboard-width {
-        width: 50% !important;
-    }
-    .navbar {
-        height: 50px!important;
-    }
-    .nav-img {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        position: absolute;
-        width: 53px!important;
-        height: 25px!important;
-        left: 45px;
-        top: 12px;
-    }
-    .offcanvas-end {
-        width: 100%!important;
-    }
-    .inline-for-movil {
-        display: initial;
-    }
-    .inline-for-movil2 {
-        display: initial;
-    }
-    .justify-content-right {
-        justify-content: center;
-    }
-    .padding-card-busqueda{
-        padding-left: 8% !important;
-        padding-right: 8% !important;
-    }
+  .left-center {
+    text-align: center !important;
+  }
+  .icon-dashboard-width {
+    width: 50% !important;
+  }
+  .navbar {
+    height: 50px !important;
+  }
+  .nav-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 53px !important;
+    height: 25px !important;
+    left: 45px;
+    top: 12px;
+  }
+  .offcanvas-end {
+    width: 100% !important;
+  }
+  .inline-for-movil {
+    display: initial;
+  }
+  .inline-for-movil2 {
+    display: initial;
+  }
+  .justify-content-right {
+    justify-content: center;
+  }
+  .padding-card-busqueda {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+  }
 }
 
 @media (min-width: 768px) {
-    .left-center {
-        text-align: left !important;
-    }
-    .icon-dashboard-width {
-        width: 30% !important;
-    }
-    .navbar {
-        height: 70px!important;
-    }
-    .nav-img {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        position: absolute;
-        width: 97px!important;
-        height: 43.15px!important;
-        left: 45px;
-        top: 13px;
-    }
-    .offcanvas-end {
-        width: 50%!important;
-    }
-    .inline-for-movil {
-        display: inline-flex;
-    }
-    .inline-for-movil2 {
-        display: flex;
-    }
-    .justify-content-right {
-        justify-content: right;
-    }
-    .padding-card-busqueda{
-        padding-left: 10% !important;
-        padding-right: 10% !important;
-    }
+  .left-center {
+    text-align: left !important;
+  }
+  .icon-dashboard-width {
+    width: 30% !important;
+  }
+  .navbar {
+    height: 70px !important;
+  }
+  .nav-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 97px !important;
+    height: 43.15px !important;
+    left: 45px;
+    top: 13px;
+  }
+  .offcanvas-end {
+    width: 50% !important;
+  }
+  .inline-for-movil {
+    display: inline-flex;
+  }
+  .inline-for-movil2 {
+    display: flex;
+  }
+  .justify-content-right {
+    justify-content: right;
+  }
+  .padding-card-busqueda {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
 }
 
 @media (min-width: 992px) {
-    .left-center {
-        text-align: left !important;
-    }
-    .icon-dashboard-width {
-        width: 14% !important;
-    }
-    .navbar {
-        height: 70px!important;
-    }
-    .nav-img {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        position: absolute;
-        width: 97px!important;
-        height: 43.15px!important;
-        left: 45px;
-        top: 13px;
-    }
-    .offcanvas-end {
-        width: 50%!important;
-    }
-    .inline-for-movil {
-        display: inline-flex;
-    }
-    .inline-for-movil2 {
-        display: flex;
-    }
-    .justify-content-right {
-        justify-content: right;
-    }
-    .padding-card-busqueda{
-        padding-left: 10% !important;
-        padding-right: 10% !important;
-    }
+  .left-center {
+    text-align: left !important;
+  }
+  .icon-dashboard-width {
+    width: 14% !important;
+  }
+  .navbar {
+    height: 70px !important;
+  }
+  .nav-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 97px !important;
+    height: 43.15px !important;
+    left: 45px;
+    top: 13px;
+  }
+  .offcanvas-end {
+    width: 50% !important;
+  }
+  .inline-for-movil {
+    display: inline-flex;
+  }
+  .inline-for-movil2 {
+    display: flex;
+  }
+  .justify-content-right {
+    justify-content: right;
+  }
+  .padding-card-busqueda {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
 }
 
 @media (min-width: 1200px) {
-    .left-center {
-        text-align: left !important;
-    }
-    .icon-dashboard-width {
-        width: 14% !important;
-    }
-    .navbar {
-        height: 70px!important;
-    }
-    .nav-img {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        position: absolute;
-        width: 97px!important;
-        height: 43.15px!important;
-        left: 45px;
-        top: 13px;
-    }
-    .offcanvas-end {
-        width: 50%!important;
-    }
-    .inline-for-movil2 {
-        display: flex;
-    }
-    .justify-content-right {
-        justify-content: right;
-    }
-    .padding-card-busqueda{
-        padding-left: 10% !important;
-        padding-right: 10% !important;
-    }
+  .left-center {
+    text-align: left !important;
+  }
+  .icon-dashboard-width {
+    width: 14% !important;
+  }
+  .navbar {
+    height: 70px !important;
+  }
+  .nav-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 97px !important;
+    height: 43.15px !important;
+    left: 45px;
+    top: 13px;
+  }
+  .offcanvas-end {
+    width: 50% !important;
+  }
+  .inline-for-movil2 {
+    display: flex;
+  }
+  .justify-content-right {
+    justify-content: right;
+  }
+  .padding-card-busqueda {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+
+  .font-H3-bold {
+    font-size: 20px !important;
+  }
+
+  .font-H2-bold {
+    font-size: 30px !important;
+  }
+
+  .font-H4-light {
+    font-size: 18px !important;
+  }
+
+  .font-Display-2-700 {
+    font-size: 51px !important;
+  }
 }
 
 .btn-close-menu {
-    box-sizing: content-box !important;
-    padding: 0.25em 0.25em!important;
-    border: 0!important;
-    position: absolute!important;
-    z-index: 0!important;
-    top: 20px!important;
-    right: 20px !important;
-    color: #ffff !important;
-    border-radius: 50% !important;
-    width: 25px !important;
-    background-color: #C4122f !important;
-    height: 25px !important;
+  box-sizing: content-box !important;
+  padding: 0.25em 0.25em !important;
+  border: 0 !important;
+  position: absolute !important;
+  z-index: 0 !important;
+  top: 20px !important;
+  right: 20px !important;
+  color: #ffff !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  background-color: #c4122f !important;
+  height: 25px !important;
 }
-
 
 /*Style del popover*/
 
 .popover {
-    background-color: #07354F;
-    color: #ffffff;
-    width: 50%;
-    height: 15%;
-    padding: 10px 20px;
-    border-radius: 15px;
-    position: absolute;
-    top: 62px;
-    left: 78%;
+  background-color: #07354f;
+  color: #ffffff;
+  width: 50%;
+  height: 15%;
+  padding: 10px 20px;
+  border-radius: 15px;
+  position: absolute;
+  top: 62px;
+  left: 78%;
 }
 
 .popover::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid #07354F;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    top: -30px;
-    left: 83%;
-    position: absolute;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid #07354f;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: -30px;
+  left: 83%;
+  position: absolute;
 }
 
 .popover-header {
-    background-color: #e9ecef00 !important;
+  background-color: #e9ecef00 !important;
 }
 
 .popover-body {
-    padding: 0rem 1rem !important;
+  padding: 0rem 1rem !important;
 }
 
 .link:hover {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .subrayado {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .vertical-center {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .icon-buscador {
-    border: none !important;
-    ;
-    border-bottom: 1px solid #282828 !important;
-    border-radius: initial !important;
+  border: none !important;
+  border-bottom: 1px solid #282828 !important;
+  border-radius: initial !important;
 }
 
 .text-buscador {
-    border-left: none !important;
-    border-right: none !important;
+  border-left: none !important;
+  border-right: none !important;
 }
 
 .input-group .text-buscador:focus {
-    border-left: none !important;
-    border-right: none !important;
-    border-radius: 0 !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
 }
 
 .height-100 {
-    height: 120px !important;
+  height: 120px !important;
 }
 
 .card-ptoOrigen {
-    width: 50% !important;
-    height: 30% !important;
-    margin-left: 7% !important;
-    top: 280% !important;
-    position: absolute !important;
-    font-size: 12px;
-    font-weight: bold;
-    color: #282828;
+  width: 50% !important;
+  height: 30% !important;
+  margin-left: 7% !important;
+  top: 280% !important;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
 }
 
 .card-ptoDestino {
-    width: 50% !important;
-    height: 35% !important;
-    margin-left: 7% !important;
-    top: 295% !important;
-    position: absolute !important;
-    font-size: 10px;
-    font-weight: bold;
-    color: #282828;
+  width: 50% !important;
+  height: 35% !important;
+  margin-left: 7% !important;
+  top: 295% !important;
+  position: absolute !important;
+  font-size: 10px;
+  font-weight: bold;
+  color: #282828;
 }
-.padding-left-right-0{
-    padding-left:0 !important;
-    padding-right:0 !important;
+.padding-left-right-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
-.margin-left-right-0{
-    margin-left:0 !important;
-    margin-right:0 !important;
+.margin-left-right-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
-.padding-left-0{
-    padding-left:0 !important;
+.padding-left-0 {
+  padding-left: 0 !important;
 }
-.width-100{
-    width:100% !important;
+.width-100 {
+  width: 100% !important;
 }
-.separar-elementos-5{
-    text-indent:5pt;
+.separar-elementos-5 {
+  text-indent: 5pt;
 }
-.container-principal{
-    padding-top: 110px !important;
+.container-principal {
+  padding-top: 110px !important;
 }
-.margin-left-right-3{
-    margin-left: 1.5% !important;
-    margin-right: 1.5% !important;
+.margin-left-right-3 {
+  margin-left: 1.5% !important;
+  margin-right: 1.5% !important;
 }
-.btn-nivel-inline{
-    margin-bottom: 0 !important;
-    bottom: 0 !important;
-    position: absolute !important;
+.btn-nivel-inline {
+  margin-bottom: 0 !important;
+  bottom: 0 !important;
+  position: absolute !important;
 }
-.position-relative{
-    position: relative !important;
+.position-relative {
+  position: relative !important;
 }
-.modal-backdrop
-{
-    opacity:0.5 !important;
+.modal-backdrop {
+  opacity: 0.5 !important;
 }
 
 .fade.show {
-    background-color: #0000008c !important;
+  background-color: #0000008c !important;
 }
-.body{
-    background-color: #0000008c !important;
+.body {
+  background-color: #0000008c !important;
 }
