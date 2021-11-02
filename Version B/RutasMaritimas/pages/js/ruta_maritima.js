@@ -1,7 +1,7 @@
-var indicador1=true;
-var indicador2=true;
-var indicador3=true;
-var indicador4=true;
+var indicador1 = true;
+var indicador2 = true;
+var indicador3 = true;
+var indicador4 = true;
 $(document).ready(function() {
     $(".ptOrigen").click(function(e) {
         e.stopPropagation();
@@ -71,6 +71,12 @@ $(document).ready(function() {
     $(".btn-rutasMovil2").click(function() {
         showRutas();
     });
+    $(".idPopoverNotificacionGuardar").click(function() {
+        $(".popover").toggle();
+    });
+    $(".close-popover").click(function() {
+        $(".popover").toggle();
+    });
     // Botones bloqueados
     $(".btn-rutas").attr('disabled', 'disabled');
     $(".btn-rutasMovil").attr('disabled', 'disabled');
@@ -87,41 +93,41 @@ $(document).ready(function() {
 });
 
 function mostrarOcultarRutas() {
-    if(this.indicador1){
+    if (this.indicador1) {
         $("#flecha1").hide();
+    } else {
+        setTimeout('$("#flecha1").show()', 500);
     }
-    else{
-        setTimeout('$("#flecha1").show()',500);
-    }
-    this.indicador1=!this.indicador1;
+    this.indicador1 = !this.indicador1;
 }
+
 function mostrarOcultarRutas2() {
-    if(this.indicador2){
+    if (this.indicador2) {
         $("#flecha2").hide();
+    } else {
+        setTimeout('$("#flecha2").show()', 500);
     }
-    else{
-        setTimeout('$("#flecha2").show()',500);
-    }
-    this.indicador2=!this.indicador2;
+    this.indicador2 = !this.indicador2;
 }
+
 function mostrarOcultarRutas3() {
-    if(this.indicador3){
+    if (this.indicador3) {
         $("#flecha3").hide();
+    } else {
+        setTimeout('$("#flecha3").show()', 500);
     }
-    else{
-        setTimeout('$("#flecha3").show()',500);
-    }
-    this.indicador3=!this.indicador3;
+    this.indicador3 = !this.indicador3;
 }
+
 function mostrarOcultarRutas4() {
-    if(this.indicador4){
+    if (this.indicador4) {
         $("#flecha4").hide();
+    } else {
+        setTimeout('$("#flecha4").show()', 500);
     }
-    else{
-        setTimeout('$("#flecha4").show()',500);
-    }
-    this.indicador4=!this.indicador4;
+    this.indicador4 = !this.indicador4;
 }
+
 function showCardOrigen() {
     $(".card-origen").show();
 }
