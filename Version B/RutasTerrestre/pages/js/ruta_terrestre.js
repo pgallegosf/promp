@@ -1,12 +1,24 @@
 $(document).ready(function() {
+    
     $(".ptOrigen").click(function(e) {
+
         e.stopPropagation();
         showCardOrigen();
+        if($("#ptOrigen").val()=="Selecciona"){
+            $("#ptOrigen").val("");
+        }
     });
     $(".ptDestino").click(function(e) {
         e.stopPropagation();
         showCardDestino();
+        if($("#puertoDestino").val()=="Selecciona"){
+            $("#puertoDestino").val("");
+        }
     });
+    $(".ptOrigenMovil").click(function(e) {
+        $("#txtPuntoOrigenMovil").focus();
+    });
+    
     $("body").click(function() {
         closeCardPuertos();
     });
@@ -36,9 +48,14 @@ $(document).ready(function() {
     });
     $(".opOrigenMovil").click(function() {
         selectPtoOrigenMovil();
+        $("#ptOrigenMovil").val("Piura");
+        $("#txtPuntoLlegadaMovil").focus();
     });
     $(".opDestinoMovil").click(function() {
         selectPtoDestino();
+        $(".btn-close-canvas").click();
+        $("#puertoDestinoMovil").val("Callao");
+        $("#btnBuscarMovil").prop("disabled",false);
     });
     $(".opDestCiudad").click(function() {
         selectPtoDestCiudad();
@@ -54,6 +71,12 @@ $(document).ready(function() {
     });
     $(".btn-rutasMovil2").click(function() {
         showRutas();
+    });
+    $(".idPopoverNotificacionGuardar").click(function() {
+        $(".popover").toggle();
+    });
+    $(".close-popover").click(function() {
+        $(".popover").toggle();
     });
     $(".puntOrigen").click(function(e) {
         e.stopPropagation();
@@ -104,7 +127,10 @@ function closeCardPuertos() {
 }
 
 function showCardPuertosOrigen() {
-    $(".ptOrigen").val("Piura")
+    $(".ptOrigen").val("Piura");
+    $("#ptOrigen").removeClass('gris-promperu');
+    $("#ptOrigen").addClass('negro-promperu');
+
 }
 
 function showCardPuertosDestino() {
@@ -113,6 +139,8 @@ function showCardPuertosDestino() {
     $(".btn-rutas").removeClass('btn-disabled');
     $(".btn-rutas").addClass('btn-danger');
     $(".puertoDestino").val("Callao");
+    $("#puertoDestino").removeClass('gris-promperu');
+    $("#puertoDestino").addClass('negro-promperu');
 }
 
 function showCardPuertosEEUU() {

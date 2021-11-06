@@ -118,7 +118,7 @@
     font-family: 'Helvetica Neue LT Std light'!important;
     font-style: normal !important;
     font-weight: 400 !important;
-    font-size: 18px !important;
+    font-size: 17px !important;
     line-height: 21.6px !important;
     text-align: center !important;
 }
@@ -202,7 +202,7 @@
 .font-Display-2-Bold {
     font-family: 'Helvetica Neue LT Std bold' !important;
     font-weight: bold!important;
-    font-size: 51px !important;
+    font-size: 50px !important;
     line-height: 61px !important;
     align-items: center;
 }
@@ -400,9 +400,9 @@ img {
     padding: 0px;
     position: absolute;
     width: 97px!important;
-    height: 43.15px!important;
+    height: 50px!important;
     left: 45px;
-    top: 13px;
+    top:10px;
 }
 
 .badge-notification {
@@ -418,7 +418,8 @@ img {
 }
 
 .rounded-pill {
-    border-radius: 50rem!important;
+    border-radius: 13.5px !important;
+    height:27px;
 }
 
 .badge-notification {
@@ -487,8 +488,7 @@ img {
 }
 
 .icon-dashboard {
-    width: 100px;
-    height: 106px;
+    
     margin-top: 7px;
     margin-bottom: 5px;
 }
@@ -652,8 +652,71 @@ img {
     padding-left: 10% !important;
     padding-right: 10% !important;
 }
-
+.card-dashboard{
+    Width:200px;
+    Height:120px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    margin:10px;
+}
+.div-card-dashboard{
+    Width:220px;
+    Height:132px;
+}
+.img-principal{
+    position: absolute;
+    z-index:1;
+    width: 100%;
+    height:450px;
+    right: 0px;
+}
+.card-busqueda > .row{
+    margin-left: 110px !important;
+    margin-right: 110px !important;
+}
+.img-footter {
+    Width: 243px !important;
+    Height: 47.69px !important;
+    margin-bottom: 18.76%;
+    margin-left: 5% !important;
+}
+.img-footter-promperu {
+    width: 97px!important;
+    height: 50px!important;
+    margin-bottom: 18.76%;
+    margin-right: 5% !important;
+}
 @media (min-width: 200px) {
+    
+    .img-footter-promperu {
+        width: 81px!important;
+        height: 35px!important;
+        margin-bottom: 18.76%;
+        margin-right: 5% !important;
+    }
+    .img-footter {
+        Width: 168px !important;
+        Height: 30.9px !important;
+        margin-bottom: 18.76%;
+        margin-left: 5% !important;
+    }
+    .card-busqueda > .row{
+        margin-left: 2% !important;
+        margin-right: 2% !important;
+    }
+    .card-dashboard{
+        Width:139px;
+        Height:110px;
+        padding-bottom: 10px;
+        padding-left: 17px;
+        margin:10px;
+        justify-content: center;
+        position: absolute;
+    }
+    .div-card-dashboard{
+        Width:159px;
+        Height:122px;
+    }
     .contenedor-titulo>h5 {
         font-family: 'Helvetica Neue LT Std bold' !important;
         font-style: normal !important;
@@ -691,11 +754,22 @@ img {
         align-items: center;
         padding: 0px;
         position: absolute;
-        width: 53px!important;
-        height: 25px!important;
+        width: 56px!important;
+        height: 36px!important;
+        left: 13px;
+        top:7px;
+    }
+    .nav-img-b {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        position: absolute;
+        width: 56px!important;
+        height: 36px!important;
         /* left: 13px; */
         left: 45px;
-        top: 12px;
+        top:7px;
     }
     .icon-menu {
         float: left;
@@ -705,7 +779,7 @@ img {
         width: 100%!important;
     }
     .inline-for-movil {
-        display: initial;
+        display: contents;
     }
     .inline-for-movil2 {
         display: initial;
@@ -717,9 +791,56 @@ img {
         padding-left: 5% !important;
         padding-right: 5% !important;
     }
+    .img-principal{
+        position: absolute;
+        z-index:1;
+        width: 100%;
+        height:674px;
+    }
+    .padding-control-left{
+        padding-left: 0px !important;
+        padding-right:0 !important;
+    }
+    .padding-control-right{
+        padding-right: 0px !important;
+        padding-left:0 !important;
+    }
+    .padding-control3-busqueda{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
 }
 
 @media (min-width: 576px) {
+    .img-footter-promperu {
+        width: 81px!important;
+        height: 35px!important;
+        margin-bottom: 18.76%;
+        margin-right: 5% !important;
+    }
+    .img-footter {
+        Width: 188px !important;
+        Height: 36.9px !important;
+        margin-bottom: 18.76%;
+        margin-left: 5% !important;
+    }
+    .card-busqueda > .row{
+        margin-left: 2% !important;
+        margin-right: 2% !important;
+    }
+    .card-dashboard{
+        Width:139px;
+        Height:110px;
+        padding-bottom: 10px;
+        padding-left: 17px;
+        margin:10px;
+        justify-content: center;
+        position: absolute;
+    }
+    .div-card-dashboard{
+        Width:159px;
+        Height:122px;
+    }
     .contenedor-titulo>h5 {
         font-family: 'Helvetica Neue LT Std bold' !important;
         font-style: normal !important;
@@ -758,15 +879,26 @@ img {
         padding: 0px;
         position: absolute;
         width: 53px!important;
-        height: 25px!important;
+        height: 36px!important;
+        left: 13px;
+        top:7px;
+    }
+    .nav-img-b {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        position: absolute;
+        width: 53px!important;
+        height: 36px!important;
         left: 45px;
-        top: 12px;
+        top:7px;
     }
     .offcanvas-end {
         width: 100%!important;
     }
     .inline-for-movil {
-        display: initial;
+        display: contents;
     }
     .inline-for-movil2 {
         display: initial;
@@ -778,9 +910,55 @@ img {
         padding-left: 8% !important;
         padding-right: 8% !important;
     }
+    .img-principal{
+        position: absolute;
+        z-index:1;
+        width: 100%;
+        height:674px;
+    }
+    .padding-control-left{
+        padding-left: 0px !important;
+        padding-right:0 !important;
+    }
+    .padding-control-right{
+        padding-right: 0px !important;
+        padding-left:0 !important;
+    }
+    .padding-control3-busqueda{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
 }
 
 @media (min-width: 768px) {
+    .img-footter-promperu {
+        width: 97px!important;
+        height: 50px!important;
+        margin-bottom: 18.76%;
+        margin-right: 5% !important;
+    }
+    
+    .img-footter {
+        Width: 243px !important;
+        Height: 47.69px !important;
+        margin-bottom: 18.76%;
+        margin-left: 5% !important;
+    }
+    .card-busqueda > .row{
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+    .card-dashboard{
+        Width:200px;
+        Height:120px;
+        padding-bottom: 10px;
+        padding-left: 17px;
+        margin:10px;
+    }
+    .div-card-dashboard{
+        Width:220px;
+        Height:132px;
+    }
     .contenedor-titulo>h5 {
         font-family: "Helvetica Neue LT Std bold" !important;
         font-style: normal !important;
@@ -819,9 +997,9 @@ img {
         padding: 0px;
         position: absolute;
         width: 97px!important;
-        height: 43.15px!important;
+        height: 56px!important;
         left: 45px;
-        top: 13px;
+        top: 7px;
     }
     .offcanvas-end {
         width: 50%!important;
@@ -838,10 +1016,37 @@ img {
     .padding-card-busqueda {
         padding-left: 10% !important;
         padding-right: 10% !important;
+    }
+    .img-principal{
+        position: absolute;
+        z-index:1;
+        width: 100%;
+        height:450px;
+    }
+    .padding-control-left{
+        padding-left: 30px !important;
+        padding-right:0 !important;
+    }
+    .padding-control-right{
+        padding-right: 30px !important;
+        padding-left:0 !important;
+    }
+    .padding-control3-busqueda{
+        padding-right: 30px !important;
+        padding-left: 0px !important;
     }
 }
 
 @media (min-width: 992px) {
+    .padding-control3-busqueda{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .card-busqueda > .row{
+        margin-left: 80px !important;
+        margin-right: 80px !important;
+    }
     .left-center {
         text-align: left !important;
     }
@@ -858,9 +1063,9 @@ img {
         padding: 0px;
         position: absolute;
         width: 97px!important;
-        height: 43.15px!important;
+        height: 56px!important;
         left: 45px;
-        top: 13px;
+        top: 7px;
     }
     .offcanvas-end {
         width: 50%!important;
@@ -878,9 +1083,19 @@ img {
         padding-left: 10% !important;
         padding-right: 10% !important;
     }
+    .img-principal{
+        position: absolute;
+        z-index:1;
+        width: 100%;
+        height:450px;
+    }
 }
 
 @media (min-width: 1200px) {
+    .card-busqueda > .row{
+        margin-left: 110px !important;
+        margin-right: 110px !important;
+    }
     .left-center {
         text-align: left !important;
     }
@@ -897,9 +1112,9 @@ img {
         padding: 0px;
         position: absolute;
         width: 97px!important;
-        height: 43.15px!important;
+        height: 56px!important;
         left: 45px;
-        top: 13px;
+        top: 7px;
     }
     .offcanvas-end {
         width: 50%!important;
@@ -914,8 +1129,21 @@ img {
         padding-left: 10% !important;
         padding-right: 10% !important;
     }
+    .img-principal{
+        position: absolute;
+        z-index:1;
+        width: 100%;
+        height:450px;
+    }
 }
-
+@media (min-width: 1920px) {
+    .img-principal{
+        position: absolute;
+        z-index:1;
+        width: 100%;
+        height:auto;
+    }
+}
 .btn-close-menu {
     box-sizing: content-box !important;
     padding: 0.25em 0.25em!important;
@@ -937,13 +1165,14 @@ img {
 .popover {
     background-color: #07354F !important;
     color: #ffffff !important;
-    width: 50% !important;
-    height: 30% !important;
-    padding: 10px 20px !important;
+    width: auto !important;
+    height: auto !important;
     border-radius: 15px !important;
-    position: absolute !important;
-    top: 62px !important;
-    left: 78% !important;
+    position: fixed  !important;
+    top: 60px !important;
+    right: 8px !important;
+    left: auto !important;
+    z-index: 100 !important;
 }
 
 .popover::before {
@@ -956,7 +1185,7 @@ img {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     top: -30px;
-    left: 83%;
+    right: 43px !important;
     position: absolute;
 }
 
@@ -1011,7 +1240,6 @@ img {
     width: 50% !important;
     height: 30% !important;
     margin-left: 7% !important;
-    top: 280% !important;
     position: absolute !important;
     font-size: 12px;
     font-weight: bold;
@@ -1022,7 +1250,6 @@ img {
     width: 50% !important;
     height: 35% !important;
     margin-left: 7% !important;
-    top: 295% !important;
     position: absolute !important;
     font-size: 10px;
     font-weight: bold;
@@ -1163,19 +1390,9 @@ footer {
     margin-right: 7% !important;
 }
 
-.img-footter {
-    Width: 243px !important;
-    Height: 47.69px !important;
-    margin-bottom: 18.76%;
-    margin-left: 5% !important;
-}
 
-.img-footter-promperu {
-    Width: 93px !important;
-    Height: 40px !important;
-    margin-bottom: 18.76%;
-    margin-right: 5% !important;
-}
+
+
 
 .contenedor-img-movil {
     height: 80px !important;
@@ -1186,11 +1403,6 @@ footer {
     width: 100% !important;
     cursor: pointer;
     opacity: 1 !important;
-    font-family: "Helvetica Neue LT Std bold" !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 18px !important;
-    line-height: 22px !important;
 }
 
 .header-modal {
@@ -1243,4 +1455,43 @@ footer {
     height: 2px;
     background-color: #A5ACB0;
     opacity: 0.3;
+}
+
+
+.card-busqueda{
+    max-width: 1276px;
+    width: 100%;
+}
+
+.div-card-busqueda{
+    justify-content: center;
+    display: flex;
+}
+.div-btn-busqueda{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.margin-0{
+    margin: 0 !important;
+}
+.div-principal-busqueda{
+    margin-left: 3% !important;
+    margin-right: 3% !important;
+    margin-bottom: 3rem !important;
+}
+.badge {
+    text-transform: none !important;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:5px;
+}
+.margin-right-0> .row {
+    margin-right: 0 !important;
+}
+.text-align-left{
+    text-align:left !important;
+}
+.width-max-content{
+    width:max-content !important;
 }
