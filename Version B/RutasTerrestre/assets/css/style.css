@@ -756,9 +756,7 @@ body {
     top: -15px;
 }
 
-.avatar-group .avatar {
-    background-color: #07354F;
-}
+
 
 .ocultar-movil {
     display: none !important;
@@ -1572,7 +1570,9 @@ body {
 .background-footer-modal {
     background: linear-gradient(rgb(165 172 176 / 10%), rgb(165 172 176 / 10%));
 }
-
+.avatar-group .avatar {
+    border: 0 !important;
+}
 .cicle-avatar {
     width: 35px;
     height: 35px;
