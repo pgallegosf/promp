@@ -56,96 +56,106 @@
             </div>
         </nav>
         <!-- End Navbar -->
-        <div class="container-fluid py-4 container-principal">
+        <div class="container-fluid py-4 container-principal" style="padding-top: 70px !important;">
             <!-- Inicio de vista principal -->
-            <div id="view-global">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <!-- Inicio vista ver detalle de busqueda de ruta desktop -->
-                <div id="view-line-time-desktop">
-                    <div class="contenedor-centrado">
-                        <div class="row container-detalle">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div class="row">
-                                    <div class="d-flex align-items-center justify-content-space-evenly">
-                                        <div>
-                                            <h4 class="font-weight-bold min-titulo font-h1-bold">Piura</h4> <span class="span font-weight-bold font-H5-bold negro-promperu">Perú</span>
-                                        </div>
-                                        <div class="icon"> <i class="fas fa-arrow-right" aria-hidden="true"></i> </div>
-                                        <div>
-                                            <h4 class="font-weight-bold min-titulo font-h1-bold">Callao</h4> <span class="span font-weight-bold font-H5-bold negro-promperu">Perú</span> </div>
-                                    </div>
-                                </div>
-                                <div class="m-left">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 container-detalle-subtitulo font-H4-bold-700n">Tiempo de tránsito promedio</div>
-                                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 negro-promperu font-H4-light-300">15h 15 min</div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 container-detalle-subtitulo font-H4-bold-700n">Dístancia</div>
-                                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 negro-promperu font-H4-light-300">990.4 km</div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 container-detalle-subtitulo font-H4-bold-700n">Frecuencias de salidas</div>
-                                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 negro-promperu font-H4-light-300">Interdiario y semanal</div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil d-flex justify-content-space-evenly">
-                                    <button type="button" class="btn btn-outline-light w-100 mostrar-movil" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
-                                    <div class="content-centrado">
-                                        <div class="avatar-group ordenar">
-                                            <div class="avatar avatar-xs rounded-circle mx-2">
-                                                <img src="../assets/img/Ruta_Terrestre/Mask Group.png" alt="contenedor">
-                                            </div>
-                                            <span class="font-size-15 font-weight-bold span-ver-mapa">Ver mapa de la ruta</span>
-                                        </div>
-                                    </div>
-                                </button>
-                                </div>
+            <div id="d-display" >
+                <div class="background-color-gris" style="padding-top:1rem;">
+                    <div class="row mt-4 div-centrado div-principal-busqueda background-color-gris margin-top-bottom-0">
+                        <div class="col-lg-12 mb-lg-0 padding-left-right-0 div-card-busqueda">
+                            <div class="card-busqueda margin-right-0">  
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-detalle-titulo font-H2-bold-700">Flete promedio por container</div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <span class="span-container-detalle negro-promperu font-H5-lightn">Actualizados al: 4 de marzo del 2021</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                                        <label class="container-detalle-subtitulo font-label-400"> Tipo de container</label>
-                                        <input type="text" class="form-control font-H4-light-300" id="tipContainer" value="Dry Van 20'" /><i class="fas fa-angle-down icon-select"></i>
-                                    </div>
-                                    <div class="col-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                                        <div class="costo negro-promperu">
-                                            <span class="span-costo font-H2-bold-700"> $ 5,200</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <button type="button" class="btn btn-outline-light">
-                                        <div class="content-centrado">
-                                            <div class="avatar-group ordenar">
-                                                <div class="avatar avatar-xs rounded-circle">
-                                                    <img src="../assets/img/Ruta_Terrestre/container.jpg" alt="contenedor">
-                                                </div>
-                                                <span class="font-size-15 font-weight-bold span-contenedor font-H4-bold-700n">Conoce los tipos de contenedores</span>
+                                    <div class="row">
+                                        <div class="col-xs-12 d-flex align-items-center space-between padding-left-right-0">
+                                            <div>
+                                                <h4 class="font-weight-bold min-titulo font-h1-bold">Piura</h4> <span class="span font-weight-bold font-H5-bold negro-promperu">Perú</span>
+                                            </div>
+                                            <div class="icon"> 
+                                                <svg width="59" height="37" viewBox="0 0 59 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M42.1846 0.990479H42.0289L37.5056 5.51378L46.6884 14.9495H0.803711V21.7101H45.9102L37.35 30.9902L42.0776 35.7177H42.1943L58.1864 17.8288L42.1846 0.990479Z" fill="#C4122F"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-weight-bold min-titulo font-h1-bold">Callao</h4> <span class="span font-weight-bold font-H5-bold negro-promperu">Perú</span> 
                                             </div>
                                         </div>
-                                    </button>
+                                    </div>
+                                    <div class="m-left">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 container-detalle-subtitulo font-H4-bold-700n">Tiempo de tránsito promedio</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 negro-promperu font-H4-light-300">15h 15 min</div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 container-detalle-subtitulo font-H4-bold-700n">Dístancia</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 negro-promperu font-H4-light-300">990.4 km</div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 container-detalle-subtitulo font-H4-bold-700n">Frecuencias de salidas</div>
+                                            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 negro-promperu font-H4-light-300">Interdiario y semanal</div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil d-flex justify-content-space-evenly">
+                                        <button type="button" class="btn btn-outline-light w-100 mostrar-movil" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
+                                            <div class="content-centrado">
+                                                <div class="avatar-group ordenar">
+                                                    <div class="avatar avatar-xs rounded-circle mx-2">
+                                                        <img src="../assets/img/Ruta_Terrestre/Mask Group.png" alt="contenedor">
+                                                    </div>
+                                                    <span class="font-size-15 font-weight-bold span-ver-mapa">Ver mapa de la ruta</span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-detalle-titulo font-H2-bold-700">Flete promedio por container</div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <span class="span-container-detalle negro-promperu font-H5-lightn">Actualizados al: 4 de marzo del 2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                            <label class="container-detalle-subtitulo font-label-400"> Tipo de container</label>
+                                            <input type="text" class="form-control font-H4-light-300" id="tipContainer" value="Dry Van 20'" /><i class="fas fa-angle-down icon-select"></i>
+                                        </div>
+                                        <div class="col-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                            <div class="costo negro-promperu">
+                                                <span class="span-costo font-H2-bold-700"> $ 5,200</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <button type="button" class="btn btn-outline-light">
+                                            <div class="content-centrado">
+                                                <div class="avatar-group ordenar">
+                                                    <div class="avatar avatar-xs rounded-circle">
+                                                        <img src="../assets/img/Ruta_Terrestre/container.jpg" alt="contenedor">
+                                                    </div>
+                                                    <span class="font-size-15 font-weight-bold span-contenedor font-H4-bold-700n">Conoce los tipos de contenedores</span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-6 text-center mostrar-desktop">
+                            <div class="card-busqueda margin-right-0">
+
+                            </div>
+                            <div class="card-busqueda margin-right-0 text-center mostrar-desktop">
                                 <img src="../assets/img/Ruta_Terrestre/mapa2.png" alt="mapa" class="img">
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- Inicio vista ver detalle de busqueda de ruta desktop -->
+                <div id="view-line-time-desktop" >
+                    
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                     <div class="mostrar-desktop">
                         <div class="row">

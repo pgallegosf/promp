@@ -113,6 +113,13 @@
     font-size: 18px !important;
     line-height: 21.6px !important;
 }
+.font-H4-light-min {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 17px !important;
+    line-height: 21.6px !important;
+}
 
 .font-H4-light-400 {
     font-family: 'Helvetica Neue LT Std light'!important;
@@ -1475,6 +1482,10 @@ footer {
 .margin-0{
     margin: 0 !important;
 }
+.margin-top-bottom-0{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
 .div-principal-busqueda{
     margin-left: 3% !important;
     margin-right: 3% !important;
@@ -1494,4 +1505,41 @@ footer {
 }
 .width-max-content{
     width:max-content !important;
+}
+.top{
+    margin-top: -6.2rem !important;
+}
+.mt-5 {
+    margin-top: 5rem !important;
+}
+.margin-left-right-badge{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.absolute{
+    position: absolute !important;
+}
+.relative{
+    position: relative !important;
+}
+.background-color-gris{
+    background-color:#EFEFEF !important;
+}
+.padding-top-bottom-contenedores{
+    padding-top:10px !important;
+    padding-bottom: 10px !important;
+}
+.padding-top-bottom-0{
+    padding-top:0 !important;
+    padding-bottom: 0 !important;
+}
+.margin-top-bottom-contenedores{
+    margin-top:10px !important;
+    margin-bottom: 10px !important;
+}
+.margin-top-2rem{
+    margin-top:2rem !important;
+}
+.space-between{
+    justify-content: space-between;
 }
