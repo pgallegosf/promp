@@ -60,11 +60,16 @@
                     <div class="col-lg-12 mb-lg-0">
                             <div class="busquedaNormal row px-2 p-5 overflow-hidden">
                                 <div class="col-lg-8 col-md-8 col-xs-12">
-                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selectServicio1" id="selectServicio1" onchange="window.location.href='ListaDirectorioLogistico.html'">
-									  <option value="1">Agente de aduanas</option>
-									  <option value="2">Agente de carga</option>
-									  <option value="3">Asesoría logística</option>
-									</select>
+                                    <input type="text" class="form-control busqueda-listado ptOrigen mostrar-desktop ordenar font-H4-light" id="ptBusqueda" value="Selecciona" /><i class="icon-select ptOrigen mostrar-desktop ordenar"><img src="../assets/img/icon-search.svg" alt=""></i>
+                                    <input type="text" class="form-control busqueda-listado ptOrigenMovil mostrar-movil ordenar font-H4-light" id="ptBusqueda" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <i class="icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"><img src="../assets/img/icon-search.svg" alt=""></i>
+                                </div>
+                                <div class="h-100 p-3 card-select-busqueda-listado card-origen" id="selectPuertoOrigen">
+                                    <div class="row" id="comboPais">
+                                        <option onclick="window.location.href='ListaDirectorioLogistico.html'" value="0" class="font-H4-light option-select font-color-black opCiudad">Agente de aduanas</option>
+                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad">Agente de carga</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad">Asesoría logística</option>
+                                    </div>
                                 </div>
                                <!-- <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
                                     <button class="btn btn-second" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
@@ -77,13 +82,69 @@
                             </div>
                             <div class="busquedaNormal overflow-hidden row">
                                 <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
                                         <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold negro-promperu">
                                             6 Empresas <label class="font-H5-light">encontradas para Agente de Aduanas</label>
                                         </div>
-            
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
+
+                                    <div id="vista-filtro" class="vista-mobile-filtro col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-H4-bold negro-promperu">
+                                    Filtrar:
+                                    <a href="javascript:mostrarFiltros()"><img src="../assets/img/icon-filtro.svg" alt=""></a>
+                                    </div>
+
+                                    <div id="vista-det-filtro" class="d-none col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
+                                        <div class="row col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 ">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                                <div class="row">
+                                                  <div class="col-sm-4">     
+                                                          <label class="font-H4-bold">Rubro</label>
+                                                        </div>
+                                                  <div class="col-sm-8">
+                                                    <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                                                        <option value="0">Todos     </option>
+                                                        <option value="1">Rubro 1   </option>
+                                                        <option value="2">Rubro 2   </option>
+                                                        <option value="3">Rubro 3   </option>
+                                                      </select>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                                <div class="row">
+                                                 <div class="col-sm-4">
+                                                    <label class="font-H4-bold">Ubicación</label>
+                                                 </div>
+                                                 <div class="col-sm-8">
+                                                    <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                                                        <option value="0">Todos</option>
+                                                        <option value="1">Chimbote</option>
+                                                        <option value="2">Santa</option>
+                                                      </select>
+                                                 </div>
+                                                </div>
+                                                
+                                               
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                                <div class="row">
+                                                  <div class="col-sm-4">
+                                                    <label class="font-H4-bold">Ordernar por</label>
+                                                  </div>
+                                                  <div class="col-sm-8">
+                                                    <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                                                        <option value="1">A-Z</option>
+                                                        <option value="2">Z-A</option>
+                                                      </select>
+                                                  </div>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="vista-web" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
                                         <div class="row col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 ">
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <label class="font-H4-bold">Rubro</label>
@@ -115,51 +176,81 @@
                             </div>
                             <div class="busquedaAvanzada row px-2 p-5 overflow-hidden sinPaddingBottom">
                                 <div class="col-lg-12 col-md-12 col-xs-12">
-                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selectRegion" id="selectServicio">
-									  <option value="1">Agente de aduanas</option>
-									  <option value="2">Agente de carga</option>
-									  <option value="3">Asesoría logística</option>
-									</select>
+                                    <input type="text" class="form-control busqueda-listado ptOrigen mostrar-desktop ordenar font-H4-light" id="ptBusqueda" value="Selecciona" /><i class="icon-select ptOrigen mostrar-desktop ordenar"><img src="../assets/img/icon-search.svg" alt=""></i>
+                                    <input type="text" class="form-control busqueda-listado ptOrigenMovil mostrar-movil ordenar font-H4-light" id="ptBusqueda" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <i class="icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"><img src="../assets/img/icon-search.svg" alt=""></i>
+                                </div>
+                                <div class="h-100 p-3 card-select-busqueda-listado card-origen" id="selectPuertoOrigen">
+                                    <div class="row" id="comboPais">
+                                        <option onclick="window.location.href='ListaDirectorioLogistico.html'" value="0" class="font-H4-light option-select font-color-black opCiudad">Agente de aduanas</option>
+                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad">Agente de carga</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad">Asesoría logística</option>
+                                    </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-xs-12 paddingControl">
                                     <label for="selRubro">Rubro</label>
-                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selRubro" id="selRubro">
-									  <option value="1">Rubro 1</option>
-									  <option value="2">Rubro 2</option>
-									  <option value="3">Rubro 3</option>
-									</select>
+                                    <input type="text" class="form-control busqueda-listado ptRubro mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                    <input type="text" class="form-control busqueda-listado ptRubroMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
+                                </div>
+                                <div class="h-100 p-3 card-listado-rubro card-rubro" id="selectPuertoOrigen">
+                                    <div class="row" id="comboPais">
+                                        <option value="0" class="font-H4-light option-select font-color-black opCiudad">Rubro 1</option>
+                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad">Rubro 2</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad">Rubro 3</option>
+                                    </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-xs-12 paddingControl">
                                     <label for="selAnioExp">Años de experiencia</label>
-                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selAnioExp" id="selAnioExp">
-									  <option value="1">5</option>
-									  <option value="2">10</option>
-									  <option value="3">20</option>
-									</select>
+                                    <input type="text" class="form-control busqueda-listado ptExperiencia mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                    <input type="text" class="form-control busqueda-listado ptExperienciaMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
+                                </div>
+                                <div class="h-100 p-3 card-listado-experiencia card-experiencia" id="selectPuertoOrigen">
+                                    <div class="row" id="comboPais">
+                                        <option value="0" class="font-H4-light option-select font-color-black opCiudad">5</option>
+                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad">10</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad">20</option>
+                                    </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
                                     <label for="selectRegion">Región</label>
-                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selectRegion" id="selectRegion">
-									  <option value="1">Ancash</option>
-									  <option value="2">Lima</option>
-									  <option value="3">Callao</option>
-									</select>
+                                    <input type="text" class="form-control busqueda-listado ptRegion mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                    <input type="text" class="form-control busqueda-listado ptRegionMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
+                                </div>
+                                <div class="h-100 p-3 card-listado-region card-region" id="selectPuertoOrigen">
+                                    <div class="row" id="comboPais">
+                                        <option value="0" class="font-H4-light option-select font-color-black opCiudad">Ancash</option>
+                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad">Lima</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad">Callao</option>
+                                    </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
                                     <label for="selectProvincia">Provincia</label>
-                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selectProvincia" id="selectProvincia">
-									  <option value="1">Santa</option>
-									  <option value="2">Casta</option>
-									  <option value="3">Huarmey</option>
-									</select>
+                                    <input type="text" class="form-control busqueda-listado ptProvincia mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                    <input type="text" class="form-control busqueda-listado ptProvinciaMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
+                                </div>
+                                <div class="h-100 p-3 card-listado-provincia card-provincia" id="selectPuertoOrigen">
+                                    <div class="row" id="comboPais">
+                                        <option value="0" class="font-H4-light option-select font-color-black opCiudad">Santa</option>
+                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad">Casta</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad">Huarmey</option>
+                                    </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
                                     <label for="selectDistrito">Distrito</label>
-                                    <select class="controlSelect2 form-control font-H4-light negro-promperu" name="selectDistrito" id="selectDistrito">
-									  <option value="1">Chimbote</option>
-									  <option value="2">Nuevo Chimbote</option>
-									  <option value="3">Casma</option>
-									</select>
+                                    <input type="text" class="form-control busqueda-listado ptDistrito mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                    <input type="text" class="form-control busqueda-listado ptDistritoMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
+                                </div>
+                                <div class="h-100 p-3 card-listado-distrito card-distrito" id="selectPuertoOrigen">
+                                    <div class="row" id="comboPais">
+                                        <option value="0" class="font-H4-light option-select font-color-black opCiudad">Chimbote</option>
+                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad">Nuevo Chimbote</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad">Casma</option>
+                                    </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
                                     <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked>
@@ -174,21 +265,78 @@
                                 <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
                                     <button class="btn btn-second btnwidth100" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12">
+                                <div class="col-lg-4 col-md-6 col-xs-12 mostrar-desktop">
                                     <a href="javascript:ocultarBusquedaAvanzada()" class="colorGeneral subrayado lineHeight50">
 										Cerrar búsqueda avanzada
 									</a>
                                 </div>
                             </div>
-                            <div class="busquedaAvanzada row overflow-hidden">
+                            <hr class="busquedaAvanzada overflow-hidden mostrar-movil">
+                            <div class="busquedaAvanzada overflow-hidden row">
                                 <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
                                         <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold negro-promperu">
                                             6 Empresas <label class="font-H5-light">encontradas para Agente de Aduanas</label>
                                         </div>
-            
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
+
+                                    <div id="vista-filtro-avanzado" class="vista-mobile-filtro col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-H4-bold negro-promperu">
+                                    Filtrar:
+                                    <a href="javascript:mostrarFiltrosAvanzado()"><img src="../assets/img/icon-filtro.svg" alt=""></a>
+                                    </div>
+
+                                    <div id="vista-det-avanzada-filtro" class="d-none col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
+                                        <div class="row col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 ">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                                <div class="row">
+                                                  <div class="col-sm-4">     
+                                                          <label class="font-H4-bold">Rubro</label>
+                                                        </div>
+                                                  <div class="col-sm-8">
+                                                    <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                                                        <option value="0">Todos     </option>
+                                                        <option value="1">Rubro 1   </option>
+                                                        <option value="2">Rubro 2   </option>
+                                                        <option value="3">Rubro 3   </option>
+                                                      </select>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                                <div class="row">
+                                                 <div class="col-sm-4">
+                                                    <label class="font-H4-bold">Ubicación</label>
+                                                 </div>
+                                                 <div class="col-sm-8">
+                                                    <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                                                        <option value="0">Todos</option>
+                                                        <option value="1">Chimbote</option>
+                                                        <option value="2">Santa</option>
+                                                      </select>
+                                                 </div>
+                                                </div>
+                                                
+                                               
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                                <div class="row">
+                                                  <div class="col-sm-4">
+                                                    <label class="font-H4-bold">Ordernar por</label>
+                                                  </div>
+                                                  <div class="col-sm-8">
+                                                    <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                                                        <option value="1">A-Z</option>
+                                                        <option value="2">Z-A</option>
+                                                      </select>
+                                                  </div>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="vista-web" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
                                         <div class="row col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 ">
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <label class="font-H4-bold">Rubro</label>
@@ -222,10 +370,10 @@
                 </div>
                 <div class="row">
                     <div class="row padding-list-directorios">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 centrado">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
                             <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 ">
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-h3-bold negro-promperu mayuscula pb-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-lg-start text-sm-start font-h3-bold negro-promperu mayuscula pb-3">
                                         Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
@@ -274,7 +422,7 @@
                                 </div>
                                 <div class="row pt-5"><br></div>
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-h3-bold negro-promperu mayuscula pb-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-lg-start text-sm-start font-h3-bold negro-promperu mayuscula pb-3">
                                         Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
@@ -321,7 +469,7 @@
                                 </div>
                                 <div class="row pt-5"><br></div>
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-h3-bold negro-promperu mayuscula pb-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-lg-start text-sm-start font-h3-bold negro-promperu mayuscula pb-3">
                                         Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
@@ -368,7 +516,7 @@
                                 </div>
                                 <div class="row pt-5"><br></div>
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-h3-bold negro-promperu mayuscula pb-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-lg-start text-sm-start font-h3-bold negro-promperu mayuscula pb-3">
                                         Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
@@ -415,7 +563,7 @@
                                 </div>
                                 <div class="row pt-5"><br></div>
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-h3-bold negro-promperu mayuscula pb-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-lg-start text-sm-start font-h3-bold negro-promperu mayuscula pb-3">
                                         Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
@@ -2331,46 +2479,57 @@
                 </div>
             </div>
             <!-- Fin vista ver detalle de busqueda de ruta movil-->
-            <footer class="footer pt-3" id="footer">
+            <footer class="footer pt-3 mt-5" id="footer">
                 <div class="container-fluid">
-                    <div id="footer-Desktop">
+                    <div id="footer-Desktop" class="mostrar-desktop">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-lg-12 mb-lg-0 mb-4">
-                                <div class="text-center">
-                                    Para mas información escribanos a :
+                                <div class="text-center font-helvetica-footer">
+                                    Para más información escríbenos a:
                                 </div>
                             </div>
-                            <div class="col-lg-12 text-center font-weight-bold">
+                            <br>
+                            <div class="col-lg-12 text-center font-weight-bold font-helvetica-footer-bold">
                                 correo@promperu.gob.pe
                             </div>
                             <div class="justify-content-between text-center mt-3">
-                                <i class="fab fa-linkedin-in icon-redes"></i>
-                                <i class="fab fa-facebook icon-redes"></i>
-                                <i class="fab fa-twitter icon-redes"></i>
-                                <i class="fab fa-youtube icon-redes"></i>
+                                <svg class="icon-redes" width="18" height="15" viewBox="3 -2 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.07616 1.94897C4.07616 3.02897 3.29276 3.89793 2.00136 3.89793C0.783407 3.90414 0 3.02897 0 1.94897C0 0.850345 0.807888 0 2.05032 0C3.29276 0 4.05168 0.850345 4.07616 1.94897ZM0.104046 18V5.44345H3.95376V18H0.104046Z" fill="black"/>
+                                    <path d="M6.25541 9.44705C6.25541 7.88291 6.20645 6.57325 6.15137 5.4436H9.49309L9.67058 7.18774H9.74402C10.252 6.36843 11.4883 5.15808 13.5693 5.15808C16.1031 5.15808 18.0004 6.87739 18.0004 10.5767V18.0001H14.1507V11.0422C14.1507 9.42222 13.5937 8.3236 12.1983 8.3236C11.1333 8.3236 10.5029 9.06843 10.2214 9.78842C10.1174 10.0429 10.0929 10.4029 10.0929 10.7629V18.0001H6.24317V9.44705H6.25541Z" fill="black"/>
+                                </svg>
+                                <svg class="icon-redes" width="10" height="18" viewBox="-1 -2 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.82621 9.78828L9.24207 6.58552H6.06414V4.54345C6.06414 3.61862 6.32483 2.98552 7.6531 2.98552H9.34759V0.124138C9.05586 0.0868966 8.05035 0 6.87724 0C4.43793 0 2.76207 1.48966 2.76207 4.2331V6.59172H0V9.79448H2.76207V18H6.06414V9.78828H8.82621Z" fill="black"/>
+                                </svg>
+                                <svg class="icon-redes" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5055 0.272498C16.7939 0.696383 16.0017 1.00421 15.159 1.17073C14.4828 0.449117 13.524 0 12.4643 0C10.4256 0 8.77039 1.65517 8.77039 3.69386C8.77039 3.98654 8.80572 4.26409 8.86627 4.53658C5.7931 4.3852 3.07317 2.91169 1.24643 0.676198C0.933558 1.22119 0.746846 1.85702 0.746846 2.53322C0.746846 3.81497 1.39781 4.94533 2.39193 5.60639C1.78637 5.58621 1.21615 5.41968 0.721615 5.14214V5.18755C0.721615 6.97897 1.99327 8.47266 3.68377 8.81076C3.37595 8.89655 3.04794 8.94197 2.70984 8.94197C2.47267 8.94197 2.24054 8.91674 2.01346 8.87637C2.48276 10.3448 3.84525 11.4146 5.4651 11.4449C4.20353 12.434 2.60891 13.0244 0.878049 13.0244C0.58032 13.0244 0.287637 13.0042 0 12.9739C1.62994 14.0235 3.57275 14.6341 5.65685 14.6341C12.4491 14.6341 16.1682 9.00757 16.1682 4.12279C16.1682 3.96131 16.1632 3.80488 16.1581 3.6434C16.8797 3.12363 17.5055 2.47267 18 1.73087C17.3389 2.02355 16.6274 2.2254 15.8806 2.31119C16.6426 1.85702 17.2279 1.13541 17.5055 0.272498Z" fill="black"/>
+                                    </svg>
+                                <svg class="icon-redes" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.5676 2.31177C20.3236 1.40259 19.614 0.687434 18.7104 0.443506C17.0694 0 10.5 0 10.5 0C10.5 0 3.93611 0 2.29514 0.443506C1.3915 0.687434 0.68189 1.40259 0.437962 2.31177C0 3.95829 0 7.401 0 7.401C0 7.401 0 10.8382 0.437962 12.4902C0.68189 13.3994 1.3915 14.1146 2.29514 14.3585C3.93057 14.802 10.5 14.802 10.5 14.802C10.5 14.802 17.0694 14.802 18.7049 14.3585C19.6085 14.1146 20.3181 13.3994 20.562 12.4902C21 10.8437 21 7.401 21 7.401C21 7.401 21.0055 3.95829 20.5676 2.31177ZM8.35454 10.5222V4.27429L13.8429 7.39546L8.35454 10.5222Z" fill="black"/>
+                                </svg>
+
                             </div>
                             <div class="hr col-lg-6 mt-4 background-black"></div>
                             <div class="row mt-3">
-                                <div class="col-3 mt-2">
+                                <div class="col-lg-3 col-md-4 col-sm-3 mt-2">
                                     <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
                                 </div>
-                                <div class="copyright col-6">
+                                <div class="col-lg-6 col-md-4 col-sm-12 mt-2 copyright col-6 font-helvetica-coryright">
                                     Copyright © 2021 PROMPERU. Todos los derechos reservados
                                 </div>
-                                <div class="col-3 mt-n3">
-                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                                <div class="col-lg-3 col-md-4 col-sm-3 mt-n3">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter-promperu div-right">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-none" id="footer-Movil">
+                    <div class="mostrar-movil" id="footer-Movil">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-lg-12 mb-lg-0 mb-2">
-                                <div class="text-center">
+                                <div class="text-center font-helvetica-footer">
                                     Para mas información escribanos a :
                                 </div>
                             </div>
-                            <div class="col-lg-12 text-center font-weight-bold">
+                            <div class="col-lg-12 text-center font-weight-bold font-helvetica-footer-bold">
                                 correo@promperu.gob.pe
                             </div>
                             <div class="justify-content-between text-center mt-2">
@@ -2380,16 +2539,18 @@
                                 <i class="fab fa-youtube icon-redes"></i>
                             </div>
                             <div class="hr col-lg-6 mt-2 background-gris"></div>
+                            <div class="row"><br><br></div>
                             <div class="row mt-2">
-                                <div class="col-6 div-left">
+                                <div class="col-6 div-left contenedor-img-movil">
                                     <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
                                 </div>
-                                <div class="col-6 div-left">
-                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter div-right">
+                                <div class="col-6 div-left contenedor-img-movil">
+                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter-promperu div-right">
                                 </div>
-                                <div class="copyright col-12">
+                                <div class="copyright col-12 font-helvetica-coryright">
                                     Copyright © 2021 PROMPERU. Todos los derechos reservados
                                 </div>
+                                <div class="row"><br><br></div>
                             </div>
                         </div>
                     </div>

@@ -107,7 +107,7 @@
 }
 
 .font-H3-light {
-  font-family: "Helvetica Neue LT Std";
+  font-family: "Helvetica Neue LT Std light";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -162,7 +162,6 @@
   font-weight: 300 !important;
   font-size: 15px !important;
   line-height: 18px !important;
-  text-align: center;
 }
 
 .font-H5-lightn {
@@ -214,6 +213,18 @@
   align-items: center;
 }
 
+.font-H3-medium {
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 24px !important;
+  line-height: 29px !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
 .font-H4-medium {
   font-family: "Helvetica Neue LT Std medium" !important;
   font-style: normal !important;
@@ -253,9 +264,8 @@
   line-height: 61, 2px !important;
 }
 
-
 .font-label {
-  font-family: "Helvetica Neue LT Std" !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -286,6 +296,14 @@
   line-height: 22px !important;
 }
 
+.font-display-title {
+  font-family: "Helvetica Neue LT Std bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 72px;
+}
+
 .font-H5-bold {
   font-family: "Helvetica Neue LT Std bold" !important;
   font-style: normal !important;
@@ -295,10 +313,30 @@
   align-items: center !important;
 }
 
+.font-label-link {
+  font-family: "Helvetica Neue LT Std" !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* identical to box height */
+  text-decoration-line: underline;
+}
+
 .font-label-400 {
   font-family: "Helvetica Neue LT Std medium" !important;
   font-style: normal;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+}
+
+.font-label-icon {
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16.8px;
 }
@@ -328,6 +366,14 @@
   line-height: 14.4px !important;
 }
 
+.font-smallprint-medium-light {
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 14.4px !important;
+}
+
 .font-helvetica-icon {
   font-family: "Helvetica Neue LT Std bold" !important;
   font-style: normal !important;
@@ -347,21 +393,40 @@
 }
 
 .font-helvetica-footer-bold {
-  font-family: "Helvetica Neue LT Std medium" !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
   font-style: normal !important;
-  font-weight: 700 !important;
+  font-weight: bold !important;
   font-size: 12px !important;
-  line-height: 14.4px !important;
+  line-height: 14px !important;
   text-align: center !important;
 }
 
 .font-helvetica-coryright {
   font-family: "Helvetica Neue LT Std medium" !important;
   font-style: normal !important;
-  font-weight: 400 !important;
+  font-weight: normal !important;
   font-size: 14px !important;
-  line-height: 16.8px !important;
+  line-height: 17px !important;
   text-align: center !important;
+  color: #6c6c6c !important;
+}
+
+.font-helvetica-footer {
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  align-items: center;
+  color: #000000 !important;
+}
+
+.font-normal {
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 /* .font */
@@ -433,8 +498,16 @@ img {
   color: #07354f !important;
 }
 
+.gris-promperu {
+  color: #a5acb0 !important;
+}
+
 .blanco {
   color: #ffffff;
+}
+
+.negro {
+  color: #000000;
 }
 
 .background-azul-promperu {
@@ -623,28 +696,60 @@ img {
 .left-center {
   text-align: left !important;
 }
+
 .padding-card-busqueda {
   padding-left: 10% !important;
   padding-right: 10% !important;
 }
+
 @media (min-width: 200px) {
-  .font-H2-bold {
-    font-size: 25px !important;
+
+  .font-display-title {
+    font-size: 40px !important;
+    line-height: 45px !important;
+  }
+
+  .font-H2-light {
+    font-size: 20px !important;
+  }
+
+  .font-H4-bold {
+    font-size: 15px !important;
   }
 
   .font-Display-2-700 {
     font-size: 25px !important;
-    text-align: center !important;
   }
 
   .font-H4-light {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 
   .font-h3-bold {
-    font-size: 20px !important;
+    font-size: 17px !important;
   }
-
+  .contenedor-titulo > h5 {
+    font-family: "Helvetica Neue LT Std bold" !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 36px !important;
+    line-height: 43px !important;
+  }
+  .contenedor-titulo > p {
+    font-family: "Helvetica Neue LT Std medium" !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+  .contenedor-mapa-rutas {
+    margin-left: 4% !important;
+    margin-right: 4% !important;
+  }
+  #view-global {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+  }
   .left-center {
     text-align: center !important;
   }
@@ -689,6 +794,28 @@ img {
 }
 
 @media (min-width: 576px) {
+  .contenedor-titulo > h5 {
+    font-family: "Helvetica Neue LT Std bold" !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 36px !important;
+    line-height: 43px !important;
+  }
+  .contenedor-titulo > p {
+    font-family: "Helvetica Neue LT Std medium" !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+  .contenedor-mapa-rutas {
+    margin-left: 4% !important;
+    margin-right: 4% !important;
+  }
+  #view-global {
+    margin-left: 4% !important;
+    margin-right: 4% !important;
+  }
   .left-center {
     text-align: center !important;
   }
@@ -728,6 +855,28 @@ img {
 }
 
 @media (min-width: 768px) {
+  .contenedor-titulo > h5 {
+    font-family: "Helvetica Neue LT Std bold" !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 60px !important;
+    line-height: 72px !important;
+  }
+  .contenedor-titulo > p {
+    font-family: "Helvetica Neue LT Std medium" !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 30px !important;
+    line-height: 36px !important;
+  }
+  .contenedor-mapa-rutas {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  #view-global {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
   .left-center {
     text-align: left !important;
   }
@@ -806,6 +955,36 @@ img {
 }
 
 @media (min-width: 1200px) {
+
+  .font-display-title {
+    font-size: 60px !important;
+    line-height: 72px !important;
+  }
+
+  .font-H2-light {
+    font-size: 30px !important;
+  }
+
+  .font-h3-bold {
+    font-size: 24px !important;
+  }
+
+  .font-H4-bold {
+    font-size: 18px !important;
+  }
+
+  .font-H2-bold {
+    font-size: 30px !important;
+  }
+
+  .font-H4-light {
+    font-size: 18px !important;
+  }
+
+  .font-Display-2-700 {
+    font-size: 51px !important;
+  }
+
   .left-center {
     text-align: left !important;
   }
@@ -839,22 +1018,6 @@ img {
     padding-left: 10% !important;
     padding-right: 10% !important;
   }
-
-  .font-H3-bold {
-    font-size: 20px !important;
-  }
-
-  .font-H2-bold {
-    font-size: 30px !important;
-  }
-
-  .font-H4-light {
-    font-size: 18px !important;
-  }
-
-  .font-Display-2-700 {
-    font-size: 51px !important;
-  }
 }
 
 .btn-close-menu {
@@ -875,15 +1038,15 @@ img {
 /*Style del popover*/
 
 .popover {
-  background-color: #07354f;
-  color: #ffffff;
-  width: 50%;
-  height: 15%;
-  padding: 10px 20px;
-  border-radius: 15px;
-  position: absolute;
-  top: 62px;
-  left: 78%;
+  background-color: #07354f !important;
+  color: #ffffff !important;
+  width: 14% !important;
+  height: auto;
+  padding: 10px 20px !important;
+  border-radius: 0px !important;
+  position: absolute !important;
+  top: 62px !important;
+  left: 100% !important;
 }
 
 .popover::before {
@@ -942,6 +1105,10 @@ img {
   height: 120px !important;
 }
 
+.height-1 {
+  height: 1px !important;
+}
+
 .card-ptoOrigen {
   width: 50% !important;
   height: 30% !important;
@@ -963,45 +1130,234 @@ img {
   font-weight: bold;
   color: #282828;
 }
+
 .padding-left-right-0 {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
 .margin-left-right-0 {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
 .padding-left-0 {
   padding-left: 0 !important;
 }
+
 .width-100 {
   width: 100% !important;
 }
+
 .separar-elementos-5 {
   text-indent: 5pt;
 }
+
 .container-principal {
   padding-top: 110px !important;
 }
+
 .margin-left-right-3 {
   margin-left: 1.5% !important;
   margin-right: 1.5% !important;
 }
+
+.padding-left-right-1 {
+  padding-left: 1% !important;
+  padding-right: 1% !important;
+}
+
 .btn-nivel-inline {
   margin-bottom: 0 !important;
   bottom: 0 !important;
   position: absolute !important;
 }
+
 .position-relative {
   position: relative !important;
 }
+
 .modal-backdrop {
   opacity: 0.5 !important;
 }
 
 .fade.show {
   background-color: #0000008c !important;
+  top: 0 !important;
 }
+
+.modal-dashboard {
+  background-color: #0000008c !important;
+  top: 0 !important;
+  z-index: 100;
+}
+
 .body {
   background-color: #0000008c !important;
+}
+
+.img-consulta {
+  width: 412px;
+  height: 240px;
+}
+
+.icon-redes {
+  background-color: #c4c4c4 !important;
+  color: #000000 !important;
+  border-radius: 50%;
+  border: 1x solid #c4c4c4 !important;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 4px;
+  height: 35px !important;
+  width: 35px !important;
+  font-size: 25px !important;
+}
+
+footer {
+  margin-top: -5.5rem !important;
+  padding-top: 5.5rem !important;
+  height: auto !important;
+}
+
+.card-consulta {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 25px !important;
+  margin-left: 2% !important;
+  margin-right: 2% !important;
+  margin-top: -4.5rem !important;
+}
+
+.icon-map {
+  --bs-gutter-x: 0rem !important;
+}
+
+.icon-right {
+  right: 4%;
+  position: absolute;
+}
+
+.ver-mapa {
+  top: 5px;
+  position: relative;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.acordion-hover:hover {
+  color: #c4122f !important;
+}
+
+.margin-16 {
+  margin: 16px !important;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px !important;
+}
+
+.mostrarRutasDesktop {
+  margin-bottom: 5rem !important;
+  margin-left: 7% !important;
+  margin-right: 7% !important;
+}
+
+.img-footter {
+  width: 243px !important;
+  height: 47.69px !important;
+  margin-bottom: 18.76%;
+  margin-left: 5% !important;
+}
+
+.img-footter-promperu {
+  width: 93px !important;
+  height: 40px !important;
+  margin-bottom: 18.76%;
+  margin-right: 5% !important;
+}
+
+.contenedor-img-movil {
+  height: 80px !important;
+}
+
+.option-select:hover {
+  background-color: #ffebee;
+  width: 100% !important;
+  cursor: pointer;
+  opacity: 1 !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+}
+
+.header-modal {
+  justify-content: center !important;
+}
+
+.hover-start {
+  color: #a5acb0 !important;
+}
+
+.hover-start:hover {
+  color: #c4122f !important;
+}
+
+.titulo-header {
+  position: absolute;
+  left: 170px;
+}
+
+.vl {
+  border: 1px solid #a5acb0;
+  transform: rotate(90deg);
+  width: 37px;
+  position: absolute;
+  left: 146px;
+  color: #a5acb0;
+}
+
+.background-blanco {
+  background-color: #fff !important;
+}
+
+.margin-4-p {
+  margin-left: 4% !important;
+  margin-right: 4% !important;
+}
+
+.margin-15-p {
+  margin-left: 11% !important;
+  margin-right: 11% !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.line-vertical {
+  position: absolute;
+  width: 843px;
+  height: 2px;
+  background-color: #a5acb0;
+  opacity: 0.3;
+}
+
+.font-header-bold {
+  font-family: 'Helvetica Neue LT Std Bold';
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 30px;
+}
+
+.font-header-light {
+  font-family: 'Helvetica Neue LT Std Light';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
 }

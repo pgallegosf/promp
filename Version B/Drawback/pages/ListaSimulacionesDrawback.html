@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Empezar Drawback
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link href="../assets/css/tab/styleTab.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../common.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg " data-select2-id="select2-data-30-q45v">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+                <a class="navbar-brand" href="./Drawback.html">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img">
+                </a>
+                <div class="icon-menu">
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-user" aria-hidden="true"><i class="fas fa-angle-down font-color-red"></i></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="far fa-bell" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-bars" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4 container-principal">
+            <!-- Inicio de vista principal -->
+            <div class="row mx-5 show-web">
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-3 font-h1-bold negro-promperu">Simulaciones de Drawback</div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-3">
+                    <button type="button" class="w-50 btn btn-outline-danger font-H4-bold div-right" onclick="window.location.href='EmpezarDrawback.html'">Nueva simulación</button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-3 font-H4-bold negro-promperu">
+                    Ordenar por
+                    <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                        <option class="font-color-white font-smallprint-medium option-blue" value="0">Los más recientes     </option>
+                        <option class="font-color-white font-smallprint-medium option-blue" value="1">Mayor antiguedad </option>
+                        <option class="font-color-white font-smallprint-medium option-blue" value="2">Orden alfabético   </option>
+                      </select>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-3">
+                    <div class="font-H4-light negro-promperu div-right">
+                        36 simulaciones
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-3">
+                    <div class="table-responsive p-0">
+                        <table class="table align-items-center justify-content-center mb-0">
+                            <thead style="background: #CDD7DC;">
+                                <tr>
+                                    <th class="font-H5-bold azul-promperu">Nombres de simulación</th>
+                                    <th class="font-H5-bold azul-promperu">Fecha de creación</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            <h6 class="mb-0 font-H5-light negro-promperu"><i class="fas fa-file-alt mx-2"></i>Lima - Pekín</h6>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex px-2">
+                                            <button class="btn btn-link text-secondary mb-0" id="idPopover" data-bs-toggle="popover" data-bs-trigger="focus">
+                                                <i><img src="../assets/img/icon-action.png" alt=""></i>
+                                              </button>
+                                            <div class="my-auto">
+                                                <span class="font-H5-light negro-promperu">12/08/2021</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="font-H5-light negro-promperu mb-0">
+                                            <h6 class="mb-0 font-H5-light negro-promperu"><i class="fas fa-file-alt mx-2"></i>Paita - Seattle</h6>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex px-2">
+                                            <button class="btn btn-link text-secondary mb-0" id="idPopover" data-bs-toggle="popover" data-bs-trigger="focus">
+                                                <i><img src="../assets/img/icon-action.png" alt=""></i>
+                                              </button>
+                                            <div class="my-auto">
+                                                <span class="font-H5-light negro-promperu">12/08/2021</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="font-H5-light negro-promperu mb-0">
+                                            <h6 class="mb-0 font-H5-light negro-promperu"><i class="fas fa-file-alt mx-2"></i>Piura - Callao</h6>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex px-2">
+                                            <button class="btn btn-link text-secondary mb-0" id="idPopover" data-bs-toggle="popover" data-bs-trigger="focus">
+                                                <i><img src="../assets/img/icon-action.png" alt=""></i>
+                                              </button>
+                                            <div class="my-auto">
+                                                <span class="font-H5-light negro-promperu">12/08/2021</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="font-H5-light negro-promperu mb-0">
+                                            <h6 class="mb-0 font-H5-light negro-promperu"><i class="fas fa-file-alt mx-2"></i>Envio a España</h6>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex px-2">
+                                            <button class="btn btn-link text-secondary mb-0" id="idPopover" data-bs-toggle="popover" data-bs-trigger="focus">
+                                                <i><img src="../assets/img/icon-action.png" alt=""></i>
+                                              </button>
+                                            <div class="my-auto">
+                                                <span class="font-H5-light negro-promperu">12/08/2021</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="font-H5-light negro-promperu mb-0">
+                                            <h6 class="mb-0 font-H5-light negro-promperu"><i class="fas fa-file-alt mx-2"></i>Cajas de embarque</h6>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex px-2">
+                                            <button class="btn btn-link text-secondary mb-0" id="idPopover" data-bs-toggle="popover" data-bs-trigger="focus">
+                                                <i><img src="../assets/img/icon-action.png" alt=""></i>
+                                              </button>
+                                            <div class="my-auto">
+                                                <span class="font-H5-light negro-promperu">12/08/2021</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-3 show-movil">
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-3 font-h1-bold negro-promperu">Simulaciones de Drawback</div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 mt-3">
+                        <div class="font-H4-light negro-promperu">
+                            36 simulaciones
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 mt-3">
+                        <i><img src="../assets/img/add-icon.png" alt=""></i>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-3 font-H4-bold negro-promperu">
+                    Ordenar por
+                    <select class="select-inline form-control select-simple font-H4-light rojo-promperu" name="selAnioExp" id="selectServicio1">
+                        <option class="font-color-white font-smallprint-medium option-blue" value="0">Los más recientes     </option>
+                        <option class="font-color-white font-smallprint-medium option-blue" value="1">Mayor antiguedad </option>
+                        <option class="font-color-white font-smallprint-medium option-blue" value="2">Orden alfabético   </option>
+                      </select>
+                </div>
+             
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-3">
+                    <div class="table-responsive p-0">
+                        <table class="table align-items-center justify-content-center mb-0">
+                            <thead style="background: #CDD7DC;">
+                                <tr>
+                                    <th class="font-H5-bold azul-promperu">Nombre</th>
+                                    <th class="font-H5-bold azul-promperu">F. de creación</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            <h6 class="mb-0 font-H5-light negro-promperu">Lima - Pekín</h6>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button class="btn btn-link text-secondary mb-0" id="idPopover" data-bs-toggle="popover" data-bs-trigger="focus">
+                                                <i><img src="../assets/img/icon-action.png" alt=""></i>
+                                              </button>
+                                            <div class="my-auto">
+                                                <span class="font-H5-light negro-promperu">12/08/2021</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="font-H5-light negro-promperu mb-0">
+                                            <h6 class="mb-0 font-H5-light negro-promperu">Paita - Seattle</h6>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button class="btn btn-link text-secondary mb-0" id="idPopover" data-bs-toggle="popover" data-bs-trigger="focus">
+                                                <i><img src="../assets/img/icon-action.png" alt=""></i>
+                                              </button>
+                                            <div class="my-auto">
+                                                <span class="font-H5-light negro-promperu">12/08/2021</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="font-H5-light negro-promperu mb-0">
+                                            <h6 class="mb-0 font-H5-light negro-promperu">Piura - Callao</h6>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button class="btn btn-link text-secondary mb-0" id="idPopover" data-bs-toggle="popover" data-bs-trigger="focus">
+                                                <i><img src="../assets/img/icon-action.png" alt=""></i>
+                                              </button>
+                                            <div class="my-auto">
+                                                <span class="font-H5-light negro-promperu">12/08/2021</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="font-H5-light negro-promperu mb-0">
+                                            <h6 class="mb-0 font-H5-light negro-promperu">Envio a España</h6>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button class="btn btn-link text-secondary mb-0" id="idPopover" data-bs-toggle="popover" data-bs-trigger="focus">
+                                                <i><img src="../assets/img/icon-action.png" alt=""></i>
+                                              </button>
+                                            <div class="my-auto">
+                                                <span class="font-H5-light negro-promperu">12/08/2021</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="font-H5-light negro-promperu mb-0">
+                                            <h6 class="mb-0 font-H5-light negro-promperu">Cajas de embarque</h6>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button class="btn btn-link text-secondary mb-0" id="idPopover" data-bs-toggle="popover" data-bs-trigger="focus">
+                                                <i><img src="../assets/img/icon-action.png" alt=""></i>
+                                              </button>
+                                            <div class="my-auto">
+                                                <span class="font-H5-light negro-promperu">12/08/2021</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select2/select2.min.js"></script>
+    <script src="../assets/js/tab/app.js"></script>
+    <script src="../assets/js/general.js"></script>
+    <script src="./js/ListaSimulacionesDrawback.js"></script>
+</body>
+
+</html>

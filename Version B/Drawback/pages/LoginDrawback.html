@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <title>
+        PromPeru - Directorio Logístico
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link href="../assets/css/select2/select2.min.css" rel="stylesheet" />
+    <link href="../assets/css/tab/styleTab.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../common.css">
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+
+    <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container-menu-derecho">
+
+                <a class="navbar-brand" href="./Drawback.html">
+                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img">
+                </a>
+                <div class="icon-menu">
+                    <div class="icon-menu d-none">
+                        <i class="fas fa-user-plus"><label class="ocultar-movil">Unete al Directorio Logístico</label></i>
+                    </div>
+                    <div class="icon-menu d-none">
+                        <a class="" href="#">
+                            <i class="far fa-bell"></i>
+                        </a>
+                    </div>
+                    <div class="icon-menu">
+                        <a class="" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="">
+            <!-- Inicio de vista principal -->
+            <div class="row pt-6 padding-login">
+                <div class="ocultar-movil-flex col-xs-12 col-sm-12 col-md-7 col-lg-7 centro d-flex justify-content-center" style="background: #07354F0A;">
+                    <img src="../assets/img/fondo-login.png" alt="mapa_ruta" class="">
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 centrado d-flex flex-column align-items-center justify-content-center">
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-H3-bold negro-promperu text-center">
+                        Iniciar Sesión
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
+                        <div>
+                            <label class="font-label negro-promperu">Correo Electronico</label>
+                            <input type="text" class="form-control" placeholder="ejemplo@correo.com" id="correo" value="" onclick="addData()">
+                        </div>
+                        <div>
+                            <label class="font-label negro-promperu">Contraseña</label>
+                            <input type="password" class="form-control" placeholder="******" id="password" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 centrado">
+                        <button class="btn btn-second w-100 font-H4-bold" onclick="window.location.href='EmpezarDrawback.html'" id="btn-ingresar">Ingresar</button>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-1 text-center centrado">
+                        <a data-bs-toggle="modal" data-bs-target="#m-olvidarPassword" class="font-link-700 rojo-promperu">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <div class="d-none" id="check-sesion-activa">
+                        <input class="input-checkbox" type="checkbox" name="chkSesionActiva" id="chkSesionActiva" checked>
+                        <label for="chkSesionActiva" class="input-checkbox-lab">Mantener sesión abierta</label>
+                    </div>
+                    <div class="ocultar-movil-flex col-lg-12 col-sm-12 col-md-12 d-flex flex-column align-items-center justify-content-center" id="view-registro-login">
+                        <div class="hr ocultar-movil-flex background-gris col-8 mt-4"></div>
+                        <div class="font-H4-bold negro-promperu col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-3 text-center">¿Aún no tienes una cuenta?</div>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4">
+                            <button type="button" class="w-100 btn btn-outline-danger" onclick="window.location.href='RegistroDrawback.html'">Regístrate Aquí</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background: #A5ACB02E;" class="mostrar-movil col-lg-12 col-sm-12 col-md-12 d-flex flex-column align-items-center justify-content-center pt-4 pb-4 mt-5" id="view-registro-login">
+                <div class="hr ocultar-movil background-gris col-8 mt-4"></div>
+                <div class="font-H4-bold negro-promperu col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-3 text-center">¿Aún no tienes una cuenta?</div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-4 d-flex justify-content-center">
+                    <button type="button" class="w-80 btn btn-outline-danger" onclick="window.location.href='RegistroDrawback.html'">Regístrate Aquí</button>
+                </div>
+            </div>
+            <!-- Fin de vista principal -->
+        </div>
+    </main>
+    <!-- Inicio de modales -->
+    <!-- Inicio modal olvidar contraseña -->
+
+    <div class="modal fade bd-example-modal-sm" id="m-olvidarPassword" tabindex="-1" role="dialog" aria-labelledby="m-correo" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="col-lg-12 col-sm-12 col-xs-12 col-xl-12">
+                        <h5 class="modal-title centro font-h3-bold negro-promperu" id="exampleModalLabel">Recuperar tu contraseña</h5>
+                    </div>
+                    <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/img/btn_close.svg" alt="">
+                    </a>
+                </div>
+                    <div class="padding-modal-body">
+                        <div class="col-lg-12 col-md-12 col-sm-12 font-H5-light negro-promperu text-center">
+                            Podemos ayudarte a recuperar tu contraseña, está sera enviado al correo ingresado
+                        </div>
+                        <div class="pt-3">
+                            <label class="negro-promperu font-label text-line-title">Correo Electronico</label>
+                            <input type="text" class="form-control font-H4-light gris-promperu" placeholder="ejemplo@correo.com">
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-primary btn-enviar" type="button">Enviar</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin modal olvidar contraseña -->
+    <!-- Fin de modales -->
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select2/select2.min.js"></script>
+    <script src="../assets/js/tab/app.js"></script>
+    <script src="../assets/js/general.js"></script>
+    <script src="js/login.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <!-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script> -->
+    <!-- JS rutas maritimas -->
+</body>
+
+</html>

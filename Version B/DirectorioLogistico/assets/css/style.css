@@ -32,13 +32,49 @@ body {
   text-align: center !important;
 }
 
+.background-categoria {
+  background: #f0f2f2;
+}
+
+.background-informacion {
+  background: #ffffff;
+}
+
 @media (min-width: 200px) {
   .titulo {
     font-size: 25px !important;
   }
 
   .descripcion {
-      font-size: 16px !important;
+    font-size: 16px !important;
+  }
+
+  .mostrar-desktop {
+    display: none !important;
+  }
+
+  .mostrar-movil {
+    display: block !important;
+  }
+
+  .vista-mobile-filtro {
+    display: block !important;
+  }
+
+  #vista-mobile-categorias {
+    display: block !important;
+  }
+
+  .background-categoria {
+    background: #ffffff;
+  }
+
+  .background-informacion {
+    background: #f2f2f2;
+  }
+
+  .busquedaNormal {
+    padding-bottom: 0px !important;
   }
 }
 @media (min-width: 576px) {
@@ -48,7 +84,7 @@ body {
 
   .descripcion {
     font-size: 16px !important;
-}
+  }
 }
 @media (min-width: 768px) {
   .titulo {
@@ -57,7 +93,11 @@ body {
 
   .descripcion {
     font-size: 16px !important;
-}
+  }
+
+  .busquedaNormal {
+    padding-bottom: 24px !important;
+  }
 }
 @media (min-width: 992px) {
   .titulo {
@@ -66,16 +106,48 @@ body {
 
   .descripcion {
     font-size: 16px !important;
-}
+  }
 }
 @media (min-width: 1200px) {
   .titulo {
     font-size: 36px !important;
   }
 
+  .background-categoria {
+    background: #f0f2f2;
+  }
+
+  .background-informacion {
+    background: #ffffff;
+  }
+
   .descripcion {
     font-size: 16px !important;
-}
+  }
+
+  .mostrar-desktop {
+    display: block !important;
+  }
+
+  .mostrar-movil {
+    display: none !important;
+  }
+
+  .vista-mobile-filtro {
+    display: none !important;
+  }
+
+  .busquedaNormal {
+    padding-bottom: 3rem !important;
+  }
+
+  #vista-det-filtro {
+    display: none !important;
+  }
+
+  #vista-mobile-categorias {
+    display: none !important;
+  }
 }
 
 .sub-titulo {
@@ -94,13 +166,137 @@ body {
 
 .icon-select {
   float: right;
-  margin-top: -26px;
+  margin-top: -33px;
   margin-right: 5px;
   color: #c4122f;
 }
 
 .select-rutas {
   border-bottom: 1px solid #c4122f !important;
+}
+
+.modal-header {
+  border: none;
+}
+
+.btn-enviar {
+  background-color: #a5acb0;
+  color: #282828;
+  width: 258px;
+}
+
+.card-select-origen {
+  width: 56% !important;
+  height: auto;
+  margin-left: 1% !important;
+  top: 66% !important;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+}
+
+.card-select-busqueda-avanzada {
+  width: 84% !important;
+  height: auto !important;
+  margin-left: 1% !important;
+  top: 32% !important;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.card-select-busqueda-listado {
+  width: 52% !important;
+  height: auto !important;
+  margin-left: 1% !important;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+  z-index: 1;
+  top: 135px;
+}
+
+.card-listado-rubro {
+  width: 39% !important;
+  height: auto !important;
+  margin-left: 1% !important;
+  top: 217px;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+}
+
+.card-listado-experiencia {
+  width: 39% !important;
+  height: auto !important;
+  margin-left: 1% !important;
+  top: 217px;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+  left: 50%;
+}
+
+.card-listado-region {
+  width: 25% !important;
+  height: auto !important;
+  margin-left: 1% !important;
+  top: 297px;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+}
+
+.card-listado-provincia {
+  width: 25% !important;
+  height: auto !important;
+  margin-left: 1% !important;
+  top: 297px;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+  left: 491px;
+}
+
+.card-listado-distrito {
+  width: 25% !important;
+  height: auto !important;
+  margin-left: 1% !important;
+  top: 297px;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+  left: 851px;
+}
+
+.btn-enviar:hover {
+  background-color: #c4122f;
+  color: #ffffff;
 }
 
 .btn-second {
@@ -127,6 +323,13 @@ body {
   text-align: end;
 }
 
+.padding-modal-body {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  padding-bottom: 35px;
+}
+
 .nav-img {
   width: 15% !important;
 }
@@ -136,49 +339,245 @@ body {
   }
 
   .btn-second {
-    width: 300px;
+    width: 300px !important;
   }
 
   .sub-titulo {
-      font-size: 25px !important;
+    font-size: 25px !important;
   }
 
   footer {
-      height: 245px !important;
+    height: 245px !important;
+  }
+
+  .busqueda-listado {
+    background: #f1f3f4 !important;
+  }
+
+  .card-select-origen {
+    width: 90% !important;
+    height: auto !important;
+    margin-left: 3% !important;
+    top: 62% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    z-index: 1;
+  }
+  .card-select-busqueda-avanzada {
+    width: 89% !important;
+    height: auto !important;
+    margin-left: 4% !important;
+    top: 17.3% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    z-index: 1;
+  }
+
+  .card-select-busqueda-listado {
+    width: 88% !important;
+    height: auto !important;
+    margin-left: 3% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    z-index: 1;
+    top: 135px;
+  }
+
+  .card-listado-rubro {
+    width: 86% !important;
+    height: auto !important;
+    margin-left: 3% !important;
+    top: 217px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-experiencia {
+    width: 86% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 296px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 6%;
+  }
+
+  .card-listado-region {
+    width: 86% !important;
+    height: auto !important;
+    margin-left: 3% !important;
+    top: 376px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-provincia {
+    width: 86% !important;
+    height: auto !important;
+    margin-left: 3% !important;
+    top: 458px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 15px !important;
+  }
+
+  .card-listado-distrito {
+    width: 86% !important;
+    height: auto !important;
+    margin-left: 0% !important;
+    top: 538px !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 25px !important;
+    z-index: 1;
   }
 }
 
 @media (min-width: 320px) {
-    .nav-img {
-      width: 45% !important;
-    }
-  
-    .btn-second {
-      width: 323px;
-    }
-
-    .sub-titulo {
-        font-size: 25px !important;
-    }
-
-    footer {
-        height: 245px !important;
-    }
+  .nav-img {
+    width: 45% !important;
   }
 
-  @media (min-width: 480px) {
-    .nav-img {
-      width: 45% !important;
-    }
-  
-    .btn-second {
-      width: 367px;
-    }
-
-    .sub-titulo {
-        font-size: 25px !important;
-    }
+  .btn-second {
+    width: 323px;
   }
+
+  .sub-titulo {
+    font-size: 22px !important;
+  }
+
+  footer {
+    height: 245px !important;
+  }
+
+  .card-select-busqueda-listado {
+    width: 86% !important;
+    height: auto !important;
+    margin-left: 3% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    z-index: 1;
+    top: 135px;
+  }
+
+  .card-listado-rubro {
+    width: 86% !important;
+    height: auto !important;
+    margin-left: 3% !important;
+    top: 215px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-experiencia {
+    width: 86% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 296px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 6%;
+  }
+
+  .card-listado-region {
+    width: 86% !important;
+    height: auto !important;
+    margin-left: 3% !important;
+    top: 376px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-provincia {
+    width: 86% !important;
+    height: auto !important;
+    margin-left: 4% !important;
+    top: 457px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 13px !important;
+  }
+
+  .card-listado-distrito {
+    width: 86% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 297px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 25px !important;
+  }
+}
+
+@media (min-width: 480px) {
+  .nav-img {
+    width: 45% !important;
+  }
+
+  .btn-second {
+    width: 367px;
+  }
+
+  .sub-titulo {
+    font-size: 22px !important;
+  }
+}
 
 @media (min-width: 576px) {
   .nav-img {
@@ -193,6 +592,102 @@ body {
   .nav-img {
     width: 22% !important;
   }
+
+  .card-select-origen {
+    width: 57% !important;
+    height: auto !important;
+    margin-left: 1.4% !important;
+    top: 80% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    z-index: 1;
+  }
+
+  .card-select-busqueda-listado {
+    width: 78% !important;
+    height: auto !important;
+    margin-left: 1.5% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    z-index: 1;
+    top: 135px;
+  }
+
+  .card-listado-rubro {
+    width: 38% !important;
+    height: auto !important;
+    margin-left: 1.4% !important;
+    top: 215px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-experiencia {
+    width: 38% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 215px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 408px;
+  }
+
+  .card-listado-region {
+    width: 38% !important;
+    height: auto !important;
+    margin-left: 1.4% !important;
+    top: 296px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-provincia {
+    width: 38% !important;
+    height: auto !important;
+    margin-left: 4% !important;
+    top: 296px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 385px !important;
+  }
+
+  .card-listado-distrito {
+    width: 38% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 376px !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 80px !important;
+  }
 }
 @media (min-width: 992px) {
   .nav-img {
@@ -206,7 +701,126 @@ body {
 
   .sub-titulo {
     font-size: 30px !important;
-}
+  }
+
+  .card-select-origen {
+    width: 56% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 66% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .busqueda-listado {
+    background: #f1f3f4 !important;
+  }
+
+  .busqueda-listado:focus {
+    background: #f1f3f4 !important;
+  }
+
+  .card-select-busqueda-avanzada {
+    width: 84% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 32% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    z-index: 1;
+  }
+
+  .card-select-busqueda-listado {
+    width: 52% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    z-index: 1;
+    top: 135px;
+  }
+
+  .card-listado-rubro {
+    width: 39% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 217px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-experiencia {
+    width: 39% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 217px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 50%;
+  }
+
+  .card-listado-region {
+    width: 25% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 297px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-provincia {
+    width: 25% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 297px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 491px;
+    z-index: 1;
+  }
+
+  .card-listado-distrito {
+    width: 25% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 297px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 851px;
+    z-index: 1;
+  }
 }
 .img {
   width: 70%;
@@ -240,7 +854,7 @@ body {
     height: 400px;
     background-size: 50% 50%;
     background-repeat: no-repeat;
-    background: url(../img/Directorio/inicio_mobile.jpg);
+    background: url(../img/Directorio/inicio_mobile.png);
     background-size: cover;
   }
 }
@@ -254,7 +868,7 @@ body {
     height: 300px;
     background-size: 10% 10%;
     background-repeat: no-repeat;
-    background: url(../img/Directorio/inicio_mobile.jpg);
+    background: url(../img/Directorio/inicio_mobile.png);
     background-size: cover;
   }
 }
@@ -264,7 +878,7 @@ body {
 }
 
 .div-centrado {
-  margin: 3rem !important;
+  margin: 0rem !important;
   padding: 0rem !important;
 }
 
@@ -273,10 +887,20 @@ body {
   bottom: 10px;
 }
 
+.busqueda-avanzada-principal {
+  position: relative;
+  top: 33px;
+}
+
 @media (min-width: 200px) {
   .div-centrado {
     margin: 0rem !important;
     padding: 0rem !important;
+  }
+
+  .busqueda-avanzada-principal {
+    position: relative;
+    top: 8px;
   }
 }
 @media (min-width: 576px) {
@@ -290,6 +914,11 @@ body {
     margin: 2rem !important;
     padding: 0rem !important;
   }
+
+  .busqueda-avanzada-principal {
+    position: relative;
+    top: 30px;
+  }
 }
 @media (min-width: 992px) {
   .div-centrado {
@@ -299,7 +928,6 @@ body {
 }
 @media (min-width: 1200px) {
   .div-centrado {
-    margin: 3rem !important;
     padding: 0rem !important;
   }
 }
@@ -379,7 +1007,7 @@ body {
 }
 
 .centro {
-  text-align: center;
+  text-align: center !important;
 }
 
 .icon {
@@ -781,17 +1409,6 @@ body {
   text-align: left !important;
 }
 
-.card-select-origen {
-  /*width: 32% !important;*/
-  height: 52% !important;
-  margin-left: 1% !important;
-  top: 74% !important;
-  position: absolute !important;
-  font-size: 12px;
-  font-weight: bold;
-  color: #282828;
-}
-
 .text-title-select-movil {
   font-size: 12px;
   text-align: center;
@@ -827,9 +1444,25 @@ body {
 }
 
 @media (min-width: 200px) {
+  #vista-web {
+    display: none;
+  }
+
+  #vista-mobile {
+    display: flex;
+  }
+
+  .titulo-left {
+    text-align: center !important;
+  }
+
   .padding-list-directorios {
     padding-left: 40px !important;
     padding-right: 0px !important;
+  }
+
+  .text-mobile-center {
+    text-align: center !important;
   }
 
   .font-size-13 {
@@ -843,6 +1476,12 @@ body {
   .padding-registro {
     padding-left: 30px !important;
     padding-right: 30px !important;
+  }
+}
+
+@media (min-width: 320px) {
+  .titulo-left {
+    text-align: center !important;
   }
 }
 
@@ -873,6 +1512,10 @@ body {
   .padding-registro {
     padding-left: 80px !important;
   }
+
+  .titulo-left {
+    text-align: center !important;
+  }
 }
 @media (min-width: 992px) {
   .padding-list-directorios {
@@ -889,6 +1532,21 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  #vista-web {
+    display: flex;
+  }
+
+  #vista-mobile {
+    display: none;
+  }
+
+  .titulo-left {
+    text-align: left !important;
+  }
+
+  .text-mobile-center {
+    text-align: left !important;
+  }
   .padding-list-directorios {
     padding-left: 80px !important;
     padding-right: 30px !important;
@@ -1381,12 +2039,12 @@ a > i > label {
   font-size: 30px !important;
   color: #282828 !important;
   font-weight: bold !important;
-  text-align: left !important;
+  text-align: left;
 }
 .titulo-left > label {
   font-size: 30px !important;
   color: #282828 !important;
-  text-align: left !important;
+  text-align: left;
   font-weight: lighter !important;
 }
 .ocultar-movil {

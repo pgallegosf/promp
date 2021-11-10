@@ -1,3 +1,7 @@
+var indicador1 = true;
+var indicador2 = true;
+var indicador3 = true;
+var indicador4 = true;
 $(document).ready(function() {
     $(".ptOrigen").click(function(e) {
         e.stopPropagation();
@@ -9,6 +13,18 @@ $(document).ready(function() {
     });
     $("body").click(function() {
         closeCardPuertos();
+    });
+    $("#ruta1").click(function() {
+        mostrarOcultarRutas();
+    });
+    $("#ruta2").click(function() {
+        mostrarOcultarRutas2();
+    });
+    $("#ruta3").click(function() {
+        mostrarOcultarRutas3();
+    });
+    $("#ruta4").click(function() {
+        mostrarOcultarRutas4();
     });
     $(".opCiudad").click(function() {
         showCardPuertosOrigen();
@@ -55,6 +71,12 @@ $(document).ready(function() {
     $(".btn-rutasMovil2").click(function() {
         showRutas();
     });
+    $(".idPopoverNotificacionGuardar").click(function() {
+        $(".popover").toggle();
+    });
+    $(".close-popover").click(function() {
+        $(".popover").toggle();
+    });
     // Botones bloqueados
     $(".btn-rutas").attr('disabled', 'disabled');
     $(".btn-rutasMovil").attr('disabled', 'disabled');
@@ -69,6 +91,42 @@ $(document).ready(function() {
     $(".PuertoDestino-movil").hide();
     $(".select-destino-ciudad").hide();
 });
+
+function mostrarOcultarRutas() {
+    if (this.indicador1) {
+        $("#flecha1").hide();
+    } else {
+        setTimeout('$("#flecha1").show()', 500);
+    }
+    this.indicador1 = !this.indicador1;
+}
+
+function mostrarOcultarRutas2() {
+    if (this.indicador2) {
+        $("#flecha2").hide();
+    } else {
+        setTimeout('$("#flecha2").show()', 500);
+    }
+    this.indicador2 = !this.indicador2;
+}
+
+function mostrarOcultarRutas3() {
+    if (this.indicador3) {
+        $("#flecha3").hide();
+    } else {
+        setTimeout('$("#flecha3").show()', 500);
+    }
+    this.indicador3 = !this.indicador3;
+}
+
+function mostrarOcultarRutas4() {
+    if (this.indicador4) {
+        $("#flecha4").hide();
+    } else {
+        setTimeout('$("#flecha4").show()', 500);
+    }
+    this.indicador4 = !this.indicador4;
+}
 
 function showCardOrigen() {
     $(".card-origen").show();
