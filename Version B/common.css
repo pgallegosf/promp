@@ -121,12 +121,19 @@
   font-size: 18px !important;
   line-height: 21.6px !important;
 }
+.font-H4-light-min {
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 17px !important;
+  line-height: 21.6px !important;
+}
 
 .font-H4-light-400 {
   font-family: "Helvetica Neue LT Std light" !important;
   font-style: normal !important;
   font-weight: 400 !important;
-  font-size: 18px !important;
+  font-size: 17px !important;
   line-height: 21.6px !important;
   text-align: center !important;
 }
@@ -139,6 +146,13 @@
   line-height: 21.6px !important;
 }
 
+.font-H4-light-normal {
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+}
 .font-H4-bold-700 {
   font-family: "Helvetica Neue LT Std bold" !important;
   font-style: normal !important;
@@ -204,25 +218,21 @@
   font-size: 15px !important;
   line-height: 18px !important;
 }
+.font-H5-medium-normal {
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  text-align: center;
+}
 
 .font-Display-2-Bold {
   font-family: "Helvetica Neue LT Std bold" !important;
   font-weight: bold !important;
-  font-size: 51px !important;
+  font-size: 50px !important;
   line-height: 61px !important;
   align-items: center;
-}
-
-.font-H3-medium {
-  font-family: "Helvetica Neue LT Std medium" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-size: 24px !important;
-  line-height: 29px !important;
-}
-
-.text-right {
-  text-align: right !important;
 }
 
 .font-H4-medium {
@@ -401,6 +411,14 @@
   text-align: center !important;
 }
 
+.font-helvetica-popover {
+  font-family: "Helvetica Neue LT Std bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+
 .font-helvetica-coryright {
   font-family: "Helvetica Neue LT Std medium" !important;
   font-style: normal !important;
@@ -451,9 +469,9 @@ img {
   padding: 0px;
   position: absolute;
   width: 97px !important;
-  height: 43.15px !important;
+  height: 50px !important;
   left: 45px;
-  top: 13px;
+  top: 10px;
 }
 
 .badge-notification {
@@ -469,7 +487,8 @@ img {
 }
 
 .rounded-pill {
-  border-radius: 50rem !important;
+  border-radius: 13.5px !important;
+  height: 27px;
 }
 
 .badge-notification {
@@ -538,8 +557,6 @@ img {
 }
 
 .icon-dashboard {
-  width: 100px;
-  height: 106px;
   margin-top: 7px;
   margin-bottom: 5px;
 }
@@ -701,32 +718,69 @@ img {
   padding-left: 10% !important;
   padding-right: 10% !important;
 }
-
+.card-dashboard {
+  width: 200px;
+  height: 120px;
+  padding-bottom: 10px;
+  padding-left: 17px;
+  margin: 10px;
+}
+.div-card-dashboard {
+  width: 220px;
+  height: 132px;
+}
+.img-principal {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 450px;
+  right: 0px;
+}
+.card-busqueda > .row {
+  margin-left: 110px !important;
+  margin-right: 110px !important;
+}
+.img-footter {
+  width: 243px !important;
+  height: 47.69px !important;
+  margin-bottom: 18.76%;
+  margin-left: 5% !important;
+}
+.img-footter-promperu {
+  width: 97px !important;
+  height: 50px !important;
+  margin-bottom: 18.76%;
+  margin-right: 5% !important;
+}
 @media (min-width: 200px) {
-
-  .font-display-title {
-    font-size: 40px !important;
-    line-height: 45px !important;
+  .img-footter-promperu {
+    width: 81px !important;
+    height: 35px !important;
+    margin-bottom: 18.76%;
+    margin-right: 5% !important;
   }
-
-  .font-H2-light {
-    font-size: 20px !important;
+  .img-footter {
+    width: 168px !important;
+    height: 30.9px !important;
+    margin-bottom: 18.76%;
+    margin-left: 5% !important;
   }
-
-  .font-H4-bold {
-    font-size: 15px !important;
+  .card-busqueda > .row {
+    margin-left: 2% !important;
+    margin-right: 2% !important;
   }
-
-  .font-Display-2-700 {
-    font-size: 25px !important;
+  .card-dashboard {
+    width: 139px;
+    height: 110px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    margin: 10px;
+    justify-content: center;
+    position: absolute;
   }
-
-  .font-H4-light {
-    font-size: 14px !important;
-  }
-
-  .font-h3-bold {
-    font-size: 17px !important;
+  .div-card-dashboard {
+    width: 159px;
+    height: 122px;
   }
   .contenedor-titulo > h5 {
     font-family: "Helvetica Neue LT Std bold" !important;
@@ -765,11 +819,22 @@ img {
     align-items: center;
     padding: 0px;
     position: absolute;
-    width: 53px !important;
-    height: 25px !important;
+    width: 56px !important;
+    height: 36px !important;
+    left: 13px;
+    top: 7px;
+  }
+  .nav-img-b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 56px !important;
+    height: 36px !important;
     /* left: 13px; */
     left: 45px;
-    top: 12px;
+    top: 7px;
   }
   .icon-menu {
     float: left;
@@ -779,7 +844,7 @@ img {
     width: 100% !important;
   }
   .inline-for-movil {
-    display: initial;
+    display: contents;
   }
   .inline-for-movil2 {
     display: initial;
@@ -791,9 +856,62 @@ img {
     padding-left: 5% !important;
     padding-right: 5% !important;
   }
+  .img-principal {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 674px;
+  }
+  .padding-control-left {
+    padding-left: 0px !important;
+    padding-right: 0 !important;
+  }
+  .padding-control-right {
+    padding-right: 0px !important;
+    padding-left: 0 !important;
+  }
+  .padding-control3-busqueda {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .container-principal {
+    padding-top: 110px !important;
+  }
+  .padding-top-principal-detalle {
+    padding-top: 50px !important;
+  }
 }
 
 @media (min-width: 576px) {
+  .img-footter-promperu {
+    width: 81px !important;
+    height: 35px !important;
+    margin-bottom: 18.76%;
+    margin-right: 5% !important;
+  }
+  .img-footter {
+    width: 188px !important;
+    height: 36.9px !important;
+    margin-bottom: 18.76%;
+    margin-left: 5% !important;
+  }
+  .card-busqueda > .row {
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+  }
+  .card-dashboard {
+    width: 139px;
+    height: 110px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    margin: 10px;
+    justify-content: center;
+    position: absolute;
+  }
+  .div-card-dashboard {
+    width: 159px;
+    height: 122px;
+  }
   .contenedor-titulo > h5 {
     font-family: "Helvetica Neue LT Std bold" !important;
     font-style: normal !important;
@@ -832,15 +950,26 @@ img {
     padding: 0px;
     position: absolute;
     width: 53px !important;
-    height: 25px !important;
+    height: 36px !important;
+    left: 13px;
+    top: 7px;
+  }
+  .nav-img-b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 53px !important;
+    height: 36px !important;
     left: 45px;
-    top: 12px;
+    top: 7px;
   }
   .offcanvas-end {
     width: 100% !important;
   }
   .inline-for-movil {
-    display: initial;
+    display: contents;
   }
   .inline-for-movil2 {
     display: initial;
@@ -852,9 +981,61 @@ img {
     padding-left: 8% !important;
     padding-right: 8% !important;
   }
+  .img-principal {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 674px;
+  }
+  .padding-control-left {
+    padding-left: 0px !important;
+    padding-right: 0 !important;
+  }
+  .padding-control-right {
+    padding-right: 0px !important;
+    padding-left: 0 !important;
+  }
+  .padding-control3-busqueda {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .container-principal {
+    padding-top: 110px !important;
+  }
+  .padding-top-principal-detalle {
+    padding-top: 50px !important;
+  }
 }
 
 @media (min-width: 768px) {
+  .img-footter-promperu {
+    width: 97px !important;
+    height: 50px !important;
+    margin-bottom: 18.76%;
+    margin-right: 5% !important;
+  }
+
+  .img-footter {
+    width: 243px !important;
+    height: 47.69px !important;
+    margin-bottom: 18.76%;
+    margin-left: 5% !important;
+  }
+  .card-busqueda > .row {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+  }
+  .card-dashboard {
+    width: 200px;
+    height: 120px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    margin: 10px;
+  }
+  .div-card-dashboard {
+    width: 220px;
+    height: 132px;
+  }
   .contenedor-titulo > h5 {
     font-family: "Helvetica Neue LT Std bold" !important;
     font-style: normal !important;
@@ -893,9 +1074,20 @@ img {
     padding: 0px;
     position: absolute;
     width: 97px !important;
-    height: 43.15px !important;
+    height: 56px !important;
     left: 45px;
-    top: 13px;
+    top: 7px;
+  }
+  .nav-img-b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 97px !important;
+    height: 56px !important;
+    left: 45px;
+    top: 7px;
   }
   .offcanvas-end {
     width: 50% !important;
@@ -912,10 +1104,43 @@ img {
   .padding-card-busqueda {
     padding-left: 10% !important;
     padding-right: 10% !important;
+  }
+  .img-principal {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 450px;
+  }
+  .padding-control-left {
+    padding-left: 30px !important;
+    padding-right: 0 !important;
+  }
+  .padding-control-right {
+    padding-right: 30px !important;
+    padding-left: 0 !important;
+  }
+  .padding-control3-busqueda {
+    padding-right: 30px !important;
+    padding-left: 0px !important;
+  }
+  .container-principal {
+    padding-top: 110px !important;
+  }
+  .padding-top-principal-detalle {
+    padding-top: 70px !important;
   }
 }
 
 @media (min-width: 992px) {
+  .padding-control3-busqueda {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .card-busqueda > .row {
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+  }
   .left-center {
     text-align: left !important;
   }
@@ -932,9 +1157,20 @@ img {
     padding: 0px;
     position: absolute;
     width: 97px !important;
-    height: 43.15px !important;
+    height: 56px !important;
     left: 45px;
-    top: 13px;
+    top: 7px;
+  }
+  .nav-img-b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 97px !important;
+    height: 56px !important;
+    left: 45px;
+    top: 7px;
   }
   .offcanvas-end {
     width: 50% !important;
@@ -952,39 +1188,19 @@ img {
     padding-left: 10% !important;
     padding-right: 10% !important;
   }
+  .img-principal {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 450px;
+  }
 }
 
 @media (min-width: 1200px) {
-
-  .font-display-title {
-    font-size: 60px !important;
-    line-height: 72px !important;
+  .card-busqueda > .row {
+    margin-left: 110px !important;
+    margin-right: 110px !important;
   }
-
-  .font-H2-light {
-    font-size: 30px !important;
-  }
-
-  .font-h3-bold {
-    font-size: 24px !important;
-  }
-
-  .font-H4-bold {
-    font-size: 18px !important;
-  }
-
-  .font-H2-bold {
-    font-size: 30px !important;
-  }
-
-  .font-H4-light {
-    font-size: 18px !important;
-  }
-
-  .font-Display-2-700 {
-    font-size: 51px !important;
-  }
-
   .left-center {
     text-align: left !important;
   }
@@ -1001,9 +1217,20 @@ img {
     padding: 0px;
     position: absolute;
     width: 97px !important;
-    height: 43.15px !important;
+    height: 56px !important;
     left: 45px;
-    top: 13px;
+    top: 7px;
+  }
+  .nav-img-b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 97px !important;
+    height: 56px !important;
+    left: 45px;
+    top: 7px;
   }
   .offcanvas-end {
     width: 50% !important;
@@ -1018,8 +1245,21 @@ img {
     padding-left: 10% !important;
     padding-right: 10% !important;
   }
+  .img-principal {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 450px;
+  }
 }
-
+@media (min-width: 1920px) {
+  .img-principal {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+  }
+}
 .btn-close-menu {
   box-sizing: content-box !important;
   padding: 0.25em 0.25em !important;
@@ -1040,13 +1280,14 @@ img {
 .popover {
   background-color: #07354f !important;
   color: #ffffff !important;
-  width: 14% !important;
-  height: auto;
-  padding: 10px 20px !important;
-  border-radius: 0px !important;
-  position: absolute !important;
-  top: 62px !important;
-  left: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 15px !important;
+  position: fixed !important;
+  top: 60px !important;
+  right: 8px !important;
+  left: auto !important;
+  z-index: 100 !important;
 }
 
 .popover::before {
@@ -1059,7 +1300,7 @@ img {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   top: -30px;
-  left: 83%;
+  right: 43px !important;
   position: absolute;
 }
 
@@ -1113,7 +1354,6 @@ img {
   width: 50% !important;
   height: 30% !important;
   margin-left: 7% !important;
-  top: 280% !important;
   position: absolute !important;
   font-size: 12px;
   font-weight: bold;
@@ -1124,7 +1364,6 @@ img {
   width: 50% !important;
   height: 35% !important;
   margin-left: 7% !important;
-  top: 295% !important;
   position: absolute !important;
   font-size: 10px;
   font-weight: bold;
@@ -1151,10 +1390,6 @@ img {
 
 .separar-elementos-5 {
   text-indent: 5pt;
-}
-
-.container-principal {
-  padding-top: 110px !important;
 }
 
 .margin-left-right-3 {
@@ -1264,20 +1499,6 @@ footer {
   margin-right: 7% !important;
 }
 
-.img-footter {
-  width: 243px !important;
-  height: 47.69px !important;
-  margin-bottom: 18.76%;
-  margin-left: 5% !important;
-}
-
-.img-footter-promperu {
-  width: 93px !important;
-  height: 40px !important;
-  margin-bottom: 18.76%;
-  margin-right: 5% !important;
-}
-
 .contenedor-img-movil {
   height: 80px !important;
 }
@@ -1287,11 +1508,6 @@ footer {
   width: 100% !important;
   cursor: pointer;
   opacity: 1 !important;
-  font-family: "Helvetica Neue LT Std bold" !important;
-  font-style: normal !important;
-  font-weight: bold !important;
-  font-size: 18px !important;
-  line-height: 22px !important;
 }
 
 .header-modal {
@@ -1346,18 +1562,85 @@ footer {
   opacity: 0.3;
 }
 
-.font-header-bold {
-  font-family: 'Helvetica Neue LT Std Bold';
-font-style: normal;
-font-weight: bold;
-font-size: 15px;
-line-height: 30px;
+.card-busqueda {
+  max-width: 1276px;
+  width: 100%;
 }
 
-.font-header-light {
-  font-family: 'Helvetica Neue LT Std Light';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 18px;
+.div-card-busqueda {
+  justify-content: center;
+  display: flex;
+}
+.div-btn-busqueda {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.margin-0 {
+  margin: 0 !important;
+}
+.margin-top-bottom-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.div-principal-busqueda {
+  margin-left: 3% !important;
+  margin-right: 3% !important;
+  margin-bottom: 3rem !important;
+}
+.badge {
+  text-transform: none !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+}
+.margin-right-0 > .row {
+  margin-right: 0 !important;
+}
+.text-align-left {
+  text-align: left !important;
+}
+.text-align-right {
+  text-align: right !important;
+}
+
+.width-max-content {
+  width: max-content !important;
+}
+.top {
+  margin-top: -6.2rem !important;
+}
+.mt-5 {
+  margin-top: 5rem !important;
+}
+.margin-left-right-badge {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.absolute {
+  position: absolute !important;
+}
+.relative {
+  position: relative !important;
+}
+.background-color-gris {
+  background-color: #efefef !important;
+}
+.padding-top-bottom-contenedores {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.padding-top-bottom-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.margin-top-bottom-contenedores {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.margin-top-2rem {
+  margin-top: 2rem !important;
+}
+.space-between {
+  justify-content: space-between;
 }

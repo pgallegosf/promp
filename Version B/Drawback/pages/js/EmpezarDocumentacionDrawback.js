@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $("#proDirecta").show();
+    $("#proEncargo").hide();
     $("#directa").click(function() {
         selectDirecta();
     });

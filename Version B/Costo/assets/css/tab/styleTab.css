@@ -456,7 +456,3 @@ footer .credits {
 	width:100%;
 }
 
-.modal-backdrop.show {
-    opacity: 0.5 !important;
-	background-color: #0000008c !important;
-}

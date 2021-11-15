@@ -99,6 +99,19 @@ body {
   color: #ffffff;
 }
 
+.popover-1 {
+  background-color: #07354F !important;
+  color: #ffffff !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 15px !important;
+  position: fixed !important;
+  top: 60px !important;
+  right: 8px !important;
+  left: auto !important;
+  z-index: 100 !important;
+}
+
 .btn-danger:hover {
   background-color: #07354f;
   color: #ffffff;
@@ -112,7 +125,24 @@ body {
   width: 15% !important;
 }
 
+.img-close {
+  height: 15px !important;
+}
+
+.img-home {
+  width: 100% !important;
+  height: auto;
+}
+
 @media (min-width: 200px) {
+
+  .modal-dialog {
+    padding: 20px !important;
+  }
+
+  .mostrar-desktop {
+    display: none !important;
+  }
 
   .show-movil {
     display: flex !important;
@@ -170,6 +200,11 @@ body {
 }
 
 @media (min-width: 576px) {
+
+  .modal-dialog {
+    padding: 20px !important;
+  }
+
   .container-vista-simulador {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -213,12 +248,49 @@ body {
 }
 
 @media (min-width: 768px) {
+
+  .modal-dialog {
+    padding: 0px !important;
+  }
+
   .nav-img {
     width: 22% !important;
+  }
+
+  .mostrar-movil-flex {
+    display: none !important;
+  }
+
+  .ocultar-movil-flex {
+    display: flex !important;
+  }
+
+  .ocultar-movil {
+    display: inline-flex !important;
+  }
+
+  .mostrar-desktop {
+    display: block !important;
+  }
+
+  .container-vista-simulador {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    overflow-x: hidden;
+    padding-top: 72px !important;
   }
 }
 
 @media (min-width: 992px) {
+
+  .modal-dialog {
+    padding: 0px !important;
+  }
+
+  .mostrar-desktop {
+    display: block !important;
+  }
+
   .container-vista-simulador {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -265,6 +337,10 @@ body {
 }
 
 @media (min-width: 1200px) {
+
+  .modal-dialog {
+    padding: 0px !important;
+  }
 
   .show-movil {
     display: none !important;
@@ -325,7 +401,6 @@ body {
 
 .background-img {
   /* margin: 10px auto; */
-  border-radius: 5px;
   /* border: 1px solid #999; */
   padding: 0px;
   width: 100%;
@@ -343,8 +418,6 @@ body {
 @media all and (min-width: 500px) and (max-width: 1000px) {
   .background-img {
     /* margin: 20px auto; */
-    border-radius: 5px !important;
-    border: 1px solid #999;
     padding: 0px;
     width: 100%;
     height: 400px;
@@ -358,8 +431,6 @@ body {
 @media all and (min-width: 200px) and (max-width: 499px) {
   .background-img {
     /* margin: 20px auto; */
-    border-radius: 5px !important;
-    border: 1px solid #999;
     padding: 0px;
     width: 100%;
     height: 300px;
@@ -510,7 +581,7 @@ body {
 }
 
 .hr {
-  height: 2px;
+  height: 0.5px;
 }
 
 .refresh {
@@ -1895,22 +1966,11 @@ a > i > label {
 }
 
 .total-devolucion {
-  background: #3b4042a6;
-  border-radius: 20px;
+  background: #07354F;
   margin: 0rem;
   padding: 0.5rem;
 }
 
-/*estilos del dashborad*/
-
-.icon-dashboard {
-  width: 50%;
-}
-
-.hover:hover {
-  background-color: green !important;
-  border-radius: 20px;
-}
 
 .input-group-text {
   border: 1px !important;
@@ -2034,10 +2094,14 @@ a > i > label {
     display: none !important;
   }
   .ocultar-movil {
-    display: block !important;
+    display: -webkit-inline-box !important;
   }
   .btn-movil {
     width: 30% !important;
+  }
+
+  .show-movil {
+    display: none !important;
   }
 }
 

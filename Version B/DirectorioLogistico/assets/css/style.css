@@ -21,6 +21,10 @@ body {
   padding: 8px;
 }
 
+.img-close {
+  height: 15px !important;
+}
+
 .card {
   box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
 }
@@ -226,11 +230,38 @@ body {
   top: 135px;
 }
 
+.card-select-busqueda-listado-principal {
+  width: 84% !important;
+  height: auto !important;
+  margin-left: 1% !important;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+  z-index: 1;
+  top: 87px;
+}
+
 .card-listado-rubro {
   width: 39% !important;
   height: auto !important;
   margin-left: 1% !important;
   top: 217px;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+}
+
+.card-listado-rubro-principal {
+  width: 41% !important;
+  height: auto !important;
+  margin-left: 1% !important;
+  top: 167px;
   position: absolute !important;
   font-size: 12px;
   font-weight: bold;
@@ -253,11 +284,38 @@ body {
   left: 50%;
 }
 
+.card-listado-experiencia-principal {
+  width: 41% !important;
+  height: auto !important;
+  margin-left: 1% !important;
+  top: 167px;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+  left: 50%;
+}
+
 .card-listado-region {
   width: 25% !important;
   height: auto !important;
   margin-left: 1% !important;
   top: 297px;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+}
+
+.card-listado-region-principal {
+  width: 27% !important;
+  height: auto !important;
+  margin-left: 1% !important;
+  top: 248px;
   position: absolute !important;
   font-size: 12px;
   font-weight: bold;
@@ -280,6 +338,21 @@ body {
   left: 491px;
 }
 
+.card-listado-provincia-principal {
+  width: 27% !important;
+  height: auto !important;
+  margin-left: 0% !important;
+  top: 248px;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+  left: 454px;
+  z-index: 1;
+}
+
 .card-listado-distrito {
   width: 25% !important;
   height: auto !important;
@@ -292,6 +365,20 @@ body {
   box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
   background: #ffffff;
   left: 851px;
+}
+
+.card-listado-distrito-principal {
+  width: 27% !important;
+  height: auto !important;
+  margin-left: 1% !important;
+  top: 248px;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  background: #ffffff;
+  left: 798px;
 }
 
 .btn-enviar:hover {
@@ -395,11 +482,38 @@ body {
     top: 135px;
   }
 
+  .card-select-busqueda-listado-principal {
+    width: 89% !important;
+    height: auto !important;
+    margin-left: 4% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    z-index: 1;
+    top: 87px;
+  }
+
   .card-listado-rubro {
     width: 86% !important;
     height: auto !important;
     margin-left: 3% !important;
     top: 217px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-rubro-principal {
+    width: 89% !important;
+    height: auto !important;
+    margin-left: 4% !important;
+    top: 168px;
     position: absolute !important;
     font-size: 12px;
     font-weight: bold;
@@ -422,11 +536,38 @@ body {
     left: 6%;
   }
 
+  .card-listado-experiencia-principal {
+    width: 89% !important;
+    height: auto !important;
+    margin-left: 0% !important;
+    top: 249px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 5%;
+  }
+
   .card-listado-region {
     width: 86% !important;
     height: auto !important;
     margin-left: 3% !important;
     top: 376px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-region-principal {
+    width: 89% !important;
+    height: auto !important;
+    margin-left: 4% !important;
+    top: 330px;
     position: absolute !important;
     font-size: 12px;
     font-weight: bold;
@@ -449,6 +590,20 @@ body {
     left: 15px !important;
   }
 
+  .card-listado-provincia-principal {
+    width: 89% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 411px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 15px !important;
+  }
+
   .card-listado-distrito {
     width: 86% !important;
     height: auto !important;
@@ -462,6 +617,108 @@ body {
     background: #ffffff;
     left: 25px !important;
     z-index: 1;
+  }
+
+  .card-listado-distrito-principal {
+    width: 89% !important;
+    height: auto !important;
+    margin-left: 0% !important;
+    top: 492px !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 18px !important;
+    z-index: 1;
+  }
+
+  .card-listado-filtro-rubro {
+    width: 35% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 298px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 137px;
+    z-index: 1;
+  }
+
+  .card-listado-filtro-ubicacion {
+    width: 35% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 337px !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 137px !important;
+    z-index: 1;
+  }
+
+  .card-listado-filtro-ordenar {
+    width: 29% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 376px !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 161px !important;
+    z-index: 1;
+  }
+
+  .card-listado-filtro-rubro-a {
+    width: 35% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 849px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 137px;
+  }
+
+  .card-listado-filtro-ubicacion-a {
+    width: 35% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 888px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 137px;
+  }
+
+  .card-listado-filtro-ordenar-a {
+    width: 29% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 927px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 162px;
   }
 }
 
@@ -621,11 +878,38 @@ body {
     top: 135px;
   }
 
+  .card-select-busqueda-listado-principal {
+    width: 87% !important;
+    height: auto !important;
+    margin-left: 1.5% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    z-index: 1;
+    top: 87px;
+  }
+
   .card-listado-rubro {
     width: 38% !important;
     height: auto !important;
     margin-left: 1.4% !important;
     top: 215px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-rubro-principal {
+    width: 42% !important;
+    height: auto !important;
+    margin-left: 1.4% !important;
+    top: 168px;
     position: absolute !important;
     font-size: 12px;
     font-weight: bold;
@@ -648,11 +932,38 @@ body {
     left: 408px;
   }
 
+  .card-listado-experiencia-principal {
+    width: 42% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 168px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 366px;
+  }
+
   .card-listado-region {
     width: 38% !important;
     height: auto !important;
     margin-left: 1.4% !important;
     top: 296px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-region-principal {
+    width: 42% !important;
+    height: auto !important;
+    margin-left: 1.6% !important;
+    top: 249px;
     position: absolute !important;
     font-size: 12px;
     font-weight: bold;
@@ -675,6 +986,20 @@ body {
     left: 385px !important;
   }
 
+  .card-listado-provincia-principal {
+    width: 42% !important;
+    height: auto !important;
+    margin-left: 4% !important;
+    top: 249px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 345px !important;
+  }
+
   .card-listado-distrito {
     width: 38% !important;
     height: auto !important;
@@ -687,6 +1012,20 @@ body {
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
     background: #ffffff;
     left: 80px !important;
+  }
+
+  .card-listado-distrito-principal {
+    width: 42% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 330px !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 41px !important;
   }
 }
 @media (min-width: 992px) {
@@ -752,11 +1091,38 @@ body {
     top: 135px;
   }
 
+  .card-select-busqueda-listado-principal {
+    width: 84% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    z-index: 1;
+    top: 87px;
+  }
+
   .card-listado-rubro {
     width: 39% !important;
     height: auto !important;
     margin-left: 1% !important;
     top: 217px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-rubro-principal {
+    width: 41% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 167px;
     position: absolute !important;
     font-size: 12px;
     font-weight: bold;
@@ -779,11 +1145,38 @@ body {
     left: 50%;
   }
 
+  .card-listado-experiencia-principal {
+    width: 41% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 167px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 50%;
+  }
+
   .card-listado-region {
     width: 25% !important;
     height: auto !important;
     margin-left: 1% !important;
     top: 297px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+  }
+
+  .card-listado-region-principal {
+    width: 27% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 248px;
     position: absolute !important;
     font-size: 12px;
     font-weight: bold;
@@ -803,7 +1196,22 @@ body {
     color: #282828;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
     background: #ffffff;
-    left: 491px;
+    left: 491px !important;
+    z-index: 1;
+  }
+
+  .card-listado-provincia-principal {
+    width: 27% !important;
+    height: auto !important;
+    margin-left: 0% !important;
+    top: 248px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 454px;
     z-index: 1;
   }
 
@@ -811,15 +1219,113 @@ body {
     width: 25% !important;
     height: auto !important;
     margin-left: 1% !important;
-    top: 297px;
+    top: 297px !important;
     position: absolute !important;
     font-size: 12px;
     font-weight: bold;
     color: #282828;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
     background: #ffffff;
-    left: 851px;
+    left: 851px !important;
     z-index: 1;
+  }
+
+  .card-listado-distrito-principal {
+    width: 27% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 248px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 798px;
+  }
+
+  .card-listado-filtro-rubro {
+    width: 16% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 331px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 238px;
+  }
+
+  .card-listado-filtro-ubicacion {
+    width: 16% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 332px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 587px;
+  }
+
+  .card-listado-filtro-ordenar {
+    width: 14% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 331px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 967px;
+  }
+
+  .card-listado-filtro-rubro-a {
+    width: 16% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 553px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 238px;
+  }
+
+  .card-listado-filtro-ubicacion-a {
+    width: 16% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 553px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 587px;
+  }
+
+  .card-listado-filtro-ordenar-a {
+    width: 14% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 553px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 967px;
   }
 }
 .img {
@@ -958,15 +1464,6 @@ body {
 .card-contenido-select {
   font-size: 11px !important;
   font-weight: normal !important;
-}
-
-.option-select:hover {
-  font-size: 12px !important;
-  font-weight: bold !important;
-  background-color: #c4122f;
-  opacity: 73%;
-  width: 115% !important;
-  cursor: pointer;
 }
 
 .separador {
@@ -2118,6 +2615,10 @@ label {
   display: none;
 }
 @media (min-width: 200px) {
+  .modal-dialog {
+    padding: 20px !important;
+  }
+
   .regular {
     display: none;
   }
@@ -2129,6 +2630,9 @@ label {
   }
 }
 @media (min-width: 576px) {
+  .modal-dialog {
+    padding: 20px !important;
+  }
   .regular {
     display: none;
   }
@@ -2140,6 +2644,9 @@ label {
   }
 }
 @media (min-width: 768px) {
+  .modal-dialog {
+    padding: 0px !important;
+  }
   .regular {
     display: none;
   }
@@ -2151,6 +2658,9 @@ label {
   }
 }
 @media (min-width: 992px) {
+  .modal-dialog {
+    padding: 0px !important;
+  }
   .regular {
     display: block;
   }
@@ -2162,6 +2672,9 @@ label {
   }
 }
 @media (min-width: 1200px) {
+  .modal-dialog {
+    padding: 0px !important;
+  }
   .regular {
     display: block;
   }
@@ -2322,11 +2835,11 @@ label {
 .btn-close-modal {
   margin-left: 0;
   position: absolute;
-  /*top: -40px;
-    right: -25px;
-    font-size: 40px;*/
-  top: 2px;
-  right: 10px;
+  top: -40px;
+  right: -25px;
+  font-size: 40px;
+  top: -22px;
+  right: -13px;
   font-size: 30px;
   opacity: 1;
   box-sizing: content-box;

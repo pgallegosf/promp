@@ -5,6 +5,9 @@ $(document).ready(function() {
     $(".card-provincia").hide();
     $(".card-distrito").hide();
     $(".card-region").hide();
+    $(".card-fil-rubro").hide();
+    $(".card-fil-ubicacion").hide();
+    $(".card-fil-ordenar").hide();
 
     $(".ptOrigen").click(function(e) {
         e.stopPropagation();
@@ -64,6 +67,36 @@ $(document).ready(function() {
     $(".ptDistritoMovil").click(function(e) {
         e.stopPropagation();
         showCardDistrito();
+    });
+
+    $(".ptRubroFil").click(function(e) {
+        e.stopPropagation();
+        showCardRubroFiltro();
+    });
+
+    $(".ptRubroMovilFil").click(function(e) {
+        e.stopPropagation();
+        showCardRubroFiltro();
+    });
+
+    $(".ptUbicacionFil").click(function(e) {
+        e.stopPropagation();
+        showCardUbicacionFiltro();
+    });
+
+    $(".ptUbicacionMovilFil").click(function(e) {
+        e.stopPropagation();
+        showCardUbicacionFiltro();
+    });
+
+    $(".ptOrdenarFil").click(function(e) {
+        e.stopPropagation();
+        showCardOrdenarFiltro();
+    });
+
+    $(".ptOrdenarMovilFil").click(function(e) {
+        e.stopPropagation();
+        showCardOrdenarFiltro();
     });
 });
 
@@ -141,6 +174,18 @@ function showCardProvincia() {
 
 function showCardDistrito() {
     $(".card-distrito").toggle();
+}
+
+function showCardRubroFiltro() {
+    $(".card-fil-rubro").toggle();
+}
+
+function showCardUbicacionFiltro() {
+    $(".card-fil-ubicacion").toggle();
+}
+
+function showCardOrdenarFiltro() {
+    $(".card-fil-ordenar").toggle();
 }
 
 function mostrarFiltros() {

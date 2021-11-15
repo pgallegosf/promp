@@ -15,6 +15,31 @@ $(document).ready(function() {
                 break;
         }
     });
+
+    $("#seleccionar1").click(function() {
+        var valor = 3;
+        switch (valor) {
+            case 3:
+                $("#tab3").trigger("click");
+                break;
+        }
+    });
+    $("#seleccionar2").click(function() {
+        var valor = 3;
+        switch (valor) {
+            case 3:
+                $("#tab3").trigger("click");
+                break;
+        }
+    });
+    $("#seleccionar3").click(function() {
+        var valor = 3;
+        switch (valor) {
+            case 3:
+                $("#tab3").trigger("click");
+                break;
+        }
+    });
     $("#add-Insumo").click(function() {
         var valor = 1;
         switch (valor) {

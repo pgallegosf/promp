@@ -3,7 +3,12 @@ function CambiarTituloLogin(titulo){
 }
 
 $(document).ready(function() {
-  
+  $(".idPopoverNotificacionGuardar").click(function() {
+    $(".popover").toggle();
+});
+$(".close-popover").click(function() {
+  $(".popover").toggle();
+});
     $('.controlSelect2').select2({
 		tags: "true",
   placeholder: "Seleccione una opción"

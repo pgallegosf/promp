@@ -4,6 +4,13 @@ function CambiarTituloLogin(titulo){
 
 $(document).ready(function() {
   
+  $(".idPopoverNotificacionGuardar").click(function() {
+    $(".popover").toggle();
+});
+$(".close-popover").click(function() {
+  $(".popover").toggle();
+});
+  $(".popover-1").show();
     $('.controlSelect2').select2({
 		tags: "true",
   placeholder: "Seleccione una opción"
@@ -14,6 +21,38 @@ $(document).ready(function() {
   $('#guardarFicha').click(function () {
     CambiarTituloLogin("Para guardar debe iniciar sesión");
   });
+
+  $('.close-popover').click(function () {
+    $(".popover-1").toggle();
+  })
+
+  $('#opt1').click(function () {
+    $("#slide-1").show();
+    $("#slide-2").hide();
+    $("#slide-3").hide();
+    $('#opt1 i').addClass('active-slider');
+    $('#opt2 i').removeClass('active-slider');
+    $('#opt3 i').removeClass('active-slider');
+  });
+
+  $('#opt2').click(function () {
+    $("#slide-1").hide();
+    $("#slide-3").hide();
+    $("#slide-2").show();
+    $('#opt1 i').removeClass('active-slider');
+    $('#opt3 i').removeClass('active-slider');
+    $('#opt2 i').addClass('active-slider');
+  });
+
+  $('#opt3').click(function () {
+    $("#slide-1").hide();
+    $("#slide-2").hide();
+    $("#slide-3").show();
+    $('#opt1 i').removeClass('active-slider');
+    $('#opt2 i').removeClass('active-slider');
+    $('#opt3 i').addClass('active-slider');
+  });
+
   $('#btnValorar').click(function () {
     CambiarTituloLogin("Para calificar debe iniciar sesión");
   });

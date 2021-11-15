@@ -1756,6 +1756,10 @@ a > i > label {
   width: 60%;
 }
 
+.img-close {
+  height: 15px !important;
+}
+
 @media (min-width: 200px) {
   .line-vertical {
     border-bottom: 1px solid #a5acb0;
@@ -1804,15 +1808,6 @@ a > i > label {
 }
 
 /*estilos del dashborad*/
-
-.icon-dashboard {
-  width: 50%;
-}
-
-.hover:hover {
-  background-color: green !important;
-  border-radius: 20px;
-}
 
 .input-group-text {
   border: 1px !important;
