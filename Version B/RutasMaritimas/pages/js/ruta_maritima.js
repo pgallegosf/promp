@@ -3,7 +3,8 @@ var indicador2 = true;
 var indicador3 = true;
 var indicador4 = true;
 $(document).ready(function() {
-    
+    sessionStorage.removeItem("idHerramienta");
+    sessionStorage.setItem('idHerramienta', '2');
     $(".ptOrigen").click(function(e) {
         e.stopPropagation();
         $(".ptOrigen").val('');

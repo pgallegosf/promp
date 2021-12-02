@@ -25,7 +25,7 @@
 
 </head>
 
-<body class="g-sidenav-show  bg-gray-100">
+<body class="g-sidenav-show">
 
     <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
         <!-- Navbar -->
@@ -133,7 +133,7 @@
         <!-- End Navbar -->
         <div class="container-fluid py-4 container-principal" style="padding-bottom: 0 !important;">
             <!-- Inicio de vista principal -->
-            <div class="row">
+            <div class="row fullHeight">
                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12  centro padding-left-right-0" style="background-color: #F2F5F6;">
                     <div class="contenedor-left">
                         <img src="../assets/img/Login/login.png" alt="login" class="img-principal-login">
@@ -149,23 +149,24 @@
                             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-left padding-left-right-0">
                                 <div>
                                     <label class="negro-promperu font-label">Correo Electronico</label>
-                                    <input type="text" class="form-control padding-left-right-0 width-100" placeholder="ejemplo@correo.com" id="correo" value="" onclick="addData()">
+                                    <input type="text" class="form-control padding-left-right-0 width-100 negro-promperu font-H4-light-normal" placeholder="ejemplo@correo.com" id="correo" value="" onchange="addData()">
                                 </div>
                                 <div>
                                     <label class="negro-promperu font-label">Contraseña</label>
-                                    <input type="password" class="form-control padding-left-right-0 width-100" placeholder="******" id="password" value="">
+                                    <input type="password" class="form-control padding-left-right-0 width-100  negro-promperu font-H4-light-normal" placeholder="******" id="password" value="">
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 centrado padding-left-right-0">
-                                <button class="btn btn-danger width-100 font-H4-bold" style="margin-bottom: 20px;" onclick="window.location.href='../../Costo/pages/inicio.html'" id="btn-ingresar">Ingresar</button>
+                                <button class="btn btn-danger width-100 font-H4-bold" style="margin-bottom: 20px;" onclick="login()" id="btn-ingresar">Ingresar</button>
                             </div>
                             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12  centrado text-line-title font-color-red ordenar text-center padding-left-right-0">
                                 <a data-bs-toggle="modal" data-bs-target="#m-password" class="font-link rojo-promperu text-center link-sub">¿Olvidaste tu contraseña?</a>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                            <div class="check-sesion-activa padding-left-right-0" id="check-sesion-activa">
-                                <input class="input-checkbox" type="checkbox" name="chkSesionActiva" id="chkSesionActiva" checked>
-                                <label for="chkSesionActiva" class="input-checkbox-lab">Mantener sesión abierta</label>
+                            <div class="check-sesion-activa padding-left-right-0 d-none" id="check-sesion-activa">
+                                <!--<input class="input-checkbox" type="checkbox" name="chkSesionActiva" id="chkSesionActiva" checked>-->
+                                <input class="input-checkbox" type="checkbox" name="chkSesionActiva" id="chkSesionActiva" >
+                                <label for="chkSesionActiva" class="input-checkbox-lab negro-promperu font-H4-medium-n">Mantener sesión abierta</label>
                             </div>
                             <div class="view-registro-login padding-left-right-0" id="view-registro-login">
                                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
@@ -247,18 +248,20 @@
                 </div>
             </footer>-->
         </div>
-        <div style="background: #A5ACB02E;" class="mostrar-movil col-lg-12 col-sm-12 col-md-12 d-flex flex-column align-items-center justify-content-center pt-4 pb-4 mt-5" id="view-registro-login">
+        <!--<div style="background: #A5ACB02E;" class="mostrar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex flex-column align-items-center justify-content-center pt-4 pb-4 mt-5" id="view-registro-login">
                 <div class="hr ocultar-movil background-gris col-8 mt-4"></div>
                 <div class="font-H4-bold negro-promperu col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-3 text-center">¿Aún no tienes una cuenta?</div>
-                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-4 d-flex justify-content-center">
-                    <button style="height: 50px !important; text-transform: inherit !important;" type="button" class="font-H4-bold w-80 btn btn-outline-danger" onclick="window.location.href='RegistroDrawback.html'">Regístrate Aquí</button>
-                </div>
+                
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 d-flex justify-content-center">
+                        <button style="height: 50px !important; text-transform: inherit !important;" type="button" class="font-H4-bold w-80 btn btn-outline-danger" onclick="window.location.href='RegistroDrawback.html'">Regístrate Aquí</button>
+                    </div>
+                
                 <br>
                 <br>
                 <br>
                 <br>
                 <br>
-            </div>
+            </div>-->
             <!-- Fin de vista principal -->
 
     </main>
@@ -283,22 +286,7 @@
                     <div class="centrado" >
                         <button class="btn btn-danger btn-enviar-pass width-100 font-H4-bold" style="margin-bottom:56px;" type="button">Enviar</button>
                     </div>
-                    <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                        <img src="../assets/img/btn_close.svg" alt="">
-                    </a>
                 </div>
-                    <div class="padding-modal-body">
-                        <div class="col-lg-12 col-md-12 col-sm-12 font-H5-light negro-promperu text-center">
-                            Podemos ayudarte a recuperar tu contraseña, está sera enviado al correo ingresado
-                        </div>
-                        <div class="pt-3">
-                            <label class="negro-promperu font-label text-line-title">Correo Electronico</label>
-                            <input type="text" class="form-control font-H4-light gris-promperu" placeholder="ejemplo@correo.com">
-                        </div>
-                        <div class="mt-3">
-                            <button class="btn btn-primary btn-enviar" type="button">Enviar</button>
-                        </div>
-                    </div>
             </div>
         </div>
     </div>
@@ -362,7 +350,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Costo/Pages/inicio.html'">
                     <div class="div-card-dashboard hover">
                         <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
 
@@ -426,9 +414,8 @@
                     </svg> &nbsp;&nbsp;Visita también</div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="row">
-                        <div class="col-lg-5 col-md-11 col-xs-5 col-sm-5 font-H5-light rojo-promperu pointer font-H4-bold-700n inline margin-visita visita-max-width">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
-                    <div class="col-lg-5 col-md-12 col-xs-5 col-sm-5 font-H5-light rojo-promperu pointer font-H4-bold-700n inline margin-visita">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></div>
-
+                    <div class="col-lg-5 col-md-11 col-xs-5 col-sm-5 inline "><a href="https://exportemos.pe/" target="_blank" class="font-H5-light rojo-promperu inline margin-visita visita-max-width">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></a></div>
+                    <div class="col-lg-5 col-md-12 col-xs-5 col-sm-5  inline "><a href="https://www.gob.pe/promperu" target="_blank" class="font-H5-light rojo-promperu inline margin-visita visita-max-width">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></a></div>
                 </div>
 
             </div>

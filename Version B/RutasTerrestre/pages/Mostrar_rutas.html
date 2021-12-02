@@ -439,12 +439,25 @@
         </div>
     </main>
     <!-- Inicio menu general destok -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel" class=" font-size-20 font-color-black">Herramientas Logísticas</h5>
-
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="max-width: 680px !important;">
+        <!--
+        <div class="popover" style="display: none">
             
-            <button class="btn-close-menu" data-bs-dismiss="offcanvas" aria-label="Close">
+            <div class="row popover-body" style="margin:3px; padding-top:10px !important; padding-bottom:10px !important;">
+                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 padding-left-right-0">
+                    <p class="blanco font-smallprint-medium-light" style="display:inline;">Las tarifas promedio mostradas son referenciales y no incluyen reajustes ni costos adicionales.</p>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 justify-content-end blanco padding-left-right-0" style="display:grid;">
+                    <i class="fas fa-times close-popover ordenar"></i>
+                </div>
+            </div>
+        </div>-->
+
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel" class=" font-size-20 negro-promperu font-H2-bold-700">Herramientas Logísticas</h5>
+
+
+            <button class="btn-close-menu a-menu" data-bs-dismiss="offcanvas" aria-label="Close">
                 <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
             </button>
 
@@ -452,77 +465,103 @@
         </div>
         <div class="offcanvas-body offcanvas-body-menu">
             <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
+                    <div class="div-card-dashboard hover"> 
+                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
 
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content;" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Aéreas</p>
-                        <img src="../../img-menu-PromPeru/dashboard/avion.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/avion.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas Aéreas</p>
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Aéreas</p>
+                            <img src="../../img-menu-PromPeru/dashboard/avion 1.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                            <img src="../../img-menu-PromPeru/dashboard/avion-m.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas Aéreas</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas marítimas</p>
-                        <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas marítimas</p>
-                        
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
+                    <div class="div-card-dashboard hover"> 
+                        <div class="font-size-15 inline-for-movil card-dashboard">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Marítimas</p>
+                            <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                            <img src="../../img-menu-PromPeru/dashboard/barco-m.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas marítimas</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasTerrestre/Pages/Rutas_terrestre.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas terrestres</p>
-                        <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas terrestres</p>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasTerrestre/Pages/Rutas_terrestre.html'">
+                    <div class="div-card-dashboard hover">
+                        <div class="font-size-15 inline-for-movil card-dashboard">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Terrestres</p>
+                            <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                            <img src="../../img-menu-PromPeru/dashboard/camion 2.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas Terrestres</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Costos de exportación</p>
-                        <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Costos de exportación</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='Cubicaje.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador de Cubicaje</p>
-                        <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Simulador de Cubicaje</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Directorio logístico</p>
-                        <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Directorio logístico</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador de Drawback</p>
-                        <img src="../../img-menu-PromPeru/dashboard/imagen principal.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/imagen principal.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Simulador de Drawback</p>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Costo/Pages/inicio.html'">
+                    <div class="div-card-dashboard hover">
+                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
 
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Costos de Exportación</p>
+                            <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                            <img src="../../img-menu-PromPeru/dashboard/image 21.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Costos de Exportación</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Cubicaje/Pages/Cubicaje.html'">
+                    <div class="div-card-dashboard hover">
+                        <div class="font-size-15 inline-for-movil card-dashboard">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador de Cubicaje</p>
+                            <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                            <img src="../../img-menu-PromPeru/dashboard/Group 268.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Simulador de Cubicaje</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
+                    <div class="div-card-dashboard hover">
+                        <div class="div-card-dashboard"> 
+                            <div class="font-size-15 inline-for-movil card-dashboard">
+                                <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Directorio Logístico</p>
+                                <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                                <img src="../../img-menu-PromPeru/dashboard/gente 1.png" alt="avion" class="icon-dashboard mostrar-movil">
+                                <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Directorio Logístico</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
+                    <div class="div-card-dashboard hover">
+                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador <br>de Drawback</p>
+                            <!-- <img src="../../img-menu-PromPeru/dashboard/Group 224.png" alt="avion" class="icon-dashboard mostrar-desktop image-drwaback"> -->
+                            <img src="../../img-menu-PromPeru/dashboard/Group 224.png" alt="avion" class="icon-dashboard mostrar-desktop image-drwaback" style="width: 100px !important; height: 80px !important;">
+
+                            <img src="../../img-menu-PromPeru/dashboard/Group 228.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Simulador de Drawback</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
-                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold ordenar"><i class="far fa-user mx-2 font-size-25"></i>Iniciar sesión</div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold ordenar font-H4-bold-700n inline">
+                    <a onclick="window.location.href='../../Login/pages/Login.html'" class="font-color-red font-size-15 font-weight-bold ordenar font-H4-bold-700n inline"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.7726 9.0654H6.22737C2.79516 9.0654 0 11.6013 0 14.7195V16.1847C0 16.6356 0.347158 17 0.776632 17C1.20611 17 1.55326 16.6356 1.55326 16.1847V14.7195C1.55326 12.4992 3.65053 10.6959 6.22737 10.6959H10.7726C13.3495 10.6959 15.4467 12.4992 15.4467 14.7195V16.1847C15.4467 16.6356 15.7939 17 16.2234 17C16.6528 17 17 16.6356 17 16.1847V14.7195C17 11.6013 14.2048 9.0654 10.7726 9.0654Z" fill="#C4122F"/>
+                        <path d="M8.83993 8.55072C11.0875 8.55072 12.9128 6.63094 12.9128 4.27536C12.9128 1.91978 11.0875 0 8.83993 0C6.59235 0 4.76709 1.91978 4.76709 4.27536C4.76709 6.63094 6.59593 8.55072 8.83993 8.55072ZM8.83993 1.6305C10.2286 1.6305 11.3631 2.81768 11.3631 4.27536C11.3631 5.73304 10.2321 6.92398 8.83993 6.92398C7.44772 6.92398 6.31677 5.7368 6.31677 4.27536C6.31677 2.81392 7.4513 1.6305 8.83993 1.6305Z" fill="#C4122F"/>
+                    </svg> &nbsp;&nbsp;Iniciar sesión</a>
+                </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
-                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold"><i class="fas fa-external-link-alt mx-2 font-size-25"></i>Visita también</div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold pointer font-H4-bold-700n inline">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.9938 6.74999C12.6751 6.74999 12.4313 6.99374 12.4313 7.31249V13.8375L1.1626 13.8187L1.18135 2.54999H7.70635C8.0251 2.54999 8.26885 2.30624 8.26885 1.98749C8.26885 1.66874 8.0251 1.42499 7.70635 1.42499H0.618848C0.300098 1.42499 0.0563477 1.66874 0.0563477 1.98749L0.0375977 14.3812C0.0375977 14.7 0.281348 14.9437 0.600098 14.9437L12.9938 14.9625C13.1438 14.9625 13.2938 14.9062 13.3876 14.7937C13.5001 14.6812 13.5563 14.55 13.5563 14.4V7.31249C13.5563 6.99374 13.3126 6.74999 12.9938 6.74999Z" fill="#C4122F"/>
+                        <path d="M13.8374 0.487488C13.8374 0.468738 13.8187 0.449988 13.8187 0.431238C13.8187 0.412488 13.7999 0.393738 13.7999 0.374988C13.7999 0.356238 13.7812 0.337488 13.7624 0.318738C13.7624 0.299988 13.7437 0.299988 13.7437 0.281238C13.7062 0.224988 13.6499 0.168738 13.5937 0.131238C13.5749 0.131238 13.5749 0.112488 13.5562 0.112488C13.5374 0.0937378 13.5187 0.0937377 13.4999 0.0749877C13.4812 0.0749877 13.4624 0.0562378 13.4437 0.0562378C13.4249 0.0562378 13.4062 0.0374877 13.3874 0.0374877C13.3499 0.0374877 13.3124 0.0187378 13.2749 0.0187378H9.24365C8.9249 0.0187378 8.68115 0.262488 8.68115 0.581238C8.68115 0.899988 8.9249 1.14374 9.24365 1.14374H11.9437L5.6624 7.44374C5.4374 7.66874 5.4374 8.02499 5.6624 8.23124C5.7749 8.34374 5.9249 8.39999 6.05615 8.39999C6.1874 8.39999 6.3374 8.34374 6.4499 8.23124L12.7312 1.94999V4.66874C12.7312 4.98749 12.9749 5.23124 13.2937 5.23124C13.6124 5.23124 13.8562 4.98749 13.8562 4.66874V0.599988C13.8562 0.562488 13.8562 0.524988 13.8374 0.487488Z" fill="#C4122F"/>
+                    </svg> &nbsp;&nbsp;Visita también</div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="row">
-                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
-                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-10">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></div>
+                    <div class="col-lg-5 col-md-11 col-xs-5 col-sm-5 inline "><a href="https://exportemos.pe/" target="_blank" class="font-H5-light rojo-promperu inline margin-visita visita-max-width">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></a></div>
+                    <div class="col-lg-5 col-md-12 col-xs-5 col-sm-5  inline "><a href="https://www.gob.pe/promperu" target="_blank" class="font-H5-light rojo-promperu inline margin-visita visita-max-width">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></a></div>
                 </div>
 
             </div>

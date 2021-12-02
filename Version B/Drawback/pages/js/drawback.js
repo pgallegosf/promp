@@ -222,6 +222,8 @@ function cambiarContinente(dato) {
 
 
 $(document).ready(function() {
+    sessionStorage.removeItem("idHerramienta");
+    sessionStorage.setItem('idHerramienta', '7');
      $(".busquedaAvanzada").hide();
 	/*$(".").click(function () {
         LimpiarPoppupPuerto();
