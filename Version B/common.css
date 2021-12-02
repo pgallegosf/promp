@@ -81,9 +81,31 @@
   cursor: pointer;
 }
 
-.card-maritima-select option:hover  {
+.card-maritima-pais-select option:hover  {
   font-weight: 700 !important;
 }
+
+.card-maritima-pais-select {
+  width: 50% !important;
+  height: 40.5% !important;
+  margin-left: 2% !important;
+  top: 163% !important;
+  position: absolute !important;
+  font-size: 10px;
+  font-weight: bold;
+  background: #FFFFFF;
+  z-index: 999;
+  border-radius: 0px 0px 15px 15px;
+  padding-left: 12px !important;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-maritima-pais-select option {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+
 
 .card-maritima {
   width: 26% !important;
@@ -1270,6 +1292,21 @@ img {
 }
 
 @media (min-width: 576px) {
+  .card-maritima-pais-select {
+    width: 50% !important;
+    height: 40.5% !important;
+    margin-left: 2% !important;
+    top: 163% !important;
+    position: absolute !important;
+    font-size: 10px;
+    font-weight: bold;
+    background: #FFFFFF;
+    z-index: 999;
+    border-radius: 0px 0px 15px 15px;
+    padding-left: 12px !important;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+  
   .mobile-resolution-detalle-rutas {
     width: 100% !important;
 }
@@ -1733,8 +1770,15 @@ img {
       width: 20% !important;
       top: 65.5% !important;
   }
+
 }
 @media (min-width: 1920px) {
+
+  .card-maritima-pais-select {
+    margin-left: 1% !important;
+    top: 122% !important;
+  }
+  
   .card-maritima-container {
     height: 12.5% !important;
     top: 62.5% !important;
