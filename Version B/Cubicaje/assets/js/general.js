@@ -3,8 +3,11 @@ function CambiarTituloLogin(titulo){
 }
 
 $(document).ready(function() {
+  sessionStorage.removeItem("idHerramienta");
+    sessionStorage.setItem('idHerramienta', '5');
   $(".idPopoverNotificacionGuardar").click(function() {
     $(".popover").toggle();
+    
 });
 $(".close-popover").click(function() {
   $(".popover").toggle();

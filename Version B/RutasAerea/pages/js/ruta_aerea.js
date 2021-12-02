@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    sessionStorage.removeItem("idHerramienta");
+    sessionStorage.setItem('idHerramienta', '1');
     $(".destino").click(function(e) {
         e.stopPropagation();
         showCardOrigen();

@@ -4,6 +4,8 @@ $(document).ready(function() {
     });
     // Botones bloqueados
     $(".btn-ingresar").attr('disabled', 'disabled');
+    sessionStorage.removeItem("idHerramienta");
+    sessionStorage.setItem('idHerramienta', '4');
 });
 
 function login() {

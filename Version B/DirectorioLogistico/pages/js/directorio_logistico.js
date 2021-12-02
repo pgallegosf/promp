@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    sessionStorage.removeItem("idHerramienta");
+    sessionStorage.setItem('idHerramienta', '6');
     $(".card-origen").hide();
     $(".card-rubro").hide();
     $(".card-experiencia").hide();

@@ -1,7 +1,8 @@
 $(document).ready(function() {
-    
+    sessionStorage.removeItem("idHerramienta");
+    sessionStorage.setItem('idHerramienta', '3');
     $(".ptOrigen").click(function(e) {
-
+        
         e.stopPropagation();
         showCardOrigen();
         if($("#ptOrigen").val()=="Selecciona"){

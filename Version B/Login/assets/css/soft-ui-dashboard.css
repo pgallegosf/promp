@@ -229,8 +229,7 @@ sup {
 }
 
 a {
-    color: #cb0c9f;
-    text-decoration: none;
+   text-decoration: none;
 }
 
 a:hover {
@@ -755,7 +754,57 @@ progress {
     flex: 0 0 auto;
     width: 16.666667%;
 }
-
+@media (min-width: 200px) {
+    
+    .col-xs-1{
+       flex: 0 0 auto;
+       width: 8.333333%;
+   }
+   .col-xs-2 {
+        flex: 0 0 auto;
+        width: 16.666667%;
+    }
+    .col-xs-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .col-xs-4 {
+        flex: 0 0 auto;
+        width: 33.333333%;
+    }
+    .col-xs-5 {
+        flex: 0 0 auto;
+        width: 41.666667%;
+    }
+   .col-xs-6{
+       flex: 0 0 auto;
+       width: 50%;
+   }
+   .col-xs-7 {
+        flex: 0 0 auto;
+        width: 58.333333%;
+    }
+    .col-xs-8 {
+        flex: 0 0 auto;
+        width: 66.666667%;
+    }
+    .col-xs-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+    .col-xs-10 {
+        flex: 0 0 auto;
+        width: 83.333333%;
+    }
+   .col-xs-11{
+       flex: 0 0 auto;
+       width: 91.666667%;
+   }
+   .col-xs-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
 @media (min-width: 576px) {
     .col-sm {
         flex: 1 0 0%;
@@ -20650,10 +20699,7 @@ h4,
     letter-spacing: -0.05rem;
 }
 
-a {
-    letter-spacing: -0.025rem;
-    color: #344767;
-}
+
 
 .text-sm {
     line-height: 1.5;
