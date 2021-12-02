@@ -43,4 +43,10 @@ function closeCardEmpresa() {
     $(".card-tipo").hide();
 }
 
+function SeleccionarSector(sector){
+    $("#txtsector").val(sector);
+}
+function SeleccionarTipoEmpresa(tipo){
+    $("#txttipo").val(tipo);
+}
 // function tipoEmpresa(event) {}

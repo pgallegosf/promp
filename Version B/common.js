@@ -21,6 +21,12 @@ $(document).ready(function() {
         $("#idPopoverNotificacion").trigger("click");
         $(".popover").hide();
     });
+    $(".idPopoverNotificacionGuardar").click(function() {
+        $(".popover").toggle();
+    });
+    $(".close-popover").click(function() {
+        $(".popover").toggle();
+    });
 });
 function ocultarNotificacion(){
     console.log("close2");

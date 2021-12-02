@@ -1,0 +1,79 @@
+
+@media (min-width: 200px) {
+    .container-principal{
+        padding-top:50px !important;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .container-principal{
+        padding-top:50px !important;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .container-principal{
+        padding-top:70px !important;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .container-principal{
+        padding-top:70px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-principal{
+        padding-top:70px !important;
+    }
+    
+}
+
+.img-principal-login{
+    max-height: 547px !important;
+    max-width: 592px !important;
+    margin-right:95px;
+}
+.contenedor-left{
+    float:right;
+    max-width: 687px !important;
+    justify-content:right !important;
+}
+.div-contenedor-right{
+    justify-content: center;
+    display: flex;
+}
+.contenedor-right{
+    float:center !important;
+    max-width: 303px !important;
+}
+.titulo-login{
+    /*margin-top:86px;*/
+    margin-top:36px;
+    margin-bottom:40px;
+}
+.form-control{
+    margin-bottom: 20px;
+}
+.link-sub{
+    text-decoration: underline;
+}
+
+/**Modal recupera tu contraseña***/
+.modal-header-pass{
+    justify-content:center;
+    margin-top: 40px;
+    padding-top:0;
+}
+.modal-body-pass{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 25px;
+    margin-right: 23.5px;
+}
+
+/**Fin Modal recupera tu contraseña***/

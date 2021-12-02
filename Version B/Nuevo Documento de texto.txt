@@ -1,0 +1,5 @@
+costos:
+pagina login: corregir todo
+menú de dashboard: corregir todos los link, 
+pagina registro.html, corregir (todos los combos deben de mostrar su resultado en el text)
+pagina inicio(no funciona el checkbox)

@@ -2,20 +2,28 @@ $(document).ready(function() {
     $("#div-boton").click(function() {
         mostrarEmpezarSecond();
     });
+    $("#div-botonm").click(function() {
+        mostrarEmpezarSecond();
+    });
     $("#next").click(function() {
         mostrarEmpezarTercero();
     });
     $(".btn-volver").click(function() {
         volver();
     });
+    $("#flecha-volver").click(function() {
+        volver();
+    });
     $("#btn-volver2").click(function() {
+        volver2();
+    });
+    $("#flecha-volver2").click(function() {
         volver2();
     });
     $(".txt-iniciar").click(function() {
         iniciar();
     });
     // Botones bloqueados
-    $(".btn-iniciar").attr('disabled', 'disabled');
     //Elementos ocultos
     $("#view-empezar-second").hide();
     $("#view-empezar-tercero").hide();
@@ -42,8 +50,7 @@ function volver2() {
 }
 
 function iniciar() {
-    $(".txt-iniciar").val('ropa');
-    $(".btn-iniciar").removeAttr('disabled');
+    /*$(".btn-iniciar").removeAttr('disabled');
     $(".btn-iniciar").removeClass('btn-disabled');
-    $(".btn-iniciar").addClass('btn-danger');
+    $(".btn-iniciar").addClass('btn-danger');*/
 }

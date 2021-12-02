@@ -4,14 +4,23 @@ $(document).ready(function() {
         selectComercializadora();
         mostrarViewComercializadora();
     });
+    $("#encargo").click(function() {
+        selectEncargo();
+    });
+    $("#directa").click(function() {
+        selectDirecta();
+    });
+    $("body").click(function() {
+        closeCardEmpresa();
+    });
     $("#Productora").click(function() {
         selectProductora();
         mostrarViewProductora();
     });
-    $("#prodComercial2").click(function() {
+    $("#numPartida2").change(function() {
         MostrarInsumoLiberado();
     });
-    $("#prodComercial").click(function() {
+    $("#numPartida").change(function() {
         MostrarInsumoLiberado2();
     });
     $("#destinoCarga").click(function() {
@@ -296,12 +305,28 @@ $(document).ready(function() {
     $(".card-ddp").click(function() {
         showCardDDP();
     });
-
+    $(".unidad-medida").click(function(e) {
+        e.stopPropagation();
+        showCardUnidadMedida();
+    });
+    $(".unidad-tiempo").click(function(e) {
+        e.stopPropagation();
+        showCardUnidadTiempo();
+    });
+    $(".siguiente-paso3").click(function(e) {
+        e.stopPropagation();
+        $("#m-confirmacion-sin-guardar").show();
+    });
+    $(".siguiente-paso4").click(function(e) {
+        e.stopPropagation();
+        $("#m-confirmacion-sin-guardar-envase").show();
+    });
+    
 
 
     // Elementos ocultados
     $(".check").hide();
-    $("#insumoLiberado").hide();
+    //$("#insumoLiberado").hide();
     $("#view-comercializadora").hide();
     $(".view-movil").hide();
     $("#Detalle_Puerto_Movil").hide();
@@ -340,6 +365,27 @@ $(document).ready(function() {
     $(".checkmovil").hide();
 });
 
+function SeleccionarUnidadMedida(unidad){
+    $(".unidad-medida").val(unidad);
+}
+function SeleccionarUnidadTiempo(unidad){
+    $(".unidad-tiempo").val(unidad);
+}
+
+function showCardUnidadMedida() {
+    $(".card-unidad-medida").show();
+}
+function showCardUnidadTiempo() {
+    $(".card-unidad-tiempo").show();
+}
+function closeCardEmpresa() {
+    $(".card-unidad-medida").hide();
+    $(".card-unidad-tiempo").hide();
+    $(".card-unidad-tiempo").hide();
+    $("#m-confirmacion-sin-guardar").hide();
+    $("#m-confirmacion-sin-guardar-envase").hide();
+    $(".card-tipo").hide();
+}
 function clickTab(numberTab) {
     switch (numberTab) {
         case 1:
@@ -387,8 +433,6 @@ function clickTabMovil(numberTab) {
 }
 
 function MostrarInsumoLiberado() {
-    $("#prodComercial2").val("R&R");
-    $("#numPartida2").val("0303420000");
     $("#insumoLiberado2").show();
     $(".check").show();
 }
@@ -409,7 +453,19 @@ function selectComercializadora() {
     $("#proDirecta").show();
 
 }
+function selectEncargo() {
+    $("#directa").removeClass("active-product")
+    $("#encargo").addClass("active-product")
+    /*$("#insumoLiberado2").hide();
+    $("#proEncargo").hide();
+    $("#proDirecta").show();*/
 
+}
+function selectDirecta() {
+    $("#encargo").removeClass("active-product")
+    $("#directa").addClass("active-product")
+
+}
 function mostrarViewProductora() {
     $("#view-comercializadora").hide();
     $("#view-productora").show();
@@ -421,9 +477,9 @@ function mostrarViewComercializadora() {
 }
 
 function MostrarInsumoLiberado2() {
-    $("#prodComercial").val("R&R");
-    $("#numPartida").val("0303420000");
-    $("#insumoLiberado").show();
+    $("#insumoLiberado").removeClass("invisible")
+    $("#insumoLiberado").addClass("visible")
+    //$("#insumoLiberado").show();
     $(".check").show();
 }
 

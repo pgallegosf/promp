@@ -17,6 +17,8 @@ $(document).ready(function() {
     });
     $(".ptOrigenMovil").click(function(e) {
         $("#txtPuntoOrigenMovil").focus();
+        $(".puertoOrigen-Movil").show();
+        $(".PuertoDestino-movil").hide();
     });
     
     $("body").click(function() {
@@ -39,7 +41,16 @@ $(document).ready(function() {
     $(".mostrarpuerto").click(function(e) {
         e.stopPropagation();
         showPuerto();
+        $(".puertoOrigen-Movil").hide();
+        $(".PuertoDestino-movil").show();
     });
+    $(".puntDestinoMovil").click(function(e) {
+        e.stopPropagation();
+        showPuerto();
+        $(".puertoOrigen-Movil").hide();
+        $(".PuertoDestino-movil").show();
+    });
+    
     $(".opPaises").click(function() {
         selectPuerto();
     });
@@ -72,12 +83,7 @@ $(document).ready(function() {
     $(".btn-rutasMovil2").click(function() {
         showRutas();
     });
-    $(".idPopoverNotificacionGuardar").click(function() {
-        $(".popover").toggle();
-    });
-    $(".close-popover").click(function() {
-        $(".popover").toggle();
-    });
+    
     $(".puntOrigen").click(function(e) {
         e.stopPropagation();
         showCardptoOrigen();

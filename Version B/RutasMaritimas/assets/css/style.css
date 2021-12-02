@@ -106,48 +106,43 @@ body {
     width: 100%;
 }
 
-.background-img {
-    border-radius: 0!important;
-    padding: 13px;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat;
-    background: url(../img/img-inicio.png);
-    background-size: cover;
-    object-fit: cover;
-    object-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
 
 .background-img {
+    border-radius: 0 !important;
+    height: 458px;
+}
+
+
+.img-principal-movil{
+    position: absolute;
+    z-index:1;
     width: 100%;
+}
+.rutas-principales{
+    position: relative;
+    z-index:2;
+    justify-items: center;
 }
 
 @supports(object-fit: cover) {
     .background-img {
-        height: 451px;
-        object-fit: cover;
+        object-fit: contain;
         object-position: center center;
     }
 }
 
-@media all and (min-width: 500px) and (max-width: 1000px) {
+@media all and (min-width: 200px) and (max-width: 768px) {
+    
     .background-img {
-        border-radius: 0!important;
-        margin: 20px auto;
-        padding: 13px;
-        width: auto;
-        height: 400px;
-        background-size: 50% 50%;
-        background-repeat: no-repeat;
-        background: url(../img/img-inicio.png);
-        background-size: cover;
+        border-radius: 0 !important;
+        height: 337px;
     }
 }
-
-.background-img {
-    width: 100%;
+@media all and (min-width: 769px) and (max-width: 992px) {
+    .background-img {
+        border-radius: 0 !important;
+        height: 460px;
+    }
 }
 
 .div-centrado {

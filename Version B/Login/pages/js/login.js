@@ -19,8 +19,5 @@ function mostrarChkActivo() {
 }
 
 function recuperarPass() {
-    $(".text-correo").val("prueba@live.com");
     $(".btn-enviar-pass").removeAttr('disabled');
-    $(".btn-enviar-pass").removeClass('btn-disabled');
-    $(".btn-enviar-pass").addClass('btn-danger');
 }

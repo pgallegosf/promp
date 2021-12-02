@@ -107,50 +107,45 @@ body {
 }
 
 .background-img {
-    border-radius: 0!important;
-    padding: 13px;
-    width: 800px;
-    height: 600px;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat;
-    background: url(../img/avion.png);
-    background-size: cover;
-    object-fit: cover;
-    object-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    border-radius: 0 !important;
+    height: 458px;
 }
 
 .background-img {
     width: 100%;
+}
+.img-principal-movil{
+    position: absolute;
+    z-index:1;
+    width: 100%;
+}
+.rutas-principales{
+    position: relative;
+    z-index:2;
+    justify-items: center;
 }
 
 @supports(object-fit: cover) {
     .background-img {
-        height: 451px;
-        object-fit: cover;
+        object-fit: contain;
         object-position: center center;
     }
 }
 
-@media all and (min-width: 500px) and (max-width: 1000px) {
+@media all and (min-width: 200px) and (max-width: 768px) {
     .background-img {
-        border-radius: 0!important;
-        margin: 20px auto;
-        padding: 13px;
-        width: auto;
-        height: 400px;
-        background-size: 50% 50%;
-        background-repeat: no-repeat;
-        background: url(../img/avion.png);
-        background-size: cover;
+        border-radius: 0 !important;
+        height: 337px;
+    }
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+    .background-img {
+        border-radius: 0 !important;
+        height: 460px;
     }
 }
 
-.background-img {
-    width: 100%;
-}
+
 
 .div-centrado {
     margin: 3rem !important;
@@ -793,6 +788,16 @@ body {
 }
 
 @media (min-width: 200px) {
+    .div-global{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    #view-busqueda{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     .mostrar-desktop {
         display: none !important;
     }
@@ -899,6 +904,16 @@ body {
 }
 
 @media (min-width: 400px) {
+    .div-global{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    #view-busqueda{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     .mostrar-desktop {
         display: none !important;
     }
@@ -1000,6 +1015,16 @@ body {
 }
 
 @media (min-width: 576px) {
+    .div-global{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
+    #view-busqueda{
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
     .mostrar-desktop {
         display: none !important;
     }
@@ -1102,13 +1127,13 @@ body {
 
 @media (min-width: 768px) {
     .mostrar-desktop {
-        display: none !important;
+        display: block !important;
     }
     .ocultar-movil {
         display: none !important;
     }
     .mostrar-movil {
-        display: block !important;
+        display: none !important;
     }
     .btn-close-modal {
         box-sizing: content-box !important;
@@ -1374,8 +1399,9 @@ body {
     }
     .card-centrado {
         margin: 0px auto;
-        left: 15% !important;
-        width: 1000px !important;
+        width: 860px !important;
+        margin-left: 0;
+        margin-right: 0;
     }
     .col-line-time {
         width: 11.11%;
@@ -1563,7 +1589,13 @@ body {
     color: #ffffff !important;
 }
 
-
+.pais-destino-mapa{
+    background-color: #f6f7f9 !important;   
+}
+.pais-destino-mapa:focus{
+    background-color: #f6f7f9 !important;
+    box-shadow: 0 0 0 2px #f6f7f9 !important;   
+}
 /* ====================================================================================== 
  Fin de estilos de rutas marítimas
 ====================================================================================== */

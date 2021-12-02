@@ -71,12 +71,7 @@ $(document).ready(function() {
     $(".btn-rutasMovil2").click(function() {
         showRutas();
     });
-    $(".idPopoverNotificacionGuardar").click(function() {
-        $(".popover").toggle();
-    });
-    $(".close-popover").click(function() {
-        $(".popover").toggle();
-    });
+    
     // Botones bloqueados
     $(".btn-rutas").attr('disabled', 'disabled');
     $(".btn-rutasMovil").attr('disabled', 'disabled');

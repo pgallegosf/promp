@@ -1058,8 +1058,7 @@ a>i>label {
 }
 
 .option-select:hover {
-    font-size: 12px !important;
-    font-weight: bold !important;
+    
     background-color: #FFEBEE;
     opacity: 73%;
     width: 115% !important;

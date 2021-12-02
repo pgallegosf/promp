@@ -3,6 +3,22 @@ $(document).ready(function() {
         e.stopPropagation();
         showCardOrigen();
     });
+    $(".destino").on('change paste keyup blur', function() { 
+        if($("#destino").val() != ""){
+            $(".img-check-destino").show();
+        }
+        else{
+            $(".img-check-destino").hide();
+        }
+     });
+     $(".destino-movil").on('change paste keyup blur', function() { 
+        if($("#destino").val() != ""){
+            $(".img-check-destino-movil").show();
+        }
+        else{
+            $(".img-check-destino-movil").hide();
+        }
+     });
     $(".peso").click(function(e) {
         e.stopPropagation();
         showCardDestino();
@@ -63,7 +79,6 @@ $(document).ready(function() {
     });
     // Botones bloqueados
     $(".btn-rutas").attr('disabled', 'disabled');
-    $(".btn-rutasMovil").attr('disabled', 'disabled');
     $(".btn-rutas2").attr('disabled', 'disabled');
     $(".btn-rutasMovil2").attr('disabled', 'disabled');
     //Elementos ocultos

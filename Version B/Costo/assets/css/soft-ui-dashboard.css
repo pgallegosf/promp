@@ -1171,7 +1171,57 @@ progress {
 .gy-12 {
     --bs-gutter-y: 16rem;
 }
-
+@media (min-width: 200px) {
+    
+    .col-xs-1{
+       flex: 0 0 auto;
+       width: 8.333333%;
+   }
+   .col-xs-2 {
+        flex: 0 0 auto;
+        width: 16.666667%;
+    }
+    .col-xs-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .col-xs-4 {
+        flex: 0 0 auto;
+        width: 33.333333%;
+    }
+    .col-xs-5 {
+        flex: 0 0 auto;
+        width: 41.666667%;
+    }
+   .col-xs-6{
+       flex: 0 0 auto;
+       width: 50%;
+   }
+   .col-xs-7 {
+        flex: 0 0 auto;
+        width: 58.333333%;
+    }
+    .col-xs-8 {
+        flex: 0 0 auto;
+        width: 66.666667%;
+    }
+    .col-xs-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+    .col-xs-10 {
+        flex: 0 0 auto;
+        width: 83.333333%;
+    }
+   .col-xs-11{
+       flex: 0 0 auto;
+       width: 91.666667%;
+   }
+   .col-xs-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
 @media (min-width: 300px) {
     .col-sm-auto {
         flex: 0 0 auto;
@@ -6794,13 +6844,12 @@ fieldset:disabled .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15%;
+    width: 8%;
     padding: 0;
     color: #fff;
     text-align: center;
     background: none;
     border: 0;
-    opacity: 0.5;
     transition: opacity 0.15s ease;
 }
 
@@ -16471,7 +16520,6 @@ fieldset:disabled .btn {
 .btn {
     margin-bottom: 1rem;
     letter-spacing: -0.025rem;
-    text-transform: uppercase;
     box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.11), 0 2px 4px -1px rgba(0, 0, 0, 0.07);
     background-size: 150%;
     background-position-x: 25%;

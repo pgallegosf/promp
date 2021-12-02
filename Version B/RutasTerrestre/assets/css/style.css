@@ -156,7 +156,7 @@ body {
 .card-select {
     width: 50% !important;
     height: 160% !important;
-    margin-left: 34% !important;
+    margin-left: 27% !important;
     top: 74% !important;
     position: absolute !important;
     font-size: 10px;
@@ -1623,7 +1623,35 @@ body {
     background-color: rgba(165, 172, 176, 0.10)!important;
 }
 
-
+#tipContainer:focus{
+    background-color: #f6f7f9 !important;
+    box-shadow: 0 0 0 2px #f6f7f9 !important;   
+}
+.btn-outline-light{
+    padding: 0.75rem 1.5rem;
+    letter-spacing: -0.025rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.75rem;
+    border-radius: 15px;
+    border: 1px solid #FFF !important;
+}
+.btn-outline-light:hover{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 1px solid #FFF !important;
+}
+.card-tipo-contenedor {
+    width: 50% !important;
+    height: auto !important;
+    margin-left: 0% !important;
+    top: 98% !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+}
 /* ====================================================================================== 
  Fin de estilos de rutas marítimas
 ====================================================================================== */

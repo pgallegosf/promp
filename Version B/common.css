@@ -12,6 +12,10 @@
     font-family: 'Helvetica Neue LT Std medium';
     src: url('font-Promperu/HelveticaNeueLTStd-Md.OTF');
 }
+@font-face {
+    font-family: 'Helvetica Neue LT Std roman';
+    src: url('font-Promperu/HelveticaNeueLTStd-Roman.OTF');
+}
 
 .font-display {
     font-family: 'Helvetica Neue LT Std bold' !important;
@@ -30,6 +34,14 @@
     font-weight: 700 !important;
     font-size: 36px !important;
     line-height: 43.2px !important;
+}
+
+.font-h1-bold-normal {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 36px !important;
+    line-height: 43px !important;
 }
 
 .font-H2-light {
@@ -63,8 +75,16 @@
     font-weight: 700 !important;
     font-size: 30px !important;
     line-height: 36px !important;
+    text-align: center !important;
 }
 
+.font-h3-light {
+    font-family: 'Helvetica Neue LT Std light'!important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 24px !important;
+    line-height: 29px !important;
+}
 .font-h3-light-300 {
     font-family: 'Helvetica Neue LT Std light'!important;
     font-style: normal !important;
@@ -174,7 +194,7 @@
 .font-H5-lightn {
     font-family: 'Helvetica Neue LT Std light'!important;
     font-style: normal !important;
-    font-weight: 300 !important;
+    font-weight: normal !important;
     font-size: 15px !important;
     line-height: 18px !important;
 }
@@ -243,6 +263,13 @@
     font-weight: 400 !important;
     font-size: 18px !important;
     line-height: 21.6px !important;
+}
+.font-H4-medium-n {
+    font-family: 'Helvetica Neue LT Std medium' !important;
+    font-style: normal!important;
+    font-weight: normal !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
 }
 
 .font-Display-2-Bold-700 {
@@ -327,6 +354,13 @@
     font-size: 14px !important;
     line-height: 16.8px !important;
 }
+.font-link {
+    font-family: 'Helvetica Neue LT Std bold' !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+}
 
 .font-smallprint-medium {
     font-family: 'Helvetica Neue LT Std bold' !important;
@@ -369,10 +403,11 @@
     font-size: 12px !important;
     line-height: 14px !important;
     text-align: center !important;
+    margin-bottom: 15px;
 }
 
 .font-helvetica-coryright {
-    font-family: 'Helvetica Neue LT Std medium' !important;
+    font-family: 'Helvetica Neue LT Std roman' !important;
     font-style: normal !important;
     font-weight: normal !important;
     font-size: 14px !important;
@@ -382,13 +417,14 @@
 }
 
 .font-helvetica-footer {
-    font-family: 'Helvetica Neue LT Std medium' !important;
+    font-family: 'Helvetica Neue LT Std light' !important;
     font-style: normal !important;
-    font-weight: 300 !important;
+    font-weight: normal !important;
     font-size: 12px !important;
     line-height: 14px !important;
     align-items: center;
     color: #000000 !important;
+    padding-bottom: 10px;
 }
 
 .font-normal {
@@ -398,7 +434,15 @@
     font-size: 15px;
     line-height: 30px;
 }
-
+.font-helvetica-coryright-movil{
+    font-family: 'Helvetica Neue LT Std light' !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+    text-align: center !important;
+    color: #6C6C6C !important;
+}
 
 /* .font */
 
@@ -691,6 +735,7 @@ img {
     width: 100%;
     height:450px;
     right: 0px;
+    object-fit: cover;
 }
 .card-busqueda > .row{
     margin-left: 110px !important;
@@ -709,6 +754,9 @@ img {
     margin-right: 5% !important;
 }
 @media (min-width: 200px) {
+    .modal-login{
+        width: auto;
+    }
     
     .img-footter-promperu {
         width: 81px!important;
@@ -721,6 +769,10 @@ img {
         Height: 30.9px !important;
         margin-bottom: 18.76%;
         margin-left: 5% !important;
+    }
+    .card.card-busqueda{
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25) !important;
+        border-radius: 15px;
     }
     .card-busqueda > .row{
         margin-left: 2% !important;
@@ -760,6 +812,12 @@ img {
     #view-global {
         margin-left: 4% !important;
         margin-right: 4% !important;
+    }
+    .div-global{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
     .left-center {
         text-align: center !important;
@@ -817,7 +875,7 @@ img {
         position: absolute;
         z-index:1;
         width: 100%;
-        height:674px;
+        height:auto;
     }
     .padding-control-left{
         padding-left: 0px !important;
@@ -832,14 +890,20 @@ img {
         padding-left: 0px !important;
     }
     .container-principal {
-        padding-top: 110px !important;
+        padding-top: 90px !important;
     }
     .padding-top-principal-detalle{
         padding-top: 50px !important;
     }
+    .menu-padding{
+        padding-left: 17px !important;;
+    }
 }
 
 @media (min-width: 576px) {
+    .modal-login{
+        width: auto;
+    }
     .img-footter-promperu {
         width: 81px!important;
         height: 35px!important;
@@ -851,6 +915,10 @@ img {
         Height: 36.9px !important;
         margin-bottom: 18.76%;
         margin-left: 5% !important;
+    }
+    .card.card-busqueda{
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25) !important;
+        border-radius: 15px;
     }
     .card-busqueda > .row{
         margin-left: 2% !important;
@@ -888,6 +956,12 @@ img {
         margin-right: 4% !important;
     }
     #view-global {
+        margin-left: 4% !important;
+        margin-right: 4% !important;
+    }
+    .div-global{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
         margin-left: 4% !important;
         margin-right: 4% !important;
     }
@@ -965,6 +1039,9 @@ img {
 }
 
 @media (min-width: 768px) {
+    .modal-login{
+        width: 338px;
+    }
     .img-footter-promperu {
         width: 97px!important;
         height: 50px!important;
@@ -977,6 +1054,10 @@ img {
         Height: 47.69px !important;
         margin-bottom: 18.76%;
         margin-left: 5% !important;
+    }
+    .card.card-busqueda{
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1) !important;
+        border-radius: 25px;
     }
     .card-busqueda > .row{
         margin-left: 50px !important;
@@ -1085,6 +1166,9 @@ img {
     }
     .padding-top-principal-detalle{
         padding-top: 70px !important;
+    }
+    .menu-padding{
+        padding-left: 5px !important;;
     }
 }
 
@@ -1327,12 +1411,14 @@ img {
     font-size: 10px;
     font-weight: bold;
     color: #282828;
+    z-index: 80;
 }
 
 .padding-left-right-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
 
 .margin-left-right-0 {
     margin-left: 0 !important;
@@ -1543,13 +1629,7 @@ footer {
     align-items: end;
     justify-content: end;
 }
-.margin-0{
-    margin: 0 !important;
-}
-.margin-top-bottom-0{
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
+
 .div-principal-busqueda{
     margin-left: 3% !important;
     margin-right: 3% !important;
@@ -1610,4 +1690,153 @@ footer {
 }
 .space-between{
     justify-content: space-between;
+}
+
+.form-control {
+   
+    border-radius: 0px!important;
+}
+
+.divisorFooter{
+   background-color:#000000;
+   margin-top: 2.5rem!important;
+   margin-bottom: 1.5rem!important;
+   max-width: 460px;
+   
+}
+.divisorFooter-movil{
+    background-color:#ABABAB;
+    margin-top: 2.5rem!important;
+    margin-bottom: 1.5rem!important;
+    max-width: 332px;
+}
+.titulo-movil{
+    padding-left:19px;
+    padding-right:19px;
+}
+.subtitulo-movil{
+    padding-left:19px;
+    padding-right:19px;
+}
+.font-titulo2-costos{
+    font-style: normal;
+font-weight: bold;
+font-size: 51px;
+line-height: 61px;
+}
+.font-titulo2-movil{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+}
+.align-center{
+    align-items: center;
+}
+.swtich.active-product{
+    color: #fff !important;
+    box-shadow: 4px 0px 9px rgba(0, 0, 0, 0.35);
+}
+.hide{
+    display:none;
+}
+.divisorMapaRutas-movil {
+    background-color: #ABABAB;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    max-width: 339px;
+}
+.divisorMostrarRuta {
+    background-color: #ABABAB;
+    opacity:0.3;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+.text-ruta-ciudad{
+    margin-top:40px !important;
+    margin-bottom:2px !important;
+}
+.margin-0{
+    margin: 0 !important;
+}
+.margin-top-bottom-0{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.card-mostrar-rutas{
+    margin-left:2px;
+    max-width: 882px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 15px;
+}
+.icon-volver{
+    background-color: #C4122f;
+    color: #ffffff;
+    border-radius: 50%;
+    border: 1x solid grey;
+    padding: 7px;
+    cursor: pointer;
+    margin-right: 4px;
+    height: 30px;
+    width: 30px;
+}
+.btn:hover:not(.btn-icon-only) {
+    transform:none !important;
+}
+.background-gris-opaco{
+    background-color:#f6f7f9 !important;
+}
+.form-control.background-gris-opaco:focus{
+    background-color:#f6f7f9 !important;
+    border-color:#C4122f !important;
+    box-shadow:0 0 0 2px #f6f7f9 !important;
+}
+.btn {
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+}
+
+.img-close {
+    height: 15px !important;
+}
+.selector{
+    margin:10px !important;
+}
+.selector:hover{
+    max-width: 320px;
+}
+.visible{
+    visibility:visible;
+}
+.invisible{
+    visibility:hidden;
+}
+.badge-destinos{
+    margin-left:15px;
+    margin-right:15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.badge-destinos {
+    padding-left:25px !important;
+    padding-right:25px !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    height:27px !important;
+    color:#6A6A6A !important;
+}
+.badge-destinos:hover {
+    cursor: pointer;
+}
+
+.contenedor-left-tab1{
+    float:right;
+    max-width: 412px !important;
+    justify-content:right !important;
+}
+.contenedor-right-tab1{
+    float:left;
+    max-width: 733px !important;
+    justify-content:left !important;
 }

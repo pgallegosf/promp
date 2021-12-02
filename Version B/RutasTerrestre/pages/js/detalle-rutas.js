@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    $(".card-tipo-contenedor").hide();
+    $("body").click(function(e) {
+        closeCard();
+    });
+
+    $(".tipContainer").click(function() {
+        $(".card-tipo-contenedor").show();
+    });
     $(".text-correo").click(function() {
         recuperarPass();
     });
@@ -12,6 +20,13 @@ $(document).ready(function() {
     $(".close-popover").click(function() {
         $(".popover").toggle();
     });
+
+    
+
+    
+
+
+    
 });
 
 function recuperarPass() {
@@ -20,3 +35,14 @@ function recuperarPass() {
     $(".btn-enviar-pass").removeClass('btn-disabled');
     $(".btn-enviar-pass").addClass('btn-danger');
 }
+
+function showCardTipoContenedor() {
+    $(".card-tipo-contenedor").show();
+}
+function hideCardTipoContenedor() {
+    $(".card-tipo-contenedor").hide();
+}
+function closeCard() {
+    $(".card-tipo-contenedor").hide();
+}
+
