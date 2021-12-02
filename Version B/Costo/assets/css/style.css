@@ -3,6 +3,10 @@ body {
     width: 100% !important;
 }
 
+.button-width {
+    max-width: 300px;
+}
+
 .bg-gray-100 {
     background-color: #ffffff !important;
     height: 1px !important;
