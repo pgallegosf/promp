@@ -3,12 +3,15 @@ var indicador2 = true;
 var indicador3 = true;
 var indicador4 = true;
 $(document).ready(function() {
+    
     $(".ptOrigen").click(function(e) {
         e.stopPropagation();
+        $(".ptOrigen").val('');
         showCardOrigen();
     });
     $(".ptDestino").click(function(e) {
         e.stopPropagation();
+        $(".ptDestino").val('');
         showCardDestino();
     });
     $("body").click(function() {

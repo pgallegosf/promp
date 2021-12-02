@@ -43,7 +43,7 @@ $(document).ready(function() {
         // if single file is selected, show file name
         var fileName = $(this).val().split('\\').pop();
         //$textContainer.text(fileName);
-        $textContainer.html('<div class="color-primary" style="display: grid;text-align: center;"><i class="fas fa-check-circle color-second"></i><label class="font-size-13 helvetica-light">Archivo adjuntado correctamente</label></div>');
+        $textContainer.html('<div class="color-primary" style="display: grid;text-align: center;"><i style="font-size: 28px;" class="fas fa-check-circle color-second"></i><label class="font-H5-medium rojo-promperu">Archivo adjuntado correctamente</label></div>');
     } else {
         // otherwise show number of files
         $textContainer.text(filesCount + ' files selected');

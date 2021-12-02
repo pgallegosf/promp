@@ -1,3 +1,105 @@
+$(document).ready(function() {
+    $(".card-origen").hide();
+    $(".card-rubro").hide();
+    $(".card-experiencia").hide();
+    $(".card-provincia").hide();
+    $(".card-distrito").hide();
+    $(".card-region").hide();
+    $(".card-fil-rubro").hide();
+    $(".card-fil-ubicacion").hide();
+    $(".card-fil-ordenar").hide();
+
+    $(".ptOrigen").click(function(e) {
+        e.stopPropagation();
+        showCardResults();
+    });
+
+    $(".ptOrigenMovil").click(function(e) {
+        e.stopPropagation();
+        showCardResults();
+    });
+
+    $(".ptRubro").click(function(e) {
+        e.stopPropagation();
+        showCardRubro();
+    });
+
+    $(".ptRubroMovil").click(function(e) {
+        e.stopPropagation();
+        showCardRubro();
+    });
+
+    $(".ptExperiencia").click(function(e) {
+        e.stopPropagation();
+        showCardExperiencia();
+    });
+
+    $(".ptExperienciaMovil").click(function(e) {
+        e.stopPropagation();
+        showCardExperiencia();
+    });
+
+    $(".ptRegion").click(function(e) {
+        e.stopPropagation();
+        showCardRegion();
+    });
+
+    $(".ptRegionMovil").click(function(e) {
+        e.stopPropagation();
+        showCardRegion();
+    });
+
+    $(".ptProvincia").click(function(e) {
+        e.stopPropagation();
+        showCardProvincia();
+    });
+
+    $(".ptProvinciaMovil").click(function(e) {
+        e.stopPropagation();
+        showCardProvincia();
+    });
+
+    $(".ptDistrito").click(function(e) {
+        e.stopPropagation();
+        showCardDistrito();
+    });
+
+    $(".ptDistritoMovil").click(function(e) {
+        e.stopPropagation();
+        showCardDistrito();
+    });
+
+    $(".ptRubroFil").click(function(e) {
+        e.stopPropagation();
+        showCardRubroFiltro();
+    });
+
+    $(".ptRubroMovilFil").click(function(e) {
+        e.stopPropagation();
+        showCardRubroFiltro();
+    });
+
+    $(".ptUbicacionFil").click(function(e) {
+        e.stopPropagation();
+        showCardUbicacionFiltro();
+    });
+
+    $(".ptUbicacionMovilFil").click(function(e) {
+        e.stopPropagation();
+        showCardUbicacionFiltro();
+    });
+
+    $(".ptOrdenarFil").click(function(e) {
+        e.stopPropagation();
+        showCardOrdenarFiltro();
+    });
+
+    $(".ptOrdenarMovilFil").click(function(e) {
+        e.stopPropagation();
+        showCardOrdenarFiltro();
+    });
+});
+
 var viewGlobal = document.getElementById("view-global") //Div que tiene toda la pagina
 var inputPtoOrigen = document.getElementById("ptOrigen") // Variable id del combo puerto de origen
 var pDestino = document.getElementById("puertoDestino") // Variable id del combo puerto de destino
@@ -26,6 +128,10 @@ var rutaEncontradas = document.getElementById("rutaEncontrada")
 var footerDesktop = document.getElementById("footer-Desktop")
 var lineaNavieraDesktop = document.getElementById("linea-naviera-desktop")
 var opResulBuscarDesktop = document.getElementById("OpcionesResulBusqueda-Desktop")
+var opFiltro = document.getElementById("vista-filtro")
+var opDetFiltro = document.getElementById("vista-det-filtro")
+var opFiltroAvanzado = document.getElementById("vista-filtro-avanzado")
+var opDetFiltroAvanzado = document.getElementById("vista-det-avanzada-filtro")
 
 // Variables  vista movil
 var detalleMovil = document.getElementById("container-movil")
@@ -44,6 +150,53 @@ var footerMovil = document.getElementById("footer-Movil")
 var viewLineaTiempoMovil = document.getElementById("view-line-time-movil") // Variable id para mostrar linea de tiempo movil
 var lineaNavieraMovil = document.getElementById("linea-naviera-movil")
 var opResulBuscarMovil = document.getElementById("OpcionesResulBusqueda-Movil")
+
+
+function showCardResults() {
+    $(".card-origen").toggle();
+}
+
+function showCardRubro() {
+    $(".card-rubro").toggle();
+}
+
+function showCardExperiencia() {
+    $(".card-experiencia").toggle();
+}
+
+function showCardRegion() {
+    $(".card-region").toggle();
+}
+
+function showCardProvincia() {
+    $(".card-provincia").toggle();
+}
+
+function showCardDistrito() {
+    $(".card-distrito").toggle();
+}
+
+function showCardRubroFiltro() {
+    $(".card-fil-rubro").toggle();
+}
+
+function showCardUbicacionFiltro() {
+    $(".card-fil-ubicacion").toggle();
+}
+
+function showCardOrdenarFiltro() {
+    $(".card-fil-ordenar").toggle();
+}
+
+function mostrarFiltros() {
+    opFiltro.className = "d-none";
+    opDetFiltro.className = "d-display"
+}
+
+function mostrarFiltrosAvanzado() {
+    opFiltroAvanzado.className = "d-none";
+    opDetFiltroAvanzado.className = "d-display"
+}
 
 
 function cargarAjustes() {

@@ -32,10 +32,13 @@
             <div class="container-fluid container-menu-derecho">
                 <a onclick="window.location.href='Rutas_maritimas.html'" class="ordenar"><i class="fas fa-chevron-left"></i></a>
                 <a class="navbar-brand ordenar" href="javascript:window.location.reload(true)">
-                    <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img .img-responsive">
+                    <!-- <img src="../assets/img/logos/LOGOPROMPERU-01.png" alt="PromPeru" class="nav-img .img-responsive"> -->
+                    <!-- <img src = "../assets/icon/icons/logo-promperu-header-desktop.svg" class="nav-img .img-responsive mostrar-desktop"/> -->
+                    <img src = "../assets/img/Ruta_Marina/logo-promperu-header-desktop.png" class="mostrar-desktop"/>
+                    <img src = "../assets/icon/icons/logo-promperu-header-mobile.svg" class="nav-img .img-responsive img-header mostrar-movil"/>
                 </a>
-                <div class="vl"></div>
-                <div class="ordenar titulo-header font-H5-bold negro-promperu text-left"> Rutas Marítimas</div>
+                <div class="vl titulo-rutas-maritimas"></div>
+                <div class="ordenar titulo-header font-H5-bold negro-promperu text-left titulo-rutas-maritimas"> &nbsp;&nbsp;&nbsp;Rutas Marítimas</div>
                 <div class="icon-menu separar-elementos-5">
                     <div class="icon-menu" hidden>
                         <i class="far fa-user"></i>
@@ -64,176 +67,169 @@
             </div>
         </nav>
         <!-- End Navbar -->
-        <div class="container-fluid py-4 container-principal">
+        <div class="container-fluid py-4 container-principal" style="padding-top: 40px !important;">
             <!-- Inicio de vista principal -->
             <div id="view-global">
                 <!-- Inicio de vista resultado de busqueda de rutas desktop -->
                 <div id="view-busqueda">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="div-centrado d-flex align-items-center justify-content-between margin-4-p">
-                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-3 text-center">
-                            <h4 class="font-weight-bold min-titulo font-h1-bold">Paita</h4> <span class="span font-weight-bold font-H5-bold negro-promperu">Peru</span></div>
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2 text-center"><span class="rojo-promperu font-size-30 font-weight-bold"><i class="fas fa-arrow-right"></i></span></div>
-                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-3 text-center">
-                            <h4 class="font-weight-bold min-titulo font-h1-bold">Seattle</h4> <span class="span font-weight-bold font-H5-bold negro-promperu">EE.UU.</span>
+                    <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
+                    <div class="row">
+                        <!-- <div class="col-lg-2"></div> -->
+                        <div class="ver-desktop col-lg-8 div-centrado d-flex align-items-center justify-content-between margin-4-p div-mostrar-ruta mobile-width" style="margin-left: auto !important; margin-right: auto !important; max-width: 844px !important; margin-top: 90px !important;">
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-3 text-left">
+                                <h4 class="font-weight-bold min-titulo font-h1-bold">Paita</h4> <span class="span font-weight-bold font-H5-bold negro-promperu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Peru</span></div>
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2 text-left" >
+                                <!-- <span class="rojo-promperu font-size-30 font-weight-bold" ><i class="fas fa-arrow-right"></i></span> -->
+                                <img src = "../assets/icon/icons/arrow-red.svg" style="width: 48px;"/>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-3 text-left">
+                                <h4 class="font-weight-bold min-titulo font-h1-bold">Seattle</h4> <span class="span font-weight-bold font-H5-bold negro-promperu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EE.UU.</span>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 mostrar-desktop" style="text-align: right;"><span class="refresh rojo-promperu font-H5-bold" onclick="window.location.href='Rutas_maritimas.html'"><i class="fas fa-undo-alt icon-refresh mx-2"></i>Volver a buscar</span></div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 mostrar-desktop"><span class="refresh rojo-promperu font-H5-bold" onclick="window.location.href='Rutas_maritimas.html'"><i class="fas fa-undo-alt icon-refresh mx-2"></i>Volver a buscar</span></div>
-                    </div>
+                        <div class="d-flex align-items-center mostrar-movil" style="justify-content: space-between; width: 339px; margin: auto; padding-top: 40px;">
+                            <div class="col-lg-5 text-left">
+                                <h4 class="font-weight-bold min-titulo font-H2-bold-700 p-0">Paita</h4> <span class="span font-weight-bold font-span-bold-400n negro-promperu">Perú</span>
+                            </div>
+                            <img src = "../assets/icon/icons/arrow-red.svg" style="width: 48px;"/>
+                            <div class="col-lg-5 text-right">
+                                <h4 class="font-weight-bold min-titulo font-H2-bold-700 p-0">Seattle</h4> <span class="span font-weight-bold font-span-bold-400n negro-promperu">EE.UU.</span> 
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-2"></div> -->
+                    </div> 
+                    <div class="hr col-lg-12 mt-4 line-mostrar-ruta mobile-width"></div><br>
                     <!-- <div class="margin-15-p col-lg-12 col-md-12 col-sm-12 col-xs-12 line-vertical"></div> -->
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-1"></div>
-                    <div class="d-flex align-items-center  div-centrado margin-15-p">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 texto-centrado negro-promperu font-h3-light-300 text-left">1 ruta</div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-1"></div> -->
+                    <div class="d-flex align-items-center  div-centrado margin-15-p mobile-width" style="max-width: 844px; margin: auto !important; justify-content: space-between;">
+                        <!-- <div class="col-lg-2"></div> -->
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-12 texto-centrado negro-promperu font-h3-light-300 text-left">1 ruta</div>
+                        <div class="col-lg-6 col-md-8 col-sm-12 col-12">
                             <div class="row justify-content-center">
-                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 negro-promperu font-weight-bold font-H4-bold-700">Ordenar por:</div>
-                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 rojo-promperu font-H4-light-400">Tiempo de viaje <i class="fas fa-chevron-down div-right mx-2 ordenar"></i></div>
+                                <div class="col-lg-6 col-md-6 col-sm-3 col-xs-3 negro-promperu font-weight-bold font-H4-bold-700">Ordenar por:</div>
+                                <div class="col-lg-6 col-md-6 col-sm-3 col-xs-3 rojo-promperu font-H4-light-400">Tiempo de viaje <i class="fas fa-chevron-down div-right mx-2 ordenar"></i></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="scroll-card">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br><br></div>
+                    <div class="scroll-card" style="padding-left: 15px !important;">
+                        <!-- <div style="position: relative; width: 100%; height: 100%; z-index: 100; border: 1px solid blue;"> -->
+                            <div class="mostrar-movil" style="position: absolute; width: 38px; height: 76px; right: 0 !important; z-index: 100; margin-top: 96px;
+                            border-radius: 50px 0px 0px 50px; background-color: #C4122F;">
+                                <span class="flecha derecha"></span>
+                            </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-lg-2"></div> -->
                         <div class="primera-tarjeta">
-                            <div class="card card-centrado margin-bottom-40">
+                            <div class=" ol-lg-8 card margin-bottom-40 card-personalized">
                                 <div class="card-header pb-0 p-3 card-header-titulo">
                                     <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Costa Oeste EE.UU</h5>
                                 </div>
                                 <div class="card-body p-3">
                                     <div class="mostrar-desktop">
                                         <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title font-label-400">Número de escalas</div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title font-label-400">Días de tránsito</div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                                <button class="btn btn-danger mt-n2 font-H4-bold" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                            <div class="col-lg-3">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 car-body-title font-label-400">Número de escalas</div><br>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 car-body-descripcion font-h3-light-300">7 escalas</div>
                                             </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion font-h3-light-300">7 escalas</div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion font-h3-light-300">27 días</div>
+                                            <div class="col-lg-3">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 car-body-title font-label-400">Días de tránsito</div><br>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 car-body-descripcion font-h3-light-300">27 días</div>
+                                            </div>
+                                            <div class="col-lg-3"></div>
+                                            <div class="col-lg-3">
+                                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <button class="btn btn-danger mt-n2 font-H4-bold" style="max-width: 160px; font-size: 18px; margin-top: 18px !important; " onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="mostrar-movil">
                                         <div class="row">
                                             <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
-                                            <div class="col-4 div-left car-body-descripcion font-h3-light-300">3 días</div>
-                                            <div class="col-4 div-left car-body-descripcion font-h3-light-300">1 hrs</div>
-                                            <div class="col-4 div-left car-body-descripcion font-h3-light-300">24 min</div>
+                                            <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 16px;">3 días 1 hrs 24 min</div>
                                             <div class="col-12 div-left car-body-title font-label-400">Nro. de escalas</div>
-                                            <div class="col-12 div-left car-body-descripcion font-h3-light-300">2 escalas</div>
+                                            <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 32px;">2 escalas</div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                                    <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div> -->
                                     <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
-                                        <button class="btn btn-danger mt-n2 mostrar-movil" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                        <!-- <button class="btn btn-danger mt-n2 mostrar-movil font-H4-bold-700 " style="height: 50px !important; width: 150px !important;" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button> -->
+                                        <button class="btn btn-danger mt-n2 mostrar-movil font-H4-bold-700 " style="height: 50px !important; width: 150px !important; margin-bottom: 0px !important;" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-
+                                    <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
                                 </div>
                             </div>
                         </div>
                         <div class="mostrar-movil">
-                            <div class="card card-centrado">
+                            <div class="card card-centrado" style="width: 249px !important; height: 280px !important;">
                                 <div class="card-header pb-0 p-3 card-header-titulo">
                                     <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Costa Oeste EE.UU</h5>
                                 </div>
                                 <div class="card-body p-3">
-                                    <div class="ocultar-movil">
-                                        <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title font-label-400">Número de paradas</div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title font-label-400">Días de tránsito</div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                                <button class="btn btn-danger mt-n2" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion font-h3-light-300">7 paradas</div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion font-h3-light-300">27 días</div>
-                                        </div>
-                                    </div>
                                     <div class="mostrar-movil">
                                         <div class="row">
                                             <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
-                                            <div class="col-4 div-left car-body-descripcion font-h3-light-300">3 días</div>
-                                            <div class="col-4 div-left car-body-descripcion font-h3-light-300">1 hrs</div>
-                                            <div class="col-4 div-left car-body-descripcion font-h3-light-300">24 min</div>
+                                            <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 16px;">3 días 1 hrs 24 min</div>
                                             <div class="col-12 div-left car-body-title font-label-400">Nro. de escalas</div>
-                                            <div class="col-12 div-left car-body-descripcion font-h3-light-300">2 escalas</div>
+                                            <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 32px;">2 escalas</div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"></div>
                                     <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
-                                        <button class="btn btn-danger mt-n2 mostrar-movil" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                        <button class="btn btn-danger mt-n2 mostrar-movil font-H4-bold-700 " style="height: 50px !important; width: 150px !important; margin-bottom: 0px !important;" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                                 </div>
                             </div>
                         </div>
                         <div class="mostrar-movil">
-                            <div class="card card-centrado">
+                            <div class="card card-centrado" style="width: 249px !important; height: 280px !important;">
                                 <div class="card-header pb-0 p-3 card-header-titulo">
                                     <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Costa Oeste EE.UU</h5>
                                 </div>
                                 <div class="card-body p-3">
-                                    <div class="ocultar-movil">
-                                        <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title font-label-400">Número de paradas</div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title font-label-400">Días de tránsito</div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                                <button class="btn btn-danger mt-n2" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion font-h3-light-300">7 paradas</div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion font-h3-light-300">27 días</div>
-                                        </div>
-                                    </div>
                                     <div class="mostrar-movil">
                                         <div class="row">
                                             <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
-                                            <div class="col-4 div-left car-body-descripcion font-h3-light-300">3 días</div>
-                                            <div class="col-4 div-left car-body-descripcion font-h3-light-300">1 hrs</div>
-                                            <div class="col-4 div-left car-body-descripcion font-h3-light-300">24 min</div>
+                                            <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 16px;">3 días 1 hrs 24 min</div>
                                             <div class="col-12 div-left car-body-title font-label-400">Nro. de escalas</div>
-                                            <div class="col-12 div-left car-body-descripcion font-h3-light-300">2 escalas</div>
+                                            <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 32px;">2 escalas</div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"></div>
                                     <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
-                                        <button class="btn btn-danger mt-n2 mostrar-movil" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                        <button class="btn btn-danger mt-n2 mostrar-movil font-H4-bold-700 " style="height: 50px !important; width: 150px !important; margin-bottom: 0px !important;" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                                 </div>
                             </div>
                         </div>
                         <div class="mostrar-movil">
-                            <div class="card card-centrado">
+                            <div class="card card-centrado" style="width: 249px !important; height: 280px !important;">
                                 <div class="card-header pb-0 p-3 card-header-titulo">
                                     <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Costa Oeste EE.UU</h5>
                                 </div>
                                 <div class="card-body p-3">
-                                    <div class="ocultar-movil">
-                                        <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title font-label-400">Número de paradas</div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-title font-label-400">Días de tránsito</div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                                <button class="btn btn-danger mt-n2" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion font-h3-light-300">7 paradas</div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion font-h3-light-300">27 días</div>
-                                        </div>
-                                    </div>
                                     <div class="mostrar-movil">
                                         <div class="row">
                                             <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
-                                            <div class="col-4 div-left car-body-descripcion font-h3-light-300">3 días</div>
-                                            <div class="col-4 div-left car-body-descripcion font-h3-light-300">1 hrs</div>
-                                            <div class="col-4 div-left car-body-descripcion font-h3-light-300">24 min</div>
+                                            <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 16px;">3 días 1 hrs 24 min</div>
                                             <div class="col-12 div-left car-body-title font-label-400">Nro. de escalas</div>
-                                            <div class="col-12 div-left car-body-descripcion font-h3-light-300">2 escalas</div>
+                                            <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 32px;">2 escalas</div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"></div>
                                     <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
-                                        <button class="btn btn-danger mt-n2 mostrar-movil" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                        <button class="btn btn-danger mt-n2 mostrar-movil font-H4-bold-700 " style="height: 50px !important; width: 150px !important; margin-bottom: 0px !important;" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    </div>
+                    <div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado" style="margin-left: auto; margin-right: auto;">
+                            <button class="btn mt-n2 mostrar-movil font-H4-bold-700n" style="width: 320px;border: 2px solid #C4122F; box-sizing: border-box; border-radius: 15px; color: #C4122F; margin: auto;">Volver a buscar</button>
+                            <br><br>
+                        </div>
                     </div>
                     <div class="card mb-4 d-none">
                         <div class="card-body p-3">
@@ -360,15 +356,15 @@
             <footer class="footer " id="footer">
                 <div class="container-fluid">
                     <div id="footer-Desktop" class="mostrar-desktop">
-                        <div class="row align-items-center justify-content-center">
+                        <div class="row align-items-center justify-content-center max-resolution" style="margin: auto !important;">
                             <div class="col-lg-12 mb-lg-0 mb-4">
-                                <div class="text-center font-helvetica-footer">
-                                    Para más información escríbenos a:
+                                <div class="text-center font-helvetica-coryright" style="justify-content: center;">
+                                    Para mas información escribanos a :
                                 </div>
                             </div>
                             <br>
                             <div class="col-lg-12 text-center font-weight-bold font-helvetica-footer-bold">
-                                correo@promperu.gob.pe
+                                herramientaslogisticas@promperu.gob.pe 
                             </div>
                             <div class="justify-content-between text-center mt-3">
                                 <svg class="icon-redes" width="18" height="15" viewBox="3 -2 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -384,37 +380,46 @@
                                 <svg class="icon-redes" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.5676 2.31177C20.3236 1.40259 19.614 0.687434 18.7104 0.443506C17.0694 0 10.5 0 10.5 0C10.5 0 3.93611 0 2.29514 0.443506C1.3915 0.687434 0.68189 1.40259 0.437962 2.31177C0 3.95829 0 7.401 0 7.401C0 7.401 0 10.8382 0.437962 12.4902C0.68189 13.3994 1.3915 14.1146 2.29514 14.3585C3.93057 14.802 10.5 14.802 10.5 14.802C10.5 14.802 17.0694 14.802 18.7049 14.3585C19.6085 14.1146 20.3181 13.3994 20.562 12.4902C21 10.8437 21 7.401 21 7.401C21 7.401 21.0055 3.95829 20.5676 2.31177ZM8.35454 10.5222V4.27429L13.8429 7.39546L8.35454 10.5222Z" fill="black"/>
                                 </svg>
-
                             </div>
                             <div class="hr col-lg-6 mt-4 background-black"></div>
                             <div class="row mt-3">
                                 <div class="col-lg-3 col-md-4 col-sm-3 mt-2">
                                     <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
                                 </div>
-                                <div class="col-lg-6 col-md-4 col-sm-12 mt-2 copyright col-6 font-helvetica-coryright">
+                                <div class="col-lg-6 col-md-4 col-sm-12 mt-2 copyright col-6 font-helvetica-coryright"  style="justify-content: center;">
                                     Copyright © 2021 PROMPERU. Todos los derechos reservados
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-3 mt-n3">
-                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter-promperu div-right">
+                                    <!-- <img src = "../assets/icon/icons/logo-promperu-footer-desktop.svg" class="div-right"/> -->
+                                    <img src = "../assets/img/Ruta_Marina/logo-promperu-footer-desktop.png" class="div-right"/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="mostrar-movil" id="footer-Movil">
+                    <div class="mostrar-movil" id="footer-Movil" style="height: 348px !important;">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-lg-12 mb-lg-0 mb-2">
-                                <div class="text-center font-helvetica-footer">
+                                <div class="text-center font-helvetica-coryright" style="justify-content: center;">
                                     Para mas información escribanos a :
                                 </div>
                             </div>
                             <div class="col-lg-12 text-center font-weight-bold font-helvetica-footer-bold">
-                                correo@promperu.gob.pe
+                                herramientaslogisticas@promperu.gob.pe 
                             </div>
-                            <div class="justify-content-between text-center mt-2">
-                                <i class="fab fa-linkedin-in icon-redes"></i>
-                                <i class="fab fa-facebook icon-redes"></i>
-                                <i class="fab fa-twitter icon-redes"></i>
-                                <i class="fab fa-youtube icon-redes"></i>
+                            <div class="justify-content-between text-center mt-4 m-4">
+                                <svg class="icon-redes" width="18" height="15" viewBox="3 -2 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.07616 1.94897C4.07616 3.02897 3.29276 3.89793 2.00136 3.89793C0.783407 3.90414 0 3.02897 0 1.94897C0 0.850345 0.807888 0 2.05032 0C3.29276 0 4.05168 0.850345 4.07616 1.94897ZM0.104046 18V5.44345H3.95376V18H0.104046Z" fill="black"/>
+                                    <path d="M6.25541 9.44705C6.25541 7.88291 6.20645 6.57325 6.15137 5.4436H9.49309L9.67058 7.18774H9.74402C10.252 6.36843 11.4883 5.15808 13.5693 5.15808C16.1031 5.15808 18.0004 6.87739 18.0004 10.5767V18.0001H14.1507V11.0422C14.1507 9.42222 13.5937 8.3236 12.1983 8.3236C11.1333 8.3236 10.5029 9.06843 10.2214 9.78842C10.1174 10.0429 10.0929 10.4029 10.0929 10.7629V18.0001H6.24317V9.44705H6.25541Z" fill="black"/>
+                                </svg>
+                                <svg class="icon-redes" width="10" height="18" viewBox="-1 -2 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.82621 9.78828L9.24207 6.58552H6.06414V4.54345C6.06414 3.61862 6.32483 2.98552 7.6531 2.98552H9.34759V0.124138C9.05586 0.0868966 8.05035 0 6.87724 0C4.43793 0 2.76207 1.48966 2.76207 4.2331V6.59172H0V9.79448H2.76207V18H6.06414V9.78828H8.82621Z" fill="black"/>
+                                </svg>
+                                <svg class="icon-redes" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5055 0.272498C16.7939 0.696383 16.0017 1.00421 15.159 1.17073C14.4828 0.449117 13.524 0 12.4643 0C10.4256 0 8.77039 1.65517 8.77039 3.69386C8.77039 3.98654 8.80572 4.26409 8.86627 4.53658C5.7931 4.3852 3.07317 2.91169 1.24643 0.676198C0.933558 1.22119 0.746846 1.85702 0.746846 2.53322C0.746846 3.81497 1.39781 4.94533 2.39193 5.60639C1.78637 5.58621 1.21615 5.41968 0.721615 5.14214V5.18755C0.721615 6.97897 1.99327 8.47266 3.68377 8.81076C3.37595 8.89655 3.04794 8.94197 2.70984 8.94197C2.47267 8.94197 2.24054 8.91674 2.01346 8.87637C2.48276 10.3448 3.84525 11.4146 5.4651 11.4449C4.20353 12.434 2.60891 13.0244 0.878049 13.0244C0.58032 13.0244 0.287637 13.0042 0 12.9739C1.62994 14.0235 3.57275 14.6341 5.65685 14.6341C12.4491 14.6341 16.1682 9.00757 16.1682 4.12279C16.1682 3.96131 16.1632 3.80488 16.1581 3.6434C16.8797 3.12363 17.5055 2.47267 18 1.73087C17.3389 2.02355 16.6274 2.2254 15.8806 2.31119C16.6426 1.85702 17.2279 1.13541 17.5055 0.272498Z" fill="black"/>
+                                    </svg>
+                                <svg class="icon-redes" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.5676 2.31177C20.3236 1.40259 19.614 0.687434 18.7104 0.443506C17.0694 0 10.5 0 10.5 0C10.5 0 3.93611 0 2.29514 0.443506C1.3915 0.687434 0.68189 1.40259 0.437962 2.31177C0 3.95829 0 7.401 0 7.401C0 7.401 0 10.8382 0.437962 12.4902C0.68189 13.3994 1.3915 14.1146 2.29514 14.3585C3.93057 14.802 10.5 14.802 10.5 14.802C10.5 14.802 17.0694 14.802 18.7049 14.3585C19.6085 14.1146 20.3181 13.3994 20.562 12.4902C21 10.8437 21 7.401 21 7.401C21 7.401 21.0055 3.95829 20.5676 2.31177ZM8.35454 10.5222V4.27429L13.8429 7.39546L8.35454 10.5222Z" fill="black"/>
+                                </svg>
                             </div>
                             <div class="hr col-lg-6 mt-2 background-gris"></div>
                             <div class="row"><br><br></div>
@@ -425,7 +430,10 @@
                                 <div class="col-6 div-left contenedor-img-movil">
                                     <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter-promperu div-right">
                                 </div>
-                                <div class="copyright col-12 font-helvetica-coryright">
+                                <!-- <div class="col-12 font-helvetica-coryright" style="font-weight: lighter !important;">
+                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                </div> -->
+                                <div class="col-12 font-helvetica-coryright" style="justify-content: center; color: #a5acb0 !important;">
                                     Copyright © 2021 PROMPERU. Todos los derechos reservados
                                 </div>
                                 <div class="row"><br><br></div>
@@ -437,9 +445,9 @@
         </div>
     </main>
     <!-- Inicio menu general destok -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="max-width: 680px !important;">
         <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel" class=" font-size-20 font-color-black">Herramientas Logísticas</h5>
+            <h5 id="offcanvasRightLabel" class=" font-size-20 negro-promperu font-H2-bold-700">Herramientas Logísticas</h5>
 
 
             <button class="btn-close-menu a-menu" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -450,93 +458,104 @@
         </div>
         <div class="offcanvas-body offcanvas-body-menu">
             <div class="row">
-
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content;" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Aéreas</p>
-                        <img src="../../img-menu-PromPeru/dashboard/avion.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/avion.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas Aéreas</p>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
+                    <div class="div-card-dashboard hover"> 
+                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Aéreas</p>
+                            <img src="../../img-menu-PromPeru/dashboard/avion 1.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                            <img src="../../img-menu-PromPeru/dashboard/avion-m.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas Aéreas</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Marítimas</p>
-                        <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas marítimas</p>
-
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
+                    <div class="div-card-dashboard hover"> 
+                        <div class="font-size-15 inline-for-movil card-dashboard">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Marítimas</p>
+                            <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                            <img src="../../img-menu-PromPeru/dashboard/barco-m.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas marítimas</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasTerrestre/Pages/Rutas_terrestre.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Terrestres</p>
-                        <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas Terrestres</p>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasTerrestre/Pages/Rutas_terrestre.html'">
+                    <div class="div-card-dashboard hover">
+                        <div class="font-size-15 inline-for-movil card-dashboard">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Terrestres</p>
+                            <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                            <img src="../../img-menu-PromPeru/dashboard/camion 2.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas Terrestres</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Costos de Exportación</p>
-                        <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Costos de Exportación</p>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
+                    <div class="div-card-dashboard hover">
+                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Costos de Exportación</p>
+                            <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                            <img src="../../img-menu-PromPeru/dashboard/image 21.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Costos de Exportación</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../Cubicaje/Pages/Cubicaje.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador de Cubicaje</p>
-                        <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Simulador de Cubicaje</p>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Cubicaje/Pages/Cubicaje.html'">
+                    <div class="div-card-dashboard hover">
+                        <div class="font-size-15 inline-for-movil card-dashboard">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador de Cubicaje</p>
+                            <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                            <img src="../../img-menu-PromPeru/dashboard/Group 268.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Simulador de Cubicaje</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Directorio Logístico</p>
-                        <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Directorio Logístico</p>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
+                    <div class="div-card-dashboard hover">
+                        <div class="div-card-dashboard"> 
+                            <div class="font-size-15 inline-for-movil card-dashboard">
+                                <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Directorio Logístico</p>
+                                <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                                <img src="../../img-menu-PromPeru/dashboard/gente 1.png" alt="avion" class="icon-dashboard mostrar-movil">
+                                <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Directorio Logístico</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red hover ordenar min-content" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
-                    <div class="font-size-15 inline-for-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador de Drawback</p>
-                        <img src="../../img-menu-PromPeru/dashboard/imagen principal.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                        <img src="../../img-menu-PromPeru/dashboard/imagen principal.png" alt="avion" class="icon-dashboard mostrar-movil">
-                        <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Simulador de Drawback</p>
-
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
+                    <div class="div-card-dashboard hover">
+                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador <br>de Drawback</p>
+                            <!-- <img src="../../img-menu-PromPeru/dashboard/Group 224.png" alt="avion" class="icon-dashboard mostrar-desktop image-drwaback"> -->
+                            <img src="../../img-menu-PromPeru/dashboard/Group 224.png" alt="avion" class="icon-dashboard mostrar-desktop image-drwaback" style="width: 100px !important; height: 80px !important;">
+                            <img src="../../img-menu-PromPeru/dashboard/Group 228.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Simulador de Drawback</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
-                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold ordenar">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold ordenar font-H4-bold-700n inline">
                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.7726 9.0654H6.22737C2.79516 9.0654 0 11.6013 0 14.7195V16.1847C0 16.6356 0.347158 17 0.776632 17C1.20611 17 1.55326 16.6356 1.55326 16.1847V14.7195C1.55326 12.4992 3.65053 10.6959 6.22737 10.6959H10.7726C13.3495 10.6959 15.4467 12.4992 15.4467 14.7195V16.1847C15.4467 16.6356 15.7939 17 16.2234 17C16.6528 17 17 16.6356 17 16.1847V14.7195C17 11.6013 14.2048 9.0654 10.7726 9.0654Z" fill="#C4122F"/>
                         <path d="M8.83993 8.55072C11.0875 8.55072 12.9128 6.63094 12.9128 4.27536C12.9128 1.91978 11.0875 0 8.83993 0C6.59235 0 4.76709 1.91978 4.76709 4.27536C4.76709 6.63094 6.59593 8.55072 8.83993 8.55072ZM8.83993 1.6305C10.2286 1.6305 11.3631 2.81768 11.3631 4.27536C11.3631 5.73304 10.2321 6.92398 8.83993 6.92398C7.44772 6.92398 6.31677 5.7368 6.31677 4.27536C6.31677 2.81392 7.4513 1.6305 8.83993 1.6305Z" fill="#C4122F"/>
-                    </svg> Iniciar sesión
+                    </svg> &nbsp;&nbsp;Iniciar sesión
                 </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
-                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold pointer">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold pointer font-H4-bold-700n inline">
                     <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.9938 6.74999C12.6751 6.74999 12.4313 6.99374 12.4313 7.31249V13.8375L1.1626 13.8187L1.18135 2.54999H7.70635C8.0251 2.54999 8.26885 2.30624 8.26885 1.98749C8.26885 1.66874 8.0251 1.42499 7.70635 1.42499H0.618848C0.300098 1.42499 0.0563477 1.66874 0.0563477 1.98749L0.0375977 14.3812C0.0375977 14.7 0.281348 14.9437 0.600098 14.9437L12.9938 14.9625C13.1438 14.9625 13.2938 14.9062 13.3876 14.7937C13.5001 14.6812 13.5563 14.55 13.5563 14.4V7.31249C13.5563 6.99374 13.3126 6.74999 12.9938 6.74999Z" fill="#C4122F"/>
                         <path d="M13.8374 0.487488C13.8374 0.468738 13.8187 0.449988 13.8187 0.431238C13.8187 0.412488 13.7999 0.393738 13.7999 0.374988C13.7999 0.356238 13.7812 0.337488 13.7624 0.318738C13.7624 0.299988 13.7437 0.299988 13.7437 0.281238C13.7062 0.224988 13.6499 0.168738 13.5937 0.131238C13.5749 0.131238 13.5749 0.112488 13.5562 0.112488C13.5374 0.0937378 13.5187 0.0937377 13.4999 0.0749877C13.4812 0.0749877 13.4624 0.0562378 13.4437 0.0562378C13.4249 0.0562378 13.4062 0.0374877 13.3874 0.0374877C13.3499 0.0374877 13.3124 0.0187378 13.2749 0.0187378H9.24365C8.9249 0.0187378 8.68115 0.262488 8.68115 0.581238C8.68115 0.899988 8.9249 1.14374 9.24365 1.14374H11.9437L5.6624 7.44374C5.4374 7.66874 5.4374 8.02499 5.6624 8.23124C5.7749 8.34374 5.9249 8.39999 6.05615 8.39999C6.1874 8.39999 6.3374 8.34374 6.4499 8.23124L12.7312 1.94999V4.66874C12.7312 4.98749 12.9749 5.23124 13.2937 5.23124C13.6124 5.23124 13.8562 4.98749 13.8562 4.66874V0.599988C13.8562 0.562488 13.8562 0.524988 13.8374 0.487488Z" fill="#C4122F"/>
-                    </svg> Visita también</div>
+                    </svg> &nbsp;&nbsp;Visita también</div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="row">
-                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-H5-light rojo-promperu pointer">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
-                    <div class="col-lg-5 col-md-12 col-xs-12 col-sm-12 font-H5-light rojo-promperu pointer">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></div>
+                    <div class="col-lg-5 col-md-11 col-xs-5 col-sm-5 font-H5-light rojo-promperu pointer font-H4-bold-700n inline margin-visita visita-max-width">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
+                    <div class="col-lg-5 col-md-12 col-xs-5 col-sm-5 font-H5-light rojo-promperu pointer font-H4-bold-700n inline margin-visita">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></div>
                 </div>
 
             </div>
         </div>
-    </div>
-    <div class="modal fade modal-dashboard" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
-
     </div>
     <!-- Fin menu general desktop -->
 

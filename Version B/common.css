@@ -1,39 +1,228 @@
 @font-face {
-    font-family: 'Helvetica Neue LT Std light';
-    src: url('font-Promperu/HELVETICANEUELTSTD LT.OTF');
+  font-family: "Helvetica Neue LT Std light";
+  src: url("font-Promperu/HELVETICANEUELTSTD LT.OTF");
 }
 
 @font-face {
-    font-family: 'Helvetica Neue LT Std bold';
-    src: url('font-Promperu/HelveticaNeueLTStd-Bd.OTF');
+  font-family: "Helvetica Neue LT Std bold";
+  src: url("font-Promperu/HelveticaNeueLTStd-Bd.OTF");
 }
 
 @font-face {
-    font-family: 'Helvetica Neue LT Std medium';
-    src: url('font-Promperu/HelveticaNeueLTStd-Md.OTF');
+  font-family: "Helvetica Neue LT Std medium";
+  src: url("font-Promperu/HelveticaNeueLTStd-Md.OTF");
 }
 @font-face {
     font-family: 'Helvetica Neue LT Std roman';
     src: url('font-Promperu/HelveticaNeueLTStd-Roman.OTF');
 }
 
+.opOrigenMovil  {
+  margin-top: 0px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.opOrigenMovil:hover  {
+  font-weight: 700 !important;
+}
+
+.padding-left-select {
+  padding-left: 30px !important;
+}
+
+.padding-select {
+  padding-top: 10px !important;
+  padding-bottom: 15px !important;
+}
+
+.padding-select-2 {
+  padding-top: 10px !important;
+  padding-bottom: 15px !important;
+  padding-left: 5px !important;
+  padding-right: 25px !important;
+}
+
+.card-maritima-select {
+  width: 50% !important;
+  height: 200% !important;
+  margin-left: 28% !important;
+  top: 74% !important;
+  position: absolute !important;
+  font-size: 10px;
+  font-weight: bold;
+  background: #FFFFFF;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-maritima-select option {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.card-contenido-select option{
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.card-contenido-select option:hover {
+  font-weight: 700 !important;
+}
+
+.select-destino-ciudad option{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.select-destino-ciudad option:hover{
+  background-color: #FFEBEE;
+  font-weight: 700 !important;
+  cursor: pointer;
+}
+
+.card-maritima-select option:hover  {
+  font-weight: 700 !important;
+}
+
+.card-maritima {
+  width: 26% !important;
+  height: 77% !important;
+  margin-left: 1% !important;
+  top: 74% !important;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  border-radius: 0px 0px 15px 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-maritima option {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E4E6E7;
+}
+
+.card-maritima option:hover {
+  background-color: #FFEBEE;
+  font-weight: 700 !important;
+}
+
+.card-maritima-container {
+  width: 14% !important;
+  height: 12.5% !important;
+  margin-left: 1% !important;
+  top: 62% !important;
+  /* top: 79% !important;
+  left: 25px !important; */
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+  border-radius: 0px 0px 15px 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.card-maritima-container option {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E4E6E7;
+}
+
+.card-maritima-container option:hover {
+  background-color: #FFEBEE;
+  font-weight: 700 !important;
+}
+
+.altura-15 {
+  height: 15px !important;
+}
+.boton-detalle-rutas:hover {
+  /* border: 1px solid blue !important; */
+  /* pointer-events: inherit !important; */
+  border: 2px solid red !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px !important;
+}
+
+.btn-volver-buscar {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 30px 12px;
+  
+  position: absolute;
+  width: 339px;
+  height: 50px;
+  left: 18px;
+  top: 618px; */
+
+  
+  border: 2px solid #C4122F;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.flecha	{
+display: inline-block;
+width: 18px;
+height: 18px;
+margin-top: 28px;
+margin-left: 10px;
+border-top: solid 3px;
+border-right: solid 3px;
+  color: white;
+}
+
+.flecha.derecha {
+transform: rotate(45deg);
+}
+
+.rounded-circle {
+  width: 54px !important;
+  height: 54px !important;
+}
+.cicle-avatar-detalle-rutas {
+  width: 55px;
+  height: 55px;
+  border: 2px solid #C4122f !important;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #C4122f;
+  position: relative;
+  overflow: hidden;
+  margin: auto !important;
+}
+
+.cicle-avatar-detalle-rutas img {
+  height: 25px;
+  object-fit: cover;
+}
+
 .font-display {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 60px !important;
-    line-height: 72px !important;
-    /* identical to box height */
-    align-items: center;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 60px !important;
+  line-height: 72px !important;
+  /* identical to box height */
+  align-items: center;
+  text-align: center;
 }
 
 .font-h1-bold {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 36px !important;
-    line-height: 43.2px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 36px !important;
+  line-height: 43.2px !important;
 }
 
 .font-h1-bold-normal {
@@ -45,28 +234,28 @@
 }
 
 .font-H2-light {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 30px !important;
-    line-height: 36px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
 }
 
 .font-H2-light-400 {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 30px !important;
-    line-height: 36px !important;
-    text-align: center !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  text-align: center !important;
 }
 
 .font-H2-light-400n {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 30px !important;
-    line-height: 36px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
 }
 
 .font-H2-bold-700 {
@@ -86,109 +275,124 @@
     line-height: 29px !important;
 }
 .font-h3-light-300 {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 24px !important;
-    line-height: 28.8px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 24px !important;
+  line-height: 28.8px !important;
 }
 
 .font-h3-light-400 {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 24px !important;
-    line-height: 28.8px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  line-height: 28.8px !important;
+}
+
+.font-H3-medium {
+  font-family: 'Helvetica Neue LT Std medium';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .font-h3-bold {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 24px !important;
-    line-height: 28.8px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  line-height: 28.8px !important;
 }
 
 .font-h3-bold-700 {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 24px !important;
-    line-height: 28.8px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 28.8px !important;
 }
 
 .font-h3-bold-700c {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 24px !important;
-    line-height: 28.8px !important;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 28.8px !important;
+  text-align: center;
+}
+
+.font-H3-light {
+  font-family: "Helvetica Neue LT Std light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .font-H4-light {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 18px !important;
-    line-height: 21.6px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
 }
 .font-H4-light-min {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 17px !important;
-    line-height: 21.6px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 17px !important;
+  line-height: 21.6px !important;
 }
 
 .font-H4-light-400 {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 17px !important;
-    line-height: 21.6px !important;
-    text-align: center !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 17px !important;
+  line-height: 21.6px !important;
+  text-align: center !important;
 }
 
 .font-H4-light-400n {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 18px !important;
-    line-height: 21.6px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
 }
 
 .font-H4-light-normal {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-size: 18px !important;
-    line-height: 22px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
 }
 .font-H4-bold-700 {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 18px !important;
-    line-height: 21.6px !important;
-    text-align: center !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
+  text-align: center !important;
 }
 
 .font-H4-bold-700n {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 18px !important;
-    line-height: 21.6px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
 }
 
 .font-H5-light {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
 }
 
 .font-H5-lightn {
@@ -198,71 +402,76 @@
     font-size: 15px !important;
     line-height: 18px !important;
 }
-
+.font-span-bold-400n {
+  font-family: 'Helvetica Neue LT Std bold'!important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 14.4px !important;
+}
 .font-H5-light-400 {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  text-align: center;
 }
 
 .font-H5-light-400n {
-    font-family: 'Helvetica Neue LT Std light'!important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
 }
 
 .font-H5-bold {
-    font-family: 'Helvetica Neue LT Std bold'!important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
 }
 
 .font-H5-medium {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
 }
 .font-H5-medium-normal {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  text-align: center;
 }
 
 .font-Display-2-Bold {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-weight: bold!important;
-    font-size: 50px !important;
-    line-height: 61px !important;
-    align-items: center;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-weight: bold !important;
+  font-size: 50px !important;
+  line-height: 61px !important;
+  align-items: center;
 }
 
 .font-H4-medium {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal!important;
-    font-weight: 500 !important;
-    font-size: 18px !important;
-    line-height: 22px !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
 }
 
 .font-H4-medium-400 {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal!important;
-    font-weight: 400 !important;
-    font-size: 18px !important;
-    line-height: 21.6px !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
 }
 .font-H4-medium-n {
     font-family: 'Helvetica Neue LT Std medium' !important;
@@ -273,86 +482,120 @@
 }
 
 .font-Display-2-Bold-700 {
-    font-family: 'Helvetica Neue LT Std' !important;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 72px;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std" !important;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.font-Display-72-normal {
+  font-family: "Helvetica Neue LT Std" !important;
+  font-weight: 300 !important;
+  font-size: 72px;
+  line-height: 86.4px;
 }
 
 .font-Display-2-700 {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 51px;
-    line-height: 61, 2px;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 51px !important;
+  line-height: 61px !important;
 }
 
 .font-label {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .font-H2-bold {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 30px !important;
-    line-height: 36px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
 }
 
 .font-H3-bold {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 24px !important;
-    line-height: 29px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 24px !important;
+  line-height: 29px !important;
 }
 
 .font-H4-bold {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 18px !important;
-    line-height: 22px !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+}
+
+.font-display-title {
+  font-family: "Helvetica Neue LT Std bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 72px;
 }
 
 .font-H5-bold {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
-    align-items: center !important;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  align-items: center !important;
+}
+
+.font-label-link {
+  font-family: "Helvetica Neue LT Std" !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* identical to box height */
+  text-decoration-line: underline;
 }
 
 .font-label-400 {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    align-items: center;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+}
+
+.font-label-icon {
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
 }
 
 .font-label-400c {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16.8px;
-    text-align: center !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+  text-align: center !important;
 }
 
 .font-link-700 {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal;
-    font-weight: 700 !important;
-    font-size: 14px !important;
-    line-height: 16.8px !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 16.8px !important;
 }
 .font-link {
     font-family: 'Helvetica Neue LT Std bold' !important;
@@ -363,77 +606,91 @@
 }
 
 .font-smallprint-medium {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    font-size: 12px !important;
-    line-height: 14.4px !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 14.4px !important;
 }
 
 .font-smallprint-medium-light {
-    font-family: 'Helvetica Neue LT Std light' !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    font-size: 12px !important;
-    line-height: 14.4px !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 14.4px !important;
 }
 
 .font-helvetica-icon {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    font-size: 14px !important;
-    line-height: 16.8px !important;
-    text-align: center;
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 16.8px !important;
+  text-align: center;
 }
 
 .font-helvetica-footer-light {
-    font-family: 'Helvetica Neue LT Std medium' !important;
-    font-style: normal !important;
-    font-weight: 300 !important;
-    font-size: 12px !important;
-    line-height: 14.4px !important;
-    text-align: center !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  line-height: 14.4px !important;
+  text-align: center !important;
 }
 
 .font-helvetica-footer-bold {
-    font-family: 'Helvetica Neue LT Std bold' !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 12px !important;
-    line-height: 14px !important;
-    text-align: center !important;
-    margin-bottom: 15px;
+
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  text-align: center !important;
+}
+
+.font-helvetica-popover {
+  font-family: "Helvetica Neue LT Std bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+.font-helvetica-card {
+  font-family: Helvetica Neue LT Std;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
 }
 
 .font-helvetica-coryright {
-    font-family: 'Helvetica Neue LT Std roman' !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-size: 14px !important;
-    line-height: 17px !important;
-    text-align: center !important;
-    color: #6C6C6C !important;
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  text-align: center !important;
+  color: #6c6c6c !important;
 }
 
 .font-helvetica-footer {
-    font-family: 'Helvetica Neue LT Std light' !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-size: 12px !important;
-    line-height: 14px !important;
-    align-items: center;
-    color: #000000 !important;
-    padding-bottom: 10px;
+  font-family: "Helvetica Neue LT Std medium" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  align-items: center;
+  color: #000000 !important;
 }
 
-.font-normal {
-    font-family: 'Helvetica Neue LT Std light' !important;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 30px;
+ btn:hover:not(.btn-icon-only) {
+
+  transform:none !important;
 }
+
 .font-helvetica-coryright-movil{
     font-family: 'Helvetica Neue LT Std light' !important;
     font-style: normal !important;
@@ -443,275 +700,282 @@
     text-align: center !important;
     color: #6C6C6C !important;
 }
+.font-normal {
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+}
 
 /* .font */
 
 img {
-    image-rendering: -webkit-optimize-contrast;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .background-img {
-    image-rendering: -webkit-optimize-contrast;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .navbar {
-    height: 70px!important;
-    width: 100%;
+  height: 70px !important;
+  width: 100%;
 }
 
 .nav-img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    position: absolute;
-    width: 97px!important;
-    height: 50px!important;
-    left: 45px;
-    top:10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  width: 97px !important;
+  height: 50px !important;
+  left: 45px;
+  top: 10px;
 }
 
 .badge-notification {
-    position: absolute;
-    font-size: .6rem;
-    margin-top: 0.2rem;
-    margin-left: -.3rem;
-    padding: .2em .45em;
+  position: absolute;
+  font-size: 0.6rem;
+  margin-top: 0.2rem;
+  margin-left: -0.3rem;
+  padding: 0.2em 0.45em;
 }
 
 .bg-danger {
-    background-color: #C4122F!important;
+  background-color: #c4122f !important;
 }
 
 .rounded-pill {
-    border-radius: 13.5px !important;
-    height:27px;
+  border-radius: 13.5px !important;
+  height: 27px;
 }
 
 .badge-notification {
-    display: inline-block;
-    padding: .35em .65em;
-    font-size: .20em;
-    font-weight: 700;
-    Width: 6px;
-    Height: 6px;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.2em;
+  font-weight: 700;
+  width: 6px;
+  height: 6px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
 }
 
 .negro-promperu {
-    color: #282828 !important;
+  color: #282828 !important;
 }
 
 .rojo-promperu {
-    color: #C4122F !important;
+  color: #c4122f !important;
 }
 
 .azul-promperu {
-    color: #07354F !important;
+  color: #07354f !important;
 }
 
 .gris-promperu {
-    color: #A5ACB0 !important;
+  color: #a5acb0 !important;
 }
 
 .blanco {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .negro {
-    color: #000000;
+  color: #000000;
 }
 
 .background-azul-promperu {
-    background-color: #07354F;
+  background-color: #07354f;
 }
 
 .font-size-21 {
-    font-size: 21px;
+  font-size: 21px;
 }
 
 .hover:hover {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
 .active-icon-nav:active {
-    color: #C4122F;
+  color: #c4122f;
 }
 
 .posicion-close-notificacion {
-    position: absolute;
-    /* right: 12px; */
-    right: 25px;
+  position: absolute;
+  /* right: 12px; */
+  right: 25px;
 }
 
 .sin-margen-top {
-    margin-top: 0!important;
+  margin-top: 0 !important;
 }
 
 .icon-dashboard {
-    
-    margin-top: 7px;
-    margin-bottom: 5px;
+  margin-top: 7px;
+  margin-bottom: 5px;
 }
 
 .background-costos {
-    background-image: url('RutasMaritimas/assets/img/dashboard/costos.png');
+  background-image: url("RutasMaritimas/assets/img/dashboard/costos.png");
 }
 
 #offcanvasRightLabel {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 36px;
-    display: flex;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  display: flex;
 }
-
 
 /* mover a media para el ancho */
 
 .offcanvas-end {
-    width: 50%!important;
+  width: 50% !important;
 }
 
 .offcanvas-body-menu {
-    flex-grow: 1;
-    padding: 1rem 1rem;
-    overflow-y: auto;
-    overflow-x: hidden;
+  flex-grow: 1;
+  padding: 1rem 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .offcanvas-body-menu::-webkit-scrollbar {
-    width: 10%;
+  width: 10%;
 }
 
 .inline {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .text-menu-lateral {
-    align-self: self-end;
-    margin-bottom: 0;
-    color: #07354F;
+  align-self: self-end;
+  margin-bottom: 0;
+  color: #07354f;
 }
 
 .min-content {
-    height: min-content;
+  height: min-content;
 }
 
 .badge {
-    background-color: #FFFFFF!important;
-    color: #282828!important;
+  background-color: #ffffff !important;
+  color: #282828 !important;
 }
 
 .badge:hover {
-    background-color: #C4122F!important;
-    color: #FFFFFF!important;
+  background-color: #c4122f !important;
+  color: #ffffff !important;
 }
 
 .badge:active {
-    background-color: #282828!important;
-    color: #FFFFFF!important;
+  background-color: #282828 !important;
+  color: #ffffff !important;
 }
 
 .cont-titulo {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .container-principal {
-    padding-right: 0!important;
-    padding-left: 0!important;
-    overflow-x: hidden;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  overflow-x: hidden;
 }
 
 .btn-danger {
-    background-color: #C4122f;
-    color: #ffffff;
+  background-color: #c4122f;
+  color: #ffffff;
+  width: 302px !important;
+  text-transform: inherit !important;
 }
 
 .btn-danger:active {
-    background-color: #282828 !important;
-    color: #ffffff !important;
+  background-color: #282828 !important;
+  color: #ffffff !important;
 }
 
 .btn-outline-danger {
-    border: 2px solid #C4122f !important;
-    color: #C4122f !important;
-    border-radius: 15px !important;
+  border: 2px solid #c4122f !important;
+  color: #c4122f !important;
+  border-radius: 15px !important;
 }
 
 .btn-outline-danger:hover {
-    border: 2px solid #C4122f !important;
-    color: #C4122f !important;
-    background-color: #FFF !important;
-    opacity: 100 !important;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+  border: 2px solid #c4122f !important;
+  color: #c4122f !important;
+  background-color: #fff !important;
+  opacity: 100 !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
 }
 
 .btn-outline-danger:active {
-    border: 2px solid #282828 !important;
-    color: #282828 !important;
+  border: 2px solid #282828 !important;
+  color: #282828 !important;
 }
 
 .btn-disabled {
-    background-color: #C0C0C0 !important;
-    color: #8B8B8B !important;
-    border-radius: 15px;
+  background-color: #c0c0c0 !important;
+  color: #8b8b8b !important;
+  border-radius: 15px;
 }
 
 .btn-danger {
-    background-color: #C4122F !important;
-    color: #FFF !important;
-    border-radius: 15px;
+  background-color: #c4122f !important;
+  color: #fff !important;
+  border-radius: 15px;
 }
 
 .btn-danger:disabled {
-    background-color: #C0C0C0 !important;
-    color: #8B8B8B !important;
+  background-color: #c0c0c0 !important;
+  color: #8b8b8b !important;
 }
 
 .btn-danger:hover {
-    background-color: #C4122F !important;
-    color: #FFFFFF !important;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
-    border-radius: 15px !important;
-    ;
+  transform: none !important;
+  background-color: #c4122f !important;
+  color: #ffffff !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 15px !important;
 }
 
 .btn-danger:active {
-    background-color: #282828 !important;
-    color: #FFFFFF !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
 }
 
 .footer {
-    position: absolute;
+  position: absolute;
 }
 
 .inline-for-movil {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .inline-for-movil2 {
-    display: flex;
+  display: flex;
 }
 
 .justify-content-right {
-    justify-content: right;
+  justify-content: right;
 }
 
 .icon-dashboard-width {
-    width: 15% !important;
+  width: 15% !important;
 }
 
 .left-center {
-    text-align: left !important;
+  text-align: left !important;
 }
 
 .padding-card-busqueda {
@@ -742,18 +1006,111 @@ img {
     margin-right: 110px !important;
 }
 .img-footter {
-    Width: 243px !important;
-    Height: 47.69px !important;
-    margin-bottom: 18.76%;
-    margin-left: 5% !important;
+  width: 243px !important;
+  height: 47.69px !important;
+  margin-bottom: 18.76%;
+  margin-left: 5% !important;
 }
 .img-footter-promperu {
-    width: 97px!important;
+  width: 97px!important;
     height: 50px!important;
     margin-bottom: 18.76%;
     margin-right: 5% !important;
+    image-rendering: inherit;
+    image-rendering: initial;
+    image-rendering: unset;
+}
+
+.row-mapa {
+    max-width: 1276px !important; 
+    width: 100% !important; 
+    margin: auto;
+}
+
+.margin-visita {
+    margin-left: 26px !important;
+}
+
+.visita-max-width {
+    max-width: 200px !important;;
+}
+
+.max-resolution {
+    max-width: 1276px !important; 
+    width: 100% !important; 
+}
+
+.min-width-linea-naviera-text {
+    min-width: 191px !important;
+}
+
+/* .min-width-line-discontinuas {
+    min-width: 120px !important;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+} */
+.min-width-line-discontinuas {
+    min-width: 130px !important;
+    margin-left: -15px !important;
+    margin-right: 1px !important;
 }
 @media (min-width: 200px) {
+  .menu-padding{
+    padding-left: 17px !important;;
+}
+.card-maritima-container {
+    height: 13.2% !important;
+    width: 65% !important;
+    top: 75.5% !important;
+}
+
+.card-responsive {
+    width: 338px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.padding-mobile {
+    padding-left: 20px !important;
+}
+.container-padding {
+    padding-top: 40px !important;
+}
+
+.ver-desktop {
+    display: none !important;
+}
+.mobile-resolution-detalle-rutas {
+    width: 338px !important;
+}
+
+.margin-buttons {
+    margin: 0px !important;
+}
+
+.card-consulta-mobile {
+    width: 338px !important;
+}
+.img-header {
+    margin-left: 30px;
+}
+
+.primera-tarjeta {
+    width: 249px !important;
+}
+.mobile-font {
+    font-family: 'Helvetica Neue LT Std bold'!important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 28.8px !important;
+}
+
+.mobile-align {
+    text-align: center;
+}
+
+
     .modal-login{
         width: auto;
     }
@@ -804,6 +1161,17 @@ img {
         font-weight: 300 !important;
         font-size: 18px !important;
         line-height: 22px !important;
+    }
+    .font-H2-light {
+      font-size: 18px !important;
+      line-height: 22px !important;
+    }
+  
+    .p-deskptop {
+        display: none;
+    }
+    .p-mobile {
+        display: block;
     }
     .contenedor-mapa-rutas {
         margin-left: 4% !important;
@@ -891,6 +1259,7 @@ img {
     }
     .container-principal {
         padding-top: 90px !important;
+        /*padding-top: 110px !important;*/
     }
     .padding-top-principal-detalle{
         padding-top: 50px !important;
@@ -901,6 +1270,15 @@ img {
 }
 
 @media (min-width: 576px) {
+  .mobile-resolution-detalle-rutas {
+    width: 100% !important;
+}
+.margin-buttons {
+    margin: 0px 15px !important;
+}
+.card-consulta-mobile {
+    width: 100% !important;
+}
     .modal-login{
         width: auto;
     }
@@ -951,13 +1329,26 @@ img {
         font-size: 18px !important;
         line-height: 22px !important;
     }
+    .font-H2-light {
+      font-family: 'Helvetica Neue LT Std light'!important;
+      font-style: normal !important;
+      font-weight: 300 !important;
+      font-size: 30px !important;
+      line-height: 36px !important;
+    }
+    .p-deskptop {
+        display: block;
+    }
+    .p-mobile {
+        display: none;
+    }
     .contenedor-mapa-rutas {
         margin-left: 4% !important;
         margin-right: 4% !important;
     }
     #view-global {
-        margin-left: 4% !important;
-        margin-right: 4% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
     }
     .div-global{
         padding-left: 0 !important;
@@ -1039,6 +1430,49 @@ img {
 }
 
 @media (min-width: 768px) {
+  /* .card-maritima-container {
+        margin-left: 1% !important;
+        top: 62% !important;
+        left: 16% !important;
+        position: absolute !important;
+        font-size: 12px;
+        font-weight: bold;
+        color: #282828;
+        border-radius: 0px 0px 15px 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+    } */
+    .menu-padding{
+      padding-left: 5px !important;;
+  }
+  .card-responsive {
+      width: 100% !important;
+      max-width: 500px !important;
+  }
+  .padding-mobile {
+      padding-left: 90px !important;
+  }
+  .container-padding {
+      padding-top: 70px !important;
+  }
+  .ver-desktop {
+      display: flex !important;
+  }
+  .primera-tarjeta {
+      width: 100% !important;
+  }
+  .mobile-font {
+      font-family: 'Helvetica Neue LT Std bold'!important;
+      font-style: normal !important;
+      font-weight: 700 !important;
+      font-size: 30px !important;
+      line-height: 36px !important;
+  }
+  .mobile-align {
+      text-align: left;
+  }
+
     .modal-login{
         width: 338px;
     }
@@ -1173,234 +1607,255 @@ img {
 }
 
 @media (min-width: 992px) {
-    .padding-control3-busqueda{
-        padding-right: 0px !important;
-        padding-left: 0px !important;
-    }
+  .padding-control3-busqueda {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
 
-    .card-busqueda > .row{
-        margin-left: 80px !important;
-        margin-right: 80px !important;
-    }
-    .left-center {
-        text-align: left !important;
-    }
-    .icon-dashboard-width {
-        width: 14% !important;
-    }
-    .navbar {
-        height: 70px!important;
-    }
-    .nav-img {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        position: absolute;
-        width: 97px!important;
-        height: 56px!important;
-        left: 45px;
-        top: 7px;
-    }
-    .nav-img-b {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        position: absolute;
-        width: 97px!important;
-        height: 56px!important;
-        left: 45px;
-        top:7px;
-    }
-    .offcanvas-end {
-        width: 50%!important;
-    }
-    .inline-for-movil {
-        display: inline-flex;
-    }
-    .inline-for-movil2 {
-        display: flex;
-    }
-    .justify-content-right {
-        justify-content: right;
-    }
-    .padding-card-busqueda {
-        padding-left: 10% !important;
-        padding-right: 10% !important;
-    }
-    .img-principal{
-        position: absolute;
-        z-index:1;
-        width: 100%;
-        height:450px;
-    }
+  .card-busqueda > .row {
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+  }
+  .left-center {
+    text-align: left !important;
+  }
+  .icon-dashboard-width {
+    width: 14% !important;
+  }
+  .navbar {
+    height: 70px !important;
+  }
+  .nav-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 97px !important;
+    height: 56px !important;
+    left: 45px;
+    top: 7px;
+  }
+  .nav-img-b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 97px !important;
+    height: 56px !important;
+    left: 45px;
+    top: 7px;
+  }
+  .offcanvas-end {
+    width: 50% !important;
+  }
+  .inline-for-movil {
+    display: inline-flex;
+  }
+  .inline-for-movil2 {
+    display: flex;
+  }
+  .justify-content-right {
+    justify-content: right;
+  }
+  .padding-card-busqueda {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+  .img-principal {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 450px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .card-busqueda > .row{
-        margin-left: 110px !important;
-        margin-right: 110px !important;
-    }
-    .left-center {
-        text-align: left !important;
-    }
-    .icon-dashboard-width {
-        width: 14% !important;
-    }
-    .navbar {
-        height: 70px!important;
-    }
-    .nav-img {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        position: absolute;
-        width: 97px!important;
-        height: 56px!important;
-        left: 45px;
-        top: 7px;
-    }
-    .nav-img-b {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        position: absolute;
-        width: 97px!important;
-        height: 56px!important;
-        left: 45px;
-        top:7px;
-    }
-    .offcanvas-end {
-        width: 50%!important;
-    }
-    .inline-for-movil2 {
-        display: flex;
-    }
-    .justify-content-right {
-        justify-content: right;
-    }
-    .padding-card-busqueda {
-        padding-left: 10% !important;
-        padding-right: 10% !important;
-    }
-    .img-principal{
-        position: absolute;
-        z-index:1;
-        width: 100%;
-        height:450px;
-    }
+  .card-busqueda > .row {
+    margin-left: 110px !important;
+    margin-right: 110px !important;
+  }
+  .left-center {
+    text-align: left !important;
+  }
+  .icon-dashboard-width {
+    width: 14% !important;
+  }
+  .navbar {
+    height: 70px !important;
+  }
+  .nav-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 97px !important;
+    height: 56px !important;
+    left: 45px;
+    top: 7px;
+  }
+  .nav-img-b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 97px !important;
+    height: 56px !important;
+    left: 45px;
+    top: 7px;
+  }
+  .offcanvas-end {
+    width: 50% !important;
+  }
+  .inline-for-movil2 {
+    display: flex;
+  }
+  .justify-content-right {
+    justify-content: right;
+  }
+  .padding-card-busqueda {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+  .img-principal {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 450px;
+  }
+}
+@media (min-width: 1366px) {
+  .card-maritima-container {
+      height: 13.2% !important;
+      width: 20% !important;
+      top: 65.5% !important;
+  }
 }
 @media (min-width: 1920px) {
-    .img-principal{
-        position: absolute;
-        z-index:1;
-        width: 100%;
-        height:auto;
-    }
-}
-.btn-close-menu {
-    box-sizing: content-box !important;
-    padding: 0.25em 0.25em!important;
-    border: 0!important;
-    position: absolute!important;
-    z-index: 0!important;
-    top: 20px!important;
-    right: 20px !important;
-    color: #ffff !important;
-    border-radius: 50% !important;
-    width: 25px !important;
-    background-color: #C4122f !important;
-    height: 25px !important;
-}
-
-
-/*Style del popover*/
-
-.popover {
-    background-color: #07354F !important;
-    color: #ffffff !important;
-    width: auto !important;
-    height: auto !important;
-    border-radius: 15px !important;
-    position: fixed  !important;
-    top: 60px !important;
-    right: 8px !important;
-    left: auto !important;
-    z-index: 100 !important;
-}
-
-.popover::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid #07354F;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    top: -30px;
-    right: 43px !important;
-    position: absolute;
-}
-
-.popover-header {
-    background-color: #e9ecef00 !important;
-}
-
-.popover-body {
-    padding: 0rem 1rem !important;
-}
-
-.link:hover {
-    color: #ffffff !important;
-}
-
-.subrayado {
-    text-decoration: underline;
-}
-
-.vertical-center {
-    display: flex;
-    align-items: center;
-}
-
-.icon-buscador {
-    border: none !important;
-    ;
-    border-bottom: 1px solid #282828 !important;
-    border-radius: initial !important;
-}
-
-.text-buscador {
-    border-left: none !important;
-    border-right: none !important;
-}
-
-.input-group .text-buscador:focus {
-    border-left: none !important;
-    border-right: none !important;
-    border-radius: 0 !important;
-}
-
-.height-100 {
-    height: 120px !important;
-}
-
-.height-1 {
-    height: 1px !important;
-}
-
-.card-ptoOrigen {
-    width: 50% !important;
-    height: 30% !important;
-    margin-left: 7% !important;
+  .card-maritima-container {
+    height: 12.5% !important;
+    top: 62.5% !important;
+    width: 13% !important;
+    /* margin-left: 1% !important;
+    top: 62% !important;
     position: absolute !important;
     font-size: 12px;
     font-weight: bold;
     color: #282828;
+    border-radius: 0px 0px 15px 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 999; */
+}
+  .img-principal {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+  }
+}
+.btn-close-menu {
+  box-sizing: content-box !important;
+  padding: 0.25em 0.25em !important;
+  border: 0 !important;
+  position: absolute !important;
+  z-index: 0 !important;
+  top: 20px !important;
+  right: 20px !important;
+  color: #ffff !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  background-color: #c4122f !important;
+  height: 25px !important;
+}
+
+/*Style del popover*/
+
+.popover {
+  background-color: #07354f !important;
+  color: #ffffff !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 15px !important;
+  position: fixed !important;
+  top: 60px !important;
+  right: 8px !important;
+  left: auto !important;
+  z-index: 100 !important;
+}
+
+
+.popover::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid #07354f;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: -30px;
+  right: 43px !important;
+  position: absolute;
+}
+
+.popover-header {
+  background-color: #e9ecef00 !important;
+}
+
+.popover-body {
+  padding: 0rem 1rem !important;
+}
+
+.link:hover {
+  color: #ffffff !important;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.icon-buscador {
+  border: none !important;
+  border-bottom: 1px solid #282828 !important;
+  border-radius: initial !important;
+}
+
+.text-buscador {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.input-group .text-buscador:focus {
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+}
+
+.height-100 {
+  height: 120px !important;
+}
+
+.height-1 {
+  height: 1px !important;
+}
+
+.card-ptoOrigen {
+  width: 50% !important;
+  height: 30% !important;
+  margin-left: 7% !important;
+  position: absolute !important;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
 }
 
 .card-ptoDestino {
@@ -1415,278 +1870,284 @@ img {
 }
 
 .padding-left-right-0 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 
 .margin-left-right-0 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .padding-left-0 {
-    padding-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 .width-100 {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 .separar-elementos-5 {
-    text-indent: 5pt;
+  text-indent: 5pt;
 }
 
-
-
 .margin-left-right-3 {
-    margin-left: 1.5% !important;
-    margin-right: 1.5% !important;
+  margin-left: 1.5% !important;
+  margin-right: 1.5% !important;
 }
 
 .padding-left-right-1 {
-    padding-left: 1% !important;
-    padding-right: 1% !important;
+  padding-left: 1% !important;
+  padding-right: 1% !important;
 }
 
 .btn-nivel-inline {
-    margin-bottom: 0 !important;
-    bottom: 0 !important;
-    position: absolute !important;
+  margin-bottom: 0 !important;
+  bottom: 0 !important;
+  position: absolute !important;
 }
 
 .position-relative {
-    position: relative !important;
+  position: relative !important;
 }
 
 .modal-backdrop {
-    opacity: 0.5 !important;
+  opacity: 0.5 !important;
 }
 
 .fade.show {
-    background-color: #0000008c !important;
-    top: 0 !important;
+  background-color: #0000008c !important;
+  top: 0 !important;
+  right: -11% !important;
 }
 
 .modal-dashboard {
-    background-color: #0000008c !important;
-    top: 0 !important;
-    z-index: 100;
+  background-color: #0000008c !important;
+  top: 0 !important;
+  z-index: 100;
 }
 
 .body {
-    background-color: #0000008c !important;
+  background-color: #0000008c !important;
 }
 
 .img-consulta {
-    width: 412px;
-    height: 240px;
+  width: 412px;
+  height: 240px;
 }
 
 .icon-redes {
-    background-color: #C4C4C4 !important;
-    color: #000000 !important;
-    border-radius: 50%;
-    border: 1x solid #C4C4C4 !important;
-    padding: 5px;
-    cursor: pointer;
-    margin-right: 4px;
-    height: 35px !important;
-    width: 35px !important;
-    font-size: 25px !important;
+  background-color: #c4c4c4 !important;
+  color: #000000 !important;
+  border-radius: 50%;
+  border: 1x solid #c4c4c4 !important;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 4px;
+  height: 35px !important;
+  width: 35px !important;
+  font-size: 25px !important;
 }
 
 footer {
-    margin-top: -5.5rem !important;
-    padding-top: 5.5rem !important;
-    height: auto !important;
+  margin-top: -5.5rem !important;
+  padding-top: 5.5rem !important;
+  height: auto !important;
 }
 
 .card-consulta {
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1) !important;
-    border-radius: 25px !important;
-    margin-left: 2% !important;
-    margin-right: 2% !important;
-    margin-top: -4.5rem !important;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 25px !important;
+  margin-left: 2% !important;
+  margin-right: 2% !important;
+  margin-top: -4.5rem !important;
 }
 
 .icon-map {
-    --bs-gutter-x: 0rem !important;
+  --bs-gutter-x: 0rem !important;
 }
 
 .icon-right {
-    right: 4%;
-    position: absolute;
+  right: 4%;
+  position: absolute;
 }
 
 .ver-mapa {
-    top: 5px;
-    position: relative;
+  top: 5px;
+  position: relative;
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .acordion-hover:hover {
-    color: #C4122f !important;
-    ;
+  color: #c4122f !important;
 }
 
 .margin-16 {
-    margin: 16px !important;
+  margin: 16px !important;
 }
 
 .margin-bottom-40 {
-    margin-bottom: 40px !important;
+  margin-bottom: 40px !important;
 }
 
 .mostrarRutasDesktop {
-    margin-bottom: 5rem !important;
-    margin-left: 7% !important;
-    margin-right: 7% !important;
+  margin-bottom: 5rem !important;
+  margin-left: 7% !important;
+  margin-right: 7% !important;
 }
-
-
-
-
 
 .contenedor-img-movil {
-    height: 80px !important;
+  height: 80px !important;
 }
 
+
 .option-select:hover {
-    background-color: #FFEBEE;
-    width: 100% !important;
-    cursor: pointer;
-    opacity: 1 !important;
+  background-color: #ffebee;
+  width: 100% !important;
+  cursor: pointer;
+  opacity: 1 !important;
 }
 
 .header-modal {
-    justify-content: center !important;
+  justify-content: center !important;
 }
 
 .hover-start {
-    color: #A5ACB0 !important;
+  color: #a5acb0 !important;
 }
 
 .hover-start:hover {
-    color: #C4122F !important;
+  color: #c4122f !important;
 }
 
 .titulo-header {
-    position: absolute;
-    left: 170px;
+  position: absolute;
+  left: 170px;
 }
 
 .vl {
-    border: 1px solid #A5ACB0;
-    transform: rotate(90deg);
-    width: 37px;
-    position: absolute;
-    left: 146px;
-    color: #A5ACB0;
+  border: 1px solid #a5acb0;
+  transform: rotate(90deg);
+  width: 37px;
+  position: absolute;
+  left: 146px;
+  color: #a5acb0;
 }
 
 .background-blanco {
-    background-color: #FFF !important;
+  background-color: #fff !important;
 }
 
 .margin-4-p {
-    margin-left: 4% !important;
-    margin-right: 4% !important;
+  margin-left: 4% !important;
+  margin-right: 4% !important;
 }
 
 .margin-15-p {
-    margin-left: 11% !important;
-    margin-right: 11% !important;
+  margin-left: 11% !important;
+  margin-right: 11% !important;
 }
 
 .text-left {
-    text-align: left !important;
+  text-align: left !important;
 }
 
 .line-vertical {
-    position: absolute;
-    width: 843px;
-    height: 2px;
-    background-color: #A5ACB0;
-    opacity: 0.3;
+  position: absolute;
+  width: 843px;
+  height: 2px;
+  background-color: #a5acb0;
+  opacity: 0.3;
 }
 
-
-.card-busqueda{
-    max-width: 1276px;
-    width: 100%;
+.card-busqueda {
+  max-width: 1276px;
+  width: 100%;
 }
 
-.div-card-busqueda{
-    justify-content: center;
-    display: flex;
+.div-card-busqueda {
+  justify-content: center;
+  display: flex;
 }
-.div-btn-busqueda{
-    display: flex;
-    align-items: end;
-    justify-content: end;
+.div-btn-busqueda {
+  display: flex;
+  align-items: end;
+  justify-content: end;
 }
 
 .div-principal-busqueda{
     margin-left: 3% !important;
     margin-right: 3% !important;
     margin-bottom: 3rem !important;
+  }
+.margin-0 {
+  margin: 0 !important;
 }
-.badge {
-    text-transform: none !important;
-    padding-left:15px;
-    padding-right:15px;
-    padding-top:5px;
-}
-.margin-right-0> .row {
-    margin-right: 0 !important;
-}
-.text-align-left{
-    text-align:left !important;
-}
-.text-align-right{
-    text-align:right !important;
+.margin-top-bottom-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-.width-max-content{
-    width:max-content !important;
+
+.badge {
+  text-transform: none !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
 }
-.top{
-    margin-top: -6.2rem !important;
+.margin-right-0 > .row {
+  margin-right: 0 !important;
+}
+.text-align-left {
+  text-align: left !important;
+}
+.text-align-right {
+  text-align: right !important;
+}
+
+.width-max-content {
+  width: max-content !important;
+}
+.top {
+  margin-top: -6.2rem !important;
 }
 .mt-5 {
-    margin-top: 5rem !important;
+  margin-top: 5rem !important;
 }
-.margin-left-right-badge{
-    margin-left: 7px;
-    margin-right: 7px;
+.margin-left-right-badge {
+  margin-left: 7px;
+  margin-right: 7px;
 }
-.absolute{
-    position: absolute !important;
+.absolute {
+  position: absolute !important;
 }
-.relative{
-    position: relative !important;
+.relative {
+  position: relative !important;
 }
-.background-color-gris{
-    background-color:#EFEFEF !important;
+.background-color-gris {
+  background-color: #efefef !important;
 }
-.padding-top-bottom-contenedores{
-    padding-top:10px !important;
-    padding-bottom: 10px !important;
+.padding-top-bottom-contenedores {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
-.padding-top-bottom-0{
-    padding-top:0 !important;
-    padding-bottom: 0 !important;
+.padding-top-bottom-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
-.margin-top-bottom-contenedores{
-    margin-top:10px !important;
-    margin-bottom: 10px !important;
+.margin-top-bottom-contenedores {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
-.margin-top-2rem{
-    margin-top:2rem !important;
+.margin-top-2rem {
+  margin-top: 2rem !important;
+}
+.space-between {
+  justify-content: space-between;
 }
 .space-between{
     justify-content: space-between;

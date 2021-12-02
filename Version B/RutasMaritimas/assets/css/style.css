@@ -63,6 +63,10 @@ body {
     width: 15% !important;
 }
 
+/* .div-mostrar-ruta {
+    max-width: 844px;
+} */
+
 @media (min-width: 400px) {
     .nav-img {
         width: 45% !important;
@@ -73,6 +77,12 @@ body {
     .nav-img {
         width: 35% !important;
     }
+
+    /* .div-mostrar-ruta {
+        margin-left: auto !important; 
+        margin-right: auto !important; 
+        max-width: 844px !important;
+    } */
 }
 
 @media (min-width: 768px) {
@@ -112,6 +122,13 @@ body {
     height: 458px;
 }
 
+.img-principal {
+    /* width: 300px;  */
+    height: 337px; 
+    max-height: 460px;
+    /* max-height: 337px;  */
+    object-fit: cover;
+}
 
 .img-principal-movil{
     position: absolute;
@@ -122,6 +139,16 @@ body {
     position: relative;
     z-index:2;
     justify-items: center;
+}
+
+.primera-tarjeta {
+    /* border: 1px solid red; */
+    width: 100% !important;
+}
+
+.card-personalized {
+    /* border: 1px solid blue; */
+    width: 100% !important;
 }
 
 @supports(object-fit: cover) {
@@ -136,6 +163,10 @@ body {
     .background-img {
         border-radius: 0 !important;
         height: 337px;
+    }
+
+    .card-personalized {
+        height: 280px !important;
     }
 }
 @media all and (min-width: 769px) and (max-width: 992px) {
@@ -343,7 +374,13 @@ body {
 }
 
 .centrado {
-    text-align: -webkit-center
+    text-align: -webkit-center;
+    text-align: center;
+    margin: 16px;
+}
+
+.button-width {
+    max-width: 300px;
 }
 
 .div-left {
@@ -361,6 +398,10 @@ body {
 .btn-movil-buscar {
     text-align: left;
 }
+
+/* .image-drwaback {
+    margin-left: 24px;
+} */
 
 .icon-redes {
     background-color: #C4C4C4;
@@ -789,6 +830,12 @@ body {
 }
 
 @media (min-width: 200px) {
+    .titulo-rutas-maritimas {
+        display: none;
+    }
+    .mobile-width {
+        width: 335px !important;
+    }
     .mostrar-desktop {
         display: none !important;
     }
@@ -1004,7 +1051,28 @@ body {
     }
 }
 
+.line-mostrar-ruta {
+    background-color: #A5ACB0 !important; 
+    margin: auto !important;
+    max-width: 844px !important; 
+    height: 1px !important; 
+    opacity: 0.3;
+}
+
 @media (min-width: 576px) {
+    .titulo-rutas-maritimas {
+        display: block;
+    }
+    .mobile-width {
+        width: 100% !important;
+        max-width: 844px !important;
+    }
+    .card-personalized {
+        /* border: 1px solid blue; */
+        max-width: 844px; 
+        height: 170px !important;
+        margin: auto;
+    }
     .mostrar-desktop {
         display: none !important;
     }
@@ -1517,6 +1585,46 @@ body {
 .btn-outline-light:hover:not(.active) {
     opacity: 100%;
 }
+
+/*nuevo boton*/
+.btn-detalle {
+    background: linear-gradient(rgb(255 255 255 / 0%), rgb(255 255 255 / 0%)) !important;
+    color: #C4122f !important;
+    border: none !important;
+    height: 85px !important;
+    padding-bottom: 35px !important;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.btn-detalle:hover {
+    background: white !important;
+    opacity: 100%;
+    border: 0px solid #0000001a !important; 
+    border-radius: 15px;
+    height: 85px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+    /* opacity: 100%;
+    box-shadow: none;
+    color: #C4122f;
+    font-weight: bold;
+    border: 2px solid #0000001a !important; */
+}
+
+.btn-detalle:active {
+    background: #282828 !important;
+    /* opacity: 100%; */
+    box-shadow: none;
+    border: 2px solid #ffffff;
+    color: #ffffff !important;
+}
+
+.btn-detalle:hover:not(.active) {
+    opacity: 100%;
+}
+
+/*nuevo boton*/
 
 .background-footer-modal {
     background: linear-gradient(rgb(165 172 176 / 10%), rgb(165 172 176 / 10%));

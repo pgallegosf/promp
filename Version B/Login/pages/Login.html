@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/Logo/LOGO PROMPERU.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
     <title>
-        PromPeru - Login
+        PromPeru - Directorio Logístico
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../../common.css">
     <link rel="stylesheet" href="../assets/css/login.css">
+
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
@@ -35,6 +36,7 @@
                     
                     <?xml version="1.0" encoding="utf-8"?>
                     <svg class="nav-img img-responsive" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
 	                    viewBox="0 0 46.46 19.99" style="enable-background:new 0 0 46.46 19.99;" xml:space="preserve">
                         <style type="text/css">
                             .st0{fill:#282828;}
@@ -102,6 +104,7 @@
                             C0.62,6.71,2.91,12.36,6.16,16.21C6.31,16.38,6.68,16.8,6.9,17.06"/>
                     </svg>
 
+
                 </a>
                 
 <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -111,6 +114,7 @@
                     <div class="icon-menu" hidden>
                         <i class="far fa-user"></i>
                     </div>
+                    
                     <div class="icon-menu">
                         <a class="a-menu" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -171,6 +175,7 @@
                                 <div class="centrado col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
                                     <button type="button" class="btn btn-outline-danger width-100 font-H4-bold" onclick="window.location.href='../../Registro/pages/Registro.html'">Regístrate Aquí</button>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -242,8 +247,24 @@
                 </div>
             </footer>-->
         </div>
+        <div style="background: #A5ACB02E;" class="mostrar-movil col-lg-12 col-sm-12 col-md-12 d-flex flex-column align-items-center justify-content-center pt-4 pb-4 mt-5" id="view-registro-login">
+                <div class="hr ocultar-movil background-gris col-8 mt-4"></div>
+                <div class="font-H4-bold negro-promperu col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-3 text-center">¿Aún no tienes una cuenta?</div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-4 d-flex justify-content-center">
+                    <button style="height: 50px !important; text-transform: inherit !important;" type="button" class="font-H4-bold w-80 btn btn-outline-danger" onclick="window.location.href='RegistroDrawback.html'">Regístrate Aquí</button>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- Fin de vista principal -->
+
     </main>
     <!-- Inicio de modales -->
+    <!-- Inicio modal olvidar contraseña -->
+
 
     <!-- Inicio modal recuperar contraseña -->
     <div class="modal fade-second bd-example-modal-sm" id="m-password" tabindex="-1" role="dialog" aria-labelledby="m-password" aria-hidden="true">
@@ -262,7 +283,22 @@
                     <div class="centrado" >
                         <button class="btn btn-danger btn-enviar-pass width-100 font-H4-bold" style="margin-bottom:56px;" type="button">Enviar</button>
                     </div>
+                    <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/img/btn_close.svg" alt="">
+                    </a>
                 </div>
+                    <div class="padding-modal-body">
+                        <div class="col-lg-12 col-md-12 col-sm-12 font-H5-light negro-promperu text-center">
+                            Podemos ayudarte a recuperar tu contraseña, está sera enviado al correo ingresado
+                        </div>
+                        <div class="pt-3">
+                            <label class="negro-promperu font-label text-line-title">Correo Electronico</label>
+                            <input type="text" class="form-control font-H4-light gris-promperu" placeholder="ejemplo@correo.com">
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-primary btn-enviar" type="button">Enviar</button>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -270,6 +306,19 @@
     <!-- Fin de modales -->
     <!-- Inicio menu general destok -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="max-width: 680px !important;">
+        <!--
+        <div class="popover" style="display: none">
+            
+            <div class="row popover-body" style="margin:3px; padding-top:10px !important; padding-bottom:10px !important;">
+                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 padding-left-right-0">
+                    <p class="blanco font-smallprint-medium-light" style="display:inline;">Las tarifas promedio mostradas son referenciales y no incluyen reajustes ni costos adicionales.</p>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 justify-content-end blanco padding-left-right-0" style="display:grid;">
+                    <i class="fas fa-times close-popover ordenar"></i>
+                </div>
+            </div>
+        </div>-->
+
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel" class=" font-size-20 negro-promperu font-H2-bold-700">Herramientas Logísticas</h5>
 
@@ -285,6 +334,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
                     <div class="div-card-dashboard hover"> 
                         <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
+
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Aéreas</p>
                             <img src="../../img-menu-PromPeru/dashboard/avion 1.png" alt="avion" class="icon-dashboard mostrar-desktop">
                             <img src="../../img-menu-PromPeru/dashboard/avion-m.png" alt="avion" class="icon-dashboard mostrar-movil">
@@ -315,6 +365,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
                     <div class="div-card-dashboard hover">
                         <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
+
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Costos de Exportación</p>
                             <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard mostrar-desktop">
                             <img src="../../img-menu-PromPeru/dashboard/image 21.png" alt="avion" class="icon-dashboard mostrar-movil">
@@ -350,6 +401,7 @@
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador <br>de Drawback</p>
                             <!-- <img src="../../img-menu-PromPeru/dashboard/Group 224.png" alt="avion" class="icon-dashboard mostrar-desktop image-drwaback"> -->
                             <img src="../../img-menu-PromPeru/dashboard/Group 224.png" alt="avion" class="icon-dashboard mostrar-desktop image-drwaback" style="width: 100px !important; height: 80px !important;">
+
                             <img src="../../img-menu-PromPeru/dashboard/Group 228.png" alt="avion" class="icon-dashboard mostrar-movil">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Simulador de Drawback</p>
                         </div>
@@ -374,8 +426,9 @@
                     </svg> &nbsp;&nbsp;Visita también</div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="row">
-                    <div class="col-lg-5 col-md-11 col-xs-5 col-sm-5 font-H5-light rojo-promperu pointer font-H4-bold-700n inline margin-visita visita-max-width">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
+                        <div class="col-lg-5 col-md-11 col-xs-5 col-sm-5 font-H5-light rojo-promperu pointer font-H4-bold-700n inline margin-visita visita-max-width">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></div>
                     <div class="col-lg-5 col-md-12 col-xs-5 col-sm-5 font-H5-light rojo-promperu pointer font-H4-bold-700n inline margin-visita">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></div>
+
                 </div>
 
             </div>
@@ -385,6 +438,7 @@
 
     </div>
     <!-- Fin menu general desktop -->
+
     <!--   Core JS Files   -->
     <script src="../assets/js/core/popper.min.js"></script>
     <script src="../assets/js/core/bootstrap.min.js"></script>
@@ -392,6 +446,8 @@
     <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
     <script src="../assets/js/plugins/chartjs.min.js"></script>
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select2/select2.min.js"></script>
+    <script src="../assets/js/tab/app.js"></script>
     <script src="../assets/js/general.js"></script>
     <script src="js/login.js"></script>
     <script src="../../common.js"></script>
