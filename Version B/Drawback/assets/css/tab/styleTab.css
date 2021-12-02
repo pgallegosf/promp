@@ -388,6 +388,9 @@ footer .credits {
 .tab-head {
   display: flex;
   justify-content: center;
+  height: 80px;
+  align-items: center;
+  background: #D2D5D7;
 }
 
 /************************  PARA MOVIL********************/
@@ -406,7 +409,6 @@ footer .credits {
 }
 
 .tabs .divTab .tab-movil > ul li a.active {
-  background: #efefef !important;
   color: #282828;
 }
 
@@ -423,6 +425,12 @@ footer .credits {
   .tab-movil {
     display: block;
   }
+
+  .tab-head {
+    background: #D2D5D73D !important;
+  }
+
+  
 }
 @media (min-width: 576px) {
   .tab-desktop {
@@ -454,5 +462,9 @@ footer .credits {
   }
   .tab-desktop {
     display: block;
+  }
+
+  .tab-head {
+    background: #D2D5D7 !important;
   }
 }

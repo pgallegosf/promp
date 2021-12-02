@@ -1,3 +1,19 @@
+$(document).ready(function () {
+$('.card-ordenar').hide();    
+$('.card-ordenar-movil').hide();    
+
+$('.ptOrdenar').click(function (e) { 
+    $('.card-ordenar').toggle();
+    
+});
+
+$('.ptOrdenarMovil').click(function (e) { 
+    $('.card-ordenar-movil').toggle();
+    
+});
+
+});
+
 $(function() {
     $('[data-bs-toggle="popover"]').popover({
         html: true,

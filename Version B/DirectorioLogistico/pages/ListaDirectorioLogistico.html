@@ -139,8 +139,8 @@
             <!-- Inicio de vista principal -->
             <div class="d-display" id="view-global">
                 
-                <div class="row mt-4 pb-4 div-busqueda padding-card-busqueda">
-                    <div class="col-lg-12 mb-lg-0">
+                <div class="row mt-4 pb-4 div-busqueda justify-content-center">
+                    <div class="col-lg-12 mb-lg-0" style="width: 1023px;">
                             <div class="busquedaNormal row px-2 p-5 overflow-hidden">
                                 <div class="col-lg-8 col-md-8 col-xs-12">
                                     <input type="text" class="form-control busqueda-listado ptOrigen mostrar-desktop ordenar font-H4-light" id="ptBusqueda" value="Selecciona" /><i class="icon-select ptOrigen mostrar-desktop ordenar"><img src="../assets/img/icon-search.svg" alt=""></i>
@@ -157,27 +157,37 @@
                                <!-- <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
                                     <button class="btn btn-second" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
                                 </div>-->
-                                <div class="col-lg-4 col-md-8 col-xs-12">
-                                    <a href="javascript:mostrarBusquedaAvanzada()" class="busqueda-avanzada colorGeneral lineHeight50">
+                                <div id="vista-web" class="col-lg-4 col-md-8 col-xs-12 d-flex justify-content-center align-items-end">
+                                    <a href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral">
+                                        <i><img class="icon-busqueda" src="../assets/img/icon-busqueda-avanzada.svg" alt=""> <label class="font-H5-bold rojo-promperu">&nbsp;Búsqueda avanzada</label></i>
+                                    </a>
+                                </div>
+                                <div id="vista-mobile" class="col-lg-4 col-md-8 col-xs-12 mt-2">
+                                    <a href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral">
                                         <i><img class="icon-busqueda" src="../assets/img/icon-busqueda-avanzada.svg" alt=""> <label class="font-H5-bold rojo-promperu">&nbsp;Búsqueda avanzada</label></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="busquedaNormal overflow-hidden row">
                                 <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
+                                    <div id="vista-web" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
                                         <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold negro-promperu">
-                                            6 Empresas <label class="font-H5-light">encontradas para Agente de Aduanas</label>
+                                            6 Empresas <span class="font-H5-light">encontradas para Agente de Aduanas</span>
+                                        </div>
+                                    </div>
+                                    <div id="vista-mobile" class="mx-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
+                                        <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold negro-promperu" style="font-size: 18px !important;">
+                                            6 Empresas <span style="font-size: 18px !important;" class="font-H5-light">encontradas para Agente de Aduanas</span>
                                         </div>
                                     </div>
 
-                                    <div id="vista-filtro" class="vista-mobile-filtro col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-H4-bold negro-promperu">
+                                    <div id="vista-filtro" class="mx-3 vista-mobile-filtro col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-H4-bold negro-promperu">
                                     Filtrar:
                                     <a href="javascript:mostrarFiltros()"><img src="../assets/img/icon-filtro.svg" alt=""></a>
                                     </div>
 
                                     <div id="vista-det-filtro" class="d-none col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
-                                        <div class="row col-xl-10 col-lg-12 col-md-12 col-sm-10 col-xs-12 mt-4 ">
+                                        <div class="row col-xl-10 col-lg-12 col-md-12 col-sm-10 col-xs-12 mt-4 px-2">
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <div class="row">
                                                   <div class="col-sm-5 d-flex align-items-end">     
@@ -239,15 +249,15 @@
                                     </div>
 
                                     <div id="vista-web" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
-                                        <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 ">
+                                        <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4" style="width: 766px;">
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <div class="row">
                                                   <div class="col-lg-4 col-md-4 d-flex align-items-end">
                                                     <label class="font-H4-bold">Rubro:</label>
                                                   </div>
-                                                  <div class="col-lg-8 col-md-8">
-                                                    <input type="text" class="form-control busqueda-listado ptRubroFil mostrar-desktop ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                                    <input type="text" class="form-control busqueda-listado ptRubroMovilFil mostrar-movil ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                                  <div class="col-lg-6 col-md-6">
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptRubroFil mostrar-desktop ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptRubroMovilFil mostrar-movil ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                   </div>
                                                 </div>  
@@ -262,12 +272,12 @@
                                             </div>
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                                 <div class="row">
-                                                    <div class="col-lg-4 col-md-4 d-flex align-items-end">
+                                                    <div class="col-lg-5 col-md-4 d-flex align-items-end">
                                                         <label class="font-H4-bold">Ubicación</label>
                                                     </div>
-                                                    <div class="col-lg-8 col-md-8">
-                                                        <input type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                                        <input type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                                    <div class="col-lg-6 col-md-8">
+                                                        <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                        <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                         <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                     </div>
                                                 </div>
@@ -282,12 +292,12 @@
                                             </div>
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                                 <div class="row">
-                                                   <div class="col-lg-5 col-md-5 d-flex align-items-end">
+                                                   <div class="col-lg-7 col-md-7 d-flex align-items-end">
                                                     <label class="font-H4-bold">Ordernar por</label>
                                                    </div>
-                                                   <div class="col-lg-7 col-md-7">
-                                                    <input type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                                    <input type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                                   <div class="col-lg-5 col-md-5">
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                    </div>
                                                 </div>
@@ -391,7 +401,7 @@
                             </div>
                             <div class="busquedaAvanzada row px-2  overflow-hidden">
                                 <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
-                                    <button class="btn btn-second btnwidth100" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
+                                    <button class="btn btn-danger font-H4-bold btnwidth100" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 mostrar-desktop">
                                     <a href="javascript:ocultarBusquedaAvanzada()" class="colorGeneral subrayado lineHeight50">
@@ -402,19 +412,24 @@
                             <hr class="busquedaAvanzada overflow-hidden mostrar-movil">
                             <div class="busquedaAvanzada overflow-hidden row">
                                 <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
+                                    <div id="vista-web" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
                                         <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold negro-promperu">
                                             6 Empresas <label class="font-H5-light">encontradas para Agente de Aduanas</label>
                                         </div>
                                     </div>
+                                    <div id="vista-mobile" class="mx-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
+                                        <div style="font-size: 18px !important;" class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold negro-promperu">
+                                            6 Empresas <span style="font-size: 18px !important;" class="font-H5-light">encontradas para Agente de Aduanas</span>
+                                        </div>
+                                    </div>
 
-                                    <div id="vista-filtro-avanzado" class="vista-mobile-filtro col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-H4-bold negro-promperu">
+                                    <div id="vista-filtro-avanzado" class="vista-mobile-filtro mx-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-H4-bold negro-promperu">
                                     Filtrar:
                                     <a href="javascript:mostrarFiltrosAvanzado()"><img src="../assets/img/icon-filtro.svg" alt=""></a>
                                     </div>
 
                                     <div id="vista-det-avanzada-filtro" class="d-none col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
-                                        <div class="row col-xl-10 col-lg-12 col-md-12 col-sm-10 col-xs-12 mt-4 ">
+                                        <div class="px-2 row col-xl-10 col-lg-12 col-md-12 col-sm-10 col-xs-12 mt-4 ">
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <div class="row">
                                                   <div class="col-sm-5 d-flex align-items-end">     
@@ -476,15 +491,15 @@
                                     </div>
 
                                     <div id="vista-web" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
-                                        <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 ">
+                                        <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4" style="width: 766px;">
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <div class="row">
                                                   <div class="col-lg-4 col-md-4 d-flex align-items-end">
                                                     <label class="font-H4-bold">Rubro:</label>
                                                   </div>
-                                                  <div class="col-lg-8 col-md-8">
-                                                    <input type="text" class="form-control busqueda-listado ptRubroFil mostrar-desktop ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                                    <input type="text" class="form-control busqueda-listado ptRubroMovilFil mostrar-movil ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                                  <div class="col-lg-6 col-md-6">
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptRubroFil mostrar-desktop ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptRubroMovilFil mostrar-movil ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                   </div>
                                                 </div>  
@@ -499,12 +514,12 @@
                                             </div>
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                                 <div class="row">
-                                                    <div class="col-lg-4 col-md-4 d-flex align-items-end">
+                                                    <div class="col-lg-5 col-md-4 d-flex align-items-end">
                                                         <label class="font-H4-bold">Ubicación</label>
                                                     </div>
-                                                    <div class="col-lg-8 col-md-8">
-                                                        <input type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                                        <input type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                                    <div class="col-lg-6 col-md-8">
+                                                        <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                        <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                         <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                     </div>
                                                 </div>
@@ -519,12 +534,12 @@
                                             </div>
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                                 <div class="row">
-                                                   <div class="col-lg-5 col-md-5 d-flex align-items-end">
+                                                   <div class="col-lg-7 col-md-7 d-flex align-items-end">
                                                     <label class="font-H4-bold">Ordernar por</label>
                                                    </div>
-                                                   <div class="col-lg-7 col-md-7">
-                                                    <input type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                                    <input type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                                   <div class="col-lg-5 col-md-5">
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                    </div>
                                                 </div>
@@ -541,27 +556,34 @@
                             </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="row padding-list-directorios">
+                <div class="row justify-content-center">
+                    <div class="row" style="width: 1023px;">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
                             <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 mb-8">
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-lg-start text-sm-start font-h3-bold negro-promperu mayuscula pb-3">
-                                        Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                        <div class="row">
+                                          <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-6 col-md-11 col-sm-11 font-h3-bold negro-promperu">
+                                            Antares Aduanas SAC 
+                                          </div>
+                                          <div class="col-lg-1 col-md-1 col-sm-1">
+                                            <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
+                                          </div>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
                                         <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
                                         <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años de experiencia
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
-                                        <p class="font-H4-light negro-promperu descripcion-empresa">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                        <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
                                             Nacimos para brindar servicios de agenciamiento aduanero.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right correoDetalle">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
                                         </div>
@@ -589,26 +611,33 @@
                                             <i><img src="../assets/img/icon-phone.svg" alt=""></i>
                                         </div>
                                         <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">(01)6163900 / 94140939)</label>
+                                            <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row pt-5"><br></div>
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-lg-start text-sm-start font-h3-bold negro-promperu mayuscula pb-3">
-                                        Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                        <div class="row">
+                                          <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-6 col-md-11 col-sm-11 font-h3-bold negro-promperu">
+                                            Antares Aduanas SAC 
+                                          </div>
+                                          <div class="col-lg-1 col-md-1 col-sm-1">
+                                            <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
+                                          </div>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
                                         <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
                                         <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i>10 años de experiencia
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
                                         <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right correoDetalle">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
                                         </div>
@@ -636,26 +665,33 @@
                                             <i><img src="../assets/img/icon-phone.svg" alt=""></i>
                                         </div>
                                         <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">(01)6163900 / 94140939)</label>
+                                            <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row pt-5"><br></div>
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-lg-start text-sm-start font-h3-bold negro-promperu mayuscula pb-3">
-                                        Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                        <div class="row">
+                                          <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-6 col-md-11 col-sm-11 font-h3-bold negro-promperu">
+                                            Antares Aduanas SAC 
+                                          </div>
+                                          <div class="col-lg-1 col-md-1 col-sm-1">
+                                            <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
+                                          </div>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
                                         <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
                                         <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i>10 años de experiencia
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
                                         <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right correoDetalle">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
                                         </div>
@@ -683,26 +719,33 @@
                                             <i><img src="../assets/img/icon-phone.svg" alt=""></i>
                                         </div>
                                         <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">(01)6163900 / 94140939)</label>
+                                            <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row pt-5"><br></div>
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-lg-start text-sm-start font-h3-bold negro-promperu mayuscula pb-3">
-                                        Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                        <div class="row">
+                                          <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-6 col-md-11 col-sm-11 font-h3-bold negro-promperu">
+                                            Antares Aduanas SAC 
+                                          </div>
+                                          <div class="col-lg-1 col-md-1 col-sm-1">
+                                            <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
+                                          </div>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
                                         <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
                                         <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i>10 años de experiencia
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
                                         <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right correoDetalle">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
                                         </div>
@@ -730,26 +773,33 @@
                                             <i><img src="../assets/img/icon-phone.svg" alt=""></i>
                                         </div>
                                         <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">(01)6163900 / 94140939)</label>
+                                            <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row pt-5"><br></div>
                                 <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-lg-start text-sm-start font-h3-bold negro-promperu mayuscula pb-3">
-                                        Antares Aduanas SAC <a href="DetalleDirectorio.html"><i class="fas fa-arrow-circle-right font-size-20 color-primary"></i></a>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                        <div class="row">
+                                          <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-6 col-md-11 col-sm-11 font-h3-bold negro-promperu">
+                                            Antares Aduanas SAC 
+                                          </div>
+                                          <div class="col-lg-1 col-md-1 col-sm-1">
+                                            <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
+                                          </div>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
                                         <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-size-13 color-second">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
                                         <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i>10 años de experiencia
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
                                         <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right correoDetalle">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
                                         </div>
@@ -777,7 +827,7 @@
                                             <i><img src="../assets/img/icon-phone.svg" alt=""></i>
                                         </div>
                                         <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">(01)6163900 / 94140939)</label>
+                                            <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
                                         </div>
                                     </div>
                                 </div>
@@ -788,1869 +838,30 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-7">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled font-color-red">
+                                        <a class="" href="#" tabindex="-1" aria-disabled="true"><img src="../assets/img/icon-left.png" alt=""></a>
+                                    </li>
+                                    <li class="page-item mx-4"><a class="font-H5-bold negro-promperu" href="#">1</a></li>
+                                    <li class="page-item mx-3"><a class="font-H5-light negro-promperu" href="#">2</a></li>
+                                    <li class="page-item mx-4"><a class="font-H5-light negro-promperu" href="#">3</a></li>
+                                    <li class="page-item font-color-red">
+                                        <a class="" href="#"><img src="../assets/img/icon-right.png" alt=""></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
                 
-                
-                <div class="d-none" id="view-rutas">
-                    <!-- Inicio ruta vista desktop -->
-                    <div class="d-none" id="vistaRutaDesktop">
-                        <div class="row mt-4 div-centrado">
-                            <div class="col-lg-12 mb-lg-0">
-                                <div class="card opacidad">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="col-4 div-left titulo">Costa Este EE.UU.</div>
-                                            <div class="col-2 div-left font-color-black mt-2">7 paradas</div>
-                                            <div class="col-4 div-left refresh mt-2">
-                                                <div class="div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                                    <i class="far fa-map icon-refresh"></i>
-                                                </div>
-                                                <div class="div-left col-6">Ver mapa</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="div-left div-line-time">
-                                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
-                                                <div class="div-right position-line-right">
-                                                    <div class="text-line-title font-color-black">Callao</div>
-                                                    <div class="text-pais font-color-black">Perú</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>7 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Manzanillo</div>
-                                                <div class="text-pais font-color-black">México</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>4 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Long Beach</div>
-                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>3 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Los Ángeles</div>
-                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>3 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Oakland</div>
-                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>5 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Vancouver</div>
-                                                <div class="text-pais font-color-black">Canada</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>5 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left div-line-time">
-                                                <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
-                                                <div class="centro position-line-left">
-                                                    <div class="text-line-title font-color-black">Seattle</div>
-                                                    <div class="text-pais font-color-black font-color-black">EE.UU.</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4 div-centrado">
-                            <div class="col-lg-12 mb-lg-0">
-                                <div class="card opacidad">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="col-4 div-left titulo">Costa Oeste EE.UU.</div>
-                                            <div class="col-2 div-left font-color-black mt-2">10 paradas</div>
-                                            <div class="col-4 div-left refresh mt-2" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                                <div class="div-left">
-                                                    <i class="far fa-map icon-refresh"></i>
-                                                </div>
-                                                <div class="div-left col-6">Ver mapa</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="div-left div-line-time">
-                                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
-                                                <div class="div-right position-line-right">
-                                                    <div class="text-line-title font-color-black">Callao</div>
-                                                    <div class="text-pais font-color-black">Perú</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>2 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Balboa</div>
-                                                <div class="text-pais font-color-black">Pánama</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>3 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Miami</div>
-                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>3 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Port Everglades</div>
-                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>2 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Charleston</div>
-                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>3 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Norfolk</div>
-                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>1 día</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Baltimore</div>
-                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>2 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">New York</div>
-                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>1 día</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Montreal</div>
-                                                <div class="text-pais font-color-black">Cánada</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>1 día</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left div-line-time">
-                                                <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
-                                                <div class="centro position-line-left">
-                                                    <div class="text-line-title font-color-black">Avonlea</div>
-                                                    <div class="text-pais font-color-black font-color-black">Cánada</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4 div-centrado">
-                            <div class="col-lg-12 mb-lg-0">
-                                <div class="card opacidad">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="col-4 div-left titulo">Costa Golfo EE.UU.</div>
-                                            <div class="col-2 div-left font-color-black mt-2">8 paradas</div>
-                                            <div class="col-4 div-left refresh mt-2" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                                <div class="div-left">
-                                                    <i class="far fa-map icon-refresh"></i>
-                                                </div>
-                                                <div class="div-left col-6">Ver mapa</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="div-left div-line-time">
-                                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
-                                                <div class="div-right position-line-right">
-                                                    <div class="text-line-title font-color-black">Matarani</div>
-                                                    <div class="text-pais font-color-black">Perú</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>1 día</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Callao</div>
-                                                <div class="text-pais font-color-black">Perú</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>1 día</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Paita</div>
-                                                <div class="text-pais font-color-black">Perú</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>2 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Cartagena</div>
-                                                <div class="text-pais font-color-black">Colombia</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>2 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Puerto cabello</div>
-                                                <div class="text-pais font-color-black">Venezuela</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>5 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Vera Cruz</div>
-                                                <div class="text-pais font-color-black">México</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>3 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-4">
-                                                <i class="fas fa-dot-circle"></i>
-                                                <div class="text-line-title font-color-black">Houston</div>
-                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>2 días</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left div-line-time">
-                                                <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
-                                                <div class="centro position-line-left">
-                                                    <div class="text-line-title font-color-black">Avonlea</div>
-                                                    <div class="text-pais font-color-black font-color-black">Cánada</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4 div-centrado">
-                            <div class="col-lg-12 mb-lg-0">
-                                <div class="card opacidad">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="col-4 div-left titulo">EE.UU. Pacífico</div>
-                                            <div class="col-2 div-left font-color-black mt-2">Sin paradas</div>
-                                            <div class="col-4 div-left refresh mt-2" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                                <div class="div-left">
-                                                    <i class="far fa-map icon-refresh"></i>
-                                                </div>
-                                                <div class="div-left col-6">Ver mapa</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="div-left div-line-time">
-                                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
-                                                <div class="div-right position-line-right">
-                                                    <div class="text-line-title font-color-black">Callao</div>
-                                                    <div class="text-pais font-color-black">Perú</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left mt-2">
-                                                <div class="font-color-black">
-                                                    <div>1 día</div>
-                                                    <div>-------</div>
-                                                </div>
-                                            </div>
-                                            <div class="div-left div-line-time">
-                                                <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
-                                                <div class="centro position-line-left">
-                                                    <div class="text-line-title font-color-black">Avonlea</div>
-                                                    <div class="text-pais font-color-black font-color-black">Cánada</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fin ruta vista desktop -->
-                    <!-- Inicio ruta vista Movil -->
-                    <div class="d-none" id="vistaRutaMovil">
-                        <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
-                            <div class="card">
-                                <div class="card-body px-0 pb-2">
-                                    <div class="table-responsive">
-                                        <table class="table align-items-center mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Costa Este EE.UU.</th>
-                                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">7 paradas</th>
-                                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                        <div class="col-4 div-left refresh mt-2">
-                                                            <div class="div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                                                <i class="far fa-map icon-refresh"></i>
-                                                            </div>
-                                                            <div class="div-left col-6">Ver mapa</div>
-                                                        </div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>
-                                                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" class="avatar avatar-sm me-3" alt="xd">
-                                                                <div>
-                                                                    <div class="text-line-title font-color-black">Callao</div>
-                                                                    <div class="text-pais font-color-black">Perú</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>7 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Manzanillo</div>
-                                                                <div class="text-pais font-color-black">México</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>4 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Long Beach</div>
-                                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>3 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Los Ángeles</div>
-                                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>3 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Oakland</div>
-                                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>5 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Vancouver</div>
-                                                                <div class="text-pais font-color-black">Canada</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>5 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>
-                                                            <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" class="avatar avatar-sm me-3" alt="xd">
-                                                            <div>
-                                                                <div class="text-line-title font-color-black">Seattle</div>
-                                                                <div class="text-pais font-color-black">EE.UU</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
-                            <div class="card">
-                                <div class="card-body px-0 pb-2">
-                                    <div class="table-responsive">
-                                        <table class="table align-items-center mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Costa Oeste EE.UU.</th>
-                                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">10 paradas</th>
-                                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                        <div class="col-4 div-left refresh mt-2">
-                                                            <div class="div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                                                <i class="far fa-map icon-refresh"></i>
-                                                            </div>
-                                                            <div class="div-left col-6">Ver mapa</div>
-                                                        </div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>
-                                                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" class="avatar avatar-sm me-3" alt="xd">
-                                                                <div>
-                                                                    <div class="text-line-title font-color-black">Callao</div>
-                                                                    <div class="text-pais font-color-black">Perú</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>2 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Balboa</div>
-                                                                <div class="text-pais font-color-black">Pánama</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>3 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Miami</div>
-                                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>3 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Port Everglades</div>
-                                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>2 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Charleston</div>
-                                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>3 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Norfolt</div>
-                                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>1 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Baltimore</div>
-                                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>2 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">New York</div>
-                                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>1 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Montreal</div>
-                                                                <div class="text-pais font-color-black">Canada</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>1 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>
-                                                            <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" class="avatar avatar-sm me-3" alt="xd">
-                                                            <div>
-                                                                <div class="text-line-title font-color-black">Avonlea</div>
-                                                                <div class="text-pais font-color-black">Canada</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
-                            <div class="card">
-                                <div class="card-body px-0 pb-2">
-                                    <div class="table-responsive">
-                                        <table class="table align-items-center mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Costa Golfo EE.UU.</th>
-                                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">8 paradas</th>
-                                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                        <div class="col-4 div-left refresh mt-2">
-                                                            <div class="div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                                                <i class="far fa-map icon-refresh"></i>
-                                                            </div>
-                                                            <div class="div-left col-6">Ver mapa</div>
-                                                        </div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>
-                                                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" class="avatar avatar-sm me-3" alt="xd">
-                                                                <div>
-                                                                    <div class="text-line-title font-color-black">Matarani</div>
-                                                                    <div class="text-pais font-color-black">Perú</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>1 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Callao</div>
-                                                                <div class="text-pais font-color-black">Perú</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>1 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Paita</div>
-                                                                <div class="text-pais font-color-black">Perú</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>2 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Cartagena</div>
-                                                                <div class="text-pais font-color-black">Colombia</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>2 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Puerto Cabello</div>
-                                                                <div class="text-pais font-color-black">Venezuela</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>5 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Vera Cruz</div>
-                                                                <div class="text-pais font-color-black">México</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>3 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div class="div-left">
-                                                                <i class="fas fa-dot-circle"></i>
-                                                                <div class="text-line-title font-color-black">Houston</div>
-                                                                <div class="text-pais font-color-black">EE.UU.</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>2 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>
-                                                            <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" class="avatar avatar-sm me-3" alt="xd">
-                                                            <div>
-                                                                <div class="text-line-title font-color-black">Avonlea</div>
-                                                                <div class="text-pais font-color-black">Canada</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
-                            <div class="card">
-                                <div class="card-body px-0 pb-2">
-                                    <div class="table-responsive">
-                                        <table class="table align-items-center mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Costa Golfo EE.UU.</th>
-                                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Sin paradas</th>
-                                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                        <div class="col-4 div-left refresh mt-2">
-                                                            <div class="div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                                                <i class="far fa-map icon-refresh"></i>
-                                                            </div>
-                                                            <div class="div-left col-6">Ver mapa</div>
-                                                        </div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>
-                                                                <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" class="avatar avatar-sm me-3" alt="xd">
-                                                                <div>
-                                                                    <div class="text-line-title font-color-black">Callao</div>
-                                                                    <div class="text-pais font-color-black">Perú</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex px-2 py-1">
-                                                            <div>1 días</div>
-                                                            <div>--------</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>
-                                                            <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" class="avatar avatar-sm me-3" alt="xd">
-                                                            <div>
-                                                                <div class="text-line-title font-color-black">Avonlea</div>
-                                                                <div class="text-pais font-color-black">Canada</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- fin ruta vista Movil -->
-                </div>
+            
             </div>
             <!-- Fin de vista principal -->
             <!-- Inicio de vista resultado de busqueda de rutas desktop -->
-            <div class="d-none" id="view-busqueda">
-                <div class="card mb-4">
-                    <div class="card-body p-3">
-                        <div class="row">
-                            <div class="col-xl-4 col-md-6 mb-xl-0 mb-4 mt-2">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <h4 class="font-weight-bold min-titulo">Paita</h4> <span class="span font-weight-bold">Peru</span>
-                                    </div>
-                                    <div class="icon"> <i class="fas fa-arrow-right"></i> </div>
-                                    <div>
-                                        <h4 class="font-weight-bold min-titulo">Seattle</h4> <span class="span font-weight-bold">EE.UU.</span> </div>
-                                </div>
-                                <div class="hr mt-4"></div>
-                                <div class="mt-5 car-body-descripcion">
-                                    1 ruta
-                                </div>
-                                <div class="refresh mt-4" id="btn-volver-buscar" onclick="window.location.href='ListaDirectorioLogistico.html'">
-                                    <i class="fas fa-undo-alt icon-refresh"></i> Volver a buscar
-                                </div>
-                            </div>
-                            <div class="col-xl-8 centrado">
-                                <div class="refresh m-left" id="btn-Ordenar">
-                                    <i class="fas fa-long-arrow-alt-down icon-refresh"><i class="fas fa-long-arrow-alt-up"></i></i>Cambiar el orden
-                                </div>
-                                <div id="container-desktop">
-                                    <div class="col-8 div-float-right mt-3">
-                                        <div class="card h-100">
-                                            <div class="card-header pb-0 p-3 card-header-titulo">
-                                                <h6 class="mb-3">Ruta: Costa Oeste EE.UU</h6>
-                                            </div>
-                                            <div class="card-body p-3">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="col-4 div-left car-body-title">Número de paradas</div>
-                                                        <div class="col-4 div-left car-body-title">Días de tránsito</div>
-                                                        <div class=" col-4 refresh end div-left" onclick="verDetalle()">
-                                                            <i class="fas fa-plus icon-refresh"></i>Ver detalle
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 car-body-descripcion">7 paradas</div>
-                                                    <div class="col-4 car-body-descripcion">27 días</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-8 div-float-right mt-3">
-                                        <div class="card h-100">
-                                            <div class="card-header pb-0 p-3 card-header-titulo">
-                                                <h6 class="mb-3">Ruta: Costa Oeste EE.UU</h6>
-                                            </div>
-                                            <div class="card-body p-3">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="col-4 div-left car-body-title">Número de paradas</div>
-                                                        <div class="col-4 div-left car-body-title">Días de tránsito</div>
-                                                        <div class=" col-4 refresh end div-left" onclick="verDetalle()">
-                                                            <i class="fas fa-plus icon-refresh"></i>Ver detalle
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 car-body-descripcion">7 paradas</div>
-                                                    <div class="col-4 car-body-descripcion">27 días</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-8 div-float-right mt-3">
-                                        <div class="card h-100">
-                                            <div class="card-header pb-0 p-3 card-header-titulo">
-                                                <h6 class="mb-3">Ruta: Costa Oeste EE.UU</h6>
-                                            </div>
-                                            <div class="card-body p-3">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="col-4 div-left car-body-title">Número de paradas</div>
-                                                        <div class="col-4 div-left car-body-title">Días de tránsito</div>
-                                                        <div class=" col-4 refresh end div-left" onclick="verDetalle()">
-                                                            <i class="fas fa-plus icon-refresh"></i>Ver detalle
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 car-body-descripcion">7 paradas</div>
-                                                    <div class="col-4 car-body-descripcion">27 días</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-none" id="container-movil">
-                                    <div class="col-8 div-float-right width-movil">
-                                        <div class="card h-100">
-                                            <div class="card-header pb-0 p-3 card-header-movil">
-                                                <h6 class="mb-3">Ruta: Sudamerica - Europea</h6>
-                                            </div>
-                                            <div class="card-body p-3">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="col-12 div-left car-body-title">Tiempo de Viaje</div>
-                                                        <div class="col-4 div-left car-body-descripcion">3 días</div>
-                                                        <div class="col-4 div-left car-body-descripcion">1 hrs</div>
-                                                        <div class="col-4 div-left car-body-descripcion">24 min</div>
-                                                        <div class="col-12 div-left car-body-title">Nro. de escalas</div>
-                                                        <div class="col-12 div-left car-body-descripcion">2 escalas</div>
-                                                        <div class=" col-8 refresh div-left btn-movil-buscar mt-3" onclick="verDetalle()">
-                                                            <i class="fas fa-plus icon-refresh"></i>Ver detalle
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-none" id="btn-buscar-movil">
-                        <button class="btn btn-outline-danger" type="button" id="v-buscar" onclick="volverBuscar()">Volver a buscar</button>
-                    </div>
-                </div>
-            </div>
             <!-- Fin de vista resultado de busqueda de rutas desktop -->
             <!-- Inicio vista ver detalle de busqueda de ruta desktop -->
-            <div class="d-none" id="view-line-time-desktop">
-                <div class="row mt-4 div-centrado">
-                    <div class="col-lg-12 mb-lg-0">
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="row container-detalle">
-                                        <div class="col-6 container-detalle-subtitulo mt-2">
-                                            Costa Oeste EE.UU.
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-between mt-2">
-                                            <div>
-                                                <h4 class="font-weight-bold min-titulo">Paita</h4> <span class="span font-weight-bold">Perú</span>
-                                            </div>
-                                            <div class="icon"> <i class="fas fa-arrow-right" aria-hidden="true"></i> </div>
-                                            <div>
-                                                <h4 class="font-weight-bold min-titulo">Seattle</h4> <span class="span font-weight-bold">EE.UU.</span> </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 mt-4">
-                                                <div class="col-4 div-left container-detalle-subtitulo">Nro de paradas</div>
-                                                <div class="col-4 div-left container-detalle-subtitulo">Días de tránsito</div>
-                                                <div class="col-4 div-left container-detalle-subtitulo">Frecuencias de salidas</div>
-                                                <div class="col-4 div-left font-color-black">7 paradas</div>
-                                                <div class="col-4 div-left font-color-black">7 paradas</div>
-                                                <div class="col-4 div-left font-color-black">7 paradas</div>
-                                            </div>
-                                        </div>
-                                        <div class="container-detalle-titulo mt-3">Flete promedio por container</div>
-                                        <div><span class="span-container-detalle font-color-black">Actualizados al: 4 de marzo del 2021</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-5 mt-4">
-                                                <label class="container-detalle-subtitulo"> Tipo de container</label>
-                                                <input type="text" class="form-control" id="tipContainer" value="Dry Van 20'" /><i class="fas fa-angle-down icon-select"></i>
-                                            </div>
-                                            <div class="col-5 mt-4">
-                                                <div class="costo font-color-black">
-                                                    $ 1,800
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="">
-                                        <div class="effect">
-                                            <div class="div-effect">
-                                                <div class="img-icon refresh"></div>
-                                                <div class="img-icon-text">Conoce los tipos de containers</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <img src="../assets/img/Ruta_Marina/mapa_Paita a Seattle.png" alt="mapa" class="img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-4 div-centrado">
-                    <div class="col-lg-12 mb-lg-0">
-                        <div class="card opacidad">
-                            <div class="row">
-                                <div class="col-12 titulo">Paradas de las rutas</div>
-                                <div class="col-12">
-                                    <div class="div-left div-line-time">
-                                        <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
-                                        <div class="div-right position-line-right">
-                                            <div class="text-line-title font-color-black">Paita</div>
-                                            <div class="text-pais font-color-black">Perú</div>
-                                        </div>
-                                    </div>
-                                    <div class="div-left mt-2">
-                                        <div class="font-color-black">
-                                            <div>7 días</div>
-                                            <div>-------</div>
-                                        </div>
-                                    </div>
-                                    <div class="div-left mt-4">
-                                        <i class="fas fa-dot-circle"></i>
-                                        <div class="text-line-title font-color-black">Manzanillo</div>
-                                        <div class="text-pais font-color-black">México</div>
-                                    </div>
-                                    <div class="div-left mt-2">
-                                        <div class="font-color-black">
-                                            <div>4 días</div>
-                                            <div>-------</div>
-                                        </div>
-                                    </div>
-                                    <div class="div-left mt-4">
-                                        <i class="fas fa-dot-circle"></i>
-                                        <div class="text-line-title font-color-black">Long Beach</div>
-                                        <div class="text-pais font-color-black">EE.UU.</div>
-                                    </div>
-                                    <div class="div-left mt-2">
-                                        <div class="font-color-black">
-                                            <div>3 días</div>
-                                            <div>-------</div>
-                                        </div>
-                                    </div>
-                                    <div class="div-left mt-4">
-                                        <i class="fas fa-dot-circle"></i>
-                                        <div class="text-line-title font-color-black">Los Ángeles</div>
-                                        <div class="text-pais font-color-black">EE.UU.</div>
-                                    </div>
-                                    <div class="div-left mt-2">
-                                        <div class="font-color-black">
-                                            <div>3 días</div>
-                                            <div>-------</div>
-                                        </div>
-                                    </div>
-                                    <div class="div-left mt-4">
-                                        <i class="fas fa-dot-circle"></i>
-                                        <div class="text-line-title font-color-black">Oakland</div>
-                                        <div class="text-pais font-color-black">EE.UU.</div>
-                                    </div>
-                                    <div class="div-left mt-2">
-                                        <div class="font-color-black">
-                                            <div>5 días</div>
-                                            <div>-------</div>
-                                        </div>
-                                    </div>
-                                    <div class="div-left mt-4">
-                                        <i class="fas fa-dot-circle"></i>
-                                        <div class="text-line-title font-color-black">Vancouver</div>
-                                        <div class="text-pais font-color-black">Canada</div>
-                                    </div>
-                                    <div class="div-left mt-2">
-                                        <div class="font-color-black">
-                                            <div>5 días</div>
-                                            <div>-------</div>
-                                        </div>
-                                    </div>
-                                    <div class="div-left div-line-time">
-                                        <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
-                                        <div class="centro position-line-left">
-                                            <div class="text-line-title font-color-black">Seattle</div>
-                                            <div class="text-pais font-color-black font-color-black">EE.UU.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 titulo">
-                        Líneas navieras
-                    </div>
-                    <div class="col-12 centrado">
-                        Ordenar por:
-                        <div class="ordenar">A-Z <i class="fas fa-angle-down icon-ordenar" aria-hidden="true"></i></div>
-                    </div>
-                </div>
-                <div class="card div-centrado container-line-naviera">
-                    <div class="card-body p-3">
-                        <div class="row">
-                            <div class="col-2 div-left">
-                                <div class="col-6 text-line-title font-color-black">
-                                    Evergreen
-                                </div>
-                            </div>
-                            <div class="col-2 div-left text-line-title font-color-black">Días de tránsito</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Agente</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Depósito</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Frecuencia de salida</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Sitio web</div>
-                            <div class="col-2 div-left">
-                                <div class="col-6"></div>
-                            </div>
-                            <div class="col-2 div-left">26 días</div>
-                            <div class="col-2 div-left">GREENANDES</div>
-                            <div class="col-2 div-left">TPP</div>
-                            <div class="col-2 div-left">Semanal</div>
-                            <div class="col-2 div-left">www.evergreen-line.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card div-centrado container-line-naviera">
-                    <div class="card-body p-3">
-                        <div class="row">
-                            <div class="col-2 div-left">
-                                <div class="col-6 text-line-title font-color-black">
-                                    MSC
-                                </div>
-                            </div>
-                            <div class="col-2 div-left text-line-title font-color-black">Días de tránsito</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Agente</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Depósito</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Frecuencia de salida</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Sitio web</div>
-                            <div class="col-2 div-left">
-                                <div class="col-6"></div>
-                            </div>
-                            <div class="col-2 div-left">26 días</div>
-                            <div class="col-2 div-left">MSC PERÚ</div>
-                            <div class="col-2 div-left">LICSA</div>
-                            <div class="col-2 div-left">Semanal</div>
-                            <div class="col-2 div-left">www.msc.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card div-centrado container-line-naviera">
-                    <div class="card-body p-3">
-                        <div class="row">
-                            <div class="col-2 div-left">
-                                <div class="col-6 text-line-title font-color-black">
-                                    MAERSK LINE
-                                </div>
-                            </div>
-                            <div class="col-2 div-left text-line-title font-color-black">Días de tránsito</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Agente</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Depósito</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Frecuencia de salida</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Sitio web</div>
-                            <div class="col-2 div-left">
-                                <div class="col-6"></div>
-                            </div>
-                            <div class="col-2 div-left">26 días</div>
-                            <div class="col-2 div-left">MAERSK PERÚ</div>
-                            <div class="col-2 div-left">ALCONSA</div>
-                            <div class="col-2 div-left">Semanal</div>
-                            <div class="col-2 div-left">www.maersk.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card div-centrado container-line-naviera">
-                    <div class="card-body p-3">
-                        <div class="row">
-                            <div class="col-2 div-left">
-                                <div class="col-6 text-line-title font-color-black">
-                                    HAMBURG SUD
-                                </div>
-                            </div>
-                            <div class="col-2 div-left text-line-title font-color-black">Días de tránsito</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Agente</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Depósito</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Frecuencia de salida</div>
-                            <div class="col-2 div-left text-line-title font-color-black">Sitio web</div>
-                            <div class="col-2 div-left">
-                                <div class="col-6"></div>
-                            </div>
-                            <div class="col-2 div-left">26 días</div>
-                            <div class="col-2 div-left">Cosmos</div>
-                            <div class="col-2 div-left">LICSA</div>
-                            <div class="col-2 div-left">Semanal</div>
-                            <div class="col-2 div-left">www.hamburg-sud-line.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="div-botton">
-                        <div class="div-effect">
-                            <div class="img-icon refresh"></div>
-                            <div class="img-icon-text col-12">Encuentra más información en Directorio Logístico</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="hr col-8 background-gris"></div>
-                </div>
-                <div class="row posicion">
-                    <div class="col-4 mt-6">
-                        <div class="font-color-black titulo">
-                            Guarda o descarga el resultado de tu búsqueda
-                        </div>
-                    </div>
-                    <div class="col-6 font-color-red centrado mt-6">
-                        <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-login">
-                            <i class="far fa-bookmark icon-btn"></i>
-                            <div class="text-line-title">Guardar resultado</div>
-                        </div>
-                        <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="fas fa-cloud-download-alt icon-btn"></i>
-                            <div class="text-line-title">Descargar en PDF</div>
-                        </div>
-                        <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-correo">
-                            <i class="far fa-envelope icon-btn"></i>
-                            <div class="text-line-title">Enviar por correo</div>
-                        </div>
-                        <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-compartir">
-                            <i class="fas fa-share-alt icon-btn"></i>
-                            <div class="text-line-title">Compartir</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row my-4">
-                    <div class="col-lg-12 col-md-6 mb-md-0 mb-4">
-                        <div class="card">
-                            <div class="card-body px-0 pb-2">
-                                <div class="row px-4">
-                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6">
-                                        <div>
-                                            <img src="../assets/img/Ruta_Marina/tiene alguna pregunta_ilustracion.png" alt="pregunta" class="width-movil">
-                                        </div>
-                                        <h6 class="sub-titulo mt-6">¿No obtuviste la información que buscabas?</h6>
-                                        <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12">
-                                            <span class="font-weight-bold">
-                                                Si tienes una consulta particular sobre la herramienta escríbenos y resolveremos tu duda
-                                            </span>
-                                        </p>
-                                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro">
-                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-informativo">Escríbenos</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6">
-                                        <div>
-                                            <img src="../assets/img/Ruta_Marina/que te parecio la herramienta_ilustracion.png" alt="herramienta" class="width-movil">
-                                        </div>
-                                        <h6 class="sub-titulo mt-6">¿Qué te parecio la herramienta?</h6>
-                                        <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12">
-                                            <span class="font-weight-bold">
-                                                PROMPERÚ se esfuerza constantemente por mejorar sus servicios. Si tienes sugerencias o comentarios completa el siguiente formulario.
-                                            </span>
-                                        </p>
-                                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro">
-                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-opinion">Enviar mi opinión</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Fin vista ver detalle de busqueda de ruta desktop-->
-            <!-- Inicio vista ver detalle de busqueda de ruta movil -->
-            <div class="d-none" id="view-line-time-movil">
-                <div class="row mt-4 div">
-                    <div class="col-lg-12 mb-lg-0">
-                        <div class="card">
-                            <div class="row">
-                                <div class="container-detalle-movil">
-                                    <div class="col-12 div-right text-line-title">Costa Este EE.UU.</div>
-                                    <div class="col-12">
-                                        <div class="col-4 div-left">
-                                            <h4 class="font-weight-bold fs-4 font-color-black">Paita</h4> <span class="fs-6 font-weight-bold">Perú</span>
-                                        </div>
-                                        <div class="col-4 div-left icon-movil"> <i class="fas fa-arrow-right" aria-hidden="true"></i> </div>
-                                        <div class="col-4 div-right">
-                                            <h4 class="font-weight-bold fs-4 font-color-black">Seattle</h4> <span class="fs-6 font-weight-bold">EE.UU.</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 div-left">
-                                        <div class="text-line-title font-color-black">Nro de paradas</div>
-                                        <div class="text-libe-movil font-color-black">7 paradas</div>
-                                    </div>
-                                    <div class="col-12 div-left">
-                                        <div class="text-line-title font-color-black">Días de tránsito</div>
-                                        <div class="text-libe-movil font-color-black">27 días</div>
-                                    </div>
-                                    <div class="col-12 div-left">
-                                        <div class="text-line-title font-color-black">Frecuencias de salidas</div>
-                                        <div class="text-libe-movil font-color-black">27 días</div>
-                                    </div>
-                                    <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
-                                        <div class="img-icon div-left"></div>
-                                        <div class="div-left mt-3 font-color-red font-weight-bold">Ver mapa de la ruta</div>
-                                    </div>
-                                    <div class="col-12 div-left">
-                                        <div class="text-line-title font-color-black">Flete promedio por container</div>
-                                        <div class="text-title-select-movil font-color-black font-weight-bold div-left">Actualizado al: 4 marzo 2021</div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-xs-12" onclick="mostrarSelectPuertoOrigen()">
-                                        <label>Tipo de container</label>
-                                        <input type="text" class="form-control" id="tipContainer" value="Dry Van' 20"><i class="fas fa-angle-down icon-select" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="ordenar">
-                                        <div class="img-icon div-left"></div>
-                                        <div class="div-left mt-3 font-color-red font-weight-bold col-7">Conoce los tipos de containers</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="text-title-select-movil fs-3 font-weight-bold font-color-black">
-                                Paradas de la ruta
-                            </div>
-                            <div class="col-12 px-5 centrado">
-                                <div class="div-left col-2 icon-center text-line-title font-color-black">
-                                    <i class="fas fa-exchange-alt"></i>
-                                </div>
-                                <div class="div-left col-8 text-line-title font-color-black icon-text">Desliza para ver más</div>
-                            </div>
-                            <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
-                                <div class="card">
-                                    <div class="card-body px-0 pb-2">
-                                        <div class="table-responsive">
-                                            <table class="table align-items-center mb-0">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div>
-                                                                    <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" class="avatar avatar-sm me-3" alt="xd">
-                                                                    <div>
-                                                                        <div class="text-line-title font-color-black">Paita</div>
-                                                                        <div class="text-pais font-color-black">Perú</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div>7 días</div>
-                                                                <div>--------</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div class="div-left">
-                                                                    <i class="fas fa-dot-circle" aria-hidden="true"></i>
-                                                                    <div class="text-line-title font-color-black">Manzanillo</div>
-                                                                    <div class="text-pais font-color-black">México</div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div>4 días</div>
-                                                                <div>--------</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div class="div-left">
-                                                                    <i class="fas fa-dot-circle" aria-hidden="true"></i>
-                                                                    <div class="text-line-title font-color-black">Long Beach</div>
-                                                                    <div class="text-pais font-color-black">EE.UU.</div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div>3 días</div>
-                                                                <div>--------</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div class="div-left">
-                                                                    <i class="fas fa-dot-circle" aria-hidden="true"></i>
-                                                                    <div class="text-line-title font-color-black">Los Ángeles</div>
-                                                                    <div class="text-pais font-color-black">EE.UU.</div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div>3 días</div>
-                                                                <div>--------</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div class="div-left">
-                                                                    <i class="fas fa-dot-circle" aria-hidden="true"></i>
-                                                                    <div class="text-line-title font-color-black">Oakland</div>
-                                                                    <div class="text-pais font-color-black">EE.UU.</div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div>5 días</div>
-                                                                <div>--------</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div class="div-left">
-                                                                    <i class="fas fa-dot-circle" aria-hidden="true"></i>
-                                                                    <div class="text-line-title font-color-black">Vancouver</div>
-                                                                    <div class="text-pais font-color-black">Canada</div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="d-flex px-2 py-1">
-                                                                <div>5 días</div>
-                                                                <div>--------</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div>
-                                                                <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" class="avatar avatar-sm me-3" alt="xd">
-                                                                <div>
-                                                                    <div class="text-line-title font-color-black">Seattle</div>
-                                                                    <div class="text-pais font-color-black">EE.UU</div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row top">
-                    <div class="card-header pb-0 background-img-detalle-movil">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 titulo">
-                        Líneas navieras
-                    </div>
-                    <div class="col-12 centrado">
-                        Ordenar por:
-                        <div class="ordenar">A-Z <i class="fas fa-angle-down icon-ordenar" aria-hidden="true"></i></div>
-                    </div>
-                </div>
-                <!-- Inicio linea naviera desktop -->
-                <div class="d-none" id="linea-naviera-desktop">
-                    <div class="card div-centrado container-line-naviera">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-2 div-left">
-                                    <div class="col-6 text-line-title font-color-black">
-                                        Evergreen
-                                    </div>
-                                </div>
-                                <div class="col-2 div-left text-line-title font-color-black">Días de tránsito</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Agente</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Depósito</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Frecuencia de salida</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Sitio web</div>
-                                <div class="col-2 div-left">
-                                    <div class="col-6"></div>
-                                </div>
-                                <div class="col-2 div-left">26 días</div>
-                                <div class="col-2 div-left">GREENANDES</div>
-                                <div class="col-2 div-left">TPP</div>
-                                <div class="col-2 div-left">Semanal</div>
-                                <div class="col-2 div-left">www.evergreen-line.com</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card div-centrado container-line-naviera">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-2 div-left">
-                                    <div class="col-6 text-line-title font-color-black">
-                                        MSC
-                                    </div>
-                                </div>
-                                <div class="col-2 div-left text-line-title font-color-black">Días de tránsito</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Agente</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Depósito</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Frecuencia de salida</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Sitio web</div>
-                                <div class="col-2 div-left">
-                                    <div class="col-6"></div>
-                                </div>
-                                <div class="col-2 div-left">26 días</div>
-                                <div class="col-2 div-left">MSC PERÚ</div>
-                                <div class="col-2 div-left">LICSA</div>
-                                <div class="col-2 div-left">Semanal</div>
-                                <div class="col-2 div-left">www.msc.com</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card div-centrado container-line-naviera">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-2 div-left">
-                                    <div class="col-6 text-line-title font-color-black">
-                                        MAERSK LINE
-                                    </div>
-                                </div>
-                                <div class="col-2 div-left text-line-title font-color-black">Días de tránsito</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Agente</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Depósito</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Frecuencia de salida</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Sitio web</div>
-                                <div class="col-2 div-left">
-                                    <div class="col-6"></div>
-                                </div>
-                                <div class="col-2 div-left">26 días</div>
-                                <div class="col-2 div-left">MAERSK PERÚ</div>
-                                <div class="col-2 div-left">ALCONSA</div>
-                                <div class="col-2 div-left">Semanal</div>
-                                <div class="col-2 div-left">www.maersk.com</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card div-centrado container-line-naviera">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-2 div-left">
-                                    <div class="col-6 text-line-title font-color-black">
-                                        HAMBURG SUD
-                                    </div>
-                                </div>
-                                <div class="col-2 div-left text-line-title font-color-black">Días de tránsito</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Agente</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Depósito</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Frecuencia de salida</div>
-                                <div class="col-2 div-left text-line-title font-color-black">Sitio web</div>
-                                <div class="col-2 div-left">
-                                    <div class="col-6"></div>
-                                </div>
-                                <div class="col-2 div-left">26 días</div>
-                                <div class="col-2 div-left">Cosmos</div>
-                                <div class="col-2 div-left">LICSA</div>
-                                <div class="col-2 div-left">Semanal</div>
-                                <div class="col-2 div-left">www.hamburg-sud-line.com</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="div-botton">
-                            <div class="div-effect">
-                                <div class="img-icon refresh"></div>
-                                <div class="img-icon-text col-12">Encuentra más información en Directorio Logístico</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin linea naviera desktop -->
-                <!-- Inicio linea naviera movil -->
-                <div class="d-display" id="linea-naviera-movil">
-                    <div class="card div-centrado container-line-naviera">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="true" aria-controls="mostrarDetalle-Evergreen">
-                                    <div class="col-10 text-line-title font-color-black div-left">
-                                        Evergreen
-                                    </div>
-                                    <div class="col-2 text-line-title font-color-red div-left">
-                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
-                                    </div>
-                                </div>
-                                <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
-                                    <div class="row">
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Días de tránsito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">26 días</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Agente</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">GREENANDES</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Depósito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">TPP</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Frecuencia de salida</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">Semanal</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Sitio web</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">www.evergreen-line.com</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card div-centrado container-line-naviera">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Msc" aria-expanded="true" aria-controls="mostrarDetalle-Msc">
-                                    <div class="col-10 text-line-title font-color-black div-left">
-                                        MSC
-                                    </div>
-                                    <div class="col-2 text-line-title font-color-red div-left">
-                                        <i class="fas fa-chevron-right div-right"></i>
-                                    </div>
-                                </div>
-                                <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Msc">
-                                    <div class="row">
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Días de tránsito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">26 días</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Agente</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">MSC PERÚ</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Depósito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">Licsa</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Frecuencia de salida</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">Semanal</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Sitio web</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">www.msc.com</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card div-centrado container-line-naviera">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Maersk" aria-expanded="true" aria-controls="mostrarDetalle-Maersk">
-                                    <div class="col-10 text-line-title font-color-black div-left">
-                                        MAERSK
-                                    </div>
-                                    <div class="col-2 text-line-title font-color-red div-left">
-                                        <i class="fas fa-chevron-right div-right"></i>
-                                    </div>
-                                </div>
-                                <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Maersk">
-                                    <div class="row">
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Días de tránsito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">26 días</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Agente</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">MAERSK PERÚ</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Depósito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">ALCONSA</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Frecuencia de salida</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">Semanal</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Sitio web</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">www.maersk.com</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card div-centrado container-line-naviera">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-12" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-Hamburgs" aria-expanded="true" aria-controls="mostrarDetalle-Hamburgs">
-                                    <div class="col-10 text-line-title font-color-black div-left">
-                                        Hamburg
-                                    </div>
-                                    <div class="col-2 text-line-title font-color-red div-left">
-                                        <i class="fas fa-chevron-right div-right"></i>
-                                    </div>
-                                </div>
-                                <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Hamburgs">
-                                    <div class="row">
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Días de tránsito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">26 días</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Agente</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">Cosmos</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Depósito</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">LICSA</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Frecuencia de salida</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">Semanal</div>
-                                        <div class="hr background-gris"></div>
-                                        <div class="col-12 div-left mt-2 text-title-select-movil font-color-black">Sitio web</div>
-                                        <div class="col-12 div-left mt-2 font-color-black">www.hamburg-sud-line.com</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ordenar">
-                    <div class="img-icon div-left"></div>
-                    <div class="div-left mt-3 font-color-red font-weight-bold col-8 text-line-title">Encuentra más informacion en Directorio Lógistico</div>
-                </div>
-                <!-- Fin linea naviera movil -->
-                <!-- Inicio de opciones de resultado de busqueda movil -->
-                <div class="d-none" id="OpcionesResulBusqueda-Movil">
-                    <div class="row div-left titulo fs-6">
-                        <div class="col-12">Guarda o descarga el resultado de tu búsqueda</div>
-                    </div>
-                    <div class="row div-left titulo fs-6 font-color-red">
-                        <div class="col-4 div-left" data-bs-toggle="modal" data-bs-target="#m-login">
-                            <i class="far fa-bookmark icon-btn"></i>
-                            <div class="text-line-title">Guardar resultado</div>
-                        </div>
-                        <div class="col-4 div-left" data-bs-toggle="modal" data-bs-target="#m-login">
-                            <i class="fas fa-cloud-download-alt icon-btn"></i>
-                            <div class="text-line-title">Descargar en PDF</div>
-                        </div>
-                        <div class="col-4 div-left" data-bs-toggle="modal" data-bs-target="#m-correo">
-                            <i class="far fa-envelope icon-btn"></i>
-                            <div class="text-line-title">Enviar por correo</div>
-                        </div>
-                        <div class="col-4 div-left" data-bs-toggle="modal" data-bs-target="#m-compartir">
-                            <i class="fas fa-share-alt icon-btn"></i>
-                            <div class="text-line-title">Compartir</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin de opciones de resultado de busqueda movil -->
-                <!-- Inicio de opciones de resultado de busqueda desktop -->
-                <div id="OpcionesResulBusqueda-Desktop">
-                    <div class="row posicion">
-                        <div class="col-4 mt-6">
-                            <div class="font-color-black titulo">
-                                Guarda o descarga el resultado de tu búsqueda
-                            </div>
-                        </div>
-                        <div class="col-6 font-color-red centrado mt-6">
-                            <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-login">
-                                <i class="far fa-bookmark icon-btn"></i>
-                                <div class="text-line-title">Guardar resultado</div>
-                            </div>
-                            <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="fas fa-cloud-download-alt icon-btn"></i>
-                                <div class="text-line-title">Descargar en PDF</div>
-                            </div>
-                            <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-correo">
-                                <i class="far fa-envelope icon-btn"></i>
-                                <div class="text-line-title">Enviar por correo</div>
-                            </div>
-                            <div class="col-3 div-left ordenar" data-bs-toggle="modal" data-bs-target="#m-compartir">
-                                <i class="fas fa-share-alt icon-btn"></i>
-                                <div class="text-line-title">Compartir</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin de opciones de resultado de busqueda destop -->
-                <div class="row my-4">
-                    <div class="col-lg-12 col-md-6 mb-md-0 mb-4">
-                        <div class="card">
-                            <div class="card-body px-0 pb-2">
-                                <div class="row px-4">
-                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6">
-                                        <div>
-                                            <img src="../assets/img/Ruta_Marina/tiene alguna pregunta_ilustracion.png" alt="pregunta" class="width-movil">
-                                        </div>
-                                        <h6 class="sub-titulo mt-6">¿No obtuviste la información que buscabas?</h6>
-                                        <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12">
-                                            <span class="font-weight-bold">
-                                                Si tienes una consulta particular sobre la herramienta escríbenos y resolveremos tu duda
-                                            </span>
-                                        </p>
-                                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro">
-                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-informativo">Escríbenos</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-12 col-sm- 12col-md-8 col-lg-6">
-                                        <div>
-                                            <img src="../assets/img/Ruta_Marina/que te parecio la herramienta_ilustracion.png" alt="herramienta" class="width-movil">
-                                        </div>
-                                        <h6 class="sub-titulo mt-6">¿Qué te parecio la herramienta?</h6>
-                                        <p class="col-xs-12 col-sm- 12col-md-8 col-lg-12">
-                                            <span class="font-weight-bold">
-                                                PROMPERÚ se esfuerza constantemente por mejorar sus servicios. Si tienes sugerencias o comentarios completa el siguiente formulario.
-                                            </span>
-                                        </p>
-                                        <div class="col-xs-12 col-sm- 12col-md-8 col-lg-12 centro">
-                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#m-opinion">Enviar mi opinión</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- Fin vista ver detalle de busqueda de ruta movil-->
             <footer class="footer" id="footer">
                 <div class="container-fluid">
@@ -2659,15 +870,15 @@
                     <div id="footer-Desktop" class="mostrar-desktop pt-5">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-lg-12 mb-lg-0 mb-4">
-                                <div class="text-center font-helvetica-footer">
+                                <div class="text-center font-helvetica-footer-light">
                                     Para más información escríbenos a:
                                 </div>
                             </div>
                             <br>
-                            <div class="col-lg-12 text-center negro font-weight-bold font-helvetica-footer-bold">
+                            <div class="col-lg-12 text-center negro font-weight-bold font-helvetica-footer-bold mt-2">
                                 herramientaslogisticas@promperu.gob.pe
                             </div>
-                            <div class="justify-content-between text-center mt-3">
+                            <div class="justify-content-between text-center mt-4">
                                 <svg class="icon-redes" width="18" height="15" viewBox="2 -4 13 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4.07616 1.94897C4.07616 3.02897 3.29276 3.89793 2.00136 3.89793C0.783407 3.90414 0 3.02897 0 1.94897C0 0.850345 0.807888 0 2.05032 0C3.29276 0 4.05168 0.850345 4.07616 1.94897ZM0.104046 18V5.44345H3.95376V18H0.104046Z" fill="black"/>
                                     <path d="M6.25541 9.44705C6.25541 7.88291 6.20645 6.57325 6.15137 5.4436H9.49309L9.67058 7.18774H9.74402C10.252 6.36843 11.4883 5.15808 13.5693 5.15808C16.1031 5.15808 18.0004 6.87739 18.0004 10.5767V18.0001H14.1507V11.0422C14.1507 9.42222 13.5937 8.3236 12.1983 8.3236C11.1333 8.3236 10.5029 9.06843 10.2214 9.78842C10.1174 10.0429 10.0929 10.4029 10.0929 10.7629V18.0001H6.24317V9.44705H6.25541Z" fill="black"/>
@@ -2683,7 +894,7 @@
                                 </svg>
     
                             </div>
-                            <div class="hr col-lg-6 mt-4 background-black"></div>
+                            <hr class="col-lg-6 mt-5 background-black"></hr>
                             <div class="row mt-3">
                                 <div class="col-lg-3 col-md-4 col-sm-3 mt-2">
                                     <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
@@ -2766,29 +977,39 @@
                         </div>
                     </div>
                     <div class="mostrar-movil" id="footer-Movil">
-                        <div class="row align-items-center justify-content-center">
+                        <div class="row align-items-center justify-content-center pt-5">
                             <div class="col-lg-12 mb-lg-0 mb-2">
-                                <div class="text-center font-helvetica-footer">
+                                <div class="text-center font-helvetica-footer-light">
                                     Para mas información escribanos a :
                                 </div>
                             </div>
                             <div class="col-lg-12 text-center font-weight-bold font-helvetica-footer-bold">
                                 herramientaslogisticas@promperu.gob.pe
                             </div>
-                            <div class="justify-content-between text-center mt-2">
-                                <i class="fab fa-linkedin-in icon-redes"></i>
-                                <i class="fab fa-facebook icon-redes"></i>
-                                <i class="fab fa-twitter icon-redes"></i>
-                                <i class="fab fa-youtube icon-redes"></i>
+                            <div class="justify-content-between text-center mt-4 mb-3">
+                                <svg class="icon-redes" width="18" height="15" viewBox="2 -4 13 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.07616 1.94897C4.07616 3.02897 3.29276 3.89793 2.00136 3.89793C0.783407 3.90414 0 3.02897 0 1.94897C0 0.850345 0.807888 0 2.05032 0C3.29276 0 4.05168 0.850345 4.07616 1.94897ZM0.104046 18V5.44345H3.95376V18H0.104046Z" fill="black"/>
+                                    <path d="M6.25541 9.44705C6.25541 7.88291 6.20645 6.57325 6.15137 5.4436H9.49309L9.67058 7.18774H9.74402C10.252 6.36843 11.4883 5.15808 13.5693 5.15808C16.1031 5.15808 18.0004 6.87739 18.0004 10.5767V18.0001H14.1507V11.0422C14.1507 9.42222 13.5937 8.3236 12.1983 8.3236C11.1333 8.3236 10.5029 9.06843 10.2214 9.78842C10.1174 10.0429 10.0929 10.4029 10.0929 10.7629V18.0001H6.24317V9.44705H6.25541Z" fill="black"/>
+                                </svg>
+                                <svg class="icon-redes" width="10" height="18" viewBox="-1 -2 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.82621 9.78828L9.24207 6.58552H6.06414V4.54345C6.06414 3.61862 6.32483 2.98552 7.6531 2.98552H9.34759V0.124138C9.05586 0.0868966 8.05035 0 6.87724 0C4.43793 0 2.76207 1.48966 2.76207 4.2331V6.59172H0V9.79448H2.76207V18H6.06414V9.78828H8.82621Z" fill="black"/>
+                                </svg>
+                                <svg class="icon-redes" width="18" height="15" viewBox="2 -5 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5055 0.272498C16.7939 0.696383 16.0017 1.00421 15.159 1.17073C14.4828 0.449117 13.524 0 12.4643 0C10.4256 0 8.77039 1.65517 8.77039 3.69386C8.77039 3.98654 8.80572 4.26409 8.86627 4.53658C5.7931 4.3852 3.07317 2.91169 1.24643 0.676198C0.933558 1.22119 0.746846 1.85702 0.746846 2.53322C0.746846 3.81497 1.39781 4.94533 2.39193 5.60639C1.78637 5.58621 1.21615 5.41968 0.721615 5.14214V5.18755C0.721615 6.97897 1.99327 8.47266 3.68377 8.81076C3.37595 8.89655 3.04794 8.94197 2.70984 8.94197C2.47267 8.94197 2.24054 8.91674 2.01346 8.87637C2.48276 10.3448 3.84525 11.4146 5.4651 11.4449C4.20353 12.434 2.60891 13.0244 0.878049 13.0244C0.58032 13.0244 0.287637 13.0042 0 12.9739C1.62994 14.0235 3.57275 14.6341 5.65685 14.6341C12.4491 14.6341 16.1682 9.00757 16.1682 4.12279C16.1682 3.96131 16.1632 3.80488 16.1581 3.6434C16.8797 3.12363 17.5055 2.47267 18 1.73087C17.3389 2.02355 16.6274 2.2254 15.8806 2.31119C16.6426 1.85702 17.2279 1.13541 17.5055 0.272498Z" fill="black"/>
+                                    </svg>
+                                <svg class="icon-redes" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.5676 2.31177C20.3236 1.40259 19.614 0.687434 18.7104 0.443506C17.0694 0 10.5 0 10.5 0C10.5 0 3.93611 0 2.29514 0.443506C1.3915 0.687434 0.68189 1.40259 0.437962 2.31177C0 3.95829 0 7.401 0 7.401C0 7.401 0 10.8382 0.437962 12.4902C0.68189 13.3994 1.3915 14.1146 2.29514 14.3585C3.93057 14.802 10.5 14.802 10.5 14.802C10.5 14.802 17.0694 14.802 18.7049 14.3585C19.6085 14.1146 20.3181 13.3994 20.562 12.4902C21 10.8437 21 7.401 21 7.401C21 7.401 21.0055 3.95829 20.5676 2.31177ZM8.35454 10.5222V4.27429L13.8429 7.39546L8.35454 10.5222Z" fill="black"/>
+                                </svg>
+    
                             </div>
-                            <div class="hr col-lg-6 mt-2 background-gris"></div>
+                            <hr>
                             <div class="row"><br><br></div>
                             <div class="row mt-2 padding-left-right-0">
                                 <div class="col-6 div-left contenedor-img-movil padding-left-right-0">
                                     <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
                                 </div>
                                 <div class="col-6 div-left contenedor-img-movil padding-left-right-0">
-                                    <img src="../assets/img/logos/LOGO PROMPERU.png" alt="logo" class="img-footter-promperu div-right">
+                                    <img src="../assets/img/logo-footer.svg" alt="logo" class="div-right">
                                 </div>
                                 <div class="copyright col-12 font-helvetica-coryright">
                                     Copyright © 2021 PROMPERU. Todos los derechos reservados

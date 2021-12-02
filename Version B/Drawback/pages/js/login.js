@@ -10,7 +10,6 @@ var opcionViewRegistroLogin = document.getElementById("view-registro-login")
 function addData() {
     inputCorreo.value = "carlos@gmail.com"
     inputPassword.value = "123456"
-    btnIngresar.className = "btn btn-danger"
-    chkSesionActivo.className = "col-lg-4 col-md-6 col-xs-12 paddingControl d-display"
+    chkSesionActivo.className = "d-display text-center mt-3"
     opcionViewRegistroLogin.className = "d-none"
 }

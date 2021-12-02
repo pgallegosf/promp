@@ -7,13 +7,21 @@ $(document).ready(function() {
     });
     $("#view-simulador-principal").hide()
 
-    $(".accordion-header").dblclick(function() {
+    $(".acordion-res-normal").dblclick(function() {
         var valor = 3;
         switch (valor) {
             case 3:
                 $("#tab3").trigger("click");
                 break;
         }
+    });
+
+    $(".acordion-res-noaplica").dblclick(function() {
+        window.location = 'Simulador-noaplica.html';
+    });
+
+    $(".acordion-res-advertencia").dblclick(function() {
+        window.location = 'Simulador-warning.html';
     });
 
     $("#seleccionar1").click(function() {

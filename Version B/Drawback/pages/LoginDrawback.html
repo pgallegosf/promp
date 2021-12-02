@@ -112,15 +112,7 @@
                     <div class="icon-menu" hidden>
                         <i class="far fa-user"></i>
                     </div>
-                    <div class="icon-menu">
-                        <a class="idPopoverNotificacionGuardar" id="idPopoverNotificacionGuardar" data-bs-toggle="popover">
-                            <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20.7342 15.8161C20.666 15.7453 19.2131 14.2439 18.2721 13.3138C18.3306 11.5623 18.511 6.23674 15.8539 3.57869C15.2104 2.93188 14.4498 2.48808 13.582 2.24258V1.43525C13.582 0.642086 12.9189 0 12.0999 0H11.9C11.0809 0 10.4178 0.642086 10.4178 1.43525V2.20481C9.45252 2.44087 8.60907 2.90827 7.90214 3.61174C5.24992 6.26506 5.41568 11.364 5.47906 13.2808C5.47906 13.2902 5.47906 13.3044 5.47906 13.3138C4.39185 14.4186 3.26075 15.8114 3.20712 15.8775C2.97798 16.1607 2.9341 16.5479 3.09986 16.8737C3.26563 17.1994 3.60203 17.4024 3.97744 17.4024H20.0273C20.4173 17.4024 20.7683 17.1805 20.9195 16.8312C21.0706 16.496 20.9975 16.0946 20.7342 15.8161ZM6.04461 15.5187C6.40051 15.1221 6.78567 14.7113 7.14645 14.362C7.33172 14.1826 7.4341 13.9418 7.4341 13.6915C7.4341 13.583 7.42922 13.4224 7.42435 13.2241C7.37559 11.685 7.21958 7.00629 9.30138 4.92896C9.98394 4.2491 10.8469 3.91862 11.9341 3.91862C12.9726 3.91862 13.7965 4.23966 14.4498 4.89591C15.8344 6.27923 16.4634 9.09307 16.3171 13.2572C16.3122 13.446 16.3073 13.5971 16.3073 13.6915C16.3073 13.9418 16.4097 14.1826 16.595 14.3572C16.9021 14.6547 17.3312 15.0843 17.7553 15.5139H6.04461V15.5187Z" fill="#282828"/>
-                                <path d="M9.64746 18.7244C9.64746 19.9802 10.7005 21 11.9974 21C13.2943 21 14.3474 19.9802 14.3474 18.7244V17.9501H9.64746V18.7244Z" fill="#282828"/>
-                                <circle cx="17" cy="4" r="3" fill="#C4122F"/>
-                            </svg>
-                        </a>
-                    </div>
+                    
                     <div class="icon-menu">
                         <a class="a-menu" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,41 +128,43 @@
             </div>
         </nav>
         <!-- End Navbar -->
-        <div class="">
+        <div style="padding-top: 71px !important;">
             <!-- Inicio de vista principal -->
-            <div class="row pt-6 padding-login">
-                <div class="ocultar-movil-flex col-xs-12 col-sm-12 col-md-7 col-lg-7 centro d-flex justify-content-center" style="background: #07354F0A;">
-                    <img src="../assets/img/fondo-login.png" alt="mapa_ruta" style="width: 100%; height: auto;">
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 centrado d-flex flex-column align-items-center justify-content-center">
-                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-H3-bold negro-promperu text-center">
-                        Iniciar Sesión
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="row" style="margin: 0 !important;">
+                    <div class="ocultar-movil-flex col-xs-12 col-sm-12 col-md-7 col-lg-7 centro d-flex justify-content-center" style="background: #F3F5F6;">
+                        <img src="../assets/img/fondo-login.png" alt="mapa_ruta" style="width: 80%; height: auto;">
                     </div>
-                    <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left">
-                        <div>
-                            <label class="font-label negro-promperu">Correo Electronico</label>
-                            <input type="text" class="form-control" placeholder="ejemplo@correo.com" id="correo" value="" onclick="addData()">
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 centrado d-flex flex-column align-items-center justify-content-center">
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 font-H3-bold negro-promperu text-center" style="width: 313px;">
+                            Iniciar Sesión
                         </div>
-                        <div>
-                            <label class="font-label negro-promperu">Contraseña</label>
-                            <input type="password" class="form-control" placeholder="******" id="password" value="">
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 text-left" style="width: 313px;">
+                            <div>
+                                <label class="font-label negro-promperu">Correo Electronico</label>
+                                <input type="text" class="form-control" placeholder="ejemplo@correo.com" id="correo" value="" onclick="addData()">
+                            </div>
+                            <div>
+                                <label class="font-label negro-promperu">Contraseña</label>
+                                <input type="password" class="form-control" placeholder="******" id="password" value="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 centrado">
-                        <button class="btn btn-second w-100 font-H4-bold" onclick="window.location.href='EmpezarDrawback.html'" id="btn-ingresar">Ingresar</button>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-1 text-center centrado">
-                        <a data-bs-toggle="modal" data-bs-target="#m-olvidarPassword" class="font-link-700 rojo-promperu">¿Olvidaste tu contraseña?</a>
-                    </div>
-                    <div class="d-none" id="check-sesion-activa">
-                        <input class="input-checkbox" type="checkbox" name="chkSesionActiva" id="chkSesionActiva" checked>
-                        <label for="chkSesionActiva" class="input-checkbox-lab">Mantener sesión abierta</label>
-                    </div>
-                    <div class="ocultar-movil-flex col-lg-12 col-sm-12 col-md-12 d-flex flex-column align-items-center justify-content-center" id="view-registro-login">
-                        <div class="hr ocultar-movil-flex background-gris col-8 mt-4"></div>
-                        <div class="font-H4-bold negro-promperu col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-3 text-center">¿Aún no tienes una cuenta?</div>
-                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4">
-                            <button type="button" class="w-100 btn btn-outline-danger" onclick="window.location.href='RegistroDrawback.html'">Regístrate Aquí</button>
+                        <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 mt-4 centrado" style="width: 313px;">
+                            <button style="height: 50px !important; text-transform: capitalize;" class="btn btn-danger w-100 font-H4-bold" onclick="window.location.href='EmpezarDrawback.html'" id="btn-ingresar">Ingresar</button>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-1 text-center centrado" style="width: 313px;">
+                            <a data-bs-toggle="modal" data-bs-target="#m-olvidarPassword" class="font-link-700 rojo-promperu">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        <div class="d-none col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center" id="check-sesion-activa" style="width: 313px;">
+                            <input class="input-checkbox" type="checkbox" name="chkSesionActiva" id="chkSesionActiva" checked>
+                            <label for="chkSesionActiva" class="input-checkbox-lab font-H4-medium negro-promperu">Mantener sesión abierta</label>
+                        </div>
+                        <div class="ocultar-movil-flex col-lg-12 col-sm-12 col-md-12 d-flex flex-column align-items-center justify-content-center" style="width: 313px;" id="view-registro-login">
+                            <div class="hr ocultar-movil-flex background-gris col-8 mt-4"></div>
+                            <div class="font-H4-bold negro-promperu col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-3 text-center">¿Aún no tienes una cuenta?</div>
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-4">
+                                <button type="button" class="w-100 btn btn-outline-danger font-H4-bold" style="height: 50px !important; text-transform: inherit !important;" onclick="window.location.href='RegistroDrawback.html'">Regístrate Aquí</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -179,8 +173,13 @@
                 <div class="hr ocultar-movil background-gris col-8 mt-4"></div>
                 <div class="font-H4-bold negro-promperu col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-3 text-center">¿Aún no tienes una cuenta?</div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-4 d-flex justify-content-center">
-                    <button type="button" class="w-80 btn btn-outline-danger" onclick="window.location.href='RegistroDrawback.html'">Regístrate Aquí</button>
+                    <button style="height: 50px !important; text-transform: inherit !important;" type="button" class="font-H4-bold w-80 btn btn-outline-danger" onclick="window.location.href='RegistroDrawback.html'">Regístrate Aquí</button>
                 </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
             <!-- Fin de vista principal -->
     </main>

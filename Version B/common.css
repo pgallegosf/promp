@@ -81,6 +81,14 @@
   line-height: 28.8px !important;
 }
 
+.font-H3-medium {
+  font-family: 'Helvetica Neue LT Std medium';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
 .font-h3-bold {
   font-family: "Helvetica Neue LT Std bold" !important;
   font-style: normal !important;
@@ -212,7 +220,7 @@
 }
 
 .font-H5-medium {
-  font-family: "Helvetica Neue LT Std bold" !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
   font-style: normal !important;
   font-weight: 500 !important;
   font-size: 15px !important;
@@ -271,7 +279,7 @@
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 51px !important;
-  line-height: 61, 2px !important;
+  line-height: 61px !important;
 }
 
 .font-label {
@@ -369,7 +377,7 @@
 }
 
 .font-smallprint-medium {
-  font-family: "Helvetica Neue LT Std bold" !important;
+  font-family: "Helvetica Neue LT Std medium" !important;
   font-style: normal !important;
   font-weight: 500 !important;
   font-size: 12px !important;
@@ -420,11 +428,11 @@
 }
 
 .font-helvetica-coryright {
-  font-family: "Helvetica Neue LT Std medium" !important;
+  font-family: "Helvetica Neue LT Std light" !important;
   font-style: normal !important;
-  font-weight: normal !important;
-  font-size: 14px !important;
-  line-height: 17px !important;
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
   text-align: center !important;
   color: #6c6c6c !important;
 }
@@ -437,6 +445,11 @@
   line-height: 14px !important;
   align-items: center;
   color: #000000 !important;
+}
+
+ btn:hover:not(.btn-icon-only) {
+
+  transform:none !important;
 }
 
 .font-normal {
@@ -635,10 +648,12 @@ img {
 .btn-danger {
   background-color: #c4122f;
   color: #ffffff;
+  width: 302px !important;
+  text-transform: inherit !important;
 }
 
 .btn-danger:active {
-  background-color: #282828 !important;
+  background-color: #000000 !important;
   color: #ffffff !important;
 }
 
@@ -679,6 +694,7 @@ img {
 }
 
 .btn-danger:hover {
+  transform: none !important;
   background-color: #c4122f !important;
   color: #ffffff !important;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
@@ -686,7 +702,7 @@ img {
 }
 
 .btn-danger:active {
-  background-color: #282828 !important;
+  background-color: #000000 !important;
   color: #ffffff !important;
 }
 
@@ -1290,6 +1306,7 @@ img {
   z-index: 100 !important;
 }
 
+
 .popover::before {
   content: "";
   display: block;
@@ -1417,8 +1434,9 @@ img {
 }
 
 .fade.show {
-  background-color: #0000008c !important;
+  /*background-color: #0000008c !important;*/
   top: 0 !important;
+  right: -11% !important;
 }
 
 .modal-dashboard {
@@ -1502,6 +1520,7 @@ footer {
 .contenedor-img-movil {
   height: 80px !important;
 }
+
 
 .option-select:hover {
   background-color: #ffebee;

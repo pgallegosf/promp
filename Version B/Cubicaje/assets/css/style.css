@@ -159,16 +159,13 @@ body {
 }
 
 .background-img {
-  /* margin: 10px auto; */
-  border-radius: 5px;
-  /* border: 1px solid #999; */
-  padding: 0px;
   width: 100%;
-  height: 500px;
+  height: auto;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   /* background: url(../img/Drawback/shutterstock_712434244.jpg); */
   background-size: cover;
+  object-fit: cover;
 }
 
 .background-img {
@@ -178,30 +175,35 @@ body {
 @media all and (min-width: 500px) and (max-width: 1000px) {
   .background-img {
     /* margin: 20px auto; */
-    border-radius: 5px !important;
-    border: 1px solid #999;
-    padding: 0px;
     width: 100%;
-    height: 400px;
+    height: 400px !important;
     background-size: 50% 50%;
     background-repeat: no-repeat;
     /* background: url(../img/Directorio/inicio_mobile.jpg); */
     background-size: cover;
+    object-fit: cover !important;
+  }
+
+  .paddingBusqueda {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 }
 
 @media all and (min-width: 200px) and (max-width: 499px) {
   .background-img {
-    /* margin: 20px auto; */
-    border-radius: 5px !important;
-    border: 1px solid #999;
-    padding: 0px;
     width: 100%;
-    height: 300px;
+    height: 300px !important;
     background-size: 10% 10%;
     background-repeat: no-repeat;
     /* background: url(../img/Directorio/inicio_mobile.jpg); */
     background-size: cover;
+    object-fit: cover !important;
+  }
+
+  .paddingBusqueda {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -279,12 +281,17 @@ body {
 }
 
 .option-select:hover {
-  font-size: 12px !important;
   font-weight: bold !important;
   background-color: #c4122f;
   opacity: 73%;
   width: 115% !important;
   cursor: pointer;
+}
+
+.option-select {
+ height: 25px !important;
+ display: flex;
+ align-items: center;
 }
 
 .separador {
@@ -1614,6 +1621,22 @@ a > i > label {
   border-radius: 0.25rem;
 }
 
+.font-helv-mobile-bold {
+  font-family: "Helvetica Neue LT Std bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.font-helv-mobile-light {
+  font-family: "Helvetica Neue LT Std light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
 .display-block {
   display: block;
 }
@@ -1951,11 +1974,38 @@ a > i > label {
 
 /* Card personalizado movil */
 
+.ggpopover {
+  top: 283.2px !important; 
+  left: 441.967px;
+  display: block;
+  border-color: rgb(204, 204, 204);
+  border-radius: 15px !important;
+}
+
+.popover-content{
+  background-color: #07354f !important;
+  color: white !important;
+  border-radius: 15px !important;
+
+  /* text */
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 14.4px !important;
+}
+
+.after {
+  border-top-color: #07354f !important;;
+}
+
 .card-personalizado {
-  border: 1px solid #a5acb0;
+  border: 2px solid #E4E6E7 !important;
+  box-sizing: border-box;
   border-radius: 20px;
   background-color: #ffffff;
   width: 340px;
+  transition: all 0.5s;
 }
 
 .modal-header {
@@ -1963,18 +2013,22 @@ a > i > label {
 }
 
 .card-personalizado:hover {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  border: oldlace;
 }
 
 .card-contenedor {
-  border: 1px solid #ced0d0;
+  border: 2px solid #E4E6E7 !important;
+  box-sizing: border-box;
   border-radius: 20px;
   background-color: #ffffff;
   width: 89%;
+  transition: all 0.5s;
 }
 
 .card-contenedor:hover {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  border: oldlace;
 }
 
 .card-contenedor-resultado {
@@ -2018,11 +2072,13 @@ a > i > label {
 
 .round-step {
   color: #ffffff;
-  background: #aaa;
-  width: 21px;
-  border-radius: 13px;
+  background: #7E7D7F;
+  width: 36px;
+  border-radius: 25px;
   display: flex;
   justify-content: center;
+  height: 36px;
+  align-items: center;
 }
 
 .background-informacion {
@@ -2070,7 +2126,8 @@ a > i > label {
     position: absolute !important;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
     background: #ffffff;
-    width: 93% !important;
+    width: 82% !important;
+    border-radius: 0px 0px 10px 10px;
   }
   .container-vista-aerea {
     padding-right: 0 !important;
@@ -2092,12 +2149,13 @@ a > i > label {
 
   .card-bulto {
     height: auto !important;
-    top: 34% !important;
+    top: 214px !important;
     position: absolute !important;
-    left: 23px !important;
-    width: 88% !important;
+    left: 47px !important;
+    width: 78% !important;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
     background: #ffffff;
+    border-radius: 0px 0px 10px 10px;
   }
   .font-size-6 {
     font-size: 6px !important;
@@ -2186,17 +2244,19 @@ a > i > label {
     position: absolute !important;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
     background: #ffffff;
-    width: 70% !important;
+    width: 60% !important;
+    border-radius: 0px 0px 10px 10px;
   }
 
   .card-bulto {
     height: auto !important;
-    top: 37% !important;
+    top: 39% !important;
     position: absolute !important;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
     left: 34.5% !important;
     width: 65% !important;
     background: #ffffff;
+    border-radius: 0px 0px 10px 10px;
   }
   .font-size-7 {
     font-size: 7px !important;

@@ -22,7 +22,14 @@ body {
 }
 
 .card {
-  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.card-btn {
+  border: 2px solid #e7e9ea;
+  box-sizing: border-box;
+  border-radius: 15px;
 }
 
 .titulo {
@@ -52,7 +59,7 @@ body {
 
 .icon-select {
   float: right;
-  margin-top: -26px;
+  margin-top: -31px;
   margin-right: 5px;
   color: #c4122f;
 }
@@ -64,13 +71,19 @@ body {
   padding-bottom: 35px;
 }
 
+table tbody tr {
+  border-bottom: 1px solid #a5acb078 !important;
+}
+
 .round-step {
   color: #ffffff;
-  background: #aaa;
-  width: 21px;
-  border-radius: 13px;
+  background: #7e7d7f;
+  width: 36px;
+  border-radius: 25px;
   display: flex;
   justify-content: center;
+  height: 36px;
+  align-items: center;
 }
 
 .container-vista-simulador {
@@ -100,7 +113,7 @@ body {
 }
 
 .popover-1 {
-  background-color: #07354F !important;
+  background-color: #07354f !important;
   color: #ffffff !important;
   width: auto !important;
   height: auto !important;
@@ -130,11 +143,43 @@ body {
 }
 
 .img-home {
-  width: 100% !important;
+  width: 93% !important;
   height: auto;
 }
 
+.btn-cubicaje:hover {
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+}
+
+.btn-cubicaje:active {
+  background: #282828;
+}
+
+.text-btn:active {
+  color: #ffffff !important;
+}
+
 @media (min-width: 200px) {
+  .btn-cubicaje:hover {
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  }
+
+  .btn-cubicaje:active {
+    background: #ff0000;
+  }
+
+  .text-btn:active {
+    color: #ffffff !important;
+  }
+
+  .font-display-title {
+    font-size: 37px !important;
+    line-height: 38px !important;
+  }
+
+  .font-H3-light {
+    font-size: 17px !important;
+  }
 
   .modal-dialog {
     padding: 20px !important;
@@ -200,7 +245,6 @@ body {
 }
 
 @media (min-width: 576px) {
-
   .modal-dialog {
     padding: 20px !important;
   }
@@ -248,7 +292,6 @@ body {
 }
 
 @media (min-width: 768px) {
-
   .modal-dialog {
     padding: 0px !important;
   }
@@ -282,7 +325,6 @@ body {
 }
 
 @media (min-width: 992px) {
-
   .modal-dialog {
     padding: 0px !important;
   }
@@ -337,6 +379,33 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .btn-cubicaje:hover {
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+  }
+
+  .btn-cubicaje:active {
+    background: #282828;
+  }
+
+  .text-btn:active {
+    color: #ffffff !important;
+  }
+
+  .font-display-title {
+    font-family: "Helvetica Neue LT Std bold";
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 60px !important;
+    line-height: 72px !important;
+  }
+
+  .font-H3-light {
+    font-family: "Helvetica Neue LT Std light";
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 24px !important;
+    line-height: 29px !important;
+  }
 
   .modal-dialog {
     padding: 0px !important;
@@ -413,6 +482,8 @@ body {
 
 .background-img {
   width: 100%;
+  object-fit: cover;
+  height: 450px;
 }
 
 @media all and (min-width: 500px) and (max-width: 1000px) {
@@ -485,9 +556,190 @@ body {
   }
 }
 
+.option-select:hover {
+  background-color: none !important;
+  width: none !important;
+  cursor: pointer;
+  opacity: none !important;
+}
+
 .top {
   margin-top: -5.5rem !important;
 }
+
+.option-select {
+  padding: 7px;
+}
+
+.ocultar-popover {
+  display: none !important;
+}
+
+.card-select-login {
+  width: 108.7px !important;
+  height: auto !important;
+  position: absolute !important;
+  background: #07354f;
+  top: 58px;
+}
+
+.card-select-ordenar {
+  width: 147.7px !important;
+  height: auto !important;
+  position: absolute !important;
+  background: #07354f;
+}
+
+
+@media (min-width: 200px) {
+  .card-select-tooltip {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 60%;
+    top: 397px;
+  }
+  
+  .card-select-tooltip2 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 60%;
+    top: 497px;
+  }
+  
+  .card-select-tooltip3 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 60%;
+    top: 597px;
+  }
+  
+  
+  .card-select-tooltip4 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 60%;
+    top: 697px;
+  }
+  
+  
+  .card-select-tooltip5 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 60%;
+    top: 788px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-select-tooltip {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 71%;
+    top: 331px;
+  }
+  
+  .card-select-tooltip2 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 71%;
+    top: 431px;
+  }
+  
+  .card-select-tooltip3 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 71%;
+    top: 531px;
+  }
+  
+  
+  .card-select-tooltip4 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 71%;
+    top: 631px;
+  }
+  
+  
+  .card-select-tooltip5 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 71%;
+    top: 731px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .card-select-tooltip {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 62%;
+    top: 331px;
+  }
+  
+  .card-select-tooltip2 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 62%;
+    top: 431px;
+  }
+  
+  .card-select-tooltip3 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 62%;
+    top: 531px;
+  }
+  
+  
+  .card-select-tooltip4 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 62%;
+    top: 631px;
+  }
+  
+  
+  .card-select-tooltip5 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 62%;
+    top: 731px;
+  }
+}
+
+
+
 
 .card-select {
   width: 50% !important;
@@ -512,15 +764,6 @@ body {
 .card-contenido-select {
   font-size: 11px !important;
   font-weight: normal !important;
-}
-
-.option-select:hover {
-  font-size: 12px !important;
-  font-weight: bold !important;
-  background-color: #c4122f;
-  opacity: 73%;
-  width: 115% !important;
-  cursor: pointer;
 }
 
 .separador {
@@ -1200,7 +1443,7 @@ a {
 }
 
 .input-checkbox:checked + .input-checkbox-lab:before {
-  content: "✓";
+  content: url(../img/icon-check.svg);
   font-size: 25px;
   color: #fff;
   background: #c4122f;
@@ -1966,11 +2209,10 @@ a > i > label {
 }
 
 .total-devolucion {
-  background: #07354F;
+  background: #07354f;
   margin: 0rem;
   padding: 0.5rem;
 }
-
 
 .input-group-text {
   border: 1px !important;
@@ -1989,7 +2231,7 @@ a > i > label {
 
 .btn-slider-center {
   display: inline-flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .btn-slider {

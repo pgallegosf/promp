@@ -9,6 +9,9 @@ $(document).ready(function() {
 $(".close-popover").click(function() {
   $(".popover").toggle();
 });
+
+
+
     $('.controlSelect2').select2({
 		tags: "true",
   placeholder: "Seleccione una opción"
@@ -27,6 +30,7 @@ $(".close-popover").click(function() {
   
 
 });
+
 
 $(document).on('select2:open', () => {
     document.querySelector('.select2-search__field').focus();

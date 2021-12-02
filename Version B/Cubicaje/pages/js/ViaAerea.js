@@ -1,11 +1,12 @@
 $(document).ready(function() {
+    $('[data-toggle="popover"]').ggpopover();
     $(".bulto").click(function() {
         mostrarSelect();
     });
     $(".producto").click(function() {
         ocultarSelect();
         $("#bulto").val("Caja personalizada");
-        $("#medida").show();
+        $("#medida").css("visibility", "visible");
     });
     $(".bultoM").click(function() {
         mostrarSelectM();
@@ -13,6 +14,7 @@ $(document).ready(function() {
     $(".productoM").click(function() {
         ocultarSelectM();
         $("#bultoM").val("Caja personalizada");
+        $("#medidam").css("visibility", "visible");
     });
     $(".paleitizado").click(function() {
         $("#Directo").hide();
@@ -34,10 +36,19 @@ $(document).ready(function() {
     });
     $("#tipoBulto").hide()
     $("#tipoBultoM").hide()
-    $("#medida").hide()
+    $("#medida").css("visibility", "hidden");
+    $("#medidam").css("visibility", "hidden");
     $("#Paleitizada").hide();
     $("#tipoPallete").hide();
     $("#tipoPalleteM").hide();
+
+    $('#add-bulto').click(function (e) { 
+        $('#bulto2').show();
+    });
+
+    $('#borrar').click(function (e) { 
+        $('#bulto2').hide();
+    });
 
     $(".accordion-header").dblclick(function() {
         var valor = 3;
@@ -56,6 +67,7 @@ $(document).ready(function() {
         }
     });
 });
+
 
 
 
