@@ -287,7 +287,7 @@
                 </div>
                 <div class="row">
                     <div class="row row-mapa">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-9 centrado contenedor-mapa-rutas card-responsive">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-9 centrado contenedor-mapa-rutas card-responsive" style="position: relative; display: flex; flex-direction: column;">
                             <div class="titulo font-Display-2-Bold negro-promperu text-left mostrar-desktop" style="margin-left: 16px;">Mapa de rutas</div>
                             <div class="titulo font-H2-bold-700 negro-promperu text-center mostrar-movil" style="margin-left: 16px;">Mapa de rutas</div>
                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-left rem-1 font-H4-light negro-promperu mostrar-desktop" style="width: 410px !important;">
@@ -296,60 +296,63 @@
                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center rem-1 font-H5-light negro-promperu mostrar-movil" style="margin: 0px;">
                                 Descubre las principales rutas marítimas desde el Perú hacia los principales mercados internacionales
                             </div>
-                            <div class="col-lg-8 col-md-8 col-sm-12 position-relative margin-16">
-                                <div class="text-left">
-                                    <label class="font-label negro-promperu">País de destino</label>
-                                    <input type="text" class="form-control mostrarpuerto ordenar mostrar-desktop font-H4-light gris-promperu padding-left-right-0" id="mostrarpuerto" value="Selecciona" /><i class="fas fa-angle-down icon-select mostrar-desktop ordenar"></i>
-                                    <input type="text" class="form-control mostrarpuertoMovil ordenar mostrar-movil font-H4-light gris-promperu padding-left-right-0" id="mostrarpuerto" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#PaisDestinoCanvas" aria-controls="PaisDestinoCanvas" />
-                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#PaisDestinoCanvas" aria-controls="PaisDestinoCanvas"></i>
+                            <!-- <div class="col-lg-8 col-md-8 col-sm-12 position-relative margin-16"> -->
+                                <div class="col-lg-8 col-md-8 col-sm-12 position-relative margin-16">
+                                    <div class="text-left">
+                                        <label class="font-label negro-promperu">País de destino</label>
+                                        <input type="text" class="form-control mostrarpuerto ordenar mostrar-desktop font-H4-light gris-promperu padding-left-right-0" id="mostrarMapaRuta" value="Selecciona" /><i class="fas fa-angle-down icon-select mostrar-desktop ordenar"></i>
+                                        <input type="text" class="form-control mostrarpuertoMovil ordenar mostrar-movil font-H4-light gris-promperu padding-left-right-0" id="mostrarMapaRuta" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#PaisDestinoCanvas" aria-controls="PaisDestinoCanvas" />
+                                        <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#PaisDestinoCanvas" aria-controls="PaisDestinoCanvas"></i>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- <div class="card h-100 p-3 card-select-buscar rem-1 cardPuerto" id="view-selectPais"> -->
-                            <div class="card-maritima-pais-select negro-promperu cardPuerto" id="view-selectPais">
-                                <div class="row">
-                                    <div class="col-3 separador font-label-400 padding-select">Paises Frecuentes:</div>
-                                    <div class="col-2 font-label-400 col-card-select-buscar padding-select" id="idContinente" style="padding-top: 2px !important; padding-left: 20px;">                                            
-                                        <div style="padding: 5px; padding-top: 8px !important; padding-bottom: 10px !important; background-color: #E4E6E7;">America</div>
-                                    </div>
-                                    <div class="col-2 font-label-400 col-card-select-buscar padding-select" id="idEuropa">Europa</div>
-                                    <div class="col-2 font-label-400 col-card-select-buscar padding-select" id="idAsia">Asia</div>
-                                    <div class="col-2 font-label-400 col-card-select-buscar padding-select" id="idAfrica">Africa</div>
-                                    <div class="col-1 font-label-400 col-card-select-buscar padding-select" id="idOceania">Óceania</div>
-                                    <div class="col-3 card-contenido-select separador" style="margin-right: 10px !important;">
-                                        <option class="mb-1 font-H4-light option-select opPais" style="text-align: left;">Estados Unidos</option>
-                                        <option class="mb-1 font-H4-light option-select opPais" style="text-align: left;">Chile</option>
-                                        <option class="mb-1 font-H4-light option-select opPais" style="text-align: left;">China</option>
-                                        <option class="mb-1 font-H4-light option-select opPais" style="text-align: left;">Italia</option>
-                                        <option class="mb-1 font-H4-light option-select opPais" style="text-align: left;">España</option>
-                                        <option class="mb-1 font-H4-light option-select opPais" style="text-align: left;">Francia</option>
-                                        <option class="mb-1 font-H4-light option-select opPais" style="text-align: left;">Holanda</option>
-                                        <option class="mb-1 font-H4-light option-select opPais" style="text-align: left;">México</option>
-                                    </div>
-                                    <div class="col-8 card-contenido-select">
-                                        <div class="row" id="detalPais">
-                                            <div class="col-4">
-                                                <option value="1" class="mb-1 font-H4-light option-select opPais" style="text-align: left;">Argentina</option>
-                                                <option value="2" class="mb-1 font-H4-light option-select opPais" style="text-align: left;">Brasil</option>
-                                                <option value="3" class="mb-1 font-H4-light option-select opPais" style="text-align: left;">Canada</option>
-                                                <option value="4" class="mb-1 font-H4-light option-select opPais" style="text-align: left;">Chile</option>
-                                                <option value="5" class="mb-1 font-H4-light option-select opPais" style="text-align: left;">Colombia</option>
-                                                <option value="6" class="mb-1 font-H4-light option-select opPais" style="text-align: left;">Costa Rica</option>
-                                                <option value="7" class="mb-1 font-H4-light option-select opPais" style="text-align: left;">Estados Unidos</option>
-                                            </div>
-                                            <div class="col-4">
-                                                <option value="8" class="mb-1  font-H4-light option-select opPais" style="text-align: left;">Guatemala</option>
-                                                <option value="9" class="mb-1  font-H4-light option-select opPais" style="text-align: left;">Honduras</option>
-                                                <option value="10" class="mb-1 font-H4-light  option-select opPais" style="text-align: left;">México</option>
-                                                <option value="11" class="mb-1 font-H4-light  option-select opPais" style="text-align: left;">Nicaragua</option>
-                                                <option value="12" class="mb-1 font-H4-light  option-select opPais" style="text-align: left;">Panamá</option>
-                                                <option value="13" class="mb-1 font-H4-light  option-select opPais" style="text-align: left;">Venezuela</option>
-                                            </div>
+                                <div class="mostrar-movil"><br><br></div>
+                                <div class="card-maritima-pais-select cardPuerto negro-promperu" id="view-select-Pais">
+                                    <div class="row">
+                                        <div class="col-3 separador font-label-400 padding-select">Paises Frecuentes:</div>
+                                        <div class="col-2 font-label-400 col-card-select-buscar padding-select" id="idContinente" style="padding-top: 2px !important; padding-left: 20px;">                                            
+                                            <div style="padding: 5px; padding-top: 8px !important; padding-bottom: 10px !important; background-color: #E4E6E7;">America</div>
                                         </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                        <div class="col-2 font-label-400 col-card-select-buscar padding-select" id="idEuropa">Europa</div>
+                                        <div class="col-2 font-label-400 col-card-select-buscar padding-select" id="idAsia">Asia</div>
+                                        <div class="col-2 font-label-400 col-card-select-buscar padding-select" id="idAfrica">Africa</div>
+                                        <div class="col-1 font-label-400 col-card-select-buscar padding-select" id="idOceania">Óceania</div>
+                                        <div class="col-3 card-contenido-select separador" style="margin-right: 10px !important;">
+                                            <option class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">Estados Unidos</option>
+                                            <option class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">Chile</option>
+                                            <option class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">China</option>
+                                            <option class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">Italia</option>
+                                            <option class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">España</option>
+                                            <option class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">Francia</option>
+                                            <option class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">Holanda</option>
+                                            <option class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">México</option>
+                                        </div>
+                                        <div class="col-8 card-contenido-select">
+                                            <div class="row" id="detalPais">
+                                                <div class="col-4">
+                                                    <option value="1" class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">Argentina</option>
+                                                    <option value="2" class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">Brasil</option>
+                                                    <option value="3" class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">Canada</option>
+                                                    <option value="4" class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">Chile</option>
+                                                    <option value="5" class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">Colombia</option>
+                                                    <option value="6" class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">Costa Rica</option>
+                                                    <option value="7" class="mb-1 font-H4-light option-select opPaisRuta" style="text-align: left;">Estados Unidos</option>
+                                                </div>
+                                                <div class="col-4">
+                                                    <option value="8" class="mb-1  font-H4-light option-select opPaisRuta" style="text-align: left;">Guatemala</option>
+                                                    <option value="9" class="mb-1  font-H4-light option-select opPaisRuta" style="text-align: left;">Honduras</option>
+                                                    <option value="10" class="mb-1 font-H4-light  option-select opPaisRuta" style="text-align: left;">México</option>
+                                                    <option value="11" class="mb-1 font-H4-light  option-select opPaisRuta" style="text-align: left;">Nicaragua</option>
+                                                    <option value="12" class="mb-1 font-H4-light  option-select opPaisRuta" style="text-align: left;">Panamá</option>
+                                                    <option value="13" class="mb-1 font-H4-light  option-select opPaisRuta" style="text-align: left;">Venezuela</option>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+
                             <div class="col-lg-8 col-md-8 col-sm-12 mt-4 centrado" id="btn-rutas2">
+                                <!-- <button class="btn btn-disabled btn-rutas2 mostrar-desktop width-100 font-H4-bold">Mostrar rutas</button> -->
                                 <button class="btn btn-disabled btn-rutas2 mostrar-desktop width-100 font-H4-bold">Mostrar rutas</button>
                                 <button class="btn btn-disabled btn-rutasMovil2 mostrar-movil width-100 font-H4-bold">Mostrar rutas</button>
                             </div>
@@ -359,6 +362,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
                 <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
                 <div class="mostrar-desktop">
@@ -1145,13 +1149,15 @@
             <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
         </button>
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="width: 842px !important; height: 600px;">
                 <div class="modal-body">
-                    <img src="../assets/img/Ruta_Marina/pop up_mapa.png" alt="mapa" class="img">
+                    <img src="../assets/img/Ruta_Marina/pop up_mapa_2.png" alt="mapa" class="img">
                 </div>
             </div>
         </div>
     </div>
+
+
     <!-- Fin modal mapa -->
     <!-- Inicio modal informativo -->
     <div class="modal fade" id="m-informativo" tabindex="-1" aria-labelledby="m-informativo" aria-hidden="true">

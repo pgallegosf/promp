@@ -32,6 +32,7 @@ $(document).ready(function() {
         showCardPuertosOrigen();
     });
     $(".opPais").click(function(e) {
+        debugger;
         e.stopPropagation();
         showCardPuertosDestino();
     });
