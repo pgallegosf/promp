@@ -1464,9 +1464,10 @@ a {
   display: inline-block;
   height: 24px;
   width: 24px;
-  margin: 0 7px 0 0;
+  margin: 0 20px 0 0;
   text-align: center;
   vertical-align: middle;
+  float: left;
 }
 
 /* ====================================================================================== 
@@ -1654,7 +1655,6 @@ input[type="radio"]:checked ~ label {
 .paddingCardBusqueda {
   padding-left: 90px;
   padding-right: 90px;
-  padding-bottom: 37px;
   padding-top: 44px;
 }
 
@@ -1941,6 +1941,10 @@ a > i > label {
 }
 
 @media (min-width: 992px) {
+  .background-second-light {
+    background-color: #efefef !important;
+  }
+
   .correoDetalle {
     display: block;
   }
@@ -1972,7 +1976,7 @@ a > i > label {
 }
 
 .background-second-light {
-  background-color: #efefef;
+  background-color: #efefef !important;
 }
 
 .margin-0 {
@@ -2174,6 +2178,12 @@ a > i > label {
   margin: 0rem;
   padding: 1rem;
   cursor: pointer;
+  color: #A5ABB0;
+}
+
+.swtich i img {
+  filter: hue-rotate(120deg);
+
 }
 
 .active-product {
@@ -2181,6 +2191,10 @@ a > i > label {
   color: #ffffff !important;
   transition: width 0.1s;
   z-index: 1;
+}
+
+.active-product > i > img {
+
 }
 
 .p-right {
@@ -2377,11 +2391,95 @@ a > i > label {
 
 /* Card personalizado movil */
 
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
 .card-personalizado {
   border: 1px solid #a5acb0;
   border-radius: 20px;
+  transition: all 0.5s;;
+}
+
+.card-personalizado:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border: none;
 }
 
 .padding-top-30 {
   padding-top: 30px !important;
+}
+
+/* MODAL STYLES */
+.vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  /* This makes sure that we can still click outside of the modal to close it */
+}
+
+.vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.modal-content {
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  width: inherit;
+  max-width: inherit;
+  /* For Bootstrap 4 - to avoid the modal window stretching full width */
+  height: inherit;
+  /* To center horizontally */
+  margin: 0 auto;
+  pointer-events: all;
+}
+
+.card-accordion {
+  background: #FFFFFF !important;
+  border: 2px solid #E4E6E7 !important;
+  box-sizing: border-box !important;
+  border-radius: 20px !important;
+}
+
+.card-show {
+  background: #FFFFFF !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 20px !important;
+  border: none !important;
+}
+
+.btn-outline-simulador {
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    border-radius: 15px !important;
+}
+
+.font-header-bold {
+  font-family: 'Helvetica Neue LT Std bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.font-header-light {
+  font-family: 'Helvetica Neue LT Std light';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.font-link {
+  font-family: 'Helvetica Neue LT Std bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
 }

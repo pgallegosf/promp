@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('#menu').hide();
     $("#proDirecta").show();
     $("#proEncargo").hide();
     $("#directa").click(function() {
@@ -11,6 +12,7 @@ $(document).ready(function() {
         mostrarDocumento();
     });
     $("#btn-comenzarM").click(function() {
+        $('#menu').show();
         mostrarDocumento();
     });
     $("#view-tabs").hide();
@@ -26,7 +28,22 @@ $(document).ready(function() {
     $(".back").click(function() {
         regresar();
     });
+
+    $('#btn-next1').click(function (e) { 
+        $("#main").show();
+        $("#opciones").hide();
+        $('option-01').hide();
+        
+    });
+
+    $('#btn-next2').click(function (e) { 
+        $("#main").show();
+        $("#opciones").hide();
+        $('option-02').hide();
+        
+    });
 });
+
 
 function selectEncargo() {
     $("#directa").removeClass("active-product")

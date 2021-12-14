@@ -204,6 +204,12 @@ footer .credits {
   color: #282828;
 }
 
+.tabs .divTab .div-left-tab > ul li a.active > .tab-label> .round-step {
+
+  background-color: #282828;
+  opacity: 1;
+  }
+
 .tabs .div-left-tab > ul li a > span {
   display: flex;
   align-items: center;
@@ -224,6 +230,14 @@ footer .credits {
     word-wrap: break-word !important;
     /*border-bottom: 6px solid #0067b8;*/
   }
+
+  .tabs .divTab .div-left-tab > ul li a.active {
+
+    /*background-color: #D2D5D7;*/
+
+    color: #282828;
+
+}
 }
 
 @media (min-width: 576px) {
@@ -252,11 +266,22 @@ footer .credits {
   }
 }
 
+.line-intelineado{
+	top: calc(50% - 0px/2);
+	border-bottom: 1px dashed #282828;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 5px;
+	width:100%;
+}
+
+/*
 .tabs section > * {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.2s, transform 0.2s;
-}
+}*/
 
 .tabs section > *:nth-child(1) {
   transition-delay: 0.2s;
@@ -375,6 +400,14 @@ footer .credits {
     font-size: 1.125rem;
   }
 
+  .tabs .divTab .div-left-tab > ul li a.active {
+
+    background: linear-gradient(to bottom, #D2D5D7 0%, #D2D5D7 90%, #FFF 10%, #FFF 100%);
+
+    color: #282828;
+
+}
+
   /*.tabs-container {
 		padding: 4rem 4rem;
 	}*/
@@ -385,13 +418,7 @@ footer .credits {
 		width: 800px;
 	}
 }*/
-.tab-head {
-  display: flex;
-  justify-content: center;
-  height: 80px;
-  align-items: center;
-  background: #D2D5D7;
-}
+
 
 /************************  PARA MOVIL********************/
 .tabs .divTab .tab-movil > ul li {
@@ -427,10 +454,12 @@ footer .credits {
   }
 
   .tab-head {
-    background: #D2D5D73D !important;
+    display: flex;
+    justify-content: center;
+    /*height: 80px;*/
+    align-items: center;
+    background: #D2D5D736;
   }
-
-  
 }
 @media (min-width: 576px) {
   .tab-desktop {
@@ -465,6 +494,10 @@ footer .credits {
   }
 
   .tab-head {
-    background: #D2D5D7 !important;
+    display: flex;
+    justify-content: center;
+    /*height: 80px;*/
+    align-items: center;
+    background: #D2D5D7;
   }
 }

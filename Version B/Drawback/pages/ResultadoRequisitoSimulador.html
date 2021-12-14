@@ -29,7 +29,7 @@
 
     <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg " data-select2-id="select2-data-30-q45v">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ocultar-movil" style="box-shadow: none; background-color: #ffffff !important;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ocultar-movil">
             <div class="container-fluid container-menu-derecho">
                 <!-- <a href="http://"><i class="fas fa-chevron-left"></i></a> -->
                 <a style="width: 485px !important;" class="navbar-brand ordenar d-flex justify-content-center" href="javascript:window.location.reload(true)">
@@ -271,15 +271,15 @@
           </div>
       </nav>
         <!-- End Navbar -->
-        <div class="container-fluid py-4 container-principal">
+        <div class="container-fluid py-4 container-principal" style="padding-top: 79px !important;">
             <!-- Inicio de vista principal -->
-            <div class="d-display" id="view-global">
+            <div class="d-display" id="view-global" style="margin-right: 0px !important; margin-left: 0px !important;">
                 <div class="col-lg-12 col-md-12 col-sm-12 show-web">
                     <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
                         <div class="row mt-4 div-centrado" style="width: 1275px;">
                             <div class="font-h1-bold negro-promperu col-xl-6 col-lg-6 col-md-6 col-sm-12">Resultado</div>
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                                <button type="button" style="text-transform: inherit !important;" class="btn btn-outline-danger div-right w-70 btn-movil" onclick="window.location.href='Drawback.html'">Volver al inicio</button>
+                                <button type="button" style="width: 304px !important; height: 50px !important; text-transform: inherit !important;" class="btn btn-outline-danger font-H4-bold div-right w-70 btn-movil" onclick="window.location.href='Drawback.html'">Volver al inicio</button>
                             </div>
                         </div>
                     </div>
@@ -287,10 +287,10 @@
                 <div class="row mt-4 div-centrado show-movil">
                     <div class="text-center font-h1-bold negro-promperu col-xl-6 col-lg-6 col-md-6 col-sm-12">Resultado</div>
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center pt-3 pb-3">
-                        <button type="button" style="text-transform: inherit !important;" class="btn btn-outline-danger w-70 btn-movil" onclick="window.location.href='Drawback.html'">Volver al inicio</button>
+                        <button type="button" style="text-transform: inherit !important;" class="btn btn-outline-danger font-H4-bold w-70 btn-movil" onclick="window.location.href='Drawback.html'">Volver al inicio</button>
                     </div>
                 </div>
-                <div class="row mt-4 div-centrado">
+                <div class="row mx-2">
                     <div class="col-lg-12 mb-lg-0 d-flex justify-content-center">
                         <div class="card card-resultado-simulador" style="width: 1275px;">
                             <div class="col-lg-12 col-md-12 d-flex justify-content-center">
@@ -302,19 +302,49 @@
                                     <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 font-H2-bold font-color-white px-5 mt-4 show-desktop">
                                         Documentos que te faltan:
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 font-color-white font-H4-light mt-4">
-                                            <i style="font-size: 11px;" class="fas fa-circle"></i> Registrar tu local en la SUNAT. Es un requisito obligatorio
+                                            <div class="row">
+                                                <div class="col-lg-1 col-sm-1 col-md-1">
+                                                    <i style="font-size: 11px;" class="fas fa-circle"></i>
+                                                </div>
+                                                <div class="col-lg-11 col-sm-11 col-md-11" style="position: relative;right: 24px;">
+                                                    Registrar tu local en la SUNAT. Es un requisito obligatorio
+                                                </div>
+                                            </div>
+                                          
                                         </div>
-                                        <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 font-color-white font-H4-light pt-5">
-                                            <i style="font-size: 11px;" class="fas fa-circle"></i> Tener los registros contables del comprobante de pago. Es un requisito obligatorio
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 font-color-white font-H4-light pt-5">
+                                            <div class="row">
+                                                <div class="col-lg-1 col-sm-1 col-md-1">
+                                                    <i style="font-size: 11px;" class="fas fa-circle"></i>
+                                                </div>
+                                                <div class="col-lg-11 col-sm-11 col-md-11" style="position: relative;right: 24px;">
+                                                    Tener los registros contables del comprobante de pago. <br> Es un requisito obligatorio
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
-                                    <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 font-H2-bold text-center font-color-white px-5 mt-4 show-movil">
-                                       Lo que falta
+                                    <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 font-H3-bold text-center font-color-white px-3 mt-3 show-movil">
+                                       Lo que te falta
                                         <div class="col-xl-12 col-lg-12 col-md-12 text-left col-sm-12 font-color-white font-H4-light mt-4">
-                                            <i style="font-size: 11px;" class="fas fa-circle"></i> Registrar tu local en la SUNAT. Es un requisito obligatorio
+                                           <div class="row">
+                                             <div class="col-sm-1 col-md-1 col-lg-1">
+                                                <i style="font-size: 11px;" class="fas fa-circle"></i>
+                                             </div>
+                                             <div class="col-sm-11 col-md-11 col-lg-11">
+                                                Registrar tu local en la SUNAT. <br> Es un requisito obligatorio
+                                            </div>
+                                           </div>  
                                         </div>
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-left font-color-white font-H4-light mt-4">
-                                            <i style="font-size: 11px;" class="fas fa-circle"></i> Tener los registros contables del comprobante de pago. Es un requisito obligatorio
+                                          <div class="row">
+                                            <div class="col-sm-1">
+                                                <i style="font-size: 11px;" class="fas fa-circle"></i>
+                                            </div>
+                                            <div class="col-sm-11">
+                                                Tener los registros contables del comprobante de pago. Es un requisito obligatorio
+                                            </div>
+                                          </div>  
                                         </div> 
                                     </div>
                                 </div>
@@ -333,7 +363,7 @@
 
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                        <h6 class="font-H2-bold negro-promperu text-center mt-4" style="height: 72px;">Simular la devolusión de Drawback</h6>
+                                        <h6 class="font-H2-bold negro-promperu text-center mt-4" style="height: 72px;">Simular la devolución de Drawback</h6>
                                         <p class="col-xs-12 col-sm-12 col-md-8 col-lg-12 text-center">
                                             <span class="font-H5-light negro-promperu">
                                                 Conoce el monto que te podría ser devuelto por la exportación de tus productos
@@ -352,10 +382,10 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                        <h6 class="font-H2-bold negro-promperu mt-4 text-center" style="height: 72px;">Conoce las partidas excluidas de Drawback</h6>
+                                        <h6 class="font-H2-bold negro-promperu mt-4 text-center" style="height: 72px;">Conoce las subpartidas excluidas de Drawback</h6>
                                         <p class="col-xs-12 col-sm- 12 col-md-8 col-lg-12 text-center">
                                             <span class="font-H5-light negro-promperu">
-                                                Evita los chascos y demoras. Mira la lista de los insumos que no aplican al Drawback
+                                                Evita las demoras. Revisa la lista de las subpartidas que no aplican al Drawback.
                                             </span>
                                         </p>
                                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-12 centro ">
@@ -379,13 +409,13 @@
 
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                        <h6 class="font-H2-bold negro-promperu text-center mt-6" style="font-size: 25px !important;">Simular la devolusión de Drawback</h6>
+                                        <div class="font-H2-bold negro-promperu text-center">Simular la devolución <br> de Drawback</div>
                                         <p class="col-xs-12 col-sm-12 col-md-8 col-lg-12 text-center">
                                             <span class="font-H5-light negro-promperu">
-                                                Conoce el monto que te podría ser devuelto por la exportación de tus productos
+                                                Conoce el monto que te podría ser devuelto <br> por la exportación de tus productos
                                             </span>
                                         </p>
-                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-12 centro">
+                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-12 centro pb-5">
                                             <button class="btn-danger w-90 font-H4-bold" style="height: 50px !important;" onclick="window.location.href='EmpezarDrawback.html'">Ingresar</button>
                                         </div>
                                     </div>
@@ -398,10 +428,10 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                        <h6 class="px-1 font-H2-bold negro-promperu mt-6 text-center" style="font-size: 25px !important;">Conoce las partidas excluidas de Drawback</h6>
+                                        <h6 class="px-1 font-H2-bold negro-promperu mt-6 text-center">Conoce las subpartidas excluidas de Drawback</h6>
                                         <p class="col-xs-12 col-sm- 12 col-md-8 col-lg-12 text-center">
                                             <span class="font-H5-light negro-promperu">
-                                                Evita los chascos y demoras. Mira la lista de los insumos que no aplican al Drawback
+                                                Evita las demoras. Revisa la lista de las <br> subpartidas que no aplican al Drawback.
                                             </span>
                                         </p>
                                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-12 centro ">
