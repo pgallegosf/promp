@@ -1223,7 +1223,7 @@ input[type="radio"]:checked ~ label {
   .paddingCardBusqueda {
     padding-left: 90px !important;
     padding-right: 90px !important;
-    padding-bottom: 37px !important;
+    padding-bottom: 61px !important;
     padding-top: 44px !important;
   }
 }
@@ -1607,22 +1607,111 @@ a > i > label {
   font-size: 16px !important;
 }
 
+.background-footer-modal {
+  background: linear-gradient(rgb(165 172 176 / 10%), rgb(165 172 176 / 10%));
+}
+
+.centrado-modal {
+  text-align: center;
+  margin: 16px;
+}
+
+.div-centrado-modal {
+  margin: 3rem !important;
+  padding: 0rem !important;
+}
+
 .btn-close-modal {
-  margin-left: 0;
-  position: absolute;
-  top: -40px;
-  right: -25px;
-  font-size: 40px;
-  top: -22px;
-  right: -13px;
-  font-size: 30px;
-  opacity: 1;
-  box-sizing: content-box;
-  width: 1em;
-  height: 1em;
-  color: #c4122f;
-  border: 0;
-  border-radius: 0.25rem;
+  box-sizing: content-box !important;
+  padding: 0.25em 0.25em!important;
+  border: 0!important;
+  position: absolute!important;
+  z-index: 0!important;
+  top: -23px!important;
+  right: -18px !important;
+  color: #ffff !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  background-color: #C4122f !important;
+  height: 25px !important;
+}
+.btn-close-modal-mediano {
+  box-sizing: content-box !important;
+  padding: 0.25em 0.25em!important;
+  border: 0!important;
+  position: absolute!important;
+  z-index: 1!important;
+  top: 4px!important;
+  right: 415px !important;
+  color: #ffff !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  background-color: #C4122f !important;
+  height: 25px !important;
+}
+
+@media (min-width: 200px) {
+  .btn-close-modal {
+    box-sizing: content-box !important;
+    padding: 0.25em 0.25em!important;
+    border: 0!important;
+    position: absolute!important;
+    z-index: 0!important;
+    top: -15px!important;
+    right: -7px !important;
+    color: #ffff !important;
+    border-radius: 50% !important;
+    width: 25px !important;
+    background-color: #C4122f !important;
+    height: 25px !important;
+}
+
+.btn-close-modal-mediano {
+  box-sizing: content-box !important;
+  padding: 0.25em 0.25em!important;
+  border: 0!important;
+  position: absolute!important;
+  z-index: 1!important;
+  top: -10px!important;
+  right: 1px !important;
+  color: #ffff !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  background-color: #C4122f !important;
+  height: 25px !important;
+}
+  
+}
+
+@media (min-width: 1200px) { 
+  .btn-close-modal {
+    box-sizing: content-box !important;
+    padding: 0.25em 0.25em!important;
+    border: 0!important;
+    position: absolute!important;
+    z-index: 0!important;
+    top: -23px!important;
+    right: -18px !important;
+    color: #ffff !important;
+    border-radius: 50% !important;
+    width: 25px !important;
+    background-color: #C4122f !important;
+    height: 25px !important;
+  }
+  .btn-close-modal-mediano {
+    box-sizing: content-box !important;
+    padding: 0.25em 0.25em!important;
+    border: 0!important;
+    position: absolute!important;
+    z-index: 1!important;
+    top: 4px!important;
+    right: 415px !important;
+    color: #ffff !important;
+    border-radius: 50% !important;
+    width: 25px !important;
+    background-color: #C4122f !important;
+    height: 25px !important;
+  }
 }
 
 .font-helv-mobile-bold {
@@ -2063,11 +2152,11 @@ a > i > label {
 .btn-cubicaje {
   background: #c4122f;
   border-radius: 20px;
-  height: 61px !important;
+  height: 85px !important;
 }
 
 .icon-cubicaje {
-  width: 45px;
+  width: 52px;
 }
 
 .container-tabs {
@@ -2090,7 +2179,7 @@ a > i > label {
 }
 
 .padding-text-cubicaje {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .div-icon-text-centrado {
@@ -2153,7 +2242,7 @@ a > i > label {
 
   .card-bulto {
     height: auto !important;
-    top: 214px !important;
+    top: 238px !important;
     position: absolute !important;
     left: 47px !important;
     width: 78% !important;
@@ -2254,11 +2343,11 @@ a > i > label {
 
   .card-bulto {
     height: auto !important;
-    top: 39% !important;
+    top: 37% !important;
     position: absolute !important;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
-    left: 34.5% !important;
-    width: 65% !important;
+    left: 34.2% !important;
+    width: 733px !important;
     background: #ffffff;
     border-radius: 0px 0px 10px 10px;
   }
@@ -2270,6 +2359,20 @@ a > i > label {
     width: 100% !important;
   }
 }
+
+@media (min-width: 1920px) { 
+  .card-bulto {
+    height: auto !important;
+    top: 37% !important;
+    position: absolute !important;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    left: 39.2% !important;
+    width: 733px !important;
+    background: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+
 
 .card-div-movil {
   background-color: #777a7c0d !important;

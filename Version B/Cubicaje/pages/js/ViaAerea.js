@@ -28,10 +28,22 @@ $(document).ready(function() {
     });
     $(".tipPallete").click(function() {
         ocultarPaleitizada();
+        $('.largo').addClass('negro-promperu');
+        $('.ancho').addClass('negro-promperu');
+        $('.alto').addClass('negro-promperu');
+        $('.largo').removeClass('gris-promperu');
+        $('.ancho').removeClass('gris-promperu');
+        $('.alto').removeClass('gris-promperu');
         $("#pallete").val("Pallete Europeo (120 x 80 x 200 cm)");
     });
     $(".tipPalleteM").click(function() {
         ocultarPaleitizada();
+        $('.largom').addClass('negro-promperu');
+        $('.anchom').addClass('negro-promperu');
+        $('.altom').addClass('negro-promperu');
+        $('.largom').removeClass('gris-promperu');
+        $('.anchom').removeClass('gris-promperu');
+        $('.altom').removeClass('gris-promperu');
         $("#palleteM").val("Pallete Europeo (120 x 80 x 200 cm)");
     });
     $("#tipoBulto").hide()

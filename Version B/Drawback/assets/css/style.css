@@ -185,10 +185,6 @@ table tbody tr {
     font-size: 17px !important;
   }
 
-  .modal-dialog {
-    padding: 20px !important;
-  }
-
   .mostrar-desktop {
     display: none !important;
   }
@@ -249,10 +245,6 @@ table tbody tr {
 }
 
 @media (min-width: 576px) {
-  .modal-dialog {
-    padding: 20px !important;
-  }
-
   .container-vista-simulador {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -296,9 +288,6 @@ table tbody tr {
 }
 
 @media (min-width: 768px) {
-  .modal-dialog {
-    padding: 0px !important;
-  }
 
   .nav-img {
     width: 22% !important;
@@ -329,9 +318,6 @@ table tbody tr {
 }
 
 @media (min-width: 992px) {
-  .modal-dialog {
-    padding: 0px !important;
-  }
 
   .mostrar-desktop {
     display: block !important;
@@ -409,10 +395,6 @@ table tbody tr {
     font-weight: normal !important;
     font-size: 24px !important;
     line-height: 29px !important;
-  }
-
-  .modal-dialog {
-    padding: 0px !important;
   }
 
   .show-movil {
@@ -521,6 +503,11 @@ table tbody tr {
 }
 
 .div-centrado {
+  margin: 3rem !important;
+  padding: 0rem !important;
+}
+
+.div-centrado-modal {
   margin: 3rem !important;
   padding: 0rem !important;
 }
@@ -2066,6 +2053,70 @@ a > i > label {
   height: 25px !important;
 }
 
+@media (min-width: 200px) {
+  .btn-close-modal {
+    box-sizing: content-box !important;
+    padding: 0.25em 0.25em!important;
+    border: 0!important;
+    position: absolute!important;
+    z-index: 0!important;
+    top: -15px!important;
+    right: -7px !important;
+    color: #ffff !important;
+    border-radius: 50% !important;
+    width: 25px !important;
+    background-color: #C4122f !important;
+    height: 25px !important;
+}
+
+.btn-close-modal-mediano {
+  box-sizing: content-box !important;
+  padding: 0.25em 0.25em!important;
+  border: 0!important;
+  position: absolute!important;
+  z-index: 1!important;
+  top: -10px!important;
+  right: 1px !important;
+  color: #ffff !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  background-color: #C4122f !important;
+  height: 25px !important;
+}
+  
+}
+
+@media (min-width: 1200px) { 
+  .btn-close-modal {
+    box-sizing: content-box !important;
+    padding: 0.25em 0.25em!important;
+    border: 0!important;
+    position: absolute!important;
+    z-index: 0!important;
+    top: -23px!important;
+    right: -18px !important;
+    color: #ffff !important;
+    border-radius: 50% !important;
+    width: 25px !important;
+    background-color: #C4122f !important;
+    height: 25px !important;
+  }
+  .btn-close-modal-mediano {
+    box-sizing: content-box !important;
+    padding: 0.25em 0.25em!important;
+    border: 0!important;
+    position: absolute!important;
+    z-index: 1!important;
+    top: 4px!important;
+    right: 415px !important;
+    color: #ffff !important;
+    border-radius: 50% !important;
+    width: 25px !important;
+    background-color: #C4122f !important;
+    height: 25px !important;
+  }
+}
+
 .display-block {
   display: block;
 }
@@ -2403,6 +2454,10 @@ a > i > label {
   .btn-movil {
     width: 30% !important;
   }
+}
+
+.background-footer-modal {
+  background: linear-gradient(rgb(165 172 176 / 10%), rgb(165 172 176 / 10%));
 }
 
 /* Card personalizado movil */
