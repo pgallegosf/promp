@@ -2,6 +2,9 @@ $(document).ready(function() {
     $("#btn-comenzar").click(function() {
         empezarSimulacion();
     });
+    $("#btn-comenzarm").click(function() {
+        empezarSimulacion();
+    });
     $("#btn-volver").click(function() {
         retornarViewPrincipal();
     });

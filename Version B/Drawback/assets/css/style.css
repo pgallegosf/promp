@@ -828,7 +828,7 @@ table tbody tr {
 }
 
 .hr {
-  height: 0.5px;
+  height: 2px;
 }
 
 .refresh {
@@ -914,6 +914,11 @@ table tbody tr {
 
 .centrado {
   text-align: -webkit-center;
+}
+
+.centrado-modal {
+  text-align: center;
+  margin: 16px;
 }
 
 .div-left {
@@ -2033,21 +2038,32 @@ a > i > label {
 }
 
 .btn-close-modal {
-  margin-left: 0;
-  position: absolute;
-  top: -40px;
-  right: -25px;
-  font-size: 40px;
-  top: -22px;
-  right: -13px;
-  font-size: 30px;
-  opacity: 1;
-  box-sizing: content-box;
-  width: 1em;
-  height: 1em;
-  color: #c4122f;
-  border: 0;
-  border-radius: 0.25rem;
+  box-sizing: content-box !important;
+  padding: 0.25em 0.25em!important;
+  border: 0!important;
+  position: absolute!important;
+  z-index: 0!important;
+  top: -23px!important;
+  right: -18px !important;
+  color: #ffff !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  background-color: #C4122f !important;
+  height: 25px !important;
+}
+.btn-close-modal-mediano {
+  box-sizing: content-box !important;
+  padding: 0.25em 0.25em!important;
+  border: 0!important;
+  position: absolute!important;
+  z-index: 1!important;
+  top: 4px!important;
+  right: 415px !important;
+  color: #ffff !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  background-color: #C4122f !important;
+  height: 25px !important;
 }
 
 .display-block {
@@ -2428,16 +2444,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   pointer-events: none;
 }
 
-.modal-content {
-  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
-  width: inherit;
-  max-width: inherit;
-  /* For Bootstrap 4 - to avoid the modal window stretching full width */
-  height: inherit;
-  /* To center horizontally */
-  margin: 0 auto;
-  pointer-events: all;
-}
 
 .card-accordion {
   background: #FFFFFF !important;
