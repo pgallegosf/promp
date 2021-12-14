@@ -134,7 +134,7 @@
         <!-- End Navbar -->
         <div class="container-fluid py-4 container-principal" style="padding-top: 40px !important;">
             <!-- Inicio de vista principal -->
-            <div id="view-global">
+            <div id="view-global" style="margin-left: 0px !important; margin-right: 0px !important;">
                 <div id="view-line-time-desktop">
                     <div class="contenedor-centrado" style="background: #F6F7F7 !important; "><br>
                         <div class="row max-resolution mobile-resolution-detalle-rutas" style="margin: auto !important; justify-content: space-between;">
@@ -188,21 +188,8 @@
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 altura-15"></div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
                                     </div>
-                                    <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 altura-15"></div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br>
-                                    <!-- <button type="button" class="btn btn-outline-light w-100 mostrar-movil" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
-                                        <div class="content-centrado">
-                                            <div class="avatar-group ordenar">
-                                                <div class="avatar avatar-xs rounded-circle mx-2">
-                                                    <img src="../assets/img/Ruta_Marina/Mask Group.png" alt="contenedor">
-                                                </div>
-                                                <span class="font-size-15 font-weight-bold span-ver-mapa font-H4-bold-700">Ver mapa de la ruta</span>
-                                            </div>
-                                        </div>
-                                    </button> -->
                                     <button type="button" class="btn-detalle" style="padding-left: 0px !important; width: 336px !important;">
                                         <div class="content-centrado">
                                             <div class="avatar-group ordenar">
@@ -223,17 +210,9 @@
                                 <div class="row" style="justify-content: space-between;">
                                     <div class="col-5 col-lg-5 col-md-5 col-sm-6 col-xs-6">
                                         <label class="container-detalle-subtitulo font-label-400" style="padding-bottom: 10px;"> Tipo de contenedor</label>
-                                        <!-- <input type="text" class="form-control ptOrigen mostrar-desktop ordenar font-H4-light gris-promperu padding-left-right-0" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i> -->
                                         <input type="text" class="form-control tipContainer font-H4-light negro-promperu" style="background-color: transparent !important; padding-left: 5px;" id="tipContainer" value="Dry Van 20'" data-bs-toggle="offcanvas" data-bs-target="#tipContainerCanvas" aria-controls="tipContainerCanvas"/>
                                             <i class="fas fa-angle-down icon-select tipContainer" data-bs-toggle="offcanvas" data-bs-target="#tipContainerCanvas" aria-controls="tipContainerCanvas"></i>
                                     </div>
-                                    <!-- <div class="card p-3 card-select-origen card-origen" id="selectPuertoOrigen" style="margin-top: -80px !important; width: 250px !important; height: 100px !important;">
-                                        <div class="row" id="comboContainer">
-                                            <option value="0" class="font-H4-light-300 option-select font-color-black opcContainer">Container 001</option>
-                                            <option value="1" class="font-H4-light-300 option-select font-color-black opcContainer">Container 002</option>
-                                            <option value="2" class="font-H4-light-300 option-select font-color-black opcContainer">Container 003</option>
-                                        </div>
-                                    </div> -->
                                     <div class="card-maritima-container card-origen" id="selectPuertoOrigen">
                                         <div class="row" id="comboContainer">
                                             <option value="0" class="font-H4-light option-select font-color-black opcContainer">Dry Van 20’</option>
@@ -241,13 +220,6 @@
                                             <option value="2" class="font-H4-light option-select font-color-black opcContainer" style="border-radius: 0px 0px 15px 15px;">Carga consolidada TM/m3</option>
                                         </div>
                                     </div>
-                                    <!-- <div class="card-maritima-container" id="selectPuertoOrigen">
-                                        <div class="row" id="comboContainer">
-                                            <option value="0" class="font-H4-light option-select font-color-black opcContainer" >Dry Van 20’</option>
-                                            <option value="1" class="font-H4-light option-select font-color-black opcContainer" >Dry Van 40’</option>
-                                            <option value="2" class="font-H4-light option-select font-color-black opcContainer" style="border-radius: 0px 0px 15px 15px;">Carga consolidada TM/m3</option>
-                                        </div>
-                                    </div> -->
                                     <div class="col-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
                                         <div class="costo negro-promperu text-right" style="text-align: right !important;">
                                             <span class="span-costo font-H2-bold-700" > $ 1,800</span>
@@ -256,19 +228,6 @@
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div><br>
                                 <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <!-- <button type="button" class="btn btn-outline-light boton-detalle-rutas" style="padding-left: 0px !important; width: 336px !important;">
-                                        <div class="content-centrado d-flex" style="width: 402px; align-items: center; justify-content: center;">
-                                            <div class="col-2">
-                                                <div class="avatar avatar-xs rounded-circle">
-                                                    <img src="../assets/img/Ruta_Marina/container.jpg" style="width: 52px !important;" alt="contenedor">
-                                                </div>
-                                            </div>
-                                            <div class="col-10 text-left" style="max-width: 280px !important;">
-                                                <p class="font-size-15 font-weight-bold span-contenedor font-H4-bold-700n mt-2 mb-0 mt-3">Conoce los tipos de</p>
-                                                <p class="font-size-15 font-weight-bold span-contenedor font-H4-bold-700n m-0">contenedores</p>
-                                            </div>
-                                        </div>
-                                    </button> -->
                                     <button type="button" class="btn-detalle" style="padding-left: 0px !important; width: 336px !important;">
                                         <div class="content-centrado d-flex" style="width: 402px; align-items: center; justify-content: center;">
                                             <div class="col-3">
@@ -387,7 +346,7 @@
                                             <div class="text-pais font-H5-light-400n negro-promperu negro-promperu">EE.UU.</div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
 
                                 <div class="scroll-card padding-mobile">
                                     <div class="col-line-time text-center icon-line" style="width: 164px !important;">                                        
@@ -604,7 +563,7 @@
                                             <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
                                         </div>
                                     </div>
-                                    <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
+                                    <div class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-Evergreen">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="row">
                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-label-400 negro-promperu acordion-ancho">Días de tránsito</div>
@@ -634,7 +593,7 @@
                                             <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
                                         </div>
                                     </div>
-                                    <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-MSC">
+                                    <div class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-MSC">
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-label-400 negro-promperu acordion-ancho">Días de tránsito</div>
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-label-400 negro-promperu acordion-ancho">Frecuencia</div>
@@ -661,7 +620,7 @@
                                             <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
                                         </div>
                                     </div>
-                                    <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-MAERSK">
+                                    <div class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-MAERSK">
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-label-400 negro-promperu acordion-ancho">Días de tránsito</div>
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-label-400 negro-promperu acordion-ancho">Frecuencia</div>
@@ -688,7 +647,7 @@
                                             <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
                                         </div>
                                     </div>
-                                    <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-HAMBURG">
+                                    <div class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-HAMBURG">
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-label-400 negro-promperu acordion-ancho">Días de tránsito</div>
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2 font-label-400 negro-promperu acordion-ancho">Frecuencia</div>
@@ -802,7 +761,7 @@
                                         <!-- <img src="../assets/img/icon-opcion/email.png" alt="correo" class="img-email"> -->
                                         <img src="../assets/icon/icons/icon-enviar-correo.svg" alt="img-email" style="margin-bottom: 10px;">
                                     </div>
-                                    <div class="font-weight-bold px-2 font-smallprint-medium mostrar-movil" style="padding: 0px !important; width: 60px !important;">Enviar por correo</div>
+                                    <div class="font-weight-bold px-2 font-smallprint-medium mostrar-movil" style="padding: 0px !important; width: 60px !important; margin-left: 10px !important;">Enviar por correo</div>
                                 </div>
                                 <div class="ordenar m-0" data-bs-toggle="modal" data-bs-target="#m-compartir" style="width: 90px !important;">
                                     <div>
