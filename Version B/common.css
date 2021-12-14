@@ -43,6 +43,24 @@
   padding-right: 25px !important;
 }
 
+.card-aerea-select {
+  width: 50% !important;
+  height: 200% !important;
+  margin-left: 1% !important;
+  top: 74% !important;
+  position: absolute !important;
+  font-size: 10px;
+  font-weight: bold;
+  background: #FFFFFF;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-aerea-select option {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
 .card-maritima-select {
   width: 50% !important;
   height: 200% !important;
@@ -1078,7 +1096,23 @@ img {
     margin-left: -15px !important;
     margin-right: 1px !important;
 }
+
+.min-width-line-discontinuas-7-escalas {
+  margin-left: 50px !important;
+  margin-right: 1px !important;
+}
+
+.min-width-line-discontinuas-8-escalas {
+  margin-left: -27px !important;
+  margin-right: 1px !important;
+}
+
 @media (min-width: 200px) {
+
+ .margin-mapa-rutas {
+   margin-top: 90px !important;
+ }
+
   .menu-padding{
     padding-left: 17px !important;
 }
@@ -1475,6 +1509,11 @@ img {
 }
 
 @media (min-width: 768px) {
+
+  .margin-mapa-rutas {
+    margin-top: 160px !important;
+  }
+
   .padding-moda-maritima {
     padding-left: 40px !important; 
     padding-right: 46px !important; 

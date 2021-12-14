@@ -285,7 +285,7 @@
                 </div>
                 <div class="row">
                     <div class="row row-mapa">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-9 centrado contenedor-mapa-rutas card-responsive" style="position: relative; display: flex; flex-direction: column;">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-9 centrado contenedor-mapa-rutas card-responsive margin-mapa-rutas" style="position: relative; display: flex; flex-direction: column; ">
                             <div class="titulo font-Display-2-Bold negro-promperu text-left mostrar-desktop" style="margin-left: 16px;">Mapa de rutas</div>
                             <div class="titulo font-H2-bold-700 negro-promperu text-center mostrar-movil" style="margin-left: 16px;">Mapa de rutas</div>
                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-left rem-1 font-H4-light negro-promperu mostrar-desktop" style="width: 410px !important;">
@@ -303,7 +303,7 @@
                                         <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#PaisDestinoCanvas" aria-controls="PaisDestinoCanvas"></i>
                                     </div>
                                 </div>
-                                <div class="mostrar-movil"><br><br></div>
+                                <!-- <div class="mostrar-movil"><br><br></div> -->
                                 <div class="card-maritima-pais-select cardPuerto negro-promperu" id="view-select-Pais">
                                     <div class="row">
                                         <div class="col-3 separador font-label-400 padding-select">Paises Frecuentes:</div>
@@ -364,13 +364,13 @@
                 <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
                 <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
                 <div class="mostrar-desktop">
-                    <div class="card mostrarRutas mostrarRutasDesktop">
+                    <div class="card mostrarRutas mostrarRutasDesktop" style="max-width: 1060px !important; margin-left: auto !important; margin-right: auto !important; padding-left: 25px !important; padding-right: 25px !important">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center font-color-blue font-size-25 font-H2-light-400">3 rutas encontradas</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br><br></div>
-                        <div class="row px-2">
+                        <div class="row px-2" style="padding-bottom: 10px !important;">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-size-22 font-weight-bold font-h3-bold font-weight-bold font-h3-bold">Costa Este EE.UU.</div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-h3-light-400"> 7 escalas</div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding-left: 200px !important">
                                 <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
                                     <div class="cicle-avatar div-left">
                                         <i class="far fa-map font-color-white"></i>
@@ -379,7 +379,79 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="scroll-card rem-1" style="height:145px;">
+                        <div class="scroll-card" style="min-height: 120px !important;">
+                            <div class="col-line-time text-center icon-line" style="width: 180px !important;">                                        
+                                <div class="col-12" style="width: 180px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px; top: -20px;">
+                                        <!-- <i class="fas fa-dot-circle negro-promperu"></i> -->
+                                        <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
+                                    </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="position: absolute; left: 70px; top: -3px; margin-right: 50px;"><img src="../assets/img/Ruta_Marina/Line 66_7_escalas.png" class="min-width-line-discontinuas-8-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px; right: 20px;" class="font-H5-light-400 negro-promperu">7 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px; padding-left: 22px;">Callao</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left" style="padding-left: 22px;">Perú</div>
+                            </div>  &nbsp;&nbsp;
+                            <div class="col-line-time text-center icon-line" style="width: 138px !important;">                                        
+                                <div class="col-12" style="width: 138px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: 17px; top: -3px;"><img src="../assets/img/Ruta_Marina/Line 66_7_escalas.png" class="min-width-line-discontinuas-8-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">4 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Manzanillo</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">México</div>
+                            </div>                                    
+                            <div class="col-line-time text-center icon-line" style="width: 138px !important;">                                        
+                                <div class="col-12" style="width: 138px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: 17px; top: -3px;"><img src="../assets/img/Ruta_Marina/Line 66_7_escalas.png" class="min-width-line-discontinuas-8-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">3 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Long Beach</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">EE.UU.</div>
+                            </div>  
+                            <div class="col-line-time text-center icon-line" style="width: 138px !important;">                                        
+                                <div class="col-12" style="width: 138px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: 17px; top: -3px;"><img src="../assets/img/Ruta_Marina/Line 66_7_escalas.png" class="min-width-line-discontinuas-8-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">3 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Los Ángeles</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">EE.UU.</div>
+                            </div>  
+                            <div class="col-line-time text-center icon-line" style="width: 138px !important;">                                        
+                                <div class="col-12" style="width: 138px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: 17px; top: -3px;"><img src="../assets/img/Ruta_Marina/Line 66_7_escalas.png" class="min-width-line-discontinuas-8-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">5 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Oakland</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">EE.UU.</div>
+                            </div>  
+                            <div class="col-line-time text-center icon-line" style="width: 138px !important;">                                        
+                                <div class="col-12" style="width: 138px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: 17px; top: -3px;"><img src="../assets/img/Ruta_Marina/Line 66_7_escalas.png" class="min-width-line-discontinuas-8-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">5 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Vancouver</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">Canada</div>
+                            </div>  
+                            <div class="col-line-time text-center icon-line" style="width: 138px !important;">                                        
+                                <div class="col-12" style="width: 138px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <!-- <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp; -->
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: -30px; top: -40px;">
+                                        <!-- <img src="../assets/img/Ruta_Marina/Line 66.png" class="min-width-line-discontinuas" alt="lineas">  -->
+                                        <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
+                                    </div>
+                                    <!-- <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">7 días</div> -->
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Seattle</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">EE.UU.</div>
+                            </div>  
+                        </div><br>
+                        
+                        <!-- <div class="scroll-card rem-1" style="height:145px;">
                             <div class="div-line-time col-line-time-13">
                                 <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
                                 <div class="div-right position-line-right">
@@ -455,12 +527,12 @@
                                     <div class="text-pais font-H5-light-400 font-color-black font-color-black">EE.UU.</div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                        <div class="row px-2">
+                        <div class="row px-2" style="padding-bottom: 10px !important;">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-size-22 font-weight-bold font-h3-bold font-weight-bold">Costa Golfo EE.UU.</div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-h3-light-400"> 8 escalas</div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding-left: 200px !important">
                                 <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
                                     <div class="cicle-avatar div-left">
                                         <i class="far fa-map font-color-white"></i>
@@ -469,7 +541,87 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="scroll-card rem-1">
+                        <div class="scroll-card" style="min-height: 120px !important;">
+                            <div class="col-line-time text-center icon-line" style="width: 164px !important;">                                        
+                                <div class="col-12" style="width: 164px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px; top: -20px;">
+                                        <!-- <i class="fas fa-dot-circle negro-promperu"></i> -->
+                                        <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
+                                    </div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="position: absolute; left: 20px; top: -3px; margin-right: 50px;"><img src="../assets/img/Ruta_Marina/Line 66_8_escalas.png" class="min-width-line-discontinuas-7-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px; right: 20px;" class="font-H5-light-400 negro-promperu">7 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px; padding-left: 22px;">Paita</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left" style="padding-left: 22px;">Perú</div>
+                            </div>
+                            <div class="col-line-time text-center icon-line" style="width: 120px !important;">                                        
+                                <div class="col-12" style="width: 120px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: -35px; top: -3px;"><img src="../assets/img/Ruta_Marina/Line 66_8_escalas.png" class="min-width-line-discontinuas-7-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">1 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Callao</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">Perú</div>
+                            </div>                                    
+                            <div class="col-line-time text-center icon-line" style="width: 120px !important;">                                        
+                                <div class="col-12" style="width: 120px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: -35px; top: -3px;"><img src="../assets/img/Ruta_Marina/Line 66_8_escalas.png" class="min-width-line-discontinuas-7-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">2 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Paita</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">Perú</div>
+                            </div>  
+                            <div class="col-line-time text-center icon-line" style="width: 120px !important;">                                        
+                                <div class="col-12" style="width: 120px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: -35px; top: -3px;"><img src="../assets/img/Ruta_Marina/Line 66_8_escalas.png" class="min-width-line-discontinuas-7-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">5 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Cartagena</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">Colombia</div>
+                            </div>  
+                            <div class="col-line-time text-center icon-line" style="width: 120px !important;">                                        
+                                <div class="col-12" style="width: 120px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: -35px; top: -3px;"><img src="../assets/img/Ruta_Marina/Line 66_8_escalas.png" class="min-width-line-discontinuas-7-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">3 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Puerto Cabello</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">Venezuela</div>
+                            </div>  
+                            <div class="col-line-time text-center icon-line" style="width: 120px !important;">                                        
+                                <div class="col-12" style="width: 120px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: -35px; top: -3px;"><img src="../assets/img/Ruta_Marina/Line 66_8_escalas.png" class="min-width-line-discontinuas-7-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">2 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Vera Cruz</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">México</div>
+                            </div>  
+                            <div class="col-line-time text-center icon-line" style="width: 120px !important;">                                        
+                                <div class="col-12" style="width: 120px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: -35px; top: -3px;"><img src="../assets/img/Ruta_Marina/Line 66_8_escalas.png" class="min-width-line-discontinuas-7-escalas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">2 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Houston</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">EE.UU</div>
+                            </div>  
+                            <div class="col-line-time text-center icon-line" style="width: 120px !important;">                                        
+                                <div class="col-12" style="width: 120px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <!-- <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp; -->
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: -30px; top: -40px;">
+                                        <!-- <img src="../assets/img/Ruta_Marina/Line 66.png" class="min-width-line-discontinuas" alt="lineas">  -->
+                                        <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
+                                    </div>
+                                    <!-- <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">7 días</div> -->
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Avonlea</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">Canada</div>
+                            </div>  
+                        </div><br>
+                        <!-- <div class="scroll-card rem-1">
                             <div class="div-line-time col-line-15">
                                 <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
                                 <div class="div-right position-line-right">
@@ -556,12 +708,12 @@
                                     <div class="text-pais font-H5-light-400 font-color-black font-color-black">Canada</div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br><br></div>
-                        <div class="row px-2">
+                        <div class="row px-2" style="padding-bottom: 10px !important;">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-size-22 font-weight-bold font-h3-bold font-weight-bold">EE.UU. Pacífico</div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 font-color-black font-h3-light-400"> Sin escalas</div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="padding-left: 200px !important">
                                 <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-mapa">
                                     <div class="cicle-avatar div-left">
                                         <i class="far fa-map font-color-white"></i>
@@ -569,8 +721,34 @@
                                     <div class="font-weight-bold font-color-red div-left">Ver mapa</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="scroll-card rem-1">
+                        </div>                        
+                        <div class="scroll-card" style="min-height: 100px !important;">
+                            <div class="col-line-time text-center icon-line" style="width: 164px !important;">                                        
+                                <div class="col-12" style="width: 164px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <div class="col-1" style="position: absolute; left: 0px; top: -20px;">
+                                        <!-- <i class="fas fa-dot-circle negro-promperu"></i> -->
+                                        <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
+                                    </div> &nbsp;&nbsp;&nbsp;
+                                    <div class="col-11" style="position: absolute; left: 70px; top: -3px; margin-right: 50px;"><img src="../assets/img/Ruta_Marina/Line 66_1.png" class="min-width-line-discontinuas" alt="lineas"> </div>
+                                    <div style="position: absolute; top: -18px; right: 20px;" class="font-H5-light-400 negro-promperu">7 días</div>
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px; padding-left: 22px;">Callao</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left" style="padding-left: 22px;">Perú</div>
+                            </div>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            <div class="col-line-time text-center icon-line" style="width: 164px !important;">                                        
+                                <div class="col-12" style="width: 164px !important; display: inline-flex; justify-content: center; position: relative;">
+                                    <!-- <div class="col-1" style="position: absolute; left: 0px;"><i class="fas fa-dot-circle negro-promperu"></i></div> &nbsp;&nbsp;&nbsp; -->
+                                    <div class="col-11" style="padding-left: 8px; position: absolute; left: -30px; top: -40px;">
+                                        <!-- <img src="../assets/img/Ruta_Marina/Line 66.png" class="min-width-line-discontinuas" alt="lineas">  -->
+                                        <img src="../assets/img/Ruta_Marina/contenedores_ilustracion.png" alt="contenedor_ilustracion" class="img-line-time">
+                                    </div>
+                                    <!-- <div style="position: absolute; top: -18px;" class="font-H5-light-400 negro-promperu">7 días</div> -->
+                                </div>
+                                <div class="text-line-title font-H5-bold negro-promperu text-left" style="margin-top: 5px;">Avonlea</div>
+                                <div class="text-pais font-H5-light-400n negro-promperu text-left">Canada</div>
+                            </div>  
+                        </div><br>
+                        <!-- <div class="scroll-card rem-1">
                             <div class="div-line-time col-line-3">
                                 <img src="../assets/img/Ruta_Marina/barco_ilustracion.png" alt="barco_ilustracion" class="img-line-time">
                                 <div class="div-right position-line-right">
@@ -591,7 +769,7 @@
                                     <div class="text-pais font-H5-light-400 font-color-black font-color-black">Canada</div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br><br></div>
                     </div>
                 </div>
@@ -1159,36 +1337,36 @@
     <!-- Fin modal mapa -->
     <!-- Inicio modal informativo -->
     <div class="modal fade" id="m-informativo" tabindex="-1" aria-labelledby="m-informativo" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-header header-modal">
-                    <h5 class="modal-title font-h3-bold-700 negro text-center" id="exampleModalLabel">Indicanos tu consulta</h5>
+            <!-- <div class="modal-content" style="width: 736px !important; margin-top: 20vh !important; margin-left: auto !important; margin-right: auto !important;"> -->
+                <div class="modal-header header-modal" style="max-width: 736px !important;">
+                    <h5 class="modal-title font-h3-bold-700 negro text-center" id="exampleModalLabel"><br>Indicanos tu consulta</h5>
                     <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
                         <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 div-left padding-left-right-1">
-                            <label class="font-label-400 negro-promperu">Nombres</label>
-                            <input type="text" class="form-control padding-left-right-0">
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 div-left padding-left-right-1">
-                            <label class="font-label-400 negro-promperu">Apellidos</label>
-                            <input type="text" class="form-control padding-left-right-0">
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 div-left padding-left-right-1">
-                            <label class="font-label-400 negro-promperu">Correo electrónico</label>
-                            <input type="text" class="form-control font-H4-light-300 padding-left-right-0" placeholder="ejemplo@correo.com">
-                        </div>
-                        <div class="col-sm-12 div-left padding-left-right-1">
-                            <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
-                            <textarea type="text" class="form-control padding-left-right-0"></textarea>
-                            <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 div-left mt-4">
-                            <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button">Enviar</button>
-                        </div>
+                <div class="modal-body padding-moda-maritima" style="width: 100% !important;">
+                    <div class="col-md-6 col-lg-6 col-12 div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;" >Nombres</label>
+                        <input type="text" class="form-control" placeholder="Nombres" style="padding-left: 3px !important; width: 100% !important;">
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;">Apellidos</label>
+                        <input type="text" class="form-control" placeholder="Apellidos" style="padding-left: 3px !important;">
+                    </div>
+                    <!-- <div class="col-12" style="height: 50px !important;"></div> -->
+                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu">Correo electrónico</label>
+                        <input type="text" class="form-control font-H4-light-300" placeholder="ejemplo@correo.com" style="padding-left: 3px !important;">
+                    </div>
+                    <div class="col-12 div-left padding-left-right-1">
+                        <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
+                        <textarea type="text" class="form-control" maxlength="500" rows="1" style="padding-left: 3px !important;"></textarea>
+                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
+                    </div>
+                    <div class="col-12 div-left mt-4">
+                        <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button" style="max-width: 300px !important; margin-bottom: 40px !important;">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -1197,46 +1375,47 @@
     <!-- Fin modal informativo -->
     <!-- Inicio modal calificativo -->
     <div class="modal fade" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-header header-modal">
-                    <h5 class="modal-title font-h3-bold-700 negro-promperu" id="exampleModalLabel">Deja tu opinión</h5>
+            <!-- <div class="modal-content" style="width: 736px !important; margin-top: 20vh !important; margin-left: auto !important; margin-right: auto !important;"> -->
+                <div class="modal-header header-modal" style="max-width: 736px !important;">
+                    <h5 class="modal-title font-h3-bold-700 negro text-center" id="exampleModalLabel"><br>Deja tu opinión</h5>
                     <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
                         <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 div-left padding-left-right-1">
-                            <label class="font-label-400 negro-promperu">Nombres</label>
-                            <input type="text" class="form-control padding-left-right-0">
+                <div class="modal-body padding-moda-maritima" style="width: 100% !important;">
+                    <div class="col-md-6 col-lg-6 col-12 div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;" >Nombres</label>
+                        <input type="text" class="form-control" placeholder="Nombres" style="padding-left: 3px !important; width: 100% !important;">
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;">Apellidos</label>
+                        <input type="text" class="form-control" placeholder="Apellidos" style="padding-left: 3px !important;">
+                    </div>
+                    <!-- <div class="col-12" style="height: 50px !important;"></div> -->
+                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu">Correo electrónico</label>
+                        <input type="text" class="form-control font-H4-light-300" placeholder="ejemplo@correo.com" style="padding-left: 3px !important;">
+                    </div>
+                    <div class="col-12 div-left padding-left-right-1">
+                        <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
+                        <textarea type="text" class="form-control" maxlength="500" rows="1" style="padding-left: 3px !important;"></textarea>
+                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
+                    </div>
+                    <div class="col-12 div-left mt-4 padding-left-right-1" style="display: flex; align-items: center; min-width: 300px !important;">
+                        <div class="col-5 div-left font-label-400 negro-promperu mostrar-desktop" style="max-width: 170px !important;">Califica la herramienta:</div>
+                        <div class="col-5 div-left font-label-400 negro-promperu mostrar-movil" style="max-width: 90px !important;">Califica la herramienta:</div>
+                        <div class="col-7 div-left">
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 div-left padding-left-right-1">
-                            <label class="font-label-400 negro-promperu">Apellidos</label>
-                            <input type="text" class="form-control padding-left-right-0">
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 div-left padding-left-right-1">
-                            <label class="font-label-400 negro-promperu">Correo electrónico</label>
-                            <input type="text" class="form-control font-H4-light-300 padding-left-right-0" placeholder="ejemplo@correo.com">
-                        </div>
-                        <div class="col-sm-12 div-left padding-left-right-1">
-                            <label class="font-label-400 negro-promperu">Escribe tu mensaje</label>
-                            <textarea type="text" class="form-control padding-left-right-0"></textarea>
-                            <span class="span-textarea font-smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
-                        </div>
-                        <div class="col-sm-12 div-left mt-4 padding-left-right-1">
-                            <div class="col-lg-5 col-md-5 col-sm-5 div-left font-label-400 negro-promperu" style="padding-top: 5px;">Califica la herramienta:&nbsp;</div>
-                            <div class="col-lg-3 col-md-3 col-sm-7 div-left">
-                                <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                                <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                                <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                                <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                                <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 div-left mt-4 ">
-                            <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button">Enviar</button>
-                        </div>
+                    </div>
+                    <div class="col-12 div-left mt-4">
+                        <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button" style="max-width: 300px !important; margin-bottom: 40px !important;">Enviar</button>
                     </div>
                 </div>
             </div>
