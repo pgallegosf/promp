@@ -1083,6 +1083,11 @@ img {
     width: 100% !important; 
 }
 
+.max-resolution-aerea {
+  max-width: 1366px !important; 
+  width: 100% !important; 
+}
+
 .min-width-linea-naviera-text {
     min-width: 191px !important;
 }
