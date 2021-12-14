@@ -1090,11 +1090,11 @@ a>i>label {
 .fullHeight{
     height: calc(100vh - 70px);
 }
-
 .card-left {
     float: right;
     max-width: 454px !important;
     justify-content: right !important;
+    margin-right:8%;
 }
 .card-right {
     float: left;

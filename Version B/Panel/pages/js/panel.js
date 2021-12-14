@@ -5,7 +5,8 @@ $(document).ready(function () {
     $('.card-tooltip4').hide();
     $('.card-tooltip5').hide();
     $('.card-login').hide();
-
+    
+    
     $('.card-ordenar').hide();    
     $('.card-ordenar-movil').hide();    
 
@@ -76,5 +77,61 @@ $(document).ready(function () {
     $('.card-tooltip5').toggle();
   });
 
+  $('.rutaAerea').click(function (e) { 
+    e.preventDefault();
+    irPaginaInicio(1)
+  }); 
+  $('.rutaMaritima').click(function (e) { 
+    e.preventDefault();
+    irPaginaInicio(2)
+  }); 
+  $('.rutaTerrestre').click(function (e) { 
+    e.preventDefault();
+    irPaginaInicio(3)
+  });
+  $('.costoExportacion').click(function (e) { 
+    e.preventDefault();
+    irPaginaInicio(4)
+  });
+  $('.cubicaje').click(function (e) { 
+    e.preventDefault();
+    irPaginaInicio(5)
+  }); 
+  $('.directorio').click(function (e) { 
+    e.preventDefault();
+    irPaginaInicio(6)
+  }); 
+  $('.drawback').click(function (e) { 
+    e.preventDefault();
+    irPaginaInicio(7)
+  });  
 
 });
+
+
+
+
+function irPaginaInicio(idHerramienta){
+    switch(idHerramienta){
+        case 1:
+            window.location.href="../../RutasAerea/Pages/Rutas_aerea.html";
+            break;
+        case 2:
+            window.location.href="../../RutasMaritimas/Pages/Rutas_maritimas.html";
+            break;
+        case 3:
+            window.location.href="../../RutasTerrestre/Pages/Rutas_terrestre.html";
+            break;
+        case 4:
+            window.location.href="../../Costo/Pages/inicio.html";
+            break;
+        case 5:
+            window.location.href="../../Cubicaje/Pages/Cubicaje.html";
+            break;
+        case 6:
+            window.location.href="../../DirectorioLogistico/Pages/DirectorioLogistico.html";
+        break;
+            default:
+            window.location.href="../../Drawback/Pages/Drawback.html";
+    }
+}
