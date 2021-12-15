@@ -259,7 +259,7 @@ transform: rotate(45deg);
   text-align: center;
 }
 
-.font-h1-bold {
+.font-h1-bold { 
   font-family: "Helvetica Neue LT Std bold" !important;
   font-style: normal !important;
   font-weight: 700 !important;
@@ -1396,7 +1396,7 @@ img {
         padding-left: 0px !important;
     }
     .container-principal {
-        padding-top: 90px !important;
+        padding-top: 80px !important;
         /*padding-top: 110px !important;*/
     }
     .padding-movil {

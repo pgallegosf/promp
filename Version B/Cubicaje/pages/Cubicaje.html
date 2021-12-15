@@ -140,7 +140,7 @@
         <!-- End Navbar -->
         <div class="container-fluid py-4 container-principal">
             <!-- Inicio de vista principal -->
-            <div class="d-display" id="view-global">
+            <div class="d-display" id="view-global" style="margin-right: 0px !important; margin-left: 0px !important;">
                 <div class="text-center mt-3">
                     <h5 class="font-display-title negro-promperu mostrar-desktop">Simulador de Cubicaje</h5>
                     <p class="font-H2-light negro-promperu mb-5 mostrar-desktop">Optimiza el espacio de la carga para tus exportaciones</p>
@@ -151,27 +151,48 @@
                     <div class="col-lg-12 mb-lg-0 d-flex justify-content-center paddingBusqueda">
                         <div class="card paddingCardBusqueda" style="width: 1275px;">
                             <div class="row">
-                                <div class="col-lg-4 col-md-12 col-sm-12 d-x col-xs-12 text-center font-h3-bold negro-promperu">Selecciona el medio de transporte internacional</div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 d-x col-xs-12 text-center font-h3-bold negro-promperu ocultar-movil">Selecciona el medio de transporte internacional</div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 d-x col-xs-12 text-center pt-2 pb-3 font-h3-bold negro-promperu mostrar-movil">Selecciona el medio de transporte internacional</div>
                                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 padding-items">
-                                    <div class="mx-3">
+                                    <div class="mx-3 mostrar-desktop">
                                         <div class="btn-cubicaje mx-2 w-70" onclick="window.location.href='ViaAerea.html'">
                                             <div class="avatar-group div-effect ordenar">
-                                                <div class="div-left mx-2">
+                                                <div class="div-left mx-2 pt-2">
                                                     <img class="icon-cubicaje" src="../assets/img/icon-aereo.png" alt="calculadora">
                                                 </div>
-                                                <div class="padding-text-cubicaje font-color-white font-H4-bold">Vía aérea</div>
+                                                <div style="position: relative;left: 15px;" class="padding-text-cubicaje font-color-white font-H4-bold">Vía aérea</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mostrar-movil">
+                                        <div style="width: 310px !important;" class="btn-cubicaje mx-2 w-70" onclick="window.location.href='ViaAerea.html'">
+                                            <div class="avatar-group div-effect ordenar">
+                                                <div class="div-left mx-2 pt-2">
+                                                    <img class="icon-cubicaje" src="../assets/img/icon-aereo.png" alt="calculadora">
+                                                </div>
+                                                <div style="position: relative;left: 15px;" class="padding-text-cubicaje font-color-white font-H4-bold">Vía aérea</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 padding-items">
-                                    <div class="mx-3">
+                                    <div class="mx-3 mostrar-desktop">
                                         <div class="btn-cubicaje mx-2 w-70" onclick="window.location.href='ViaMaritima.html'">
                                             <div class="avatar-group div-effect ordenar">
-                                                <div class="div-left mx-2">
+                                                <div class="div-left mx-2 pt-2">
                                                     <img class="icon-cubicaje" src="../assets/img/icon-mar.png" alt="calculadora">
                                                 </div>
-                                                <div class="padding-text-cubicaje font-color-white font-H4-bold">Vía marítima</div>
+                                                <div style="position: relative;left: 15px;" class="padding-text-cubicaje font-color-white font-H4-bold">Vía marítima</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mostrar-movil">
+                                        <div style="width: 310px !important;" class="btn-cubicaje mx-2 w-70" onclick="window.location.href='ViaMaritima.html'">
+                                            <div class="avatar-group div-effect ordenar">
+                                                <div class="div-left mx-2 pt-2">
+                                                    <img class="icon-cubicaje" src="../assets/img/icon-mar.png" alt="calculadora">
+                                                </div>
+                                                <div style="position: relative;left: 15px;" class="padding-text-cubicaje font-color-white font-H4-bold">Vía marítima</div>
                                             </div>
                                         </div>
                                     </div>
@@ -424,39 +445,36 @@
     <!-- Fin modal compartir -->
     <!-- Inicio modal informativo -->
     <div class="modal fade" id="m-informativo" tabindex="-1" aria-labelledby="m-informativo" aria-hidden="true">
-        <div class="modal-dialog ">
-            <div class="modal-content ">
-                <div class="modal-header ">
-                    <div class="col-lg-12 col-sm-12 col-xs-12 col-xl-12">
-                        <h5 class="modal-title centro font-h3-bold negro-promperu" id="exampleModalLabel">Indicanos tu consulta</h5>
-                    </div>
-                    <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                        <img src="../assets/img/btn_close.svg" alt="">
-                    </a>
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            <!-- <div class="modal-content" style="width: 736px !important; margin-top: 20vh !important; margin-left: auto !important; margin-right: auto !important;"> -->
+                <div class="modal-header header-modal" style="max-width: 736px !important;">
+                    <h5 class="modal-title font-h3-bold-700 negro text-center" id="exampleModalLabel"><br>Indicanos tu consulta</h5>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
                 </div>
-                <div class="modal-body ">
-                    <div class="col-6 div-left ">
-                        <label class="font-label negro-promperu">Nombres</label>
-                        <input type="text " class="form-control font-H4-light negro-promperu">
+                <div class="modal-body padding-moda-maritima" style="width: 100% !important;">
+                    <div class="col-md-6 col-lg-6 col-12 div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;" >Nombres</label>
+                        <input type="text" class="form-control font-H4-light" placeholder="Nombres" style="padding-left: 3px !important; width: 100% !important;">
                     </div>
-                    <div class="col-6 div-left ">
-                        <label class="font-label negro-promperu">Apellidos</label>
-                        <input type="text " class="form-control font-H4-light negro-promperu">
+                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;">Apellidos</label>
+                        <input type="text" class="form-control font-H4-light" placeholder="Apellidos" style="padding-left: 3px !important;">
                     </div>
-                    <div class="col-6 div-left mt-3">
-                        <label class="font-label negro-promperu">Correo electrónico</label>
-                        <input type="text " class="form-control font-H4-light negro-promperu" placeholder="ejemplo@correo.com ">
+                    <!-- <div class="col-12" style="height: 50px !important;"></div> -->
+                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu">Correo electrónico</label>
+                        <input type="text" class="form-control font-H4-light" placeholder="ejemplo@correo.com" style="padding-left: 3px !important;">
                     </div>
-                    <div class="col-12 div-left mt-3">
-                        <label class="font-label negro-promperu">Escribe tu consulta</label>
-                        <textarea type="text " class="form-control font-H4-light negro-promperu"></textarea>
-                        <span class="span-textarea font-smallprint-medium gris-promperu">Máximo 189 cáracteres</span>
+                    <div class="col-12 div-left padding-left-right-1">
+                        <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
+                        <textarea type="text" class="form-control font-H4-light" maxlength="500" rows="1" style="padding-left: 3px !important;"></textarea>
+                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
                     </div>
-                    <div class="mostrar-desktop col-lg-6 col-md-12 col-sm-12 col-xs-12 div-left mt-4">
-                        <button class="w-100 btn btn-primary btn-danger font-H4-bold" type="button ">Enviar</button>
-                    </div>
-                    <div class="mostrar-movil col-lg-6 col-md-12 col-sm-12 col-xs-12 div-left mt-4">
-                        <button style="width: 280px !important" class="w-100 btn btn-primary btn-danger font-H4-bold" type="button ">Enviar</button>
+                    <div class="col-12 div-left mt-4">
+                        <button class="btn btn-primary btn-danger width-100 font-H4-bold btn-enviar-calificacion" type="button" style="max-width: 300px !important; margin-bottom: 40px !important;" data-bs-toggle="modal" data-bs-target="#m-informativo-confirmacion">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -465,52 +483,47 @@
     <!-- Fin modal informativo -->
     <!-- Inicio modal calificativo -->
     <div class="modal fade" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
-        <div class="modal-dialog ">
-            <div class="modal-content ">
-                <div class="modal-header ">
-                    <div class="col-lg-12 col-sm-12">  <h5 class="modal-title centro font-h3-bold negro-promperu" id="exampleModalLabel">Deja tu opinión</h5></div>
-                    <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                        <img src="../assets/img/btn_close.svg" alt="">
-                    </a>
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            <!-- <div class="modal-content" style="width: 736px !important; margin-top: 20vh !important; margin-left: auto !important; margin-right: auto !important;"> -->
+                <div class="modal-header header-modal" style="max-width: 736px !important;">
+                    <h5 class="modal-title font-h3-bold-700 negro text-center" id="exampleModalLabel"><br>Deja tu opinión</h5>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
                 </div>
-                <div class="modal-body ">
-                    <div class="col-6 div-left">
-                        <label class="font-label negro-promperu">Nombres</label>
-                        <input type="text " class="form-control ">
+                <div class="modal-body padding-moda-maritima" style="width: 100% !important;">
+                    <div class="col-md-6 col-lg-6 col-12 div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;" >Nombres</label>
+                        <input type="text" class="form-control font-H4-light" placeholder="Nombres" style="padding-left: 3px !important; width: 100% !important;">
                     </div>
-                    <div class="col-6 div-left">
-                        <label class="font-label negro-promperu">Apellidos</label>
-                        <input type="text " class="form-control ">
+                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;">Apellidos</label>
+                        <input type="text" class="form-control font-H4-light" placeholder="Apellidos" style="padding-left: 3px !important;">
                     </div>
-                    <div class="col-6 div-left">
-                        <label class="font-label negro-promperu">Correo electrónico</label>
-                        <input type="text " class="form-control font-H4-light gris-promperu " placeholder="ejemplo@correo.com ">
+                    <!-- <div class="col-12" style="height: 50px !important;"></div> -->
+                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu">Correo electrónico</label>
+                        <input type="text" class="form-control font-H4-light" placeholder="ejemplo@correo.com" style="padding-left: 3px !important;">
                     </div>
-                    <div class="col-12 div-left">
-                        <label class="font-label negro-promperu">Escribe tu mensaje</label>
-                        <textarea type="text " class="form-control "></textarea>
-                        <span class="span-textarea font-smallprint-medium gris-promperu">Máximo 189 cáracteres</span>
+                    <div class="col-12 div-left padding-left-right-1">
+                        <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
+                        <textarea type="text" class="form-control font-H4-light" maxlength="500" rows="1" style="padding-left: 3px !important;"></textarea>
+                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
                     </div>
-                    <div class="col-12 div-left mt-4 ">
-                        <div class="col-5 div-left font-label negro-promperu">Califica la herramienta</div>
-                        <div class="col-3 div-left ">
-                            <div class="div-left ordenar "><a href="javascript:void(0) "><i
-                                        class="far fa-star "></i></a></div>
-                            <div class="div-left ordenar "><a href="javascript:void(0) "><i
-                                        class="far fa-star "></i></a></div>
-                            <div class="div-left ordenar "><a href="javascript:void(0) "><i
-                                        class="far fa-star "></i></a></div>
-                            <div class="div-left ordenar "><a href="javascript:void(0) "><i
-                                        class="far fa-star "></i></a></div>
-                            <div class="div-left ordenar "><a href="javascript:void(0) "><i
-                                        class="far fa-star "></i></a></div>
+                    <div class="col-12 div-left mt-4 padding-left-right-1" style="display: flex; align-items: center; min-width: 300px !important;">
+                        <div class="col-5 div-left font-label-400 negro-promperu mostrar-desktop" style="max-width: 170px !important;">Califica la herramienta:</div>
+                        <div class="col-5 div-left font-label-400 negro-promperu mostrar-movil" style="max-width: 90px !important;">Califica la herramienta:</div>
+                        <div class="col-7 div-left">
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
                         </div>
                     </div>
-                    <div class="mostrar-desktop col-lg-8 col-md-12 col-sm-12 col-xs-12 div-left mt-4 ">
-                        <button class="w-100 btn btn-primary btn-danger font-H4-bold" type="button ">Enviar</button>
-                    </div>
-                    <div class="mostrar-movil col-lg-8 col-md-12 col-sm-12 col-xs-12 div-left mt-4 ">
-                        <button style="width: 280px !important;" class="w-100 btn btn-primary btn-danger font-H4-bold" type="button ">Enviar</button>
+                    <div class="col-12 div-left mt-4">
+                        <button class="btn btn-primary btn-danger width-100 font-H4-bold btn-enviar-calificacion-2" type="button" style="max-width: 300px !important; margin-bottom: 40px !important;" data-bs-toggle="modal" data-bs-target="#m-opinion-confirmacion">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -518,6 +531,51 @@
     </div>
     <!-- Fin modal calificativo -->
     <!-- Fin de modales -->
+
+    <div class="modal fade" id="m-informativo-confirmacion" tabindex="-1" aria-labelledby="m-informativo-confirmacion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 736px !important;">
+            <div class="modal-content">
+                
+                <div class="modal-body body-consulta">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 div-left" style="text-align:center; margin-top:74px;">
+                            <img src="../../img-menu-PromPeru/common/correo_1 1.png">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-bold" style="text-align:center; margin-top:29px;">
+                            Gracias
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-light-normal" style="text-align:center;  margin-top:24px; margin-bottom:141px;">
+                            Tu mensaje ha sido enviado, te daremos respuesta a la brevedad
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal informativo confirmación -->
+    <!-- Inicio modal calificativo confirmación-->
+    <div class="modal fade" id="m-opinion-confirmacion" tabindex="-1" aria-labelledby="m-informativo-confirmacion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 736px !important;">
+            <div class="modal-content">
+                
+                <div class="modal-body body-consulta">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 div-left" style="text-align:center; margin-top:74px;">
+                            <img src="../../img-menu-PromPeru/common/like 2.png">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-bold" style="text-align:center; margin-top:29px;">
+                            Gracias por tu opinión
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-light-normal" style="text-align:center;  margin-top:24px; margin-bottom:141px;">
+                            Seguiremos mejorando
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="popover" style="display: none">
         

@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="../../common.css" />
 </head>
 
-<body class="g-sidenav-show bg-gray-100">
+<body class="g-sidenav-show">
   <main class="
         main-content
         position-relative
@@ -146,7 +146,7 @@
     <!-- End Navbar -->
     <div class="container-fluid py-4 container-vista-simulador">
       <!-- Inicio de vista principal -->
-      <div class="d-display" id="view-global">
+      <div class="d-display" id="view-global" style="margin-right: 0px !important; margin-left: 0px !important;">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-lg-0 fit-content">
           <section class="tabs-wrapper">
             <div class="tabs-container">
@@ -164,17 +164,17 @@
                         ">
                       <ul class="tab-head">
                         <li>
-                          <a href="#tab-1" class="tab-link active" id="tab1">
-                            <span class="tab-label"><span class="round-step mx-2">1</span>Producto
+                          <a href="#tab-1" class="font-H5-medium negro-promperu tab-link active" id="tab1">
+                            <span class="tab-label"><span class="round-step mx-2"><img src="../assets/img/check.svg" alt=""></span>Producto
                               y Partida Nacional</span></a>
                         </li>
                         <li>
-                          <a href="#tab-2" class="tab-link" id="tab2"><span class="tab-label"><span
+                          <a href="#tab-2" class="font-H5-medium tab-link" id="tab2"><span class="tab-label"><span
                                 class="round-step mx-2">2</span>Modalidad
                               de Insumos</span></a>
                         </li>
                         <li>
-                          <a href="#tab-3" class="tab-link" id="tab3">
+                          <a href="#tab-3" class="font-H5-medium tab-link" id="tab3">
                             <span class="tab-label"><span class="round-step mx-2">3</span>Declaraciones
                               aduaneras</span></a>
                         </li>
@@ -191,18 +191,18 @@
                         ">
                       <ul class="tab-head">
                         <li>
-                          <a href="#tab-1" class="tab-link active" id="tab1">
-                            <span class="tab-label">
-                              <i style="font-size: 22px;" class="fas fa-circle"></i></span></a>
+                          <a href="#tab-1" class="tab-link active padding-left-0 width-100" id="tab1">
+                            <span class="tab-label width-100">
+                              <i><img src="../assets/img/icon-nav.svg" alt=""></i><div class="line-intelineado"></div></span></a>
                         </li>
                         <li>
-                          <a href="#tab-2" class="tab-link" id="tab2"><span class="tab-label">
-                              <i style="font-size: 22px;" class="fas fa-circle"></i></span></a>
+                          <a href="#tab-2" class="tab-link padding-left-0 width-100" id="tab2"><span class="tab-label width-100">
+                              <i style="font-size: 20px;" class="fas fa-circle"></i><div class="line-intelineado"></div></span></a>
                         </li>
                         <li>
-                          <a href="#tab-3" class="tab-link" id="tab3">
-                            <span class="tab-label">
-                              <i style="font-size: 22px;" class="fas fa-circle"></i></span></a>
+                          <a href="#tab-3" class="tab-link padding-left-0 width-100" id="tab3">
+                            <span class="tab-label width-100">
+                              <i style="font-size: 20px;" class="fas fa-circle"></i></span></a>
                         </li>
                       </ul>
                     </div>
@@ -215,7 +215,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 ocultar-movil">
 
                           <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
-                            <div class="row" data-select2-id="select2-data-26-qmq9" style="max-width: 90%;">
+                            <div class="row" data-select2-id="select2-data-26-qmq9" style="max-width: 95%;">
                               <div class="
           col-lg-4 col-md-4 col-sm-12 col-xs-12
           font-h1-bold
@@ -304,7 +304,7 @@
               col-lg-10 col-md-10 col-sm-10 col-xs-10
             ">
                                           <a onclick="location.href='PartidasExcluidasDrawback.html'"
-                                            class="font-color-red ordenar">Ver lista aquí</a>
+                                            class="font-link font-color-red ordenar">Ver lista aquí</a>
                                         </div>
                                       </div>
 
@@ -316,7 +316,7 @@
             mb-2
             mt-4
           ">
-                                  <label class="font-label negro-promperu" for="">Nombre de insumo importado</label>
+                                  <label class="font-label negro-promperu" for="">Nombre del insumo importado</label>
                                   <input type="text" class="
               form-control
               font-H4-light
@@ -349,7 +349,7 @@
                 btn btn-danger
                 btnwidth100
                 font-H4-bold
-              " style="text-transform: capitalize; height: 50px !important;" onclick="clickTab(2)">Continuar</bottom>
+              " style="text-transform: capitalize; height: 50px !important;" id="btn-partida">Continuar</bottom>
                                   </div>
                                 </div>
                               </div>
@@ -406,7 +406,7 @@
                                     font-H4-light
                                     gris-promperu
                                     sinPaddingTop
-                                  " id="razonSocial" value="003" placeholder="" />
+                                  " id="razonSocialm" value="003" placeholder="" />
                             </div>
                           </div>
                           <div class="
@@ -445,13 +445,13 @@
                                     col-lg-10 col-md-10 col-sm-11 col-xs-10
                                     font-H5-light
                                     negro-promperu
-                                  ">
+                                  " style="padding-left: 19px;">
                                 <span>Revisa la lista de subpartidas excluidas del Drawback D.S 127-2002-EF</span>
-                                <div class="
+                                <div style="position: relative; top: 8px;" class="
                                       col-lg-10 col-md-10 col-sm-10 col-xs-10
                                     ">
                                   <a onclick="location.href='PartidasExcluidasDrawback.html'"
-                                    class="font-color-red ordenar">Ver lista aquí</a>
+                                    class="font-link font-color-red ordenar pt-3">Ver lista aquí</a>
                                 </div>
                               </div>
                             </div>
@@ -480,7 +480,7 @@
                               <bottom
                                 class="d-flex justify-content-center align-items-center btn btn-danger font-H4-bold btnwidth100"
                                 style="width: 351px !important; height: 50px !important; text-transform: capitalize;"
-                                onclick="clickTab(2)">Continuar</bottom>
+                                 id="btn-partidam">Continuar</bottom>
                             </div>
                           </div>
                         </div>
@@ -488,7 +488,7 @@
                       <section id="tab-2" class="tab-body entry-content">
                         <div class="col-lg-12 col-md-12 col-sm-12 ocultar-movil">
                           <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
-                            <div class="row" style="width: 1327px !important;">
+                            <div class="row" style="max-width: 95%;">
                               <div class="
                                     col-lg-4 col-md-4 col-sm-12 col-xs-12
                                     font-h1-bold
@@ -507,11 +507,10 @@
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                   <div class="accordion accordion-flush" id="beneficiario">
-                                    <div class="
+                                    <div style="margin: 1rem 0rem 0rem 3rem !important; padding: 0rem !important;" id="div-1" class="
                                           accordion-item
-                                          card
-                                          div-centrado
-                                          w-70
+                                          card-accordion
+                                          w-60
                                           border-radius
                                         ">
                                       <h2 class="accordion-header acordion-res-normal" id="flush-headingOne">
@@ -554,11 +553,10 @@
                                     </div>
                                   </div>
                                   <div class="accordion accordion-flush" id="terceros">
-                                    <div class="
+                                    <div style="padding-bottom: 19px !important;margin: 1rem 0rem 0rem 3rem !important;" id="div-2" class="
                                           accordion-item
-                                          card
-                                          div-centrado
-                                          w-70
+                                          card-accordion
+                                          w-60
                                           border-radius
                                         ">
                                       <h2 class="accordion-header acordion-res-noaplica" id="flush-headingtwo">
@@ -598,11 +596,10 @@
                                     </div>
                                   </div>
                                   <div class="accordion accordion-flush" id="Locales">
-                                    <div class="
+                                    <div style="margin: 1rem 0rem 0rem 3rem !important; padding: 0rem !important;" id="div-3" class="
                                           accordion-item
-                                          card
-                                          div-centrado
-                                          w-70
+                                          card-accordion
+                                          w-60
                                           border-radius
                                         ">
                                       <h2 class="accordion-header acordion-res-advertencia" id="flush-heading3">
@@ -659,14 +656,14 @@
                                 font-H2-bold
                                 negro-promperu
                               ">
-                            Seleccione un modo de incorporacion del insumo
+                            Seleccione un modo de incorporación del insumo
                           </div>
                           <div class="col-lg-12 col-md-12 col-sm-12 mt-5 d-flex flex-column align-items-center">
                             <div class="accordion accordion-flush" id="beneficiario" style="width: 339px !important;">
                               <div class="
                                     accordion-item
-                                    card
                                     div-centrado
+                                    card-accordion
                                     w-100
                                     border-radius
                                   ">
@@ -698,7 +695,7 @@
                                         negro-promperu
                                       ">
                                     Insumo importado directamente por la
-                                    empresa exportadorea y, en la importación
+                                    empresa exportadora y, en la importación
                                     ha pagado la totalidad de derechos
                                     arancelarios.
                                     <div class="mt-2">
@@ -718,7 +715,7 @@
                             <div class="accordion accordion-flush mt-4" id="terceros" style="width: 339px !important;">
                               <div class="
                                     accordion-item
-                                    card
+                                    card-accordion
                                     div-centrado
                                     w-100
                                     border-radius
@@ -731,10 +728,10 @@
                                         rojo-promperu
                                       " type="button" data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                     aria-controls="flush-collapseTwo" style="font-size: 18px !important;">
-                                    <i class="px-0"><img style="width: 70px;" src="../assets/img/icon-2.png"
+                                    <i class="px-0"><img style="width: 57px;" src="../assets/img/icon-2.png"
                                         alt="" /></i>
 
-                                    Importado por terceros
+                                    <span style="margin-left: 20px;">Importado por terceros</span> 
                                   </button>
                                 </h2>
                                 <div id="flush-collapseTwo" class="
@@ -750,7 +747,7 @@
                                         font-H5-light
                                         negro-promperu
                                       ">
-                                    Importacion indirecta, en el cual el
+                                    Importacion indirecta en la cual el
                                     exportador, compra localmente a un tercero
                                     insumos importados por este.
                                     <div class="mt-2">
@@ -770,7 +767,7 @@
                             <div class="accordion accordion-flush mt-4" id="Locales" style="width: 339px !important;">
                               <div class="
                                     accordion-item
-                                    card
+                                    card-accordion
                                     div-centrado
                                     w-100
                                     border-radius
@@ -805,13 +802,13 @@
                                     La empresa exportadora adquiere de un
                                     proveedor local un producto nacional
                                     elaborado en base a un insumo importado
-                                    con el correspondiente pago de derechos de
+                                    con el correspondiente pago de la totalidad de derechos
                                     arancelarios.
                                     <div class="mt-2">
                                       Ej.: Adquieres cajas nacionales que
                                       fueron elaboradas con cartón importado.
-                                      Estás te serviran de embalajes para tu
-                                      producto a exportar
+                                      Estas te servirán de embalaje para tu
+                                      producto a exportar.
                                     </div>
                                   </div>
                                   <div style="margin-left: 75px" class="col-10">
@@ -825,11 +822,10 @@
                           </div>
                         </div>
                       </section>
-                      <section id="tab-3" class="tab-body entry-content">
+                      <section id="tab-3" class="tab-body entry-content">   
                         <div class="col-lg-12 col-sm-12 col-md-12 ocultar-movil">
                           <div class="col-lg-12 col-sm-12 col-md-12 d-flex justify-content-center">
-                            <div class="row" style="max-width: 1442px !important;">
-                              <div class="row mt-1">
+                              <div class="row mt-1" style="max-width: 1237px;">
                                 <div class="
                                       col-lg-4 col-md-4 col-sm-12
                                       font-h1-bold
@@ -837,7 +833,7 @@
                                     ">
                                   Simular devolución de Drawback
                                 </div>
-                                <div class="col-lg-7 col-md-7 col-sm-12 mt-3">
+                                <div class="col-lg-8 col-md-7 col-sm-12 mt-3">
                                   <div class="
                                         col-lg-12 col-md-12 col-sm-12 col-xs-12
                                         font-H3-bold
@@ -925,9 +921,7 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-lg-1 col-md-1"></div>
                               </div>
-                            </div>
                           </div>
                         </div>
                         <div class="row mostrar-movil px-4">
@@ -956,13 +950,13 @@
                                           ordenar
                                           mt-4
                                         ">
-                                    <label class="font-label negro-promperu">Valor CIF importado</label>
+                                    <label class="font-label negro-promperu">Valor CIF importado (USD)</label>
                                     <input type="text" class="form-control font-H4-light negro-promperu" id="puertoDestino" value=""
                                       placeholder="$" />
                                   </div>
                                   <div class="col-lg-6 col-md-6 col-xs-12 mt-4">
                                     <label style="height: 35px" class="font-label negro-promperu">Fecha de embarque
-                                      indicado en la DAM
+                                      indicada en la DAM
                                       de Exportación</label>
                                     <input type="date" class="form-control font-H4-light negro-promperu" id="fechaInicio" value="" placeholder="" />
                                   </div>
@@ -973,7 +967,7 @@
                                           ordenar
                                         ">
                                     <label style="height: 26px" class="font-label negro-promperu">Valor FOB
-                                      exportado</label>
+                                      exportado (USD)</label>
                                     <input type="text" class="form-control font-H4-light negro-promperu" id="puertoDestino" value=""
                                       placeholder="$" />
                                   </div>
@@ -984,7 +978,6 @@
                                   <div class="
                                         col-lg-6 col-md-6 col-xs-12 col-sm-12
                                         mt-2
-                                        div-left
                                       ">
                                     <button class="
                                           btn btn-danger
@@ -999,10 +992,6 @@
                                   <div class="
                                         col-lg-6 col-md-6 col-xs-12 col-sm-12
                                         mt-2
-                                        div-right
-                                        d-flex
-                                        justify-content-end
-                                        align-items-center
                                       ">
                                     <div class="
                                           ordenar
@@ -1011,11 +1000,10 @@
                                         " id="add-Insumo">
                                       <i class="fas fa-plus-circle"></i>Agregar Insumo
                                     </div>
-                                    <button style="text-transform: inherit !important;" class="
-                                          width: 339px !important;
+                                    <button style="text-transform: inherit !important;width: 339px !important; height: 50px;" class="
                                           btn btn-outline-danger
-                                          font-H4-bold
                                           w-100
+                                          font-H4-bold
                                           mostrar-movil
                                         " id="add-Insumo" onclick="clickTab(1)">
                                       Agregar otro insumo
@@ -1040,34 +1028,7 @@
     </div>
   </main>
 
-  <div class="modal fade bd-example-modal-sm" id="m-validacion" tabindex="-1" role="dialog"
-    aria-labelledby="m-compartir" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="col-lg-12 col-sm-12 col-xs-12 col-xl-12"></div>
-          <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-            <img src="../assets/img/btn_close.svg" alt="" />
-          </a>
-        </div>
-        <div class="padding-modal-body">
-          <div class="mt-1">
-            <div class="col-12 text-center div-left ordenar">
-              <div class="font-H4-bold negro-promperu pt-3">
-                La subpartida nacional que ingresaste no es válida. Por favor
-                inténtalo otra vez.
-              </div>
-            </div>
-            <div class="col-12 text-center div-left font-color-red ordenar">
-              <button class="btn btn-outline-danger font-H4-bold rojo-promperu">
-                Intentar de nuevo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
   <!-- Inicio de modales de ejemplo -->
   <!-- Inicio de modal de ejemplo1 -->
@@ -1353,6 +1314,32 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade bd-example-modal-sm" id="m-subpartida" tabindex="-1" role="dialog" aria-labelledby="m-subpartida"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" style="width: 338px !important; margin-top: 30vh !important; margin-left: auto !important; margin-right: auto !important;">
+                <div class="modal-header">
+                    <div class="col-lg-12 col-sm-12 col-xs-12 col-xl-12 text-center" style="position: relative; top: 17px;">
+                      <img src="../assets/img/icon-subpartida.svg" alt="">
+                    </div>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                      <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                  </button>
+                </div>
+                <div class="padding-modal-body">
+                    <div class="col-lg-12 col-md-12 col-sm-12 font-H4-bold negro-promperu text-center">
+                      La subpartida nacional que ingresaste no es válida. <br> Por favor inténtalo otra vez.
+                    </div>
+                    <div class="mt-3 d-flex justify-content-center">
+                        <button data-bs-dismiss="modal" class="w-100 btn btn-outline-danger font-H4-bold"
+                            style="width: 258px !important; height: 50px !important; text-transform: capitalize;"
+                            type="button">Intentar de nuevo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
   <!--   Core JS Files   -->
   <script src="../assets/js/core/popper.min.js"></script>

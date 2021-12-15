@@ -233,7 +233,7 @@ footer .credits {
 
   .tabs .divTab .div-left-tab > ul li a.active {
 
-    background-color: #D2D5D7;
+    /*background-color: #D2D5D7;*/
 
     color: #282828;
 
@@ -264,6 +264,16 @@ footer .credits {
 	display: none;
 	word-wrap: break-word;
   }
+}
+
+.line-intelineado{
+	top: calc(50% - 0px/2);
+	border-bottom: 1px dashed #282828;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 5px;
+	width:100%;
 }
 
 /*
@@ -442,6 +452,13 @@ footer .credits {
   display: block;
 }
 @media (min-width: 200px) {
+  .tab-head {
+    display: flex;
+    justify-content: center;
+    /*height: 80px;*/
+    align-items: center;
+    background: #D2D5D73D;
+  }
   .tab-desktop {
     display: none;
   }
@@ -474,6 +491,13 @@ footer .credits {
   }
 }
 @media (min-width: 1200px) {
+  .tab-head {
+    display: flex;
+    justify-content: center;
+    /*height: 80px;*/
+    align-items: center;
+    background: #D2D5D7;
+  }
   .tab-movil {
     display: none;
   }

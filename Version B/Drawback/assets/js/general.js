@@ -3,6 +3,31 @@ function CambiarTituloLogin(titulo){
 }
 
 $(document).ready(function() {
+
+  $('#btn-partida').click(function (e) { 
+    console.log('entrooo');
+    console.log($('#razonSocial').val());
+    if ($('#razonSocial').val() == "003") {
+      console.log('entroo if');
+        $('#m-subpartida').modal('show');
+    } else {
+      $("#tab2").trigger("click");
+    }
+    
+  });
+
+  $('#btn-partidam').click(function (e) { 
+    console.log('entrooo');
+    console.log($('#razonSocialm').val());
+    if ($('#razonSocialm').val() == "003") {
+      console.log('entroo if');
+        $('#m-subpartida').modal('show');
+    } else {
+      $("#tab2").trigger("click");
+    }
+    
+  });
+
   $('.card-login').hide();
   $('.card-tooltip').hide();
   $('.card-tooltip2').hide();
@@ -70,11 +95,18 @@ $(document).ready(function() {
     $('.card-login').toggle();
   });
 
+  /*$('.div-beneficiario').addClass('show');*/
+
+  
   $('#flush-headingOne').hover(function () {
       // over
       $('.div-beneficiario').addClass('show');
+      $('#div-1').addClass('card-show');
+      $('#div-1').removeClass('card-accordion');
     }, function () {
       // out
+      $('#div-1').removeClass('card-show');
+      $('#div-1').addClass('card-accordion');
       $('.div-beneficiario').removeClass('show');
     }
   );
@@ -82,8 +114,12 @@ $(document).ready(function() {
   $('#flush-headingtwo').hover(function () {
       // over
       $('#flush-collapseTwo').addClass('show');
+      $('#div-2').addClass('card-show');
+      $('#div-2').removeClass('card-accordion');
     }, function () {
       // out
+      $('#div-2').removeClass('card-show');
+      $('#div-2').addClass('card-accordion');
       $('#flush-collapseTwo').removeClass('show');
     }
   );
@@ -91,9 +127,13 @@ $(document).ready(function() {
   $('#flush-heading3').hover(function () {
       // over
       $('#flush-collapseThree').addClass('show');
+      $('#div-3').addClass('card-show');
+      $('#div-3').removeClass('card-accordion');
     }, function () {
       // out
       $('#flush-collapseThree').removeClass('show');
+      $('#div-3').removeClass('card-show');
+      $('#div-3').addClass('card-accordion');
     }
   );
 

@@ -2,6 +2,9 @@ $(document).ready(function() {
     $("#btn-comenzar").click(function() {
         empezarSimulacion();
     });
+    $("#btn-comenzarm").click(function() {
+        empezarSimulacion();
+    });
     $("#btn-volver").click(function() {
         retornarViewPrincipal();
     });
@@ -36,7 +39,7 @@ $(document).ready(function() {
         var valor = 3;
         switch (valor) {
             case 3:
-                $("#tab3").trigger("click");
+                window.location = 'Simulador-noaplica.html';
                 break;
         }
     });
@@ -44,7 +47,7 @@ $(document).ready(function() {
         var valor = 3;
         switch (valor) {
             case 3:
-                $("#tab3").trigger("click");
+                window.location = 'Simulador-warning.html';
                 break;
         }
     });

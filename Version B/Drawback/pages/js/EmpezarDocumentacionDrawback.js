@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('#menu').hide();
     $("#proDirecta").show();
     $("#proEncargo").hide();
     $("#directa").click(function() {
@@ -11,6 +12,7 @@ $(document).ready(function() {
         mostrarDocumento();
     });
     $("#btn-comenzarM").click(function() {
+        $('#menu').show();
         mostrarDocumento();
     });
     $("#view-tabs").hide();
@@ -26,7 +28,55 @@ $(document).ready(function() {
     $(".back").click(function() {
         regresar();
     });
+
+    $('#seccion-1').click(function (e) { 
+        if ($('#icon-normal').css('display') == 'block') {
+            $('#icon-normal').hide();
+            $('#icon-abajo').show();
+        } else {
+            $('#icon-normal').show();
+            $('#icon-abajo').hide();
+        }
+      
+    });
+
+    $('#seccion-2').click(function (e) { 
+        console.log('entroooo');
+        if ($('#icon-normal2').css('display') == 'block') {
+            $('#icon-normal2').hide();
+            $('#icon-abajo2').show();
+        } else {
+            $('#icon-normal2').show();
+            $('#icon-abajo2').hide();
+        }
+     });
+
+     $('#seccion-3').click(function (e) { 
+        if ($('#icon-normal3').css('display') == 'block') { 
+            $('#icon-normal3').hide();
+            $('#icon-abajo3').show();
+        } else {
+            $('#icon-normal3').show();
+            $('#icon-abajo3').hide();
+        }
+
+     });
+
+    $('#btn-next1').click(function (e) { 
+        $("#main").show();
+        $("#opciones").hide();
+        $('option-01').hide();
+        
+    });
+
+    $('#btn-next2').click(function (e) { 
+        $("#main").show();
+        $("#opciones").hide();
+        $('option-02').hide();
+        
+    });
 });
+
 
 function selectEncargo() {
     $("#directa").removeClass("active-product")
@@ -67,11 +117,13 @@ function MostrarProduccionDirecta() {
     $("#main").hide();
     $("#opciones").show();
     $("#opcion-01").show();
+    $("#opcion-02").hide();
 }
 
 function MostrarProduccionEncargo() {
     $("#main").hide();
     $("#opciones").show();
+    $("#opcion-01").hide();
     $("#opcion-02").show();
 }
 

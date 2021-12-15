@@ -185,10 +185,6 @@ table tbody tr {
     font-size: 17px !important;
   }
 
-  .modal-dialog {
-    padding: 20px !important;
-  }
-
   .mostrar-desktop {
     display: none !important;
   }
@@ -249,10 +245,6 @@ table tbody tr {
 }
 
 @media (min-width: 576px) {
-  .modal-dialog {
-    padding: 20px !important;
-  }
-
   .container-vista-simulador {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -296,9 +288,6 @@ table tbody tr {
 }
 
 @media (min-width: 768px) {
-  .modal-dialog {
-    padding: 0px !important;
-  }
 
   .nav-img {
     width: 22% !important;
@@ -329,9 +318,6 @@ table tbody tr {
 }
 
 @media (min-width: 992px) {
-  .modal-dialog {
-    padding: 0px !important;
-  }
 
   .mostrar-desktop {
     display: block !important;
@@ -409,10 +395,6 @@ table tbody tr {
     font-weight: normal !important;
     font-size: 24px !important;
     line-height: 29px !important;
-  }
-
-  .modal-dialog {
-    padding: 0px !important;
   }
 
   .show-movil {
@@ -521,6 +503,11 @@ table tbody tr {
 }
 
 .div-centrado {
+  margin: 3rem !important;
+  padding: 0rem !important;
+}
+
+.div-centrado-modal {
   margin: 3rem !important;
   padding: 0rem !important;
 }
@@ -828,7 +815,7 @@ table tbody tr {
 }
 
 .hr {
-  height: 0.5px;
+  height: 2px;
 }
 
 .refresh {
@@ -914,6 +901,11 @@ table tbody tr {
 
 .centrado {
   text-align: -webkit-center;
+}
+
+.centrado-modal {
+  text-align: center;
+  margin: 16px;
 }
 
 .div-left {
@@ -1464,9 +1456,10 @@ a {
   display: inline-block;
   height: 24px;
   width: 24px;
-  margin: 0 7px 0 0;
+  margin: 0 20px 0 0;
   text-align: center;
   vertical-align: middle;
+  float: left;
 }
 
 /* ====================================================================================== 
@@ -1654,7 +1647,6 @@ input[type="radio"]:checked ~ label {
 .paddingCardBusqueda {
   padding-left: 90px;
   padding-right: 90px;
-  padding-bottom: 37px;
   padding-top: 44px;
 }
 
@@ -1941,6 +1933,10 @@ a > i > label {
 }
 
 @media (min-width: 992px) {
+  .background-second-light {
+    background-color: #efefef !important;
+  }
+
   .correoDetalle {
     display: block;
   }
@@ -1972,7 +1968,7 @@ a > i > label {
 }
 
 .background-second-light {
-  background-color: #efefef;
+  background-color: #efefef !important;
 }
 
 .margin-0 {
@@ -2029,21 +2025,96 @@ a > i > label {
 }
 
 .btn-close-modal {
-  margin-left: 0;
-  position: absolute;
-  top: -40px;
-  right: -25px;
-  font-size: 40px;
-  top: -22px;
-  right: -13px;
-  font-size: 30px;
-  opacity: 1;
-  box-sizing: content-box;
-  width: 1em;
-  height: 1em;
-  color: #c4122f;
-  border: 0;
-  border-radius: 0.25rem;
+  box-sizing: content-box !important;
+  padding: 0.25em 0.25em!important;
+  border: 0!important;
+  position: absolute!important;
+  z-index: 0!important;
+  top: -23px!important;
+  right: -18px !important;
+  color: #ffff !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  background-color: #C4122f !important;
+  height: 25px !important;
+}
+.btn-close-modal-mediano {
+  box-sizing: content-box !important;
+  padding: 0.25em 0.25em!important;
+  border: 0!important;
+  position: absolute!important;
+  z-index: 1!important;
+  top: 4px!important;
+  right: 415px !important;
+  color: #ffff !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  background-color: #C4122f !important;
+  height: 25px !important;
+}
+
+@media (min-width: 200px) {
+  .btn-close-modal {
+    box-sizing: content-box !important;
+    padding: 0.25em 0.25em!important;
+    border: 0!important;
+    position: absolute!important;
+    z-index: 0!important;
+    top: -15px!important;
+    right: -7px !important;
+    color: #ffff !important;
+    border-radius: 50% !important;
+    width: 25px !important;
+    background-color: #C4122f !important;
+    height: 25px !important;
+}
+
+.btn-close-modal-mediano {
+  box-sizing: content-box !important;
+  padding: 0.25em 0.25em!important;
+  border: 0!important;
+  position: absolute!important;
+  z-index: 1!important;
+  top: -10px!important;
+  right: 1px !important;
+  color: #ffff !important;
+  border-radius: 50% !important;
+  width: 25px !important;
+  background-color: #C4122f !important;
+  height: 25px !important;
+}
+  
+}
+
+@media (min-width: 1200px) { 
+  .btn-close-modal {
+    box-sizing: content-box !important;
+    padding: 0.25em 0.25em!important;
+    border: 0!important;
+    position: absolute!important;
+    z-index: 0!important;
+    top: -23px!important;
+    right: -18px !important;
+    color: #ffff !important;
+    border-radius: 50% !important;
+    width: 25px !important;
+    background-color: #C4122f !important;
+    height: 25px !important;
+  }
+  .btn-close-modal-mediano {
+    box-sizing: content-box !important;
+    padding: 0.25em 0.25em!important;
+    border: 0!important;
+    position: absolute!important;
+    z-index: 1!important;
+    top: 4px!important;
+    right: 415px !important;
+    color: #ffff !important;
+    border-radius: 50% !important;
+    width: 25px !important;
+    background-color: #C4122f !important;
+    height: 25px !important;
+  }
 }
 
 .display-block {
@@ -2174,6 +2245,12 @@ a > i > label {
   margin: 0rem;
   padding: 1rem;
   cursor: pointer;
+  color: #A5ABB0;
+}
+
+.swtich i img {
+  filter: hue-rotate(120deg);
+
 }
 
 .active-product {
@@ -2181,6 +2258,10 @@ a > i > label {
   color: #ffffff !important;
   transition: width 0.1s;
   z-index: 1;
+}
+
+.active-product > i > img {
+
 }
 
 .p-right {
@@ -2375,13 +2456,91 @@ a > i > label {
   }
 }
 
+.background-footer-modal {
+  background: linear-gradient(rgb(165 172 176 / 10%), rgb(165 172 176 / 10%));
+}
+
 /* Card personalizado movil */
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
 
 .card-personalizado {
   border: 1px solid #a5acb0;
   border-radius: 20px;
+  transition: all 0.5s;;
+}
+
+.card-personalizado:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border: none;
 }
 
 .padding-top-30 {
   padding-top: 30px !important;
+}
+
+/* MODAL STYLES */
+.vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  /* This makes sure that we can still click outside of the modal to close it */
+}
+
+.vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+
+.card-accordion {
+  background: #FFFFFF !important;
+  border: 2px solid #E4E6E7 !important;
+  box-sizing: border-box !important;
+  border-radius: 20px !important;
+}
+
+.card-show {
+  background: #FFFFFF !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 20px !important;
+  border: none !important;
+}
+
+.btn-outline-simulador {
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    border-radius: 15px !important;
+}
+
+.font-header-bold {
+  font-family: 'Helvetica Neue LT Std bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.font-header-light {
+  font-family: 'Helvetica Neue LT Std light';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.font-link {
+  font-family: 'Helvetica Neue LT Std bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
 }

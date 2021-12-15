@@ -867,7 +867,7 @@
                                 </svg>
 
                             </div>
-                            <div class="hr col-lg-6 mt-4 background-black"></div>
+                            <div class="hr col-lg-6 mt-4 background-gris" style="height: 1px !important;"></div>
                             <div class="row mt-3">
                                 <div class="col-lg-3 col-md-4 col-sm-3 mt-2">
                                     <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
@@ -908,7 +908,7 @@
                                     <path d="M20.5676 2.31177C20.3236 1.40259 19.614 0.687434 18.7104 0.443506C17.0694 0 10.5 0 10.5 0C10.5 0 3.93611 0 2.29514 0.443506C1.3915 0.687434 0.68189 1.40259 0.437962 2.31177C0 3.95829 0 7.401 0 7.401C0 7.401 0 10.8382 0.437962 12.4902C0.68189 13.3994 1.3915 14.1146 2.29514 14.3585C3.93057 14.802 10.5 14.802 10.5 14.802C10.5 14.802 17.0694 14.802 18.7049 14.3585C19.6085 14.1146 20.3181 13.3994 20.562 12.4902C21 10.8437 21 7.401 21 7.401C21 7.401 21.0055 3.95829 20.5676 2.31177ZM8.35454 10.5222V4.27429L13.8429 7.39546L8.35454 10.5222Z" fill="black"/>
                                 </svg>
                             </div>
-                            <div class="hr col-lg-6 mt-2 background-gris"></div>
+                            <div class="hr col-lg-6 mt-2 background-gris" style="height: 1px !important;"></div>
                             <div class="row"><br><br></div>
                             <div class="row mt-2">
                                 <div class="col-6 div-left contenedor-img-movil">
@@ -1057,6 +1057,38 @@
         </div>
     </div>
     <!-- Fin modal recuperar contraseña -->
+    <div class="modal fade" id="m-login" tabindex="-1" aria-labelledby="m-login" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="display: flex; justify-content: center;">
+            <div class="modal-content" style="max-width: 338px !important;">
+                <div class="modal-header" style="display: flex; justify-content: center;">
+                    <h5 class="modal-title font-h3-bold-700 negro-promperu text-center" id="exampleModalLabel" style="padding-top: 24px !important; max-width: 284px !important; text-align: center !important;">Para guardar debes iniciar sesión</h5>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
+                </div>
+                <div class="modal-body" style="padding-left: 30px !important;">
+                    <div>
+                        <label class="font-label-400 negro-promperu">Correo Electronico</label>
+                        <input style="width: 275px !important; padding-left: 5px !important;" type="text" class="form-control txt-login font-H4-light-400n" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div>
+                        <label class="font-label-400 negro-promperu">Contraseña</label>
+                        <input style="width: 275px !important; padding-left: 5px !important;"  type="password" class="form-control font-H4-light-400n" placeholder="******">
+                    </div>
+                </div>
+                <div class="centrado">
+                    <button class="btn btn-danger btn-ingresar font-H4-bold width-100" style="max-width: 284px !important;" type="button">Ingresar</button>
+                </div>
+                <div class="centrado text-line-title font-color-red ordenar font-label-400c" data-bs-toggle="modal" data-bs-target="#m-password">¿Olvidaste tu contraseña?</div>
+                <div class="modal-footer background-footer-modal" style="display: flex; justify-content: center;">
+                    <div class="centrado text-line-title negro-promperu col-12 font-H4-bold-700">¿Aún no tienes una cuenta?</div>
+                    <div class="centrado col-12" style="margin-bottom: 0px !important;">
+                        <button style="width: 289px !important;" type="button" class="btn btn-outline-danger font-H4-bold-700" onclick="window.location.href='../../Registro/pages/Registro.html'">Regístrate Aquí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Inicio modal correo -->
     <div class="modal fade bd-example-modal-sm" id="m-correo" tabindex="-1" role="dialog" aria-labelledby="m-correo" aria-hidden="true">
         <div class="modal-dialog modal-sm">
