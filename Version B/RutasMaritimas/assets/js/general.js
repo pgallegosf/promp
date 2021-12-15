@@ -1,5 +1,4 @@
 $(document).ready(function() {
-debugger;
   $(".close-popover-simulacion").click(function (e) { 
       $(".popover-1").addClass('ocultar-popover');
     });  
