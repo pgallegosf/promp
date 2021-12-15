@@ -3,7 +3,6 @@ function CambiarTituloLogin(titulo){
 }
 
 $(document).ready(function() {
-
   $('.card-login').hide();
   $('.card-tooltip').hide();
   $('.card-tooltip2').hide();

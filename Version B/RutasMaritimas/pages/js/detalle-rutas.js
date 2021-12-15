@@ -1,4 +1,15 @@
 $(document).ready(function() {
+    $('.btn-ingresar').click(function(e) {
+        $(".popover").show();
+        $(".modal-iniciar-sesion").hide();
+    });
+
+    $(".ver-simulaciones").click(function(e) {
+        sessionStorage.removeItem("idHerramienta");
+        sessionStorage.setItem('idHerramienta', '2');
+        // window.location.href="../../../Panel/pages/ListaSimulaciones.html";
+    });
+
     $(".tipContainer").click(function(e) {
         e.stopPropagation();
         showCardOrigen();
