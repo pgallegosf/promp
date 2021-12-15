@@ -2,6 +2,7 @@ $(document).ready(function() {
     $(".txtcorreo").click(function() {
         login();
     });
+    
     // Botones bloqueados
     $(".btn-ingresar").attr('disabled', 'disabled');
     sessionStorage.removeItem("idHerramienta");

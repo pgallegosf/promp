@@ -510,7 +510,7 @@ footer .credits {
 @media (min-width: 1568px) {	
 	
 	.altura-tab{
-		height:62px !important;
+		height:80px !important;
 	}			
 }
 
@@ -546,4 +546,10 @@ footer .credits {
 	padding-left: 18px;
     padding-top: 39px;
     padding-bottom: 18px;
+}
+
+
+.round-step{
+	min-width: 36px;
+    min-height: 36px;
 }

@@ -4,7 +4,7 @@ body {
 }
 
 .navbar-brand {
-    width: 53% !important;
+    width: 43% !important;
 }
 
 .icon-menu {
@@ -952,3 +952,34 @@ body {
 /* ====================================================================================== 
  Fin de estilos de rutas marítimas
 ====================================================================================== */
+.btn-tooltip{
+    position:relative;
+}
+.card-select-tooltip-g {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 45%;
+    top: -5%; 
+    z-index: 70;
+}
+
+.card-select-tooltip-m {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 45%;
+    top: 75%; 
+    z-index: 70;
+}
+.container-menu-derecho {
+    padding-right: 0.5rem !important;
+}
+.card-ordenar-movil{
+    z-index: 70;
+}
+.option-select:hover{
+    background-color:#07354f !important;
+}
