@@ -259,7 +259,7 @@ transform: rotate(45deg);
   text-align: center;
 }
 
-.font-h1-bold {
+.font-h1-bold { 
   font-family: "Helvetica Neue LT Std bold" !important;
   font-style: normal !important;
   font-weight: 700 !important;
