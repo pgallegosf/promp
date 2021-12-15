@@ -259,7 +259,7 @@ transform: rotate(45deg);
   text-align: center;
 }
 
-.font-h1-bold {
+.font-h1-bold { 
   font-family: "Helvetica Neue LT Std bold" !important;
   font-style: normal !important;
   font-weight: 700 !important;
@@ -776,6 +776,37 @@ transform: rotate(45deg);
   line-height: 30px;
 }
 
+.font-arial {
+  font-family: "Arial" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.font-arial-400 {
+  font-family: "Arial" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.font-arial-400-14 {
+  font-family: "Arial" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.1px;
+}
+
+.font-arial-400-roboto {
+  font-family: "Arial" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
 /* .font */
 
 img {
@@ -1368,6 +1399,10 @@ img {
         padding-top: 80px !important;
         /*padding-top: 110px !important;*/
     }
+    .padding-movil {
+        padding-top: 40px !important;
+        /*padding-top: 110px !important;*/
+    }
     .padding-top-principal-detalle{
         padding-top: 50px !important;
     }
@@ -1553,6 +1588,7 @@ img {
     .container-principal {
         padding-top: 110px !important;
     }
+
     .padding-top-principal-detalle{
         padding-top: 50px !important;
     }
@@ -1753,6 +1789,12 @@ img {
     .container-principal {
         padding-top: 110px !important;
     }
+
+    .padding-movil {
+      padding-top: 62px !important;
+      /*padding-top: 110px !important;*/
+    }
+
     .padding-top-principal-detalle{
         padding-top: 70px !important;
     }

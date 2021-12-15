@@ -1,4 +1,11 @@
-$(document).ready(function() {
+$(document).ready(function() {    
+    $('.descarga-pdf').click(function(e) {
+        var a = document.createElement("a");
+        a.href = "../assets/img/download.pdf";
+        a.setAttribute("download", "Rutas Maritimas");
+        a.click();
+    });
+
     $('.btn-ingresar').click(function(e) {
         $(".popover").show();
         $(".modal-iniciar-sesion").hide();
