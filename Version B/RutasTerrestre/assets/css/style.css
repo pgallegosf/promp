@@ -160,7 +160,7 @@ body {
 
 .card-select {
     width: 50% !important;
-    height: 160% !important;
+    height: auto !important;
     margin-left: 27% !important;
     top: 74% !important;
     position: absolute !important;
@@ -249,8 +249,13 @@ body {
     font-size: 15px;
 }
 
-.hr {
-    height: 2px;
+.hr {    
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #282828 !important;
+    opacity: 0.2;
+    margin: 1em 0;
+    padding: 0;
 }
 
 .refresh {
@@ -691,7 +696,7 @@ hr {
 
 .card-select-origen {
     width: 50% !important;
-    height: 100% !important;
+    height: auto !important;
     margin-left: 0% !important;
     top: 74% !important;
     position: absolute !important;
@@ -956,8 +961,45 @@ hr {
         -o-background-size: cover !important;
     }*/
 }
+.container-guardar-descargar-resultado{
+    padding: 0px 120px;
+}
+.title-guardar-descarga{
+    text-align: left ;
+}
+.item-resultado_busqueda{
+    width: 20%;
+}
+.container-button-icon{
+    display: flex;
+}
+.option-select{
+    height: 30px;
+}
+.container-button-descripcion{
+    text-align: left;
+}
 
+
+
+/* .avatar-group{} */
 @media (min-width: 400px) {
+    .container-button-descripcion{
+        padding: 0px 12px;
+    }
+    .option-select {
+        height: 35px;
+    }
+    .title-guardar-descarga{
+        text-align: center ;
+    }
+    .container-guardar-descargar-resultado{        
+        padding: 0px 20px;
+    }
+    .item-resultado_busqueda{
+        width: 25%;
+    }
+       
     .mostrar-desktop {
         display: none !important;
     }
@@ -1020,8 +1062,11 @@ hr {
     }
     .span-ver-mapa {
         position: relative;
-        top: -16px;
+        top: 14px;
         width: 100% !important;
+    }
+    .container-button-descripcion span{
+        top: 8px;
     }
     .span-contenedor {
         position: relative;
@@ -1706,3 +1751,4 @@ hr {
 /* ====================================================================================== 
  Fin de estilos de rutas marítimas
 ====================================================================================== */
+
