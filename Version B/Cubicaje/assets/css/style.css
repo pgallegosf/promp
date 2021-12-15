@@ -2210,6 +2210,174 @@ a > i > label {
   padding-top: 70px !important;
 }
 
+.ocultar-popover {
+  display: none !important;
+}
+
+
+.card-select-login {
+  width: 108.7px !important;
+  height: auto !important;
+  position: absolute !important;
+  background: #07354f;
+  top: 58px;
+}
+
+.card-select-ordenar {
+  width: 147.7px !important;
+  height: auto !important;
+  position: absolute !important;
+  background: #07354f;
+}
+
+
+@media (min-width: 200px) {
+  .card-select-tooltip {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 60%;
+    top: 397px;
+  }
+  
+  .card-select-tooltip2 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 60%;
+    top: 497px;
+  }
+  
+  .card-select-tooltip3 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 60%;
+    top: 597px;
+  }
+  
+  
+  .card-select-tooltip4 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 60%;
+    top: 697px;
+  }
+  
+  
+  .card-select-tooltip5 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 60%;
+    top: 788px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-select-tooltip {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 71%;
+    top: 331px;
+  }
+  
+  .card-select-tooltip2 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 71%;
+    top: 431px;
+  }
+  
+  .card-select-tooltip3 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 71%;
+    top: 531px;
+  }
+  
+  
+  .card-select-tooltip4 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 71%;
+    top: 631px;
+  }
+  
+  
+  .card-select-tooltip5 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 71%;
+    top: 731px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .card-select-tooltip {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 62%;
+    top: 331px;
+  }
+  
+  .card-select-tooltip2 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 62%;
+    top: 431px;
+  }
+  
+  .card-select-tooltip3 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 62%;
+    top: 531px;
+  }
+  
+  
+  .card-select-tooltip4 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 62%;
+    top: 631px;
+  }
+  
+  
+  .card-select-tooltip5 {
+    width: 126.7px !important;
+    height: auto !important;
+    position: absolute !important;
+    background: #07354f;
+    left: 62%;
+    top: 731px;
+  }
+}
+
 /* Style car-bulto */
 
 @media (min-width: 200px) {
