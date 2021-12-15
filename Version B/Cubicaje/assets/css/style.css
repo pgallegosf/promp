@@ -3,6 +3,43 @@ body {
   width: 100% !important;
 }
 
+.font-arial {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.font-arial-light {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.font-arial-regular {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.font-roboto {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-decoration-line: underline;
+}
+
+.navbar-brand {
+  width: 43% !important;
+}
+
 .button-width {
   max-width: 300px;
 }
@@ -16,9 +53,6 @@ body {
   background-color: #ffffff !important;
 }
 
-.navbar-brand {
-  width: 53% !important;
-}
 
 .icon-menu {
   float: left;
@@ -2012,6 +2046,11 @@ a > i > label {
 /* ====== */
 
 @media (min-width: 200px) {
+
+  .ggpopover {
+    top: 462px !important;
+  }
+
   .show-web {
     display: none !important;
   }
@@ -2060,6 +2099,9 @@ a > i > label {
 }
 
 @media (min-width: 1200px) {
+  .ggpopover {
+    top: 283.2px !important; 
+  }
   .mostrar-movil {
     display: none;
   }
@@ -2075,7 +2117,7 @@ a > i > label {
 /* Card personalizado movil */
 
 .ggpopover {
-  top: 283.2px !important; 
+  top: 283.2px; 
   left: 441.967px;
   display: block;
   border-color: rgb(204, 204, 204);

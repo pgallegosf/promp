@@ -58,8 +58,18 @@ $(document).ready(function() {
         $('#bulto2').show();
     });
 
+    $('#add-bultom').click(function (e) { 
+        $('#continuar').hide();
+        $('#bulto2m').show();
+    });
+
     $('#borrar').click(function (e) { 
         $('#bulto2').hide();
+    });
+
+    $('#borrarm').click(function (e) { 
+        $('#continuar').show();
+        $('#bulto2m').hide();
     });
 
     $(".accordion-header").dblclick(function() {
@@ -119,5 +129,28 @@ function clickTab(numberTab) {
         case 4:
             $("#tab4").trigger("click");
             break;
+    }
+}
+
+function tipocarga(text) {
+    if (text == 'carga seca') {
+        localStorage.removeItem('tipo');
+        localStorage.setItem('tipo', 'carga_seca');
+    } else {
+        localStorage.removeItem('tipo');
+        localStorage.setItem('tipo', 'carga_refri');
+    }
+    $("#tab2").trigger("click");
+}
+
+function showresult() {
+    var text = localStorage.getItem('tipo');
+    console.log('entroo', text);
+    if (text == 'carga_seca') {
+        console.log('entroo seco');
+        window.location.href='ResultadoCubicaje.html';
+    } else {
+        console.log('entroo ref');
+        window.location.href='ResultadoCubicaje_1.html';
     }
 }

@@ -190,7 +190,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br>
-                                    <button type="button" class="btn-detalle" style="padding-left: 0px !important; width: 336px !important;">
+                                    <button type="button" class="btn-detalle" style="padding-left: 0px !important; width: 336px !important;" 
+                                            data-bs-toggle="offcanvas" data-bs-target="#mapa-movil"
+                                            aria-controls="mapa-movil">
                                         <div class="content-centrado">
                                             <div class="avatar-group ordenar">
                                                 <div class="avatar avatar-xs rounded-circle mx-2">
@@ -262,7 +264,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                     <div class="row div-centrado max-resolution" style="margin: auto !important;">
                         <div class="col-lg-12 mb-lg-0">
-                            <!-- <div class="card opacidad"> -->
+                            <!-- <div class="card opacidad"> --> 
                             <div class="row">
                                 <div class="col-12 titulo font-h1-bold mostrar-desktop">Escalas de la ruta</div>
                                 <div class="col-12 titulo font-H2-bold-700 mostrar-movil">Escalas de la ruta</div>
@@ -931,21 +933,52 @@
     </main>
     <!-- </div> -->
     <!-- Fin de buscador de puerto de origen V-Movil -->
-    <!-- Inicio Popovers -->
-    <div class="popover">
-        <div class="popover-header">
-            <div class="d-flex justify-content-between blanco">
-                <p class="font-size-10 font-weight-bold">Tu simulación ha sido guardada</p>
-                <i class="fas fa-times close-popover ordenar"></i>
+    <!-- Inicio vista de mapa movil-->
+    <div class="offcanvas offcanvas-center w-100" tabindex="-1" id="mapa-movil" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header offcanvas-header-personalizado">
+            <div
+                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil w-100">
+                <div class="pt-2 pb-2">
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></i>Mapa
+                </div>
             </div>
         </div>
-        <div class="popover-body">
-            <a class="blanco ordenar link" href="../pages/Simulaciones_Rutas_Maritimas.html">
-                <div class="d-flex justify-content-around">
-                    <i class="fas fa-file-alt icon-document-alert"></i>
-                    <span>Ver mis simulaciones guardadas</span>
+        <div class="offcanvas-body" style="padding: 0px !important; position: relative;">
+            <div>
+                <div style="padding-left: 20px !important; margin: 0px !important;">
+                    <div style="position: absolute; width: 50px; height: 100px; right: 0 !important; z-index: 100; margin-top: 200px; bottom: 0vh !important;
+                     background-color: #C4122F;">
+                     <div class="col-12 text-center" style="height: 50px; border-bottom: 2px solid white; cursor: pointer;">
+                        <img src="../assets/icon/icons/plus-rutas.svg" style="width: 30px !important; margin-top: 8px;" alt="contenedor">
+                     </div>
+                     <div class="col-12 text-center" style="height: 50px; cursor: pointer;">
+                        <img src="../assets/icon/icons/minus-rutas.svg" style="width: 30px !important; margin-top: 20px;" alt="contenedor">
+                     </div>
+                        <!-- <span class="flecha derecha"></span> -->
+                    </div>
+                    <img src="../assets/img/Ruta_Marina/mapa_movil_1.png" style="width: 100%;" alt=" mapa-movil" class="mapa-movil ">
                 </div>
-            </a>
+            </div>
+        </div>
+    </div>
+    <!-- Fin vista de mapa movil -->
+    <!-- Inicio Popovers -->
+    <div class="popover popover-1" style="display: none;">         
+        <div class="row popover-body" style="margin:3px; padding-top:10px !important; padding-bottom:10px !important;">
+            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 pb-2 padding-left-right-0">
+                <p class="blanco font-H5-bold" style="display:inline; font-size: 14px  !important;">Tu simulacion ha sido guardada</p>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 justify-content-end blanco padding-left-right-0" style="display:grid;">
+                <!-- <p class="font-size-10 font-weight-bold">Tu simulación ha sido guardada</p> -->
+                <i class="fas fa-times close-popover-simulacion close-popover ordenar"></i>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+               <img src="../assets/img/icon-popover.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 ver-simulaciones">
+               <a class="font-helvetica-popover font-color-white" href="../../Panel/pages/ListaSimulaciones.html">Ver mis simulaciones guardadas</a>
+            </div>
         </div>
     </div>
     <!-- Fin Popovers -->
@@ -965,27 +998,42 @@
     </div>
     <!-- Fin modal calificativo -->
     <!-- Inicio modal Login -->
-    <!-- Fin modal login -->
-    <!-- Inicio modal recuperar contraseña -->
-    <div class="modal fade-second bd-example-modal-sm" id="m-password" tabindex="-1" role="dialog" aria-labelledby="m-password" aria-hidden="true">
-        <!-- <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="negro-promperu font-weight-100 font-size-20 text-center font-h3-bold-700c">Recuperar tu contraseña</h3>
+    <div class="modal fade modal-iniciar-sesion" id="m-login" tabindex="-1" aria-labelledby="m-login" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="display: flex; justify-content: center;">
+            <div class="modal-content" style="max-width: 338px !important;">
+                <div class="modal-header" style="display: flex; justify-content: center;">
+                    <h5 class="modal-title font-h3-bold-700 negro-promperu text-center" id="exampleModalLabel" style="padding-top: 24px !important; max-width: 284px !important; text-align: center !important;">Para guardar debes iniciar sesión</h5>
                     <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
                         <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
                     </button>
                 </div>
-                <div class="rem-1">
-                    <div class="col-lg-12"><br></div>
-                    <label class="negro-promperu font-size-13 font-weight-100 font-label-400 text-left">Ingresa tu correo electrónico</label>
-                    <input type="text" class="form-control text-correo font-H4-light-300" placeholder="ejemplo@correo.com" value="">
-                    <div class="centrado mt-3">
-                        <button class="btn btn-disabled btn-enviar-pass" type="button">Enviar</button>
+                <div class="modal-body" style="padding-left: 30px !important;">
+                    <div>
+                        <label class="font-label-400 negro-promperu">Correo Electronico</label>
+                        <input style="width: 275px !important; padding-left: 5px !important;" type="text" class="form-control txt-login font-H4-light-400n" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div>
+                        <label class="font-label-400 negro-promperu">Contraseña</label>
+                        <input style="width: 275px !important; padding-left: 5px !important;"  type="password" class="form-control font-H4-light-400n" placeholder="******">
                     </div>
                 </div>
-            </div> -->
-            <div class="modal-dialog modal-sm">
+                <div class="centrado">
+                    <button class="btn btn-danger btn-ingresar font-H4-bold width-100" style="max-width: 284px !important;" type="button">Ingresar</button>
+                </div>
+                <div class="centrado text-line-title font-color-red ordenar font-label-400c" data-bs-toggle="modal" data-bs-target="#m-password">¿Olvidaste tu contraseña?</div>
+                <div class="modal-footer background-footer-modal" style="display: flex; justify-content: center;">
+                    <div class="centrado text-line-title negro-promperu col-12 font-H4-bold-700">¿Aún no tienes una cuenta?</div>
+                    <div class="centrado col-12" style="margin-bottom: 0px !important;">
+                        <button style="width: 289px !important;" type="button" class="btn btn-outline-danger font-H4-bold-700" onclick="window.location.href='../../Registro/pages/Registro.html'">Regístrate Aquí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal login -->
+    <!-- Inicio modal recuperar contraseña -->
+    <div class="modal fade-second bd-example-modal-sm" id="m-password" tabindex="-1" role="dialog" aria-labelledby="m-password" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
                 <div class="modal-content" style="width: 338px !important; margin-top: 30vh !important; margin-left: auto !important; margin-right: auto !important;">
                     <div class="modal-header" style="padding: 0 !important;">
                         <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
@@ -1121,13 +1169,36 @@
                         <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
                     </div>
                     <div class="col-12 div-left mt-4">
-                        <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button" style="max-width: 300px !important; margin-bottom: 40px !important;">Enviar</button>
+                        <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button" data-bs-toggle="modal" data-bs-target="#m-informativo-confirmacion" style="max-width: 300px !important; margin-bottom: 40px !important;">Enviar</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Fin modal informativo -->
+    <!-- Inicio modal informativo confirmación-->
+    <div class="modal fade" id="m-informativo-confirmacion" tabindex="-1" aria-labelledby="m-informativo-confirmacion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 736px !important;">
+            <div class="modal-content">
+                
+                <div class="modal-body body-consulta">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 div-left" style="text-align:center; margin-top:74px;">
+                            <img src="../../img-menu-PromPeru/common/correo_1 1.png">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-bold" style="text-align:center; margin-top:29px;">
+                            Gracias
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-light-normal" style="text-align:center;  margin-top:24px; margin-bottom:141px;">
+                            Tu mensaje ha sido enviado, te daremos respuesta a la brevedad
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal informativo confirmación -->
     <!-- Inicio modal calificativo -->
     <div class="modal fade" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -1170,71 +1241,39 @@
                         </div>
                     </div>
                     <div class="col-12 div-left mt-4">
-                        <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button" style="max-width: 300px !important; margin-bottom: 40px !important;">Enviar</button>
+                        <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button" data-bs-toggle="modal" data-bs-target="#m-opinion-confirmacion" style="max-width: 300px !important; margin-bottom: 40px !important;">Enviar</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header header-modal" style="max-width: 736px !important;">
-                    <h5 class="modal-title font-h3-bold-700 negro-promperu" id="exampleModalLabel"><br>Deja tu opinión</h5>
-                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
-                    </button>
-                </div>
-                <div class="modal-body" style="padding-left: 40px !important; padding-right: 46px !important; width: 100% !important;"></div>
-                    <div class="col-md-6 col-lg-6 col-12 div-left padding-left-right-1" style="padding-bottom: 20px !important;">
-                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;" >Nombres</label>
-                        <input type="text" class="form-control" placeholder="Nombres" style="padding-left: 3px !important; width: 100% !important;">
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
-                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;">Apellidos</label>
-                        <input type="text" class="form-control" placeholder="Apellidos" style="padding-left: 3px !important;">
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
-                        <label class="font-label-400 negro-promperu">Correo electrónico</label>
-                        <input type="text" class="form-control font-H4-light-300" placeholder="ejemplo@correo.com" style="padding-left: 3px !important;">
-                    </div>
-                    <div class="col-12 div-left padding-left-right-1">
-                        <label class="font-label-400 negro-promperu">Escribe tu mensaje</label>
-                        <textarea type="text" class="form-control"></textarea>
-                        <span class="span-textarea font-smallprint-medium gris-promperu">Máximo 189 cáracteres</span>
-                    </div>
-                    <div class="col-12 div-left mt-4 padding-left-right-1">
-                        <div class="col-5 div-left font-label-400 negro-promperu">Califica la herramienta</div>
-                        <div class="col-3 div-left">
-                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                            <div class="div-left ordenar"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-6 div-left mt-4 ">
-                        <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button">Enviar</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
     <!-- Fin modal calificativo -->
-    <!-- Inicio menu general destok -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="max-width: 680px !important;">
-        <!--
-        <div class="popover" style="display: none">
-            
-            <div class="row popover-body" style="margin:3px; padding-top:10px !important; padding-bottom:10px !important;">
-                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 padding-left-right-0">
-                    <p class="blanco font-smallprint-medium-light" style="display:inline;">Las tarifas promedio mostradas son referenciales y no incluyen reajustes ni costos adicionales.</p>
-                </div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 justify-content-end blanco padding-left-right-0" style="display:grid;">
-                    <i class="fas fa-times close-popover ordenar"></i>
+    <!-- Inicio modal calificativo confirmación-->
+    <div class="modal fade" id="m-opinion-confirmacion" tabindex="-1" aria-labelledby="m-informativo-confirmacion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 736px !important;">
+            <div class="modal-content">
+                
+                <div class="modal-body body-consulta">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 div-left" style="text-align:center; margin-top:74px;">
+                            <img src="../../img-menu-PromPeru/common/like 2.png">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-bold" style="text-align:center; margin-top:29px;">
+                            Gracias por tu opinión
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-light-normal" style="text-align:center;  margin-top:24px; margin-bottom:141px;">
+                            Seguiremos mejorando
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>-->
-
-        <div class="offcanvas-header">
+        </div>
+    </div>
+    <!-- Fin modal calificativo confirmación -->
+    <!-- Inicio menu general destok -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="max-width: 680px !important;">
+       <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel" class=" font-size-20 negro-promperu font-H2-bold-700">Herramientas Logísticas</h5>
 
 

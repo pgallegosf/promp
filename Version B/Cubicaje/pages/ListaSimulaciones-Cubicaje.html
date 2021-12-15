@@ -107,7 +107,7 @@
                 <div class="ordenar titulo-header font-H5-bold negro-promperu text-left mostrar-desktop">&nbsp;&nbsp; Simulador de Cubicaje</div>
                 <div class="icon-menu separar-elementos-5">
                     <div class="icon-menu">
-                        <a href="#">
+                        <a id="optLogin" href="#">
                             <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.9411 11.1982H8.05895C3.61726 11.1982 0 14.3308 0 18.1828V19.9927C0 20.5496 0.449263 20.9998 1.00505 20.9998C1.56084 20.9998 2.01011 20.5496 2.01011 19.9927V18.1828C2.01011 15.44 4.72421 13.2124 8.05895 13.2124H13.9411C17.2758 13.2124 19.9899 15.44 19.9899 18.1828V19.9927C19.9899 20.5496 20.4392 20.9998 20.9949 20.9998C21.5507 20.9998 22 20.5496 22 19.9927V18.1828C22 14.3308 18.3827 11.1982 13.9411 11.1982Z" fill="#282828"/>
                                 <path d="M11.4397 10.5627C14.3483 10.5627 16.7104 8.19116 16.7104 5.28133C16.7104 2.37149 14.3483 0 11.4397 0C8.53105 0 6.16895 2.37149 6.16895 5.28133C6.16895 8.19116 8.53568 10.5627 11.4397 10.5627ZM11.4397 2.01414C13.2367 2.01414 14.7049 3.48066 14.7049 5.28133C14.7049 7.08199 13.2414 8.55315 11.4397 8.55315C9.638 8.55315 8.17442 7.08663 8.17442 5.28133C8.17442 3.47602 9.64263 2.01414 11.4397 2.01414Z" fill="#282828"/>
@@ -116,6 +116,11 @@
                                 <path d="M2 0L7 5L12 0L14 1L7 8L0 1L2 0Z" fill="#C4122F"/>
                             </svg> 
                         </a>
+                        <div class="h-100 p-3 card-select-login card-login" id="selectPuertoOrigen">
+                            <div class="row" id="comboPais">
+                                <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad">Cerrar sesión</option>
+                          </div>
+                        </div>
                     </div>
                     <div class="icon-menu">
                         <a class="idPopoverNotificacionGuardar" id="idPopoverNotificacionGuardar" data-bs-toggle="popover">
@@ -628,10 +633,16 @@
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold ordenar font-H4-bold-700n inline">
+                    <a onclick="window.location.href='../../Panel/pages/panel.html'" class="font-color-red font-size-15 font-weight-bold ordenar font-H4-bold-700n inline"><img src="../assets/img/icon-panel.svg" alt=""> &nbsp;&nbsp;Mis simulaciones guardadas</a>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 font-color-red font-size-15 font-weight-bold ordenar font-H4-bold-700n inline">
                     <a onclick="window.location.href='../../Login/pages/Login.html'" class="font-color-red font-size-15 font-weight-bold ordenar font-H4-bold-700n inline"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.7726 9.0654H6.22737C2.79516 9.0654 0 11.6013 0 14.7195V16.1847C0 16.6356 0.347158 17 0.776632 17C1.20611 17 1.55326 16.6356 1.55326 16.1847V14.7195C1.55326 12.4992 3.65053 10.6959 6.22737 10.6959H10.7726C13.3495 10.6959 15.4467 12.4992 15.4467 14.7195V16.1847C15.4467 16.6356 15.7939 17 16.2234 17C16.6528 17 17 16.6356 17 16.1847V14.7195C17 11.6013 14.2048 9.0654 10.7726 9.0654Z" fill="#C4122F"/>
                         <path d="M8.83993 8.55072C11.0875 8.55072 12.9128 6.63094 12.9128 4.27536C12.9128 1.91978 11.0875 0 8.83993 0C6.59235 0 4.76709 1.91978 4.76709 4.27536C4.76709 6.63094 6.59593 8.55072 8.83993 8.55072ZM8.83993 1.6305C10.2286 1.6305 11.3631 2.81768 11.3631 4.27536C11.3631 5.73304 10.2321 6.92398 8.83993 6.92398C7.44772 6.92398 6.31677 5.7368 6.31677 4.27536C6.31677 2.81392 7.4513 1.6305 8.83993 1.6305Z" fill="#C4122F"/>
-                    </svg> &nbsp;&nbsp;Iniciar sesión</a>
+                    </svg> &nbsp;&nbsp;Cerrar sesión</a>
                 </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>

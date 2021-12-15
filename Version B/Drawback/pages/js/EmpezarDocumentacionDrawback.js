@@ -117,11 +117,13 @@ function MostrarProduccionDirecta() {
     $("#main").hide();
     $("#opciones").show();
     $("#opcion-01").show();
+    $("#opcion-02").hide();
 }
 
 function MostrarProduccionEncargo() {
     $("#main").hide();
     $("#opciones").show();
+    $("#opcion-01").hide();
     $("#opcion-02").show();
 }
 

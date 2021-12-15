@@ -474,7 +474,7 @@
                         <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
                     </div>
                     <div class="col-12 div-left mt-4">
-                        <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button" style="max-width: 300px !important; margin-bottom: 40px !important;">Enviar</button>
+                        <button class="btn btn-primary btn-danger width-100 font-H4-bold btn-enviar-calificacion" type="button" style="max-width: 300px !important; margin-bottom: 40px !important;" data-bs-toggle="modal" data-bs-target="#m-informativo-confirmacion">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -523,7 +523,7 @@
                         </div>
                     </div>
                     <div class="col-12 div-left mt-4">
-                        <button class="btn btn-primary btn-danger width-100 font-H4-bold" type="button" style="max-width: 300px !important; margin-bottom: 40px !important;">Enviar</button>
+                        <button class="btn btn-primary btn-danger width-100 font-H4-bold btn-enviar-calificacion-2" type="button" style="max-width: 300px !important; margin-bottom: 40px !important;" data-bs-toggle="modal" data-bs-target="#m-opinion-confirmacion">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -531,6 +531,51 @@
     </div>
     <!-- Fin modal calificativo -->
     <!-- Fin de modales -->
+
+    <div class="modal fade" id="m-informativo-confirmacion" tabindex="-1" aria-labelledby="m-informativo-confirmacion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 736px !important;">
+            <div class="modal-content">
+                
+                <div class="modal-body body-consulta">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 div-left" style="text-align:center; margin-top:74px;">
+                            <img src="../../img-menu-PromPeru/common/correo_1 1.png">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-bold" style="text-align:center; margin-top:29px;">
+                            Gracias
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-light-normal" style="text-align:center;  margin-top:24px; margin-bottom:141px;">
+                            Tu mensaje ha sido enviado, te daremos respuesta a la brevedad
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal informativo confirmación -->
+    <!-- Inicio modal calificativo confirmación-->
+    <div class="modal fade" id="m-opinion-confirmacion" tabindex="-1" aria-labelledby="m-informativo-confirmacion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 736px !important;">
+            <div class="modal-content">
+                
+                <div class="modal-body body-consulta">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 div-left" style="text-align:center; margin-top:74px;">
+                            <img src="../../img-menu-PromPeru/common/like 2.png">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-bold" style="text-align:center; margin-top:29px;">
+                            Gracias por tu opinión
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-light-normal" style="text-align:center;  margin-top:24px; margin-bottom:141px;">
+                            Seguiremos mejorando
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="popover" style="display: none">
         
