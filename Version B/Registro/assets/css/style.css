@@ -830,6 +830,13 @@ a>i>label {
 }
 
 @media (min-width: 200px) {
+    .card-left {
+        float: right;
+        max-width: 454px !important;
+        justify-content: right !important;
+        margin-left:3%;
+        margin-right:3%;
+    }
     .mostrar-desktop {
         display: none !important;
     }
@@ -894,6 +901,12 @@ a>i>label {
 }
 
 @media (min-width: 768px) {
+    .card-left {
+        float: right;
+        max-width: 454px !important;
+        justify-content: right !important;
+        margin-right:8%;
+    }
     .mostrar-desktop {
         display: none !important;
     }
@@ -1090,12 +1103,7 @@ a>i>label {
 .fullHeight{
     height: calc(100vh - 70px);
 }
-.card-left {
-    float: right;
-    max-width: 454px !important;
-    justify-content: right !important;
-    margin-right:8%;
-}
+
 .card-right {
     float: left;
     max-width: 628px !important;
@@ -1104,4 +1112,8 @@ a>i>label {
 .btn-pag-inicio{
     height:50px !important;
     max-width: 335px !important;
+}
+.form-text-registro{
+    padding-bottom: 40px;
+    padding-top: 0px;
 }

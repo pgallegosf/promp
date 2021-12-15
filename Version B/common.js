@@ -27,6 +27,20 @@ $(document).ready(function() {
     $(".close-popover").click(function() {
         $(".popover").toggle();
     });
+    $('.btn-enviar-calificacion').click(function() {
+        setTimeout(function(){ 
+            $('#m-informativo-confirmacion').modal('toggle');
+            $('#m-informativo').modal('toggle');
+           // $(".modal ").removeClass('show');
+        }, 2000);
+    });
+    $('.btn-enviar-calificacion-2').click(function() {
+        setTimeout(function(){ 
+            $('#m-opinion-confirmacion').modal('toggle');
+            $('#m-opinion').modal('toggle');
+           // $(".modal ").removeClass('show');
+        }, 2000);
+    });
 });
 function ocultarNotificacion(){
     console.log("close2");
