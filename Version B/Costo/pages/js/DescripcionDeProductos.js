@@ -2,7 +2,7 @@
 $(document).ready(function() {
     $("#Comercializadora").click(function() {
         selectComercializadora();
-        mostrarViewComercializadora();
+        //mostrarViewComercializadora();
     });
     $("#encargo").click(function() {
         selectEncargo();
@@ -15,7 +15,7 @@ $(document).ready(function() {
     });
     $("#Productora").click(function() {
         selectProductora();
-        mostrarViewProductora();
+        //mostrarViewProductora();
     });
     $("#numPartida2").change(function() {
         MostrarInsumoLiberado();
@@ -326,7 +326,6 @@ $(document).ready(function() {
 
     // Elementos ocultados
     $(".check").hide();
-    //$("#insumoLiberado").hide();
     $("#view-comercializadora").hide();
     $(".view-movil").hide();
     $("#Detalle_Puerto_Movil").hide();
@@ -440,45 +439,50 @@ function MostrarInsumoLiberado() {
 function selectProductora() {
     $("#Comercializadora").removeClass("active-product")
     $("#Productora").addClass("active-product")
-    $("#insumoLiberado").hide();
+    /*$("#insumoLiberado").hide();
     $("#proDirecta").hide();
-    $("#proEncargo").show();
+    $("#proEncargo").show();*/
 }
 
 function selectComercializadora() {
     $("#Productora").removeClass("active-product")
     $("#Comercializadora").addClass("active-product")
-    $("#insumoLiberado2").hide();
+    /*$("#insumoLiberado2").hide();
     $("#proEncargo").hide();
-    $("#proDirecta").show();
+    $("#proDirecta").show();*/
 
 }
 function selectEncargo() {
-    $("#directa").removeClass("active-product")
-    $("#encargo").addClass("active-product")
+    $("#directa").removeClass("active-product");
+    $("#encargo").addClass("active-product");
+    $("#destinoCarga").attr("placeholder", "Escribe el país o el puerto");//placeholder("Escribe el país o el puerto");
+    $(".puerto-seleccionado").html("Puertos en China");
     /*$("#insumoLiberado2").hide();
     $("#proEncargo").hide();
     $("#proDirecta").show();*/
 
 }
 function selectDirecta() {
-    $("#encargo").removeClass("active-product")
-    $("#directa").addClass("active-product")
+    $("#encargo").removeClass("active-product");
+    $("#directa").addClass("active-product");
+    $("#destinoCarga").attr("placeholder", "Escribe el país o el aeropuerto");//placeholder("Escribe el país o el aeropuerto");
+    $(".puerto-seleccionado").html("Aeropuertos en China");
 
 }
 function mostrarViewProductora() {
-    $("#view-comercializadora").hide();
-    $("#view-productora").show();
+    $("#view-comercializadora").addClass("invisible");
+    $("#view-productora").removeClass("invisible");
 }
 
 function mostrarViewComercializadora() {
-    $("#view-productora").hide();
-    $("#view-comercializadora").show();
+    $("#view-productora").addClass("invisible");
+    $("#view-comercializadora").removeClass("invisible");
+    $("#view-comercializadora").addClass("visible");
 }
 
 function MostrarInsumoLiberado2() {
-    $("#insumoLiberado").removeClass("invisible")
-    $("#insumoLiberado").addClass("visible")
+    $("#insumoLiberado").removeClass("invisible");
+    $("#insumoLiberado").addClass("visible");
     //$("#insumoLiberado").show();
     $(".check").show();
 }
