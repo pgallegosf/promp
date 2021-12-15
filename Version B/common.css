@@ -282,6 +282,13 @@ transform: rotate(45deg);
   font-size: 30px !important;
   line-height: 36px !important;
 }
+.font-H2-light-normal {
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+}
 
 .font-H2-light-400 {
   font-family: "Helvetica Neue LT Std light" !important;
@@ -500,6 +507,14 @@ transform: rotate(45deg);
   line-height: 61px !important;
   align-items: center;
 }
+.font-Display-2-Bold-n {
+  font-family: "Helvetica Neue LT Std bold" !important;
+  font-style:normal !important;
+  font-weight: bold !important;
+  font-size: 51px !important;
+  line-height: 61px !important;
+  align-items: center;
+}
 
 .font-H4-medium {
   font-family: "Helvetica Neue LT Std medium" !important;
@@ -661,9 +676,9 @@ transform: rotate(45deg);
 .font-smallprint-medium {
   font-family: "Helvetica Neue LT Std medium" !important;
   font-style: normal !important;
-  font-weight: 500 !important;
+  font-weight: normal !important;
   font-size: 12px !important;
-  line-height: 14.4px !important;
+  line-height: 14px !important;
 }
 
 .font-smallprint-medium-light {
@@ -761,6 +776,37 @@ transform: rotate(45deg);
   line-height: 30px;
 }
 
+.font-arial {
+  font-family: "Arial" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.font-arial-400 {
+  font-family: "Arial" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.font-arial-400-14 {
+  font-family: "Arial" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.1px;
+}
+
+.font-arial-400-roboto {
+  font-family: "Arial" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
 /* .font */
 
 img {
@@ -1124,14 +1170,26 @@ img {
 }
 
 @media (min-width: 200px) {
-
+  .margin-right-carrusel{
+    margin-right: 31px;
+  }
+  .text-consulta{
+    padding-top:20px !important;
+  }
+  .text-right-consulta{
+    padding-left: 12px !important;
+  }
+  .text-consulta{
+    max-width: 100% !important;
+  }
+  .menu-padding{
+    padding-left: 17px !important;
+  }
  .margin-mapa-rutas {
    margin-top: 90px !important;
  }
 
-  .menu-padding{
-    padding-left: 17px !important;
-}
+ 
 
 .padding-moda-maritima {
   padding-left: 15px !important; 
@@ -1341,11 +1399,20 @@ img {
         padding-top: 90px !important;
         /*padding-top: 110px !important;*/
     }
+    .padding-movil {
+        padding-top: 40px !important;
+        /*padding-top: 110px !important;*/
+    }
     .padding-top-principal-detalle{
         padding-top: 50px !important;
     }
     .menu-padding{
         padding-left: 17px !important;;
+    }
+    .body-consulta{
+      padding-left: 19px !important;
+      padding-right: 19px !important;
+      padding-top: 0 !important;
     }
 }
 
@@ -1364,7 +1431,9 @@ img {
     padding-left: 12px !important;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
   } */
-  
+  .margin-right-carrusel{
+    margin-right: 40px;
+  }
   .mobile-resolution-detalle-rutas {
     width: 100% !important;
 }
@@ -1519,12 +1588,30 @@ img {
     .container-principal {
         padding-top: 110px !important;
     }
+
     .padding-top-principal-detalle{
         padding-top: 50px !important;
     }
 }
 
 @media (min-width: 768px) {
+  .margin-right-carrusel{
+    margin-right: 70px;
+  }
+  .text-consulta{
+    padding-top:40px !important;
+  }
+  .text-right-consulta{
+    padding-left: 20px !important;
+  }
+  .text-consulta{
+    max-width: 300px !important;
+  }
+  .body-consulta{
+    padding-left: 43px !important;
+    padding-right: 43px !important;
+    padding-top: 0 !important;
+  }
 
   .margin-mapa-rutas {
     margin-top: 160px !important;
@@ -1702,6 +1789,12 @@ img {
     .container-principal {
         padding-top: 110px !important;
     }
+
+    .padding-movil {
+      padding-top: 62px !important;
+      /*padding-top: 110px !important;*/
+    }
+
     .padding-top-principal-detalle{
         padding-top: 70px !important;
     }
@@ -1711,6 +1804,9 @@ img {
 }
 
 @media (min-width: 992px) {
+  .margin-right-carrusel{
+    margin-right: 90px;
+  }
   .padding-control3-busqueda {
     padding-right: 0px !important;
     padding-left: 0px !important;
@@ -1776,6 +1872,9 @@ img {
 }
 
 @media (min-width: 1200px) {
+  .margin-right-carrusel{
+    margin-right: 110px;
+  }
   .card-busqueda > .row {
     margin-left: 110px !important;
     margin-right: 110px !important;
@@ -1831,7 +1930,15 @@ img {
     height: 450px;
   }
 }
+@media (min-width: 1230px) {
+  .margin-right-carrusel{
+    margin-right: 110px;
+  }
+}
 @media (min-width: 1366px) {
+  .margin-right-carrusel{
+    margin-right: 120px;
+  }
   .card-maritima-container {
       height: 13.2% !important;
       width: 20% !important;
@@ -2139,7 +2246,7 @@ footer {
 
 .titulo-header {
   position: absolute;
-  left: 170px;
+  left: 180px;
 }
 
 .vl {
@@ -2417,4 +2524,95 @@ line-height: 61px;
 
 .testclass {
   
+}
+
+#m-informativo >.modal-dialog{
+  max-width: 736px;
+}
+#m-opinion >.modal-dialog{
+  max-width: 736px;
+}
+.btn-enviar{
+  max-width: 300px !important;
+  height: 50px;
+  margin-bottom: 0;
+  padding:0;
+}
+.header-informativo{
+  padding-bottom:0 !important;
+}
+
+.img-footter{
+  margin-left:0 !important;
+}
+#footer-Desktop>.row>.background-black{
+  max-width: 460px !important;
+  margin-top:56px !important;
+  height: 1px !important;
+}
+#footer-Desktop>.row>.justify-content-between{
+  margin-top:30px !important;
+}
+#footer-Desktop>.row>.justify-content-between>.icon-redes{
+  margin-right:15px !important;
+}
+#footer-Desktop>.row>.row.mt-3{
+  margin-top:40px !important;
+}
+#footer-Desktop>.row>.row.mt-3>.mt-n3{
+  margin-top:8px !important;
+}
+#m-correo>.modal-dialog{
+  max-width: 338px !important;
+}
+#m-correo>.modal-dialog>.modal-content>.div-centrado{
+  margin-left:27px !important;
+  margin-right:27px !important;
+}
+.btn-enviar-correo{
+  height: 50px;
+  margin-bottom: 0;
+  padding:0;
+}
+#m-compartir>.modal-dialog{
+  max-width: 338px !important;
+}
+#m-compartir>.modal-dialog>.modal-content>.div-centrado{
+  margin-left: 24.5px !important;
+  margin-right: 24.5px !important;
+}
+#m-compartir>.modal-dialog>.modal-content>.div-centrado>.mt-3{
+  margin-top:40px !important;
+}
+#m-compartir>.modal-dialog>.modal-content>.div-centrado>.mt-3>.col-6>div{
+  margin-bottom:28px !important;
+}
+.texto-guarda-descarga{
+  margin-left:60px !important;
+  text-align:left !important;
+  max-width: 409px !important;
+}
+.option-azul{
+  background-color:#07354f !important;
+}
+.link-principal{
+  text-decoration: underline;
+}
+
+
+
+@media (min-width: 200px) {
+  .mostrar-desktop.flex{
+    display:none !important;
+  }
+}
+@media (min-width: 768px) {
+  .mostrar-desktop.flex{
+    display:flex !important;
+  }
+}
+
+.dashboardHover:hover{
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }

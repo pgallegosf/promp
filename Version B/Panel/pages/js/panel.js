@@ -1,16 +1,17 @@
 $(document).ready(function () {
-    $('.card-tooltip').hide();
+    /*$('.card-tooltip').hide();
     $('.card-tooltip2').hide();
     $('.card-tooltip3').hide();
     $('.card-tooltip4').hide();
-    $('.card-tooltip5').hide();
+    $('.card-tooltip5').hide();*/
+    
     $('.card-login').hide();
     
     
     $('.card-ordenar').hide();    
     $('.card-ordenar-movil').hide();    
 
-    $('.ptOrdenar').click(function (e) { 
+    /*$('.ptOrdenar').click(function (e) { 
     $('.card-ordenar').toggle();
     
     });
@@ -18,14 +19,14 @@ $(document).ready(function () {
     $('.ptOrdenarMovil').click(function (e) { 
     $('.card-ordenar-movil').toggle();
     
-    });
+    });*/
 
 
     $('#optLogin').click(function (e) { 
         e.preventDefault();
         $('.card-login').toggle();
       }); 
-
+/*
   $('#btn_1').click(function (e) { 
     e.preventDefault();
     $('.card-tooltip').toggle();
@@ -76,34 +77,34 @@ $(document).ready(function () {
     e.preventDefault();
     $('.card-tooltip5').toggle();
   });
-
+*/
   $('.rutaAerea').click(function (e) { 
     e.preventDefault();
-    irPaginaInicio(1)
+    irListaSimulacion(1)
   }); 
   $('.rutaMaritima').click(function (e) { 
     e.preventDefault();
-    irPaginaInicio(2)
+    irListaSimulacion(2)
   }); 
   $('.rutaTerrestre').click(function (e) { 
     e.preventDefault();
-    irPaginaInicio(3)
+    irListaSimulacion(3)
   });
   $('.costoExportacion').click(function (e) { 
     e.preventDefault();
-    irPaginaInicio(4)
+    irListaSimulacion(4)
   });
   $('.cubicaje').click(function (e) { 
     e.preventDefault();
-    irPaginaInicio(5)
+    irListaSimulacion(5)
   }); 
   $('.directorio').click(function (e) { 
     e.preventDefault();
-    irPaginaInicio(6)
+    irListaSimulacion(6)
   }); 
   $('.drawback').click(function (e) { 
     e.preventDefault();
-    irPaginaInicio(7)
+    irListaSimulacion(7)
   });  
 
 });
@@ -111,27 +112,36 @@ $(document).ready(function () {
 
 
 
-function irPaginaInicio(idHerramienta){
+function irListaSimulacion(idHerramienta){
     switch(idHerramienta){
         case 1:
-            window.location.href="../../RutasAerea/Pages/Rutas_aerea.html";
+          sessionStorage.removeItem("idHerramienta");
+          sessionStorage.setItem('idHerramienta', '1');
             break;
         case 2:
-            window.location.href="../../RutasMaritimas/Pages/Rutas_maritimas.html";
+          sessionStorage.removeItem("idHerramienta");
+          sessionStorage.setItem('idHerramienta', '2');
             break;
         case 3:
-            window.location.href="../../RutasTerrestre/Pages/Rutas_terrestre.html";
+          sessionStorage.removeItem("idHerramienta");
+          sessionStorage.setItem('idHerramienta', '3');
             break;
         case 4:
-            window.location.href="../../Costo/Pages/inicio.html";
+          sessionStorage.removeItem("idHerramienta");
+          sessionStorage.setItem('idHerramienta', '4');
             break;
         case 5:
-            window.location.href="../../Cubicaje/Pages/Cubicaje.html";
-            break;
+          sessionStorage.removeItem("idHerramienta");
+          sessionStorage.setItem('idHerramienta', '5');
+          break;
         case 6:
-            window.location.href="../../DirectorioLogistico/Pages/DirectorioLogistico.html";
-        break;
-            default:
-            window.location.href="../../Drawback/Pages/Drawback.html";
+          sessionStorage.removeItem("idHerramienta");
+          sessionStorage.setItem('idHerramienta', '6');
+          break;
+        default:
+          sessionStorage.removeItem("idHerramienta");
+          sessionStorage.setItem('idHerramienta', '7');
+          
     }
+    window.location.href="ListaSimulaciones.html";
 }
