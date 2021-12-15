@@ -2012,6 +2012,9 @@ a > i > label {
 /* ====== */
 
 @media (min-width: 200px) {
+  .show-web {
+    display: none !important;
+  }
   .mostrar-movil {
     display: block;
   }
@@ -2062,6 +2065,10 @@ a > i > label {
   }
   .btn-movil {
     width: 30% !important;
+  }
+
+  .show-web {
+    display: flex !important;
   }
 }
 
