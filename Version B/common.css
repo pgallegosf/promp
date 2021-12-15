@@ -616,6 +616,16 @@ transform: rotate(45deg);
   align-items: center;
 }
 
+
+.font-label-400-light {
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+}
+
 .font-label-icon {
   font-family: "Helvetica Neue LT Std medium" !important;
   font-style: normal;
