@@ -605,24 +605,22 @@
                     </div>
                 </div>
                 <div class="rem-1 mostrarRutas mostrar-movil">
-                    <div class="rutaEncontrada" id="rutaEncontrada">
-                        <div class="titulo">4 rutas encontradas</div>
+                    <div class="rutaEncontrada font-h3-light-400" id="rutaEncontrada">
+                        <div class="azul-promperu" style="padding-left: 16px !important;">4 rutas encontradas</div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
                     <div class="card-body p-3">
                         <div class="row">
-                            <div class="col-12 pointer" id="ruta1" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CEI" aria-expanded="true" aria-controls="mostrarDetalle-CEI">
+                            <div class="col-12 pointer div-detalle-rutas" id="ruta1" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CEI" aria-expanded="true" aria-controls="mostrarDetalle-CEI">
                                 <div class="col-10 text-line-title font-color-black  font-H3-bold negro-promperu acordion-hover div-left">
                                     Costa Este EE.UU
-                                </div>
-                                <div class="col-2 text-line-title font-color-red div-left" id="flecha1">
-                                    <svg class="div-right icon-right" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.5258 9.42517L2.62162 0.409868C2.30425 0.118284 1.87312 -0.0304829 1.44797 0.00522125C1.01683 0.0349747 0.615632 0.243249 0.346171 0.576488C-0.168799 1.21321 -0.102931 2.14152 0.501859 2.69494L8.77731 10.2999C8.84916 10.3713 8.86114 10.4546 8.86114 10.4963C8.86114 10.5379 8.84916 10.6213 8.77731 10.6927L0.501859 18.3036C-0.102931 18.857 -0.168799 19.7913 0.346171 20.4221C0.615632 20.7553 1.01683 20.9636 1.44797 20.9933C1.4839 20.9933 1.52581 20.9993 1.56174 20.9993C1.95096 20.9993 2.33419 20.8565 2.62162 20.5887L12.5258 11.5734C12.8252 11.2996 12.9989 10.9069 12.9989 10.5022C12.9989 10.0916 12.8252 9.6989 12.5258 9.42517Z" fill="#C4122F"/>
-                                    </svg>
+                                </div>    
+                                <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                    <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
                                 </div>
                             </div>
-                            <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CEI">
+                            <div class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CEI">
                                 <br>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="ordenar" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
@@ -637,9 +635,9 @@
                                                 </div>
 
                                                 <div class="font-H5-bold font-color-red div-left ver-mapa">&nbsp;&nbsp;Ver mapa</div>
-                                                <svg class="icon-right" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <!-- <svg class="icon-right" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M11.5741 13.6332L20.5894 3.09393C20.881 2.75621 21.0298 2.29743 20.994 1.84501C20.9643 1.38623 20.756 0.959307 20.4228 0.672567C19.7861 0.124576 18.8577 0.194668 18.3043 0.838239L10.6993 9.64434C10.6279 9.7208 10.5446 9.73355 10.503 9.73355C10.4613 9.73355 10.378 9.7208 10.3066 9.64434L2.69567 0.838239C2.14225 0.194667 1.20799 0.124575 0.577219 0.672567C0.24398 0.959306 0.0357055 1.38623 0.00595277 1.84501C0.00595277 1.88325 -6.66953e-08 1.92785 -6.82658e-08 1.96608C-8.52792e-08 2.38026 0.142818 2.78807 0.410601 3.09393L9.4259 13.6332C9.69963 13.9518 10.0924 14.1366 10.497 14.1366C10.9076 14.1366 11.3004 13.9518 11.5741 13.6332Z" fill="#C4122F"/>
-                                                </svg>
+                                                </svg> -->
                                             </div>
                                             <br>
                                             <br>
@@ -662,17 +660,15 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                            <div class="col-12 pointer" id="ruta2" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CO" aria-expanded="true" aria-controls="mostrarDetalle-CO">
+                            <div class="col-12 pointer div-detalle-rutas" id="ruta2" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CO" aria-expanded="true" aria-controls="mostrarDetalle-CO">
                                 <div class="col-10 text-line-title font-color-black font-H3-bold negro-promperu acordion-hover div-left">
                                     Costa Oeste EE.UU
                                 </div>
-                                <div class="col-2 text-line-title font-color-red div-left" id="flecha2">
-                                    <svg class="div-right icon-right" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.5258 9.42517L2.62162 0.409868C2.30425 0.118284 1.87312 -0.0304829 1.44797 0.00522125C1.01683 0.0349747 0.615632 0.243249 0.346171 0.576488C-0.168799 1.21321 -0.102931 2.14152 0.501859 2.69494L8.77731 10.2999C8.84916 10.3713 8.86114 10.4546 8.86114 10.4963C8.86114 10.5379 8.84916 10.6213 8.77731 10.6927L0.501859 18.3036C-0.102931 18.857 -0.168799 19.7913 0.346171 20.4221C0.615632 20.7553 1.01683 20.9636 1.44797 20.9933C1.4839 20.9933 1.52581 20.9993 1.56174 20.9993C1.95096 20.9993 2.33419 20.8565 2.62162 20.5887L12.5258 11.5734C12.8252 11.2996 12.9989 10.9069 12.9989 10.5022C12.9989 10.0916 12.8252 9.6989 12.5258 9.42517Z" fill="#C4122F"/>
-                                    </svg>
+                                <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                    <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
                                 </div>
                             </div>
-                            <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CO">
+                            <div class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CO">
                                 <br>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="ordenar" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
@@ -687,9 +683,9 @@
                                                 </div>
 
                                                 <div class="font-H5-bold font-color-red div-left ver-mapa">&nbsp;&nbsp;Ver mapa</div>
-                                                <svg class="icon-right" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <!-- <svg class="icon-right" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M11.5741 13.6332L20.5894 3.09393C20.881 2.75621 21.0298 2.29743 20.994 1.84501C20.9643 1.38623 20.756 0.959307 20.4228 0.672567C19.7861 0.124576 18.8577 0.194668 18.3043 0.838239L10.6993 9.64434C10.6279 9.7208 10.5446 9.73355 10.503 9.73355C10.4613 9.73355 10.378 9.7208 10.3066 9.64434L2.69567 0.838239C2.14225 0.194667 1.20799 0.124575 0.577219 0.672567C0.24398 0.959306 0.0357055 1.38623 0.00595277 1.84501C0.00595277 1.88325 -6.66953e-08 1.92785 -6.82658e-08 1.96608C-8.52792e-08 2.38026 0.142818 2.78807 0.410601 3.09393L9.4259 13.6332C9.69963 13.9518 10.0924 14.1366 10.497 14.1366C10.9076 14.1366 11.3004 13.9518 11.5741 13.6332Z" fill="#C4122F"/>
-                                                </svg>
+                                                </svg> -->
                                             </div>
                                             <br>
                                             <br>
@@ -712,17 +708,15 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                            <div class="col-12 pointer" id="ruta3" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CE" aria-expanded="true" aria-controls="mostrarDetalle-CE">
+                            <div class="col-12 pointer div-detalle-rutas" id="ruta3" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-CE" aria-expanded="true" aria-controls="mostrarDetalle-CE">
                                 <div class="col-10 text-line-title font-color-black font-H3-bold negro-promperu acordion-hover div-left">
                                     Costa Golfo EE.UU.
                                 </div>
-                                <div class="col-2 text-line-title font-color-red div-left" id="flecha3">
-                                    <svg class="div-right icon-right" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.5258 9.42517L2.62162 0.409868C2.30425 0.118284 1.87312 -0.0304829 1.44797 0.00522125C1.01683 0.0349747 0.615632 0.243249 0.346171 0.576488C-0.168799 1.21321 -0.102931 2.14152 0.501859 2.69494L8.77731 10.2999C8.84916 10.3713 8.86114 10.4546 8.86114 10.4963C8.86114 10.5379 8.84916 10.6213 8.77731 10.6927L0.501859 18.3036C-0.102931 18.857 -0.168799 19.7913 0.346171 20.4221C0.615632 20.7553 1.01683 20.9636 1.44797 20.9933C1.4839 20.9933 1.52581 20.9993 1.56174 20.9993C1.95096 20.9993 2.33419 20.8565 2.62162 20.5887L12.5258 11.5734C12.8252 11.2996 12.9989 10.9069 12.9989 10.5022C12.9989 10.0916 12.8252 9.6989 12.5258 9.42517Z" fill="#C4122F"/>
-                                    </svg>
+                                <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                    <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
                                 </div>
                             </div>
-                            <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CE">
+                            <div class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CE">
                                 <br>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="ordenar" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
@@ -737,9 +731,9 @@
                                                 </div>
 
                                                 <div class="font-H5-bold font-color-red div-left ver-mapa">&nbsp;&nbsp;Ver mapa</div>
-                                                <svg class="icon-right" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <!-- <svg class="icon-right" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M11.5741 13.6332L20.5894 3.09393C20.881 2.75621 21.0298 2.29743 20.994 1.84501C20.9643 1.38623 20.756 0.959307 20.4228 0.672567C19.7861 0.124576 18.8577 0.194668 18.3043 0.838239L10.6993 9.64434C10.6279 9.7208 10.5446 9.73355 10.503 9.73355C10.4613 9.73355 10.378 9.7208 10.3066 9.64434L2.69567 0.838239C2.14225 0.194667 1.20799 0.124575 0.577219 0.672567C0.24398 0.959306 0.0357055 1.38623 0.00595277 1.84501C0.00595277 1.88325 -6.66953e-08 1.92785 -6.82658e-08 1.96608C-8.52792e-08 2.38026 0.142818 2.78807 0.410601 3.09393L9.4259 13.6332C9.69963 13.9518 10.0924 14.1366 10.497 14.1366C10.9076 14.1366 11.3004 13.9518 11.5741 13.6332Z" fill="#C4122F"/>
-                                                </svg>
+                                                </svg> -->
                                             </div>
                                             <br>
                                             <br>
@@ -757,22 +751,20 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                            <div class="col-12 pointer" id="ruta4" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-pacifico" aria-expanded="true" aria-controls="mostrarDetalle-pacifico">
+                            <div class="col-12 pointer div-detalle-rutas" id="ruta4" data-bs-toggle="collapse" data-bs-target="#mostrarDetalle-pacifico" aria-expanded="true" aria-controls="mostrarDetalle-pacifico">
                                 <div class="col-10 text-line-title font-color-black font-size-25 font-H3-bold negro-promperu acordion-hover div-left">
                                     EE.UU. Pacífico
                                 </div>
-                                <div class="col-2 text-line-title font-color-red div-left" id="flecha4">
-                                    <svg class="div-right icon-right" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.5258 9.42517L2.62162 0.409868C2.30425 0.118284 1.87312 -0.0304829 1.44797 0.00522125C1.01683 0.0349747 0.615632 0.243249 0.346171 0.576488C-0.168799 1.21321 -0.102931 2.14152 0.501859 2.69494L8.77731 10.2999C8.84916 10.3713 8.86114 10.4546 8.86114 10.4963C8.86114 10.5379 8.84916 10.6213 8.77731 10.6927L0.501859 18.3036C-0.102931 18.857 -0.168799 19.7913 0.346171 20.4221C0.615632 20.7553 1.01683 20.9636 1.44797 20.9933C1.4839 20.9933 1.52581 20.9993 1.56174 20.9993C1.95096 20.9993 2.33419 20.8565 2.62162 20.5887L12.5258 11.5734C12.8252 11.2996 12.9989 10.9069 12.9989 10.5022C12.9989 10.0916 12.8252 9.6989 12.5258 9.42517Z" fill="#C4122F"/>
-                                    </svg>
+                                <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                    <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
                                 </div>
                             </div>
-                            <div class="accordion-collapse collapse hide" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-pacifico">
+                            <div class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-pacifico">
                                 <br>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="ordenar" data-bs-toggle="offcanvas" data-bs-target="#mapa-movil" aria-controls="mapa-movil">
@@ -787,9 +779,9 @@
                                                 </div>
 
                                                 <div class="font-H5-bold font-color-red div-left ver-mapa">&nbsp;&nbsp;Ver mapa</div>
-                                                <svg class="icon-right" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <!-- <svg class="icon-right" width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M11.5741 13.6332L20.5894 3.09393C20.881 2.75621 21.0298 2.29743 20.994 1.84501C20.9643 1.38623 20.756 0.959307 20.4228 0.672567C19.7861 0.124576 18.8577 0.194668 18.3043 0.838239L10.6993 9.64434C10.6279 9.7208 10.5446 9.73355 10.503 9.73355C10.4613 9.73355 10.378 9.7208 10.3066 9.64434L2.69567 0.838239C2.14225 0.194667 1.20799 0.124575 0.577219 0.672567C0.24398 0.959306 0.0357055 1.38623 0.00595277 1.84501C0.00595277 1.88325 -6.66953e-08 1.92785 -6.82658e-08 1.96608C-8.52792e-08 2.38026 0.142818 2.78807 0.410601 3.09393L9.4259 13.6332C9.69963 13.9518 10.0924 14.1366 10.497 14.1366C10.9076 14.1366 11.3004 13.9518 11.5741 13.6332Z" fill="#C4122F"/>
-                                                </svg>
+                                                </svg> -->
                                             </div>
                                             <br>
                                             <br>
@@ -1431,22 +1423,36 @@
     </div>
     <!-- Fin menu general desktop -->
     <!-- Fin de modales -->
-    <!-- Inicio canvas mapa movil -->
-    <div class="offcanvas offcanvas-center" tabindex="-1" id="mapa-movil" aria-labelledby="offcanvasRightLabel">
+     <!-- Inicio vista de mapa movil-->
+     <div class="offcanvas offcanvas-center w-100" tabindex="-1" id="mapa-movil" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header offcanvas-header-personalizado">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil w-100">
-                <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" data-bs-dismiss="offcanvas" aria-label="Close"></i>Mapa
+            <div
+                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil w-100">
+                <div class="pt-2 pb-2">
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></i>Mapa
                 </div>
             </div>
         </div>
-        <div class="offcanvas-body">
-            <div class="c">
-                <img src="../assets/img/Ruta_Marina/pop up_mapa.png" alt="mapa-movil" class="mapa-movil ">
+        <div class="offcanvas-body" style="padding: 0px !important; position: relative;">
+            <div>
+                <div style="padding-left: 20px !important; margin: 0px !important;">
+                    <div style="position: absolute; width: 50px; height: 100px; right: 0 !important; z-index: 100; margin-top: 200px; bottom: 0vh !important;
+                     background-color: #C4122F;">
+                     <div class="col-12 text-center" style="height: 50px; border-bottom: 2px solid white; cursor: pointer;">
+                        <img src="../assets/icon/icons/plus-rutas.svg" style="width: 30px !important; margin-top: 8px;" alt="contenedor">
+                     </div>
+                     <div class="col-12 text-center" style="height: 50px; cursor: pointer;">
+                        <img src="../assets/icon/icons/minus-rutas.svg" style="width: 30px !important; margin-top: 20px;" alt="contenedor">
+                     </div>
+                        <!-- <span class="flecha derecha"></span> -->
+                    </div>
+                    <img src="../assets/img/Ruta_Marina/mapa_movil_1.png" style="width: 100%;" alt=" mapa-movil" class="mapa-movil ">
+                </div>
             </div>
         </div>
     </div>
-    <!-- Fin canvas mapa movil -->
+    <!-- Fin vista de mapa movil -->
     <div class="modal fade modal-dashboard" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
 
     </div>
