@@ -7,7 +7,6 @@ $(document).ready(function() {
     $(".ver-simulaciones").click(function(e) {
         sessionStorage.removeItem("idHerramienta");
         sessionStorage.setItem('idHerramienta', '2');
-        // window.location.href="../../../Panel/pages/ListaSimulaciones.html";
     });
 
     $(".tipContainer").click(function(e) {
