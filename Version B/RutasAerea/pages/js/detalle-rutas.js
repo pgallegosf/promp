@@ -6,7 +6,20 @@ $(document).ready(function() {
         a.setAttribute("download", "Rutas Aereas");
         a.click();
     });
-
+    
+    
+    $(".div-detalle-rutas").click(function() {
+        console.log($(this).find('i'));
+        var object = $(this).find('i');
+        if(object.hasClass('fa-chevron-right')) {
+            object.removeClass('fa-chevron-right');
+            object.addClass('fa-chevron-down');
+        }else {
+            object.removeClass('fa-chevron-down');
+            object.addClass('fa-chevron-right');
+        }
+    });
+    
     $('.btn-ingresar').click(function(e) {
         $(".popover").show();
         $(".modal-iniciar-sesion").hide();
