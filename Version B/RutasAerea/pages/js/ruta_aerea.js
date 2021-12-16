@@ -21,6 +21,24 @@ $(document).ready(function() {
             $(".img-check-destino-movil").hide();
         }
      });
+
+     
+     $(".second-image").hide();
+     $(".modal-detalle-mapa").hide();
+
+     $(".point-mapa").click(function(e) {
+        $(".first-image").hide();
+        $(".second-image").show();
+    });
+
+    $(".point-mapa-3").click(function(e) {
+        $(".modal-detalle-mapa").show();
+    });
+    
+    $(".close-detalle-mapa").click(function(e) {
+        $(".modal-detalle-mapa").hide();
+    });
+
     $(".peso").click(function(e) {
         e.stopPropagation();
         showCardDestino();

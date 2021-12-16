@@ -107,6 +107,67 @@ body {
 
 /*nuevo boton*/
 
+.point-mapa {
+    position: absolute;
+    left: 317px;
+    top: 507px;
+}
+
+.point-mapa-2 {
+    position: absolute;
+    left: 323px;
+    top: 270px;
+}
+
+.point-mapa-3 {
+    position: absolute;
+    left: 627px;
+    top: 235px;
+}
+
+.point-mapa-4 {
+    position: absolute;
+    left: 317px;
+    top: 507px;
+}
+
+.avion-mapa {
+    position: absolute;
+    left: 240px;
+    top: 495px;
+}
+
+.container-mapa {
+    position: absolute;
+    left: 645px;
+    top: 190px;
+}
+
+.modal-detalle-mapa {
+    position: absolute;
+    left: 630px;
+    top: 80px;
+}
+
+.point-mapa:hover {
+    content:url("../img/icon-opcion/icon-point-red_1.svg");
+    cursor: pointer;
+    left: 307px;
+    top: 501px;
+}
+
+.point-mapa-3:hover {
+    content:url("../img/icon-opcion/icon-point-red_1.svg");
+    cursor: pointer;
+    left: 617px;
+    top: 229px;
+}
+
+.modal-detalle-mapa {
+    padding-top: 120px !important;
+    padding-bottom: 20px !important;
+}
+
 @media (min-width: 400px) {
     .nav-img {
         width: 45% !important;
