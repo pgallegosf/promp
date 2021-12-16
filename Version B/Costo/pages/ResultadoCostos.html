@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
     <title>
-        PromPeru - Costos de Exportación
+        PromPeru - Simulador de Costos de Exportación
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -457,6 +457,31 @@
                                             </div>
                                             <div class="font-weight-bold px-2 font-helvetica-icon">Guardar resultado</div>
                                         </div>-->
+                                        <div class="ordenar" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin: 0px 15px;" id="pdf">
+                                            <div>
+                                                <!-- <img src="../assets/img/icon-opcion/dowload.png" alt="descargar"> -->
+                                                <img src="../assets/icon/icons/icon-guardar-pdf.svg" alt="descargar" style="margin-bottom: 10px;">
+                                            </div>
+                                            <div class="font-weight-bold px-2 font-helvetica-icon mostrar-desktop">Descargar en PDF</div>
+                                            <div class="font-weight-bold px-2 font-smallprint-medium mostrar-movil">Descargar en PDF</div>
+                                        </div>
+                                        <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-correo" style="margin: 0px 15px;">
+                                            <div>
+                                                <!-- <img src="../assets/img/icon-opcion/email.png" alt="correo" class="img-email"> -->
+                                                <img src="../assets/icon/icons/icon-enviar-correo.svg" alt="img-email" style="margin-bottom: 10px;">
+                                            </div>
+                                            <div class="font-weight-bold px-2 font-helvetica-icon mostrar-desktop">Enviar por correo</div>
+                                            <div class="font-weight-bold px-2 font-smallprint-medium mostrar-movil" style="padding: 0px !important; width: 60px !important;">Enviar por correo</div>
+                                        </div>
+                                        <div class="ordenar" data-bs-toggle="modal" data-bs-target="#m-compartir" style="margin: 0px 15px;">
+                                            <div>
+                                                <!-- <img src="../assets/img/icon-opcion/shared.png" alt="compartir"> -->
+                                                <img src="../assets/icon/icons/icon-exportar.svg" alt="compartir" style="margin-bottom: 10px;">
+                                            </div>
+                                            <div class="font-weight-bold px-2 font-helvetica-icon mostrar-desktop">Compartir</div>
+                                            <div class="font-weight-bold px-2 font-smallprint-medium mostrar-movil">Compartir</div>
+                                        </div>
+                                        <!--
                                         <div class="ordenar" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-right: 50px;">
                                             <div class="cicle-avatar">
                                                 <img src="../assets/img/icon-opcion/dowload.png" alt="descargar">
@@ -475,6 +500,7 @@
                                             </div>
                                             <div class="font-weight-bold px-2 font-helvetica-icon" style="margin-top:11px;">Compartir</div>
                                         </div>
+                                    -->
                                     </div>
                                 </div>
                             </div>
@@ -652,14 +678,31 @@
     <!-- Fin de buscador de puerto de origen V-Movil -->
     <!-- Inicio Popovers -->
     <div class="popover" style="display: none">
-            
+         <!--   
         <div class="row popover-body" style="margin:3px; padding-top:10px !important; padding-bottom:10px !important;">
             <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 padding-left-right-0">
                 <p class="blanco font-smallprint-medium-light" style="display:inline;">Las tarifas promedio mostradas son referenciales y no incluyen reajustes ni costos adicionales.</p>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 justify-content-end blanco padding-left-right-0" style="display:grid;">
-                <!-- <p class="font-size-10 font-weight-bold">Tu simulación ha sido guardada</p> -->
+                
                 <i class="fas fa-times close-popover ordenar"></i>
+            </div>
+        </div>-->
+        <div class="row popover-body" style="margin:3px; padding-top:10px !important; padding-bottom:10px !important;">
+            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 pb-2 padding-left-right-0">
+                <p class="blanco font-H5-bold" style="display:inline; font-size: 14px  !important;">Tu simulación ha
+                    sido guardada</p>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 justify-content-end blanco padding-left-right-0"
+                style="display:grid;">
+                <i class="fas fa-times close-popover-simulacion close-popover ordenar"></i>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <img src="../assets/img/icon-popover.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                <a class="font-helvetica-popover font-color-white" href="../../Panel/pages/ListaSimulaciones.html">Ver mis
+                    simulaciones guardadas</a>
             </div>
         </div>
     </div>
@@ -1099,6 +1142,7 @@
     <div class="modal fade modal-dashboard" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
 
     </div>
+    <iframe id="my_iframe" style="display:none;"></iframe>
     <!-- Fin de modales -->
     <!--   Core JS Files   -->
     <script src="../assets/js/core/popper.min.js "></script>
@@ -1113,6 +1157,7 @@
     <!-- JS rutas maritimas -->
     <script src="./js/detalle-rutas.js "></script>
     <script src="../../common.js "></script>
+    <script src="js/ResultadoCostos.js"></script>
 </body>
 
 </html>

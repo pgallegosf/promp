@@ -208,8 +208,12 @@
                                                     class="col-lg-6 col-md-6 col-sm-6 col-xs-6 container-detalle-subtitulo font-H4-bold-700n padding-left-right-0">
                                                     Tiempo de tránsito promedio</div>
                                                 <div
-                                                    class="col-lg-6 col-md-6 col-sm-6 col-xs-6 negro-promperu font-H5-light padding-left-right-0 text-align-right">
+                                                    class="col-lg-6 col-md-6 col-sm-6 col-xs-6 negro-promperu txt_detalle_ruta_terreste_desktop font-H4-light padding-left-right-0 text-align-right">
                                                     15h 15 min</div>
+                                                <div
+                                                    class="col-lg-6 col-md-6 col-sm-6 col-xs-6 negro-promperu txt_detalle_ruta_terreste_moviles font-H5-light  padding-left-right-0 text-align-right">
+                                                    15h 15 min</div>
+
                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                                                 <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris padding-left-right-0"></div> -->
                                                 <hr />
@@ -218,7 +222,10 @@
                                                     class="col-lg-6 col-md-6 col-sm-6 col-xs-6 container-detalle-subtitulo font-H4-bold-700n padding-left-right-0">
                                                     Dístancia</div>
                                                 <div
-                                                    class="col-lg-6 col-md-6 col-sm-6 col-xs-6 negro-promperu font-H5-light padding-left-right-0 text-align-right">
+                                                    class="col-lg-6 col-md-6 col-sm-6 col-xs-6 negro-promperu txt_detalle_ruta_terreste_desktop font-H4-light padding-left-right-0 text-align-right">
+                                                    990.4 km</div>
+                                                    <div
+                                                    class="col-lg-6 col-md-6 col-sm-6 col-xs-6 negro-promperu txt_detalle_ruta_terreste_moviles font-H5-light padding-left-right-0 text-align-right">
                                                     990.4 km</div>
                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                                                 <hr />
@@ -228,7 +235,10 @@
                                                     class="col-lg-6 col-md-6 col-sm-6 col-xs-6 container-detalle-subtitulo font-H4-bold-700n padding-left-right-0">
                                                     Frecuencias de salidas</div>
                                                 <div
-                                                    class="col-lg-6 col-md-6 col-sm-6 col-xs-6 negro-promperu font-H5-light padding-left-right-0 text-align-right">
+                                                    class="col-lg-6 col-md-6 col-sm-6 col-xs-6 negro-promperu txt_detalle_ruta_terreste_desktop font-H4-light padding-left-right-0 text-align-right">
+                                                    Interdiario y semanal</div>
+                                                    <div
+                                                    class="col-lg-6 col-md-6 col-sm-6 col-xs-6 negro-promperu txt_detalle_ruta_terreste_moviles font-H5-light padding-left-right-0 text-align-right">
                                                     Interdiario y semanal</div>
                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                                                 <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris padding-left-right-0"></div> -->
@@ -247,7 +257,7 @@
                                                             alt="contenedor">
                                                     </div>
                                                     <div>
-                                                        <span class="font-size-15 font-weight-bold span-ver-mapa">Ver
+                                                        <span class="font-size-15 font-weight-bold  font-H4-bold-700n span-ver-mapa">Ver
                                                             mapa de la ruta</span>
                                                     </div>
                                                 </div>
@@ -1223,12 +1233,61 @@
         </div>
     </div>
     <!-- Fin modal calificativo -->
-    <!-- Inicio modal Login -->
-    <div class="modal fade" id="m-login" tabindex="-1" aria-labelledby="m-login" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-login">
+
+        <!-- Inicio modal informativo confirmación-->
+        <div class="modal fade" id="m-informativo-confirmacion" tabindex="-1" aria-labelledby="m-informativo-confirmacion" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 736px !important;">
+                <div class="modal-content">
+                    
+                    <div class="modal-body body-consulta">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 div-left" style="text-align:center; margin-top:74px;">
+                                <img src="../../img-menu-PromPeru/common/correo_1 1.png">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-bold" style="text-align:center; margin-top:29px;">
+                                Gracias
+                            </div>
+                            
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-light-normal" style="text-align:center;  margin-top:24px; margin-bottom:141px;">
+                                Tu mensaje ha sido enviado, te daremos respuesta a la brevedad
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin modal informativo confirmación -->
+
+        <!-- Inicio modal calificativo confirmación-->
+    <div class="modal fade" id="m-opinion-confirmacion" tabindex="-1" aria-labelledby="m-informativo-confirmacion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 736px !important;">
             <div class="modal-content">
-                <div class="modal-header" style="justify-content: center;">
-                    <h5 class="modal-title font-h3-bold-700 negro-promperu centrado" id="exampleModalLabel">Para guardar
+                
+                <div class="modal-body body-consulta">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 div-left" style="text-align:center; margin-top:74px;">
+                            <img src="../../img-menu-PromPeru/common/like 2.png">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-bold" style="text-align:center; margin-top:29px;">
+                            Gracias por tu opinión
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-light-normal" style="text-align:center;  margin-top:24px; margin-bottom:141px;">
+                            Seguiremos mejorando
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal calificativo confirmación -->
+
+    <!-- Inicio modal Login -->
+    <div class="modal fade modal-iniciar-sesion" id="m-login" tabindex="-1" aria-labelledby="m-login" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-login" style="display: flex; justify-content: center;">
+            <div class="modal-content" style="max-width: 338px !important;">
+                <div class="modal-header" style="display: flex; justify-content: center;">
+                    <h5 class="modal-title font-h3-bold-700 negro-promperu centrado" id="exampleModalLabel" style="padding-top: 24px !important; max-width: 284px !important; text-align: center !important;">Para guardar
                         debes iniciar sesión</h5>
                     <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
                         <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
@@ -1370,12 +1429,10 @@
 
     <!-- Inicio modal informativo -->
     <div class="modal fade" id="m-informativo" tabindex="-1" aria-labelledby="m-informativo" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-header header-modal">
-
+                <div class="modal-header header-modal" style="max-width: 736px !important;">
                     <h5 class="modal-title font-H3-bold negro text-center" id="exampleModalLabel">Indicanos tu consulta</h5>
-
                     <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
                         <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
                     </button>
@@ -1404,8 +1461,8 @@
                                     500 cáracteres</span>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 div-left mt-4">
-                                <button class="btn btn-primary btn-danger width-100 font-H4-bold"
-                                    type="button">Enviar</button>
+                                <button id="btnEnviarIndicamosTuConsulta" class="btn btn-primary btn-danger width-100 font-H4-bold"
+                                type="button" data-bs-toggle="modal" data-bs-target="#m-informativo-confirmacion">Enviar</button>
                             </div>
                         </div>
                     </div>                   
@@ -1463,8 +1520,8 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 div-left mt-4 ">
-                                <button class="btn btn-primary btn-danger width-100 font-H4-bold"
-                                    type="button">Enviar</button>
+                                <button id="btnEnviarDejaTuopinion" class="btn btn-primary btn-danger width-100 font-H4-bold"
+                                    type="button" data-bs-toggle="modal" data-bs-target="#m-opinion-confirmacion">Enviar</button>
                             </div>
                         </div>
                     </div>                   
@@ -1654,6 +1711,25 @@
         </div> 
     </div>
     <!-- Fin menu general desktop -->
+    <!-- Inicio Popovers -->
+    <div class="popover popover-1" style="display: none;">         
+        <div class="row popover-body" style="margin:3px; padding-top:10px !important; padding-bottom:10px !important;">
+            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 pb-2 padding-left-right-0">
+                <p class="blanco font-H5-bold" style="display:inline; font-size: 14px  !important;">Tu simulacion ha sido guardada</p>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 justify-content-end blanco padding-left-right-0" style="display:grid;">
+                <!-- <p class="font-size-10 font-weight-bold">Tu simulación ha sido guardada</p> -->
+                <i class="fas fa-times close-popover-simulacion close-popover ordenar"></i>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+               <img src="../assets/img/icon-popover.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 ver-simulaciones">
+               <a class="font-helvetica-popover font-color-white" href="../../Panel/pages/ListaSimulaciones.html">Ver mis simulaciones guardadas</a>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Popovers -->
     <!-- Inicio vista de mapa movil-->
     <div class="offcanvas offcanvas-center w-100" tabindex="-1" id="mapa-movil" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header offcanvas-header-personalizado">
