@@ -856,7 +856,7 @@
     <!-- Inicio modal de guardar simulación-->
     <div class="modal fade" id="m-guardar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content" style="width: 650px !important; margin-top: 30vh !important; margin-left: auto !important; margin-right: auto !important;">
+            <div class="modal-content mostrar-desktop" style="width: 650px !important; margin-top: 30vh !important; margin-left: auto !important; margin-right: auto !important;">
                 <div class="modal-header display-block">
                     <h5 class="modal-title centro font-h3-bold negro-promperu pt-5" id="exampleModalLabel">¿Desea guardar su simulación?</h5>
                     <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
@@ -876,6 +876,30 @@
                         </div>
                         <div class="mostrar-movil col-xs-6 col-sm- 6 col-md-6 col-lg-6">
                             <a href="Vias.html" class="font-H4-bold btn btn-outline-danger" style="text-transform: inherit !important;width: 284px !important;" onclick="NoSave()">No guardar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-content mostrar-movil" style="margin-top: 30vh !important; margin-left: auto !important; margin-right: auto !important;">
+                <div class="modal-header display-block">
+                    <h5 class="modal-title centro font-h3-bold negro-promperu pt-5" id="exampleModalLabel">¿Desea guardar su simulación?</h5>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
+                </div>
+                <div class="modal-body pb-4">
+                    <div class="row text-center">
+                        <div class="mostrar-desktop col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <a href="Vias.html" class="font-H4-bold btn btn-danger" style="width: 280px !important; height: 50px !important;" onclick="Save()">Si, guardar mi simulación</a>
+                        </div>
+                        <div class="mostrar-movil col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <a href="Vias.html" class="font-H4-bold btn btn-danger" style="width: 284px !important;" data-bs-dismiss="modal" aria-label="Close">Si, guardar mi simulación</a>
+                        </div>
+                        <div class="mostrar-desktop col-xs-6 col-sm- 6 col-md-6 col-lg-6">
+                            <a href="Vias.html" class="font-H4-bold btn btn-outline-danger" style="text-transform: inherit !important;width: 280px !important; height: 50px !important;" onclick="NoSave()">No guardar</a>
+                        </div>
+                        <div class="mostrar-movil col-xs-6 col-sm- 6 col-md-6 col-lg-6">
+                            <a href="Vias.html" class="font-H4-bold btn btn-outline-danger" style="text-transform: inherit !important;width: 284px !important;" data-bs-dismiss="modal" aria-label="Close">No guardar</a>
                         </div>
                     </div>
                 </div>

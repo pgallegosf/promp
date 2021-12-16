@@ -134,28 +134,29 @@
         <!-- End Navbar -->
         <div class="container-fluid py-4 container-principal-list-directorio">
             <!-- Inicio de vista principal -->
-            <div class="d-display" id="view-global">
+            <div class="d-display" id="view-global" style="margin-right: 0px !important; margin-left: 0px !important;">
                 
                 <div class="row mt-4 pb-4 div-busqueda justify-content-center">
                     <div class="col-lg-12 mb-lg-0" style="width: 1023px;">
                             <div class="busquedaNormal row px-2 p-5 overflow-hidden">
-                                <div class="col-lg-8 col-md-8 col-xs-12">
+                                <div class="col-lg-9 col-md-9 col-xs-12">
                                     <input type="text" class="form-control busqueda-listado ptOrigen mostrar-desktop ordenar font-H4-light" id="ptBusqueda" value="Selecciona" /><i class="icon-select ptOrigen mostrar-desktop ordenar"><img src="../assets/img/icon-search.svg" alt=""></i>
                                     <input type="text" class="form-control busqueda-listado ptOrigenMovil mostrar-movil ordenar font-H4-light" id="ptBusqueda" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"><img src="../assets/img/icon-search.svg" alt=""></i>
                                 </div>
                                 <div class="h-100 p-3 card-select-busqueda-listado card-origen" id="selectPuertoOrigen">
                                     <div class="row" id="comboPais">
-                                        <option onclick="window.location.href='ListaDirectorioLogistico.html'" value="0" class="font-H4-light option-select font-color-black opCiudad">Agente de aduanas</option>
-                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad">Agente de carga</option>
-                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad">Asesoría logística</option>
+                                        <option onclick="window.location.href='ListaDirectorioLogistico.html'" value="0" class="font-H4-bold option-select font-color-black opCiudad">Agente de aduanas</option>
+                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad"><span class="font-H4-bold negro-promperu">Agente</span> de carga</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad"><span class="font-H4-bold negro-promperu">A</span>sesoría logística</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad"><span class="font-H4-bold negro-promperu">A</span>sociaciones logística</option>
                                     </div>
                                 </div>
                                <!-- <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
                                     <button class="btn btn-second" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
                                 </div>-->
-                                <div id="vista-web" class="col-lg-4 col-md-8 col-xs-12 d-flex justify-content-center align-items-end">
-                                    <a href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral">
+                                <div id="vista-web" class="col-lg-3 col-md-3 col-xs-12 d-flex justify-content-center align-items-end">
+                                    <a style="position: relative;top: 10px;left: 10px;" href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral">
                                         <i><img class="icon-busqueda" src="../assets/img/icon-busqueda-avanzada.svg" alt=""> <label class="font-H5-bold rojo-promperu">&nbsp;Búsqueda avanzada</label></i>
                                     </a>
                                 </div>
@@ -173,38 +174,18 @@
                                         </div>
                                     </div>
                                     <div id="vista-mobile" class="mx-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
-                                        <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold negro-promperu" style="font-size: 18px !important;">
-                                            6 Empresas <span style="font-size: 18px !important;" class="font-H5-light">encontradas para Agente de Aduanas</span>
+                                        <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H4-bold negro-promperu" style="border-top: 1px solid #d7dadc; padding-top: 30px;">
+                                            6 Empresas <span class="font-H4-light">encontradas para <br> Agente de Aduanas</span>
                                         </div>
                                     </div>
 
                                     <div id="vista-filtro" class="mx-3 vista-mobile-filtro col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-H4-bold negro-promperu">
                                     Filtrar:
-                                    <a href="javascript:mostrarFiltros()"><img src="../assets/img/icon-filtro.svg" alt=""></a>
+                                    <a style="margin-left: 19px;" href="javascript:mostrarFiltros()"><img src="../assets/img/icon-filtro.svg" alt=""></a>
                                     </div>
 
                                     <div id="vista-det-filtro" class="d-none col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
                                         <div class="row col-xl-10 col-lg-12 col-md-12 col-sm-10 col-xs-12 mt-4 px-2">
-                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-                                                <div class="row">
-                                                  <div class="col-sm-5 d-flex align-items-end">     
-                                                          <label class="font-H4-bold">Rubro</label>
-                                                        </div>
-                                                  <div class="col-sm-7">
-                                                    <input type="text" class="form-control busqueda-listado ptRubroFil mostrar-desktop ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                                    <input type="text" class="form-control busqueda-listado ptRubroMovilFil mostrar-movil ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
-                                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
-                                                  </div>
-                                                </div>
-                                            </div>
-                                            <div class="h-100 p-3 card-listado-filtro-rubro card-fil-rubro" id="selectPuertoOrigen">
-                                                <div class="row" id="comboPais">
-                                                    <option value="0" class="font-H4-light option-select font-color-black opCiudad">Todos</option>
-                                                    <option value="0" class="font-H4-light option-select font-color-black opCiudad">Rubro 1</option>
-                                                    <option value="1" class="font-H4-light option-select font-color-black opCiudad">Rubro 2</option>
-                                                    <option value="2" class="font-H4-light option-select font-color-black opCiudad">Rubro 3</option>
-                                                </div>
-                                            </div>
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <div class="row">
                                                  <div class="col-sm-5 d-flex align-items-end">
@@ -212,8 +193,8 @@
                                                  </div>
                                                  <div class="col-sm-7">
                                                     <input type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                                    <input type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
-                                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
+                                                    <input style="border-bottom: none;" type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                                    <i style="position: relative;top: 3px;font-size: 22px;right: 14px;" class="fas fa-angle-down ptUbicacionMovilFil icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                  </div>
                                                 </div>
                                             </div>
@@ -226,13 +207,13 @@
                                             </div>
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <div class="row">
-                                                  <div class="col-sm-6 d-flex align-items-end">
+                                                  <div class="col-sm-7 d-flex align-items-end">
                                                     <label class="font-H4-bold">Ordernar por</label>
                                                   </div>
-                                                  <div class="col-sm-6">
+                                                  <div class="col-sm-5">
                                                     <input type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                                    <input type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
-                                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
+                                                    <input style="border-bottom: none;" type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                                    <i style="position: relative;top: 3px;font-size: 22px;right: -10px;" class="fas fa-angle-down ptOrdenarMovilFil icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                   </div>
                                                 </div>
                                             </div>
@@ -252,10 +233,9 @@
                                                   <div class="col-lg-4 col-md-4 d-flex align-items-end">
                                                     <label class="font-H4-bold">Rubro:</label>
                                                   </div>
-                                                  <div class="col-lg-6 col-md-6">
-                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptRubroFil mostrar-desktop ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                  <div class="col-lg-6 col-md-6" style="position: relative; right: 14px;">
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptRubroFil mostrar-desktop ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" /><i style="position: relative;top: 6px;font-size: 21px;right: 7px;" class="fas fa-angle-down ptRubroFil icon-select mostrar-desktop ordenar"></i>
                                                     <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptRubroMovilFil mostrar-movil ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
-                                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                   </div>
                                                 </div>  
                                             </div>
@@ -267,15 +247,14 @@
                                                     <option value="2" class="font-H4-light option-select font-color-black opCiudad">Rubro 3</option>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position: relative;right: 28px;">
                                                 <div class="row">
                                                     <div class="col-lg-5 col-md-4 d-flex align-items-end">
-                                                        <label class="font-H4-bold">Ubicación</label>
+                                                        <label class="font-H4-bold">Ubicación:</label>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-8">
-                                                        <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                    <div class="col-lg-6 col-md-8" style="position: relative; right: 14px;">
+                                                        <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i style="position: relative;top: 6px;font-size: 21px;right: 7px;" class="fas fa-angle-down icon-select ptUbicacionFil mostrar-desktop ordenar"></i>
                                                         <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
-                                                        <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                     </div>
                                                 </div>
                                            
@@ -287,15 +266,14 @@
                                                     <option value="1" class="font-H4-light option-select font-color-black opCiudad">Santa</option>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position: relative;right: 63px;">
                                                 <div class="row">
                                                    <div class="col-lg-7 col-md-7 d-flex align-items-end">
-                                                    <label class="font-H4-bold">Ordernar por</label>
+                                                    <label class="font-H4-bold">Ordernar por:</label>
                                                    </div>
-                                                   <div class="col-lg-5 col-md-5">
-                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                   <div class="col-lg-5 col-md-5" style="position: relative; right: 14px;">
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i style="position: relative;top: 6px;font-size: 21px;right: 7px;" class="fas fa-angle-down icon-select ptOrdenarFil mostrar-desktop ordenar"></i>
                                                     <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
-                                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                    </div>
                                                 </div>
                                             </div>
@@ -317,13 +295,14 @@
                                 </div>
                                 <div class="h-100 p-3 card-select-busqueda-listado card-origen" id="selectPuertoOrigen">
                                     <div class="row" id="comboPais">
-                                        <option onclick="window.location.href='ListaDirectorioLogistico.html'" value="0" class="font-H4-light option-select font-color-black opCiudad">Agente de aduanas</option>
-                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad">Agente de carga</option>
-                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad">Asesoría logística</option>
+                                        <option onclick="window.location.href='ListaDirectorioLogistico.html'" value="0" class="font-H4-bold option-select font-color-black opCiudad">Agente de aduanas</option>
+                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad"><span class="font-H4-bold negro-promperu">Agente</span> de carga</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad"><span class="font-H4-bold negro-promperu">A</span>sesoría logística</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad"><span class="font-H4-bold negro-promperu">A</span>sociaciones logística</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-xs-12 paddingControl">
-                                    <label for="selRubro">Rubro</label>
+                                <div class="col-lg-6 col-md-6 col-xs-12 paddingControl pt-4">
+                                    <label for="selRubro" class="font-label negro-promperu">Rubro</label>
                                     <input type="text" class="form-control busqueda-listado ptRubro mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control busqueda-listado ptRubroMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
@@ -335,8 +314,8 @@
                                         <option value="2" class="font-H4-light option-select font-color-black opCiudad">Rubro 3</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-xs-12 paddingControl">
-                                    <label for="selAnioExp">Años de experiencia</label>
+                                <div class="col-lg-6 col-md-6 col-xs-12 paddingControl pt-4">
+                                    <label for="selAnioExp" class="font-label negro-promperu">Años de experiencia</label>
                                     <input type="text" class="form-control busqueda-listado ptExperiencia mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control busqueda-listado ptExperienciaMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
@@ -348,8 +327,8 @@
                                         <option value="2" class="font-H4-light option-select font-color-black opCiudad">20</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
-                                    <label for="selectRegion">Región</label>
+                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl pt-4">
+                                    <label for="selectRegion" class="font-label negro-promperu">Región</label>
                                     <input type="text" class="form-control busqueda-listado ptRegion mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control busqueda-listado ptRegionMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
@@ -361,8 +340,8 @@
                                         <option value="2" class="font-H4-light option-select font-color-black opCiudad">Callao</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
-                                    <label for="selectProvincia">Provincia</label>
+                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl pt-4">
+                                    <label for="selectProvincia" class="font-label negro-promperu">Provincia</label>
                                     <input type="text" class="form-control busqueda-listado ptProvincia mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control busqueda-listado ptProvinciaMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
@@ -374,8 +353,8 @@
                                         <option value="2" class="font-H4-light option-select font-color-black opCiudad">Huarmey</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
-                                    <label for="selectDistrito">Distrito</label>
+                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl pt-4">
+                                    <label for="selectDistrito" class="font-label negro-promperu">Distrito</label>
                                     <input type="text" class="form-control busqueda-listado ptDistrito mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control busqueda-listado ptDistritoMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
@@ -387,11 +366,19 @@
                                         <option value="2" class="font-H4-light option-select font-color-black opCiudad">Casma</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
+                                <div class="ocultar-movil col-lg-4 col-md-6 col-xs-12 pt-5 paddingControl">
                                     <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked>
                                     <label for="chkSucursal" class="font-H4-medium negro-promperu input-checkbox-lab">Con sucursales</label>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
+                                <div class="ocultar-movil col-lg-4 col-md-6 col-xs-12 pt-5 paddingControl">
+                                    <input class="input-checkbox" type="checkbox" name="chkCertificado" id="chkCertificado" checked>
+                                    <label for="chkCertificado" class="font-H4-medium negro-promperu input-checkbox-lab">Con certificaciones</label>
+                                </div>
+                                <div class="mostrar-movil col-lg-4 col-md-6 col-xs-12 pt-3 paddingControl">
+                                    <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked>
+                                    <label for="chkSucursal" class="font-H4-medium negro-promperu input-checkbox-lab">Con sucursales</label>
+                                </div>
+                                <div class="mostrar-movil col-lg-4 col-md-6 col-xs-12 pt-2 paddingControl">
                                     <input class="input-checkbox" type="checkbox" name="chkCertificado" id="chkCertificado" checked>
                                     <label for="chkCertificado" class="font-H4-medium negro-promperu input-checkbox-lab">Con certificaciones</label>
                                 </div>
@@ -400,8 +387,8 @@
                                 <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
                                     <button class="btn btn-danger font-H4-bold btnwidth100" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 mostrar-desktop">
-                                    <a href="javascript:ocultarBusquedaAvanzada()" class="colorGeneral subrayado lineHeight50">
+                                <div class="col-lg-4 col-md-6 col-xs-12 show-web d-flex align-items-center">
+                                    <a href="javascript:ocultarBusquedaAvanzada()" class="font-link rojo-promperu">
 										Cerrar búsqueda avanzada
 									</a>
                                 </div>
@@ -415,19 +402,19 @@
                                         </div>
                                     </div>
                                     <div id="vista-mobile" class="mx-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
-                                        <div style="font-size: 18px !important;" class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold negro-promperu">
-                                            6 Empresas <span style="font-size: 18px !important;" class="font-H5-light">encontradas para Agente de Aduanas</span>
+                                        <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H4-bold negro-promperu">
+                                            6 Empresas <span class="font-H4-light">encontradas para <br> Agente de Aduanas</span>
                                         </div>
                                     </div>
 
                                     <div id="vista-filtro-avanzado" class="vista-mobile-filtro mx-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 font-H4-bold negro-promperu">
                                     Filtrar:
-                                    <a href="javascript:mostrarFiltrosAvanzado()"><img src="../assets/img/icon-filtro.svg" alt=""></a>
+                                    <a style="margin-left: 19px;" href="javascript:mostrarFiltrosAvanzado()"><img src="../assets/img/icon-filtro.svg" alt=""></a>
                                     </div>
 
                                     <div id="vista-det-avanzada-filtro" class="d-none col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
                                         <div class="px-2 row col-xl-10 col-lg-12 col-md-12 col-sm-10 col-xs-12 mt-4 ">
-                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                          <!--  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <div class="row">
                                                   <div class="col-sm-5 d-flex align-items-end">     
                                                           <label class="font-H4-bold">Rubro</label>
@@ -447,15 +434,16 @@
                                                     <option value="2" class="font-H4-light option-select font-color-black opCiudad">Rubro 3</option>
                                                 </div>
                                             </div>
+-->
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <div class="row">
                                                  <div class="col-sm-5 d-flex align-items-end">
-                                                    <label class="font-H4-bold">Ubicación</label>
+                                                    <label class="font-H4-bold">Ubicación:</label>
                                                  </div>
                                                  <div class="col-sm-7">
                                                     <input type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                                    <input type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
-                                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
+                                                    <input style="border-bottom: none;" type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                                    <i style="position: relative;top: 3px;font-size: 22px;right: 14px;" class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                  </div>
                                                 </div>
                                             </div>
@@ -468,13 +456,13 @@
                                             </div>
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <div class="row">
-                                                  <div class="col-sm-6 d-flex align-items-end">
-                                                    <label class="font-H4-bold">Ordernar por</label>
+                                                  <div class="col-sm-7 d-flex align-items-end">
+                                                    <label class="font-H4-bold">Ordernar por:</label>
                                                   </div>
-                                                  <div class="col-sm-6">
+                                                  <div class="col-sm-5">
                                                     <input type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                                    <input type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
-                                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
+                                                    <input style="border-bottom: none;" type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                                    <i style="position: relative;top: 3px;font-size: 22px;right: -10px;" class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                   </div>
                                                 </div>
                                             </div>
@@ -494,10 +482,9 @@
                                                   <div class="col-lg-4 col-md-4 d-flex align-items-end">
                                                     <label class="font-H4-bold">Rubro:</label>
                                                   </div>
-                                                  <div class="col-lg-6 col-md-6">
-                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptRubroFil mostrar-desktop ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                  <div class="col-lg-6 col-md-6" style="position: relative; right: 14px;">
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptRubroFil mostrar-desktop ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" /><i style="position: relative;top: 6px;font-size: 21px;right: 7px;" class="fas fa-angle-down ptRubroFil icon-select mostrar-desktop ordenar"></i>
                                                     <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptRubroMovilFil mostrar-movil ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
-                                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                   </div>
                                                 </div>  
                                             </div>
@@ -509,15 +496,14 @@
                                                     <option value="2" class="font-H4-light option-select font-color-black opCiudad">Rubro 3</option>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position: relative;right: 28px;">
                                                 <div class="row">
                                                     <div class="col-lg-5 col-md-4 d-flex align-items-end">
-                                                        <label class="font-H4-bold">Ubicación</label>
+                                                        <label class="font-H4-bold">Ubicación:</label>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-8">
-                                                        <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                    <div class="col-lg-6 col-md-8" style="position: relative; right: 14px;">
+                                                        <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i style="position: relative;top: 6px;font-size: 21px;right: 7px;" class="fas fa-angle-down icon-select ptUbicacionFil mostrar-desktop ordenar"></i>
                                                         <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
-                                                        <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                     </div>
                                                 </div>
                                            
@@ -529,15 +515,14 @@
                                                     <option value="1" class="font-H4-light option-select font-color-black opCiudad">Santa</option>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position: relative;right: 63px;">
                                                 <div class="row">
                                                    <div class="col-lg-7 col-md-7 d-flex align-items-end">
-                                                    <label class="font-H4-bold">Ordernar por</label>
+                                                    <label class="font-H4-bold">Ordernar por:</label>
                                                    </div>
-                                                   <div class="col-lg-5 col-md-5">
-                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                   <div class="col-lg-5 col-md-5" style="position: relative; right: 14px;">
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i style="position: relative;top: 6px;font-size: 21px;right: 7px;" class="fas fa-angle-down icon-select ptOrdenarFil mostrar-desktop ordenar"></i>
                                                     <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
-                                                    <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                    </div>
                                                 </div>
                                             </div>
@@ -556,282 +541,417 @@
                 <div class="row justify-content-center">
                     <div class="row" style="width: 1023px;">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
-                            <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 mb-8">
-                                <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 mb-8">
+                                <div class="row">
+                                    <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                            <div class="row">
+                                              <div onclick="window.location.href='DetalleDirectorio.html'" class="ocultar-movil col-lg-7 col-md-11 col-sm-11 font-h3-bold negro-promperu">
+                                                ANTARES ADUANAS SAC
+                                              </div>
+                                              <div onclick="window.location.href='DetalleDirectorio.html'" class="mostrar-movil col-lg-7 col-md-11 col-sm-11 font-h3-bold negro-promperu">
+                                                ANTARES ADUANAS
+                                              </div>
+                                              <div class="col-lg-1 col-md-1 col-sm-1">
+                                                <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="ocultar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
+                                        </div>
+                                        <div class="ocultar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años de experiencia
+                                        </div>
+                                        <div class="mostrar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-label-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
+                                        </div>
+                                        <div class="mostrar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-label-medium negro-promperu">
+                                            <i><img style="float: left; margin-right: 10px;" src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años <br> de experiencia
+                                        </div>
+                                        <div class="ocultar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                            <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                                Nacimos para brindar servicios de agenciamiento aduanero.
+                                            </p>
+                                        </div>
+                                        <div class="mostrar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                            <p class="font-H5-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                                Nacimos para brindar servicios de agenciamiento aduanero.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
                                         <div class="row">
-                                          <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-6 col-md-11 col-sm-11 font-h3-bold negro-promperu">
-                                            Antares Aduanas SAC 
-                                          </div>
-                                          <div class="col-lg-1 col-md-1 col-sm-1">
-                                            <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
-                                          </div>
+                                            <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-web.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-phone.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
-                                        <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
-                                        <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años de experiencia
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
-                                        <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
-                                            Nacimos para brindar servicios de agenciamiento aduanero.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
-                                    <div class="row">
-                                        <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
+                                    <div class="row pt-5"><br></div>
+                                    <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                            <div class="row">
+                                              <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-11 col-md-11 col-sm-11 font-h3-bold negro-promperu">
+                                                GRUPO ASL AGENTES DE ADUANA SAC
+                                              </div>
+                                              <div class="col-lg-1 col-md-1 col-sm-1">
+                                                <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
+                                              </div>
+                                            </div>
                                         </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-web.svg" alt=""></i>
+                                        <div class="ocultar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
+                                        <div class="ocultar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años de experiencia
                                         </div>
-                                    </div>
-                                    <div class="row pt-3">
-                                        <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                        <div class="mostrar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-label-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                         </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
+                                        <div class="mostrar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-label-medium negro-promperu">
+                                            <i><img style="float: left; margin-right: 10px;" src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años <br> de experiencia
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
+                                        <div class="ocultar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                            <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                                Nacimos para brindar servicios de agenciamiento aduanero.
+                                            </p>
                                         </div>
-                                    </div>
-                                    <div class="row pt-3">
-                                        <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
-                                        </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-phone.svg" alt=""></i>
-                                        </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
+                                        <div class="mostrar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                            <p class="font-H5-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                                Nacimos para brindar servicios de agenciamiento aduanero.
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row pt-5"><br></div>
-                                <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
                                         <div class="row">
-                                          <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-6 col-md-11 col-sm-11 font-h3-bold negro-promperu">
-                                            Antares Aduanas SAC 
-                                          </div>
-                                          <div class="col-lg-1 col-md-1 col-sm-1">
-                                            <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
-                                          </div>
+                                            <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-web.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-phone.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
-                                        <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
-                                        <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i>10 años de experiencia
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
-                                        <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
-                                    <div class="row">
-                                        <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
+                                    <div class="row pt-5"><br></div>
+                                    <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                            <div class="row">
+                                              <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-8 col-md-11 col-sm-11 font-h3-bold negro-promperu">
+                                                CORPORACION JMR SAC
+                                              </div>
+                                              <div class="col-lg-1 col-md-1 col-sm-1">
+                                                <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
+                                              </div>
+                                            </div>
                                         </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-web.svg" alt=""></i>
+                                        <div class="ocultar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
+                                        <div class="ocultar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años de experiencia
                                         </div>
-                                    </div>
-                                    <div class="row pt-3">
-                                        <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                        <div class="mostrar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-label-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                         </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
+                                        <div class="mostrar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-label-medium negro-promperu">
+                                            <i><img style="float: left; margin-right: 10px;" src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años <br> de experiencia
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
+                                        <div class="ocultar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                            <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                                Nacimos para brindar servicios de agenciamiento aduanero.
+                                            </p>
                                         </div>
-                                    </div>
-                                    <div class="row pt-3">
-                                        <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
-                                        </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-phone.svg" alt=""></i>
-                                        </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
+                                        <div class="mostrar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                            <p class="font-H5-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                                Nacimos para brindar servicios de agenciamiento aduanero.
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row pt-5"><br></div>
-                                <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
                                         <div class="row">
-                                          <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-6 col-md-11 col-sm-11 font-h3-bold negro-promperu">
-                                            Antares Aduanas SAC 
-                                          </div>
-                                          <div class="col-lg-1 col-md-1 col-sm-1">
-                                            <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
-                                          </div>
+                                            <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-web.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-phone.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
-                                        <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
-                                        <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i>10 años de experiencia
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
-                                        <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
-                                    <div class="row">
-                                        <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
+                                    <div class="row pt-5"><br></div>
+                                    <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                            <div class="row">
+                                              <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-11 col-md-11 col-sm-11 font-h3-bold negro-promperu">
+                                                GRUPO ADUAN OPERADOR LOGISTICO S.A.C.
+                                              </div>
+                                              <div class="col-lg-1 col-md-1 col-sm-1">
+                                                <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
+                                              </div>
+                                            </div>
                                         </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-web.svg" alt=""></i>
+                                        <div class="ocultar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
+                                        <div class="ocultar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años de experiencia
                                         </div>
-                                    </div>
-                                    <div class="row pt-3">
-                                        <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                        <div class="mostrar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-label-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                         </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
+                                        <div class="mostrar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-label-medium negro-promperu">
+                                            <i><img style="float: left; margin-right: 10px;" src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años <br> de experiencia
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
+                                        <div class="ocultar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                            <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                                Nacimos para brindar servicios de agenciamiento aduanero.
+                                            </p>
                                         </div>
-                                    </div>
-                                    <div class="row pt-3">
-                                        <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
-                                        </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-phone.svg" alt=""></i>
-                                        </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
+                                        <div class="mostrar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                            <p class="font-H5-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                                Nacimos para brindar servicios de agenciamiento aduanero.
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row pt-5"><br></div>
-                                <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
                                         <div class="row">
-                                          <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-6 col-md-11 col-sm-11 font-h3-bold negro-promperu">
-                                            Antares Aduanas SAC 
-                                          </div>
-                                          <div class="col-lg-1 col-md-1 col-sm-1">
-                                            <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
-                                          </div>
+                                            <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-web.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-phone.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
-                                        <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
-                                        <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i>10 años de experiencia
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
-                                        <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
-                                    <div class="row">
-                                        <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
+                                    <div class="row pt-5"><br></div>
+                                    <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                            <div class="row">
+                                              <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-11 col-md-11 col-sm-11 font-h3-bold negro-promperu">
+                                                GRUPO ADUAN AGENCIA DE ADUANA S.A.C.
+                                              </div>
+                                              <div class="col-lg-1 col-md-1 col-sm-1">
+                                                <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
+                                              </div>
+                                            </div>
                                         </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-web.svg" alt=""></i>
+                                        <div class="ocultar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
+                                        <div class="ocultar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años de experiencia
                                         </div>
-                                    </div>
-                                    <div class="row pt-3">
-                                        <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                        <div class="mostrar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-label-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                         </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
+                                        <div class="mostrar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-label-medium negro-promperu">
+                                            <i><img style="float: left; margin-right: 10px;" src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años <br> de experiencia
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
+                                        <div class="ocultar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                            <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                                Nacimos para brindar servicios de agenciamiento aduanero.
+                                            </p>
                                         </div>
-                                    </div>
-                                    <div class="row pt-3">
-                                        <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
-                                        </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-phone.svg" alt=""></i>
-                                        </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
+                                        <div class="mostrar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                            <p class="font-H5-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                                Nacimos para brindar servicios de agenciamiento aduanero.
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row pt-5"><br></div>
-                                <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
                                         <div class="row">
-                                          <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-6 col-md-11 col-sm-11 font-h3-bold negro-promperu">
-                                            Antares Aduanas SAC 
-                                          </div>
-                                          <div class="col-lg-1 col-md-1 col-sm-1">
-                                            <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
-                                          </div>
+                                            <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-web.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-phone.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
-                                        <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left font-H4-medium negro-promperu">
-                                        <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i>10 años de experiencia
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
-                                        <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
-                                    <div class="row">
-                                        <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
+                                    <div class="row pt-5"><br></div>
+                                    <div class="row col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3">
+                                            <div class="row">
+                                              <div onclick="window.location.href='DetalleDirectorio.html'" class="col-lg-11 col-md-11 col-sm-11 font-h3-bold negro-promperu">
+                                                ASOCIACIÓN DE AGENTES DE ADUANA DEL PERU
+                                              </div>
+                                              <div class="col-lg-1 col-md-1 col-sm-1">
+                                                <a href="DetalleDirectorio.html"><i><img src="../assets/img/icon-seleccion.svg" alt=""></i></a>
+                                              </div>
+                                            </div>
                                         </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-web.svg" alt=""></i>
+                                        <div class="ocultar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
+                                        <div class="ocultar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-H4-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años de experiencia
                                         </div>
-                                    </div>
-                                    <div class="row pt-3">
-                                        <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                        <div class="mostrar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-label-medium negro-promperu">
+                                            <i><img src="../assets/img/icon-location.svg" alt=""> </i>Lima-Breña
                                         </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
+                                        <div class="mostrar-movil col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 font-label-medium negro-promperu">
+                                            <i><img style="float: left; margin-right: 10px;" src="../assets/img/icon-experiencia.svg" alt=""> </i> 10 años <br> de experiencia
                                         </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
+                                        <div class="ocultar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                            <p class="font-H4-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                                Nacimos para brindar servicios de agenciamiento aduanero.
+                                            </p>
                                         </div>
-                                    </div>
-                                    <div class="row pt-3">
-                                        <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
-                                        </div>
-                                        <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
-                                            <i><img src="../assets/img/icon-phone.svg" alt=""></i>
-                                        </div>
-                                        <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
-                                            <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
+                                        <div class="mostrar-movil col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left pt-3">
+                                            <p class="font-H5-light negro-promperu">Agencia de aduanas pertenecientes al grupo Transmeridian que representa a la linea naviera NYK.
+                                                Nacimos para brindar servicios de agenciamiento aduanero.
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                                
-                                
-                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
-
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-right ocultar-mobile d-flex flex-column justify-content-around">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-lg-0 col-md-1 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-2 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-web.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-9 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">www.antaresaduanas.com.pe</label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-comercial.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">comercial@antaresaduanas.com.pe</label>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div class="col-xl-4 col-lg-0 col-md-6 col-sm-6 col-xs-6 text-left">
+                                            </div>
+                                            <div class="col-xl-1 col-lg-1 col-md-6 col-sm-6 col-xs-6 text-left">
+                                                <i><img src="../assets/img/icon-phone.svg" alt=""></i>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-11 col-md-6 col-sm-6 col-xs-6 text-left margin-icon-list">
+                                                <label class="font-H5-light negro-promperu">(01)6163900/94140939</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 titulo-left">
+    
+                                    </div>
                                 </div>
                             </div>
                         </div>
