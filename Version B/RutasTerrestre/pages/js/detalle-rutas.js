@@ -34,11 +34,11 @@ $(document).ready(function() {
     // Botones bloqueados
     $(".btn-enviar-pass").attr('disabled', 'disabled');
     $(".idPopoverNotificacionGuardar").click(function() {
+        
         $(".popover").toggle();
     });
     $(".close-popover").click(function() {
-        debugger;
-        $(".popover").toggle();
+        $(".popover").toggle("close");
     });
 
     $(".div-detalle-rutas").click(function() {        
