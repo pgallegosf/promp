@@ -1848,6 +1848,12 @@ a>i>label {
 }
 
 @media (min-width: 200px) {
+    .padding-input {
+        padding-top: 30px !important;
+    }
+    .padding-busqueda {
+        padding: 1rem !important;
+    }
     .swtich-text-left {
         text-align: center !important;
         font-size: 11px;
@@ -1876,6 +1882,12 @@ a>i>label {
 }
 
 @media (min-width: 1200px) {
+    .padding-input {
+        padding-top: 0 !important;
+    }
+    .padding-busqueda {
+        padding: 3rem !important;
+    }
     .swtich-text-left {
         text-align: left !important;
         font-size: 12px;
