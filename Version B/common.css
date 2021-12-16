@@ -2613,10 +2613,16 @@ line-height: 61px;
   .mostrar-desktop.flex{
     display:none !important;
   }
+  .mostrar-movil.content{
+    display:contents !important;
+  }
 }
 @media (min-width: 768px) {
   .mostrar-desktop.flex{
     display:flex !important;
+  }
+  .mostrar-movil.content{
+    display:none !important;
   }
 }
 

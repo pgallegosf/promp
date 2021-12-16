@@ -72,10 +72,66 @@ $(document).ready(function() {
     $(".btn-Directo").click(function() {
         closeDirecto_OpenIndirecto();
     });
-
+    $(".btn-Directo-movil").click(function() {
+        $(".cardCosto").hide();
+        $("#main").show();
+    });
+    $(".btn-Indirecto-movil").click(function() {
+        $(".cardCosto2").hide();
+        $("#main").show();
+    });
+    $(".btn-Admin-movil").click(function() {
+        $(".cardCosto3").hide();
+        $("#main").show();
+    });
+    $(".btn-Finan-movil").click(function() {
+        $(".cardCosto4").hide();
+        $("#main").show();
+    });
+    $(".btn-Envase-movil").click(function() {
+        $(".cardEnvase").hide();
+        $("#main").show();
+    });
+    $(".btn-Empaque-movil").click(function() {
+        $(".cardEmpaque").hide();
+        $("#main").show();
+    });
+    $(".btn-Embalaje-movil").click(function() {
+        $(".cardEmbalaje").hide();
+        $("#main").show();
+    });
+    $(".btn-Exwork-movil").click(function() {
+        $(".cardExworks").hide();
+        $("#main").show();
+    });
+    $(".btn-Fas-movil").click(function() {
+        $(".cardFas").hide();
+        $("#main").show();
+    });
+    $(".btn-Fob-movil").click(function() {
+        $(".cardFob").hide();
+        $("#main").show();
+    });
+    $(".btn-CFR-movil").click(function() {
+        $(".cardCfr").hide();
+        $("#main").show();
+    });
+    $(".btn-DAP-movil").click(function() {
+        $(".cardDap").hide();
+        $("#main").show();
+    });
+    $(".btn-DPU-movil").click(function() {
+        $(".cardDpu").hide();
+        $("#main").show();
+    });
+    $(".btn-DDP-movil").click(function() {
+        $(".cardDdp").hide();
+        $("#main").show();
+    });
     $(".op-agregar2").click(function() {
         ocultarIndirecto();
     });
+    
     $(".Close-C-Indirecto").click(function() {
         closeCostoIndirecto();
     });
@@ -362,6 +418,7 @@ $(document).ready(function() {
     $(".cardEmbalaje").hide();
     $(".incoterms").hide();
     $(".checkmovil").hide();
+    $(".tipoCarga").hide();
 });
 
 function SeleccionarUnidadMedida(unidad){
@@ -456,17 +513,24 @@ function selectEncargo() {
     $("#directa").removeClass("active-product");
     $("#encargo").addClass("active-product");
     $("#destinoCarga").attr("placeholder", "Escribe el país o el puerto");//placeholder("Escribe el país o el puerto");
+    $("#destinoCargam").attr("placeholder", "Escribe el país o el puerto");
     $(".puerto-seleccionado").html("Puertos en China");
+    $(".puerto-seleccionadom").html('<i class="fas fa-chevron-left font-color-red mx-3"></i>Puertos en China');
+    $(".tipoCarga").show();
     /*$("#insumoLiberado2").hide();
     $("#proEncargo").hide();
     $("#proDirecta").show();*/
 
 }
 function selectDirecta() {
+    $(".tipoCarga").hide();
+    $("#container").hide();
     $("#encargo").removeClass("active-product");
     $("#directa").addClass("active-product");
     $("#destinoCarga").attr("placeholder", "Escribe el país o el aeropuerto");//placeholder("Escribe el país o el aeropuerto");
     $(".puerto-seleccionado").html("Aeropuertos en China");
+    $("#destinoCargam").attr("placeholder", "Escribe el país o el aeropuerto");
+    $(".puerto-seleccionadom").html('<i class="fas fa-chevron-left font-color-red mx-3"></i>Aeropuertos en China');
 
 }
 function mostrarViewProductora() {
@@ -525,6 +589,7 @@ function CloseSelect() {
 function mostrarContinentesPais_Movil() {
     $("#main").hide();
     $(".view-movil").show();
+    $("#Detalle_Puerto_Movil").hide();
 }
 
 function retornarPais() {
@@ -544,8 +609,12 @@ function mostrarContainer() {
 function cambiarEfectoContenedor() {
     $("#cardPersonalizado").removeClass("card-personalizado-container");
     $("#cardPersonalizado").addClass("card-personalizado-container2");
-    $("#div-img").removeClass("img-div")
-    $("#div-img").addClass("img-div2")
+    $("#cardPersonalizadom").removeClass("card-personalizado-container");
+    $("#cardPersonalizadom").addClass("card-personalizado-container2");
+    $("#div-img").removeClass("img-div-1");
+    $("#div-img").addClass("img-div2");
+    $("#div-img-1-m").removeClass("div-img-1-m");
+    $("#div-img-1-m").addClass("div-img-1-m-blanco");
     $(".check-container").show();
 }
 
