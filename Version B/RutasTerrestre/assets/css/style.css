@@ -889,6 +889,17 @@ hr {
     .text_desktop_item-resultado{
         display: none;    
     }
+
+
+    .txt_detalle_ruta_terreste_desktop{
+        display: none;
+    }
+    .txt_detalle_ruta_terreste_moviles{
+        display: block;    
+    }
+
+
+    
     .div-centrado {
         margin: 0.5rem !important;        
     }
@@ -1025,6 +1036,14 @@ hr {
 }
 
 @media (min-width: 400px) {
+
+    .txt_detalle_ruta_terreste_desktop{
+        display: block;
+    }
+    .txt_detalle_ruta_terreste_moviles{
+        display: none;    
+    }
+
     .text_desktop_item-resultado{
         display: block ;    
     }
@@ -1166,6 +1185,12 @@ hr {
 }
 
 @media (min-width: 576px) {
+    .txt_detalle_ruta_terreste_desktop{
+        display: block;
+    }
+    .txt_detalle_ruta_terreste_moviles{
+        display: none;    
+    }
     .text_desktop_item-resultado{
         display: block ;    
     }
@@ -1288,6 +1313,12 @@ hr {
 }
 
 @media (min-width: 768px) {
+    .txt_detalle_ruta_terreste_desktop{
+        display: block;
+    }
+    .txt_detalle_ruta_terreste_moviles{
+        display: none;    
+    }
     .text_desktop_item-resultado{
         display: block ;    
     }
@@ -1416,6 +1447,12 @@ hr {
 }
 
 @media (min-width: 992px) {
+    .txt_detalle_ruta_terreste_desktop{
+        display: block;
+    }
+    .txt_detalle_ruta_terreste_moviles{
+        display: none;    
+    }
     .text_desktop_item-resultado{
         display: block ;    
     }
@@ -1535,6 +1572,12 @@ hr {
 }
 
 @media (min-width: 1200px) {
+    .txt_detalle_ruta_terreste_desktop{
+        display: block;
+    }
+    .txt_detalle_ruta_terreste_moviles{
+        display: none;    
+    }
     .text_desktop_item-resultado{
         display: block ;    
     }

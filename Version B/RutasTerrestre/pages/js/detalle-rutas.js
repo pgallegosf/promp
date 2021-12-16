@@ -1,4 +1,16 @@
-$(document).ready(function() {
+$(document).ready(function() {    
+    $('#btnEnviarIndicamosTuConsulta').click(function(e) {                
+        $('#m-informativo').modal('hide');
+    });
+    $('#btnEnviarDejaTuopinion').click(function(e) {                
+        $('#m-opinion').modal('hide');
+    });
+
+    
+    $('.btn-ingresar').click(function(e) {
+        $(".popover").show();
+        $(".modal-iniciar-sesion").hide();
+    });
     $('.descarga-pdf').click(function(e) {
         debugger;
         var a = document.createElement("a");
@@ -25,6 +37,7 @@ $(document).ready(function() {
         $(".popover").toggle();
     });
     $(".close-popover").click(function() {
+        debugger;
         $(".popover").toggle();
     });
 
