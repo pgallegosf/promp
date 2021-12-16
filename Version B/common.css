@@ -2630,3 +2630,11 @@ line-height: 61px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
+
+.font-label-medium {
+  font-family: 'Helvetica Neue LT Std medium';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}

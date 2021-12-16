@@ -112,7 +112,7 @@
 
 
                 <div class="icon-menu separar-elementos-5">
-                    <div class="icon-menu ocultar-movil">
+                    <div style="cursor: pointer;" class="icon-menu ocultar-movil" onclick="window.location.href='RegistroDirectorio.html'">
                        <img src="../assets/img/img-login.svg" alt="">
                     </div>
                     <div class="icon-menu">
@@ -139,9 +139,9 @@
             </div>
         </nav>
         <!-- End Navbar -->
-        <div class="container-fluid py-4 container-principal">
+        <div class="container-fluid py-4 container-principal" >
             <!-- Inicio de vista principal -->
-            <div class="d-display" id="view-global">
+            <div class="d-display" id="view-global" style="margin-right: 0px !important; margin-left: 0px !important;">
                 <div class="text-center mt-3">
                     <div class="titulo negro-promperu mostrar-desktop">Directorio Logístico</div>
                     <div class="font-h1-bold negro-promperu mostrar-movil mb-3">Directorio Logístico</div>
@@ -155,22 +155,23 @@
                         <div class="card paddingCardBusqueda" style="width: 1276px;">
                             <div class="busquedaNormal row px-2 p-4 overflow-hidden">
                                 <div class="col-lg-9 col-md-9 col-xs-12">
-                                    <label for="selectServicio1">¿Qué estas buscando?</label>
+                                    <label class="font-label negro-promperu" for="selectServicio1">¿Qué estás buscando?</label>
                                     <input type="text" class="form-control ptOrigen mostrar-desktop ordenar font-H4-light" id="ptBusqueda" value="Selecciona" /><i class="icon-select ptOrigen mostrar-desktop ordenar"><img src="../assets/img/icon-search.svg" alt=""></i>
                                     <input type="text" class="form-control ptOrigenMovil mostrar-movil ordenar font-H4-light" id="ptBusqueda" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"><img src="../assets/img/icon-search.svg" alt=""></i>
                                 </div>
                                 <div class="h-100 p-3 card-select-origen card-origen" id="selectPuertoOrigen">
                                     <div class="row" id="comboPais">
-                                        <option onclick="window.location.href='ListaDirectorioLogistico.html'" value="0" class="font-H4-light option-select font-color-black opCiudad">Agente de aduanas</option>
-                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad">Agente de carga</option>
-                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad">Asesoría logística</option>
+                                        <option onclick="window.location.href='ListaDirectorioLogistico.html'" value="0" class="font-H4-bold option-select font-color-black opCiudad">Agente de aduanas</option>
+                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad"><span class="font-H4-bold negro-promperu">Agente</span> de carga</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad"><span class="font-H4-bold negro-promperu">A</span>sesoría logística</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad"><span class="font-H4-bold negro-promperu">A</span>sociaciones logística</option>
                                     </div>
                                 </div>
                                 <!-- <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
                                     <button class="btn btn-second" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
                                 </div>-->
-                                <div class="col-lg-3 col-md-3 col-xs-12">
+                                <div class="col-lg-3 col-md-3 col-xs-12 pb-4">
                                     <a href="javascript:mostrarBusquedaAvanzada()"
                                         class="busqueda-avanzada-principal colorGeneral lineHeight50">
                                         <i><img class="icon-busqueda" src="../assets/img/icon-busqueda-avanzada.svg"
@@ -180,20 +181,21 @@
                             </div>
                             <div class="busquedaAvanzada row px-2 p-5 overflow-hidden sinPaddingBottom">
                                 <div class="col-lg-12 col-md-12 col-xs-12">
-                                    <label for="selRubro">¿Qué estas buscando?</label>
+                                    <label for="selRubro" class="font-label negro-promperu">¿Qué estás buscando?</label>
                                     <input type="text" class="form-control ptOrigen mostrar-desktop ordenar font-H4-light" id="ptBusqueda" value="Selecciona" /><i class="icon-select ptOrigen mostrar-desktop ordenar"><img src="../assets/img/icon-search.svg" alt=""></i>
                                     <input type="text" class="form-control ptOrigenMovil mostrar-movil ordenar font-H4-light" id="ptBusqueda" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"><img src="../assets/img/icon-search.svg" alt=""></i>
                                 </div>
                                 <div class="h-100 p-3 card-select-busqueda-listado-principal card-origen" id="selectPuertoOrigen">
                                     <div class="row" id="comboPais">
-                                        <option onclick="window.location.href='ListaDirectorioLogistico.html'" value="0" class="font-H4-light option-select font-color-black opCiudad">Agente de aduanas</option>
-                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad">Agente de carga</option>
-                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad">Asesoría logística</option>
+                                        <option onclick="window.location.href='ListaDirectorioLogistico.html'" value="0" class="font-H4-bold option-select font-color-black opCiudad">Agente de aduanas</option>
+                                        <option value="1" class="font-H4-light option-select font-color-black opCiudad"><span class="font-H4-bold negro-promperu">Agente</span> de carga</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad"><span class="font-H4-bold negro-promperu">A</span>sesoría logística</option>
+                                        <option value="2" class="font-H4-light option-select font-color-black opCiudad"><span class="font-H4-bold negro-promperu">A</span>sociaciones logística</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-xs-12 paddingControl">
-                                    <label for="selRubro">Rubro</label>
+                                <div class="col-lg-6 col-md-6 col-xs-12 paddingControl pt-4">
+                                    <label for="selRubro" class="font-label negro-promperu">Rubro</label>
                                     <input type="text" class="form-control ptRubro mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control ptRubroMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
@@ -205,8 +207,8 @@
                                         <option value="2" class="font-H4-light option-select font-color-black opCiudad">Rubro 3</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-xs-12 paddingControl">
-                                    <label for="selAnioExp">Años de experiencia</label>
+                                <div class="col-lg-6 col-md-6 col-xs-12 paddingControl pt-4">
+                                    <label for="selAnioExp" class="font-label negro-promperu">Años de experiencia</label>
                                     <input type="text" class="form-control ptExperiencia mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control ptExperienciaMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
@@ -218,8 +220,8 @@
                                         <option value="2" class="font-H4-light option-select font-color-black opCiudad">20</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
-                                    <label for="selectRegion">Región</label>
+                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl pt-4">
+                                    <label for="selectRegion" class="font-label negro-promperu">Región</label>
                                     <input type="text" class="form-control ptRegion mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control ptRegionMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
@@ -231,8 +233,8 @@
                                         <option value="2" class="font-H4-light option-select font-color-black opCiudad">Callao</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
-                                    <label for="selectProvincia">Provincia</label>
+                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl pt-4">
+                                    <label for="selectProvincia" class="font-label negro-promperu">Provincia</label>
                                     <input type="text" class="form-control ptProvincia mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control ptProvinciaMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
@@ -244,8 +246,8 @@
                                         <option value="2" class="font-H4-light option-select font-color-black opCiudad">Huarmey</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
-                                    <label for="selectDistrito">Distrito</label>
+                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl pt-4">
+                                    <label for="selectDistrito" class="font-label negro-promperu">Distrito</label>
                                     <input type="text" class="form-control ptDistrito mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
                                     <input type="text" class="form-control ptDistritoMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
@@ -257,23 +259,31 @@
                                         <option value="2" class="font-H4-light option-select font-color-black opCiudad">Casma</option>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
+                                <div class="ocultar-movil col-lg-4 col-md-6 col-xs-12 pt-5 paddingControl">
                                     <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked>
                                     <label for="chkSucursal" class="font-H4-medium negro-promperu input-checkbox-lab">Con sucursales</label>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12 paddingControl">
+                                <div class="ocultar-movil col-lg-4 col-md-6 col-xs-12 pt-5 paddingControl">
+                                    <input class="input-checkbox" type="checkbox" name="chkCertificado" id="chkCertificado" checked>
+                                    <label for="chkCertificado" class="font-H4-medium negro-promperu input-checkbox-lab">Con certificaciones</label>
+                                </div>
+                                <div class="mostrar-movil col-lg-4 col-md-6 col-xs-12 pt-3 paddingControl">
+                                    <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked>
+                                    <label for="chkSucursal" class="font-H4-medium negro-promperu input-checkbox-lab">Con sucursales</label>
+                                </div>
+                                <div class="mostrar-movil col-lg-4 col-md-6 col-xs-12 pt-2 paddingControl">
                                     <input class="input-checkbox" type="checkbox" name="chkCertificado" id="chkCertificado" checked>
                                     <label for="chkCertificado" class="font-H4-medium negro-promperu input-checkbox-lab">Con certificaciones</label>
                                 </div>
                             </div>
                             <div class="busquedaAvanzada row px-2 overflow-hidden">
                                 <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
-                                    <button class="btn btn-second font-H4-bold btnwidth100" style="text-transform: inherit !important;"
+                                    <button class="btn btn-danger font-H4-bold btnwidth100" style="text-transform: inherit !important;"
                                         onclick="window.location.href='ListaDirectorioLogistico.html' ">Buscar</button>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12">
+                                <div class="col-lg-4 col-md-6 col-xs-12 d-flex align-items-center">
                                     <a href="javascript:ocultarBusquedaAvanzada()"
-                                        class="colorGeneral subrayado lineHeight50 ">
+                                        class="font-link rojo-promperu ocultar-movil">
                                         Cerrar búsqueda avanzada
                                     </a>
                                 </div>
@@ -292,7 +302,7 @@
 
                 <div class="row background-categoria">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-5 centrado">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-H2-bold">Categoria de
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-H2-bold">Categoría de
                             Servicios</div>
                     </div>
                     <div id="vista-mobile-categorias" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pt-4">
@@ -302,47 +312,47 @@
                                 <div class="font-H5-light negro-promperu">10 empresas</div>
                             </div>
                             <div class="col-sm-1">
-                                <a onclick="window.location.href='ListaDirectorioLogistico.html'"><img src="../assets/img/icon-arrow-categoria.svg" alt=""></a>
+                                <a onclick="window.location.href='ListaDirectorioLogistico-2.html'"><img src="../assets/img/icon-arrow-categoria.svg" alt=""></a>
                             </div>
                         </div>
                         <hr>
                         <div class="row px-3">
                             <div class="col-sm-11">
-                                <div class="font-H4-bold negro-promperu">Agentes de Aduanas</div>
+                                <div class="font-H4-bold negro-promperu">Transporte de Carga</div>
                                 <div class="font-H5-light negro-promperu">10 empresas</div>
                             </div>
                             <div class="col-sm-1">
-                                <a onclick="window.location.href='ListaDirectorioLogistico.html'"><img src="../assets/img/icon-arrow-categoria.svg" alt=""></a>
+                                <a onclick="window.location.href='ListaDirectorioLogistico-2.html'"><img src="../assets/img/icon-arrow-categoria.svg" alt=""></a>
                             </div>
                         </div>
                         <hr>
                         <div class="row px-3">
                             <div class="col-sm-11">
-                                <div class="font-H4-bold negro-promperu">Agentes de Aduanas</div>
+                                <div class="font-H4-bold negro-promperu">Agentes de Carga</div>
                                 <div class="font-H5-light negro-promperu">10 empresas</div>
                             </div>
                             <div class="col-sm-1">
-                                <a onclick="window.location.href='ListaDirectorioLogistico.html'"><img src="../assets/img/icon-arrow-categoria.svg" alt=""></a>
+                                <a onclick="window.location.href='ListaDirectorioLogistico-2.html'"><img src="../assets/img/icon-arrow-categoria.svg" alt=""></a>
                             </div>
                         </div>
                         <hr>
                         <div class="row px-3">
                             <div class="col-sm-11">
-                                <div class="font-H4-bold negro-promperu">Agentes de Aduanas</div>
+                                <div class="font-H4-bold negro-promperu">Asesoría Logística</div>
                                 <div class="font-H5-light negro-promperu">10 empresas</div>
                             </div>
                             <div class="col-sm-1">
-                                <a onclick="window.location.href='ListaDirectorioLogistico.html'"><img src="../assets/img/icon-arrow-categoria.svg" alt=""></a>
+                                <a onclick="window.location.href='ListaDirectorioLogistico-2.html'"><img src="../assets/img/icon-arrow-categoria.svg" alt=""></a>
                             </div>
                         </div>
                         <hr>
                         <div class="row px-3">
                             <div class="col-sm-11">
-                                <div class="font-H4-bold negro-promperu">Agentes de Aduanas</div>
+                                <div class="font-H4-bold negro-promperu">Líneas Navieras</div>
                                 <div class="font-H5-light negro-promperu">10 empresas</div>
                             </div>
                             <div class="col-sm-1">
-                                <a onclick="window.location.href='ListaDirectorioLogistico.html'"><img src="../assets/img/icon-arrow-categoria.svg" alt=""></a>
+                                <a onclick="window.location.href='ListaDirectorioLogistico-2.html'"><img src="../assets/img/icon-arrow-categoria.svg" alt=""></a>
                             </div>
                         </div>
                         <hr>
@@ -354,14 +364,14 @@
                     </div>
                     <div id="vista-web" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 centrado mb-5">
                         <section class="regular slider" style="width: 1159px;">
-                            <div class="content-slide">
+                            <div class="content-slide" onclick="window.location.href='ListaDirectorioLogistico-2.html'">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
                                         <button class="btn-redondo"><img
                                             src="../assets/img/Directorio/agente_aduanas.png"></button>
                                     </div> 
                                     <div class="col-lg-12 col-md-12 mt-1">
-                                        <label class="font-H4-bold rojo-promperu margin-bottom-0">Agentes de aduanas</label>
+                                        <label class="font-H4-bold rojo-promperu margin-bottom-0">Agentes de Aduanas</label>
                                     </div> 
                                     <div class="col-lg-12 col-md-12 mt-2">
                                         <label class="font-H4-light negro-promperu">10 empresas</label>
@@ -369,73 +379,73 @@
 
                                 </div>                                           
                             </div>
-                            <div class="content-slide">
+                            <div class="content-slide" onclick="window.location.href='ListaDirectorioLogistico-2.html'">
                                 <div class="col-lg-12 col-md-12">
                                     <button class="btn-redondo"><img
                                         src="../assets/img/Directorio/agentes_carga.png"></button>
                                 </div>
                                 <div class="col-lg-12 col-md-12 mt-1">
-                                    <label class="font-H4-bold rojo-promperu margin-bottom-0">Agentes de carga</label>
+                                    <label class="font-H4-bold rojo-promperu margin-bottom-0">Agentes de Carga</label>
                                 </div>
                                 <div class="col-lg-12 col-md-12 mt-2">
                                     <label class="font-H4-light negro-promperu">10 empresas</label>
                                 </div>
                             </div>
-                            <div class="content-slide">
+                            <div class="content-slide" onclick="window.location.href='ListaDirectorioLogistico-2.html'">
                                 <div class="col-lg-12 col-md-12">
                                     <button class="btn-redondo"><img
                                         src="../assets/img/Directorio/asesoria_logistica.png"></button>
                                 </div>
                                 <div class="col-lg-12 col-md-12 mt-1">
-                                    <label class="font-H4-bold rojo-promperu margin-bottom-0">Asesoría logística</label>
+                                    <label class="font-H4-bold rojo-promperu margin-bottom-0">Asesoría Logística</label>
                                 </div>
                                 <div class="col-lg-12 col-md-12 mt-2">
                                     <label class="font-H4-light negro-promperu">10 empresas</label>
                                 </div>
                             </div>
-                            <div class="content-slide">
+                            <div class="content-slide" onclick="window.location.href='ListaDirectorioLogistico-2.html'">
                                 <div class="col-lg-12 col-md-12">
                                     <button class="btn-redondo"><img
                                         src="../assets/img/Directorio/centro_distribucion.png"></button>
                                 </div>
                                 <div class="col-lg-12 col-md-12 mt-1">
-                                    <label class="font-H4-bold rojo-promperu margin-bottom-0">Centro de distribución</label>
+                                    <label class="font-H4-bold rojo-promperu margin-bottom-0">Centro de Distribución</label>
                                 </div>
                                 <div class="col-lg-12 col-md-12 mt-2">
                                     <label class="font-H4-light negro-promperu">10 empresas</label>
                                 </div>  
                             </div>
-                            <div class="content-slide">
+                            <div class="content-slide" onclick="window.location.href='ListaDirectorioLogistico-2.html'">
                                 <div class="col-lg-12 col-md-12">
                                     <button class="btn-redondo"><img
                                         src="../assets/img/Directorio/deposito_aduanero.png"></button>
                                 </div>
                                 <div class="col-lg-12 col-md-12 mt-1">
-                                    <label class="font-H4-bold rojo-promperu margin-bottom-0">Depósito aduanero</label>
+                                    <label class="font-H4-bold rojo-promperu margin-bottom-0">Depósito Aduanero</label>
                                 </div>
                                 <div class="col-lg-12 col-md-12 mt-2">
                                     <label class="font-H4-light negro-promperu">10 empresas</label>
                                 </div>
                             </div>
-                            <div class="content-slide">
+                            <div class="content-slide" onclick="window.location.href='ListaDirectorioLogistico-2.html'">
                                 <div class="col-lg-12 col-md-12">
                                     <button class="btn-redondo"><img
                                         src="../assets/img/Directorio/deposito_temporal.png"></button>
                                 </div>
                                 <div class="col-lg-12 col-md-12 mt-1">
-                                    <label class="font-H4-bold rojo-promperu margin-bottom-0">Depósito temporal</label>
+                                    <label class="font-H4-bold rojo-promperu margin-bottom-0">Depósito Temporal</label>
                                 </div>
                                 <div class="col-lg-12 col-md-12 mt-2">
                                     <label class="font-H4-light negro-promperu">10 empresas</label>
                                 </div>
                             </div>
-                            <div class="content-slide">
+                            <div class="content-slide" onclick="window.location.href='ListaDirectorioLogistico-2.html'">
                                 <div class="col-lg-12 col-md-12">
                                     <button class="btn-redondo"><img
                                         src="../assets/img/Directorio/deposito_simple.png"></button>
                                 </div>
                                 <div class="col-lg-12 col-md-12 mt-1">
-                                    <label class="font-H4-bold rojo-promperu margin-bottom-0">Depósito simple</label>
+                                    <label class="font-H4-bold rojo-promperu margin-bottom-0">Depósito Simple</label>
                                 </div>
                                 <div class="col-lg-12 col-md-12 mt-2">
                                     <label class="font-H4-light negro-promperu">10 empresas</label>
@@ -541,11 +551,11 @@
                                     de nuestro Directorio</div>
                                 <div
                                     class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H4-light negro-promperu mt-3" style="width: 517px;">
-                                    Si eres un operador logístico se parte del Directorio Logístico y llega a más clientes
+                                    Si eres un operador logístico, sé parte del Directorio Logístico y llega a más clientes
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-4 titulo-left" id="btn-rutas ">
                                     <button class="btn btn-danger font-H4-bold" style="height: 50px !important; text-transform: capitalize;"
-                                        onclick="location.href='RegistroDirectorio.html'">Registrate aquí</button>
+                                        onclick="location.href='RegistroDirectorio.html'">Regístrate aquí</button>
                                 </div>
                             </div>
     
@@ -556,14 +566,14 @@
                     </div>
   
                 </div>
-                <div class="row background-informacion mostrar-movil pb-4">
+                <div class="row mostrar-movil pb-4" style="background: #f6f7f7;">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-H2-bold text-center">Sé parte
                                 de nuestro Directorio</div>
                             <div
                                 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H4-light negro-promperu text-center mt-3">
-                                Si eres un operador logístico se parte del Directorio Logístico y llega a más clientes
+                                Si eres un operador logístico, sé parte del Directorio Logístico y llega a más clientes
                             </div>
                             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pt-5 mx-2 text-center" id="btn-rutas ">
                                 <button class="btn btn-danger font-H4-bold" style="height: 50px !important; text-transform: capitalize;"
@@ -981,36 +991,36 @@
     <!-- Fin modal compartir -->
     <!-- Inicio modal informativo -->
     <div class="modal fade" id="m-informativo" tabindex="-1" aria-labelledby="m-informativo" aria-hidden="true">
-        <div class="modal-dialog ">
-            <div class="modal-content ">
-                <div class="modal-header ">
-                    <div class="col-lg-12 col-sm-12 col-xs-12 col-xl-12">
-                        <h5 class="modal-title centro font-h3-bold negro-promperu" id="exampleModalLabel">Indicanos tu consulta</h5>
-                    </div>
-                    <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                        <img src="../assets/img/btn_close.svg" alt="">
-                    </a>
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            <!-- <div class="modal-content" style="width: 736px !important; margin-top: 20vh !important; margin-left: auto !important; margin-right: auto !important;"> -->
+                <div class="modal-header header-modal" style="max-width: 736px !important;">
+                    <h5 class="modal-title font-h3-bold-700 negro text-center" id="exampleModalLabel"><br>Indicanos tu consulta</h5>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
                 </div>
-                <div class="modal-body ">
-                    <div class="col-6 div-left ">
-                        <label class="font-label negro-promperu">Nombres</label>
-                        <input type="text " class="form-control font-H4-light negro-promperu">
+                <div class="modal-body padding-moda-maritima" style="width: 100% !important;">
+                    <div class="col-md-6 col-lg-6 col-12 div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;" >Nombres</label>
+                        <input type="text" class="form-control font-H4-light" placeholder="Nombres" style="padding-left: 3px !important; width: 100% !important;">
                     </div>
-                    <div class="col-6 div-left ">
-                        <label class="font-label negro-promperu">Apellidos</label>
-                        <input type="text " class="form-control font-H4-light negro-promperu">
+                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;">Apellidos</label>
+                        <input type="text" class="form-control font-H4-light" placeholder="Apellidos" style="padding-left: 3px !important;">
                     </div>
-                    <div class="col-6 div-left mt-3">
-                        <label class="font-label negro-promperu">Correo electrónico</label>
-                        <input type="text " class="form-control font-H4-light negro-promperu" placeholder="ejemplo@correo.com ">
+                    <!-- <div class="col-12" style="height: 50px !important;"></div> -->
+                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu">Correo electrónico</label>
+                        <input type="text" class="form-control font-H4-light" placeholder="ejemplo@correo.com" style="padding-left: 3px !important;">
                     </div>
-                    <div class="col-12 div-left mt-3">
-                        <label class="font-label negro-promperu">Escribe tu consulta</label>
-                        <textarea type="text " class="form-control font-H4-light negro-promperu"></textarea>
-                        <span class="span-textarea font-smallprint-medium gris-promperu">Máximo 189 cáracteres</span>
+                    <div class="col-12 div-left padding-left-right-1">
+                        <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
+                        <textarea type="text" class="form-control font-H4-light" maxlength="500" rows="1" style="padding-left: 3px !important;"></textarea>
+                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 div-left mt-4">
-                        <button class="w-100 btn btn-primary btn-danger font-H4-bold" type="button ">Enviar</button>
+                    <div class="col-12 div-left mt-4">
+                        <button class="btn btn-primary btn-danger width-100 font-H4-bold btn-enviar-calificacion" type="button" style="max-width: 300px !important; margin-bottom: 40px !important;" data-bs-toggle="modal" data-bs-target="#m-informativo-confirmacion">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -1019,49 +1029,94 @@
     <!-- Fin modal informativo -->
     <!-- Inicio modal calificativo -->
     <div class="modal fade" id="m-opinion" tabindex="-1" aria-labelledby="m-opinion" aria-hidden="true">
-        <div class="modal-dialog ">
-            <div class="modal-content ">
-                <div class="modal-header ">
-                    <div class="col-lg-12 col-sm-12">  <h5 class="modal-title centro font-h3-bold negro-promperu" id="exampleModalLabel">Deja tu opinión</h5></div>
-                    <a href="javascript:void(0)" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                        <img src="../assets/img/btn_close.svg" alt="">
-                    </a>
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            <!-- <div class="modal-content" style="width: 736px !important; margin-top: 20vh !important; margin-left: auto !important; margin-right: auto !important;"> -->
+                <div class="modal-header header-modal" style="max-width: 736px !important;">
+                    <h5 class="modal-title font-h3-bold-700 negro text-center" id="exampleModalLabel"><br>Deja tu opinión</h5>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
                 </div>
-                <div class="modal-body ">
-                    <div class="col-6 div-left">
-                        <label class="font-label negro-promperu">Nombres</label>
-                        <input type="text " class="form-control ">
+                <div class="modal-body padding-moda-maritima" style="width: 100% !important;">
+                    <div class="col-md-6 col-lg-6 col-12 div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;" >Nombres</label>
+                        <input type="text" class="form-control font-H4-light" placeholder="Nombres" style="padding-left: 3px !important; width: 100% !important;">
                     </div>
-                    <div class="col-6 div-left">
-                        <label class="font-label negro-promperu">Apellidos</label>
-                        <input type="text " class="form-control ">
+                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;">Apellidos</label>
+                        <input type="text" class="form-control font-H4-light" placeholder="Apellidos" style="padding-left: 3px !important;">
                     </div>
-                    <div class="col-6 div-left">
-                        <label class="font-label negro-promperu">Correo electrónico</label>
-                        <input type="text " class="form-control font-H4-light gris-promperu " placeholder="ejemplo@correo.com ">
+                    <!-- <div class="col-12" style="height: 50px !important;"></div> -->
+                    <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
+                        <label class="font-label-400 negro-promperu">Correo electrónico</label>
+                        <input type="text" class="form-control font-H4-light" placeholder="ejemplo@correo.com" style="padding-left: 3px !important;">
                     </div>
-                    <div class="col-12 div-left">
-                        <label class="font-label negro-promperu">Escribe tu mensaje</label>
-                        <textarea type="text " class="form-control "></textarea>
-                        <span class="span-textarea font-smallprint-medium gris-promperu">Máximo 189 cáracteres</span>
+                    <div class="col-12 div-left padding-left-right-1">
+                        <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
+                        <textarea type="text" class="form-control font-H4-light" maxlength="500" rows="1" style="padding-left: 3px !important;"></textarea>
+                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
                     </div>
-                    <div class="col-12 div-left mt-4 ">
-                        <div class="col-5 div-left font-label negro-promperu">Califica la herramienta</div>
-                        <div class="col-3 div-left ">
-                            <div class="div-left ordenar "><a href="javascript:void(0) "><i
-                                        class="far fa-star "></i></a></div>
-                            <div class="div-left ordenar "><a href="javascript:void(0) "><i
-                                        class="far fa-star "></i></a></div>
-                            <div class="div-left ordenar "><a href="javascript:void(0) "><i
-                                        class="far fa-star "></i></a></div>
-                            <div class="div-left ordenar "><a href="javascript:void(0) "><i
-                                        class="far fa-star "></i></a></div>
-                            <div class="div-left ordenar "><a href="javascript:void(0) "><i
-                                        class="far fa-star "></i></a></div>
+                    <div class="col-12 div-left mt-4 padding-left-right-1" style="display: flex; align-items: center; min-width: 300px !important;">
+                        <div class="col-5 div-left font-label-400 negro-promperu mostrar-desktop" style="max-width: 170px !important;">Califica la herramienta:</div>
+                        <div class="col-5 div-left font-label-400 negro-promperu mostrar-movil" style="max-width: 90px !important;">Califica la herramienta:</div>
+                        <div class="col-7 div-left">
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                            <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 div-left mt-4 ">
-                        <button class="w-100 btn btn-primary btn-danger font-H4-bold" type="button ">Enviar</button>
+                    <div class="col-12 div-left mt-4">
+                        <button class="btn btn-primary btn-danger width-100 font-H4-bold btn-enviar-calificacion-2" type="button" style="max-width: 300px !important; margin-bottom: 40px !important;" data-bs-toggle="modal" data-bs-target="#m-opinion-confirmacion">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal calificativo -->
+    <!-- Fin de modales -->
+
+    <div class="modal fade" id="m-informativo-confirmacion" tabindex="-1" aria-labelledby="m-informativo-confirmacion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 736px !important;">
+            <div class="modal-content">
+                
+                <div class="modal-body body-consulta">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 div-left" style="text-align:center; margin-top:74px;">
+                            <img src="../../img-menu-PromPeru/common/correo_1 1.png">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-bold" style="text-align:center; margin-top:29px;">
+                            Gracias
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-light-normal" style="text-align:center;  margin-top:24px; margin-bottom:141px;">
+                            Tu mensaje ha sido enviado, te daremos respuesta a la brevedad
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal informativo confirmación -->
+    <!-- Inicio modal calificativo confirmación-->
+    <div class="modal fade" id="m-opinion-confirmacion" tabindex="-1" aria-labelledby="m-informativo-confirmacion" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 736px !important;">
+            <div class="modal-content">
+                
+                <div class="modal-body body-consulta">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 div-left" style="text-align:center; margin-top:74px;">
+                            <img src="../../img-menu-PromPeru/common/like 2.png">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-bold" style="text-align:center; margin-top:29px;">
+                            Gracias por tu opinión
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left negro-promperu font-H2-light-normal" style="text-align:center;  margin-top:24px; margin-bottom:141px;">
+                            Seguiremos mejorando
+                        </div>
                     </div>
                 </div>
             </div>
