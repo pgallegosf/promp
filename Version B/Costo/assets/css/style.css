@@ -2441,7 +2441,7 @@ tr:nth-child(1) td[colspan] {
 }
 
 .acordion-fijo-movil {
-    background-color: #00000029;
+    /*background-color: #00000029;*/
     padding: 1rem;
     border-radius: 20px;
 }
@@ -3256,4 +3256,8 @@ border:none;
 .margin-left-2{
     margin-left: 2%!important;
     margin-right: 2% !important;
+}
+.acordion-linea-movil{
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
