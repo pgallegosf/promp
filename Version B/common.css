@@ -776,6 +776,14 @@ transform: rotate(45deg);
   line-height: 30px;
 }
 
+.font-normal-18 {
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+}
+
 .font-arial {
   font-family: "Arial" !important;
   font-style: normal;

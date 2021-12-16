@@ -68,6 +68,66 @@ body {
     width: 15% !important;
 }
 
+/*Inicio Listado Operasdores Logisticos*/
+
+.nav-logistico {
+    width: 50%;
+    height: 66px;
+    cursor: pointer;
+    border: 0px solid white !important;
+}
+
+.active {
+    background-color: #C4122F !important;
+    color: white !important;
+}
+
+.card-logistico {
+    padding-left: 12px !important;
+}
+
+.nav-link {
+    color: black;
+}
+
+.padding-internacional {
+    padding-bottom: 10px !important;
+}
+/*Fin Listado Operasdores Logisticos*/
+
+.input-checkbox {
+    display: none;
+}
+
+.input-checkbox+.input-checkbox-lab {
+    cursor: pointer;
+    font-weight: 200 !important;
+}
+
+.input-checkbox:checked+.input-checkbox-lab:before {
+    /*content: "✓";*/
+    content: url("../img/icon-opcion/Vector\ 1.png");
+    font-size: 25px;
+    color: #FFF;
+    background: #C4122f;
+    font-family: Helvetica Neue;
+    font-weight: bold !important;
+    line-height: 0.75;
+}
+
+.input-checkbox-lab:before {
+    content: '';
+    background: #FFF;
+    border: 1px solid #C4122f;
+    border-radius: 5px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin: 0 7px 0 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
 @media (min-width: 400px) {
     .nav-img {
         width: 45% !important;

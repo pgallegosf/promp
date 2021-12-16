@@ -983,7 +983,7 @@ a {
 }
 
 .input-checkbox {
-    display: none;
+    display: none; 
 }
 
 .input-checkbox+.input-checkbox-lab {
