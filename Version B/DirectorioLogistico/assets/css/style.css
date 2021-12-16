@@ -834,11 +834,41 @@ body {
     z-index: 1;
   }
 
+  .card-listado-filtro-ubicacion-2 {
+    width: 37% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 245px !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 120px !important;
+    z-index: 1;
+  }
+
   .card-listado-filtro-ordenar {
     width: 31% !important;
     height: auto !important;
     margin-left: 1% !important;
     top: 384px !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 143px !important;
+    z-index: 1;
+  }
+
+  .card-listado-filtro-ordenar-2 {
+    width: 31% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 275px !important;
     position: absolute !important;
     font-size: 12px;
     font-weight: bold;
@@ -1440,6 +1470,20 @@ left: 153px;
     left: 237px;
   }
 
+  .card-listado-filtro-rubro-2 {
+    width: 8% !important;
+    height: auto !important;
+    margin-left: 0.5% !important;
+    top: 280px;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 237px;
+  }
+
   .card-listado-filtro-ubicacion {
     width: 8% !important;
     height: auto !important;
@@ -1454,11 +1498,39 @@ left: 153px;
     left: 477px !important;
   }
 
+  .card-listado-filtro-ubicacion-2 {
+    width: 8% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 280px !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 477px !important;
+  }
+
   .card-listado-filtro-ordenar {
     width: 6% !important;
     height: auto !important;
     margin-left: 1% !important;
     top: 316px !important;
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
+    background: #ffffff;
+    left: 738px !important;
+  }
+
+  .card-listado-filtro-ordenar-2 {
+    width: 6% !important;
+    height: auto !important;
+    margin-left: 1% !important;
+    top: 280px !important;
     position: absolute !important;
     font-size: 12px;
     font-weight: bold;
