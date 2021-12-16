@@ -1,4 +1,11 @@
 $(document).ready(function() {
+    $('.descarga-pdf').click(function(e) {
+        debugger;
+        var a = document.createElement("a");
+        a.href = "../assets/img/download.pdf";
+        a.setAttribute("download", "Rutas Terreste");
+        a.click();
+    });
     $(".card-tipo-contenedor").hide();
     $("body").click(function(e) {
         closeCard();
@@ -21,7 +28,17 @@ $(document).ready(function() {
         $(".popover").toggle();
     });
 
-    
+    $(".div-detalle-rutas").click(function() {        
+        console.log($(this).find('i'));
+        var object = $(this).find('i');
+        if(object.hasClass('fa-chevron-right')) {
+            object.removeClass('fa-chevron-right');
+            object.addClass('fa-chevron-down');
+        }else {
+            object.removeClass('fa-chevron-down');
+            object.addClass('fa-chevron-right');
+        }
+    });
 
     
 
