@@ -294,8 +294,11 @@
                                                                     <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-right mt-2">
                                                                         <br>
                                                                     </div>
-                                                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-right mt-2 btn-calcular">
+                                                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-right mt-2 btn-calcular mostrar-desktop">
                                                                         <bottom class="btn btn-danger font-H4-bold" onclick="clickTab(2)">Siguiente paso</bottom>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12  mt-2 btn-calcular mostrar-movil text-center">
+                                                                        <bottom class="btn btn-danger font-H4-bold w-100" style="width:100% !important" onclick="clickTab(2)">Siguiente paso</bottom>
                                                                     </div>
                                                                 </div>
                                                                 
@@ -350,8 +353,11 @@
                                                                     <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-right mt-2">
                                                                         <br>
                                                                     </div>
-                                                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-right mt-2">
+                                                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-right mt-2 mostrar-desktop">
                                                                         <bottom class="btn btn-danger w-100 font-H4-bold" onclick="clickTab(2)">Siguiente paso</bottom>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-center mt-2 mostrar-movil">
+                                                                        <bottom class="btn btn-danger w-100 font-H4-bold w-100" style="width:100% !important" onclick="clickTab(2)">Siguiente paso</bottom>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -371,7 +377,7 @@
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-H3-bold mostrar-desktop">
                                                             Tipo de transporte
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-H3-bold mostrar-movil">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-H3-bold mostrar-movil" style="padding-top: 46px;">
                                                             Tipo de transporte
                                                         </div>
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
@@ -436,7 +442,7 @@
                                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Destino de tu carga</div>
                                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                 <input type="text" class="form-control mostrar-desktop padding-left-right-0 font-H4-light negro-promperu" value="" placeholder="Escribe el país o el aeropuerto" id="destinoCarga">
-                                                                <input type="text" class="form-control vista-movil mostrar-movil padding-left-right-0 font-H4-light negro-promperu" value="" placeholder="Escribe el país o el aeropuerto">
+                                                                <input type="text" class="form-control vista-movil mostrar-movil padding-left-right-0 font-H4-light negro-promperu" value="" id="destinoCargam" placeholder="Escribe el país o el aeropuerto">
                                                                 <div class="card p-3 card-punto-destino card-destino-paso2" id="view-select-Continente">
                                                                     <div class="row" id="cmbPais">
                                                                         <div class="col-lg-3 col-md-2 separador font-label negro-promperu" style="padding-bottom:27px;">Paises Frecuentes:</div>
@@ -523,30 +529,31 @@
                                                         </div>
                                                         <div id="tipoCargaMaritima">
                                                             <div class="row">
-                                                                <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-18 font-weight-bold">Tipo de carga marítima</div>
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                                                <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second  helvetica-light">
-                                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-second font-size-15  helvetica-light paddingControl">
-                                                                        <div class="containerRadio">
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input" type="radio" name="rbutton" id="consolidada" checked="true">
-                                                                                <label class="form-check-label font-h4-medium negro-promperu" for="consolidada">
-                                                                                Consolidad
-                                                                                </label>
+                                                                <div class="tipoCarga">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H3-bold negro-promperu">Tipo de carga marítima</div>
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left color-second  helvetica-light">
+                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-second font-size-15  helvetica-light paddingControl">
+                                                                            <div class="containerRadio">
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input" type="radio" name="rbutton" id="consolidada" checked="true">
+                                                                                    <label class="form-check-label font-H4-medium-n negro-promperu" for="consolidada">
+                                                                                    Consolidada
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
+                                                                            <div class="containerRadio">
+                                                                                <div class="form-check" style="position: fixed;">
+                                                                                    <input class="form-check-input" type="radio" name="rbutton" id="ConLleno">
+                                                                                    <label class="form-check-label swtich-text-left font-H4-medium-n negro-promperu" for="ConLleno">Contenedor lleno
+                                                                                    </label>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-second font-size-15 helvetica-light paddingControl">
-                                                                        <div class="containerRadio">
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input" type="radio" name="rbutton" id="ConLleno">
-                                                                                <label class="form-check-label swtich-text-left font-h4-medium negro-promperu" for="ConLleno">
-                                                                                Contenedor lleno
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>-->
+                                                                </div>  
                                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:80px;"><br></div>
                                                                 <div id="dimensiones">
                                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-h3-bold negro-promperu">Dimensiones del bulto</div>
@@ -577,7 +584,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
-                                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 div-right">
+                                                                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 div-right">
                                                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">
                                                                                 Peso (Kg)
                                                                             </div>
@@ -585,7 +592,7 @@
                                                                                 <input type="text" class="form-control padding-left-right-0 font-H4-light negro-promperu">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 div-right">
+                                                                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 div-right">
                                                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">
                                                                                 Cantidad
                                                                             </div>
@@ -596,11 +603,11 @@
                                                                         <div id="detalle">
                                                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                                                                             <div class="row">
-                                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                                     <div class="negro-promperu font-label">Peso bruto (kg)</div>
                                                                                     <div class="negro-promperu font-H4-light-normal">1000</div>
                                                                                 </div>
-                                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                                     <div class="negro-promperu font-label">Volumen total (cm³)</div>
                                                                                     <div class="negro-promperu font-H4-light-normal">0.03</div>
                                                                                 </div>
@@ -609,17 +616,33 @@
                                                                     </div>
                                                                 </div>
                                                                 <div id="container">
-                                                                    <div class="row">
-                                                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-2 div-container-global">
-                                                                            <div class="card-personalizado-container mx-n3 card-height ordenar" id="cardPersonalizado"><i class="fas fa-check-circle font-color-blue mt-n2 font-size-25 check-container"></i>
+                                                                    <div class="row" style="text-align: -webkit-center;">
+                                                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-2 div-container-global" >
+                                                                            <div class="card-personalizado-container mx-n3 card-height ordenar mostrar-desktop" id="cardPersonalizado" style="max-height: 170px; max-width: 196px;"><!--<i class="fas fa-check-circle font-color-blue mt-n2 font-size-25 check-container"></i>-->
                                                                                 <div class="mx-2 div-icon-text-centrado">
                                                                                     <div class="row">
                                                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                            <div class="row font-weight-bold w-100">
-                                                                                                <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25 text-center">
-                                                                                                    <div class="img-div ms-3" id="div-img"></div>
+                                                                                            <div class="row font-weight-bold w-100" style="display: flex; align-items: center;">
+                                                                                                <div class="col-lg-12 col-md-12 col-sm-5 col-xs-5 font-size-25" style="text-align: -webkit-center!important;">
+                                                                                                    <div class="img-div-1 ms-3" id="div-img" style="max-width:100.51px; max-height: 81.9px;"></div>
                                                                                                 </div>
-                                                                                                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 text-center">
+                                                                                                <div class="col-lg-12 col-md-12 col-sm-7 col-xs-7 font-H4-medium-n text-center" style="padding-top:25px; padding-bottom:28px;">
+                                                                                                    Dry Van 20'
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="card-personalizado-container mx-n3 card-height ordenar mostrar-movil" id="cardPersonalizadom" style="max-height: 90px;max-width: 337px;"><!--<i class="fas fa-check-circle font-color-blue mt-n2 font-size-25 check-container"></i>-->
+                                                                                <div class="mx-2 div-icon-text-centrado">
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            <div class="row font-weight-bold w-100" style="display: flex; align-items: center;">
+                                                                                                <div class="col-lg-12 col-md-12 col-sm-5 col-xs-5 font-size-25 text-center">
+                                                                                                    <div class="img-div-1-m ms-3" id="div-img-1-m" style="max-width:67.41px; max-height: 59px;"></div>
+                                                                                                </div>
+                                                                                                <div class="col-lg-12 col-md-12 col-sm-7 col-xs-7 font-H5-medium-normal text-center ">
                                                                                                     Dry Van 20'
                                                                                                 </div>
                                                                                             </div>
@@ -629,16 +652,32 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
-                                                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-2 div-container-global">
-                                                                            <div class="card-personalizado-container mx-n3 card-height ordenar" id="cardPersonalizado">
+                                                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-2 div-container-global" >
+                                                                            <div class="card-personalizado-container mx-n3 card-height ordenar mostrar-desktop" id="cardPersonalizado" style="max-height: 170px; max-width: 196px;"><!--<i class="fas fa-check-circle font-color-blue mt-n2 font-size-25 check-container"></i>-->
                                                                                 <div class="mx-2 div-icon-text-centrado">
                                                                                     <div class="row">
                                                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                            <div class="row font-weight-bold w-100">
-                                                                                                <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25 text-center">
-                                                                                                    <div class="img-div ms-3" id="div-img"></div>
+                                                                                            <div class="row font-weight-bold w-100" style="display: flex; align-items: center;">
+                                                                                                <div class="col-lg-12 col-md-12 col-sm-5 col-xs-5 font-size-25" style="text-align: -webkit-center!important;">
+                                                                                                    <div class="img-div-2 ms-3" id="div-img" style="max-width:100px; max-height: 72.48px;"></div>
                                                                                                 </div>
-                                                                                                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 text-center">
+                                                                                                <div class="col-lg-12 col-md-12 col-sm-7 col-xs-7 font-H4-medium-n text-center"  style="padding-top:25px; padding-bottom:28px;">
+                                                                                                    Dry Van 40'
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="card-personalizado-container mx-n3 card-height ordenar mostrar-movil" id="cardPersonalizado" style="max-height: 90px;max-width: 337px;"><!--<i class="fas fa-check-circle font-color-blue mt-n2 font-size-25 check-container"></i>-->
+                                                                                <div class="mx-2 div-icon-text-centrado">
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            <div class="row font-weight-bold w-100" style="display: flex; align-items: center;">
+                                                                                                <div class="col-lg-12 col-md-12 col-sm-5 col-xs-5 font-size-25 text-center">
+                                                                                                    <div class="img-div-2-m ms-3" id="div-img" style="max-width:81px; max-height: 59px;"></div>
+                                                                                                </div>
+                                                                                                <div class="col-lg-12 col-md-12 col-sm-7 col-xs-7 font-H5-medium-normal text-center ">
                                                                                                     Dry Van 40'
                                                                                                 </div>
                                                                                             </div>
@@ -647,17 +686,34 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                        
                                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
-                                                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-2 div-container-global">
-                                                                            <div class="card-personalizado-container mx-n3 card-height ordenar" id="cardPersonalizado">
+                                                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-2 div-container-global" >
+                                                                            <div class="card-personalizado-container mx-n3 card-height ordenar mostrar-desktop" id="cardPersonalizado" style="max-height: 170px; max-width: 196px;"><!--<i class="fas fa-check-circle font-color-blue mt-n2 font-size-25 check-container"></i>-->
                                                                                 <div class="mx-2 div-icon-text-centrado">
                                                                                     <div class="row">
                                                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                                            <div class="row font-weight-bold w-100">
-                                                                                                <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2 font-size-25 text-center">
-                                                                                                    <div class="img-div ms-3" id="div-img"></div>
+                                                                                            <div class="row font-weight-bold w-100" style="display: flex; align-items: center;">
+                                                                                                <div class="col-lg-12 col-md-12 col-sm-5 col-xs-5 font-size-25" style="text-align: -webkit-center!important;">
+                                                                                                    <div class="img-div-3 ms-3" id="div-img" style="max-width:100px; max-height: 72.48px;"></div>
                                                                                                 </div>
-                                                                                                <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 font-size-10 text-center">
+                                                                                                <div class="col-lg-12 col-md-12 col-sm-7 col-xs-7 font-H4-medium-n text-center"  style="padding-top:25px; padding-bottom:28px;">
+                                                                                                    High Cube 40'
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="card-personalizado-container mx-n3 card-height ordenar mostrar-movil" id="cardPersonalizado" style="max-height: 90px;max-width: 337px;"><!--<i class="fas fa-check-circle font-color-blue mt-n2 font-size-25 check-container"></i>-->
+                                                                                <div class="mx-2 div-icon-text-centrado">
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                            <div class="row font-weight-bold w-100" style="display: flex; align-items: center;">
+                                                                                                <div class="col-lg-12 col-md-12 col-sm-5 col-xs-5 font-size-25 text-center">
+                                                                                                    <div class="img-div-3-m ms-3" id="div-img" style="max-width:81px; max-height: 59px;"></div>
+                                                                                                </div>
+                                                                                                <div class="col-lg-12 col-md-12 col-sm-7 col-xs-7 font-H5-medium-normal text-center ">
                                                                                                     High Cube 40'
                                                                                                 </div>
                                                                                             </div>
@@ -669,12 +725,20 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                                                <div class="row">
+                                                                <div class="row mostrar-desktop">
                                                                     <div class="col-lg-7 col-md-6 col-xs-12 col-sm-12 text-right mt-2">
                                                                         <br>
                                                                     </div>
-                                                                    <div class="col-lg-5 col-md-6 col-xs-12 col-sm-12 text-right mt-2 btn-calcular" style="margin-bottom: 0 !important;">
+                                                                    <div class="col-lg-5 col-md-6 col-xs-12 col-sm-12 text-right mt-2 btn-calcular mostrar-desktop" style="margin-bottom: 0 !important;">
                                                                         <bottom class="btn btn-danger w-100 font-H4-bold" onclick="clickTab(3)">Siguiente paso</bottom>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mostrar-movil content">
+                                                                    <div class="col-lg-7 col-md-6 col-xs-12 col-sm-12 text-right mt-2">
+                                                                        <br>
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-6 col-xs-12 col-sm-12 text-center mt-2 btn-calcular mostrar-movil" style="margin-bottom: 0 !important;">
+                                                                        <bottom class="btn btn-danger w-100 font-H4-bold w-100" style="width:100% !important" onclick="clickTab(3)">Siguiente paso</bottom>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -684,14 +748,17 @@
                                             </section>
                                             <section id="tab-3" class="tab-body entry-content">
                                                 <div class="row">
-                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab">
-                                                        <div class="mostrar-desktop font-h1-bold-normal negro-promperu margin-left-right-45" style="margin-left:10% !important;">Selecciona tus costos y gastos</div>
-                                                        <div class="mostrar-movil font-H2-bold negro-promperu titulo-tab-movil">Selecciona tus costos y gastos</div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-H5-lightn negro-promperu mostrar-movil margin-left-2" style="padding:10px;">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab padding-4 mostrar-movil">
+                                                        
+                                                        <div class="mostrar-movil font-H2-bold negro-promperu titulo-tab-movil ">Selecciona tus costos y gastos</div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-H5-lightn negro-promperu mostrar-movil margin-left-4" style="padding:10px; padding-left:0 !important;">
                                                             Ingresa los costos y gastos que correspondan en cada una de las secciones
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 titulo-left font-H4-light-normal negro-promperu mostrar-desktop padding-le " style="padding-top:5px;">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab  mostrar-desktop">
+                                                        <div class=" font-h1-bold-normal negro-promperu margin-left-right-45" style="margin-left:10% !important;">Selecciona tus costos y gastos</div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 titulo-left font-H4-light-normal negro-promperu mostrar-desktop padding-le" style="padding-top:5px;">
                                                         Ingresa los costos y gastos que correspondan en cada una de las secciones
                                                     </div>
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
@@ -973,7 +1040,7 @@
                                                                                     <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 font-color-red font-size-25"><i class="fas fa-times-circle ordenar div-right Close-G-Admin"></i></div>
                                                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                                                                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Gasto administrativo</div>
+                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Gastos administrativo</div>
                                                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                                             <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="gastoAdmin" value="">
                                                                                         </div>
@@ -1060,31 +1127,31 @@
                                                     </div>
                                                     <div class="movil mostrar-movil">
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-costo">Costos directos <i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-costo">Costos directos <i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
                                                         </div>
                                                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                             <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-4"><br></div>
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-costo2">Costos indirectos <i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-costo2">Costos indirectos <i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
                                                         </div>
                                                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                             <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-4"><br></div>
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-costo3">Gatos administrativos <i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-costo3">Gatos administrativos <i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
                                                         </div>
                                                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                             <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-4"><br></div>
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-costo4">Gastos financieros <i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-costo4">Gastos financieros <i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
                                                         </div>
                                                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
                                                             <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
@@ -1098,17 +1165,19 @@
                                                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-desktop btn-calcular">
                                                         <bottom class="btn btn-danger div-right font-H4-bold siguiente-paso3" >Siguiente paso</bottom>
                                                     </div>
-                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-movil">
+                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-movil text-center">
                                                         <bottom class="btn btn-danger w-100 font-H4-bold" onclick="clickTab(4)">Siguiente paso</bottom>
                                                     </div>
                                                 </div>
                                             </section>
                                             <section id="tab-4" class="tab-body entry-content">
                                                 <div class="row">
-                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab mostrar-desktop">
                                                         <div class="mostrar-desktop font-h1-bold-normal negro-promperu margin-left-right-45 margin-left-rem" >Selecciona tus envases, empaques y embalaje</div>
-                                                        <div class="mostrar-movil font-H2-bold negro-promperu titulo-tab-movil">Selecciona tus envases, empaques y embalaje</div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-H5-lightn negro-promperu mostrar-movil" style="padding:10px;">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab mostrar-movil padding-4">
+                                                        <div class="mostrar-movil font-H2-bold negro-promperu titulo-tab-movil" >Selecciona tus envases, empaques y embalaje</div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-H5-lightn negro-promperu mostrar-movil margin-left-4" style="padding:10px; padding-left:0 !important;">
                                                             Indica los costos del envase, empaque y embalaje de tu producto
                                                         </div>
                                                     </div>
@@ -1282,19 +1351,23 @@
                                                     </div>
                                                     <div class="movil mostrar-movil">
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-envase">Envase<i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-envase">Envase<i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
                                                         </div>
                                                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                             <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-4"><br></div>
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-empaque">Empaque<i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-empaque">Empaque<i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-4"><br></div>
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-embalaje">Embalaje<i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-embalaje">Embalaje<i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
                                                         </div>
                                                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                             <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
@@ -1307,17 +1380,19 @@
                                                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-desktop btn-calcular">
                                                         <bottom class="btn btn-danger div-right font-H4-bold siguiente-paso4">Siguiente paso</bottom>
                                                     </div>
-                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-movil">
+                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-movil text-center">
                                                         <bottom class="btn btn-danger w-100 font-H4-bold" onclick="clickTab(5)">Siguiente paso</bottom>
                                                     </div>
                                                 </div>
                                             </section>
                                             <section id="tab-5" class="tab-body entry-content">
                                                 <div class="row">
-                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab mostrar-desktop">
                                                         <div class="mostrar-desktop font-h1-bold-normal negro-promperu margin-left-right-45 margin-left-rem" >Agrega tus Incoterms</div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab mostrar-movil padding-4">
                                                         <div class="mostrar-movil font-H2-bold negro-promperu titulo-tab-movil">Agrega tus Incoterms</div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-H5-lightn negro-promperu mostrar-movil" style="padding:10px;">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-left font-H5-lightn negro-promperu mostrar-movil margin-left-4" style="padding:10px; padding-left:0 !important;">
                                                             Completa los INCOTERMS para calcular el costo total de exportación
                                                         </div>
                                                     </div>
@@ -1902,35 +1977,67 @@
                                                     </div>
                                                     <div class="movil mostrar-movil">
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-exworks">ExWorks<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-exworks">ExWorks<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-fas">Precio FAS<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
+                                                            </div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-4"><br></div>
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-fob">Precio FOB<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-fas">Precio FCA<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-cfr">Precio CFR<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
+                                                            </div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-4"><br></div>
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-cif">Precio CIF<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-fob">Precio CPT<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-dap">Precio DAP<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
+                                                            </div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-4"><br></div>
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-dpu">Precio DPU<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-cfr">Precio CIP<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-4"><br></div>
+                                                        <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-cif">Precio CIF<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                        </div>
+                                                        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
+                                                            </div>
+                                                        </div>-->
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-4"><br></div>
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="acordion-fijo-movil ordenar font-color-black font-size-15 card-ddp">Precio DDP<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-dap">Precio DAP<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                        </div>
+                                                        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-4"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-dpu">Precio DPU<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                        </div>
+                                                        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 height-4"><br></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="acordion-fijo-movil ordenar font-H4-bold negro-promperu card-ddp">Precio DDP<i class="fas fa-check-circle font-color-blue mx-4 checkmovil"></i><i class="fas fa-chevron-right font-color-red div-right font-weight-bold"></i></div>
+                                                        </div>
+                                                        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="acordion-linea-movil hr background-gris margin-left-right-45" style="">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris margin-left-right-45 mostrar-desktop"></div>
@@ -1942,7 +2049,7 @@
                                                             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-desktop btn-calcular">
                                                                 <bottom class="btn btn-danger font-H4-bold " onclick="window.location.href='ResultadoCostos.html'" style="">Calcular</bottom>
                                                             </div>
-                                                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-movil">
+                                                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-movil text-center">
                                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:30px;"><br></div>
                                                                 <bottom class="btn btn-danger w-100 font-H4-bold" onclick="window.location.href='ResultadoCostos.html'">Calcular</bottom>
                                                             </div>
@@ -1973,80 +2080,80 @@
             <div class="card-body pt-sm-3 pt-0">
                 <div id="puertoOrigen-Ciudad">
                     <div>
-                        <label class="card-body-title">Título</label>
+                        <label class="card-body-title font-label negro-promperu">Destino de la carga</label>
                         <div>
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="titulo" value=""><i class="fas fa-angle-down icon-select" aria-hidden="true"></i>
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="titulo" value="">
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Países frecuentes:</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Países frecuentes:</div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                     <div class="row">
                         <div class="col-6">
-                            <div class="select-movil mt-3 pais_movil" value="1">Estados Unidos</div>
-                            <div class="select-movil mt-3 pais_movil" value="2">Chile</div>
-                            <div class="select-movil mt-3 pais_movil" value="3">China</div>
-                            <div class="select-movil mt-3 pais_movil" value="3">Italia</div>
+                            <div class="select-movil mt-3 pais_movil font-H4-light-normal negro-promperu" value="1">Estados Unidos</div>
+                            <div class="select-movil mt-3 pais_movil font-H4-light-normal negro-promperu" value="2">Chile</div>
+                            <div class="select-movil mt-3 pais_movil font-H4-light-normal negro-promperu" value="3">China</div>
+                            <div class="select-movil mt-3 pais_movil font-H4-light-normal negro-promperu" value="3">Italia</div>
                         </div>
                         <div class="col-6">
-                            <div class="select-movil mt-3 pais_movil" value="1">España</div>
-                            <div class="select-movil mt-3 pais_movil" value="2">Francia</div>
-                            <div class="select-movil mt-3 pais_movil" value="3">Holanda</div>
-                            <div class="select-movil mt-3 pais_movil" value="3">México</div>
+                            <div class="select-movil mt-3 pais_movil font-H4-light-normal negro-promperu" value="1">España</div>
+                            <div class="select-movil mt-3 pais_movil font-H4-light-normal negro-promperu" value="2">Francia</div>
+                            <div class="select-movil mt-3 pais_movil font-H4-light-normal negro-promperu" value="3">Holanda</div>
+                            <div class="select-movil mt-3 pais_movil font-H4-light-normal negro-promperu" value="3">México</div>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris"></div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-size-15 font-weight-bold font-color-black">Paises por continentes</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Paises por continentes</div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                     <div class="row text-title-select-movil font-color-black ordenar">
                         <div class="col-12">
-                            <div class="col-2 div-left continente select-cmb-paisContinente-movil" id="America" value="01" onclick="cambiarContinente(01)">Ámerica</div>
-                            <div class="col-2 div-left continente" id="Europa" value="02" onclick="cambiarContinente(02)">Europa</div>
-                            <div class="col-2 div-left continente" id="Asia" value="03" onclick="cambiarContinente(03)">Asia</div>
-                            <div class="col-2 div-left continente" id="Africa" value="04" onclick="cambiarContinente(04)">Africa</div>
-                            <div class="col-2 div-left continente" id="Oceania" value="05" onclick="cambiarContinente(05)">Oceania</div>
+                            <div class="col-2 div-left continente select-cmb-paisContinente-movil font-H5-bold negro-promperu" style="width:20% !important;" id="America" value="01" onclick="cambiarContinente(01)">America</div>
+                            <div class="col-2 div-left continente font-H5-bold negro-promperu" style="width:20% !important;" id="Europa" value="02" onclick="cambiarContinente(02)">Europa</div>
+                            <div class="col-2 div-left continente font-H5-bold negro-promperu" style="width:20% !important;" id="Asia" value="03" onclick="cambiarContinente(03)">Asia</div>
+                            <div class="col-2 div-left continente font-H5-bold negro-promperu" style="width:20% !important;" id="Africa" value="04" onclick="cambiarContinente(04)">Africa</div>
+                            <div class="col-2 div-left continente font-H5-bold negro-promperu" style="width:20% !important;" id="Oceania" value="05" onclick="cambiarContinente(05)">Oceania</div>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div id="conAmerica">
                             <div class="col-6 div-left">
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="01">Argentina</div>
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="02">Brasil</div>
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="03">Cánada</div>
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="04">Chile</div>
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="05">Colombia</div>
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="06">Costa Rica</div>
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="07">Estados Unidos</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="01" style="padding-bottom:20px;">Argentina</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="02" style="padding-bottom:20px;">Brasil</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="03" style="padding-bottom:20px;">Cánada</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="04" style="padding-bottom:20px;">Chile</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="05" style="padding-bottom:20px;">Colombia</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="06" style="padding-bottom:20px;">Costa Rica</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="07" style="padding-bottom:20px;">Estados Unidos</div>
                             </div>
                             <div class="col-6 div-left">
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="08">Guatemala</div>
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="09">Homduras</div>
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="10">México</div>
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="11">Nicaragua</div>
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="12">Panamá</div>
-                                <div class="col-6 font-size-15 font-color-black pais_movil" value="13">Venezuela</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="08" style="padding-bottom:20px;">Guatemala</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="09" style="padding-bottom:20px;">Homduras</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="10" style="padding-bottom:20px;">México</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="11" style="padding-bottom:20px;">Nicaragua</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="12" style="padding-bottom:20px;">Panamá</div>
+                                <div class="col-6 font-H4-light-normal negro-promperu pais_movil" value="13" style="padding-bottom:20px;">Venezuela</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="Detalle_Puerto_Movil">
                     <div class="col-lg-4 col-md-6 col-xs-12 position-relative ordenar" onclick="mostrarSelectPuertoDestino()">
-                        <label>Título</label>
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="PD-Ciudad" value="" placeholder="Selecciona"><i class="fas fa-angle-down icon-select" aria-hidden="true"></i>
+                        <label class="font-label negro-promperu">Destino de tu carga</label>
+                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="PD-Ciudad" value="" placeholder="">
                         <!-- <i class="fas fa-angle-down icon-select"></i> -->
                     </div>
                     <div class="row card-contenido-select mt-4">
-                        <div class="col-12 text-line-title font-color-black"><i class="fas fa-chevron-left font-color-red mx-3"></i>Puertos en China</div>
+                        <div class="col-12 text-line-title font-label negro-promperu puerto-seleccionadom"><i class="fas fa-chevron-left font-color-red mx-3"></i>Puertos en China</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="font-weight-bold font-color-black ciudad-movil mt-2" value="1">Da Chan Bay</div>
-                            <div class="font-weight-bold font-color-black ciudad-movil mt-2" value="2">Dalian</div>
-                            <div class="font-weight-bold font-color-black ciudad-movil mt-2" value="3">Hong Kong</div>
-                            <div class="font-weight-bold font-color-black ciudad-movil mt-2" value="4">Ningbo</div>
-                            <div class="font-weight-bold font-color-black ciudad-movil mt-2" value="5">Quingdao</div>
+                            <div class="font-H4-light-normal negro-promperu ciudad-movil mt-2" value="1" style="padding-bottom:20px;">Da Chan Bay</div>
+                            <div class="font-H4-light-normal negro-promperu ciudad-movil mt-2" value="2" style="padding-bottom:20px;">Dalian</div>
+                            <div class="font-H4-light-normal negro-promperu ciudad-movil mt-2" value="3" style="padding-bottom:20px;">Hong Kong</div>
+                            <div class="font-H4-light-normal negro-promperu ciudad-movil mt-2" value="4" style="padding-bottom:20px;">Ningbo</div>
+                            <div class="font-H4-light-normal negro-promperu ciudad-movil mt-2" value="5" style="padding-bottom:20px;">Quingdao</div>
                         </div>
                     </div>
                 </div>
@@ -2057,70 +2164,122 @@
     <!-- Tarjetas de costo directo movil -->
     <div class="row cardCosto div-centrado">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white  text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(3)"></i>Costos directo
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(3)"></i>Costos directos
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
                     Son los costos generales directamente relacionados con el proceso de fabricación de un producto
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de material indirecto</div>
+
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-H4-bold">Datos de tu materia prima</div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Tipo de costo</div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="tipMonto" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
-                        </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Materia Prima o Insumo</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="MPrima" value="">
+                </div>
+                <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13">¿No lo encuentras? <span class="font-color-red ordenar" data-bs-toggle="modal" data-bs-target="#m-materiaPrima">Haga click aquí</span> </div>-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:40px;"><br></div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 negro-promperu font-label">
+                    Costo unitario (US$)
+                    <div>
+                        <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="C-Unitario" value="">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Monto (US$)</div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" id="monto" value="">
-                        </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 negro-promperu font-label">
+                    Cantidad utilizada
+                    <div>
+                        <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="C-Unitario" value="">
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de mano de obra indirecta</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Tipo de costo</div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="tipMonto" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Monto (US$)</div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" id="monto" value="">
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Total de costos indirecto</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Tipo de costo</div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="tipMonto" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Monto (US$)</div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" id="monto" value="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 negro-promperu font-label">
+                    Unidad de medida
+                    <div>
+                        <input type="text" class="form-control font-H4-light-normal negro-promperu unidad-medida background-gris-opaco padding-left-right-0" id="C-Unitario" value="">
+                        <i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
+                        <div class="card card-empresa card-unidad-medida" id="card-distribuidor" style="width: 100%; max-width: 335px;">
+                            <div class="row" id="comboPais">
+                                <option value="0" onclick="SeleccionarUnidadMedida('Kilogramo')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Kilogramo</option>
+                                <option value="1" onclick="SeleccionarUnidadMedida('Metro')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Metro</option>
+                                <option value="2" onclick="SeleccionarUnidadMedida('Onza')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Onza</option>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
-                    <bottom class="btn btn-outline-secondary div-right btn-Indirecto">Guardar</bottom>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 negro-promperu font-label costoTotal">
+                    Costo Total
+                    <div class="negro-promperu font-H3-bold mt-3">
+                        US$ 1,500
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold rojo-promperu">
+                    <span class="ordenar">
+                        <i class="fas fa-plus-circle mx-2"></i> Agregar otra materia prima
+                    </span>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:40px;"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H4-bold negro-promperu">Tiempos y costos de mano de obra directa</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:26px;"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Tipo de proceso de mano de obra directa</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="tProceso" value="">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:40px;"><br></div>
+                <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13">¿No lo encuentras? <span class="font-color-red ordenar" data-bs-toggle="modal" data-bs-target="#m-materiaPrima">Haga click aquí</span> </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>-->
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 negro-promperu font-label">
+                    Costo por tiempo (US$)
+                    <div>
+                        <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="C-Tiempo" value="">
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 negro-promperu font-label">
+                    Tiempo total
+                    <div>
+                        <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="C-Unitario" value="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 negro-promperu font-label">
+                    Unidad de tiempo
+                    <div>
+                        <input type="text" class="form-control unidad-tiempo font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="C-Unitario" value="">
+                        <i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
+                        <div class="card card-empresa card-unidad-tiempo" id="card-distribuidor" style="width: 100%; max-width: 335px;">
+                            <div class="row" id="comboPais">
+                                <option value="0" onclick="SeleccionarUnidadTiempo('Horas')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Horas</option>
+                                <option value="1" onclick="SeleccionarUnidadTiempo('Días')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Días</option>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 negro-promperu font-label costoTotal">
+                    Costo Total
+                    <div class="negro-promperu font-H3-bold mt-3">
+                        US$ 1,200
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold rojo-promperu">
+                    <span class="ordenar">
+                        <i class="fas fa-plus-circle mx-2"></i> Agregar otro proceso por mano directa
+                    </span>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:40px;"><br></div>
+                <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12 text-center display-inline-grid">
+                    <button type="button" class="btn btn-outline-danger div-right btn-Directo-movil font-H4-bold ">Guardar</button>
                 </div>
             </div>
         </div>
@@ -2130,72 +2289,72 @@
     <!-- Tarjetas de costo indirecto movil -->
     <div class="row cardCosto2 div-centrado">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(3)"></i>Costos indirectos
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(3)"></i>Costos indirectos
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
                     Son materiales y mano de obra que intervienen en el proceso productivo de manera indirecta
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de material indirecto</div>
+                
+                
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-H4-bold">Costo total de material indirecto</div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Tipo de costo</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Tipo de costo</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="tipMonto" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="tipMonto" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Monto (US$)</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Monto (US$)</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" id="monto" value="">
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Costo total de mano de obra indirecta</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Tipo de costo</div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="tipMonto" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Monto (US$)</div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" id="monto" value="">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="monto" value="">
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15 font-weight-bold">Total de costos indirecto</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-H4-bold">Costo total de mano de obra indirecta</div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Tipo de costo</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Tipo de costo</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="tipMonto" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="tipMonto" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Monto (US$)</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Monto (US$)</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" id="monto" value="">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="monto" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-H4-bold">Total de costos indirecto</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Tipo de costo</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="tipMonto" value=""><i class="fas fa-chevron-down font-color-red div-right mt-n4"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Monto (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="monto" value="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 text-center">
-                    <bottom class="btn btn-outline-danger w-100 btn-Indirecto">Guardar</bottom>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 display-inline-grid">
+                    <bottom class="btn btn-outline-danger w-100 div-right btn-Indirecto-movil font-H4-bold">Guardar</bottom>
                 </div>
             </div>
         </div>
@@ -2205,35 +2364,38 @@
     <!-- Tarjetas de gastos administrativo movil -->
     <div class="row cardCosto3 div-centrado">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(3)"></i>Gastos administrativos
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(3)"></i>Gastos administrativos
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
                     Son los gastos en los que se incurren para mantener las operaciones diarias de una empresa como servicios generales, contabilidad y salarios
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Gasto administrativo</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="gastoAdmin" value="">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Importe total (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="monto" value="">
-                    </div>
-                </div>
+
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Gastos administrativo</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="gastoAdmin" value="">
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Importe total (US$)</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="monto" value="">
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:246px;"><br></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2">
-                    <bottom class=" btn btn-outline-danger w-100 div-right btn-Admin">Guardar</bottom>
+                    <bottom class=" btn btn-outline-danger w-100 div-right btn-Admin-movil font-H4-bold">Guardar</bottom>
                 </div>
             </div>
         </div>
@@ -2241,39 +2403,43 @@
     </div>
     <!-- Fin tarjetas de gastos administrativo movil -->
     <!-- Tarjetas de gastos financiero movil -->
-    <div class="row cardCosto4 div-centrado">
+    <div class="row cardCosto4 div-centrado ">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(3)"></i>Gastos financieros
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(3)"></i>Gastos financieros
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
                     Son los gastos que provienen de los recursos de terceros con los que la empresa financia su actividad
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Gasto financiero</div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Gasto financiero</div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="gastoFinan" value="">
+                        <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="gastoFinan" value="">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Importe total (US$)</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 negro-promperu font-label">Importe total (US$)</div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="monto" value="">
+                        <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="monto" value="">
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:246px;"><br></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2">
-                    <bottom class=" btn btn-outline-danger w-100 div-right btn-Finan">Guardar</bottom>
+                    <bottom class=" btn btn-outline-danger w-100 div-right btn-Finan-movil font-H4-bold">Guardar</bottom>
                 </div>
+
+                
             </div>
         </div>
         <!-- </div> -->
@@ -2282,31 +2448,32 @@
     <!-- Tarjetas de envase movil -->
     <div class="row cardEnvase div-centrado">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(4)"></i>Envase
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white  btn-atras" onclick="clickTabMovil(4)"></i>Envase
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15">
-                    El envase es cualquier recipiente, lata caja o envoltura propia para contener alguna materia o articulo
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
+                    El envase es cualquier recipiente, lata, caja o envoltura propia que contiene al producto
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Costo total de sus empaques (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Costo total de sus envases (US$)</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="costoEmpaque" value="">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="costoEmpaque" value="">
                         </div>
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
-                        <bottom class=" btn btn-outline-secondary w-100 btn-Empaque">Guardar</bottom>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:350px;"><br></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-2">
+                        <bottom class=" btn btn-outline-danger btn-Envase-movil w-100 font-H4-bold">Guardar</bottom>
                     </div>
                 </div>
             </div>
@@ -2317,30 +2484,31 @@
     <!-- Tarjetas de empaque movil -->
     <div class="row cardEmpaque div-centrado">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(4)"></i>Empaque
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(4)"></i>Empaque
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15">
-                    Es la caja o envoltura con que se protegen las mercancías para su conservación, transporte y almacenamiento
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
+                    Es cualquier material que protege al producto con o sin envases con el fin de preservarlo.
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Costo total del Embalaje (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Costo total de sus empaques (US$)</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="costoEmbalaje" value="">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="costoEmpaque" value="">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
-                        <bottom class=" btn btn-outline-secondary w-100 btn-Embalaje">Guardar</bottom>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:350px;"><br></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-2">
+                        <bottom class=" btn btn-outline-danger w-100 btn-Empaque-movil font-H4-bold ">Guardar</bottom>
                     </div>
                 </div>
             </div>
@@ -2351,30 +2519,31 @@
     <!-- Tarjetas de embalaje movil -->
     <div class="row cardEmbalaje div-centrado">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(4)"></i>Embalaje
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(4)"></i>Embalaje
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-15">
-                    Es cualquier material que encierra o protege un articulo con o sin envase con el fin de preservarlo y facilitar su entrega al consumidor
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
+                    Es cualquier material que protege las mercancías para su conservación, transporte y almacenamiento
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Costo total de sus empaques (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Costo total del embalaje (US$)</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="costoEmpaque" value="">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="costoEmbalaje" value="">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
-                        <bottom class=" btn btn-outline-secondary w-100 btn-Empaque">Guardar</bottom>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:350px;"><br></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-2">
+                        <bottom class=" btn btn-outline-danger w-100 btn-Embalaje-movil font-H4-bold ">Guardar</bottom>
                     </div>
                 </div>
             </div>
@@ -2385,34 +2554,38 @@
     <!-- Tarjetas de exworks movil -->
     <div class="row cardExworks div-centrado incoterms">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(5)"></i>ExWorks
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(5)"></i>ExWorks
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">El vendedor/exportador se ocupa del embalaje de la mercancía y lo pone a disposición del comprador en sus propios almacenes. El comprador/importador, es quien asume todos los gastos y responsabilidades desde que la mercancía cruza almacén, antes de cargarla.</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
+                    El vendedor/exportador se ocupa del embalaje de la mercancía y lo pone a disposición del comprador en sus propios almacenes. El comprador/importador, es quien asume todos los gastos y responsabilidades desde que la mercancía cruza almacén, antes de cargarla.
+                </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
 
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-15 font-weight-bold text-center">La sumatoria de tus costos</div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-13">$ 23,450</div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-15 font-weight-bold">Ingresa tu porcentaje de utilidad bruta (%)</div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 font-color-black font-size-13">
-                    <input type="text" class="form-control font-H4-light-normal negro-promperu porcentaje" id="porcentaje">
+                <div class="col-lg-4 col-md-4 col-sm-7 col-xs-7 font-label negro-promperu text-align-left">La sumatoria de tus costos</div>
+                <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 font-H3-light negro-promperu padding-left-right-0">US$ 23,450</div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 "></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 "></div>
+                <div class="col-lg-3 col-md-3 col-sm-7 col-xs-7 font-label negro-promperu text-align-right">Ingresa tu porcentaje de utilidad bruta (%)</div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 font-color-black font-size-13">
+                    <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="porcentaje">
                 </div>
-                <div class="row montos">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 font-color-black font-size-15 font-weight-bold text-center">Monto total</div>
-                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 font-color-black font-size-15 font-weight-bold">$ 1,172.5</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-13">
-                        <button class="btn btn-outline-danger w-100 btn-Exwork" onclick="clickTabMovil(5)">Guardar</button>
-                    </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 "></div>
+                <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 font-label negro-promperu text-align-right">Monto total</div>
+                <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 negro-promperu font-H3-bold">US$ 1,172.5</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:330px;"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <button class="btn btn-outline-danger w-100 btn-Exwork-movil font-H4-bold">Guardar</button>
                 </div>
             </div>
         </div>
@@ -2422,73 +2595,81 @@
     <!-- Tarjetas de fas movil -->
     <div class="row cardFas div-centrado incoterms">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(5)"></i>FAS
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(5)"></i>FCA
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">El vendedor entrega la mercancía en el muelle de carga del puerto de origen y asume los gastos hasta la entrega, así como los tramites aduaneros de exportación. El comprador gestiona la carga a bordo, estiba, flete y demás gastos hasta entrega en destino, incluido el despacho de importación. </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Estiba de la carga (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="estiba" value="">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Transporte interno al puerto</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="transporte" value="">
-                    </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
+                    El vendedor entrega la mercancía en un punto acordado y asume costes y riesgos hasta la entrega de la mercancía en ese punto convenido, incluidos los costes del despacho de exportación. El comprador asume los gastos desde la carga a bordo hasta la descarga.
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Almacenamiento (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="almacenamiento" value="">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Estiba de la carga (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="estiba" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Comisión de Agente de Aduana (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="comision" value="">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Transporte interno al aeropuerto (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="transporte" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Emisión de Bill of Landing (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="emision" value="">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Almacenamiento (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="almacenamiento" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Handling (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="handling" value="">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Comisión de Agente de Aduana (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="comision" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Inspecciones (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="inspecciones" value="">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Emisión de Air Waybill (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="emision" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Otros gastos de embarque (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="otros" value="">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Handling (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="handling" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
-                    <bottom class="btn btn-outline-secondary div-right btn-Fas" onclick="clickTabMovil(5)">Guardar</bottom>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Inspecciones (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="inspecciones" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Otros gastos de embarque (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="otros" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;"><br></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btn-calcular">
+                        <button class="btn btn-outline-danger w-100 btn-Fas-movil font-H4-bold">Guardar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2498,27 +2679,41 @@
     <!-- Tarjetas de fob movil -->
     <div class="row cardFob div-centrado incoterms">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(5)"></i>FOB
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(5)"></i>CPT
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">El vendedor asume los gastos hasta la subida a bordo de la mercancía, momento en el que transmite también los riesgos, así como el despacho de exportación y gastos en origen. También se encarga de contratar el transporte si bien este corre por cuenta del comprador. El comprador se encarga de los costes del flete, descarga, trámites de importación y entrega en destino.</div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Estiba de la carga al buque (US$)</div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" placeholder="Selecciona" id="estiba2" value="">
-                    </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
+                    El vendedor asume los gastos hasta la entrega de la mercancía en el lugar convenido y se encarga de todos los gastos en origen, el despacho de exportación el transporte principal y gastos en destino. El comprador asume los trámites de importación y el riesgo pasa al comprador una vez se carga la mercancía al primer medio de transporte contratado por el vendedor.
                 </div>
-                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-2">
-                    <bottom class=" btn btn-outline-secondary text-center w-100 btn-Fob" onclick="clickTabMovil(5)">Guardar</bottom>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Ingrese valor de flete (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="costoEnvase" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px; ">
+                        <br>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <input class="input-checkbox" type="checkbox" name="chkMismoContacto" id="chkMismoContacto" checked="">
+                        <label for="chkMismoContacto" class="input-checkbox-lab font-H4-medium-n negro-promperu">Utilizar el flete promedio de la herramienta</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:180px; ">
+                        <br>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-2">
+                        <bottom class=" btn btn-outline-danger w-100 btn-Fob-movil font-H4-bold ">Guardar</bottom>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2528,34 +2723,36 @@
     <!-- Tarjetas de cfr movil -->
     <div class="row cardCfr div-centrado incoterms">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(5)"></i>CFR
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(5)"></i>CIP
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">El vendedor se hace cargo de todos los costes hasta que la mercancía llega al puerto de destino, incluido el despacho de exportación, los gastos en origen, el flete y generalmente los gastos de descarga. El comprador se ocupa de los trámites de la importación y el transporte hasta el destino.</div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Ingrese valor de flete</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="flete" value="">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2">
-                        <bottom class=" btn btn-outline-secondary text-center w-100 btn-CFR" onclick="clickTabMovil(5)">Guardar</bottom>
-                    </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
+                    El vendedor corre con los gastos hasta la entrega en el lugar convenido en destino, los gastos en origen, despacho de exportación, flete y seguro. El importador se encarga de los trámites de importación y la entrega a destino y asume el riesgo cuando se carga la mercancía en el primer medio de transporte.
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-xs-12 paddingControl">
-                    <input class="input-checkbox" type="checkbox" name="chkflete" id="chkflete">
-                    <label for="chkflete" class="input-checkbox-lab font-size-15">Utilizar el flete promedio de la herramienta</label>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Total de prima de seguros (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" placeholder="Selecciona" id="flete" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:268px; "></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+                        <bottom class=" btn btn-outline-danger btn-CFR-movil w-100 font-H4-bold">Guardar</bottom>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:35px; ">
+                        <br>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2563,21 +2760,22 @@
     </div>
     <!-- Fin tarjetas de cfr movil -->
     <!-- Tarjetas de cif movil -->
-    <div class="row cardCif div-centrado incoterms">
-        <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+    <!--<div class="row cardCif div-centrado incoterms">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(5)"></i>CIF
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(5)"></i>CIF
                 </div>
             </div>
-            <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">El vendedor asume como en CFR todos los gastos hasta la llegada al puerto de destino incluyendo despacho de exportación, gastos en origen, flete y seguro. El comprador es quien asume los gastos de importación y el transporte hasta destino.</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
+                    El vendedor corre con los gastos hasta la entrega en el lugar convenido en destino, los gastos en origen, despacho de exportación, flete y seguro. El importador se encarga de los trámites de importación y la entrega a destino y asume el riesgo cuando se carga la mercancía en el primer medio de transporte.
+                </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Total de prima de seguros (US$)</div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -2591,60 +2789,89 @@
                 </div>
             </div>
         </div>
-        <!-- </div> -->
-    </div>
+    </div> -->
     <!-- Fin tarjetas de cif movil -->
     <!-- Tarjetas de dap movil -->
     <div class="row cardDap div-centrado incoterms">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
-                <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(5)"></i>DAP
+            <div class="card-header pb-0 pt-3 card-header-movil">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
+                    <div class="pt-2">
+                        <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(5)"></i>DAP
+                    </div>
                 </div>
             </div>
-            <!-- End Toggle Button -->
-        </div>
-        <div class="card-body pt-sm-3 pt-0">
+            <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">El vendedor asume todos los gastos y riesgos desde origen y el comprador únicamente debe ocuparse del despacho de importación, pago de impuestos y de la descarga de la mercadería. </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Descarga en el local del cliente (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="puerto" value="">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Otros gastos en destino (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="terminal" value="">
-                    </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
+                    El vendedor asume todos los gastos y riesgos desde origen y el comprador únicamente debe ocuparse del despacho de importación, pago de impuestos y de la descarga de la mercadería. 
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">THC (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="thc" value="">
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Descarga en el local del cliente (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="puerto" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Entrega de la carga (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="carga" value="">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px; "></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Otros gastos en destino (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="terminal" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Otros gastos (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="otrosGastos" value="">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px; "></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Entrega de la carga (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="carga" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-6 mt-2">
-                        <bottom class=" btn btn-outline-secondary div-right w-50 btn-DAP" onclick="clickTabMovil(5)">Guardar</bottom>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px; "></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Otros gastos (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="otrosGastos" value="">
+                        </div>
+                    </div>
+                    <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Descarga en el local del cliente (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="puerto" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Otros gastos en destino (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="terminal" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">THC (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="thc" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Entrega de la carga (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="carga" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Otros gastos (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="otrosGastos" value="">
+                        </div>
+                    </div>-->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:67px; "></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-2 btn-calcular">
+                        <bottom class=" btn btn-outline-danger btn-DAP-movil w-100 font-H4-bold">Guardar</bottom>
                     </div>
                 </div>
             </div>
@@ -2655,35 +2882,38 @@
     <!-- Tarjetas de dpu movil -->
     <div class="row cardDpu div-centrado incoterms">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(5)"></i>DPU
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(5)"></i>DPU
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">El vendedor asume los costes y riesgos originados en origen, embalaje, carga, despacho de exportación, flete, descarga en destino y entrega en el punto acordado. El comprador asume los tramites del despacho de importación.</div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Descarga en el local del cliente (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="cliente" value="">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Otros gastos en destino (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="destino" value="">
-                    </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
+                    El vendedor asume los costes y riesgos originados en origen, embalaje, carga, despacho de exportación, flete, descarga en destino y entrega en el punto acordado. El comprador asume los tramites del despacho de importación.
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2">
-                        <bottom class=" btn btn-outline-secondary w-100 btn-DPU" onclick="clickTabMovil(5)">Guardar</bottom>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Descarga en el local del cliente (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="cliente" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px; "></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Otros gastos en destino (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="destino" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:67px; "></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-2 btn-calcular">
+                        <bottom class=" btn btn-outline-danger w-100 btn-DPU-movil font-H4-bold">Guardar</bottom>
                     </div>
                 </div>
             </div>
@@ -2694,42 +2924,45 @@
     <!-- Tarjetas de ddp movil -->
     <div class="row cardDdp div-centrado incoterms">
         <!-- <div class="card"> -->
-        <div class="card-header pb-0 pt-3 ">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil">
+        <div class="card-header pb-0 pt-3 card-header-movil">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white text-center background-red card-height-movil">
                 <div class="pt-2">
-                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras" onclick="clickTabMovil(5)"></i>DDP
+                    <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white btn-atras" onclick="clickTabMovil(5)"></i>DDP
                 </div>
             </div>
             <!-- End Toggle Button -->
         </div>
-        <div class="card-body pt-sm-3 pt-0">
+        <div class="card-body pt-sm-3 pt-0" style="background-color:#f6f7f9;">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">El vendedor asume todos los gastos y riesgos desde origen hasta la entrega en el destino final, incluidos los despachos de exportación e importación, flete y pago de impuestos. El comprador solo debe recibir la mercancía y/o descargarla si fuera el caso.</div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Impuestos a pagar (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="impuesto" value="">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Agente de aduana (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="aduana" value="">
-                    </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-lightn negro-promperu">
+                    El vendedor asume todos los gastos y riesgos desde origen hasta la entrega en el destino final, incluidos los despachos de exportación e importación, flete y pago de impuestos. El comprador solo debe recibir la mercancía y/o descargarla si fuera el caso.
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13 font-weight-bold">Otros gastos (US$)</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" class="form-control font-H4-light-normal negro-promperu" id="other-gastos" value="">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Impuestos a pagar (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="impuesto" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-black font-size-13">
-                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2">
-                        <bottom class=" btn btn-outline-secondary w-100 btn-DDP" onclick="clickTabMovil(5)">Guardar</bottom>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px; "></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Agente de Aduana (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="aduana" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px; "></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 font-color-black font-size-13">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-label negro-promperu">Otros gastos (US$)</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control font-H4-light-normal negro-promperu background-gris-opaco padding-left-right-0" id="other-gastos" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px; "></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-2 btn-calcular">
+                        <bottom class=" btn btn-outline-danger btn-DDP-movil w-100 font-H4-bold">Guardar</bottom>
                     </div>
                 </div>
             </div>

@@ -2259,9 +2259,50 @@ img {
     height: 100px;
     background-repeat: no-repeat !important;
 }
-
+.img-div-1 {
+    background: url(../img/contenedor1.png);
+    background-size: 100% 100% !important;
+    height: 100px;
+    background-repeat: no-repeat !important;
+}
+.img-div-2 {
+    background: url(../img/contenedor2.png);
+    background-size: 100% 100% !important;
+    height: 100px;
+    background-repeat: no-repeat !important;
+}
+.img-div-3 {
+    background: url(../img/contenedor3.png);
+    background-size: 100% 100% !important;
+    height: 100px;
+    background-repeat: no-repeat !important;
+}
 .img-div2 {
-    background: url(../img/Costo/container-white.png) !important;
+    background: url(../img/contenedorblanco-1.png) !important;
+    background-size: 100% 100% !important;
+    height: 100px;
+    background-repeat: no-repeat !important;
+}
+.div-img-1-m-blanco{
+    background: url(../img/contenedorblanco-1.png) !important;
+    background-size: 100% 100% !important;
+    height: 100px;
+    background-repeat: no-repeat !important;
+}
+.img-div-1-m{
+    background: url(../img/contenedor1-m.png);
+    background-size: 100% 100% !important;
+    height: 100px;
+    background-repeat: no-repeat !important;
+}
+.img-div-2-m{
+    background: url(../img/contenedor2-m.png);
+    background-size: 100% 100% !important;
+    height: 100px;
+    background-repeat: no-repeat !important;
+}
+.img-div-3-m{
+    background: url(../img/contenedor3-m.png);
     background-size: 100% 100% !important;
     height: 100px;
     background-repeat: no-repeat !important;
@@ -3257,7 +3298,34 @@ border:none;
     margin-left: 2%!important;
     margin-right: 2% !important;
 }
+.margin-left-4{
+    margin-left: 4%!important;
+    margin-right: 4% !important;
+}
+.padding-4{
+    padding-left: 2%!important;
+    padding-right: 5% !important;
+}
 .acordion-linea-movil{
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: 4px;
+}
+.height-4{
+    height:4px;
+}
+.card-header-movil{
+    padding:0 !important;
+    font-family: "Helvetica Neue LT Std bold" !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    
+}
+.card-header-movil>.card-height-movil{
+    padding-top:7px !important;
+}
+.display-inline-grid{
+    display: inline-grid !important;
 }
