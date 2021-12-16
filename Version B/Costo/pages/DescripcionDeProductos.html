@@ -143,7 +143,7 @@
             </div>
         </nav>
         <!-- End Navbar -->
-        <div class="container-fluid py-4 container-principal padding-left-right-0 padding-top-principal-detalle">
+        <div class="container-fluid py-4 container-principal padding-left-right-0 padding-top-principal-detalle" style = "height: 100vh">
             <!-- Inicio de vista principal -->
             <div id="view-tabs">
                 <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-lg-0 fit-content margin-left-right-0">
@@ -191,7 +191,7 @@
                                             </ul>
                                         </div>
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 padding-card sinPaddingTop div-card-busqueda">
-                                            <section id="tab-1" class="tab-body entry-content active active-content sectionContent" >
+                                            <section id="tab-1" class="tab-body entry-content  active active-content sectionContent" >
                                                 <div class="row row-content-tab margin-left-right-0" >
                                                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-left  background-titulo-tab">
                                                         <div class="mostrar-desktop contenedor-left-tab1">
@@ -282,8 +282,11 @@
                                                                         <div class="card card-empresa card-unidad-medida" id="card-distribuidor" style="width: 100%; max-width: 335px;">
                                                                             <div class="row" id="comboPais">
                                                                                 <option value="0" onclick="SeleccionarUnidadMedida('Kilogramo')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Kilogramo</option>
-                                                                                <option value="1" onclick="SeleccionarUnidadMedida('Metro')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Metro</option>
+                                                                                <option value="1" onclick="SeleccionarUnidadMedida('Metros')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Metros</option>
                                                                                 <option value="2" onclick="SeleccionarUnidadMedida('Onza')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Onza</option>
+                                                                                <option value="2" onclick="SeleccionarUnidadMedida('Quintal')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Quintal</option>
+                                                                                <option value="2" onclick="SeleccionarUnidadMedida('Tonelada')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Tonelada</option>
+                                                                                <option value="2" onclick="SeleccionarUnidadMedida('Unidad')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Unidad</option>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -341,8 +344,11 @@
                                                                         <div class="card card-empresa card-unidad-medida" id="card-distribuidor" style="width: 100%; max-width: 335px;">
                                                                             <div class="row" id="comboPais">
                                                                                 <option value="0" onclick="SeleccionarUnidadMedida('Kilogramo')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Kilogramo</option>
-                                                                                <option value="1" onclick="SeleccionarUnidadMedida('Metro')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Metro</option>
+                                                                                <option value="1" onclick="SeleccionarUnidadMedida('Metros')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Metros</option>
                                                                                 <option value="2" onclick="SeleccionarUnidadMedida('Onza')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Onza</option>
+                                                                                <option value="2" onclick="SeleccionarUnidadMedida('Quintal')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Quintal</option>
+                                                                                <option value="2" onclick="SeleccionarUnidadMedida('Tonelada')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Tonelada</option>
+                                                                                <option value="2" onclick="SeleccionarUnidadMedida('Unidad')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Unidad</option>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -365,7 +371,7 @@
                                                     </div>
                                                 </div>
                                             </section>
-                                            <section id="tab-2" class="tab-body entry-content">
+                                            <section id="tab-2" class="tab-body entry-content" style="max-width: 1366px !important;">
                                                 <div class="row">
                                                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab">
                                                         <div class="mostrar-desktop contenedor-left-tab1">
@@ -725,11 +731,11 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                                                <div class="row mostrar-desktop">
-                                                                    <div class="col-lg-7 col-md-6 col-xs-12 col-sm-12 text-right mt-2">
+                                                                <div class="row mostrar-desktop" style="padding-right: 0px !important;">
+                                                                    <!-- <div class="col-lg-7 col-md-6 col-xs-12 col-sm-12 text-right mt-2">
                                                                         <br>
-                                                                    </div>
-                                                                    <div class="col-lg-5 col-md-6 col-xs-12 col-sm-12 text-right mt-2 btn-calcular mostrar-desktop" style="margin-bottom: 0 !important;">
+                                                                    </div> -->
+                                                                    <div class="col-12 text-right mt-2 btn-calcular mostrar-desktop" style="margin-bottom: 0 !important; padding-right: 0px !important;">
                                                                         <bottom class="btn btn-danger w-100 font-H4-bold" onclick="clickTab(3)">Siguiente paso</bottom>
                                                                     </div>
                                                                 </div>
@@ -746,7 +752,7 @@
                                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height: 62px"></div>
                                                     </div>
                                             </section>
-                                            <section id="tab-3" class="tab-body entry-content">
+                                            <section id="tab-3" class="tab-body entry-content" style="max-width: 1366px !important;">
                                                 <div class="row">
                                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab padding-4 mostrar-movil">
                                                         
@@ -762,7 +768,7 @@
                                                         Ingresa los costos y gastos que correspondan en cada una de las secciones
                                                     </div>
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris mostrar-desktop margin-left-right-45" style="margin-left:5% !important;"></div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris mostrar-desktop margin-left-right-45 lineOculto" style="margin-left:5% !important;"></div>
                                                     
                                                     <div class="desktop mostrar-desktop padding-left-right-0 margin-left-rem">
                                                         <div id="CostoDirecto">
@@ -782,7 +788,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="CostoDirectoDetalle" class="padding-left-right-0">
+                                                        <div id="CostoDirectoDetalle" class="padding-left-right-0" style="max-width: 1275px !important; margin-left: 38px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -827,8 +833,11 @@
                                                                                             <div class="card card-empresa card-unidad-medida" id="card-distribuidor" style="width: 100%; max-width: 335px;">
                                                                                                 <div class="row" id="comboPais">
                                                                                                     <option value="0" onclick="SeleccionarUnidadMedida('Kilogramo')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Kilogramo</option>
-                                                                                                    <option value="1" onclick="SeleccionarUnidadMedida('Metro')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Metro</option>
+                                                                                                    <option value="1" onclick="SeleccionarUnidadMedida('Metros')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Metros</option>
                                                                                                     <option value="2" onclick="SeleccionarUnidadMedida('Onza')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Onza</option>
+                                                                                                    <option value="2" onclick="SeleccionarUnidadMedida('Quintal')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Quintal</option>
+                                                                                                    <option value="2" onclick="SeleccionarUnidadMedida('Tonelada')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Tonelada</option>
+                                                                                                    <option value="2" onclick="SeleccionarUnidadMedida('Unidad')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Unidad</option>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -907,7 +916,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris margin-left-right-45" style="margin-right:5% !important;"></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris margin-left-right-45 lineOculto" style="margin-right:5% !important;"></div>
                                                         <div id="CostoIndirecto">
                                                             <div class="div-card-busqueda">
                                                                 <div class="row card-busqueda">
@@ -928,7 +937,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="CostoIndirectoDetalle" class="padding-left-right-0">
+                                                        <div id="CostoIndirectoDetalle" class="padding-left-right-0" style="max-width: 1275px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -1002,7 +1011,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris margin-left-right-45" style="margin-right:5% !important;"></div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris margin-left-right-45 lineOcutlo" style="margin-right:5% !important;"></div>
                                                         <div id="GastoAdministrativo">
                                                             <div class="div-card-busqueda">
                                                                 <div class="row card-busqueda">
@@ -1023,7 +1032,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="GastoAdministrativoDetalle" class="padding-left-right-0">
+                                                        <div id="GastoAdministrativoDetalle" class="padding-left-right-0" style="max-width: 1275px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -1082,7 +1091,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="GastoFinancieroDetalle" class="padding-left-right-0">
+                                                        <div id="GastoFinancieroDetalle" class="padding-left-right-0" style="max-width: 1275px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -1162,7 +1171,7 @@
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris mostrar-desktop margin-left-right-45 margin-left-rem" style="margin-left:5% !important; margin-right:3% !important;"></div>
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                                                     <!-- </div> -->
-                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-desktop btn-calcular">
+                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-desktop btn-calcular" style="padding-right: 40px !important;">
                                                         <bottom class="btn btn-danger div-right font-H4-bold siguiente-paso3" >Siguiente paso</bottom>
                                                     </div>
                                                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-movil text-center">
@@ -1170,10 +1179,10 @@
                                                     </div>
                                                 </div>
                                             </section>
-                                            <section id="tab-4" class="tab-body entry-content">
+                                            <section id="tab-4" class="tab-body entry-content" style="max-width: 1366px !important;">
                                                 <div class="row">
                                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab mostrar-desktop">
-                                                        <div class="mostrar-desktop font-h1-bold-normal negro-promperu margin-left-right-45 margin-left-rem" >Selecciona tus envases, empaques y embalaje</div>
+                                                        <div class="mostrar-desktop font-h1-bold-normal negro-promperu margin-left-right-45 margin-left-rem" style="padding-left: 20px !important;">Selecciona tus envases, empaques y embalaje</div>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab mostrar-movil padding-4">
                                                         <div class="mostrar-movil font-H2-bold negro-promperu titulo-tab-movil" >Selecciona tus envases, empaques y embalaje</div>
@@ -1206,7 +1215,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="EnvaseDetalle" class="padding-left-right-0">
+                                                        <div id="EnvaseDetalle" class="padding-left-right-0"  style="max-width: 1300px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -1260,7 +1269,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="EmpaqueDetalle" class="padding-left-right-0">
+                                                        <div id="EmpaqueDetalle" class="padding-left-right-0"  style="max-width: 1300px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -1314,7 +1323,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="EmbalajeDetalle" class="padding-left-right-0">
+                                                        <div id="EmbalajeDetalle" class="padding-left-right-0" style="max-width: 1300px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -1377,7 +1386,7 @@
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris margin-left-right-45 mostrar-desktop"></div>
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                                                     <!-- </div> -->
-                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-desktop btn-calcular">
+                                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-desktop btn-calcular" style="padding-right: 40px !important">
                                                         <bottom class="btn btn-danger div-right font-H4-bold siguiente-paso4">Siguiente paso</bottom>
                                                     </div>
                                                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-2 mostrar-movil text-center">
@@ -1385,10 +1394,10 @@
                                                     </div>
                                                 </div>
                                             </section>
-                                            <section id="tab-5" class="tab-body entry-content">
+                                            <section id="tab-5" class="tab-body entry-content" style="max-width: 1366px !important;">
                                                 <div class="row">
                                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab mostrar-desktop">
-                                                        <div class="mostrar-desktop font-h1-bold-normal negro-promperu margin-left-right-45 margin-left-rem" >Agrega tus Incoterms</div>
+                                                        <div class="mostrar-desktop font-h1-bold-normal negro-promperu margin-left-right-45 margin-left-rem" style="padding-left: 20px !important;" >Agrega tus Incoterms</div>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-left font-H2-bold negro-promperu background-titulo-tab mostrar-movil padding-4">
                                                         <div class="mostrar-movil font-H2-bold negro-promperu titulo-tab-movil">Agrega tus Incoterms</div>
@@ -1421,7 +1430,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="ExWorksDetalle" class="padding-left-right-0">
+                                                        <div id="ExWorksDetalle" class="padding-left-right-0" style="max-width: 1300px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -1483,7 +1492,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="FasDetalle" class="padding-left-right-0">
+                                                        <div id="FasDetalle" class="padding-left-right-0" style="max-width: 1300px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -1646,7 +1655,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="FobDetalle" class="padding-left-right-0">
+                                                        <div id="FobDetalle" class="padding-left-right-0" style="max-width: 1300px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -1707,7 +1716,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="CFRDetalle" class="padding-left-right-0">
+                                                        <div id="CFRDetalle" class="padding-left-right-0" style="max-width: 1300px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -1764,7 +1773,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="CIFDetalle" class="padding-left-right-0">
+                                                        <div id="CIFDetalle" class="padding-left-right-0" style="max-width: 1300px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -1868,7 +1877,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="DAPDetalle" class="padding-left-right-0">
+                                                        <div id="DAPDetalle" class="padding-left-right-0" style="max-width: 1300px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -1928,7 +1937,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="DDPDetalle" class="padding-left-right-0">
+                                                        <div id="DDPDetalle" class="padding-left-right-0" style="max-width: 1300px !important; margin-left: 45px;">
                                                             <div class="div-card-busqueda background-gris-opaco">
                                                                 <div class="row card-busqueda">
                                                                     <div class="">
@@ -2211,8 +2220,11 @@
                         <div class="card card-empresa card-unidad-medida" id="card-distribuidor" style="width: 100%; max-width: 335px;">
                             <div class="row" id="comboPais">
                                 <option value="0" onclick="SeleccionarUnidadMedida('Kilogramo')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Kilogramo</option>
-                                <option value="1" onclick="SeleccionarUnidadMedida('Metro')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Metro</option>
+                                <option value="1" onclick="SeleccionarUnidadMedida('Metros')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Metros</option>
                                 <option value="2" onclick="SeleccionarUnidadMedida('Onza')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Onza</option>
+                                <option value="2" onclick="SeleccionarUnidadMedida('Quintal')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Quintal</option>
+                                <option value="2" onclick="SeleccionarUnidadMedida('Tonelada')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Tonelada</option>
+                                <option value="2" onclick="SeleccionarUnidadMedida('Unidad')" class="option-select negro-promperu font-H4-light-normal opCiudad selector">Unidad</option>
                             </div>
                         </div>
                     </div>
