@@ -260,11 +260,9 @@
                                 <a href="../pages/Mostrar_rutas.html"><span class="badge rounded-pill bg-secondary font-H5-light negro-promperu margin-left-right-badge">Santiago - SCL</span></a>
                                 <a href="../pages/Mostrar_rutas.html"><span class="badge rounded-pill bg-secondary font-H5-light negro-promperu margin-left-right-badge">Paris - CDG</span></a>
                                 <a href="../pages/Mostrar_rutas.html"><span class="badge rounded-pill bg-secondary font-H5-light negro-promperu margin-left-right-badge">Pekin - PEK</span></a>
-                                
                             </div>
                         </div>
-                    </div>
-                    
+                    </div>                    
                 </div>
             </div>
             <div style="background-color: #f6f7f9;">
@@ -276,7 +274,7 @@
                             <div class="rem-1 font-H4-light negro-promperu mostrar-desktop">
                                 Selecciona un país de destino y conoce la ruta de viaje
                             </div>
-                            <div class="rem-1 font-H5-light-min negro-promperu mostrar-movil">
+                            <div class="rem-1 font-H5-light negro-promperu mostrar-movil ">
                                 Selecciona un país de destino y conoce la ruta de viaje
                             </div>
                         </div>
@@ -682,10 +680,24 @@
                 <div class="mostrar-movil margin-left-right-0">
                     <div class="col-lg-12 col-md-12 col-xs-12 padding-left-right-0 mapa-mundo">
                         <div class="row margin-left-right-0">
-                            <img src="../assets/img/Ruta_Aerea/Frame 349.png" alt="mapa">
-                        </div>
+                            <img src="../assets/img/mapa-aereas-mobil.png" alt="mapa">
+                        </div> 
                     </div>
                     <div class="col-lg-12 padding-left-right-0"><br><br><br></div>
+                    <!-- <div>
+                        <div style="padding-left: 20px !important; margin: 0px !important;">
+                            <div style="position: absolute; width: 50px; height: 100px; right: 0 !important; z-index: 100; margin-top: 200px; bottom: 0vh !important;
+                             background-color: #C4122F;">
+                             <div class="col-12 text-center" style="height: 50px; border-bottom: 2px solid white; cursor: pointer;">
+                                <img src="../assets/icon/icons/plus-rutas.svg" style="width: 30px !important; margin-top: 8px;" alt="contenedor">
+                             </div>
+                             <div class="col-12 text-center" style="height: 50px; cursor: pointer;">
+                                <img src="../assets/icon/icons/minus-rutas.svg" style="width: 30px !important; margin-top: 20px;" alt="contenedor">
+                             </div>
+                            </div>
+                            <img src="../assets/img/mapa-aereas-mobil.png" style="width: 100%;" alt=" mapa-movil" class="mapa-movil ">
+                        </div>
+                    </div> -->
                 </div>
                 
             </div>
@@ -994,73 +1006,6 @@
                 </div>
                 <div class="select-destino-ciudad" id="select-destino-ciudad">
                     <div class="row mt-4">
-                        <div class="col-2 div-left ordenar" id="retornarContinente">
-                            <i class="fas fa-angle-left font-color-red return-pais" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-10 div-left sub-titulo-movil font-color-black font-weight-bold">Puertos de Alemania</div>
-                    </div>
-                    <div class="col-6 div-left mt-3">
-                        <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="01">Berlín - BER </option>
-                        <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light-300" value="02">Frankfurt - FRA</option>
-                    </div>
-                </div>
-            </div>
-            <!-- <div id="PaisDestino-movil" class="PaisDestino-movil">
-                <div class="col-lg-4 col-md-6 col-xs-12 position-relative ordenar">
-                    <label class="font-label">País de destino</label>
-                    <input type="text" class="form-control" id="PaisDestino" value="" /><i class="fas fa-angle-down icon-select"></i>
-                </div>
-                <div id="select-destino-pais">
-                    <div class="row card-contenido-select mt-4">
-                        <div class="col-12 text-line-title font-color-black font-label">Paises frecuentes:</div>
-                        <div class="col-7 div-left mt-3">
-                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light " value="1">Estados Unidos</option>
-                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light " value="2">Chile</option>
-                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light " value="3">China</option>
-                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light " value="4">Italia</option>
-                        </div>
-                        <div class="col-5 div-left mt-3">
-                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light " value="5">España</option>
-                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light " value="6">Francia</option>
-                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light " value="7">Holanda</option>
-                            <option class="font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light " value="8">México</option>
-                        </div>
-                        <div class="hr background-gris mt-3"></div>
-                        <div class="col-12 text-line-title mt-4 font-color-black font-label">Paises por continentes</div>
-                        <div class="row text-title-select-movil font-color-black ordenar mt-4">
-                            <div class="col-12 d-flex" style="justify-content: space-between;">
-                                <div class="col-2 div-left continente font-H5-light select-cmb-paisContinente-movil padding-select-2" style="font-weight: 700 !important; width: 70px !important;" id="America" value="01">Ámerica</div>
-                                <div class="col-2 div-left continente font-H5-light padding-select-2" id="Europa" value="02">Europa</div>
-                                <div class="col-2 div-left continente font-H5-light padding-select-2" id="Asia" value="03">Asia</div>
-                                <div class="col-2 div-left continente font-H5-light padding-select-2" id="Africa" value="04">Africa</div>
-                                <div class="col-2 div-left continente font-H5-light padding-select-2" id="Oceania" value="05">Oceania</div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div id="conAmerica">
-                                <div class="col-6 div-left mt-4">
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="01">Argentina</option>
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="02">Brasil</option>
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="03">Cánada</option>
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="04">Chile</option>
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="05">Colombia</option>
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="06">Costa Rica</option>
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="07">Estados Unidos</option>
-                                </div>
-                                <div class="col-6 div-left mt-4">
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="08">Guatemala</option>
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="09">Homduras</option>
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="10">México</option>
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="11">Nicaragua</option>
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="12">Pánama</option>
-                                    <option class="col-6 font-weight-bold font-color-black option-select opDestinoMovil2 mt-2 font-H4-light" value="13">Venezuela</option>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="select-destino-ciudad" id="select-destino-ciudad">
-                    <div class="row mt-4">
                         <div class="col-2 div-left ordenar" id="retornarContinente" style="width: 50px !important;">
                             <i class="fas fa-angle-left font-color-red return-pais"></i>
                         </div>
@@ -1071,7 +1016,7 @@
                         <option class="font-weight-bold font-color-black font-size-13 opDestCiudad mt-2 font-H4-light" value="02">Frankfurt - FRA</option>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
     <!-- Fin de buscador de país de destino Vista-Movil -->
@@ -1109,7 +1054,7 @@
                     <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
                         <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;">Apellidos</label>
                         <input type="text" class="form-control" placeholder="Apellidos" style="padding-left: 3px !important;">
-                    </div>
+                    </div> 
                     <!-- <div class="col-12" style="height: 50px !important;"></div> -->
                     <div class="col-md-6 col-lg-6 col-12  div-left padding-left-right-1" style="padding-bottom: 20px !important;">
                         <label class="font-label-400 negro-promperu">Correo electrónico</label>

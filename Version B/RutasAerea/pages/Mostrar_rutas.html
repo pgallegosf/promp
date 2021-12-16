@@ -137,9 +137,8 @@
                 <div class="row mt-4 div-centrado div-principal-busqueda" style="margin-top:0 !important;">
                     <div class="col-lg-12 mb-lg-0 padding-left-right-0 div-card-busqueda">
                         <div class="card-busqueda" style="max-width: 1150px">
-                            <div class="row px-2 p-5 overflow-hidden margin-left-right-0">
-                                <div id="view-busqueda">
-                                    
+                            <div class="row overflow-hidden margin-left-right-0">
+                                <div id="view-busqueda">                                    
                                     <div class="d-flex align-items-center justify-content-between padding-left-right-0">
                                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5">
                                             <h4 class="negro-promperu min-titulo font-h1-bold text-align-left mostrar-desktop">Lima - LIM</h4> 
@@ -148,11 +147,12 @@
                                             <span class="span  font-label negro-promperu mostrar-movil">Perú</span>
                                         </div>
                                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-2 text-center">
-                                            <div class="icon"> 
+                                            <!-- <div class="icon"> 
                                                 <svg width="59" height="37" viewBox="0 0 59 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M42.1846 0.990479H42.0289L37.5056 5.51378L46.6884 14.9495H0.803711V21.7101H45.9102L37.35 30.9902L42.0776 35.7177H42.1943L58.1864 17.8288L42.1846 0.990479Z" fill="#C4122F"/>
                                                 </svg>
-                                            </div>
+                                            </div> -->
+                                            <img src = "../assets/icon/icons/arrow-red.svg" style="width: 48px;"/>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 text-align-right">
                                             <h4 class="negro-promperu min-titulo font-h1-bold mostrar-desktop">Pekín - PEK</h4>
@@ -172,22 +172,180 @@
                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                             <div class="row text-align-right mostrar-desktop">
                                                 <div class="rojo-promperu font-H4-light-400 text-align-right"><span class="negro-promperu font-H4-bold-700">Ordenar por:  </span>Tiempo de viaje <i class="fas fa-chevron-down mx-2 ordenar"></i></div>
-                                                <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2negro-promperu font-weight-bold font-H4-bold-700">Ordenar por:</div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 rojo-promperu font-H4-light-400">Tiempo de viaje <i class="fas fa-chevron-down mx-2 ordenar"></i></div>-->
                                             </div>
                                             <div class="row text-align-left mostrar-movil" style="padding-top: 40px;">
                                                 <div class="rojo-promperu font-H4-light-normal text-align-left"><span class="negro-promperu font-H4-bold ">Ordenar por:  </span>Tiempo de viaje <i class="fas fa-chevron-down mx-2 ordenar"></i></div>
-                                                <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 div-left mt-2negro-promperu font-weight-bold font-H4-bold-700">Ordenar por:</div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 rojo-promperu font-H4-light-400">Tiempo de viaje <i class="fas fa-chevron-down mx-2 ordenar"></i></div>-->
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                    <div class="scroll-card" style="padding-left: 15px !important;">
+                                        <div class="mostrar-movil" style="position: absolute; width: 38px; height: 76px; right: 0 !important; z-index: 100; margin-top: 96px;
+                                        border-radius: 50px 0px 0px 50px; background-color: #C4122F;">
+                                            <span class="flecha derecha"></span>
+                                        </div>
+                                    <div class="primera-tarjeta mostrar-movil">
+                                        <div class=" ol-lg-8 card margin-bottom-40 card-personalized">
+                                            <div class="card-header pb-0 p-3 card-header-titulo">
+                                                <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Sudamérica - Asia</h5>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <div class="mostrar-desktop">
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 car-body-title font-label-400">Número de escalas</div><br>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 car-body-descripcion font-h3-light-300">7 escalas</div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 car-body-title font-label-400">Días de tránsito</div><br>
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 car-body-descripcion font-h3-light-300">27 días</div>
+                                                        </div>
+                                                        <div class="col-lg-3"></div>
+                                                        <div class="col-lg-3">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                                <button class="btn btn-danger mt-n2 font-H4-bold" style="max-width: 160px; font-size: 18px; margin-top: 18px !important; " onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mostrar-movil">
+                                                    <div class="row">
+                                                        <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
+                                                        <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 16px;">3 días 1 hrs 24 min</div>
+                                                        <div class="col-12 div-left car-body-title font-label-400">Nro. de escalas</div>
+                                                        <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 32px;">2 escalas</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
+                                                     <button class="btn btn-danger mt-n2 mostrar-movil font-H4-bold-700 " style="height: 50px !important; width: 150px !important; margin-bottom: 0px !important;" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mostrar-movil mostrar-movil">
+                                        <div class="card card-centrado" style="width: 249px !important; height: 280px !important;">
+                                            <div class="card-header pb-0 p-3 card-header-titulo">
+                                                <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Sudamérica - Asia</h5>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <div class="mostrar-movil">
+                                                    <div class="row">
+                                                        <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
+                                                        <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 16px;">3 días 1 hrs 24 min</div>
+                                                        <div class="col-12 div-left car-body-title font-label-400">Nro. de escalas</div>
+                                                        <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 32px;">2 escalas</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"></div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
+                                                    <button class="btn btn-danger mt-n2 mostrar-movil font-H4-bold-700 " style="height: 50px !important; width: 150px !important; margin-bottom: 0px !important;" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mostrar-movil mostrar-movil">
+                                        <div class="card card-centrado" style="width: 249px !important; height: 280px !important;">
+                                            <div class="card-header pb-0 p-3 card-header-titulo">
+                                                <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Sudamérica - Asia</h5>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <div class="mostrar-movil">
+                                                    <div class="row">
+                                                        <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
+                                                        <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 16px;">3 días 1 hrs 24 min</div>
+                                                        <div class="col-12 div-left car-body-title font-label-400">Nro. de escalas</div>
+                                                        <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 32px;">2 escalas</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"></div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
+                                                    <button class="btn btn-danger mt-n2 mostrar-movil font-H4-bold-700 " style="height: 50px !important; width: 150px !important; margin-bottom: 0px !important;" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mostrar-movil mostrar-movil">
+                                        <div class="card card-centrado" style="width: 249px !important; height: 280px !important;">
+                                            <div class="card-header pb-0 p-3 card-header-titulo">
+                                                <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Sudamérica - Europa</h5>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <div class="mostrar-movil">
+                                                    <div class="row">
+                                                        <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
+                                                        <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 16px;">3 días 1 hrs 24 min</div>
+                                                        <div class="col-12 div-left car-body-title font-label-400">Nro. de escalas</div>
+                                                        <div class="col-12 div-left car-body-descripcion font-H4-light mostrar-movil" style="padding-top: 16px; padding-bottom: 32px;">2 escalas</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"></div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
+                                                    <button class="btn btn-danger mt-n2 mostrar-movil font-H4-bold-700 " style="height: 50px !important; width: 150px !important; margin-bottom: 0px !important;" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado" style="margin-left: auto; margin-right: auto;">
+                                        <button class="btn mt-n2 mostrar-movil font-H4-bold-700n" style="width: 320px;border: 2px solid #C4122F; box-sizing: border-box; border-radius: 15px; color: #C4122F; margin: auto;">Volver a buscar</button>
+                                        <br><br>
+                                    </div>
+                                </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <div class="">
-                                            <div class="primera-tarjeta pb-3">
-                                                <div class="card card-mostrar-rutas">
-                                                    <div class="card-header pb-0 p-3 card-header-titulo">
+                                            <div class="primera-tarjeta pb-3 mostrar-desktop">
+                                                <div class="card card-mostrar-rutas mostrar-desktop">
+                                                    <div class="card-header p-3 card-header-titulo" style="padding-bottom: 1px !important;">
+                                                        <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Sudamérica - Europa</h5>
+                                                    </div>
+                                                    <div class="card-body p-3">
+                                                        <div class="mostrar-desktop">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-4">
+                                                                    <div class="col-lg-12 font-label negro-promperu pb-2">
+                                                                        Tiempo de viaje
+                                                                    </div>
+                                                                    <div class="col-lg-12 font-H4-light negro-promperu">
+                                                                        1 día 8 hrs. 24 min
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="col-lg-12 font-label negro-promperu pb-2">
+                                                                        Nro. de escalas:
+                                                                    </div>
+                                                                    <div class="col-lg-12 font-H4-light negro-promperu">
+                                                                        Sin escalas
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4" style="display: flex;justify-content: end;position: relative;bottom: -10px; right: 23px;">
+                                                                    <button class="btn btn-danger font-H4-bold" style="max-width:151px;" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mostrar-movil">
+                                                            <div class="row">
+                                                                <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
+                                                                <div class="col-4 div-left car-body-descripcion font-h3-light-300 mostrar-desktop">3 días</div>
+                                                                <div class="col-4 div-left car-body-descripcion font-h3-light-300 mostrar-desktop">1 hrs</div>
+                                                                <div class="col-4 div-left car-body-descripcion font-h3-light-300 mostrar-desktop">24 min</div>
+                                                                <div class="col-4 div-left car-body-descripcion font-H4-light-normal mostrar-movil">3 días</div>
+                                                                <div class="col-4 div-left car-body-descripcion font-H4-light-normal mostrar-movil">1 hrs</div>
+                                                                <div class="col-4 div-left car-body-descripcion font-H4-light-normal mostrar-movil">24 min</div>
+                                                                <div class="col-12 div-left car-body-title font-label-400">Nro. de escalas</div>
+                                                                <div class="col-12 div-left car-body-descripcion font-h3-light-300 mostrar-desktop">2 escalas</div>
+                                                                <div class="col-12 div-left car-body-descripcion font-H4-light-normal mostrar-movil">2 escalas</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado ">
+                                                            <button class="btn btn-danger mt-n2 mostrar-movil" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                <div class="card card-mostrar-rutas mostrar-desktop">
+                                                    <div class="card-header p-3 card-header-titulo" style="padding-bottom: 1px !important;">
                                                         <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Sudamérica - Asia</h5>
                                                     </div>
                                                     <div class="card-body p-3">
@@ -235,8 +393,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                                <div class="card card-mostrar-rutas">
-                                                    <div class="card-header pb-0 p-3 card-header-titulo">
+                                             <div class="card card-mostrar-rutas mostrar-desktop">
+                                                    <div class="card-header p-3 card-header-titulo" style="padding-bottom: 1px !important;">
                                                         <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Sudamérica - Asia</h5>
                                                     </div>
                                                     <div class="card-body p-3">
@@ -265,56 +423,7 @@
                                                         </div>
                                                         <div class="mostrar-movil">
                                                             <div class="row">
-                                                                <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
-                                                                <div class="col-4 div-left car-body-descripcion font-h3-light-300 mostrar-desktop">3 días</div>
-                                                                <div class="col-4 div-left car-body-descripcion font-h3-light-300 mostrar-desktop">1 hrs</div>
-                                                                <div class="col-4 div-left car-body-descripcion font-h3-light-300 mostrar-desktop">24 min</div>
-                                                                <div class="col-4 div-left car-body-descripcion font-H4-light-normal mostrar-movil">3 días</div>
-                                                                <div class="col-4 div-left car-body-descripcion font-H4-light-normal mostrar-movil">1 hrs</div>
-                                                                <div class="col-4 div-left car-body-descripcion font-H4-light-normal mostrar-movil">24 min</div>
-                                                                <div class="col-12 div-left car-body-title font-label-400">Nro. de escalas</div>
-                                                                <div class="col-12 div-left car-body-descripcion font-h3-light-300 mostrar-desktop">2 escalas</div>
-                                                                <div class="col-12 div-left car-body-descripcion font-H4-light-normal mostrar-movil">2 escalas</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado ">
-                                                            <button class="btn btn-danger mt-n2 mostrar-movil" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                             <div class="card card-mostrar-rutas">
-                                                    <div class="card-header pb-0 p-3 card-header-titulo">
-                                                        <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Sudamérica - Asia</h5>
-                                                    </div>
-                                                    <div class="card-body p-3">
-                                                        <div class="mostrar-desktop">
-                                                            <div class="row align-items-center">
-                                                                <div class="col-lg-4">
-                                                                    <div class="col-lg-12 font-label negro-promperu pb-2">
-                                                                        Tiempo de viaje
-                                                                    </div>
-                                                                    <div class="col-lg-12 font-H4-light negro-promperu">
-                                                                        1 día 8 hrs. 24 min
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-4">
-                                                                    <div class="col-lg-12 font-label negro-promperu pb-2">
-                                                                        Nro. de escalas:
-                                                                    </div>
-                                                                    <div class="col-lg-12 font-H4-light negro-promperu">
-                                                                        Sin escalas
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-4" style="display: flex;justify-content: end;position: relative;bottom: -10px; right: 23px;">
-                                                                    <button class="btn btn-danger font-H4-bold" style="max-width:151px;" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mostrar-movil">
-                                                            <div class="row">
-                                                                <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
+                                                                <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viajex</div>
                                                                 <div class="col-4 div-left car-body-descripcion font-h3-light-300 mostrar-desktop">3 días</div>
                                                                 <div class="col-4 div-left car-body-descripcion font-h3-light-300 mostrar-desktop">1 hrs</div>
                                                                 <div class="col-4 div-left car-body-descripcion font-h3-light-300 mostrar-desktop">24 min</div>
@@ -333,7 +442,42 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="mostrar-movil">
+                                            <!-- <div class="mostrar-movil">
+                                                <div class="card card-centrado">
+                                                    <div class="card-header pb-0 p-3 card-header-titulo">
+                                                        <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Sudamérica - Europa xx</h5>
+                                                    </div>
+                                                    <div class="card-body p-3">
+                                                        <div class="ocultar-movil">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-4 col-sm-12 car-body-title font-label-400">Número de paradas</div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-12 car-body-title font-label-400">Días de tránsito</div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                    <button class="btn btn-danger mt-n2" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion font-h3-light-300">7 paradas</div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion font-h3-light-300">27 días</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mostrar-movil">
+                                                            <div class="row">
+                                                                <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
+                                                                <div class="col-4 div-left car-body-descripcion font-h3-light-300">3 días</div>
+                                                                <div class="col-4 div-left car-body-descripcion font-h3-light-300">1 hrs</div>
+                                                                <div class="col-4 div-left car-body-descripcion font-h3-light-300">24 min</div>
+                                                                <div class="col-12 div-left car-body-title font-label-400">Nro. de escalas</div>
+                                                                <div class="col-12 div-left car-body-descripcion font-h3-light-300">2 escalas</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
+                                                            <button class="btn btn-danger mt-n2 mostrar-movil" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <!-- <div class="mostrar-movil">
                                                 <div class="card card-centrado">
                                                     <div class="card-header pb-0 p-3 card-header-titulo">
                                                         <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Sudamérica - Europa</h5>
@@ -367,42 +511,7 @@
                                                         
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="mostrar-movil">
-                                                <div class="card card-centrado">
-                                                    <div class="card-header pb-0 p-3 card-header-titulo">
-                                                        <h5 class="mb-3 font-color-blue font-H5-bold">Ruta: Sudamérica - Europa</h5>
-                                                    </div>
-                                                    <div class="card-body p-3">
-                                                        <div class="ocultar-movil">
-                                                            <div class="row">
-                                                                <div class="col-lg-4 col-md-4 col-sm-12 car-body-title font-label-400">Número de paradas</div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-12 car-body-title font-label-400">Días de tránsito</div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                                    <button class="btn btn-danger mt-n2" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
-                                                                </div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion font-h3-light-300">7 paradas</div>
-                                                                <div class="col-lg-4 col-md-4 col-sm-12 car-body-descripcion font-h3-light-300">27 días</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mostrar-movil">
-                                                            <div class="row">
-                                                                <div class="col-12 div-left car-body-title font-label-400">Tiempo de Viaje</div>
-                                                                <div class="col-4 div-left car-body-descripcion font-h3-light-300">3 días</div>
-                                                                <div class="col-4 div-left car-body-descripcion font-h3-light-300">1 hrs</div>
-                                                                <div class="col-4 div-left car-body-descripcion font-h3-light-300">24 min</div>
-                                                                <div class="col-12 div-left car-body-title font-label-400">Nro. de escalas</div>
-                                                                <div class="col-12 div-left car-body-descripcion font-h3-light-300">2 escalas</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil"><br></div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-12 text-center card-centrado">
-                                                            <button class="btn btn-danger mt-n2 mostrar-movil" onclick="window.location.href='Detalle_rutas.html'">Ver detalle</button>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            </div> -->
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
                                         </div>
                                     </div>

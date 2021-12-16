@@ -4,11 +4,11 @@ function CambiarTituloLogin(titulo){
 
 $(document).ready(function() {
   
-    $('.controlSelect2').select2({
+   /* $('.controlSelect2').select2({
 		tags: "true",
   placeholder: "Seleccione una opción"
-	});
-	$('.select2-selection__arrow').html('<i class="fas fa-angle-down icon-select">');
+	});*/
+	//$('.select2-selection__arrow').html('<i class="fas fa-angle-down icon-select">');
 	//$('.select2-container--focus select2-container--open').find('i').html('<i class="fas fa-angle-down icon-select">');
 
   $('#guardarFicha').click(function () {

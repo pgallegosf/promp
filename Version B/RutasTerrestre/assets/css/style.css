@@ -68,6 +68,66 @@ body {
     width: 15% !important;
 }
 
+/*Inicio Listado Operasdores Logisticos*/
+
+.nav-logistico {
+    width: 50%;
+    height: 66px;
+    cursor: pointer;
+    border: 0px solid white !important;
+}
+
+.active {
+    background-color: #C4122F !important;
+    color: white !important;
+}
+
+.card-logistico {
+    padding-left: 12px !important;
+}
+
+.nav-link {
+    color: black;
+}
+
+.padding-internacional {
+    padding-bottom: 10px !important;
+}
+/*Fin Listado Operasdores Logisticos*/
+
+.input-checkbox {
+    display: none;
+}
+
+.input-checkbox+.input-checkbox-lab {
+    cursor: pointer;
+    font-weight: 200 !important;
+}
+
+.input-checkbox:checked+.input-checkbox-lab:before {
+    /*content: "✓";*/
+    content: url("../img/icon-opcion/Vector\ 1.png");
+    font-size: 25px;
+    color: #FFF;
+    background: #C4122f;
+    font-family: Helvetica Neue;
+    font-weight: bold !important;
+    line-height: 0.75;
+}
+
+.input-checkbox-lab:before {
+    content: '';
+    background: #FFF;
+    border: 1px solid #C4122f;
+    border-radius: 5px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin: 0 7px 0 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
 @media (min-width: 400px) {
     .nav-img {
         width: 45% !important;
@@ -160,7 +220,7 @@ body {
 
 .card-select {
     width: 50% !important;
-    height: 160% !important;
+    height: auto !important;
     margin-left: 27% !important;
     top: 74% !important;
     position: absolute !important;
@@ -249,8 +309,13 @@ body {
     font-size: 15px;
 }
 
-.hr {
-    height: 2px;
+.hr {    
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #282828 !important;
+    opacity: 0.2;
+    margin: 1em 0;
+    padding: 0;
 }
 
 .refresh {
@@ -691,7 +756,7 @@ hr {
 
 .card-select-origen {
     width: 50% !important;
-    height: 100% !important;
+    height: auto !important;
     margin-left: 0% !important;
     top: 74% !important;
     position: absolute !important;
@@ -826,8 +891,87 @@ hr {
     background-color: #C4122f !important;
     height: 25px !important;
 }
+.container-guardar-descargar-resultado{
+    padding: 0px 120px;
+}
+.title-guardar-descarga{
+    text-align: left ;
+}
+.item-resultado_busqueda{
+    width: 20%;
+}
+.container-button-icon{
+    display: flex;
+}
+.option-select{
+    height: 30px;
+}
+.container-button-descripcion{
+    text-align: left;
+}
+.btn-operadora-logisticos:hover {
+    background: white !important;
+    opacity: 100%;
+    border: 0px solid #0000001a !important;
+    border-radius: 15px;
+    /* height: 85px !important; */
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 20%) !important;
+}
+.btn-encuentra-directorio:hover {
+    background: white !important;
+    opacity: 100%;
+    border: 0px solid #0000001a !important;
+    border-radius: 15px;
+    /* height: 85px !important; */
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 20%) !important;
+}
 
-@media (min-width: 200px) {
+.acordion-ancho {
+    width: 50%;
+}
+.div-left {
+    float: left;
+}
+.text_desktop_item-resultado{
+    display: block ;    
+}
+.text_moviles_item-resultado{
+    display: none ;    
+}
+
+.btnAtrasIcon{
+    color: #282828;
+}
+@media (min-width: 200px) { 
+    .text_moviles_item-resultado{
+        display: block;
+    }
+    .text_desktop_item-resultado{
+        display: none;    
+    }
+
+
+    .txt_detalle_ruta_terreste_desktop{
+        display: none;
+    }
+    .txt_detalle_ruta_terreste_moviles{
+        display: block;    
+    }
+
+
+    
+    .div-centrado {
+        margin: 0.5rem !important;        
+    }
+    /* .font-helvetica-icon{
+        font-size: 12px !important ;
+    }     */
+    .container-guardar-descargar-resultado {
+        padding: 0px 20px;
+    }
+    .item-resultado_busqueda{
+        width: 25%;
+    }
     .mostrar-desktop {
         display: none !important;
     }
@@ -904,12 +1048,21 @@ hr {
     }
     .span-ver-mapa {
         position: relative;
-        top: -15px;
+        top: 16px;
         width: 100% !important;
     }
+
+    .span-ver-operadores {     
+        top: 6px;        
+    }
+
+    .span-ver-directorio {        
+        top: 6px;        
+    }
+
     .span-contenedor {
         position: relative;
-        top: -12px;
+        top: -32px;
     }
     .card-empresa {
         position: absolute;
@@ -939,25 +1092,40 @@ hr {
         top: 97px;
         left: 33%;
         position: absolute;
-    }
-    /*.background-img {
-        border-radius: 0!important;
-        padding: 13px;
-        width: 800px;
-        height: 600px;
-        background-size: 100% 100% !important;
-        background-repeat: no-repeat !important;
-        background: url(../img/transporte-movil.png) no-repeat center center;
-        background-size: cover !important;
-        object-fit: cover !important;
-        object-position: center center !important;
-        -webkit-background-size: cover !important;
-        -moz-background-size: cover !important;
-        -o-background-size: cover !important;
-    }*/
+    }  
 }
 
 @media (min-width: 400px) {
+
+    .txt_detalle_ruta_terreste_desktop{
+        display: block;
+    }
+    .txt_detalle_ruta_terreste_moviles{
+        display: none;    
+    }
+
+    .text_desktop_item-resultado{
+        display: block ;    
+    }
+    .text_moviles_item-resultado{
+        display: none ;    
+    }
+    .container-button-descripcion{
+        padding: 0px 12px;
+    }
+    .option-select {
+        height: 35px;
+    }
+    .title-guardar-descarga{
+        text-align: center ;
+    }
+    .container-guardar-descargar-resultado{        
+        padding: 0px 20px;
+    }
+    .item-resultado_busqueda{
+        width: 25%;
+    }
+       
     .mostrar-desktop {
         display: none !important;
     }
@@ -1020,8 +1188,11 @@ hr {
     }
     .span-ver-mapa {
         position: relative;
-        top: -16px;
+        top: 14px;
         width: 100% !important;
+    }
+    .container-button-descripcion span{
+        top: 8px;
     }
     .span-contenedor {
         position: relative;
@@ -1074,6 +1245,18 @@ hr {
 }
 
 @media (min-width: 576px) {
+    .txt_detalle_ruta_terreste_desktop{
+        display: block;
+    }
+    .txt_detalle_ruta_terreste_moviles{
+        display: none;    
+    }
+    .text_desktop_item-resultado{
+        display: block ;    
+    }
+    .text_moviles_item-resultado{
+        display: none ;    
+    }
     .mostrar-desktop {
         display: none !important;
     }
@@ -1190,6 +1373,18 @@ hr {
 }
 
 @media (min-width: 768px) {
+    .txt_detalle_ruta_terreste_desktop{
+        display: block;
+    }
+    .txt_detalle_ruta_terreste_moviles{
+        display: none;    
+    }
+    .text_desktop_item-resultado{
+        display: block ;    
+    }
+    .text_moviles_item-resultado{
+        display: none ;    
+    }
     .mostrar-desktop {
         display: block !important;
     }
@@ -1312,6 +1507,18 @@ hr {
 }
 
 @media (min-width: 992px) {
+    .txt_detalle_ruta_terreste_desktop{
+        display: block;
+    }
+    .txt_detalle_ruta_terreste_moviles{
+        display: none;    
+    }
+    .text_desktop_item-resultado{
+        display: block ;    
+    }
+    .text_moviles_item-resultado{
+        display: none ;    
+    }
     .mostrar-desktop {
         display: block !important;
     }
@@ -1425,6 +1632,18 @@ hr {
 }
 
 @media (min-width: 1200px) {
+    .txt_detalle_ruta_terreste_desktop{
+        display: block;
+    }
+    .txt_detalle_ruta_terreste_moviles{
+        display: none;    
+    }
+    .text_desktop_item-resultado{
+        display: block ;    
+    }
+    .text_moviles_item-resultado{
+        display: none ;    
+    }
     .mostrar-desktop {
         display: block !important;
     }
@@ -1706,3 +1925,4 @@ hr {
 /* ====================================================================================== 
  Fin de estilos de rutas marítimas
 ====================================================================================== */
+

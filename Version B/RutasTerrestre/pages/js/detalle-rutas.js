@@ -1,4 +1,23 @@
-$(document).ready(function() {
+$(document).ready(function() {    
+    $('#btnEnviarIndicamosTuConsulta').click(function(e) {                
+        $('#m-informativo').modal('hide');
+    });
+    $('#btnEnviarDejaTuopinion').click(function(e) {                
+        $('#m-opinion').modal('hide');
+    });
+
+    
+    $('.btn-ingresar').click(function(e) {
+        $(".popover").show();
+        $(".modal-iniciar-sesion").hide();
+    });
+    $('.descarga-pdf').click(function(e) {
+        debugger;
+        var a = document.createElement("a");
+        a.href = "../assets/img/download.pdf";
+        a.setAttribute("download", "Rutas Terreste");
+        a.click();
+    });
     $(".card-tipo-contenedor").hide();
     $("body").click(function(e) {
         closeCard();
@@ -15,13 +34,24 @@ $(document).ready(function() {
     // Botones bloqueados
     $(".btn-enviar-pass").attr('disabled', 'disabled');
     $(".idPopoverNotificacionGuardar").click(function() {
+        
         $(".popover").toggle();
     });
     $(".close-popover").click(function() {
-        $(".popover").toggle();
+        $(".popover").toggle("close");
     });
 
-    
+    $(".div-detalle-rutas").click(function() {        
+        console.log($(this).find('i'));
+        var object = $(this).find('i');
+        if(object.hasClass('fa-chevron-right')) {
+            object.removeClass('fa-chevron-right');
+            object.addClass('fa-chevron-down');
+        }else {
+            object.removeClass('fa-chevron-down');
+            object.addClass('fa-chevron-right');
+        }
+    });
 
     
 
