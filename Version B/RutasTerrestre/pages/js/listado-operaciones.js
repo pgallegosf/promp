@@ -29,4 +29,28 @@ $(document).ready(function() {
         if(!obj_internacional.hasClass('show')) obj_internacional.addClass('show');
         if(!obj_internacional.hasClass('active')) obj_internacional.addClass('active');
     });
+
+    $(".div-detalle-rutas").click(function() {        
+        console.log($(this).find('i'));
+        var object = $(this).find('i');
+        if(object.hasClass('fa-chevron-right')) {
+            object.removeClass('fa-chevron-right');
+            object.addClass('fa-chevron-down');
+        }else {
+            object.removeClass('fa-chevron-down');
+            object.addClass('fa-chevron-right');
+        }
+    });
+
+    $(".seccion-filtro-aplicar").hide();   
+    $(".filtro-logistico").click(function() {        
+        $(".seccion-filtro").hide(); 
+        $(".seccion-filtro-aplicar").show();
+    });
+
+    $(".filtros-aplicados").click(function() {        
+        $(".seccion-filtro").show(); 
+        $(".seccion-filtro-aplicar").hide();   
+    });
+
 });
