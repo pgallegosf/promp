@@ -7,7 +7,8 @@ $(document).ready(function() {
         //Download("../--/assets/pdf/resultado.pdf");
     });
     $('#pdf').attr({target: '_blank', 
-                    href  : '../assets/pdf/resultado.pdf'});
+                    href  : '../assets/pdf/resultado.pdf'}); 
+    $('.popover').show();
 });
 
 function download(dataurl, filename) {
