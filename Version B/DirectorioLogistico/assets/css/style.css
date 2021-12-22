@@ -12,13 +12,6 @@ body {
   height: 1px !important;
 }
 
-.navbar-main {
-  background-color: #ffffff !important;
-}
-
-.navbar-brand {
-  width: 53% !important;
-}
 
 .icon-menu {
   float: left;
@@ -101,6 +94,11 @@ body {
 }
 
 @media (min-width: 200px) {
+
+  .background-mobile {
+    background: #f6f7f7;
+  }
+
   .btn-close-modal {
     box-sizing: content-box !important;
     padding: 0.25em 0.25em !important;
@@ -133,6 +131,11 @@ body {
 }
 
 @media (min-width: 1200px) {
+
+  .background-mobile {
+    background: none;
+  }
+
   .btn-close-modal {
     box-sizing: content-box !important;
     padding: 0.25em 0.25em !important;
@@ -3153,10 +3156,6 @@ label {
   display: none;
 }
 @media (min-width: 200px) {
-  .modal-dialog {
-    padding: 20px !important;
-  }
-
   .regular {
     display: none;
   }
@@ -3168,9 +3167,6 @@ label {
   }
 }
 @media (min-width: 576px) {
-  .modal-dialog {
-    padding: 20px !important;
-  }
   .regular {
     display: none;
   }
@@ -3182,9 +3178,6 @@ label {
   }
 }
 @media (min-width: 768px) {
-  .modal-dialog {
-    padding: 0px !important;
-  }
   .regular {
     display: none;
   }
@@ -3196,9 +3189,6 @@ label {
   }
 }
 @media (min-width: 992px) {
-  .modal-dialog {
-    padding: 0px !important;
-  }
   .regular {
     display: block;
   }
@@ -3210,9 +3200,6 @@ label {
   }
 }
 @media (min-width: 1200px) {
-  .modal-dialog {
-    padding: 0px !important;
-  }
   .regular {
     display: block;
   }

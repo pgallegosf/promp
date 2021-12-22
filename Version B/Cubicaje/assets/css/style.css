@@ -128,10 +128,6 @@ text-decoration-line: underline;
     width: 45% !important;
   }
 
-  .modal-dialog {
-    padding: 20px !important;
-  }
-
   .mostrar-desktop {
     display: none !important;
   }
@@ -149,19 +145,11 @@ text-decoration-line: underline;
   .nav-img {
     width: 35% !important;
   }
-
-  .modal-dialog {
-    padding: 20px !important;
-  }
 }
 
 @media (min-width: 768px) {
   .nav-img {
     width: 22% !important;
-  }
-
-  .modal-dialog {
-    padding: 0px !important;
   }
 }
 
@@ -172,9 +160,6 @@ text-decoration-line: underline;
 }
 
 @media (min-width: 1200px) {
-  .modal-dialog {
-    padding: 0px !important;
-  }
   .padding-items {
     padding-top: 0 !important;
   }
