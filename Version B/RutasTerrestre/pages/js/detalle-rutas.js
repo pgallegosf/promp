@@ -17,16 +17,22 @@ $(document).ready(function() {
         a.setAttribute("download", "Rutas Terreste");
         a.click();
     });
-    $(".card-tipo-contenedor").hide();
+    $(".card-terrestre").hide();
     $("body").click(function(e) {
         closeCard();
     });
 
-    $(".tipContainer").click(function() {
-        $(".card-tipo-contenedor").show();
+    $(".tipContainer").click(function(e) {
+        e.stopPropagation();
+        $(".card-terrestre").show();
     });
     $(".text-correo").click(function() {
         recuperarPass();
+    });
+    $(".opCiudad").click(function(e) {
+        e.stopPropagation();
+        $("#txtContainer").val($(this).text());
+        $(".card-terrestre").hide();
     });
     //Elementos ocultos
     $(".popover").hide();
@@ -66,12 +72,12 @@ function recuperarPass() {
 }
 
 function showCardTipoContenedor() {
-    $(".card-tipo-contenedor").show();
+    $(".card-terrestre").show();
 }
 function hideCardTipoContenedor() {
-    $(".card-tipo-contenedor").hide();
+    $(".card-terrestre").hide();
 }
 function closeCard() {
-    $(".card-tipo-contenedor").hide();
+    $(".card-terrestre").hide();
 }
 

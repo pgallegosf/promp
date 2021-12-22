@@ -163,6 +163,32 @@
   font-weight: 700 !important;
 }
 
+.card-terrestre {
+  width: 50% !important;
+  height: 150% !important;
+  margin-left: 1% !important;
+  top: 100% !important;
+  position: absolute !important;
+  font-size: 12px;
+  z-index: 99;
+  font-weight: bold;
+  color: #282828;
+  border-radius: 0px 0px 15px 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-terrestre option {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E4E6E7;
+}
+
+.card-terrestre option:hover {
+  background-color: #FFEBEE;
+  font-weight: 700 !important;
+}
+
 .card-maritima-container {
   width: 14% !important;
   height: 12.5% !important;
