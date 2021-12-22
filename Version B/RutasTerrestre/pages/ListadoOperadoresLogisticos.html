@@ -157,10 +157,8 @@
                 </button>
             </div>
         </nav>
-        <!-- End Navbar -->
-        <div class="container-fluid py-4 container-principal padding-top-principal-detalle"
+        <div class="container-fluid py-4 container-principal padding-top-principal-detalle mostrar-desktop"
             style="background-color: #FFF;">
-            <!-- Inicio de vista principal -->
             <div id="d-display">
                 <div class="" style="background-color: #f6f7f9;">
                     <div class="row mt-4 div-centrado div-principal-busqueda  margin-top-bottom-0"
@@ -177,13 +175,11 @@
                     </div>
                 </div>
             </div>
-            <!-- Inicio vista ver detalle de busqueda de ruta desktop -->
             <div class="row mt-4 div-centrado div-principal-busqueda  margin-top-bottom-0"
                 style="margin-top: -5rem !important;">
                 <div class="col-lg-12 mb-lg-0 padding-left-right-0 div-card-busqueda max-resolution" style="margin-left: auto !important; margin-right: auto !important;">
                     <div class=" card  margin-right-0 card-logistico" style="width:inherit">
                         <div class="row">
-                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
                             <ul class="nav nav-tabs" id="myTab" role="tablist" style="padding: 0px !important;">
                                 <li class="nav-item nav-nacional nav-logistico">
                                   <a class="nav-link active font-H4-bold-700" style="height: 100%; border-top-right-radius: 0; padding-top:22px" id="home-tab">Nacionales</a>
@@ -200,9 +196,6 @@
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo mobile-font text-left" style="padding-left: 25px !important; padding-bottom: 10px !important">
                                                 Operadores de transporte nacional
                                             </div>
-                                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;">
-                                                <br>
-                                            </div> -->
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centrado font-H4-bold-700n negro-promperu inline"
                                                 style="justify-content: right; padding-right: 50px !important;">
                                                 Ordenar por:&nbsp;&nbsp;
@@ -795,24 +788,879 @@
                     </div>
                 </div>
             </div>   
-            <!-- <div>
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
-                    </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-                </div>
-            </div>          -->
-            <!-- <div><br></div> -->
             <div class="mostrar-movil my-4"></div>
-            <!-- Fin vista ver detalle de busqueda de ruta desktop-->
-
+        </div>
+        <div class="container-fluid py-4 container-principal padding-top-principal-detalle mostrar-movil"
+            style="background-color: #FFF;">
+            <!-- Inicio de vista principal -->
+            <div id="d-display" style="height: 267px;">
+                <div class="" style="background-color: #f6f7f9;">
+                    <div class="row mt-4 div-centrado div-principal-busqueda  margin-top-bottom-0"
+                        style="background-color: #f6f7f9;">
+                        <div class="col-lg-12 mb-lg-0 padding-left-right-0 div-card-busqueda">
+                            <div class=" margin-right-0" style="width:inherit;">
+                                <div class="row" style="margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 130px;">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo font-H2-bold-700">
+                                        Listado de Operadores Logísticos
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 div-centrado div-principal-busqueda  margin-top-bottom-0"
+                style="margin-top: -5rem !important;">
+                <div class="col-lg-12 mb-lg-0 padding-left-right-0 div-card-busqueda max-resolution" style="margin-left: auto !important; margin-right: auto !important;">
+                    <div class=" card margin-right-0 card-logistico" style="width:inherit; border-radius: 25px 25px 0px 0px !important; box-shadow: none !important; margin-bottom: 70px !important;">
+                        <div class="row">
+                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
+                            <ul class="nav nav-tabs" id="myTab" role="tablist" style="padding: 0px !important; border: none !important;">
+                                <li class="nav-item nav-nacional nav-logistico">
+                                  <a class="nav-link active font-H4-bold-700" style="height: 100%; border-top-right-radius: 0; border-top-left-radius: 25px; padding-top:22px" id="home-tab">Nacionales</a>
+                                </li>
+                                <li class="nav-item nav-internacional nav-logistico ">
+                                  <a class="nav-link font-H4-bold-700" id="profile-tab" style="height: 100%; border-top-left-radius: 0; border-top-right-radius: 25px; padding-top:22px">Internacionales</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="seccion-nacional tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="background-color: transparent !important;">
+                                    <div>
+                                        <div><br><br></div>
+                                        <div class="row" style="display: flex !important; justify-content: space-between !important;">
+                                            <div class="col-12 titulo mobile-font text-left" style="padding-left: 25px !important; padding-bottom: 20px !important">
+                                                Operadores de transporte nacional
+                                            </div>                                            
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-7 centrado font-H4-bold-700n negro-promperu inline"
+                                                style="justify-content: right;">
+                                                Ordenar por:&nbsp;&nbsp;
+                                                <div class="ordenar font-H4-light rojo-promperu">A-Z <i
+                                                        class="fas fa-angle-down icon-ordenar" aria-hidden="true"></i></div>
+                                            </div>
+                                            <div class="col-5 negro-promperu font-normal-18" style="padding-left: 25px !important;">
+                                                10 operadores
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                        <div class="card-body p-3">
+                                            <div class="row">
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="true" 
+                                                    aria-controls="mostrarDetalle-Evergreen">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        CLT Transporte
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>                                                                                                
+                                                </div>
+                                                <div class="accordion-collapse collapse"
+                                                    aria-labelledby="panelsStayOpen-headingOne"
+                                                    id="mostrarDetalle-Evergreen">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Group.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span class="font-H5-medium-normal rojo-promperu">Sitio
+                                                                        Web</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Vector.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 19px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Correo</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/phono.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Telefono</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Dirección:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                Jr. Francisco Masías 2369 Urb. Elio Lima
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-MSC" aria-expanded="true"
+                                                    aria-controls="mostrarDetalle-MSC">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        Terra Cargo
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-collapse collapse "
+                                                    aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-MSC">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Group.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span class="font-H5-medium-normal rojo-promperu">Sitio
+                                                                        Web</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Vector.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 19px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Correo</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/phono.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Telefono</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Dirección:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                Jr. Francisco Masías 2369 Urb. Elio Lima
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-MAERSK" aria-expanded="true"
+                                                    aria-controls="mostrarDetalle-MAERSK">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        AFE Transportation
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-collapse collapse "
+                                                    aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-MAERSK">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Group.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span class="font-H5-medium-normal rojo-promperu">Sitio
+                                                                        Web</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Vector.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 19px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Correo</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/phono.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Telefono</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Dirección:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                Jr. Francisco Masías 2369 Urb. Elio Lima
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-CS" aria-expanded="true"
+                                                    aria-controls="mostrarDetalle-CS">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        Cargueros Sudamericanos
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-collapse collapse "
+                                                    aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CS">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Group.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span class="font-H5-medium-normal rojo-promperu">Sitio
+                                                                        Web</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Vector.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 19px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Correo</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/phono.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Telefono</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Dirección:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                Jr. Francisco Masías 2369 Urb. Elio Lima
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-COR" aria-expanded="true"
+                                                    aria-controls="mostrarDetalle-COR">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        Cordifronteras
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-collapse collapse "
+                                                    aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-COR">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Group.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span class="font-H5-medium-normal rojo-promperu">Sitio
+                                                                        Web</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Vector.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 19px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Correo</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/phono.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Telefono</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Dirección:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                Jr. Francisco Masías 2369 Urb. Elio Lima
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-TA" aria-expanded="true"
+                                                    aria-controls="mostrarDetalle-TA">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        Transportes Ambrogio
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-collapse collapse "
+                                                    aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-TA">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Group.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span class="font-H5-medium-normal rojo-promperu">Sitio
+                                                                        Web</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Vector.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 19px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Correo</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/phono.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Telefono</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Dirección:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                Jr. Francisco Masías 2369 Urb. Elio Lima
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-TG" aria-expanded="true"
+                                                    aria-controls="mostrarDetalle-TG">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        Transportes Girasoles
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-collapse collapse "
+                                                    aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-TG">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Group.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span class="font-H5-medium-normal rojo-promperu">Sitio
+                                                                        Web</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/Vector.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 19px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Correo</span>
+                                                                </div>
+                                                                <div class="rojo-promperu text-center">
+                                                                    <div>
+                                                                        <img src="../assets/img/icon-opcion/phono.png"
+                                                                            alt="web">
+                                                                    </div>
+                                                                    <div style="height: 15px;"></div>
+                                                                    <span
+                                                                        class="font-H5-medium-normal rojo-promperu">Telefono</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Dirección:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                Jr. Francisco Masías 2369 Urb. Elio Lima
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="seccion-internacional tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="background-color: transparent !important;">
+                                    <div>
+                                        <div><br><br></div>
+                                        <div class="row" style="display: flex !important; justify-content: space-between !important;">
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo mobile-font text-left" style="padding-left: 25px !important; padding-bottom: 20px !important;">
+                                                Operadores de transporte internacional
+                                            </div>
+                                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20px;">
+                                                <br>
+                                            </div> -->
+                                            <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centrado font-H4-bold-700n negro-promperu inline"
+                                                style="justify-content: right;">
+                                                Ordenar por:&nbsp;&nbsp;
+                                                <div class="ordenar font-H4-light rojo-promperu">A-Z <i
+                                                        class="fas fa-angle-down icon-ordenar" aria-hidden="true"></i></div>
+                                            </div> -->
+                                        </div>
+                                        <div class="row seccion-filtro">
+                                            <div class="col-6 negro-promperu font-H4-bold-700n" style="padding-left: 25px !important;">
+                                                <div class="col-12 filtro-logistico"><span style="padding-right: 20px;">Filtrar</span><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-filter.svg"></div>
+                                            </div>
+                                            <div class="col-6 negro-promperu font-normal-18" style="padding-left: 40px !important; padding-top: 5px;">
+                                                230 operadores
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
+                                        <div class="col-12 seccion-filtro-aplicar">
+                                            <div class="row" style="display: flex !important; justify-content: space-between !important;">
+                                                <div class="col-12centrado font-H4-bold-700n negro-promperu inline"
+                                                    style="justify-content: left; padding-left: 25px !important; padding-bottom: 20px !important;">
+                                                    Ordenar por:&nbsp;&nbsp;
+                                                    <div class="ordenar font-H4-light rojo-promperu">A-Z <i
+                                                            class="fas fa-angle-down icon-ordenar" aria-hidden="true"></i></div>
+                                                </div>
+                                                <div class="col-12 font-H4-bold-700n text-left negro-promperu " style="padding-left: 25px !important;">
+                                                    Países de destino:
+                                                </div>
+                                            </div><br>
+                                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 10px">
+                                                <div class="col-6" style="max-width: 140px !important;">
+                                                    <input class="input-checkbox" type="checkbox" name="checkPais" id="checkPais" checked="">
+                                                    <label for="checkPais" class="input-checkbox-lab font-H4-medium-n negro-promperu">Argentina</label>
+                                                </div>
+                                                <div class="col-6" style="max-width: 140px !important; padding-left: 23px !important;">
+                                                    <input class="input-checkbox" type="checkbox" name="checkPais1" id="checkPais1" checked="">
+                                                    <label for="checkPais1" class="input-checkbox-lab font-H4-medium-n negro-promperu">Bolivia</label>
+                                                </div>
+                                            </div><br>
+                                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 10px">
+                                                <div class="col-6" style="max-width: 140px !important;">
+                                                    <input class="input-checkbox" type="checkbox" name="checkPais5" id="checkPais5" checked="">
+                                                    <label for="checkPais5" class="input-checkbox-lab font-H4-medium-n negro-promperu">Ecuador</label>
+                                                </div>
+                                                <div class="col-6" style="max-width: 140px !important; padding-left: 23px !important; padding-right: 0px !important;">
+                                                    <input class="input-checkbox" type="checkbox" name="checkPais6" id="checkPais6" checked="">
+                                                    <label for="checkPais6" class="input-checkbox-lab font-H4-medium-n negro-promperu">Paraguay</label>
+                                                </div>
+                                            </div><br>
+                                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 10px">
+                                                <div class="col-6" style="max-width: 150px !important;">
+                                                    <input class="input-checkbox" type="checkbox" name="checkPais2" id="checkPais2" checked="">
+                                                    <label for="checkPais2" class="input-checkbox-lab font-H4-medium-n negro-promperu">Brasil</label>
+                                                </div>
+                                                <div class="col-6" style="max-width: 140px !important;">
+                                                    <input class="input-checkbox" type="checkbox" name="checkPais3" id="checkPais3" checked="">
+                                                    <label for="checkPais3" class="input-checkbox-lab font-H4-medium-n negro-promperu">Chile</label>
+                                                </div>
+                                            </div><br>
+                                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 10px">
+                                                <div class="col-6" style="max-width: 150px !important;">
+                                                    <input class="input-checkbox" type="checkbox" name="checkPais7" id="checkPais7" checked="">
+                                                    <label for="checkPais7" class="input-checkbox-lab font-H4-medium-n negro-promperu">Venezuela</label>
+                                                </div>
+                                                <div class="col-6" style="max-width: 140px !important;">
+                                                    <input class="input-checkbox" type="checkbox" name="checkPais8" id="checkPais8" checked="">
+                                                    <label for="checkPais8" class="input-checkbox-lab font-H4-medium-n negro-promperu">Uruguay</label>
+                                                </div>
+                                            </div><br>
+                                            <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 10px">
+                                                <div class="col-6" style="max-width: 140px !important;">
+                                                    <input class="input-checkbox" type="checkbox" name="checkPais4" id="checkPais4" checked="">
+                                                    <label for="checkPais4" class="input-checkbox-lab font-H4-medium-n negro-promperu">Colombia</label>
+                                                </div>                                            
+                                            </div><br>
+                                            <div class="col-12 filtros-aplicados" style="padding-left: 10px;">
+                                                <button class="btn btn-danger font-H5-bold btn-filtro"
+                                                      type="button">Aplicar</button>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                        <div class="card-body p-3">
+                                            <div class="row">
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-Evergreen" aria-expanded="true" 
+                                                    aria-controls="mostrarDetalle-Evergreen">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        Empresa de Transportes Brenda SAC
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>                                                                                                
+                                                </div>
+                                                <div class="accordion-collapse collapse"
+                                                    aria-labelledby="panelsStayOpen-headingOne"
+                                                    id="mostrarDetalle-Evergreen">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="col-lg-4 col-md-2 col-sm-2 col-xs-2 font-H5-light-400n negro-promperu">
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Chile</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Argentina</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Bolivia</div>
+                                                                </div>
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Brasil</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Paraguay</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Uruguay</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Correo:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                comercial@cltsac.com
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-MSC" aria-expanded="true"
+                                                    aria-controls="mostrarDetalle-MSC">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        Empresa de Transporte y Servicios Zeus SCRL
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-collapse collapse "
+                                                    aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-MSC">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="col-lg-4 col-md-2 col-sm-2 col-xs-2 font-H5-light-400n negro-promperu">
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Chile</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Argentina</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Bolivia</div>
+                                                                </div>
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Brasil</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Paraguay</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Uruguay</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Correo:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                comercial@cltsac.com
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-MAERSK" aria-expanded="true"
+                                                    aria-controls="mostrarDetalle-MAERSK">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        Servicios Múltiples San Gerónimo SCRL
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-collapse collapse "
+                                                    aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-MAERSK">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="col-lg-4 col-md-2 col-sm-2 col-xs-2 font-H5-light-400n negro-promperu">
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Chile</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Argentina</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Bolivia</div>
+                                                                </div>
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Brasil</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Paraguay</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Uruguay</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Correo:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                comercial@cltsac.com
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-CS" aria-expanded="true"
+                                                    aria-controls="mostrarDetalle-CS">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        Servimelsa EIRL
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-collapse collapse "
+                                                    aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-CS">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="col-lg-4 col-md-2 col-sm-2 col-xs-2 font-H5-light-400n negro-promperu">
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Chile</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Argentina</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Bolivia</div>
+                                                                </div>
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Brasil</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Paraguay</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Uruguay</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Correo:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                comercial@cltsac.com
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-COR" aria-expanded="true"
+                                                    aria-controls="mostrarDetalle-COR">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        Transportes CMRS AC
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-collapse collapse "
+                                                    aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-COR">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="col-lg-4 col-md-2 col-sm-2 col-xs-2 font-H5-light-400n negro-promperu">
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Chile</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Argentina</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Bolivia</div>
+                                                                </div>
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Brasil</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Paraguay</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Uruguay</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Correo:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                comercial@cltsac.com
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-TA" aria-expanded="true"
+                                                    aria-controls="mostrarDetalle-TA">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        Empresa de Transportes Alipio Montenegro EIRL
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-collapse collapse "
+                                                    aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-TA">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="col-lg-4 col-md-2 col-sm-2 col-xs-2 font-H5-light-400n negro-promperu">
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Chile</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Argentina</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Bolivia</div>
+                                                                </div>
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Brasil</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Paraguay</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Uruguay</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Correo:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                comercial@cltsac.com
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-12 div-detalle-rutas" data-bs-toggle="collapse"
+                                                    data-bs-target="#mostrarDetalle-TG" aria-expanded="true"
+                                                    aria-controls="mostrarDetalle-TG">
+                                                    <div
+                                                        class="col-10 text-line-title negro-promperu font-h3-bold-700 acordion-hover div-left">
+                                                        Transportes Girasoles
+                                                    </div>
+                                                    <div class="col-2 text-line-title font-color-red div-left mt-3">
+                                                        <i class="fas fa-chevron-right div-right" id="iconfecha"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-collapse collapse "
+                                                    aria-labelledby="panelsStayOpen-headingOne" id="mostrarDetalle-TG">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="row"><br></div>
+                                                            <div class="col-lg-4 col-md-2 col-sm-2 col-xs-2 font-H5-light-400n negro-promperu">
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Chile</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Argentina</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Bolivia</div>
+                                                                </div>
+                                                                <div class="row col-12">
+                                                                    <div class="col-3"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Brasil</div>
+                                                                    <div class="col-5"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Paraguay</div>
+                                                                    <div class="col-4"><img style="margin-bottom: 3px;" src="../assets/icon/icons/icon-point-mobile.svg">&nbsp;Uruguay</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row"><br></div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 font-size-13 font-weight-bold negro-promperu font-label">
+                                                                Correo:</div>
+                                                            <div
+                                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-left mt-2 negro-promperu font-size-10 font-H4-light-normal">
+                                                                comercial@cltsac.com
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hr background-gris">
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                                                <div class="text-center">
+                                                    <div class="pagination">
+                                                        <a href="#" style="color: #C4122F;">&lt;</a>
+                                                        <a href="#" style="font-weight: bold;">1</a>
+                                                        <a href="#">2</a>
+                                                        <a href="#">3</a>
+                                                        <a href="#">4</a>
+                                                        <a href="#" style="color: #C4122F;">&gt;</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>   
         </div>
         <!-- Fin de vista principal -->
         <footer class="footer" id="footer" style="padding-top: 111px !important;">
@@ -854,7 +1702,7 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-3 mt-n3">
                                 <!-- <img src = "../assets/icon/icons/logo-promperu-footer-desktop.svg" class="div-right"/> -->
-                                <img src = "../assets/img/Costo/logo-promperu-footer-desktop.png" class="div-right"/>
+                                <img src = "../assets/img/Ruta_Terrestre/logo-promperu-footer-desktop.png" class="div-right"/>
                             </div>
                         </div>
                     </div>
