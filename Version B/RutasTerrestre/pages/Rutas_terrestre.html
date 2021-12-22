@@ -158,8 +158,8 @@
                             <div class="row px-2 p-5 overflow-hidden margin-left-right-0">
                                 <div class="col-lg-4 col-md-6 col-xs-12  padding-control-right">
                                     <label class="font-label negro-promperu">Punto de origen</label>
-                                    <input type="text" class="form-control ptOrigen mostrar-desktop ordenar font-H4-light negro-promperu padding-left-right-0" id="ptOrigen" placeholder="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                    <input type="text" class="form-control ptOrigenMovil mostrar-movil ordenar font-H4-light  negro-promperu padding-left-right-0" id="ptOrigenMovil" placeholder="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <input type="text" autocomplete="off" class="form-control ptOrigen mostrar-desktop ordenar font-H4-light negro-promperu padding-left-right-0" id="ptOrigen" placeholder="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                    <input type="text" autocomplete="off" class="form-control ptOrigenMovil mostrar-movil ordenar font-H4-light  negro-promperu padding-left-right-0" id="ptOrigenMovil" placeholder="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ptOrigenMovil ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" ></i>
                                 </div>
                                 <div class="card h-100 p-3 card-select-origen card-origen" id="selectPuertoOrigen">
@@ -199,8 +199,8 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12  padding-control-right">
                                     <label class="font-label negro-promperu">Punto de destino</label>
-                                    <input type="text" class="form-control ptDestino ordenar puertoDestino mostrar-desktop font-H4-light padding-left-right-0" id="puertoDestino" placeholder="Selecciona" /><i class="fas fa-angle-down icon-select ptDestino mostrar-desktop ordenar"></i>
-                                    <input type="text" class="form-control ptDestino puntDestinoMovil ordenar puertoDestinoMovil mostrar-movil font-H4-light padding-left-right-0" id="puertoDestinoMovil" placeholder="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas"/><i class="fas fa-angle-down icon-select ptDestino ordenar"></i>
+                                    <input type="text" autocomplete="off" class="form-control ptDestino ordenar puertoDestino mostrar-desktop font-H4-light padding-left-right-0" id="puertoDestino" placeholder="Selecciona" /><i class="fas fa-angle-down icon-select ptDestino mostrar-desktop ordenar"></i>
+                                    <input type="text" autocomplete="off" class="form-control ptDestino puntDestinoMovil ordenar puertoDestinoMovil mostrar-movil font-H4-light padding-left-right-0" id="puertoDestinoMovil" placeholder="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas"/><i class="fas fa-angle-down icon-select ptDestino ordenar"></i>
                                     <!-- <i class="fas fa-angle-down icon-select"></i> -->
                                 </div>
                                 <div class="card h-100 p-3 card-select card-destino" id="view-select-Pais">
@@ -332,12 +332,12 @@
                                     <div class="col-lg-8 col-md-6 col-xs-12 position-relative">
                                         <div class="text-left" style="padding-right: 10px;">
                                             <label class="font-label negro-promperu">Punto de origen</label>
-                                            <input type="text" class="form-control puntOrigen mostrar-desktop font-H4-light negro-promperu padding-left-right-0" id="mostrarpuerto" placeholder="Selecciona" /><i class="fas fa-angle-down icon-select ordenar mostrar-desktop"></i>
-                                            <input type="text" class="form-control puntOrigenMovil ptOrigenMovil ordenar mostrar-movil font-H4-light negro-promperu padding-left-right-0" id="ptOrigenMovil" placeholder="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="PaisDestinoCanvas" />
+                                            <input autocomplete="off" type="text" class="form-control puntOrigen mostrar-desktop font-H4-light negro-promperu padding-left-right-0" id="mostrarpuerto" placeholder="Selecciona" /><i class="fas fa-angle-down icon-select ordenar mostrar-desktop"></i>
+                                            <input autocomplete="off" type="text" class="form-control puntOrigenMovil ptOrigenMovil ordenar mostrar-movil font-H4-light negro-promperu padding-left-right-0" id="ptOrigenMovil" placeholder="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="PaisDestinoCanvas" />
                                             <i class="fas fa-angle-down icon-select ordenar mostrar-movil"></i>
                                         </div>
                                     </div>
-                                    <div class="card h-100 p-3 card-ptoOrigen card-ptOrigen margin-0 width-max-content" id="selectPuertoOrigen">
+                                    <div class="card h-100 p-3 card-ptoOrigen card-ptOrigen margin-0 width-max-content" id="selectPuertoOrigen" style="height: 25% !important;">
                                         <div class="row" id="comboPais">
                                             <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
                                                 <option value="0" class="font-H4-light-normal option-select negro-promperu opCiudad">Abancay</option>
@@ -376,8 +376,8 @@
                                     <div class="col-lg-8 col-md-6 col-xs-12 position-relative">
                                         <div class="text-left" style="padding-right: 10px;">
                                             <label class="font-label negro-promperu">Punto de destino</label>
-                                            <input type="text" class="form-control puntDestino ordenar mostrar-desktop font-H4-light negro-promperu padding-left-right-0" id="mostrarpuerto" value="Selecciona" /><i class="fas fa-angle-down icon-select ordenar mostrar-desktop"></i>
-                                            <input type="text" class="form-control puntDestinoMovil ordenar mostrar-movil font-H4-light negro-promperu padding-left-right-0" id="mostrarpuerto" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="PaisDestinoCanvas" />
+                                            <input autocomplete="off" type="text" class="form-control puntDestino ordenar mostrar-desktop font-H4-light negro-promperu padding-left-right-0" id="mostrarpuerto" value="Selecciona" /><i class="fas fa-angle-down icon-select ordenar mostrar-desktop"></i>
+                                            <input autocomplete="off" type="text" class="form-control puntDestinoMovil ordenar mostrar-movil font-H4-light negro-promperu padding-left-right-0" id="mostrarpuerto" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="PaisDestinoCanvas" />
                                             <i class="fas fa-angle-down icon-select ordenar mostrar-movil"></i>
                                         </div>
                                     </div>
@@ -407,7 +407,7 @@
                                     </div>
 
                                     <div class="col-lg-8 col-md-8 col-sm-12 mt-4 centrado" id="btn-rutas2">
-                                        <button
+                                        <button style="display: none !important;"
                                             class="btn btn-disabled btn-rutas2 mostrar-desktop width-100 font-H4-bold">Mostrar
                                             rutas</button>
                                         <button
@@ -420,7 +420,8 @@
                             
                                 <div class="col-lg-6 col-md-6 col-sm-12  centro">
                                     <img src="../assets/img/Ruta_Terrestre/mapa.png" style="width: -webkit-fill-available;" alt="mapa" class="img-inicio">
-                                    <img src="../assets/img/Ruta_Terrestre/mapa2.png" style="width: -webkit-fill-available;" alt="mapa" class="img-cambio">
+                                    <!-- <img src="../assets/img/Ruta_Terrestre/mapa2.png" style="width: -webkit-fill-available;" alt="mapa" class="img-cambio"> -->
+                                    <img src="../assets/img/Ruta_Terrestre/mapa_ruta.png" class="img-cambio">
                                 </div>
                                 <!--<div class="col-xs-12 col-sm- 12col-md-8 col-lg-6 mt-4 centro ocultar-movil">
                                     <img src="../assets/img/Ruta_Terrestre/mapa2.png" alt="mapa_ruta" class="img">
@@ -429,8 +430,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div> -->
                 <div class="mostrar-desktop">
                     <div class="card mostrarRutas">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center font-color-blue font-size-25 font-H2-light-400">4 rutas encontradas</div>
@@ -1396,77 +1397,76 @@
         <div class="offcanvas-body offcanvas-body-menu">
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasAerea/Pages/Rutas_aerea.html'">
-                    <div class="div-card-dashboard hover"> 
+                    <div class="div-card-dashboard hover menu-alineacion"> 
                         <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
-
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Aéreas</p>
                             <img src="../../img-menu-PromPeru/dashboard/avion 1.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                            <img src="../../img-menu-PromPeru/dashboard/avion-m.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <img src="../../img-menu-PromPeru/dashboard/avion-m.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas Aéreas</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
-                    <div class="div-card-dashboard hover"> 
+                    <div class="div-card-dashboard hover menu-alineacion"> 
                         <div class="font-size-15 inline-for-movil card-dashboard">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Marítimas</p>
                             <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                            <img src="../../img-menu-PromPeru/dashboard/barco-m.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <img src="../../img-menu-PromPeru/dashboard/barco-m.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas marítimas</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasTerrestre/Pages/Rutas_terrestre.html'">
-                    <div class="div-card-dashboard hover">
+                    <div class="div-card-dashboard hover menu-alineacion">
                         <div class="font-size-15 inline-for-movil card-dashboard">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Terrestres</p>
                             <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                            <img src="../../img-menu-PromPeru/dashboard/camion 2.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <img src="../../img-menu-PromPeru/dashboard/camion 2.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas Terrestres</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Costo/Pages/inicio.html'">
-                    <div class="div-card-dashboard hover">
+                    <div class="div-card-dashboard hover menu-alineacion">
                         <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
-
+            
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Costos de Exportación</p>
                             <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                            <img src="../../img-menu-PromPeru/dashboard/image 21.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <img src="../../img-menu-PromPeru/dashboard/image 21.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Costos de Exportación</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Cubicaje/Pages/Cubicaje.html'">
-                    <div class="div-card-dashboard hover">
+                    <div class="div-card-dashboard hover menu-alineacion">
                         <div class="font-size-15 inline-for-movil card-dashboard">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador de Cubicaje</p>
                             <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                            <img src="../../img-menu-PromPeru/dashboard/Group 268.png" alt="avion" class="icon-dashboard mostrar-movil">
+                            <img src="../../img-menu-PromPeru/dashboard/Group 268.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Simulador de Cubicaje</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
-                    <div class="div-card-dashboard hover">
+                    <div class="div-card-dashboard hover menu-alineacion">
                         <div class="div-card-dashboard"> 
                             <div class="font-size-15 inline-for-movil card-dashboard">
                                 <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Directorio Logístico</p>
                                 <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-desktop">
-                                <img src="../../img-menu-PromPeru/dashboard/gente 1.png" alt="avion" class="icon-dashboard mostrar-movil">
+                                <img src="../../img-menu-PromPeru/dashboard/gente 1.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
                                 <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Directorio Logístico</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
-                    <div class="div-card-dashboard hover">
+                    <div class="div-card-dashboard hover menu-alineacion">
                         <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador <br>de Drawback</p>
                             <!-- <img src="../../img-menu-PromPeru/dashboard/Group 224.png" alt="avion" class="icon-dashboard mostrar-desktop image-drwaback"> -->
                             <img src="../../img-menu-PromPeru/dashboard/Group 224.png" alt="avion" class="icon-dashboard mostrar-desktop image-drwaback" style="width: 100px !important; height: 80px !important;">
-
-                            <img src="../../img-menu-PromPeru/dashboard/Group 228.png" alt="avion" class="icon-dashboard mostrar-movil">
+            
+                            <img src="../../img-menu-PromPeru/dashboard/Group 228.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Simulador de Drawback</p>
                         </div>
                     </div>
@@ -1493,7 +1493,7 @@
                     <div class="col-lg-5 col-md-11 col-xs-5 col-sm-5 inline "><a href="https://exportemos.pe/" target="_blank" class="font-H5-light rojo-promperu inline margin-visita visita-max-width">Exportemos.pe<i class="fas fa-chevron-right mx-3"></i></a></div>
                     <div class="col-lg-5 col-md-12 col-xs-5 col-sm-5  inline "><a href="https://www.gob.pe/promperu" target="_blank" class="font-H5-light rojo-promperu inline margin-visita visita-max-width">Promperu.gob.pe<i class="fas fa-chevron-right mx-2"></i></a></div>
                 </div>
-
+            
             </div>
         </div>
     </div>
