@@ -280,17 +280,24 @@
                                             </div>
 
                                         </div>
-                                        <div class="row">
-                                            <div class="col-5 col-lg-6 col-md-6 col-sm-6 col-xs-6 tipContainer">
+                                        <div class="row" style="position: relative;">
+                                            <div class="col-5 col-lg-6 col-md-6 col-sm-6 col-xs-6 tipContainer" style="z-index: 2;">
                                                 <label
                                                     class="container-detalle-subtitulo font-label-400 padding-left-right-0">
                                                     Tipo de contenedores</label>
-                                                <input type="text"
-                                                    class="form-control font-H4-light-300 tipContainer padding-left-right-0 negro-promperu"
-                                                    style="background-color: #f6f7f9;" id="tipContainer"
+                                                <input type="text" autocomplete="off"
+                                                    class="form-control font-H4-light-normal tipContainer padding-left-right-0 negro-promperu"
+                                                    style="background-color: #f6f7f9;" id="txtContainer"
                                                     value="CNT 20'" /><i class="fas fa-angle-down icon-select"></i>
                                             </div>
-                                            <div class="card h-100 p-3  card-tipo-contenedor" id="selectTipoContenedor">
+                                            <div class="card-origen card-terrestre" id="selectTipoContenedor">
+                                                <div class="row" id="comboPais">
+                                                    <option value="0" class="font-H4-light-normal option-select font-color-black opCiudad" style="font-weight: 300px !important;">CNT 20</option>
+                                                    <option value="1" class="font-H4-light-normal option-select font-color-black opCiudad" >CNT 40</option>
+                                                    <option value="2" class="font-H4-light-normal option-select font-color-black opCiudad" style="border-radius: 0px 0px 15px 15px;">CNT 40 Réefer</option>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="card h-100 p-3  card-tipo-contenedor" id="selectTipoContenedor" style="border: 1px solid red;">
                                                 <div class="row" id="comboPais">
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                                                         <option value="0"
@@ -305,7 +312,7 @@
 
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <div class="col-5 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                 <div class="costo negro-promperu text-align-right">
                                                     <span class="span-costo font-H2-bold-700"> S/ 5,200</span>
@@ -1009,7 +1016,7 @@
                                         </div>
                                         <div class="font-weight-bold px-2 font-smallprint-medium mostrar-movil">Guardar resultado</div>
                                     </div>
-                                    <div class="ordenar m-0" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 90px !important;">
+                                    <div class="ordenar m-0 descarga-pdf" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 90px !important;">
                                         <div>
                                             <!-- <img src="../assets/img/icon-opcion/dowload.png" alt="descargar"> -->
                                             <img src="../assets/icon/icons/icon-guardar-pdf.svg" alt="descargar" style="margin-bottom: 10px;">
@@ -1664,15 +1671,30 @@
         <div class="offcanvas-header offcanvas-header-personalizado">
             <div
                 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font-color-white font-size-15 font-weight-bold text-center background-red card-height-movil w-100">
-                <div class="pt-2">
+                <div class="pt-2 pb-2">
                     <i class="fas fa-chevron-left mt-1 mx-2 div-left font-color-white font-weight-bold btn-atras"
                         data-bs-dismiss="offcanvas" aria-label="Close"></i>Mapa
                 </div>
+                <div style="position: absolute; width: 50px; height: 100px; right: 0 !important; z-index: 100; margin-top: 200px; bottom: 0vh !important;
+                background-color: #C4122F;">
+                <div class="col-12 text-center" style="height: 50px; border-bottom: 2px solid white; cursor: pointer;">
+                   <img src="../assets/icon/icons/plus-rutas.svg" style="width: 30px !important; margin-top: 8px;" alt="contenedor">
+                </div>
+                <div class="col-12 text-center" style="height: 50px; cursor: pointer;">
+                   <img src="../assets/icon/icons/minus-rutas.svg" style="width: 30px !important; margin-top: 20px;" alt="contenedor">
+                </div>
+                   <!-- <span class="flecha derecha"></span> -->
+               </div>
             </div>
         </div>
-        <div class="offcanvas-body">
-            <div class="c">
-                <img src="../assets/img/Ruta_Terrestre/mapaZoom.png" alt=" mapa-movil" class="mapa-movil ">
+        <div class="offcanvas-body" style="padding: 0px !important; position: relative;">
+            <div>
+                <div style="padding-left: 20px !important; margin: 0px !important;">
+                    <div style="width: 572px; height: 825px !important; text-align: center !important;">
+                        <img src="../assets/img/Ruta_Terrestre/mapa_completo.png" style="width: 100%;" alt=" mapa-movil" class="mapa-movil ">
+                    </div>
+                     
+                </div>
             </div>
         </div>
     </div>

@@ -35,6 +35,7 @@ function login(){
             break;
         case 6:
             window.location.href="../../DirectorioLogistico/Pages/DirectorioLogistico.html";
+            break;
         case 7:
             window.location.href='../../Drawback/pages/EmpezarDrawback.html';    
         break;
