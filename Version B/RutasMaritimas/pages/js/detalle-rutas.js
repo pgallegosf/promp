@@ -73,5 +73,9 @@ function showCardOrigen() {
 }
 
 function closeCardContainers() {
-    $(".card-origen").hide();
+    try {
+        $(".card-origen").hide();
+    }catch(e) {
+        console.log('error closeCardContainers', e);
+    }
 }
