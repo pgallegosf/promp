@@ -68,7 +68,7 @@ function cargarAjustes() {
 }
 
 function irLogin() {
-    localStorage.setItem('idHerramienta','7')
+    sessionStorage.setItem('idHerramienta','7')
     window.location.href='../../Login/pages/Login.html';
 }
 
@@ -228,7 +228,7 @@ function cambiarContinente(dato) {
 
 $(document).ready(function() {
     sessionStorage.removeItem("idHerramienta");
-    sessionStorage.setItem('idHerramienta', '7');
+    sessionStorage.setItem('idHerramienta', '8');
      $(".busquedaAvanzada").hide();
 	/*$(".").click(function () {
         LimpiarPoppupPuerto();
