@@ -2628,6 +2628,10 @@ line-height: 61px;
   .mostrar-movil.content{
     display:contents !important;
   }
+
+  .menu-alineacion {
+    text-align: center;
+  }
 }
 @media (min-width: 768px) {
   .mostrar-desktop.flex{
@@ -2635,6 +2639,9 @@ line-height: 61px;
   }
   .mostrar-movil.content{
     display:none !important;
+  }
+  .menu-alineacion {
+    text-align: left;
   }
 }
 
