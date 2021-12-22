@@ -417,9 +417,11 @@ footer .credits {
 	}
     .tab-movil{
 		display:block;
+		background-color: #EDEEEF !important;
+
 	}
 	.background-titulo-tab{
-		background-color: #D2D5D7;
+		background-color: #EDEEEF;
 		padding-left:0;
 		padding-right:0;
 		padding-top:0;
@@ -431,13 +433,13 @@ footer .credits {
 		/*border-bottom: 6px solid #0067b8;*/
 	}
 	.tabs .divTab .div-left-tab > ul li a.active {
-		background-color: #D2D5D7;
+		background-color: #EDEEEF;
 		color: #282828;
 	}	
 }	
 @media (min-width: 576px) {	
 	.tabs .divTab .div-left-tab > ul li a.active {
-		background-color: #D2D5D7;
+		background-color: #EDEEEF;
 		color: #282828;
 	}
 	.tab-desktop{
@@ -445,9 +447,10 @@ footer .credits {
 	}
     .tab-movil{
 		display:block;
+		background-color: #EDEEEF !important;
 	}
 	.background-titulo-tab{
-		background-color: #efefef;
+		background-color: #EDEEEF;
 		padding-left:0;
 		padding-right:0;
 		padding-top:0;
@@ -480,6 +483,7 @@ footer .credits {
 	}
     .tab-movil{
 		display:block;
+		background-color: #EDEEEF !important;
 	}
 	.background-titulo-tab{
 		background-color: #FFF;
