@@ -169,8 +169,8 @@
                                     <label class="font-label negro-promperu margin-left-right-0">Contraseña</label>
                                     <input type="password" class="form-control font-H4-light negro-promperu txtpass padding-left-right-0" placeholder="******">
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12  mt-2 div-btn-busqueda padding-control3-busqueda">
-                                    <button class="btn btn-danger btn-rutas mostrar-desktop width-100 font-H4-bold-700 margin-0 padding-left-right-0" onclick="window.location.href='EmpezarSimulacionCosto.html'">Ingresar</button>
+                                <div class="col-lg-4 col-md-6 col-sm-12  mt-2 div-btn-busqueda padding-control3-busqueda" style="justify-content: start;">
+                                    <button class="btn btn-danger btn-rutas mostrar-desktop width-100 font-H4-bold-700 margin-0 padding-left-right-0" style="max-width: 278px;" onclick="window.location.href='EmpezarSimulacionCosto.html'">Ingresar</button>
                                     <button class="btn btn-danger btn-rutasMovil width-100 mostrar-movil mt-3 font-H4-bold-700 padding-left-right-0" id="btnBuscarMovil"  onclick="window.location.href='EmpezarSimulacionCosto.html'">Ingresar</button>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
@@ -179,11 +179,12 @@
                                         <input class="input-checkbox" type="checkbox" name="chkMismoContacto-movil" id="chkMismoContacto-movil" >
                                         <label for="chkMismoContacto-movil" class="input-checkbox-lab font-H4-medium-400 negro-promperu">Mantener sesión abierta</label>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 padding-left-right-0">
                                         <a class=" rojo-promperu ordenar font-link link-principal" onclick="window.location.href='../../Registro/pages/Registro.html'">¿Aún no tienes cuenta?</a>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-6 mt-1">
-                                        <div class=" rojo-promperu ordenar font-link link-principal" data-bs-toggle="modal" data-bs-target="#m-password">Olvide mi contraseña</div>
+                                        <div class=" rojo-promperu ordenar font-link link-principal mostrar-desktop" data-bs-toggle="modal" data-bs-target="#m-password">Olvidé mi contraseña</div>
+                                        <div class=" rojo-promperu ordenar font-link link-principal mostrar-movil" data-bs-toggle="modal" data-bs-target="#m-password" style="text-align:right;">Olvidé mi contraseña</div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mostrar-desktop">
                                         <input class="input-checkbox" type="checkbox" name="chkMismoContacto" id="chkMismoContacto" checked="">
@@ -445,7 +446,7 @@
                         <div class="row align-items-center justify-content-center max-resolution" style="margin: auto !important;">
                             <div class="col-lg-12 mb-lg-0 mb-4">
                                 <div class="text-center font-helvetica-coryright" style="justify-content: center;">
-                                    Para mas información escribanos a :
+                                    Para más información escríbenos a:
                                 </div>
                             </div>
                             <br>
@@ -474,7 +475,7 @@
                                     <img src="../assets/img/logos/mincetur.png" alt="mincetur" class="img-footter">
                                 </div>
                                 <div class="col-lg-6 col-md-4 col-sm-12 mt-2 copyright col-6 font-helvetica-coryright"  style="justify-content: center;">
-                                    Copyright © 2021 PROMPERU. Todos los derechos reservados
+                                    Copyright © 2021 PROMPERÚ. Todos los derechos reservados
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-3 mt-n3">
                                     <!-- <img src = "../assets/icon/icons/logo-promperu-footer-desktop.svg" class="div-right"/> -->
@@ -687,17 +688,15 @@
                             <textarea type="text" class="form-control padding-left-right-0 font-H4-light-normal negro-promperu"></textarea>
                             <span class="span-textarea font-smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
                         </div>
-                        <div class="col-sm-12 div-left mt-4 padding-left-right-1" style="margin-top:0 !important;">
-                            <div class="col-lg-5 col-md-5 col-sm-5 div-left font-label negro-promperu padding-left-right-0 text-consulta" style="padding-top: 5px; 
-                            display: -webkit-inline-box;">
-                                <div style="margin-right: 20px;">Califica la herramienta:&nbsp;</div>
-                            <!--</div>
-                            <div class="col-lg-3 col-md-3 col-sm-7 div-left padding-left-right-0 text-consulta">-->
-                                <div class="div-left ordenar" style="padding-right:10px;"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                                <div class="div-left ordenar" style="padding-right:10px;"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                                <div class="div-left ordenar" style="padding-right:10px;"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                                <div class="div-left ordenar" style="padding-right:10px;"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
-                                <div class="div-left ordenar" style="padding-right:10px;"><a href="javascript:void(0)"><i class="fas fa-star hover-start"></i></a></div>
+                        <div class="col-12 div-left mt-4 padding-left-right-1" style="display: flex; align-items: center; min-width: 300px !important;">
+                            <div class="col-5 div-left font-label negro-promperu mostrar-desktop" style="max-width: 170px !important;">Califica la herramienta:</div>
+                            <div class="col-5 div-left font-label negro-promperu mostrar-movil" style="max-width: 90px !important;">Califica la herramienta:</div>
+                            <div class="col-7 div-left">
+                                <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                                <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                                <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                                <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
+                                <div class="div-left ordenar" style="padding: 0 4.3px !important;"><a href="javascript:void(0)"><i class="fas fa-star hover-start" style="font-size: 24px !important;"></i></a></div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 div-left mt-4 padding-left-right-0 text-consulta">

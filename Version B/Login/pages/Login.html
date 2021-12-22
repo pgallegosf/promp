@@ -134,13 +134,13 @@
         <div class="container-fluid py-4 container-principal" style="padding-bottom: 0 !important;">
             <!-- Inicio de vista principal -->
             <div class="row fullHeight">
-                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12  centro padding-left-right-0 mostrar-desktop" style="background-color: #F2F5F6;">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12  centro padding-left-right-0 mostrar-desktop flex" style="background-color: #F2F5F6; justify-content: center; align-items: center;">
                     <div class="contenedor-left">
                         <img src="../assets/img/Login/login.png" alt="login" class="img-principal-login">
                     </div>
                     
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12  centrado padding-left-right-0 div-contenedor-right">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12  centrado padding-left-right-0 div-contenedor-right" style="justify-content: center; align-items: center;">
                     <div class="contenedor-right">
                         <div class="row margin-left-right-0">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-left-right-0">
@@ -163,13 +163,35 @@
                                 <a data-bs-toggle="modal" data-bs-target="#m-password" class="font-link rojo-promperu text-center link-sub">¿Olvidaste tu contraseña?</a>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                            <div class="check-sesion-activa padding-left-right-0 d-none" id="check-sesion-activa">
+                            <div class="check-sesion-activa padding-left-right-0 mostrar-desktop" id="check-sesion-activa">
                                 <!--<input class="input-checkbox" type="checkbox" name="chkSesionActiva" id="chkSesionActiva" checked>-->
                                 <input class="input-checkbox" type="checkbox" name="chkSesionActiva" id="chkSesionActiva" >
                                 <label for="chkSesionActiva" class="input-checkbox-lab negro-promperu font-H4-medium-n">Mantener sesión abierta</label>
                             </div>
-                            <div class="view-registro-login padding-left-right-0" id="view-registro-login">
+                            <div class="check-sesion-activa padding-left-right-0 mostrar-movil" id="check-sesion-activa" style="text-align: -webkit-center; justify-content: center;">
+                                <!--<input class="input-checkbox" type="checkbox" name="chkSesionActiva" id="chkSesionActiva" checked>-->
+                                <input class="input-checkbox" type="checkbox" name="chkSesionActiva-movil" id="chkSesionActiva-movil" >
+                                <label for="chkSesionActiva-movil" class="input-checkbox-lab negro-promperu font-H4-medium-n">Mantener sesión abierta</label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="height:35px;"></div>
+                            <div class="view-registro-login padding-left-right-0 mostrar-desktop" id="view-registro-login">
                                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>
+                                <div class="centrado col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center negro-promperu font-H4-bold">¿Aún no tienes una cuenta?</div>
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>
+                                <div class="centrado col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
+                                    <button type="button" class="btn btn-outline-danger width-100 font-H4-bold" onclick="window.location.href='../../Registro/pages/Registro.html'">Regístrate Aquí</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12  centrado padding-left-right-0 div-contenedor-right mostrar-movil" style="justify-content: center; align-items: center; background-color:#F6F7F8">
+                    
+                    <div class="contenedor-right">
+                        <div class="row margin-left-right-0">
+                            <div class="view-registro-login padding-left-right-0" id="view-registro-login">
                                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>
                                 <div class="centrado col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center negro-promperu font-H4-bold">¿Aún no tienes una cuenta?</div>
                                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><br></div>

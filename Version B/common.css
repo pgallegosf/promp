@@ -2638,3 +2638,7 @@ line-height: 61px;
   font-size: 14px;
   line-height: 17px;
 }
+.padding-top-bottom-12{
+  padding-top:12px !important;
+  padding-bottom:12px !important;
+}

@@ -1117,3 +1117,7 @@ a>i>label {
     padding-bottom: 40px;
     padding-top: 0px;
 }
+/*.card-empresa {
+    position: inherit !important;
+    width: 100% !important;
+}*/
