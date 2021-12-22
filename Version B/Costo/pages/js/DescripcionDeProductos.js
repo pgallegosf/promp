@@ -365,6 +365,18 @@ $(document).ready(function() {
         e.stopPropagation();
         showCardUnidadMedida();
     });
+    $(".tipo-costo").click(function(e) {
+        e.stopPropagation();
+        showCardTipoCosto();
+    });
+    $(".tipo-costo2").click(function(e) {
+        e.stopPropagation();
+        showCardTipoCosto2();
+    });
+    $(".tipo-costo3").click(function(e) {
+        e.stopPropagation();
+        showCardTipoCosto3();
+    });
     $(".unidad-tiempo").click(function(e) {
         e.stopPropagation();
         showCardUnidadTiempo();
@@ -424,12 +436,30 @@ $(document).ready(function() {
 function SeleccionarUnidadMedida(unidad){
     $(".unidad-medida").val(unidad);
 }
+function SeleccionarTipoCosto(unidad){
+    $(".tipo-costo").val(unidad);
+}
+function SeleccionarTipoCosto2(unidad){
+    $(".tipo-costo2").val(unidad);
+}
+function SeleccionarTipoCosto3(unidad){
+    $(".tipo-costo3").val(unidad);
+}
 function SeleccionarUnidadTiempo(unidad){
     $(".unidad-tiempo").val(unidad);
 }
 
 function showCardUnidadMedida() {
     $(".card-unidad-medida").show();
+}
+function showCardTipoCosto() {
+    $(".card-tipo-costo").show();
+}
+function showCardTipoCosto2() {
+    $(".card-tipo-costo2").show();
+}
+function showCardTipoCosto3() {
+    $(".card-tipo-costo3").show();
 }
 function showCardUnidadTiempo() {
     $(".card-unidad-tiempo").show();
@@ -438,6 +468,9 @@ function closeCardEmpresa() {
     $(".card-unidad-medida").hide();
     $(".card-unidad-tiempo").hide();
     $(".card-unidad-tiempo").hide();
+    $(".card-tipo-costo").hide();
+    $(".card-tipo-costo2").hide();
+    $(".card-tipo-costo3").hide();
     $("#m-confirmacion-sin-guardar").hide();
     $("#m-confirmacion-sin-guardar-envase").hide();
     $(".card-tipo").hide();
