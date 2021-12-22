@@ -67,6 +67,11 @@ function cargarAjustes() {
     // }
 }
 
+function irLogin() {
+    localStorage.setItem('idHerramienta','7')
+    window.location.href='../../Login/pages/Login.html';
+}
+
 function mostrarSelectPuertoOrigen() {
     if (screen.width < 1024 || screen.width < 1280) {
         viewGlobal.className = "d-none"

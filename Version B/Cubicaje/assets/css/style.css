@@ -1720,7 +1720,7 @@ a > i > label {
 @media (min-width: 1200px) { 
   .btn-close-modal {
     box-sizing: content-box !important;
-    padding: 0.25em 0.25em!important;
+    padding: 0 !important;
     border: 0!important;
     position: absolute!important;
     z-index: 0!important;
@@ -1728,9 +1728,9 @@ a > i > label {
     right: -18px !important;
     color: #ffff !important;
     border-radius: 50% !important;
-    width: 25px !important;
+    width: 41px !important;
     background-color: #C4122f !important;
-    height: 25px !important;
+    height: 41px !important;
   }
   .btn-close-modal-mediano {
     box-sizing: content-box !important;

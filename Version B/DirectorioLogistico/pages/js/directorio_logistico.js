@@ -410,10 +410,12 @@ $(document).ready(function() {
 
 function mostrarBusquedaAvanzada(){
 	$(".busquedaNormal").hide();
+    $(".busquedaNormal-lista").hide();
 	$(".busquedaAvanzada").show();
 	
 }
 function ocultarBusquedaAvanzada(){
 	$(".busquedaAvanzada").hide();
 	$(".busquedaNormal").show();
+    $(".busquedaNormal-lista").show();
 }
