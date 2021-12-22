@@ -17,6 +17,17 @@
     src: url('font-Promperu/HelveticaNeueLTStd-Roman.OTF');
 }
 
+
+.acordion-hover:hover {
+  color: #282828 !important;
+}
+
+.btn-danger:focus {
+  /* box-shadow: 0 0 0 0.2rem rgb(237 43 43 / 50%); */
+  /* border: 1px solid blue !important; */
+  box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%), 0 2px 4px -1px rgb(0 0 0 / 7%);
+}
+
 .opOrigenMovil  {
   margin-top: 0px !important;
   padding-top: 10px !important;
@@ -2210,9 +2221,9 @@ footer {
   cursor: pointer;
 }
 
-.acordion-hover:hover {
+/* .acordion-hover:hover {
   color: #c4122f !important;
-}
+} */
 
 .margin-16 {
   margin: 16px !important;

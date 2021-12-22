@@ -56,6 +56,7 @@ $(document).ready(function() {
         $("#mostrarMapaRuta").val($(this).text());
         $(".card-maritima-pais-select").hide();
         $(".btn-rutas2").removeAttr('disabled');
+        showRutas();
     });
     $(".opPtoEE-UU").click(function() {
         showCardPuertosEEUU();
@@ -229,4 +230,5 @@ function SelectCardPaisDestino() {
     $(".btn-rutasMovil2").removeAttr('disabled');
     $(".btn-rutasMovil2").removeClass('btn-disabled');
     $(".btn-rutasMovil2").addClass('btn-danger');
+    showRutas();
 }
