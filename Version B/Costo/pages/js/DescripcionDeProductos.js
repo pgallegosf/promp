@@ -522,6 +522,9 @@ function selectEncargo() {
     $("#proDirecta").show();*/
     $("#CostoIndirecto").hide();
     $("#CostoDirecto").hide();
+    $(".ocultar-costo").hide();
+    $(".tituloCostosGastos").html("Selecciona tus gastos");
+    $(".subtituloCostosGastos").html("Ingresa los gastos que correspondan en cada una de las secciones");
     $(".lineOculto").hide();
 }
 function selectDirecta() {
@@ -535,6 +538,9 @@ function selectDirecta() {
     $(".puerto-seleccionadom").html('<i class="fas fa-chevron-left font-color-red mx-3"></i>Aeropuertos en China');
     $("#CostoIndirecto").show();
     $("#CostoDirecto").show();
+    $(".ocultar-costo").show();
+    $(".tituloCostosGastos").html("Selecciona tus costos y gastos");
+    $(".subtituloCostosGastos").html("Ingresa los costos y gastos que correspondan en cada una de las secciones");
     $(".lineOculto").show();
 }
 function mostrarViewProductora() {
