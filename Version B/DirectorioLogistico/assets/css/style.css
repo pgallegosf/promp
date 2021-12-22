@@ -205,6 +205,10 @@ body {
   .busquedaNormal {
     padding-bottom: 0px !important;
   }
+
+  .busquedaNormal-lista {
+    padding-bottom: 0px !important;
+  }
 }
 @media (min-width: 576px) {
   .titulo {
@@ -225,6 +229,10 @@ body {
   }
 
   .busquedaNormal {
+    padding-bottom: 24px !important;
+  }
+
+  .busquedaNormal-lista {
     padding-bottom: 24px !important;
   }
 }
@@ -292,6 +300,10 @@ body {
 
   .busquedaNormal {
     padding-bottom: 3rem !important;
+  }
+
+  .busquedaNormal-lista {
+    padding-bottom: 0.5rem !important;
   }
 
   #vista-det-filtro {
@@ -2364,6 +2376,10 @@ left: 153px;
 .padding-list-directorios {
   padding-left: 160px !important;
   padding-right: 50px !important;
+}
+
+.option-select {
+  padding: 8px;
 }
 
 .option-select-ficha {
