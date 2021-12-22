@@ -105,9 +105,9 @@
                 <div class="vl mostrar-desktop"></div>
                 <div class="ordenar titulo-header font-H5-bold negro-promperu text-left mostrar-desktop">&nbsp;&nbsp; Directorio Logístico</div>
                 <div class="icon-menu separar-elementos-5">
-                    <div class="icon-menu" hidden>
-                        <i class="far fa-user"></i>
-                    </div>
+                    <div style="cursor: pointer;" class="icon-menu ocultar-movil" onclick="window.location.href='RegistroDirectorio.html'">
+                        <img src="../assets/img/img-login.svg" alt="">
+                     </div>
                     <div class="icon-menu">
                         <a class="idPopoverNotificacionGuardar" id="idPopoverNotificacionGuardar" data-bs-toggle="popover">
                             <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -262,7 +262,7 @@
                                     <button class="btn btn-second" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
                                 </div>-->
                                 <div id="vista-web" class="col-lg-3 col-md-3 col-xs-12 d-flex justify-content-center align-items-end">
-                                    <a style="position: relative;top: 10px;left: 10px;" href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral">
+                                    <a style="position: relative;top: 10px;left: 36px;" href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral">
                                         <i><img class="icon-busqueda" src="../assets/img/icon-busqueda-avanzada.svg" alt=""> <label class="font-H5-bold rojo-promperu">&nbsp;Búsqueda avanzada</label></i>
                                     </a>
                                 </div>
@@ -314,7 +314,7 @@
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <div class="row">
                                                   <div class="col-sm-7 d-flex align-items-end">
-                                                    <label class="font-H4-bold">Ordernar por:</label>
+                                                    <label class="font-H4-bold">Ordenar por:</label>
                                                   </div>
                                                   <div class="col-sm-5">
                                                     <input type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
@@ -375,10 +375,10 @@
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position: relative;right: 63px;">
                                                 <div class="row">
                                                    <div class="col-lg-7 col-md-7 d-flex align-items-end">
-                                                    <label class="font-H4-bold">Ordernar por:</label>
+                                                    <label class="font-H4-bold">Ordenar por:</label>
                                                    </div>
                                                    <div class="col-lg-5 col-md-5" style="position: relative; right: 14px;">
-                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i style="position: relative;top: 6px;font-size: 21px;right: 7px;" class="fas fa-angle-down icon-select ptOrdenarFil mostrar-desktop ordenar"></i>
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i style="position: relative;top: 6px;font-size: 21px;right: -5px;" class="fas fa-angle-down icon-select ptOrdenarFil mostrar-desktop ordenar"></i>
                                                     <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                    </div>
                                                 </div>
@@ -563,7 +563,7 @@
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                                 <div class="row">
                                                   <div class="col-sm-7 d-flex align-items-end">
-                                                    <label class="font-H4-bold">Ordernar por:</label>
+                                                    <label class="font-H4-bold">Ordenar por:</label>
                                                   </div>
                                                   <div class="col-sm-5">
                                                     <input type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
@@ -624,10 +624,10 @@
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position: relative;right: 63px;">
                                                 <div class="row">
                                                    <div class="col-lg-7 col-md-7 d-flex align-items-end">
-                                                    <label class="font-H4-bold">Ordernar por:</label>
+                                                    <label class="font-H4-bold">Ordenar por:</label>
                                                    </div>
                                                    <div class="col-lg-5 col-md-5" style="position: relative; right: 14px;">
-                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i style="position: relative;top: 6px;font-size: 21px;right: 7px;" class="fas fa-angle-down icon-select ptOrdenarFil mostrar-desktop ordenar"></i>
+                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i style="position: relative;top: 6px;font-size: 21px;right: -8px;" class="fas fa-angle-down icon-select ptOrdenarFil mostrar-desktop ordenar"></i>
                                                     <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                    </div>
                                                 </div>
