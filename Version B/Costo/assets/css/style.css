@@ -3358,3 +3358,11 @@ border:none;
 .display-inline-grid{
     display: inline-grid !important;
 }
+.fullHeight {
+    height: calc(100vh);
+  }
+
+  .position-final{
+    position: absolute;
+    bottom: 0;
+  }
