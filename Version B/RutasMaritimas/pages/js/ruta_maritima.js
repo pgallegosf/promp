@@ -69,7 +69,7 @@ $(document).ready(function() {
         e.stopPropagation();
         showPuerto();
     });
-    $(".opPaises").click(function() {
+    $(".opPaíses").click(function() {
         selectPuerto();
     });
     $(".btn-rutas2").click(function() {

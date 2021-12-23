@@ -8,7 +8,7 @@ var mostrarselectPais = document.getElementById("view-selectPais") //Variable pa
 var selectPuerto = document.getElementById("selectPuerto") //variable id selectpuerto permitira mostrar el segundo detalle de la seleccion
 var puertoSelect = document.getElementById("puertoSelect") //variable id selectpuerto permitira mostrar el segundo detalle de la seleccion
 var continente = document.getElementById("idContinente") // Variable id del detalle de continentes
-var detPais = document.getElementById("cmbPais") // Variable id del detalle de paises
+var detPais = document.getElementById("cmbPais") // Variable id del detalle de Países
 var viewRutas = document.getElementById("view-rutas") //Variable de id mostrar las rutas
 var resulBusqueda = document.getElementById("view-busqueda") // variable de id resultado de busqueda de ruta
 var viewLineaTiempoDesktop = document.getElementById("view-line-time-desktop") // Variable id para mostrar linea de tiempo
@@ -177,7 +177,7 @@ function mostrarRutasDestino() {
     btnRuta.className = "d-none"
 }
 //Mostrar vistas movil
-function mostrarPaises(dato) {
+function mostrarPaíses(dato) {
     mostrarPtoOrigenMovil.className = "d-none"
     mostrarPtoDestinoMovil.className = "d-display"
 }
@@ -203,7 +203,7 @@ function cambiarContinente(dato) {
     let America = document.getElementById("America").innerText
     let Europa = document.getElementById("Europa").innerText
         // let Asia = document.getElementById("Asia")
-        // let Africa = document.getElementById("Africa")
+        // let África = document.getElementById("África")
         // let Oceania = document.getElementById("Oceania")
 
     if (screen.width < 1024 || screen.width < 1280) {

@@ -52,7 +52,7 @@ $(document).ready(function() {
         $(".PuertoDestino-movil").show();
     });
     
-    $(".opPaises").click(function() {
+    $(".opPaíses").click(function() {
         selectPuerto();
     });
     $(".btn-rutas2").click(function() {
