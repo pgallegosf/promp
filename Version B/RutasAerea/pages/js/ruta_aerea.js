@@ -50,7 +50,6 @@ $(document).ready(function() {
         showCardPuertosOrigen();
     });
     $(".opPais").click(function(e) {
-        debugger;
         e.stopPropagation();
         showCardPuertosDestino();
     });
@@ -65,7 +64,7 @@ $(document).ready(function() {
         e.stopPropagation();
         showPuerto();
     });
-    $(".opPaises").click(function() {
+    $(".opPaíses").click(function() {
         selectPuerto();
     });
     $(".btn-rutas2").click(function() {

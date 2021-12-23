@@ -10,8 +10,11 @@ $(document).ready(function() {
     });
     $("#btn-comenzar").click(function() {
         mostrarDocumento();
+        $('#menu').show();
     });
     $("#btn-comenzarM").click(function() {
+        $('#nav-menu').removeClass('ocultar-movil');
+        $('#nav-menu').addClass('show-div')
         $('#menu').show();
         mostrarDocumento();
     });

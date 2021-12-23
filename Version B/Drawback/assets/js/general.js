@@ -139,6 +139,8 @@ $(document).ready(function() {
 
   $(".idPopoverNotificacionGuardar").click(function() {
     $(".popover").toggle();
+    $(".popover-2").show();
+    $(".popover-3").show();
 });
 $(".close-popover").click(function() {
   $(".popover").hide();
