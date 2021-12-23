@@ -11,6 +11,7 @@ $(function() {
     });
 })
 $(document).ready(function() {
+    
     $("#close-notificacion").click(function () {
         console.log("close");
         $("#idPopoverNotificacion").trigger("click");
@@ -42,6 +43,13 @@ $(document).ready(function() {
         }, 2000);
     });
 });
+
+function ResultadoIrPaginaRegistro(){
+    sessionStorage.removeItem("flagDesdeResultado");
+    sessionStorage.setItem('flagDesdeResultado', '1');
+    window.location.href="../../Registro/pages/Registro.html";
+}
+
 function ocultarNotificacion(){
     console.log("close2");
     $("#idPopoverNotificacion").trigger("click");

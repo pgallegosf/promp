@@ -49,4 +49,14 @@ function SeleccionarSector(sector){
 function SeleccionarTipoEmpresa(tipo){
     $("#txttipo").val(tipo);
 }
+function IrConfirmacionRegistro(){
+    var flagDesdeResultado=sessionStorage.getItem("flagDesdeResultado");
+    if(flagDesdeResultado==1){
+        window.location.href="ConfirmarRegistroResultado.html";
+    }
+    else{
+        window.location.href="ConfirmarRegistro.html";
+    }
+    sessionStorage.removeItem("flagDesdeResultado");
+}
 // function tipoEmpresa(event) {}

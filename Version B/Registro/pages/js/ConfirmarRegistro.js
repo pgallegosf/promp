@@ -24,3 +24,28 @@ function irPaginaInicio(){
             window.location.href="../../Drawback/Pages/Drawback.html";
     }
 }
+function irPaginaResultado(){
+    var idHerramienta=sessionStorage.getItem("idHerramienta");
+    switch(Number(idHerramienta)){
+        case 1:
+            window.location.href="../../RutasAerea/Pages/Detalle_rutas.html";
+            break;
+        case 2:
+            window.location.href="../../RutasMaritimas/Pages/Detalle_rutas.html";
+            break;
+        case 3:
+            window.location.href="../../RutasTerrestre/Pages/Detalle_rutas.html";
+            break;
+        case 4:
+            window.location.href="../../Costo/Pages/ResultadoCostos.html";
+            break;
+        case 5:
+            window.location.href="../../Cubicaje/Pages/ResultadoCubicaje-contenedor-aereo.html";
+            break;
+        case 6:
+            window.location.href="../../DirectorioLogistico/Pages/DirectorioLogistico.html";
+        break;
+            default:
+            window.location.href="../../Drawback/Pages/ResultadoSimulador.html";
+    }
+}
