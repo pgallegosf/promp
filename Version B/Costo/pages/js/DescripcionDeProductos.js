@@ -108,16 +108,32 @@ $(document).ready(function() {
         $(".cardFas").hide();
         $("#main").show();
     });
+    $(".btn-Fas-movil2").click(function() {
+        $(".cardFas2").hide();
+        $("#main").show();
+    });
     $(".btn-Fob-movil").click(function() {
         $(".cardFob").hide();
+        $("#main").show();
+    });
+    $(".btn-Fob-movil2").click(function() {
+        $(".cardFob2").hide();
         $("#main").show();
     });
     $(".btn-CFR-movil").click(function() {
         $(".cardCfr").hide();
         $("#main").show();
     });
+    $(".btn-CFR-movil2").click(function() {
+        $(".cardCfr2").hide();
+        $("#main").show();
+    });
     $(".btn-DAP-movil").click(function() {
         $(".cardDap").hide();
+        $("#main").show();
+    });
+    $(".btn-DAP-movil2").click(function() {
+        $(".cardDap2").hide();
         $("#main").show();
     });
     $(".btn-DPU-movil").click(function() {
@@ -381,17 +397,29 @@ $(document).ready(function() {
     $(".card-fas").click(function() {
         showCardFas();
     });
+    $(".card-fas2").click(function() {
+        showCardFas2();
+    });
     $(".card-fob").click(function() {
         showCardFob();
     });
+    $(".card-fob2").click(function() {
+        showCardFob2();
+    });
     $(".card-cfr").click(function() {
         showCardCFR();
+    });
+    $(".card-cfr2").click(function() {
+        showCardCFR2();
     });
     $(".card-cif").click(function() {
         showCardCIF();
     });
     $(".card-dap").click(function() {
         showCardDAP();
+    });
+    $(".card-dap2").click(function() {
+        showCardDAP2();
     });
     $(".card-dpu").click(function() {
         showCardDPU();
@@ -478,6 +506,10 @@ $(document).ready(function() {
     $("#CIF2").hide();
     $("#CFR2").hide();
     $(".ocultarLineMaritima").hide();
+    
+    $(".card-fas2").hide();
+    $(".card-fob2").hide();
+    $(".card-cfr2").hide();
 });
 
 function SeleccionarUnidadMedida(unidad){
@@ -610,6 +642,14 @@ function selectEncargo() {
     $("#Fob2").show();
     $("#CIF2").show();
     $("#CFR2").show();
+
+    $(".card-fas").hide();
+    $(".card-fob").hide();
+    $(".card-cfr").hide();
+    $(".card-fas2").show();
+    $(".card-fob2").show();
+    $(".card-cfr2").show();
+
     $(".ocultarLineMaritima").show();
     $(".tituloCostosGastos").html("Selecciona tus gastos");
     $(".subtituloCostosGastos").html("Ingresa los gastos que correspondan en cada una de las secciones");
@@ -634,6 +674,14 @@ function selectDirecta() {
     $("#Fas").show();
     $("#Fob").show();
     $("#CFR").hide();
+
+    $(".card-fas").show();
+    $(".card-fob").show();
+    $(".card-cfr").show();
+    $(".card-fas2").hide();
+    $(".card-fob2").hide();
+    $(".card-cfr2").hide();
+    
     $(".ocultarLineMaritima").hide();
     
     $(".tituloCostosGastos").html("Selecciona tus costos y gastos");
@@ -1176,11 +1224,21 @@ function showCardFas() {
     $(".cardExworks").hide();
     $(".cardFas").show();
 }
+function showCardFas2() {
+    $("#main").hide();
+    $(".cardExworks").hide();
+    $(".cardFas2").show();
+}
 
 function showCardFob() {
     $("#main").hide();
     $(".cardFas").hide();
     $(".cardFob").show();
+}
+function showCardFob2() {
+    $("#main").hide();
+    $(".cardFas2").hide();
+    $(".cardFob2").show();
 }
 
 function showCardCFR() {
@@ -1188,7 +1246,11 @@ function showCardCFR() {
     $(".cardFob").hide();
     $(".cardCfr").show();
 }
-
+function showCardCFR2() {
+    $("#main").hide();
+    $(".cardFob2").hide();
+    $(".cardCfr2").show();
+}
 function showCardCIF() {
     $("#main").hide();
     $(".cardCFR").hide();
@@ -1198,7 +1260,13 @@ function showCardCIF() {
 function showCardDAP() {
     $("#main").hide();
     $(".cardCif").hide();
+    $(".cardDap2").hide();
     $(".cardDap").show();
+}
+function showCardDAP2() {
+    $("#main").hide();
+    $(".cardCfr2").hide();
+    $(".cardDap2").show();
 }
 
 function showCardDPU() {
