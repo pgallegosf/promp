@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
     $("#view-simulador-principal").hide()
 
-    $(".acordion-res-normal").dblclick(function() {
+    $(".acordion-res-normal").click(function() {
         var valor = 3;
         switch (valor) {
             case 3:
@@ -19,11 +19,11 @@ $(document).ready(function() {
         }
     });
 
-    $(".acordion-res-noaplica").dblclick(function() {
+    $(".acordion-res-noaplica").click(function() {
         window.location = 'Simulador-noaplica.html';
     });
 
-    $(".acordion-res-advertencia").dblclick(function() {
+    $(".acordion-res-advertencia").click(function() {
         window.location = 'Simulador-warning.html';
     });
 
