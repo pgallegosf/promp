@@ -908,7 +908,7 @@
     </div>
     <!-- Fin modal de guardar simulación -->
     <!-- Inicio modal Login -->
-    <div class="modal fade" id="m-login" tabindex="-1" aria-labelledby="m-login" aria-hidden="true">
+    <div class="modal fade modal-iniciar-sesion" id="m-login" tabindex="-1" aria-labelledby="m-login" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" style="display: flex; justify-content: center;">
             <div class="modal-content" style="max-width: 338px !important;">
                 <div class="modal-header" style="display: flex; justify-content: center;">
@@ -920,21 +920,21 @@
                 <div class="modal-body" style="padding-left: 30px !important;">
                     <div>
                         <label class="font-label-400 negro-promperu">Correo Electronico</label>
-                        <input style="width: 275px !important; padding-left: 5px !important;" type="text" class="form-control txt-login font-H4-light" placeholder="ejemplo@correo.com">
+                        <input style="width: 275px !important; padding-left: 5px !important; margin-bottom: 20px !important;" type="text" class="form-control txt-login font-H4-light-400n" placeholder="ejemplo@correo.com">
                     </div>
-                    <div class="pt-4">
+                    <div>
                         <label class="font-label-400 negro-promperu">Contraseña</label>
-                        <input style="width: 275px !important; padding-left: 5px !important;"  type="password" class="form-control font-H4-light" placeholder="******">
+                        <input style="width: 275px !important; padding-left: 5px !important;"  type="password" class="form-control font-H4-light-400n" placeholder="******">
                     </div>
                 </div>
-                <div class="centrado-modal">
-                    <button onclick="window.location.href='../../Login/pages/Login.html'" class="btn btn-danger btn-ingresar font-H4-bold width-100" style="max-width: 284px !important;" type="button">Ingresar</button>
+                <div class="centrado">
+                    <button class="btn btn-danger btn-ingresar font-H4-bold width-100" style="max-width: 284px !important; margin-bottom: 0px !important;" type="button">Ingresar</button>
                 </div>
-                <div class="centrado-modal text-line-title font-color-red ordenar font-label-400c" data-bs-toggle="modal" data-bs-target="#m-password">¿Olvidaste tu contraseña?</div>
+                <div class="centrado text-line-title font-color-red ordenar font-label-400c" style="margin-top: 0px !important; margin-bottom: 40px !important;" data-bs-toggle="modal" data-bs-target="#m-password">¿Olvidaste tu contraseña?</div>
                 <div class="modal-footer background-footer-modal" style="display: flex; justify-content: center;">
-                    <div onclick="window.location.href='../../Registro/pages/Registro.html'" class="centrado-modal text-line-title negro-promperu col-12 font-H4-bold-700">¿Aún no tienes una cuenta?</div>
-                    <div class="centrado-modal col-12" style="margin-bottom: 0px !important;">
-                        <button style="width: 289px !important;" type="button" class="btn btn-outline-danger font-H4-bold-700" onclick="window.location.href='../../Registro/pages/Registro.html'">Regístrate Aquí</button>
+                    <div class="centrado text-line-title negro-promperu col-12 font-H4-bold-700">¿Aún no tienes una cuenta?</div>
+                    <div class="centrado col-12" style="margin-bottom: 0px !important;">
+                        <button style="width: 289px !important; margin-bottom: 40px !important;" type="button" class="btn btn-outline-danger font-H4-bold-700" onclick="window.location.href='../../Registro/pages/Registro.html'">Regístrate Aquí</button>
                     </div>
                 </div>
             </div>
