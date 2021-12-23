@@ -230,14 +230,29 @@ $(document).ready(function() {
     $(".OP-agregar2").click(function() {
         ocultarFas();
     });
+    $(".OP-agregar9").click(function() {
+        ocultarFas2();
+    });
+    $(".OP-agregar10").click(function() {
+        ocultarFob2();
+    });
+    $(".OP-agregar11").click(function() {
+        ocultarCFR2();
+    });
     $(".Close-Fas").click(function() {
         closeFas();
+    });
+    $(".Close-Fas2").click(function() {
+        closeFas2();
     });
     $("#estiba").click(function() {
         llenarCampoFas();
     });
     $(".btn-Fas").click(function() {
         closeFas_openFob();
+    });
+    $(".btn-Fas2").click(function() {
+        closeFas_openFob2();
     });
 
     $(".OP-agregar3").click(function() {
@@ -246,11 +261,17 @@ $(document).ready(function() {
     $(".Close-Fob").click(function() {
         closeFob();
     });
+    $(".Close-Fob2").click(function() {
+        closeFob2();
+    });
     $("#estiba2").click(function() {
         llenarCampoFob();
     });
     $(".btn-Fob").click(function() {
         closeFob_openCFR();
+    });
+    $(".btn-Fob2").click(function() {
+        closeFob_openCFR2();
     });
 
     $(".OP-agregar4").click(function() {
@@ -259,18 +280,30 @@ $(document).ready(function() {
     $(".Close-CFR").click(function() {
         closeCFR();
     });
+    $(".Close-CFR2").click(function() {
+        closeCFR2();
+    });
     $("#flete").click(function() {
         llenarCampoCFR();
     });
     $(".btn-CFR").click(function() {
         closeCFR_openCIF();
     });
+    $(".btn-CFR2").click(function() {
+        closeCFR_openCIF2();
+    });
 
     $(".OP-agregar5").click(function() {
         ocultarCIF();
     });
+    $(".OP-agregar12").click(function() {
+        ocultarCIF2();
+    });
     $(".Close-CIF").click(function() {
         closeCIF();
+    });
+    $(".Close-CIF2").click(function() {
+        closeCIF2();
     });
     $("#prima").click(function() {
         llenarCampoCIF();
@@ -278,7 +311,9 @@ $(document).ready(function() {
     $(".btn-CIF").click(function() {
         closeCIF_openDAP();
     });
-
+    $(".btn-CIF2").click(function() {
+        closeCIF_openDAP2();
+    });
     $(".OP-agregar6").click(function() {
         ocultarDAP();
     });
@@ -290,6 +325,9 @@ $(document).ready(function() {
     });
     $(".btn-DAP").click(function() {
         closeDAP_openDPU();
+    });
+    $(".btn-DAP2").click(function() {
+        closeCIF_openDAP2();
     });
     $(".OP-agregar7").click(function() {
         ocultarDPU();
@@ -415,9 +453,13 @@ $(document).ready(function() {
     $("#ExWorksDetalle").hide();
     $(".montos").hide();
     $("#FasDetalle").hide();
+    $("#FasDetalle2").hide();
     $("#FobDetalle").hide();
+    $("#FobDetalle2").hide();
     $("#CFRDetalle").hide();
+    $("#CFRDetalle2").hide();
     $("#CIFDetalle").hide();
+    $("#CIFDetalle2").hide();
     $("#DAPDetalle").hide();
     $("#DPUDetalle").hide();
     $("#DDPDetalle").hide();
@@ -431,6 +473,11 @@ $(document).ready(function() {
     $(".incoterms").hide();
     $(".checkmovil").hide();
     $(".tipoCarga").hide();
+    $("#Fas2").hide();
+    $("#Fob2").hide();
+    $("#CIF2").hide();
+    $("#CFR2").hide();
+    $(".ocultarLineMaritima").hide();
 });
 
 function SeleccionarUnidadMedida(unidad){
@@ -556,6 +603,14 @@ function selectEncargo() {
     $("#CostoIndirecto").hide();
     $("#CostoDirecto").hide();
     $(".ocultar-costo").hide();
+    $("#Fas").hide();
+    $("#Fob").hide();
+    $("#CFR").hide();
+    $("#Fas2").show();
+    $("#Fob2").show();
+    $("#CIF2").show();
+    $("#CFR2").show();
+    $(".ocultarLineMaritima").show();
     $(".tituloCostosGastos").html("Selecciona tus gastos");
     $(".subtituloCostosGastos").html("Ingresa los gastos que correspondan en cada una de las secciones");
     $(".lineOculto").hide();
@@ -572,6 +627,15 @@ function selectDirecta() {
     $("#CostoIndirecto").show();
     $("#CostoDirecto").show();
     $(".ocultar-costo").show();
+    $("#Fas2").hide();
+    $("#Fob2").hide();
+    $("#CFR2").hide();
+    $("#CIF2").hide();
+    $("#Fas").show();
+    $("#Fob").show();
+    $("#CFR").hide();
+    $(".ocultarLineMaritima").hide();
+    
     $(".tituloCostosGastos").html("Selecciona tus costos y gastos");
     $(".subtituloCostosGastos").html("Ingresa los costos y gastos que correspondan en cada una de las secciones");
     $(".lineOculto").show();
@@ -855,15 +919,28 @@ function closeExwork_openFas() {
     $("#Fas").hide();
     $("#FasDetalle").show();
 }
+function closeExwork_openFas2() {
+    $("#ExWorksDetalle").hide();
+    $("#ExWorks").show();
+    $("#Fas2").hide();
+    $("#FasDetalle2").show();
+}
 
 function ocultarFas() {
     $("#Fas").hide();
     $("#FasDetalle").show();
 }
-
+function ocultarFas2() {
+    $("#Fas2").hide();
+    $("#FasDetalle2").show();
+}
 function closeFas() {
     $("#FasDetalle").hide();
     $("#Fas").show();
+}
+function closeFas2() {
+    $("#FasDetalle2").hide();
+    $("#Fas2").show();
 }
 
 function llenarCampoFas() {
@@ -877,14 +954,30 @@ function closeFas_openFob() {
     $("#FobDetalle").show();
 }
 
+function closeFas_openFob2() {
+    $("#FasDetalle2").hide();
+    $("#Fas2").show();
+    $("#Fob2").hide();
+    $("#FobDetalle2").show();
+}
+
 function ocultarFob() {
     $("#Fob").hide();
     $("#FobDetalle").show();
+}
+function ocultarFob2() {
+    $("#Fob2").hide();
+    $("#FobDetalle2").show();
 }
 
 function closeFob() {
     $("#FobDetalle").hide();
     $("#Fob").show();
+}
+
+function closeFob2() {
+    $("#FobDetalle2").hide();
+    $("#Fob2").show();
 }
 
 function llenarCampoFob() {
@@ -897,17 +990,31 @@ function closeFob_openCFR() {
     $("#CFR").hide();
     $("#CFRDetalle").show();
 }
+function closeFob_openCFR2() {
+    $("#FobDetalle2").hide();
+    $("#Fob2").show();
+    $("#CFR2").hide();
+    $("#CFRDetalle2").show();
+}
 
 function ocultarCFR() {
     $("#CFR").hide();
     $("#CFRDetalle").show();
 }
 
+function ocultarCFR2() {
+    $("#CFR2").hide();
+    $("#CFRDetalle2").show();
+}
+
 function closeCFR() {
     $("#CFRDetalle").hide();
     $("#CFR").show();
 }
-
+function closeCFR2() {
+    $("#CFRDetalle2").hide();
+    $("#CFR2").show();
+}
 function llenarCampoCFR() {
     $("#flete").val("400");
 }
@@ -918,17 +1025,30 @@ function closeCFR_openCIF() {
     $("#CIF").hide();
     $("#CIFDetalle").show();
 }
-
+function closeCFR_openCIF2() {
+    $("#CFRDetalle2").hide();
+    $("#CFR2").show();
+    $("#CIF2").hide();
+    $("#CIFDetalle2").show();
+}
 function ocultarCIF() {
     $("#CIF").hide();
     $("#CIFDetalle").show();
+}
+
+function ocultarCIF2() {
+    $("#CIF2").hide();
+    $("#CIFDetalle2").show();
 }
 
 function closeCIF() {
     $("#CIFDetalle").hide();
     $("#CIF").show();
 }
-
+function closeCIF2() {
+    $("#CIFDetalle2").hide();
+    $("#CIF2").show();
+}
 function llenarCampoCIF() {
     $("#prima").val("700");
 }
@@ -939,7 +1059,12 @@ function closeCIF_openDAP() {
     $("#DAP").hide();
     $("#DAPDetalle").show();
 }
-
+function closeCIF_openDAP2() {
+    $("#CIFDetalle2").hide();
+    $("#CIF2").show();
+    $("#CIF").hide();
+    $("#CIFDetalle").show();
+}
 function ocultarDAP() {
     $("#DAP").hide();
     $("#DAPDetalle").show();
