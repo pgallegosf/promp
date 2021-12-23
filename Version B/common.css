@@ -2124,7 +2124,7 @@ img {
 
 .card-ptoDestino {
     width: 50% !important;
-    height: 35% !important;
+    height: 50% !important;
     margin-left: 7% !important;
     position: absolute !important;
     font-size: 10px;
@@ -2133,6 +2133,7 @@ img {
     z-index: 80;    
     border-radius: 0px 0px 15px 15px !important;
 }
+
 
 .padding-left-right-0 {
   padding-left: 0 !important;
