@@ -101,7 +101,7 @@ function VerificarHerramienta(){
             $('.titulo-header').html("Rutas Terrestres");
             break;
         case 4:
-            $('.titulo-simulacion').html("Simulaciones de Costos");
+            $('.titulo-simulacion').html("Simulaciones de Costos de Exportación");
             $('.titulo-header').html("Simulador de Costos");
             break;
         case 5:
