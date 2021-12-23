@@ -10,6 +10,10 @@ $(document).ready(function() {
     $('.btn-ingresar').click(function(e) {
         $(".popover").show();
         $(".modal-iniciar-sesion").hide();
+        if($('.modal-backdrop').hasClass('show')) {
+            $('.modal-backdrop').removeClass('show');
+            $('.modal-backdrop').addClass('hide');
+        }
     });
 
     $(".ver-simulaciones").click(function(e) {
