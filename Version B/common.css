@@ -2651,6 +2651,9 @@ line-height: 61px;
   .mostrar-desktop.flex{
     display:none !important;
   }
+  .mostrar-desktop.table-row{
+    display:none !important;
+  }
   .mostrar-movil.content{
     display:contents !important;
   }
@@ -2665,6 +2668,9 @@ line-height: 61px;
 @media (min-width: 768px) {
   .mostrar-desktop.flex{
     display:flex !important;
+  }
+  .mostrar-desktop.table-row{
+    display:table-row !important;
   }
   .mostrar-movil.content{
     display:none !important;
