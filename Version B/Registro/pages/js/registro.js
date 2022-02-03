@@ -16,11 +16,15 @@ $(document).ready(function() {
     $(".chkEmpresa").click(function() {
         var valor = $(this).val();
         if (valor == "0") {
+            $(".empresa").css("display", "flex");
             $(".natural").css("display", "none");
             $("#flexRadioDefault3").prop("checked", false);
+            $(".lblCorreoCorporativo").html("Correo corporativo");
         } else {
+            $(".empresa").css("display", "none");
             $(".natural").css("display", "block");
             $("#flexRadioDefault3").prop("checked", true);
+            $(".lblCorreoCorporativo").html("Correo electrónico");
         }
     });
     //Radiobutton activado

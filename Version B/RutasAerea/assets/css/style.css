@@ -359,7 +359,7 @@ body {
 }
 
 .hr {
-    height: 2px;
+    height: 0.5px;
 }
 
 .refresh {
@@ -1715,6 +1715,17 @@ body {
     background-color: #f6f7f9 !important;
     box-shadow: 0 0 0 2px #f6f7f9 !important;   
 }
+.lblsinpadding{
+    margin-left: 0 !important;
+  }
+  .link-simulaciones:hover{
+      color:#FFF;
+      text-decoration: underline;
+  }
 /* ====================================================================================== 
  Fin de estilos de rutas marítimas
 ====================================================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1375px) {
+    
+}

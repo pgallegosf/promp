@@ -226,7 +226,7 @@ function retornarPais() {
 
 function SelectCardPaisDestino() {
     $("#PaisDestinoCanvas").offcanvas('hide');
-    $(".mostrarpuertoMovil").val("Estado Unidos");
+    $(".mostrarpuertoMovil").val("Estados Unidos");
     $(".btn-rutasMovil2").removeAttr('disabled');
     $(".btn-rutasMovil2").removeClass('btn-disabled');
     $(".btn-rutasMovil2").addClass('btn-danger');

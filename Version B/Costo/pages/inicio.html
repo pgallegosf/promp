@@ -141,7 +141,7 @@
             <!-- Inicio de vista principal -->
             <div class="d-display">
                 <div class="text-center mt-3">
-                    <div class="col-lg-6 col-md-8 col-sm-12" style="display: inline-block;">
+                    <div class="col-lg-6 col-md-11 col-sm-12" style="display: inline-block;">
                         <div class="mostrar-desktop">
                             <h5 class="titulo font-display negro-promperu " style="display: inline-block; max-width: 654px;">
                                 Simulador de<br> Costos de Exportación
@@ -161,7 +161,7 @@
                     <div class="col-lg-12 mb-lg-0 padding-left-right-0 div-card-busqueda">
                         <!-- <div class="card card-busqueda"> -->
                         <div class="card card-busqueda" style="margin-right: 12px; margin-left: 12px !important;">
-                            <div class="row px-2 padding-busqueda overflow-hidden margin-left-right-0" style="width: 100%;">
+                            <div class="row px-2 padding-busqueda overflow-hidden margin-left-right-0" style="width:-webkit-fill-available;">
                                 <div class="col-lg-4 col-md-6 col-xs-12  padding-control-right">
                                     <label class="font-label negro-promperu margin-left-right-0">Correo electrónico</label>
                                     <input type="text" class="form-control font-H4-light negro-promperu txtcorreo padding-left-right-0" placeholder="ejemplo@correo.com">
@@ -175,22 +175,26 @@
                                     <button class="btn btn-danger btn-rutas mostrar-desktop width-100 font-H4-bold-700 margin-0 padding-left-right-0" style="max-width: 278px;" onclick="window.location.href='EmpezarSimulacionCosto.html'">Ingresar</button>
                                     <button class="btn btn-danger btn-rutasMovil width-100 mostrar-movil mt-3 font-H4-bold-700 padding-left-right-0" id="btnBuscarMovil"  onclick="window.location.href='EmpezarSimulacionCosto.html'">Ingresar</button>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br></div>
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mostrar-movil">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 espacio-control"><br></div>
+                                <div class="row padding-right-movil-0">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mostrar-movil" style="padding-bottom: 20px;">
                                         <input class="input-checkbox" type="checkbox" name="chkMismoContacto-movil" id="chkMismoContacto-movil" >
                                         <label for="chkMismoContacto-movil" class="input-checkbox-lab font-H4-medium-400 negro-promperu">Mantener sesión abierta</label>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6 padding-left-right-0">
+                                    <div class="col-lg-4 col-md-6 col-sm-5 col-xs-5 padding-left-right-0  padding-link-bucador">
                                         <a class=" rojo-promperu ordenar font-link link-principal" onclick="window.location.href='../../Registro/pages/Registro.html'">¿Aún no tienes cuenta?</a>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6 mt-1">
-                                        <div class=" rojo-promperu ordenar font-link link-principal mostrar-desktop" data-bs-toggle="modal" data-bs-target="#m-password">Olvidé mi contraseña</div>
-                                        <div class=" rojo-promperu ordenar font-link link-principal mostrar-movil" data-bs-toggle="modal" data-bs-target="#m-password" style="text-align:right;">Olvidé mi contraseña</div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 mt-1 mostrar-desktop">
+                                        <div class=" rojo-promperu ordenar font-link link-principal " data-bs-toggle="modal" data-bs-target="#m-password">Olvidé mi contraseña</div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mostrar-desktop">
+                                    <!--<div class="col-sm-1 col-xs-1 mostrar-movil">
+                                    </div>-->
+                                    <div class="col-lg-4 col-md-6 col-sm-7 col-xs-7 mt-1 mostrar-movil" style="padding-right: 0;">
+                                        <div class=" rojo-promperu ordenar font-link link-principal" data-bs-toggle="modal" data-bs-target="#m-password" style="text-align:right;">Olvidé mi contraseña</div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mostrar-desktop padding-left-sesion">
                                         <input class="input-checkbox" type="checkbox" name="chkMismoContacto" id="chkMismoContacto" checked="">
-                                        <label for="chkMismoContacto" class="input-checkbox-lab font-H4-medium-400 negro-promperu">Mantener sesión abierta</label>
+                                        <label for="chkMismoContacto" class="input-checkbox-lab font-H4-medium-400 negro-promperu ">Mantener sesión abierta</label>
                                     </div>
                                 </div>
                             </div>
@@ -213,7 +217,7 @@
                     <div class="row mt-4 div-centrado div-principal-busqueda background-color-gris margin-top-bottom-0">
                         <div class="col-lg-12 mb-lg-0 padding-left-right-0 div-card-busqueda">
                             <div class="card-busqueda margin-right-0">
-                                <div class="row px-2 overflow-hidden margin-left-right-0" style="padding-bottom: 0 !important;">
+                                <div class="row px-2 overflow-hidden margin-left-right-0 sin-margin-left" style="padding-bottom: 0 !important;">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fs-5 negro-promperu  text-center font-Display-2-Bold-n mostrar-desktop" style="margin-top:80px !important; margin-bottom:18px !important;">¿En qué te puede ayudar esta herramienta?</div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-5 negro-promperu text-center mostrar-movil font-H2-bold" style="margin-top:36px !important; margin-bottom:18px !important;">¿En qué te puede ayudar esta herramienta?</div>
                                     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">                                        
@@ -221,21 +225,21 @@
                                             <div class="carousel-item active" data-bs-interval="5000">
                                                 <img src="../assets/img/Costo/fondo_blanco.jpg" class="d-block w-100 img-slider" alt="..." style="display: none !important;">
                                                 <div class="carousel-caption d-md-block padding-top-bottom-0 padding-left-right-0" >
-                                                    <div class="row">
-                                                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="row" style="">
+                                                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12" style="">
                                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                 <div class="">
-                                                                    <img src="../assets/img/Costo/escritorio 1.png" alt="library" class="">
+                                                                    <img src="../assets/img/Costo/escritorio 1.png" style="" alt="library" class="">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 padding-left-right-0" style="display: flex;
                                                         align-items: center;">
                                                             <div class="row">
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-4 negro-promperu font-H2-bold mostrar-desktop text-align-left padding-left-right-0">
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-4 negro-promperu font-H2-bold mostrar-desktop text-align-left padding-left-right-0 altura-fija">
                                                                     Mantén organizados y centralizados tus costos
                                                                 </div>
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-4 negro-promperu font-H4-medium mostrar-movil">
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-4 negro-promperu font-H4-medium mostrar-movil" style="height:66px;">
                                                                     Mantén organizados y centralizados tus costos
                                                                 </div>
                                                             </div>
@@ -246,21 +250,21 @@
                                             <div class="carousel-item" data-bs-interval="5000">
                                                 <img src="../assets/img/Costo/fondo_blanco.jpg" class="d-block w-100 img-slider" alt="..." style="display: none !important;">
                                                 <div class="carousel-caption d-md-block padding-top-bottom-0 padding-left-right-0" >
-                                                    <div class="row">
-                                                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="row" style="">
+                                                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12" style="">
                                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                 <div class="">
-                                                                    <img src="../assets/img/Costo/escritorio 1.png" alt="library" class="">
+                                                                    <img src="../assets/img/Costo/escritorio 1.png" style="" alt="library" class="">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 padding-left-right-0" style="display: flex;
                                                         align-items: center;">
                                                             <div class="row">
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-4 negro-promperu font-H2-bold mostrar-desktop text-align-left padding-left-right-0">
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-4 negro-promperu font-H2-bold mostrar-desktop text-align-left padding-left-right-0 altura-fija">
                                                                     Identifica y analiza adecuadamente los costos logísticos de exportación
                                                                 </div>
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-4 negro-promperu font-H4-medium mostrar-movil">
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-4 negro-promperu font-H4-medium mostrar-movil" style="height:66px;">
                                                                   Identifica y analiza adecuadamente los costos logísticos de exportación
                                                                 </div>
                                                             </div>
@@ -271,21 +275,21 @@
                                             <div class="carousel-item" data-bs-interval="5000">
                                                 <img src="../assets/img/Costo/fondo_blanco.jpg" class="d-block w-100 img-slider" alt="..." style="display: none !important;">
                                                 <div class="carousel-caption d-md-block padding-top-bottom-0 padding-left-right-0" >
-                                                    <div class="row">
-                                                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="row" style="">
+                                                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12" style=" ">
                                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                                 <div class="">
-                                                                    <img src="../assets/img/Costo/escritorio 1.png" alt="library" class="">
+                                                                    <img src="../assets/img/Costo/escritorio 1.png" style="" alt="library" class="">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 padding-left-right-0" style="display: flex;
                                                         align-items: center;">
                                                             <div class="row">
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-4 negro-promperu font-H2-bold mostrar-desktop text-align-left padding-left-right-0">
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-4 negro-promperu font-H2-bold mostrar-desktop text-align-left padding-left-right-0 altura-fija">
                                                                     Con la estructura de costos de exportación, mejora tu capacidad de negociación 
                                                                 </div>
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-4 negro-promperu font-H4-medium mostrar-movil">
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4 fs-4 negro-promperu font-H4-medium mostrar-movil" style="height:66px;">
                                                                    Con la estructura de costos de exportación, mejora tu capacidad de negociación
                                                                 </div>
                                                             </div>
@@ -337,8 +341,9 @@
                         <div class="card-busqueda margin-right-0">
                             <div class="row px-2 p-5 overflow-hidden margin-left-right-0 padding-top-bottom-contenedores" style="padding-bottom: 0 !important; margin-left:0 !important;">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pt-4 titulo negro-promperu font-H2-bold mostrar-movil">¿Cómo funciona?</div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo negro-promperu font-Display-2-Bold-n mostrar-desktop" style="margin-top:70px; padding-left: 0 !important;">¿Cómo funciona?</div>
                                 <div class="row div-centrado table-responsive margin-top-bottom-0">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo negro-promperu font-Display-2-Bold-n mostrar-desktop" style="margin-top:70px; padding-left: 0 !important;">¿Cómo funciona?</div>
+                                    
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-desktop" style="height:80px;"><br></div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mostrar-movil" style="height:40px;"><br></div>
                                     <div class="mywrapper movil-left-desktop-center" >
@@ -444,7 +449,7 @@
             <!-- Fin de vista principal -->
             <footer class="footer" id="footer" style="padding-top: 111px !important;">
                 <div class="container-fluid">
-                    <div id="footer-Desktop" class="mostrar-desktop">
+                    <div id="footer-Desktop" class="mostrar-desktop footer-tablet-desktop">
                         <div class="row align-items-center justify-content-center max-resolution" style="margin: auto !important;">
                             <div class="col-lg-12 mb-lg-0 mb-4">
                                 <div class="text-center font-helvetica-coryright" style="justify-content: center;">
@@ -486,7 +491,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mostrar-movil" id="footer-Movil" style="height: 348px !important;">
+                    <div class="mostrar-movil footer-tablet-movil" id="footer-Movil" style="height: 348px !important;">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-lg-12 mb-lg-0 mb-2">
                                 <div class="text-center font-helvetica-coryright" style="justify-content: center;">
@@ -651,7 +656,7 @@
                     <div class="col-12 div-left padding-left-right-1">
                         <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
                         <textarea type="text" class="form-control font-H4-light-400n" maxlength="500" rows="1" style="padding-left: 3px !important;"></textarea>
-                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
+                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 caracteres</span>
                     </div>
                     <div class="col-12 div-left mt-4 margin-top-44-20" >
                         <button class="btn btn-primary btn-danger width-100 font-H4-bold margin-bottom-68-4 max-boton-modal" type="button" data-bs-toggle="modal" data-bs-target="#m-informativo-confirmacion" >Enviar</button>
@@ -689,7 +694,7 @@
                     <div class="col-12 div-left padding-left-right-1">
                         <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
                         <textarea type="text" class="form-control font-H4-light-400n" maxlength="500" rows="1" style="padding-left: 3px !important;"></textarea>
-                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
+                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 caracteres</span>
                     </div>
                     <div class="col-12 div-left mt-4 padding-left-right-1" style="display: flex; align-items: center; min-width: 300px !important; margin-bottom: 15.85px !important; margin-top: 33.55px !important;">
                         <div class="col-5 div-left font-label-400 negro-promperu mostrar-desktop" style="max-width: 170px !important;">Califica la herramienta:</div>
@@ -889,21 +894,24 @@
     </div>
     <!-- Fin menu general desktop -->
     <!-- Inicio modal olvidar contraseña -->
-    <div class="modal fade-second bd-example-modal-sm" id="m-password" tabindex="-1" role="dialog" aria-labelledby="m-password" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
+    <div class="modal fade-second bd-example-modal-sm modal-centrado-horizontal" id="m-password" tabindex="-1" role="dialog" aria-labelledby="m-password" aria-hidden="true">
+        <div class="modal-dialog modal-sm  modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header" style="padding-bottom:0;">
-                    <h3 class="negro-promperu font-weight-100 font-size-20 text-center font-h3-bold-700c">Recupera tu contraseña</h3>
+                <div class="modal-header" style="padding-bottom:0; justify-content: center;">
+                    <h3 class="negro-promperu font-weight-100 font-size-20 text-center font-h3-bold-700c" >Recupera tu contraseña</h3>
                     <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
                         <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
                     </button>
                 </div>
                 <div class="rem-1">
-                    <div class="col-lg-12 font-H5-lightn negro text-center">Si olvidaste tu contraseña, ingresa tu correo y te ayudaremos a recuperarla</div>
-                    <label class="negro-promperu font-size-13 font-weight-100 font-label">Correo electrónico</label>
-                    <input type="text" class="form-control text-correo font-H4-light-normal padding-left-right-0 negro-promperu" placeholder="ejemplo@correo.com" value="">
+                    <div class="col-lg-12 font-H5-lightn negro text-center" style="padding-bottom: 20px;">Si olvidaste tu contraseña, ingresa tu correo y te ayudaremos a recuperarla</div>
+                    <div class="col-12 div-left padding-left-right-1 padding-bottom-40-20" style="text-align: left;">
+                        <label class="font-label-400 negro-promperu" style="margin-bottom: 0px !important;" >Correo electrónico</label>
+                        <input type="text" class="form-control text-correo font-H4-light-400n" placeholder="ejemplo@correo.com" style="padding-left: 3px !important; width: 100% !important;">
+                    </div>
+                    
                     <div class="centrado mt-3">
-                        <button class="btn btn-danger btn-enviar-pass width-100" type="button">Enviar</button>
+                        <button class="btn btn-danger btn-enviar-pass width-100 font-H4-bold-700" type="button">Enviar</button>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,9 @@ $(document).ready(function() {
 
         $('#txtNombre').focus();
     })*/
-
+    $("#t-option").prop("checked", true);
+    $("#t-option2-movil").prop("checked", true);
+    
     $("#t-option").click(function () {
         mostrarSucursal(); 
     });
@@ -16,11 +18,19 @@ $(document).ready(function() {
         ocultarSucursal();  
     });
 
+    $("#t-option-movil").click(function () {
+        mostrarSucursal(); 
+    });
+
+    $("#t-option2-movil").click(function () {
+        ocultarSucursal();  
+    });
+
     $(".siSucursales").hide();
     //$(".tab-movil").hide();
     
     contador("#txtDescripcion","#numerocaracteres");
-
+    
     var $fileInput = $('.file-input');
     var $droparea = $('.file-drop-area');
 
@@ -48,6 +58,7 @@ $(document).ready(function() {
         // otherwise show number of files
         $textContainer.text(filesCount + ' files selected');
     }
+    
 });
     
 });

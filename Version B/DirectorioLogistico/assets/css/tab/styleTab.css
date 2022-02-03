@@ -196,6 +196,8 @@ footer .credits {
 	padding: 1rem 1.5rem;
 	transition: all 0.2s ease-in-out;
 	word-wrap: break-word;
+	padding-top:25px;
+	padding-bottom:25px;
 }
 
 .tabs .divTab .div-left-tab > ul li a:hover,

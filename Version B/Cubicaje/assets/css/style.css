@@ -151,6 +151,12 @@ text-decoration-line: underline;
   .nav-img {
     width: 22% !important;
   }
+  .mostrar-desktop {
+    display: block !important;
+  }
+  .mostrar-movil {
+    display: none !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2034,7 +2040,7 @@ a > i > label {
 @media (min-width: 200px) {
 
   .ggpopover {
-    top: 462px !important;
+    /*top: 462px !important;*/
   }
 
   .show-web {
@@ -2086,7 +2092,7 @@ a > i > label {
 
 @media (min-width: 1200px) {
   .ggpopover {
-    top: 283.2px !important; 
+    /*top: 283.2px !important; */
   }
   .mostrar-movil {
     display: none;
@@ -2103,8 +2109,8 @@ a > i > label {
 /* Card personalizado movil */
 
 .ggpopover {
-  top: 283.2px; 
-  left: 441.967px;
+  /*top: 283.2px; 
+  left: 441.967px;*/
   display: block;
   border-color: rgb(204, 204, 204);
   border-radius: 15px !important;
@@ -2415,6 +2421,15 @@ a > i > label {
 
 /* Style car-bulto */
 
+.scroll-card {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.scroll-card::-webkit-scrollbar {
+  width: 0;
+}
+
 @media (min-width: 200px) {
   .card-palietizado {
     height: auto !important;
@@ -2461,7 +2476,7 @@ a > i > label {
 @media (min-width: 576px) {
   .card-bulto {
     height: auto !important;
-    top: 100% !important;
+    top: 34% !important;
     position: absolute !important;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
   }
@@ -2473,7 +2488,7 @@ a > i > label {
 @media (min-width: 768px) {
   .card-bulto {
     height: auto !important;
-    top: 100% !important;
+    top: 43% !important;
     position: absolute !important;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
   }
@@ -2508,7 +2523,7 @@ a > i > label {
 
   .card-bulto {
     height: auto !important;
-    top: 83% !important;
+    top: 40% !important;
     position: absolute !important;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
     left: 34.5% !important;
@@ -2580,3 +2595,25 @@ a > i > label {
 .card-div-movil {
   background-color: #777a7c0d !important;
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contenedor-pasos-tablet{
+    margin:25px!important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .contenido-pasos-tablet{
+    justify-content: center;
+    display: grid;
+  }
+  .container-vista-maritima {
+    padding-top: 70px !important;
+}
+.sin-padding{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+}
+

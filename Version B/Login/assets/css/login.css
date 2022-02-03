@@ -37,8 +37,12 @@
     max-height: 547px !important;
     max-width: 592px !important;
     margin-right:95px;
-    object-fit: cover;
+    /*object-fit: cover;*/
     width: 100%;
+    height: auto;
+    
+    padding-left: 20px;
+
 }
 .contenedor-left{
     float:right;

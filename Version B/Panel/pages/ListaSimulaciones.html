@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/logos/LOGO PROMPERU.png">
+    <link rel="icon" type="image/png" href="../assets/img/logos/promperu-favicon_64x64.png">
     <title>
         PromPeru - Lista de Simulaciones
     </title>
@@ -365,19 +365,19 @@
         <div class="container-fluid py-4 container-principal" >
             <!-- Inicio de vista principal -->
             <div class="col-lg-12 col-md-12 col-sm-12 show-web justify-content-center mostrar-desktop flex">
-                <div class="row mx-5" style="max-width: 1362px;">
+                <div class="row mx-5 contenedor-lista-simulacion" style="max-width: 1362px;">
                     <div class="col-lg-7 col-md-6 col-xs-12 col-sm-12 mt-3 font-h1-bold negro-promperu titulo-simulacion">Simulaciones de Drawback</div>
                     <div class="col-lg-5 col-md-6 col-xs-12 col-sm-12 mt-3">
-                        <button type="button" style="height: 50px !important; text-transform: inherit;" class="w-50 btn btn-outline-danger font-H4-bold div-right" onclick="NuevaSimulacion()">Nueva simulación</button>
+                        <button type="button" style="height: 50px !important; text-transform: inherit;" class="btn btn-outline-danger font-H4-bold div-right" onclick="NuevaSimulacion()">Nueva simulación</button>
                     </div>
                     <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-3">
                       <div class="row" style="width: 344px;">
-                       <div class="col-lg-5 col-md-6 col-sm-12">
+                       <div class="col-lg-5 col-md-6 col-sm-12" style="padding-right: 5px; max-width: max-content;">
                        <label class="font-H4-bold negro-promperu" for="">Ordenar por:</label>
                        </div>
-                       <div class="col-lg-7 col-md-6 col-sm-12">
-                        <input style="border-bottom: none !important; padding: 2px;" type="text" class="rojo-promperu form-control ptOrdenar mostrar-desktop ordenar font-H4-light" id="ptBusqueda" value="Los más recientes" /><i class="icon-select ptOrdenar mostrar-desktop ordenar"><img src="../assets/img/icon-select.png" alt=""></i>
-                        <i class="icon-select ordenar ptOrdenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"><img src="../assets/img/icon-select.png" alt=""></i>
+                       <div class="col-lg-7 col-md-6 col-sm-12" style="padding-left: 0; max-width: 180px;">
+                        <input style="border-bottom: none !important; padding: 2px; padding-top:0 !important;" type="text" class="rojo-promperu form-control ptOrdenar mostrar-desktop ordenar font-H4-light" id="ptBusqueda" value="Los más recientes" /><i class="icon-select ptOrdenar mostrar-desktop ordenar icon-flecha-recientes" style="margin-right: 0px;"><img src="../assets/img/icon-select.png" alt=""></i>
+                        <i class="icon-select ordenar ptOrdenar icon-flecha-recientes" style="margin-right: 0px;" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"><img src="../assets/img/icon-select.png" alt=""></i>
                         <div class="h-100 p-3 card-select-ordenar card-ordenar" id="selectPuertoOrigen">
                             <div class="row" id="comboPais">
                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad" style="margin-bottom: 9px;">Los mas recientes</option>
@@ -396,27 +396,33 @@
                     </div>
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 mt-3">
                         <div class="table-responsive p-0">
-                            <table class="table align-items-center justify-content-center mb-0" style="table-layout: fixed;">
+                            <table class="table align-items-center justify-content-center mb-0" style="table-layout: fixed; width: -webkit-fill-available;">
                                 <thead style="background: #CDD7DC;">
                                     <tr>
                                         <th style="width: 832px; text-transform: inherit !important;" class="font-H5-bold azul-promperu">Nombre de simulación</th>
-                                        <th style="padding-left: 66px; text-transform: inherit !important;" class="font-H5-bold azul-promperu">Fecha de creación</th>
-                                        <th></th>
+                                        <th style="padding-left: 66px; text-transform: inherit !important; text-align: right;" class="font-H5-bold azul-promperu" >Fecha de creación</th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>
                                             <p>
-                                                <h6 class="mb-0 font-H5-light negro-promperu"><i class="fas fa-file-alt mx-2"></i>Lima - Pekín</h6>
+                                                <h6 class="mb-0 font-H5-light negro-promperu">
+                                                    <i class="fas mx-2">
+                                                        <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0.5V15.5H8.33333V13.0581C8.335 12.889 8.48667 12.711 8.66667 12.7093H11V0.5H0ZM2.145 2.19012H8.895C9.10333 2.19012 9.27333 2.36802 9.27333 2.58605C9.27333 2.80407 9.10333 2.98198 8.895 2.98198H2.145C1.93667 2.98198 1.76667 2.80407 1.76667 2.58605C1.76667 2.36802 1.93667 2.19012 2.145 2.19012ZM2.145 4.74535H8.895C9.10333 4.74535 9.27333 4.92326 9.27333 5.14128C9.27333 5.3593 9.10333 5.53721 8.895 5.53721H2.145C1.93667 5.53721 1.76667 5.3593 1.76667 5.14128C1.76667 4.92151 1.93667 4.74535 2.145 4.74535ZM7.33333 13.761H2C1.81667 13.761 1.66667 13.6041 1.66667 13.4122C1.66667 13.2203 1.81667 13.0634 2 13.0634H7.33333C7.51667 13.0634 7.66667 13.2203 7.66667 13.4122C7.66667 13.6058 7.51667 13.761 7.33333 13.761ZM9 10.9703H2C1.81667 10.9703 1.66667 10.8134 1.66667 10.6215C1.66667 10.4297 1.81667 10.2727 2 10.2727H9C9.18333 10.2727 9.33333 10.4297 9.33333 10.6215C9.33333 10.8151 9.18333 10.9703 9 10.9703ZM9 8.17965H2C1.81667 8.17965 1.66667 8.02267 1.66667 7.83081C1.66667 7.63895 1.81667 7.48198 2 7.48198H9C9.18333 7.48198 9.33333 7.63895 9.33333 7.83081C9.33333 8.02442 9.18333 8.17965 9 8.17965Z" fill="black"/>
+                                                        <path d="M9 15.1512L10.6667 13.407H9V15.1512Z" fill="black"/>
+                                                        </svg>
+                                                    </i>Lima - Pekín</h6>
                                             </p>
                                         </td>
                                         <td>
-                                            <div class="d-flex px-2">
+                                            <div class="d-flex px-2" style="justify-content: right;">
                                                 <button class="btn btn-link text-secondary mb-0 btn-tooltip" id="btn_1">
                                                     <i><img src="../assets/img/icon-action.png" alt="">
                                                         <div class="h-100 p-3 card-select-tooltip card-tooltip card-select-tooltip-g" id="selectPuertoOrigen">
-                                                            <div class="row" id="comboPais">
+                                                            <div class="row" id="comboPais" style="text-align: left;">
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Cambiar nombre</option>
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Descargar</option>
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul">Eliminar archivo</option>
@@ -435,15 +441,21 @@
                                     <tr>
                                         <td>
                                             <p class="font-H5-light negro-promperu mb-0">
-                                                <h6 class="mb-0 font-H5-light negro-promperu"><i class="fas fa-file-alt mx-2"></i>Paita - Seattle</h6>
+                                                <h6 class="mb-0 font-H5-light negro-promperu">
+                                                    <i class="fas mx-2">
+                                                    <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0 0.5V15.5H8.33333V13.0581C8.335 12.889 8.48667 12.711 8.66667 12.7093H11V0.5H0ZM2.145 2.19012H8.895C9.10333 2.19012 9.27333 2.36802 9.27333 2.58605C9.27333 2.80407 9.10333 2.98198 8.895 2.98198H2.145C1.93667 2.98198 1.76667 2.80407 1.76667 2.58605C1.76667 2.36802 1.93667 2.19012 2.145 2.19012ZM2.145 4.74535H8.895C9.10333 4.74535 9.27333 4.92326 9.27333 5.14128C9.27333 5.3593 9.10333 5.53721 8.895 5.53721H2.145C1.93667 5.53721 1.76667 5.3593 1.76667 5.14128C1.76667 4.92151 1.93667 4.74535 2.145 4.74535ZM7.33333 13.761H2C1.81667 13.761 1.66667 13.6041 1.66667 13.4122C1.66667 13.2203 1.81667 13.0634 2 13.0634H7.33333C7.51667 13.0634 7.66667 13.2203 7.66667 13.4122C7.66667 13.6058 7.51667 13.761 7.33333 13.761ZM9 10.9703H2C1.81667 10.9703 1.66667 10.8134 1.66667 10.6215C1.66667 10.4297 1.81667 10.2727 2 10.2727H9C9.18333 10.2727 9.33333 10.4297 9.33333 10.6215C9.33333 10.8151 9.18333 10.9703 9 10.9703ZM9 8.17965H2C1.81667 8.17965 1.66667 8.02267 1.66667 7.83081C1.66667 7.63895 1.81667 7.48198 2 7.48198H9C9.18333 7.48198 9.33333 7.63895 9.33333 7.83081C9.33333 8.02442 9.18333 8.17965 9 8.17965Z" fill="black"/>
+                                                    <path d="M9 15.1512L10.6667 13.407H9V15.1512Z" fill="black"/>
+                                                    </svg>
+                                                    </i>Paita - Seattle</h6>
                                             </p>
                                         </td>
                                         <td>
-                                            <div class="d-flex px-2">
+                                            <div class="d-flex px-2" style="justify-content: right;">
                                                 <button class="btn btn-link text-secondary mb-0 btn-tooltip" id="btn_2" style="position: relative;">
                                                     <i><img src="../assets/img/icon-action.png" alt="">
                                                         <div class="h-100 p-3 card-select-tooltip2 card-tooltip2 card-select-tooltip-g" id="selectPuertoOrigen">
-                                                            <div class="row" id="comboPais">
+                                                            <div class="row" id="comboPais" style="text-align: left;">
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Cambiar nombre</option>
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Descargar</option>
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul">Eliminar archivo</option>
@@ -461,15 +473,21 @@
                                     <tr>
                                         <td>
                                             <p class="font-H5-light negro-promperu mb-0">
-                                                <h6 class="mb-0 font-H5-light negro-promperu"><i class="fas fa-file-alt mx-2"></i>Piura - Callao</h6>
+                                                <h6 class="mb-0 font-H5-light negro-promperu">
+                                                    <i class="fas mx-2">
+                                                        <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0.5V15.5H8.33333V13.0581C8.335 12.889 8.48667 12.711 8.66667 12.7093H11V0.5H0ZM2.145 2.19012H8.895C9.10333 2.19012 9.27333 2.36802 9.27333 2.58605C9.27333 2.80407 9.10333 2.98198 8.895 2.98198H2.145C1.93667 2.98198 1.76667 2.80407 1.76667 2.58605C1.76667 2.36802 1.93667 2.19012 2.145 2.19012ZM2.145 4.74535H8.895C9.10333 4.74535 9.27333 4.92326 9.27333 5.14128C9.27333 5.3593 9.10333 5.53721 8.895 5.53721H2.145C1.93667 5.53721 1.76667 5.3593 1.76667 5.14128C1.76667 4.92151 1.93667 4.74535 2.145 4.74535ZM7.33333 13.761H2C1.81667 13.761 1.66667 13.6041 1.66667 13.4122C1.66667 13.2203 1.81667 13.0634 2 13.0634H7.33333C7.51667 13.0634 7.66667 13.2203 7.66667 13.4122C7.66667 13.6058 7.51667 13.761 7.33333 13.761ZM9 10.9703H2C1.81667 10.9703 1.66667 10.8134 1.66667 10.6215C1.66667 10.4297 1.81667 10.2727 2 10.2727H9C9.18333 10.2727 9.33333 10.4297 9.33333 10.6215C9.33333 10.8151 9.18333 10.9703 9 10.9703ZM9 8.17965H2C1.81667 8.17965 1.66667 8.02267 1.66667 7.83081C1.66667 7.63895 1.81667 7.48198 2 7.48198H9C9.18333 7.48198 9.33333 7.63895 9.33333 7.83081C9.33333 8.02442 9.18333 8.17965 9 8.17965Z" fill="black"/>
+                                                        <path d="M9 15.1512L10.6667 13.407H9V15.1512Z" fill="black"/>
+                                                        </svg>
+                                                    </i>Piura - Callao</h6>
                                             </p>
                                         </td>
                                         <td>
-                                            <div class="d-flex px-2">
+                                            <div class="d-flex px-2" style="justify-content: right;">
                                                 <button class="btn btn-link text-secondary mb-0  btn-tooltip" id="btn_3">
                                                     <i><img src="../assets/img/icon-action.png" alt="">
                                                         <div class="h-100 p-3 card-select-tooltip3 card-tooltip3 card-select-tooltip-g" id="selectPuertoOrigen">
-                                                            <div class="row" id="comboPais">
+                                                            <div class="row" id="comboPais" style="text-align: left;">
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Cambiar nombre</option>
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Descargar</option>
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul">Eliminar archivo</option>
@@ -487,15 +505,21 @@
                                     <tr>
                                         <td>
                                             <p class="font-H5-light negro-promperu mb-0">
-                                                <h6 class="mb-0 font-H5-light negro-promperu"><i class="fas fa-file-alt mx-2"></i>Envio a España</h6>
+                                                <h6 class="mb-0 font-H5-light negro-promperu">
+                                                    <i class="fas mx-2">
+                                                        <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0.5V15.5H8.33333V13.0581C8.335 12.889 8.48667 12.711 8.66667 12.7093H11V0.5H0ZM2.145 2.19012H8.895C9.10333 2.19012 9.27333 2.36802 9.27333 2.58605C9.27333 2.80407 9.10333 2.98198 8.895 2.98198H2.145C1.93667 2.98198 1.76667 2.80407 1.76667 2.58605C1.76667 2.36802 1.93667 2.19012 2.145 2.19012ZM2.145 4.74535H8.895C9.10333 4.74535 9.27333 4.92326 9.27333 5.14128C9.27333 5.3593 9.10333 5.53721 8.895 5.53721H2.145C1.93667 5.53721 1.76667 5.3593 1.76667 5.14128C1.76667 4.92151 1.93667 4.74535 2.145 4.74535ZM7.33333 13.761H2C1.81667 13.761 1.66667 13.6041 1.66667 13.4122C1.66667 13.2203 1.81667 13.0634 2 13.0634H7.33333C7.51667 13.0634 7.66667 13.2203 7.66667 13.4122C7.66667 13.6058 7.51667 13.761 7.33333 13.761ZM9 10.9703H2C1.81667 10.9703 1.66667 10.8134 1.66667 10.6215C1.66667 10.4297 1.81667 10.2727 2 10.2727H9C9.18333 10.2727 9.33333 10.4297 9.33333 10.6215C9.33333 10.8151 9.18333 10.9703 9 10.9703ZM9 8.17965H2C1.81667 8.17965 1.66667 8.02267 1.66667 7.83081C1.66667 7.63895 1.81667 7.48198 2 7.48198H9C9.18333 7.48198 9.33333 7.63895 9.33333 7.83081C9.33333 8.02442 9.18333 8.17965 9 8.17965Z" fill="black"/>
+                                                        <path d="M9 15.1512L10.6667 13.407H9V15.1512Z" fill="black"/>
+                                                        </svg>
+                                                    </i>Envio a España</h6>
                                             </p>
                                         </td>
                                         <td>
-                                            <div class="d-flex px-2">
+                                            <div class="d-flex px-2" style="justify-content: right;">
                                                 <button class="btn btn-link text-secondary mb-0 btn-tooltip" id="btn_4">
                                                     <i><img src="../assets/img/icon-action.png" alt="">
                                                         <div class="h-100 p-3 card-select-tooltip4 card-tooltip4 card-select-tooltip-g" id="selectPuertoOrigen">
-                                                            <div class="row" id="comboPais">
+                                                            <div class="row" id="comboPais" style="text-align: left;">
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Cambiar nombre</option>
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Descargar</option>
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul">Eliminar archivo</option>
@@ -513,15 +537,21 @@
                                     <tr>
                                         <td>
                                             <p class="font-H5-light negro-promperu mb-0">
-                                                <h6 class="mb-0 font-H5-light negro-promperu"><i class="fas fa-file-alt mx-2"></i>Cajas de embarque</h6>
+                                                <h6 class="mb-0 font-H5-light negro-promperu">
+                                                    <i class="fas mx-2">
+                                                        <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0.5V15.5H8.33333V13.0581C8.335 12.889 8.48667 12.711 8.66667 12.7093H11V0.5H0ZM2.145 2.19012H8.895C9.10333 2.19012 9.27333 2.36802 9.27333 2.58605C9.27333 2.80407 9.10333 2.98198 8.895 2.98198H2.145C1.93667 2.98198 1.76667 2.80407 1.76667 2.58605C1.76667 2.36802 1.93667 2.19012 2.145 2.19012ZM2.145 4.74535H8.895C9.10333 4.74535 9.27333 4.92326 9.27333 5.14128C9.27333 5.3593 9.10333 5.53721 8.895 5.53721H2.145C1.93667 5.53721 1.76667 5.3593 1.76667 5.14128C1.76667 4.92151 1.93667 4.74535 2.145 4.74535ZM7.33333 13.761H2C1.81667 13.761 1.66667 13.6041 1.66667 13.4122C1.66667 13.2203 1.81667 13.0634 2 13.0634H7.33333C7.51667 13.0634 7.66667 13.2203 7.66667 13.4122C7.66667 13.6058 7.51667 13.761 7.33333 13.761ZM9 10.9703H2C1.81667 10.9703 1.66667 10.8134 1.66667 10.6215C1.66667 10.4297 1.81667 10.2727 2 10.2727H9C9.18333 10.2727 9.33333 10.4297 9.33333 10.6215C9.33333 10.8151 9.18333 10.9703 9 10.9703ZM9 8.17965H2C1.81667 8.17965 1.66667 8.02267 1.66667 7.83081C1.66667 7.63895 1.81667 7.48198 2 7.48198H9C9.18333 7.48198 9.33333 7.63895 9.33333 7.83081C9.33333 8.02442 9.18333 8.17965 9 8.17965Z" fill="black"/>
+                                                        <path d="M9 15.1512L10.6667 13.407H9V15.1512Z" fill="black"/>
+                                                        </svg>
+                                                    </i>Cajas de embarque</h6>
                                             </p>
                                         </td>
                                         <td>
-                                            <div class="d-flex px-2">
+                                            <div class="d-flex px-2" style="justify-content: right;">
                                                 <button class="btn btn-link text-secondary mb-0 btn-tooltip" id="btn_5">
                                                     <i><img src="../assets/img/icon-action.png" alt="">
                                                         <div class="h-100 p-3 card-select-tooltip5 card-tooltip5 card-select-tooltip-g" id="selectPuertoOrigen">
-                                                            <div class="row" id="comboPais">
+                                                            <div class="row" id="comboPais" style="text-align: left;">
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Cambiar nombre</option>
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Descargar</option>
                                                                 <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul">Eliminar archivo</option>
@@ -573,11 +603,11 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 mt-3 font-H4-bold negro-promperu">
                     <div class="row" style="width: 344px;">
-                        <div class="col-lg-5 col-md-6 col-sm-5 col-xs-5">
-                        <label class="font-H4-bold negro-promperu" for="">Ordenar por:</label>
+                        <div class="col-lg-5 col-md-6 col-sm-5 col-xs-5" style="padding-right:5px; max-width: 135px;">
+                            <label class="font-H4-bold negro-promperu" for="">Ordenar por:</label>
                         </div>
-                        <div class="col-lg-7 col-md-6 col-sm-7 col-xs-7">
-                         <input style="border-bottom: none !important; padding: 2px;" type="text" class="rojo-promperu form-control ptOrdenarMovil ordenar font-H4-light" id="ptBusqueda" value="Los más recientes" /><i class="icon-select ptOrigen mostrar-desktop ordenar"><img src="../assets/img/icon-select.png" alt=""></i>
+                        <div class="col-lg-7 col-md-6 col-sm-7 col-xs-7" style="padding-left:0;  max-width: 182px;">
+                         <input style="border-bottom: none !important; padding: 2px; padding-top:0!important" type="text" class="rojo-promperu form-control ptOrdenarMovil ordenar font-H4-light" id="ptBusqueda" value="Los más recientes" /><i class="icon-select ptOrigen mostrar-desktop ordenar"><img src="../assets/img/icon-select.png" alt=""></i>
                          <i style="margin-top: -25px !important;" class="icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"><img src="../assets/img/icon-select.png" alt=""></i>
                          <div class="h-100 p-3 card-select-ordenar card-ordenar-movil" id="selectPuertoOrigen">
                              <div class="row" id="comboPais">
@@ -595,8 +625,8 @@
                         <table class="table align-items-center justify-content-center mb-0">
                             <thead style="background: #CDD7DC;">
                                 <tr>
-                                    <th class="font-H5-bold azul-promperu">Nombre</th>
-                                    <th class="font-H5-bold azul-promperu" style="text-align: right;">F. de creación</th>
+                                    <th class="font-H5-bold azul-promperu" style="padding-left: 8px;">Nombre</th>
+                                    <th class="font-H5-bold azul-promperu" style="text-align: right; text-transform: none;">F. de creación</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -611,7 +641,7 @@
                                             <button class="btn btn-link text-secondary mb-0 btn-tooltip" id="btn_1_m">
                                                 <i><img src="../assets/img/icon-action.png" alt="">
                                                     <div class="h-100 p-3 card-select-tooltip card-tooltip card-select-tooltip-m" id="selectPuertoOrigen">
-                                                        <div class="row" id="comboPais">
+                                                        <div class="row" id="comboPais" style="text-align: left;">
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Cambiar nombre</option>
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Descargar</option>
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul">Eliminar archivo</option>
@@ -637,7 +667,7 @@
                                             <button class="btn btn-link text-secondary mb-0 btn-tooltip" id="btn_2_m">
                                                 <i><img src="../assets/img/icon-action.png" alt="">
                                                     <div class="h-100 p-3 card-select-tooltip2 card-tooltip2 card-select-tooltip-m" id="selectPuertoOrigen">
-                                                        <div class="row" id="comboPais">
+                                                        <div class="row" id="comboPais" style="text-align: left;">
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Cambiar nombre</option>
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Descargar</option>
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul">Eliminar archivo</option>
@@ -663,7 +693,7 @@
                                             <button class="btn btn-link text-secondary mb-0 btn-tooltip" id="btn_3_m">
                                                 <i><img src="../assets/img/icon-action.png" alt="">
                                                     <div class="h-100 p-3 card-select-tooltip3 card-tooltip3 card-select-tooltip-m" id="selectPuertoOrigen">
-                                                        <div class="row" id="comboPais">
+                                                        <div class="row" id="comboPais" style="text-align: left;">
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Cambiar nombre</option>
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Descargar</option>
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul">Eliminar archivo</option>
@@ -689,7 +719,7 @@
                                             <button class="btn btn-link text-secondary mb-0 btn-tooltip" id="btn_4_m">
                                                 <i><img src="../assets/img/icon-action.png" alt="">
                                                     <div class="h-100 p-3 card-select-tooltip4 card-tooltip4 card-select-tooltip-m" id="selectPuertoOrigen">
-                                                        <div class="row" id="comboPais">
+                                                        <div class="row" id="comboPais" style="text-align: left;">
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Cambiar nombre</option>
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Descargar</option>
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul">Eliminar archivo</option>
@@ -715,7 +745,7 @@
                                             <button class="btn btn-link text-secondary mb-0 btn-tooltip" id="btn_5_m">
                                                 <i><img src="../assets/img/icon-action.png" alt="">
                                                     <div class="h-100 p-3 card-select-tooltip5 card-tooltip5 card-select-tooltip-m" id="selectPuertoOrigen">
-                                                        <div class="row" id="comboPais">
+                                                        <div class="row" id="comboPais" style="text-align: left;">
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Cambiar nombre</option>
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul" style="margin-bottom: 9px;">Descargar</option>
                                                             <option value="0" class="font-smallprint-medium option-select font-color-white opCiudad option-azul">Eliminar archivo</option>
@@ -766,7 +796,7 @@
         </div>
     </div>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="max-width: 680px !important;">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="max-width: 700px !important;">
         <!--
         <div class="popover" style="display: none">
             
@@ -781,14 +811,11 @@
         </div>-->
 
         <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel" class=" font-size-20 negro-promperu font-H2-bold-700 text-left">Herramientas Logísticas</h5>
-
-
+            <h5 id="offcanvasRightLabel" class=" font-size-20 negro-promperu font-H2-bold-700 mostrar-desktop">Herramientas logísticas</h5>
+            <h5 id="offcanvasRightLabel" class=" font-size-20 negro-promperu font-H2-bold-700 mostrar-movil" style="max-width: 210px; text-align: left !important;">Herramientas logísticas</h5>
             <button class="btn-close-menu a-menu" data-bs-dismiss="offcanvas" aria-label="Close">
                 <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
             </button>
-
-
         </div>
         <div class="offcanvas-body offcanvas-body-menu">
             <div class="row">
@@ -804,17 +831,17 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
                     <div class="div-card-dashboard hover menu-alineacion"> 
-                        <div class="font-size-15 inline-for-movil card-dashboard">
+                        <div class="font-size-15 inline-for-movil card-dashboard" style="padding-left:0;">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Marítimas</p>
                             <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-desktop">
                             <img src="../../img-menu-PromPeru/dashboard/barco-m.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
-                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas marítimas</p>
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas Marítimas</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasTerrestre/Pages/Rutas_terrestre.html'">
                     <div class="div-card-dashboard hover menu-alineacion">
-                        <div class="font-size-15 inline-for-movil card-dashboard">
+                        <div class="font-size-15 inline-for-movil card-dashboard" style="padding-left:0;">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Terrestres</p>
                             <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard mostrar-desktop">
                             <img src="../../img-menu-PromPeru/dashboard/camion 2.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
@@ -824,7 +851,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Costo/Pages/inicio.html'">
                     <div class="div-card-dashboard hover menu-alineacion">
-                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
+                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding" style="padding-left:0;">
             
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Costos de Exportación</p>
                             <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard mostrar-desktop">
@@ -835,7 +862,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Cubicaje/Pages/Cubicaje.html'">
                     <div class="div-card-dashboard hover menu-alineacion">
-                        <div class="font-size-15 inline-for-movil card-dashboard">
+                        <div class="font-size-15 inline-for-movil card-dashboard" style="padding-left:0;">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador de Cubicaje</p>
                             <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard mostrar-desktop">
                             <img src="../../img-menu-PromPeru/dashboard/Group 268.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
@@ -846,9 +873,9 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
                     <div class="div-card-dashboard hover menu-alineacion">
                         <div class="div-card-dashboard"> 
-                            <div class="font-size-15 inline-for-movil card-dashboard">
+                            <div class="font-size-15 inline-for-movil card-dashboard" style="padding-left:0;">
                                 <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Directorio Logístico</p>
-                                <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                                <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-desktop" style="max-width:120px">
                                 <img src="../../img-menu-PromPeru/dashboard/gente 1.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
                                 <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Directorio Logístico</p>
                             </div>
@@ -857,7 +884,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
                     <div class="div-card-dashboard hover menu-alineacion">
-                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
+                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding" style="padding-left:0;">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador <br>de Drawback</p>
                             <!-- <img src="../../img-menu-PromPeru/dashboard/Group 224.png" alt="avion" class="icon-dashboard mostrar-desktop image-drwaback"> -->
                             <img src="../../img-menu-PromPeru/dashboard/Group 224.png" alt="avion" class="icon-dashboard mostrar-desktop image-drwaback" style="width: 100px !important; height: 80px !important;">
@@ -884,7 +911,7 @@
                     <a onclick="window.location.href='../../Login/pages/Login.html'" class="font-color-red font-size-15 font-weight-bold ordenar font-H4-bold-700n inline"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.7726 9.0654H6.22737C2.79516 9.0654 0 11.6013 0 14.7195V16.1847C0 16.6356 0.347158 17 0.776632 17C1.20611 17 1.55326 16.6356 1.55326 16.1847V14.7195C1.55326 12.4992 3.65053 10.6959 6.22737 10.6959H10.7726C13.3495 10.6959 15.4467 12.4992 15.4467 14.7195V16.1847C15.4467 16.6356 15.7939 17 16.2234 17C16.6528 17 17 16.6356 17 16.1847V14.7195C17 11.6013 14.2048 9.0654 10.7726 9.0654Z" fill="#C4122F"/>
                         <path d="M8.83993 8.55072C11.0875 8.55072 12.9128 6.63094 12.9128 4.27536C12.9128 1.91978 11.0875 0 8.83993 0C6.59235 0 4.76709 1.91978 4.76709 4.27536C4.76709 6.63094 6.59593 8.55072 8.83993 8.55072ZM8.83993 1.6305C10.2286 1.6305 11.3631 2.81768 11.3631 4.27536C11.3631 5.73304 10.2321 6.92398 8.83993 6.92398C7.44772 6.92398 6.31677 5.7368 6.31677 4.27536C6.31677 2.81392 7.4513 1.6305 8.83993 1.6305Z" fill="#C4122F"/>
-                    </svg> &nbsp;&nbsp;Iniciar sesión</a>
+                    </svg> &nbsp;&nbsp;Cerrar sesión</a>
                 </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 "><br></div>
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 hr background-gris"></div>

@@ -110,7 +110,7 @@ function VerificarHerramienta(){
             break;
         case 6:
             $('.titulo-simulacion').html("Simulaciones de Directorio Logístico");
-            $('.titulo-header').html("Simulador de Directorio Logístico");
+            $('.titulo-header').html("Directorio Logístico");
         break;
             default:
                 $('.titulo-simulacion').html("Simulaciones de Drawback");

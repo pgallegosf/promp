@@ -18,6 +18,7 @@ $(document).ready(function() {
     $('.descarga-pdf').click(function(e) {
         var a = document.createElement("a");
         a.href = "../assets/img/download.pdf";
+        a.target = '_blank';
         a.setAttribute("download", "Rutas Terreste");
         a.click();
     });

@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $( ".calendar-head-card" ).hide();
     $("#btn-comenzar").click(function() {
         empezarSimulacion();
     });
@@ -35,6 +36,14 @@ $(document).ready(function() {
                 break;
         }
     });
+    $("#seleccionar1Tablet").click(function() {
+        var valor = 3;
+        switch (valor) {
+            case 3:
+                $("#tab3").trigger("click");
+                break;
+        }
+    });
     $("#seleccionar2").click(function() {
         var valor = 3;
         switch (valor) {
@@ -43,7 +52,23 @@ $(document).ready(function() {
                 break;
         }
     });
+    $("#seleccionar2Tablet").click(function() {
+        var valor = 3;
+        switch (valor) {
+            case 3:
+                window.location = 'Simulador-noaplica.html';
+                break;
+        }
+    });
     $("#seleccionar3").click(function() {
+        var valor = 3;
+        switch (valor) {
+            case 3:
+                window.location = 'Simulador-warning.html';
+                break;
+        }
+    });
+    $("#seleccionar3Tablet").click(function() {
         var valor = 3;
         switch (valor) {
             case 3:

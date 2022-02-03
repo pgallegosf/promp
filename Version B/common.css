@@ -473,7 +473,13 @@ transform: rotate(45deg);
   font-size: 18px !important;
   line-height: 21.6px !important;
 }
-
+.font-H6-light {
+  font-family: "Helvetica Neue LT Std light" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+}
 .font-H5-light {
   font-family: "Helvetica Neue LT Std light" !important;
   font-style: normal !important;
@@ -1858,8 +1864,8 @@ img {
   }
 
   .card-busqueda > .row {
-    margin-left: 80px !important;
-    margin-right: 80px !important;
+    padding-left: 80px !important;
+    padding-right: 80px !important;
   }
   .left-center {
     text-align: left !important;
@@ -1918,7 +1924,7 @@ img {
 
 @media (min-width: 1200px) {
   .margin-right-carrusel{
-    margin-right: 110px;
+    margin-right: 90px;
   }
   .card-busqueda > .row {
     margin-left: 110px !important;
@@ -1977,12 +1983,12 @@ img {
 }
 @media (min-width: 1230px) {
   .margin-right-carrusel{
-    margin-right: 110px;
+    margin-right: 90px;
   }
 }
 @media (min-width: 1366px) {
   .margin-right-carrusel{
-    margin-right: 120px;
+    margin-right: 110px;
   }
   .card-maritima-container {
       height: 13.2% !important;
@@ -2112,19 +2118,21 @@ img {
 }
 
 .card-ptoOrigen {
-  width: 50% !important;
-  height: 30% !important;
+  width: 55% !important;
+  height: max-content !important;
   margin-left: 7% !important;
   position: absolute !important;
   font-size: 12px;
   font-weight: bold;
   color: #282828;  
   border-radius: 0px 0px 15px 15px !important;
+  z-index: 18;
 }
 
 .card-ptoDestino {
+    max-width: 490px !important;
     width: 50% !important;
-    height: 50% !important;
+    height: max-content !important;
     margin-left: 7% !important;
     position: absolute !important;
     font-size: 10px;
@@ -2595,7 +2603,7 @@ line-height: 61px;
 #footer-Desktop>.row>.background-black{
   max-width: 460px !important;
   margin-top:56px !important;
-  height: 1px !important;
+  height: 0.5px !important;
 }
 #footer-Desktop>.row>.justify-content-between{
   margin-top:30px !important;
@@ -2655,8 +2663,14 @@ line-height: 61px;
   .mostrar-desktop.table-row{
     display:none !important;
   }
+  .mostrar-movil{
+    display:block !important;
+  }
   .mostrar-movil.content{
     display:contents !important;
+  }
+  .mostrar-movil.flex{
+    display:flex !important;
   }
 
   .menu-alineacion {
@@ -2685,7 +2699,13 @@ line-height: 61px;
   .mostrar-desktop.table-row{
     display:table-row !important;
   }
+  .mostrar-movil{
+    display:none !important;
+  }
   .mostrar-movil.content{
+    display:none !important;
+  }
+  .mostrar-movil.flex{
     display:none !important;
   }
   .menu-alineacion {
@@ -2725,3 +2745,218 @@ line-height: 61px;
   padding-bottom:12px !important;
 }
 
+.modal-centrado-horizontal{
+  /*justify-content: center;*/
+  text-align: -webkit-center;
+  /*display:  inline-block !important;**/
+}
+.link-simulaciones:hover {
+  color: #FFF;
+  text-decoration: underline!important;
+}
+
+.row-sin-margin {
+      margin-top: 0 !important;
+    margin-right: 0 !important;
+     margin-left: 0 !important;
+}
+.lblsinpadding{
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+.sin-padding-margin-lateral{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+.margin-right-5{
+  margin-right: 5% !important;
+}
+.margin-left-5{
+  margin-left: 5% !important;
+}
+.margin-left-5-right-3{
+  margin-left: 5% !important;
+  margin-right: 3% !important;
+}
+.view-tablet{
+  display:none !important;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .ancho-tablet-tab{
+    width: 100vw;
+  }
+  .mostrar-tablet{
+    display: block !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .altura-contenido-detalle-directorio{
+    padding-top:50px;
+  }
+  .max-width-tablet{
+    max-width: 100%!important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1375px) {
+  
+  .centrado-tablet{
+    text-align: center;
+    align-items: center;
+  }
+  .margin-top-tablet{
+    margin-top:40px;
+  }
+  .padding-top-tabs-tablet{
+    padding-top: 4rem !important;
+  }
+  
+  .card-maritima-select{
+    width: auto !important;
+    margin-left: 5% !important;
+  }
+  .card-aerea-select {
+    width: 75% !important;
+  }
+  .img-mapa-ruta{
+    width: -webkit-fill-available !important;
+    height: -webkit-fill-available !important;
+  }
+  .padding-tablet{
+    padding-left:30px!important;
+    padding-right:30px!important;
+  }
+  .iconos-guardar{
+    justify-content:center;
+  }
+  .titulo-iconos-guardar{
+    max-width: 100% !important;
+    text-align: center;
+  }
+  .footer-tablet-desktop{
+    display:none !important;
+  }
+  .footer-tablet-movil{
+    display:block !important;
+  }
+  .contenedor-lista-simulacion{
+    width: -webkit-fill-available !important;
+  }
+
+  .card-busqueda>.contenedor-mostrar-rutas{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  } 
+  .contenedor-mostrar-rutas{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .titulo-menu-desktop{
+    display: none !important;
+  }
+  .titulo-menu-movil{
+    display: block !important;
+  }
+  .offcanvas-end{
+    width:65%!important;
+  }
+
+  .card-ptoOrigen {
+    width: 72% !important;
+  }
+  .nombre-transportista{
+    font-size: 22px !important;
+  }
+  .card-select-origen{
+    width: 76% !important;
+  }
+  .padding-control3-busqueda{
+    margin-top:25px!important;
+  }
+  .padding-left-tablet{
+    padding-left:13px!important;
+  }
+  .padding-left-right-tablet-20{
+    padding-left:20px!important;
+    padding-right:20px!important;
+  }
+  .card-select{
+    width:65%!important;
+  }
+  .view-tablet{
+    display:block !important;
+}
+  .hide-tablet{
+    display:none!important;
+  }
+  .margin-0-tablet{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .margin-content-tab-tablet{
+    margin-left: 0!important;
+    margin-right: 0 !important;
+    padding-left:15px!important;
+  }
+  .margin-right-tablet-linea{
+    margin-right: 3.5% !important;
+  }
+  .margin-detalle-tab-tablet{
+    margin-left: 1.5% !important;
+    margin-right: 3.5% !important;
+  }
+  .linea-tablet-tab1{
+    margin-left: 3% !important;
+    margin-right: 3.5%!important;
+    padding-right: 0!important;
+  }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
+  .card-busqueda > .row.sin-margin-left{
+    margin-left:0!important;
+  }
+  .margin-contenedor-pasos-tablet{
+    margin-left: 30px!important;
+    margin-right: 30px!important;
+  }
+  .right-combo-destino-tablet{
+    left: 2%!important;
+  }
+  .titulo-pasos-cubicaje-tablet{
+    text-align: center!important;
+    padding-bottom: 25px!important;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1375px) {
+  
+  .card-busqueda > .row.sin-margin-left{
+    margin-left:0!important;
+  }
+  .margin-contenedor-pasos-tablet{
+    margin-left: 30px!important;
+    margin-right: 30px!important;
+  } 
+  .right-combo-destino-tablet{
+    left: 8%!important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .btn-width-auto{
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1010px) {
+  .ocultar-movil.resultado-tablet{
+    display: none !important;
+  }
+  .mostrar-movil.resultado-tablet{
+    display: block !important
+  }
+}

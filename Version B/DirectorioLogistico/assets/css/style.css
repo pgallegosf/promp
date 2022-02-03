@@ -637,7 +637,7 @@ body {
   }
 
   .busqueda-listado {
-    background: #f1f3f4 !important;
+    background: #EDEEEF !important;
   }
 
   .card-select-origen {
@@ -2106,7 +2106,7 @@ left: 153px;
 }
 
 .hr {
-  height: 2px;
+  height: 0.5px;
 }
 
 .refresh {
@@ -2603,6 +2603,7 @@ left: 153px;
   .titulo-left {
     text-align: center !important;
   }
+  
 }
 @media (min-width: 992px) {
   .padding-list-directorios {
@@ -2823,6 +2824,9 @@ a {
   .show-desktop {
     display: block;
   }
+  .mostrar-movil-flex {
+    display: none !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -3042,15 +3046,16 @@ a {
 /* ====================================================================================== 
  INICIO Radio button
 ====================================================================================== */
-.containerRadio > ul {
+
+.containerRadio>ul {
   list-style: none;
   margin: 0;
   padding: 0;
   overflow: auto;
 }
 
-.containerRadio > ul li {
-  color: #aaaaaa;
+.containerRadio>ul li {
+  color: #AAAAAA;
   display: block;
   position: relative;
   float: left;
@@ -3058,12 +3063,12 @@ a {
   height: 100px;
 }
 
-.containerRadio > ul li input[type="radio"] {
+.containerRadio>ul li input[type=radio] {
   position: absolute;
   visibility: hidden;
 }
 
-.containerRadio > ul li label {
+.containerRadio>ul li label {
   display: block;
   position: relative;
   font-weight: 300;
@@ -3076,32 +3081,34 @@ a {
   -webkit-transition: all 0.25s linear;
 }
 
-/*.containerRadio > ul li:hover label{
-      color: #FFFFFF;
-  }*/
 
-.containerRadio > ul li .check {
+/*.containerRadio > ul li:hover label{
+    color: #FFFFFF;
+}*/
+
+.containerRadio>ul li .check {
   display: block;
   position: absolute;
-  border: 4px solid #fb0000;
+  border: 5px solid #AAAAAA;
   border-radius: 100%;
   height: 25px;
   width: 25px;
   top: 30px;
   left: 20px;
   z-index: 5;
-  transition: border 0.25s linear;
-  -webkit-transition: border 0.25s linear;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
 }
 
-/*.containerRadio > ul li:hover .check {
-    border: 5px solid #FFFFFF;
-  }*/
 
-.containerRadio > ul li .check::before {
+/*.containerRadio > ul li:hover .check {
+  border: 5px solid #FFFFFF;
+}*/
+
+.containerRadio>ul li .check::before {
   display: block;
   position: absolute;
-  content: "";
+  content: '';
   border-radius: 100%;
   height: 6px;
   width: 6px;
@@ -3112,19 +3119,25 @@ a {
   -webkit-transition: background 0.25s linear;
 }
 
-input[type="radio"]:checked ~ .check {
-  border: 5px solid #c4122f;
+input[type=radio]:checked~.check {
+  border: 5px solid #C4122f;
 }
 
-input[type="radio"]:checked ~ .check::before {
-  background: #c4122f;
+input[type=radio]:checked~.check::before {
+  background: #C4122f;
+}
+/*
+input[type=radio]:checked~label {
+  color: #C4122f;
+}
+*/
+.form-check:not(.form-switch) .form-check-input[type="radio"]:checked {
+  /*padding: 4px !important;*/
 }
 
-input[type="radio"]:checked ~ label {
-  color: #c4122f;
-}
+
 /* ====================================================================================== 
- FIN Radio button
+FIN Radio button
 ====================================================================================== */
 
 .paddingCardBusqueda {
@@ -3221,6 +3234,12 @@ a > i > label {
   .ocultar-movil {
     display: none;
   }
+  .mostrar-movil {
+    display: block !important;
+  }
+  .mostrar-desktop {
+    display: none !important;
+  }
 }
 
 label {
@@ -3231,10 +3250,22 @@ label {
   .ocultar-movil {
     display: none;
   }
+  .mostrar-desktop {
+    display: none !important;
+  }
+  .mostrar-movil {
+    display: block !important;
+  }
 }
 @media (min-width: 768px) {
   .ocultar-movil {
-    display: none;
+    display: -webkit-inline-box;
+  }
+  .mostrar-desktop {
+    display: block !important;
+  }
+  .mostrar-movil {
+    display: none !important;
   }
 }
 @media (min-width: 992px) {
@@ -3524,4 +3555,35 @@ label {
 .div-final {
   margin-top: 9% !important;
   margin-bottom: 7.5% !important;
+}
+
+.padding-contenido-tab{
+  padding-top:35px;
+}
+.divTab{
+  height: calc(100vh - 70px);
+}
+.padding-section{
+  padding:2rem 2rem;
+}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+  .padding-contenido-tab{
+    padding-top:0;
+  }
+  .divTab{
+    height: calc(100vh - 121px);
+  }
+  .padding-section{
+    padding:10px 10px;
+  }
+}
+
+
+.form-check-input:checked[type="radio"] {
+  background-image: linear-gradient( 310deg, #C4122f 0%, #C4122f 100%) !important;
+}
+
+.form-check:not(.form-switch) .form-check-input[type="checkbox"],
+.form-check:not(.form-switch) .form-check-input[type="radio"] {
+  border: 1px solid #C4122f !important;
 }

@@ -280,7 +280,7 @@ body {
 }
 
 .hr {
-    height: 2px;
+    height: 0.5px;
 }
 
 .refresh {
@@ -538,7 +538,7 @@ body {
     font-weight: bold;
     width: 100%;
     overflow: hidden;
-    margin-top: 1.5rem !important;
+    margin-top: 2.5rem !important;
 }
 
 .img-icon {
@@ -807,7 +807,7 @@ body {
 }
 
 .avatar-group .avatar {
-    background-color: #07354F;
+    background-color: #1870AD;
 }
 
 .ocultar-movil {
@@ -1070,7 +1070,7 @@ body {
     .card-personalized {
         /* border: 1px solid blue; */
         max-width: 844px; 
-        height: 170px !important;
+        /*height: 170px !important;*/
         margin: auto;
     }
     .mostrar-desktop {
@@ -1676,7 +1676,48 @@ body {
     color: #ffffff !important;
 }
 
+.card-maritima-container-select{
+    position: absolute;
+    width: 189px;
+    border-radius: 0px 0px 15px 15px;
+}
+.card-maritima-container-select {
+    
+    padding-left: 1% !important;
+    width:100%;
+    max-width: 335px;    
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+    border-radius: 0px 0px 15px 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+  
+  .card-maritima-container-select option {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E4E6E7;
+  }
+  
+  .card-maritima-container-select option:hover {
+    background-color: #FFEBEE;
+    font-weight: 700 !important;
+  }
+  .lblsinpadding{
+    margin-left: 0 !important;
+  }
+  .link-simulaciones:hover{
+      color:#FFF;
+      text-decoration: underline;
+  }
+.width-auto{
+    width: auto !important;
+}
 
+  
 /* ====================================================================================== 
  Fin de estilos de rutas marítimas
 ====================================================================================== */

@@ -2387,6 +2387,9 @@ a > i > label {
   .show-desktop {
     display: block;
   }
+  .show-web {
+    display: flex !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2395,6 +2398,9 @@ a > i > label {
   }
   .show-desktop {
     display: block;
+  }
+  .show-web {
+    display: flex !important;
   }
 }
 
@@ -2570,4 +2576,93 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   line-height: 17px;
   text-decoration-line: underline;
+}
+.card-paso3-tablet{
+  max-width: 80% !important;
+}
+.table-resultado>thead>tr>th{
+  white-space: normal;
+  padding-left:10px;
+  padding-right:10px;
+}
+.titulo-ayuda-md{
+  left:82px;
+}
+.titulo-ayuda-herramienta{
+  display:block;
+}
+.titulo-ayuda-herramienta-tablet{
+  display:none;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .padding-bottom-tablet{
+    padding-bottom:30px!important;
+    text-align: center!important;
+    display: flex !important;
+    justify-content: center;
+  }
+  .centrado-md{
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .width-100-md{
+    width: 100% !important;;
+  }
+  .padding-left-md-70{
+    padding-left:70px;
+  }
+  .titulo-ayuda-md{
+    left:0;
+    padding-bottom: 20px;
+  }
+  .padding-md-80{
+    padding-left: 80px!important;
+  }
+  .titulo-ayuda-herramienta{
+    display:none;
+  }
+  .titulo-ayuda-herramienta-tablet{
+    display:block;
+  }
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contenedor-pasos-tablet{
+    margin:25px!important;
+  }
+  .card-paso3-tablet{
+    max-width: 100% !important;
+  }
+  .control-bottom{
+    bottom: 0;
+    position: absolute;
+    width: 96%;
+  }
+  .control-bottom-icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .img-width-height-tablet{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    padding-top:40px;
+  }
+  .position-img-bienvenido{
+    position: relative!important;
+    top: 25%!important;
+  }
+  .sin-padding-right-tablet{
+    padding-right:0 !important;
+  }
+  
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+  .texto-beneficios-tablet{
+    margin-left: 0!important;
+    margin-right: 0!important;
+    padding-left: 25px !important;
+  }
 }

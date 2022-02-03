@@ -141,17 +141,17 @@
         <div class="container-fluid py-4 container-principal">
             <!-- Inicio de vista principal -->
             <div class="d-display" id="view-global" style="margin-right: 0px !important; margin-left: 0px !important;">
-                <div class="text-center mt-3">
+                <div class="text-center mt-3" style="justify-content:center;">
                     <h5 class="font-display-title negro-promperu mostrar-desktop">Simulador de Cubicaje</h5>
                     <p class="font-H2-light negro-promperu mb-5 mostrar-desktop">Optimiza el espacio de la carga para tus exportaciones</p>
-                    <h5 class="font-h1-bold negro-promperu mostrar-movil">Simulador de Cubicaje</h5>
+                    <h5 class="font-h1-bold negro-promperu mostrar-movil" >Simulador de <br>Cubicaje</h5>
                     <p class="font-H4-light negro-promperu mb-5 mostrar-movil">Optimiza el espacio de la carga para tus exportaciones</p>
                 </div>
                 <div class="row mt-4">
                     <div class="col-lg-12 mb-lg-0 d-flex justify-content-center paddingBusqueda">
                         <div class="card paddingCardBusqueda" style="width: 1275px;">
                             <div class="row">
-                                <div class="col-lg-4 col-md-12 col-sm-12 d-x col-xs-12 text-center font-h3-bold negro-promperu ocultar-movil">Selecciona el medio de transporte internacional</div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 d-x col-xs-12 text-center font-h3-bold negro-promperu mostrar-desktop">Selecciona el medio de transporte internacional</div>
                                 <div class="col-lg-4 col-md-12 col-sm-12 d-x col-xs-12 text-center pt-2 pb-3 font-h3-bold negro-promperu mostrar-movil">Selecciona el medio de transporte internacional</div>
                                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 padding-items">
                                     <div class="mx-3 mostrar-desktop">
@@ -164,7 +164,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mostrar-movil">
+                                    <div class="mostrar-movil flex" style="justify-content: center;">
                                         <div style="width: 310px !important;" class="btn-cubicaje mx-2 w-70" onclick="window.location.href='ViaAerea.html'">
                                             <div class="avatar-group div-effect ordenar">
                                                 <div class="div-left mx-2 pt-2">
@@ -186,7 +186,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mostrar-movil">
+                                    <div class="mostrar-movil flex" style="justify-content: center;">
                                         <div style="width: 310px !important;" class="btn-cubicaje mx-2 w-70" onclick="window.location.href='ViaMaritima.html'">
                                             <div class="avatar-group div-effect ordenar">
                                                 <div class="div-left mx-2 pt-2">
@@ -371,33 +371,33 @@
     </div>
     <!-- Fin modal mapa -->
     <!-- Inicio modal Login -->
-    <div class="modal fade" id="m-login" tabindex="-1" aria-labelledby="m-login" aria-hidden="true">
-        <div class="modal-dialog ">
-            <div class="modal-content ">
-                <div class="modal-header ">
-                    <h5 class="modal-title centro" id="exampleModalLabel">Para guardar debes iniciar sesión</h5>
-                    <a href="javascript:void(0) " class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times-circle "></i>
-                    </a>
+    <div class="modal fade modal-iniciar-sesion" id="m-login" tabindex="-1" aria-labelledby="m-login" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="display: flex; justify-content: center;">
+            <div class="modal-content" style="max-width: 338px !important;">
+                <div class="modal-header" style="display: flex; justify-content: center;">
+                    <h5 class="modal-title font-h3-bold-700 negro-promperu text-center" id="exampleModalLabel" style="padding-top: 24px !important; max-width: 284px !important; text-align: center !important;">Para guardar debes iniciar sesión</h5>
+                    <button class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
+                    </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="padding-left: 30px !important;">
                     <div>
-                        <label>Correo Electronico</label>
-                        <input type="text " class="form-control" placeholder="ejemplo@correo.com">
+                        <label class="font-label-400 negro-promperu">Correo electrónico</label>
+                        <input style="width: 275px !important; padding-left: 5px !important; margin-bottom: 20px !important;" type="text" class="form-control txt-login font-H4-light-400n" placeholder="ejemplo@correo.com">
                     </div>
                     <div>
-                        <label>Contraseña</label>
-                        <input type="password" class="form-control" placeholder="******">
+                        <label class="font-label-400 negro-promperu">Contraseña</label>
+                        <input style="width: 275px !important; padding-left: 5px !important;"  type="password" class="form-control font-H4-light-400n" placeholder="******">
                     </div>
                 </div>
-                <div class="centrado ">
-                    <button class="btn btn-primary btn-second" type="button">Ingresar</button>
+                <div class="centrado" style="margin-bottom: 0px !important; margin-top: 0px !important;">
+                    <button class="btn btn-danger btn-ingresar font-H4-bold width-100" style="max-width: 284px !important; margin-bottom: 0px !important; margin-bottom: 0px !important;" type="button">Ingresar</button>
                 </div>
-                <div class="centrado text-line-title font-color-red ordenar">¿Olvidaste tu contraseña?</div>
-                <div class="modal-footer background-gris ">
-                    <div class="centrado text-line-title font-color-black col-12 ">¿Aún no tienes una cuenta?</div>
-                    <div class="centrado col-12 ">
-                        <button type="button " class="btn btn-outline-danger">Regístrate Aquí</button>
+                <div class="centrado text-line-title font-color-red ordenar font-label-400c" style="margin-top: 20px !important; margin-bottom: 40px !important;" data-bs-toggle="modal" data-bs-target="#m-password">¿Olvidaste tu contraseña?</div>
+                <div class="modal-footer background-footer-modal" style="display: flex; justify-content: center; padding-top:20px;">
+                    <div class="centrado text-line-title negro-promperu col-12 font-H4-bold-700" style="margin-bottom: 0px !important; margin-top: 5px !important;">¿Aún no tienes una cuenta?</div>
+                    <div class="centrado col-12" style="margin-bottom: 0px !important; margin-top: 20px !important;">
+                        <button style="width: 289px !important; margin-bottom: 8px !important;" type="button" class="btn btn-outline-danger font-H4-bold-700" onclick="ResultadoIrPaginaRegistro()">Regístrate aquí</button>
                     </div>
                 </div>
             </div>
@@ -471,7 +471,7 @@
                     <div class="col-12 div-left padding-left-right-1">
                         <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
                         <textarea type="text" class="form-control font-H4-light-400n" maxlength="500" rows="1" style="padding-left: 3px !important;"></textarea>
-                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
+                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 caracteres</span>
                     </div>
                     <div class="col-12 div-left mt-4 margin-top-44-20" >
                         <button class="btn btn-primary btn-danger width-100 font-H4-bold margin-bottom-68-4 max-boton-modal" type="button" data-bs-toggle="modal" data-bs-target="#m-informativo-confirmacion" >Enviar</button>
@@ -509,7 +509,7 @@
                     <div class="col-12 div-left padding-left-right-1">
                         <label class="font-label-400 negro-promperu">Escribe tu consulta</label>
                         <textarea type="text" class="form-control font-H4-light-400n" maxlength="500" rows="1" style="padding-left: 3px !important;"></textarea>
-                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 cáracteres</span>
+                        <span class="span-textarea font-smallprint-medium gris smallprint-medium gris-promperu">Máximo 500 caracteres</span>
                     </div>
                     <div class="col-12 div-left mt-4 padding-left-right-1" style="display: flex; align-items: center; min-width: 300px !important; margin-bottom: 15.85px !important; margin-top: 33.55px !important;">
                         <div class="col-5 div-left font-label-400 negro-promperu mostrar-desktop" style="max-width: 170px !important;">Califica la herramienta:</div>

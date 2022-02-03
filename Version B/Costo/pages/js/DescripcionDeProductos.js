@@ -606,16 +606,26 @@ function MostrarInsumoLiberado() {
 }
 
 function selectProductora() {
-    $("#Comercializadora").removeClass("active-product")
-    $("#Productora").addClass("active-product")
+    $("#Comercializadora").removeClass("active-product");
+    $("#Productora").addClass("active-product");
+    $("#CostoIndirecto").show();
+    $("#CostoDirecto").show();
+    $(".lineOculto").show();
+    $(".tituloCostosGastos").html("Selecciona tus costos y gastos");
+    $(".subtituloCostosGastos").html("Ingresa los costos y gastos que correspondan en cada una de las secciones");
     /*$("#insumoLiberado").hide();
     $("#proDirecta").hide();
     $("#proEncargo").show();*/
 }
 
 function selectComercializadora() {
-    $("#Productora").removeClass("active-product")
-    $("#Comercializadora").addClass("active-product")
+    $("#Productora").removeClass("active-product");
+    $("#Comercializadora").addClass("active-product");
+    $("#CostoIndirecto").hide();
+    $("#CostoDirecto").hide();
+    $(".lineOculto").hide();
+    $(".tituloCostosGastos").html("Selecciona tus gastos");
+    $(".subtituloCostosGastos").html("Ingresa los gastos que correspondan en cada una de las secciones");
     /*$("#insumoLiberado2").hide();
     $("#proEncargo").hide();
     $("#proDirecta").show();*/
@@ -632,8 +642,7 @@ function selectEncargo() {
     /*$("#insumoLiberado2").hide();
     $("#proEncargo").hide();
     $("#proDirecta").show();*/
-    $("#CostoIndirecto").hide();
-    $("#CostoDirecto").hide();
+    
     $(".ocultar-costo").hide();
     $("#Fas").hide();
     $("#Fob").hide();
@@ -651,9 +660,8 @@ function selectEncargo() {
     $(".card-cfr2").show();
 
     $(".ocultarLineMaritima").show();
-    $(".tituloCostosGastos").html("Selecciona tus gastos");
-    $(".subtituloCostosGastos").html("Ingresa los gastos que correspondan en cada una de las secciones");
-    $(".lineOculto").hide();
+    
+    
 }
 function selectDirecta() {
     $(".tipoCarga").hide();
@@ -664,8 +672,7 @@ function selectDirecta() {
     $(".puerto-seleccionado").html("Aeropuertos en China");
     $("#destinoCargam").attr("placeholder", "Escribe el país o el aeropuerto");
     $(".puerto-seleccionadom").html('<i class="fas fa-chevron-left font-color-red mx-3"></i>Aeropuertos en China');
-    $("#CostoIndirecto").show();
-    $("#CostoDirecto").show();
+    
     $(".ocultar-costo").show();
     $("#Fas2").hide();
     $("#Fob2").hide();
@@ -684,8 +691,7 @@ function selectDirecta() {
     
     $(".ocultarLineMaritima").hide();
     
-    $(".tituloCostosGastos").html("Selecciona tus costos y gastos");
-    $(".subtituloCostosGastos").html("Ingresa los costos y gastos que correspondan en cada una de las secciones");
+    
     $(".lineOculto").show();
 }
 function mostrarViewProductora() {

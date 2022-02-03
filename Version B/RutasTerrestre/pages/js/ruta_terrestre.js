@@ -5,14 +5,14 @@ $(document).ready(function() {
         
         e.stopPropagation();
         showCardOrigen();
-        if($("#ptOrigen").val()=="Selecciona"){
+        if($("#ptOrigen").val()==""){
             $("#ptOrigen").val("");
         }
     });
     $(".ptDestino").click(function(e) {
         e.stopPropagation();
         showCardDestino();
-        if($("#puertoDestino").val()=="Selecciona"){
+        if($("#puertoDestino").val()==""){
             $("#puertoDestino").val("");
         }
     });
@@ -61,13 +61,16 @@ $(document).ready(function() {
     $(".opOrigenMovil").click(function() {
         selectPtoOrigenMovil();
         $("#ptOrigenMovil").val("Piura");
+        $("#ptOrigenMovil2").val("Piura");
         $("#txtPuntoLlegadaMovil").focus();
     });
     $(".opDestinoMovil").click(function() {
         selectPtoDestino();
         $(".btn-close-canvas").click();
         $("#puertoDestinoMovil").val("Callao");
+        $("#puertoDestinoMovil2").val("Callao");
         $("#btnBuscarMovil").prop("disabled",false);
+        //$("#btnBuscarMovil2").prop("disabled",false);
     });
     $(".opDestCiudad").click(function() {
         selectPtoDestCiudad();

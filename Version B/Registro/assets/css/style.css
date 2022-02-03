@@ -908,13 +908,13 @@ a>i>label {
         margin-right:8%;
     }
     .mostrar-desktop {
-        display: none !important;
+        display: block !important;
     }
     .ocultar-movil {
         display: none !important;
     }
     .mostrar-movil {
-        display: block !important;
+        display: none !important;
     }
     .btn-movil {
         width: 30% !important;
@@ -1126,3 +1126,20 @@ a>i>label {
     text-align: center;
 }
 
+.lblsinpadding{
+    padding-left:0!important;
+    margin-left:0!important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1375px) {
+    .card-left{
+        margin-right: 0;
+    }
+    .margin-right-tablet{
+        margin-right: 0;
+    }
+    .text-detalle-registro{
+        padding-left: 20px;
+        padding-right: 0; 
+    }
+}

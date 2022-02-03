@@ -40,7 +40,16 @@
 
 .ggtooltip.bottom .arrow-shadow, .ggtooltip.bottom-left .arrow-shadow, .ggtooltip.bottom-right .arrow-shadow { top: 0; }
 
-.ggpopover { position: absolute; top: 0; left: 0; z-index: 1060; display: none; max-width: 276px; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.42857143; text-align: left; white-space: normal; background-color: #fff; -webkit-background-clip: padding-box; background-clip: padding-box; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, .2); border-radius: 2px; -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2); box-shadow: 0 5px 10px rgba(0, 0, 0, .2); }
+.ggpopover { 
+    position: absolute; 
+    /*top: 0; */
+    left: auto; 
+    z-index: 1060; 
+    display: none; 
+    max-width: 276px; 
+    padding: 0; 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 14px; font-weight: normal; line-height: 1.42857143; text-align: left; white-space: normal; background-color: #fff; -webkit-background-clip: padding-box; background-clip: padding-box; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, .2); border-radius: 2px; -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2); box-shadow: 0 5px 10px rgba(0, 0, 0, .2); }
 
 .ggpopover.fade { filter: alpha(opacity=0); opacity: 0; -webkit-transition: opacity 0.15s linear; -moz-transition: opacity 0.15s linear; -o-transition: opacity 0.15s linear; transition: opacity 0.15s linear; }
 

@@ -263,9 +263,9 @@
                 <div class="row mt-4 div-busqueda justify-content-center">
                     <div class="col-lg-12 mb-lg-0" style="width: 1023px;">
                             <div class="busquedaNormal-lista row px-2 p-5 overflow-hidden">
-                                <div class="col-lg-9 col-md-9 col-xs-12">
-                                    <input type="text" class="form-control busqueda-listado ptOrigen mostrar-desktop ordenar font-H4-light" id="ptBusqueda" value="Selecciona" /><i class="icon-select ptOrigen mostrar-desktop ordenar"><img src="../assets/img/icon-search.svg" alt=""></i>
-                                    <input type="text" style="width: 300px;" class="form-control busqueda-listado ptOrigenMovil mostrar-movil ordenar font-H4-light" id="ptBusqueda" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                <div class="col-lg-9 col-md-7 col-xs-12">
+                                    <input type="text" class="form-control busqueda-listado ptOrigen mostrar-desktop ordenar font-H4-light lblsinpadding" id="ptBusqueda" value="" placeholder="Ejm: Transporte"/><i class="icon-select ptOrigen mostrar-desktop ordenar"><img src="../assets/img/icon-search.svg" alt=""></i>
+                                    <input type="text" style="width: 300px;" class="form-control busqueda-listado ptOrigenMovil mostrar-movil ordenar font-H4-light lblsinpadding" id="ptBusqueda" value="" placeholder="Ejm: Transporte" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="ptOrigenMovil icon-select mostrar-movil ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"><img src="../assets/img/btn-buscar-mobile.svg" alt=""></i>
                                 </div>
                                 <div class="h-100 p-3 card-select-busqueda-listado card-origen" id="selectPuertoOrigen">
@@ -279,13 +279,13 @@
                                <!-- <div class="col-lg-4 col-md-6 col-xs-12 col-sm-6 mt-2">
                                     <button class="btn btn-second" onclick="window.location.href='ListaDirectorioLogistico.html'">Buscar</button>
                                 </div>-->
-                                <div id="vista-web" class="col-lg-3 col-md-3 col-xs-12 d-flex justify-content-center align-items-end">
-                                    <a style="position: relative;top: 10px;left: 36px;" href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral">
+                                <div id="vista-web" class="col-lg-3 col-md-5 col-xs-12 d-flex justify-content-center align-items-end">
+                                    <a style="position: relative;top: 10px;left: 36px; opacity: 1;" href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral">
                                         <i><img class="icon-busqueda" src="../assets/img/icon-busqueda-avanzada.svg" alt=""> <label class="font-H5-bold rojo-promperu">&nbsp;Búsqueda avanzada</label></i>
                                     </a>
                                 </div>
-                                <div id="vista-mobile" class="col-lg-4 col-md-8 col-xs-12 mt-2">
-                                    <a href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral">
+                                <div id="vista-mobile" class="col-lg-4 col-md-5 col-xs-12 mt-2">
+                                    <a href="javascript:mostrarBusquedaAvanzada()" class="colorGeneral" style="opacity: 1;">
                                         <i><img class="icon-busqueda" src="../assets/img/icon-busqueda-avanzada.svg" alt=""> <label class="font-H5-bold rojo-promperu">&nbsp;Búsqueda avanzada</label></i>
                                     </a>
                                 </div>
@@ -294,7 +294,7 @@
                                 <div class="row">
                                     <div id="vista-web" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
                                         <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 font-H5-bold negro-promperu">
-                                            6 Empresas <span class="font-H5-light">encontradas para Agente de Aduanas</span>
+                                            <label class="font-H5-bold negro-promperu" style="padding-left:2px;">6 Empresas</label> <span class="font-H5-light">encontradas para Agente de Aduanas</span>
                                         </div>
                                     </div>
                                     <div id="vista-mobile" class="mx-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-4">
@@ -316,7 +316,8 @@
                                                     <label class="font-H4-bold">Ubicación:</label>
                                                  </div>
                                                  <div class="col-sm-7">
-                                                    <input type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                    <input type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" />
+                                                    <!--<i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>-->
                                                     <input style="border-bottom: none;" type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                     <i style="position: relative;top: 3px;font-size: 22px;right: 14px;" class="fas fa-angle-down ptUbicacionMovilFil icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                  </div>
@@ -335,7 +336,8 @@
                                                     <label class="font-H4-bold">Ordenar por:</label>
                                                   </div>
                                                   <div class="col-sm-5">
-                                                    <input type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                    <input type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" />
+                                                    <!--<i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>-->
                                                     <input style="border-bottom: none;" type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                     <i style="position: relative;top: 3px;font-size: 22px;right: -10px;" class="fas fa-angle-down ptOrdenarMovilFil icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                   </div>
@@ -357,8 +359,8 @@
                                                   <div class="col-lg-4 col-md-4 d-flex align-items-end">
                                                     <label class="font-H4-bold">Rubro:</label>
                                                   </div>
-                                                  <div class="col-lg-6 col-md-6" style="position: relative; right: 14px;">
-                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptRubroFil mostrar-desktop ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" /><i style="position: relative;top: 6px;font-size: 21px;right: 7px;" class="fas fa-angle-down ptRubroFil icon-select mostrar-desktop ordenar"></i>
+                                                  <div class="col-lg-6 col-md-6" style="position: relative; right: 14px; max-width: max-content;">
+                                                    <input style="border-bottom: none !important; max-width: 85px;" type="text" class="form-control busqueda-listado ptRubroFil mostrar-desktop ordenar font-H4-light rojo-promperu lblsinpadding" id="ptOrigen" value="Todos" /><i style="position: relative;top: 6px;font-size: 21px;right: 7px;" class="fas fa-angle-down ptRubroFil icon-select mostrar-desktop ordenar"></i>
                                                     <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptRubroMovilFil mostrar-movil ordenar font-H4-light rojo-promperu" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                   </div>
                                                 </div>  
@@ -373,11 +375,11 @@
                                             </div>
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position: relative;right: 28px;">
                                                 <div class="row">
-                                                    <div class="col-lg-5 col-md-4 d-flex align-items-end">
+                                                    <div class="col-lg-6 col-md-6 d-flex align-items-end" style="max-width: max-content;">
                                                         <label class="font-H4-bold">Ubicación:</label>
                                                     </div>
-                                                    <div class="col-lg-6 col-md-8" style="position: relative; right: 14px;">
-                                                        <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i style="position: relative;top: 6px;font-size: 21px;right: 7px;" class="fas fa-angle-down icon-select ptUbicacionFil mostrar-desktop ordenar"></i>
+                                                    <div class="col-lg-6 col-md-8" style="position: relative; right: 14px; max-width: max-content;">
+                                                        <input style="border-bottom: none !important; max-width: 85px;" type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light lblsinpadding" id="ptOrigen" value="Todos" /><i style="position: relative;top: 6px;font-size: 21px;right: 7px;" class="fas fa-angle-down icon-select ptUbicacionFil mostrar-desktop ordenar"></i>
                                                         <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                     </div>
                                                 </div>
@@ -395,8 +397,8 @@
                                                    <div class="col-lg-7 col-md-7 d-flex align-items-end">
                                                     <label class="font-H4-bold">Ordenar por:</label>
                                                    </div>
-                                                   <div class="col-lg-5 col-md-5" style="position: relative; right: 14px;">
-                                                    <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i style="position: relative;top: 6px;font-size: 21px;right: -5px;" class="fas fa-angle-down icon-select ptOrdenarFil mostrar-desktop ordenar"></i>
+                                                   <div class="col-lg-5 col-md-5" style="position: relative; right: 14px; padding-left:0; max-width: max-content;">
+                                                    <input style="border-bottom: none !important; max-width: 65px;" type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light lblsinpadding" id="ptOrigen" value="A - Z" /><i style="position: relative;top: 6px;font-size: 21px;right: -5px;" class="fas fa-angle-down icon-select ptOrdenarFil mostrar-desktop ordenar"></i>
                                                     <input style="border-bottom: none !important;" type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                    </div>
                                                 </div>
@@ -414,8 +416,8 @@
                             <div class="busquedaAvanzada row px-2 p-5 overflow-hidden sinPaddingBottom">
                                 <div class="col-lg-12 col-md-12 col-xs-12">
                                     <label for="selRubro" class="font-label negro-promperu mostrar-movil">¿Qué estas buscando?</label>
-                                    <input type="text" class="form-control busqueda-listado ptOrigen mostrar-desktop ordenar font-H4-light" id="ptBusqueda" value="Selecciona" /><i class="icon-select ptOrigen mostrar-desktop ordenar"><img src="../assets/img/icon-search.svg" alt=""></i>
-                                    <input type="text" class="form-control busqueda-listado ptOrigenMovil mostrar-movil ordenar font-H4-light" id="ptBusqueda" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <input type="text" class="form-control busqueda-listado ptOrigen mostrar-desktop ordenar font-H4-light lblsinpadding" id="ptBusqueda" value="" placeholder="Ejm: Transporte"/><i class="icon-select ptOrigen mostrar-desktop ordenar"><img src="../assets/img/icon-search.svg" alt=""></i>
+                                    <input type="text" class="form-control busqueda-listado ptOrigenMovil mostrar-movil ordenar font-H4-light lblsinpadding" id="ptBusqueda" value="" placeholder="Ejm: Transporte" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                 </div>
                                 <div class="h-100 p-3 card-select-busqueda-listado card-origen" id="selectPuertoOrigen">
                                     <div class="row" id="comboPais">
@@ -426,9 +428,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-xs-12 paddingControl pt-4">
-                                    <label for="selRubro" class="font-label negro-promperu">Rubro</label>
-                                    <input type="text" class="form-control busqueda-listado ptRubro mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                    <input type="text" class="form-control busqueda-listado ptRubroMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <label for="selRubro" class="font-label negro-promperu lblsinpadding">Rubro</label>
+                                    <input type="text" class="form-control busqueda-listado ptRubro mostrar-desktop ordenar font-H4-light lblsinpadding" id="ptOrigen" value=""  placeholder="Selecciona"/><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                    <input type="text" class="form-control busqueda-listado ptRubroMovil mostrar-movil ordenar font-H4-light lblsinpadding" id="ptOrigen" value="" placeholder="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                 </div>
                                 <div class="h-100 p-3 card-listado-rubro card-rubro" id="selectPuertoOrigen">
@@ -439,9 +441,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-xs-12 paddingControl pt-4">
-                                    <label for="selAnioExp" class="font-label negro-promperu">Años de experiencia</label>
-                                    <input type="text" class="form-control busqueda-listado ptExperiencia mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                    <input type="text" class="form-control busqueda-listado ptExperienciaMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <label for="selAnioExp" class="font-label negro-promperu lblsinpadding">Años de experiencia</label>
+                                    <input type="text" class="form-control busqueda-listado ptExperiencia mostrar-desktop ordenar font-H4-light lblsinpadding" id="ptOrigen" value="" placeholder="Selecciona"/><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                    <input type="text" class="form-control busqueda-listado ptExperienciaMovil mostrar-movil ordenar font-H4-light lblsinpadding" id="ptOrigen" value="" placeholder="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                 </div>
                                 <div class="h-100 p-3 card-listado-experiencia card-experiencia" id="selectPuertoOrigen">
@@ -452,9 +454,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 paddingControl pt-4">
-                                    <label for="selectRegion" class="font-label negro-promperu">Región</label>
-                                    <input type="text" class="form-control busqueda-listado ptRegion mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                    <input type="text" class="form-control busqueda-listado ptRegionMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <label for="selectRegion" class="font-label negro-promperu lblsinpadding">Región</label>
+                                    <input type="text" class="form-control busqueda-listado ptRegion mostrar-desktop ordenar font-H4-light lblsinpadding" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                    <input type="text" class="form-control busqueda-listado ptRegionMovil mostrar-movil ordenar font-H4-light lblsinpadding" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                 </div>
                                 <div class="h-100 p-3 card-listado-region card-region" id="selectPuertoOrigen">
@@ -465,9 +467,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 paddingControl pt-4">
-                                    <label for="selectProvincia" class="font-label negro-promperu">Provincia</label>
-                                    <input type="text" class="form-control busqueda-listado ptProvincia mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                    <input type="text" class="form-control busqueda-listado ptProvinciaMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <label for="selectProvincia" class="font-label negro-promperu lblsinpadding">Provincia</label>
+                                    <input type="text" class="form-control busqueda-listado ptProvincia mostrar-desktop ordenar font-H4-light lblsinpadding" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                    <input type="text" class="form-control busqueda-listado ptProvinciaMovil mostrar-movil ordenar font-H4-light lblsinpadding" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                 </div>
                                 <div class="h-100 p-3 card-listado-provincia card-provincia" id="selectPuertoOrigen">
@@ -478,9 +480,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-xs-12 paddingControl pt-4">
-                                    <label for="selectDistrito" class="font-label negro-promperu">Distrito</label>
-                                    <input type="text" class="form-control busqueda-listado ptDistrito mostrar-desktop ordenar font-H4-light" id="ptOrigen" value="Selecciona" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
-                                    <input type="text" class="form-control busqueda-listado ptDistritoMovil mostrar-movil ordenar font-H4-light" id="ptOrigen" value="Selecciona" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
+                                    <label for="selectDistrito" class="font-label negro-promperu lblsinpadding">Distrito</label>
+                                    <input type="text" class="form-control busqueda-listado ptDistrito mostrar-desktop ordenar font-H4-light lblsinpadding" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                    <input type="text" class="form-control busqueda-listado ptDistritoMovil mostrar-movil ordenar font-H4-light lblsinpadding" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                     <i class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                 </div>
                                 <div class="h-100 p-3 card-listado-distrito card-distrito" id="selectPuertoOrigen">
@@ -490,10 +492,14 @@
                                         <option value="2" class="font-H4-light option-select font-color-black opCiudad">Casma</option>
                                     </div>
                                 </div>
+                                <div class="ocultar-movil col-lg-4 col-md-6 col-xs-12 pt-5 paddingControl mostrar-tablet" style="display: none;">
+                                    
+                                </div>
                                 <div class="ocultar-movil col-lg-4 col-md-6 col-xs-12 pt-5 paddingControl">
                                     <input class="input-checkbox" type="checkbox" name="chkSucursal" id="chkSucursal" checked>
                                     <label for="chkSucursal" class="font-H4-medium negro-promperu input-checkbox-lab">Con sucursales</label>
                                 </div>
+                                
                                 <div class="ocultar-movil col-lg-4 col-md-6 col-xs-12 pt-5 paddingControl">
                                     <input class="input-checkbox" type="checkbox" name="chkCertificado" id="chkCertificado" checked>
                                     <label for="chkCertificado" class="font-H4-medium negro-promperu input-checkbox-lab">Con certificaciones</label>
@@ -565,7 +571,8 @@
                                                     <label class="font-H4-bold">Ubicación:</label>
                                                  </div>
                                                  <div class="col-sm-7">
-                                                    <input type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                    <input type="text" class="form-control busqueda-listado ptUbicacionFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" />
+                                                    <!--<i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>-->
                                                     <input style="border-bottom: none;" type="text" class="form-control busqueda-listado ptUbicacionMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="Todos" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                     <i style="position: relative;top: 3px;font-size: 22px;right: 14px;" class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                  </div>
@@ -584,7 +591,8 @@
                                                     <label class="font-H4-bold">Ordenar por:</label>
                                                   </div>
                                                   <div class="col-sm-5">
-                                                    <input type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" /><i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>
+                                                    <input type="text" class="form-control busqueda-listado ptOrdenarFil mostrar-desktop ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" />
+                                                    <!--<i class="fas fa-angle-down icon-select ptOrigen mostrar-desktop ordenar"></i>-->
                                                     <input style="border-bottom: none;" type="text" class="form-control busqueda-listado ptOrdenarMovilFil mostrar-movil ordenar rojo-promperu font-H4-light" id="ptOrigen" value="A - Z" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas" />
                                                     <i style="position: relative;top: 3px;font-size: 22px;right: -10px;" class="fas fa-angle-down icon-select ordenar" data-bs-toggle="offcanvas" data-bs-target="#ptOrigenCanvas" aria-controls="ptOrigenCanvas"></i>
                                                   </div>
@@ -1124,7 +1132,7 @@
             <!-- Fin vista ver detalle de busqueda de ruta movil-->
             <footer class="footer" id="footer" style="padding-top: 50px !important;">
                 <div class="container-fluid">
-                    <div id="footer-Desktop" class="mostrar-desktop">
+                    <div id="footer-Desktop" class="mostrar-desktop footer-tablet-desktop">
                         <div class="row align-items-center justify-content-center max-resolution" style="margin: auto !important;">
                             <div class="col-lg-12 mb-lg-0 mb-4">
                                 <div class="text-center font-helvetica-coryright" style="justify-content: center;">
@@ -1132,7 +1140,7 @@
                                 </div>
                             </div>
                             <br>
-                            <div class="col-lg-12 text-center mt-2  font-helvetica-footer-bold">
+                            <div class="col-lg-12 text-center mt-2 font-weight-bold font-helvetica-footer-bold">
                                 herramientaslogisticas@promperu.gob.pe 
                             </div>
                             <div class="justify-content-between text-center mt-3">
@@ -1166,14 +1174,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mostrar-movil" id="footer-Movil" style="height: 348px !important;">
+                    <div class="mostrar-movil footer-tablet-movil" id="footer-Movil" style="height: 348px !important;">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-lg-12 mb-lg-0 mb-2">
                                 <div class="text-center font-helvetica-coryright" style="justify-content: center;">
-                                    Para mas información escríbenos a :
+                                    Para más información escríbenos a:
                                 </div>
                             </div>
-                            <div class="col-lg-12 text-center font-helvetica-footer-bold">
+                            <div class="col-lg-12 text-center font-weight-bold font-helvetica-footer-bold">
                                 herramientaslogisticas@promperu.gob.pe 
                             </div>
                             <div class="justify-content-between text-center mt-4 m-4">
@@ -1191,7 +1199,7 @@
                                     <path d="M20.5676 2.31177C20.3236 1.40259 19.614 0.687434 18.7104 0.443506C17.0694 0 10.5 0 10.5 0C10.5 0 3.93611 0 2.29514 0.443506C1.3915 0.687434 0.68189 1.40259 0.437962 2.31177C0 3.95829 0 7.401 0 7.401C0 7.401 0 10.8382 0.437962 12.4902C0.68189 13.3994 1.3915 14.1146 2.29514 14.3585C3.93057 14.802 10.5 14.802 10.5 14.802C10.5 14.802 17.0694 14.802 18.7049 14.3585C19.6085 14.1146 20.3181 13.3994 20.562 12.4902C21 10.8437 21 7.401 21 7.401C21 7.401 21.0055 3.95829 20.5676 2.31177ZM8.35454 10.5222V4.27429L13.8429 7.39546L8.35454 10.5222Z" fill="black"/>
                                 </svg>
                             </div>
-                            <div class="hr col-lg-6 mt-2 background-gris"></div>
+                            <div class="hr col-lg-6 mt-2 background-black"></div>
                             <div class="row"><br><br></div>
                             <div class="row mt-2">
                                 <div class="col-6 div-left contenedor-img-movil">
@@ -1210,7 +1218,8 @@
                             </div>
                         </div>
                     </div>
-                </div>            </footer>
+                </div>            
+            </footer>
         </div>
     </main>
     <!-- Inicio de buscador de puerto de origen Vista Movil -->
@@ -1532,14 +1541,11 @@
         </div>-->
 
         <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel" class=" font-size-20 negro-promperu font-H2-bold-700 text-left">Herramientas Logísticas</h5>
-
-
+            <h5 id="offcanvasRightLabel" class=" font-size-20 negro-promperu font-H2-bold-700 mostrar-desktop">Herramientas logísticas</h5>
+            <h5 id="offcanvasRightLabel" class=" font-size-20 negro-promperu font-H2-bold-700 mostrar-movil" style="max-width: 210px; text-align: left !important;">Herramientas logísticas</h5>
             <button class="btn-close-menu a-menu" data-bs-dismiss="offcanvas" aria-label="Close">
                 <img src="../../btn-Promperu/close.png" alt="close" class="img-close">
             </button>
-
-
         </div>
         <div class="offcanvas-body offcanvas-body-menu">
             <div class="row">
@@ -1555,17 +1561,17 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasMaritimas/Pages/Rutas_maritimas.html'">
                     <div class="div-card-dashboard hover menu-alineacion"> 
-                        <div class="font-size-15 inline-for-movil card-dashboard">
+                        <div class="font-size-15 inline-for-movil card-dashboard" style="padding-left:0;">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Marítimas</p>
                             <img src="../../img-menu-PromPeru/dashboard/barco_ilustracion.png" alt="avion" class="icon-dashboard mostrar-desktop">
                             <img src="../../img-menu-PromPeru/dashboard/barco-m.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
-                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas marítimas</p>
+                            <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Rutas Marítimas</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../RutasTerrestre/Pages/Rutas_terrestre.html'">
                     <div class="div-card-dashboard hover menu-alineacion">
-                        <div class="font-size-15 inline-for-movil card-dashboard">
+                        <div class="font-size-15 inline-for-movil card-dashboard" style="padding-left:0;">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Rutas Terrestres</p>
                             <img src="../../img-menu-PromPeru/dashboard/rutat.png" alt="avion" class="icon-dashboard mostrar-desktop">
                             <img src="../../img-menu-PromPeru/dashboard/camion 2.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
@@ -1575,7 +1581,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Costo/Pages/inicio.html'">
                     <div class="div-card-dashboard hover menu-alineacion">
-                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
+                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding" style="padding-left:0;">
             
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Costos de Exportación</p>
                             <img src="../../img-menu-PromPeru/dashboard/costos.png" alt="avion" class="icon-dashboard mostrar-desktop">
@@ -1586,7 +1592,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Cubicaje/Pages/Cubicaje.html'">
                     <div class="div-card-dashboard hover menu-alineacion">
-                        <div class="font-size-15 inline-for-movil card-dashboard">
+                        <div class="font-size-15 inline-for-movil card-dashboard" style="padding-left:0;">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador de Cubicaje</p>
                             <img src="../../img-menu-PromPeru/dashboard/Group.png" alt="avion" class="icon-dashboard mostrar-desktop">
                             <img src="../../img-menu-PromPeru/dashboard/Group 268.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
@@ -1597,9 +1603,9 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../DirectorioLogistico/Pages/DirectorioLogistico.html'">
                     <div class="div-card-dashboard hover menu-alineacion">
                         <div class="div-card-dashboard"> 
-                            <div class="font-size-15 inline-for-movil card-dashboard">
+                            <div class="font-size-15 inline-for-movil card-dashboard" style="padding-left:0;">
                                 <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Directorio Logístico</p>
-                                <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-desktop">
+                                <img src="../../img-menu-PromPeru/dashboard/seParteDe.png" alt="avion" class="icon-dashboard mostrar-desktop" style="max-width:120px">
                                 <img src="../../img-menu-PromPeru/dashboard/gente 1.png" style="margin-right: auto; margin-left: auto;" alt="avion" class="icon-dashboard mostrar-movil">
                                 <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-movil">Directorio Logístico</p>
                             </div>
@@ -1608,7 +1614,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 font-color-red  ordenar min-content margin-left-right-1 relative" onclick="window.location.href='../../Drawback/Pages/Drawback.html'">
                     <div class="div-card-dashboard hover menu-alineacion">
-                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding">
+                        <div class="font-size-15 inline-for-movil card-dashboard menu-padding" style="padding-left:0;">
                             <p class="text-menu-lateral font-H5-bold azul-promperu mostrar-desktop">Simulador <br>de Drawback</p>
                             <!-- <img src="../../img-menu-PromPeru/dashboard/Group 224.png" alt="avion" class="icon-dashboard mostrar-desktop image-drwaback"> -->
                             <img src="../../img-menu-PromPeru/dashboard/Group 224.png" alt="avion" class="icon-dashboard mostrar-desktop image-drwaback" style="width: 100px !important; height: 80px !important;">
