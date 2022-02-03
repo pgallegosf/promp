@@ -6,6 +6,8 @@ $(document).ready(function() {
         $(".text-iniciar-sesion").html("Cerrar sesión");
         $(".popover").show();
         $(".modal-iniciar-sesion").hide();
+        $("#m-guardar").hide();
+        
         if($('.modal-backdrop').hasClass('show')) {
             $('.modal-backdrop').removeClass('show');
             $('.modal-backdrop').addClass('hide');

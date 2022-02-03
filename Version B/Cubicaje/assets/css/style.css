@@ -1326,7 +1326,7 @@ a > i > label {
 
 @media (min-width: 768px) {
   .ocultar-movil {
-    display: none !important;
+    display: -webkit-inline-box !important;
   }
 }
 
@@ -2488,12 +2488,15 @@ a > i > label {
 @media (min-width: 768px) {
   .card-bulto {
     height: auto !important;
-    top: 43% !important;
+    top: 46% !important;
     position: absolute !important;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%) !important;
   }
   .font-size-7 {
     font-size: 7px !important;
+  }
+  .card-palietizado {
+    top: 44% !important;
   }
 }
 
@@ -2601,6 +2604,10 @@ a > i > label {
   .contenedor-pasos-tablet{
     margin:25px!important;
   }
+  .centro-vertical{
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -2611,9 +2618,14 @@ a > i > label {
   .container-vista-maritima {
     padding-top: 70px !important;
 }
+.container-vista-aerea {
+  padding-top: 70px !important;
+}
 .sin-padding{
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
 }
+
+
 
